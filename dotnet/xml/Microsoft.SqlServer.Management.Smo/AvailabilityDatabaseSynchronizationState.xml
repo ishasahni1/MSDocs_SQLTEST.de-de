@@ -1,0 +1,110 @@
+<Type Name="AvailabilityDatabaseSynchronizationState" FullName="Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState">
+  <TypeSignature Language="C#" Value="public enum AvailabilityDatabaseSynchronizationState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AvailabilityDatabaseSynchronizationState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SqlEnum</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationStateConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Verschiedene synchronisierungsmöglichkeiten besagt, dass in eine Datenbank in einer HADR-Verfügbarkeitsgruppe beteiligt sein kann.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Initializing">
+      <MemberSignature Language="C#" Value="Initializing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState Initializing = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState.Initializing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Datenbankreplikat wird nach einem Failover initialisiert.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSynchronizing">
+      <MemberSignature Language="C#" Value="NotSynchronizing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState NotSynchronizing = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState.NotSynchronizing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das primäre ist keine Daten in die sekundäre Datenbank per Push übertragen.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reverting">
+      <MemberSignature Language="C#" Value="Reverting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState Reverting = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState.Reverting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Datenbankreplikat wird nach einem Failover wiederhergestellt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronized">
+      <MemberSignature Language="C#" Value="Synchronized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState Synchronized = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState.Synchronized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Datenbankreplikat wird mit dem primären Replikat synchronisiert.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronizing">
+      <MemberSignature Language="C#" Value="Synchronizing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState Synchronizing = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState.Synchronizing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityDatabaseSynchronizationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Verschieben von Daten passiert zwischen dem primären und sekundären. Dies wird der Zustand sein, auch wenn es derzeit keine Daten zwischen den beiden gesendet werden.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

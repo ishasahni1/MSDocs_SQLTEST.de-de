@@ -1,0 +1,114 @@
+<Type Name="ContributorArgumentConfiguration" FullName="Microsoft.SqlServer.Dac.Deployment.ContributorArgumentConfiguration">
+  <TypeSignature Language="C#" Value="public sealed class ContributorArgumentConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContributorArgumentConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Deployment.ContributorArgumentConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Instanzen dieser Klasse werden durch die Erstellung und Bereitstellung-Contributors erstellt, während der Entwurfszeit Argumente zu initialisieren, die Ihnen zur Laufzeit übergeben werden. 
+            
+            In SSDT, these arguments must be specified using a ContributorArguments property
+            in a .sqlproj file or a referenced .targets file. For instance to add a "RunMyContributor" argument with a value of 
+            "true", the following would be added:
+            &lt;PropertyGroup&gt;
+                &lt;ContributorArguments Condition="'$(Configuration)' == 'Debug''"&gt;
+                    $(ContributorArguments);RunMyContributor=True;
+                &lt;/ContributorArguments&gt;
+            &lt;PropertyGroup&gt;
+            
+            
+            In this case the argument is only added for Debug configuration.
+            Using the above configuration it is possible to collect information from the MSBuild environment
+            and pass it to the contributor. 
+            
+            It is also possible to specify these when creating a package by using <see cref="M:Microsoft.SqlServer.Dac.DacPackageExtensions.BuildPackage(System.String,Microsoft.SqlServer.Dac.Model.TSqlModel,Microsoft.SqlServer.Dac.PackageMetadata,Microsoft.SqlServer.Dac.PackageOptions)" /> 
+            and specifying <see cref="T:Microsoft.SqlServer.Dac.PackageOptions" />.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContributorArgumentConfiguration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.ContributorArgumentConfiguration.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.Deployment.ContributorArgumentConfiguration" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContributorArgumentConfiguration (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.ContributorArgumentConfiguration.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des Arguments.</param>
+        <param name="value">Der Wert des Arguments.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.Deployment.ContributorArgumentConfiguration" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Wenn die <paramref name="name" /> oder <paramref name="value" /> Parameter null sind.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.ContributorArgumentConfiguration.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen des Arguments ab oder legt diesen fest.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.ContributorArgumentConfiguration.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Wert des Arguments als Zeichenfolge ab oder legt diesen fest.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

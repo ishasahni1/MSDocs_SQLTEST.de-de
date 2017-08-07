@@ -1,0 +1,144 @@
+<Type Name="AvailabilityReplicaOperationalState" FullName="Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState">
+  <TypeSignature Language="C#" Value="public enum AvailabilityReplicaOperationalState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AvailabilityReplicaOperationalState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SqlEnum</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalStateConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Der Status des Replikats Bereitschaft zum Verarbeiten von Clientanforderungen für alle Datenbankreplikate in der verfügbarkeitsgruppe, die in ihm enthaltenen.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Failed">
+      <MemberSignature Language="C#" Value="Failed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState Failed = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState.Failed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Replikat kann nicht mit dem Windows-Cluster kommunizieren und keine Clientanforderungen empfangen.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FailedNoQuorum">
+      <MemberSignature Language="C#" Value="FailedNoQuorum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState FailedNoQuorum = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState.FailedNoQuorum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Verfügbarkeitsgruppe hat das Quorum verloren, das Replikat kann keine Clientanforderungen empfangen.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Offline">
+      <MemberSignature Language="C#" Value="Offline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState Offline = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState.Offline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Verfügbarkeitsgruppe weist derzeit kein primäres Replikat auf, das Replikat kann keine Clientanforderungen empfangen.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Online">
+      <MemberSignature Language="C#" Value="Online" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState Online = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState.Online" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Replikat ist zur Verarbeitung von Clientanforderungen bereit.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pending">
+      <MemberSignature Language="C#" Value="Pending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState Pending = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState.Pending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein Wechsel des Replikats in die primäre Rolle steht aus. Dies ist ein vorübergehender Status.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingFailover">
+      <MemberSignature Language="C#" Value="PendingFailover" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState PendingFailover = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState.PendingFailover" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein Failoverbefehl wird ausgeführt, das Replikat kann keine Clientanforderungen empfangen.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState Unknown = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaOperationalState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Betriebszustand dieses Replikats ist unbekannt, das Verfügbarkeitsreplikatobjekt verweist auf eine Remoteinstanz.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

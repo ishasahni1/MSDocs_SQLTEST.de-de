@@ -1,0 +1,502 @@
+<Type Name="ASTaskBase" FullName="Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase">
+  <TypeSignature Language="C#" Value="public abstract class ASTaskBase : Microsoft.SqlServer.Dts.Runtime.Task" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ASTaskBase extends Microsoft.SqlServer.Dts.Runtime.Task" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ASTasks</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.Task</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stellt die Analysis Services-Taskbasis dar.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ASTaskBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="bExecutionCanceled">
+      <MemberSignature Language="C#" Value="protected bool bExecutionCanceled;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool bExecutionCanceled" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.bExecutionCanceled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Die Ausführung wird abgebrochen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="bTraceError">
+      <MemberSignature Language="C#" Value="protected bool bTraceError;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool bTraceError" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.bTraceError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Der Ablaufverfolgungsfehler.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionName">
+      <MemberSignature Language="C#" Value="public virtual string ConnectionName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.ConnectionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.DropDownEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Verbindung für den Analysis Services-Task ab oder legt ihn fest.</summary>
+        <value>Der Name der Verbindung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ddl">
+      <MemberSignature Language="C#" Value="protected string ddl;" />
+      <MemberSignature Language="ILAsm" Value=".field family string ddl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.ddl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Die Datendefinitionssprache.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Die verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Der VariableDispenser.</param>
+        <param name="events">Die Ereignisse.</param>
+        <param name="log">Das Protokoll.</param>
+        <param name="transaction">Die Transaktion.</param>
+        <summary>Führt den Analysis Services-Task aus.</summary>
+        <returns>Der ausgeführte Task.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteCommand">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Dts.Runtime.DTSExecResult ExecuteCommand (string command, Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult ExecuteCommand(string command, class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.ExecuteCommand(System.String,Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.String" />
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="command">
+        </param>
+        <param name="connections">
+        </param>
+        <param name="events">
+        </param>
+        <param name="transaction">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireError">
+      <MemberSignature Language="C#" Value="protected void FireError (string subComponent, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void FireError(string subComponent, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.FireError(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="subComponent">Ein String-Wert, der weitere Details zur Ereignisquelle enthält.</param>
+        <param name="message">Der Text der Meldung.</param>
+        <summary>Löst ein Ereignis aus, wenn ein Fehler auftritt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireError">
+      <MemberSignature Language="C#" Value="protected void FireError (int errorCode, string subComponent, string message, string helpLink);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void FireError(int32 errorCode, string subComponent, string message, string helpLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.FireError(System.Int32,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="errorCode" Type="System.Int32" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="helpLink" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="errorCode">Ein Integer-Wert, durch den die Fehlermeldung identifiziert wird.</param>
+        <param name="subComponent">Ein String-Wert, der weitere Details zur Ereignisquelle enthält.</param>
+        <param name="message">Der Text der Meldung.</param>
+        <param name="helpLink">Der Pfad zur Hilfedatei, die ausführliche Informationen enthält.</param>
+        <summary>Löst ein Ereignis aus, wenn ein Fehler auftritt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalExecute">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.SqlServer.Dts.Runtime.DTSExecResult InternalExecute (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult InternalExecute(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.InternalExecute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Die verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Der VariableDispenser.</param>
+        <param name="events">Die Ereignisse.</param>
+        <param name="log">Das Protokoll.</param>
+        <param name="transaction">Die Transaktion.</param>
+        <summary>Führt den Task intern aus.</summary>
+        <returns>Der ausgeführte Task.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalValidate">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.SqlServer.Dts.Runtime.DTSExecResult InternalValidate (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult InternalValidate(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.InternalValidate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Die Verbindungen.</param>
+        <param name="variableDispenser">Der VariableDispenser.</param>
+        <param name="events">Die Ereignisse.</param>
+        <param name="log">Das Protokoll.</param>
+        <summary>Überprüft den Task intern.</summary>
+        <returns>Der überprüfte Task.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_events">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents m_events;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents m_events" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.m_events" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Die Ereignisse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgressEventName">
+      <MemberSignature Language="C#" Value="protected virtual string ProgressEventName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProgressEventName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.ProgressEventName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Verlaufsereignisses für den Analysis Services-Task ab.</summary>
+        <value>Der Name des Verlaufsereignisses.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="server">
+      <MemberSignature Language="C#" Value="protected Microsoft.AnalysisServices.Server server;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.AnalysisServices.Server server" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.server" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.AnalysisServices.Server</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Der Server.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusEventName">
+      <MemberSignature Language="C#" Value="protected virtual string StatusEventName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StatusEventName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.StatusEventName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Statusereignisses für den Analysis Services-Task ab.</summary>
+        <value>Der Name des Statusereignisses.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopExecution">
+      <MemberSignature Language="C#" Value="protected void StopExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void StopExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.StopExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Beendet die Ausführung des Analysis Service-Tasks.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubComponentName">
+      <MemberSignature Language="C#" Value="protected virtual string SubComponentName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SubComponentName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.SubComponentName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Unterkomponente für den Analysis Services-Task ab.</summary>
+        <value>Der Name der Unterkomponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToProgressEvent">
+      <MemberSignature Language="C#" Value="protected void SubscribeToProgressEvent (Microsoft.AnalysisServices.SessionTrace trace);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SubscribeToProgressEvent(class Microsoft.AnalysisServices.SessionTrace trace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.SubscribeToProgressEvent(Microsoft.AnalysisServices.SessionTrace)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="trace" Type="Microsoft.AnalysisServices.SessionTrace" />
+      </Parameters>
+      <Docs>
+        <param name="trace">Die Ablaufverfolgung.</param>
+        <summary>Abonniert den Task zum Verlaufsereignis.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeToProgressEvent">
+      <MemberSignature Language="C#" Value="protected void UnsubscribeToProgressEvent (Microsoft.AnalysisServices.SessionTrace trace);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UnsubscribeToProgressEvent(class Microsoft.AnalysisServices.SessionTrace trace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.UnsubscribeToProgressEvent(Microsoft.AnalysisServices.SessionTrace)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="trace" Type="Microsoft.AnalysisServices.SessionTrace" />
+      </Parameters>
+      <Docs>
+        <param name="trace">Die Ablaufverfolgung.</param>
+        <summary>Bestellt den Task vom Verlaufsereignis ab.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Die Verbindungen.</param>
+        <param name="variableDispenser">Die Variablenbeschreibung.</param>
+        <param name="events">Das Ereignis.</param>
+        <param name="log">Das Protokoll.</param>
+        <summary>Überprüft den Analysis Service-Task.</summary>
+        <returns>Der überprüfte Task.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateConnection">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.SqlServer.Dts.Runtime.ConnectionManager ValidateConnection (Microsoft.SqlServer.Dts.Runtime.Connections connections);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.ConnectionManager ValidateConnection(class Microsoft.SqlServer.Dts.Runtime.Connections connections) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.ValidateConnection(Microsoft.SqlServer.Dts.Runtime.Connections)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.ConnectionManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Die Verbindung, die überprüft werden soll.</param>
+        <summary>Überprüft die Taskverbindung.</summary>
+        <returns>Die überprüfte Verbindung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateDDL">
+      <MemberSignature Language="C#" Value="protected virtual bool ValidateDDL (Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.Connections connections, out Exception ex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ValidateDDL(class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.Connections connections, class System.Exception ex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.ValidateDDL(Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.Connections,System.Exception@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="ex" Type="System.Exception&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="variableDispenser">Die Variablenbeschreibung.</param>
+        <param name="connections">Die Verbindungen.</param>
+        <param name="ex">Die Ausnahme.</param>
+        <summary>Überprüft die Datendefinitionssprache.</summary>
+        <returns>Die überprüfte DLL.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLog">
+      <MemberSignature Language="C#" Value="protected void WriteLog (Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteLog(class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase.WriteLog(Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="log">Das Protokoll.</param>
+        <param name="message">Die Meldung.</param>
+        <summary>Schreibt ein Protokoll für den Task.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

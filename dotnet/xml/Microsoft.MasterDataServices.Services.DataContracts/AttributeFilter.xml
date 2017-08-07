@@ -1,0 +1,119 @@
+<Type Name="AttributeFilter" FullName="Microsoft.MasterDataServices.Services.DataContracts.AttributeFilter">
+  <TypeSignature Language="C#" Value="public class AttributeFilter : Microsoft.MasterDataServices.Services.DataContracts.DataContractBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttributeFilter extends Microsoft.MasterDataServices.Services.DataContracts.DataContractBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.DataContracts.AttributeFilter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services.Contracts</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.MasterDataServices.Services.DataContracts.DataContractBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract(Name="AttributeFilter", Namespace="http://schemas.microsoft.com/sqlserver/masterdataservices/2009/09")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Ein Filter zum Einschränken der möglichen Werte für ein untergeordnetes Attribut auf der Grundlage des Werts eines übergeordneten Attributs.
+            </summary>
+    <remarks>
+            Die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.AttributeFilter" /> komplexer Typ gibt an, einen Filter zum Einschränken der möglichen Werte für ein untergeordnetes Attribut auf Grundlage des Werts eines übergeordneten Attributs. Die Parent-Child-Beziehung wird durch eine angegebene abgeleitete Heireachy Ebene definiert.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttributeFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.DataContracts.AttributeFilter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.MetadataAttribute" /> Klasse. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DerivedHierarchyId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier DerivedHierarchyId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier DerivedHierarchyId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.AttributeFilter.DerivedHierarchyId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.DerivedHierarchy">abgeleitete Hierarchie</see> -Bezeichner der Ebene, die das Attribut filtert. Die Hierarchie MUSS demselben Modell angehören wie das Attribut, das gefiltert wird. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LevelNumber">
+      <MemberSignature Language="C#" Value="public int LevelNumber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LevelNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.AttributeFilter.LevelNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.DerivedHierarchy">abgeleitete Hierarchie</see> Ebene an, die Anforderung ist nullbasiert und aus der Hierarchie von oben nach unten ausgeführt wird.
+Die Ebene muss vom Typ <see cref="F:Microsoft.MasterDataServices.Services.DataContracts.HierarchyItemType.DBA" /> oder <see cref="F:Microsoft.MasterDataServices.Services.DataContracts.HierarchyItemType.ManyToMany" />.
+Der Ebene <see cref="P:Microsoft.MasterDataServices.Services.DataContracts.DerivedHierarchyLevel.EntityId">EntityId</see> müssen identisch sein <see cref="P:Microsoft.MasterDataServices.Services.DataContracts.AttributeFilter.ParentAttributeId" />des <see cref="P:Microsoft.MasterDataServices.Services.DataContracts.MetadataAttribute.DomainEntityId">DomainEntityId</see>.
+Die nächstniedrigeren Ebene muss verfügen über denselben <see cref="P:Microsoft.MasterDataServices.Services.DataContracts.DerivedHierarchyLevel.EntityId">EntityId</see> als die <see cref="P:Microsoft.MasterDataServices.Services.DataContracts.MetadataAttribute.DomainEntityId">DomainEntityId</see> des untergeordneten Elements <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.MetadataAttribute">Attribut</see> gefiltert wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentAttributeId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier ParentAttributeId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier ParentAttributeId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.AttributeFilter.ParentAttributeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den übergeordneten Attributbezeichner, dessen Wert die Liste der möglichen Werte für das untergeordnete Attribut filtert. Das übergeordnete Element MUSS ein domänenbasiertes Attribut (DBA) innerhalb desselben EntityMemberType sein wie das untergeordnete Attribut, für das die Filterung vorgenommen wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

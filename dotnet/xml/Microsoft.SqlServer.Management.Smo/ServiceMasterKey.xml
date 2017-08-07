@@ -1,0 +1,237 @@
+<Type Name="ServiceMasterKey" FullName="Microsoft.SqlServer.Management.Smo.ServiceMasterKey">
+  <TypeSignature Language="C#" Value="public sealed class ServiceMasterKey : Microsoft.SqlServer.Management.Smo.SqlSmoObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceMasterKey extends Microsoft.SqlServer.Management.Smo.SqlSmoObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.ServiceMasterKey" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Smo.SqlSmoObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElement(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElementFlags.Standalone)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElementType("MasterKey")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Kapseln von Instanz-Klasse: Server [@Name= "] / MasterKey
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChangeAccount">
+      <MemberSignature Language="C#" Value="public void ChangeAccount (string newAccount, string newPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ChangeAccount(string newAccount, string newPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServiceMasterKey.ChangeAccount(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newAccount" Type="System.String" />
+        <Parameter Name="newPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="newAccount">
+        </param>
+        <param name="newPassword">
+        </param>
+        <summary>
+            Erneut verschlüsselt den Diensthauptschlüssel mit den neuen Speciefied-Anmeldeinformationen ein.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Export">
+      <MemberSignature Language="C#" Value="public void Export (string path, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Export(string path, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServiceMasterKey.Export(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">
+        </param>
+        <param name="password">
+        </param>
+        <summary>
+            Speichert (Dumps) in eine Datei mit dem Diensthauptschlüssel verschlüsselt, mit dem angegebenen Kennwort. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDBName">
+      <MemberSignature Language="C#" Value="protected override string GetDBName ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetDBName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServiceMasterKey.GetDBName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrnRecursive">
+      <MemberSignature Language="C#" Value="protected override sealed void GetUrnRecursive (System.Text.StringBuilder urnbuilder, Microsoft.SqlServer.Management.Smo.UrnIdOption idOption);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetUrnRecursive(class System.Text.StringBuilder urnbuilder, valuetype Microsoft.SqlServer.Management.Smo.UrnIdOption idOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServiceMasterKey.GetUrnRecursive(System.Text.StringBuilder,Microsoft.SqlServer.Management.Smo.UrnIdOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urnbuilder" Type="System.Text.StringBuilder" />
+        <Parameter Name="idOption" Type="Microsoft.SqlServer.Management.Smo.UrnIdOption" />
+      </Parameters>
+      <Docs>
+        <param name="urnbuilder">Muss hinzugefügt werden.</param>
+        <param name="idOption">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Import">
+      <MemberSignature Language="C#" Value="public void Import (string path, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Import(string path, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServiceMasterKey.Import(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">
+        </param>
+        <param name="password">
+        </param>
+        <summary>
+            Lädt den Diensthauptschlüssel aus der angegebenen Datei. Das Kennwort angibt, das Kennwort, mit dem Diensthauptschlüssel verschlüsselt wurde, wenn gespeichert, wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.Server Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.Server Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServiceMasterKey.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectRelationship.ParentObject)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.Server</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recover">
+      <MemberSignature Language="C#" Value="public void Recover (string oldAccount, string oldPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Recover(string oldAccount, string oldPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServiceMasterKey.Recover(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldAccount" Type="System.String" />
+        <Parameter Name="oldPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oldAccount">
+        </param>
+        <param name="oldPassword">
+        </param>
+        <summary>
+            Stellt einen Diensthauptschlüssel wieder her, für den Fall, dass der Diensthauptschlüssel außerhalb von SQL Server geändert wurde. Der Hauptschlüssel wird mit den bereitgestellten Anmeldeinformationen entschlüsselt und mit Anmeldeinformationen für das aktuelle Dienstkonto erneut verschlüsselt werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Regenerate">
+      <MemberSignature Language="C#" Value="public void Regenerate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Regenerate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServiceMasterKey.Regenerate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Wird der Diensthauptschlüssel neu generiert
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Regenerate">
+      <MemberSignature Language="C#" Value="public void Regenerate (bool forceRegeneration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Regenerate(bool forceRegeneration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServiceMasterKey.Regenerate(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="forceRegeneration" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="forceRegeneration">
+        </param>
+        <summary>
+            Generiert den Datenbank-Hauptschlüssel mithilfe des angegebenen Kennworts neu. Wenn Sie der Force-Parameter auf "true", den Dienst festgelegt ist, die Hauptschlüssel erzwungen erneut generiert wird. Dadurch werden alle geheimen Schlüssel, die mit dem alten Service-Hauptschlüssel zu löschenden nicht entschlüsselt werden können.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

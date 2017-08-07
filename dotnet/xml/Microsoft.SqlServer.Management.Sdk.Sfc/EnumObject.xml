@@ -1,0 +1,444 @@
+<Type Name="EnumObject" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject">
+  <TypeSignature Language="C#" Value="public abstract class EnumObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EnumObject extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Klassen, die eine XPath-Ebene zu implementieren, müssen von dieser Klasse abgeleitet werden
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EnumObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standardkonstruktor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddProperty">
+      <MemberSignature Language="C#" Value="protected void AddProperty (Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty op);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddProperty(class Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty op) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.AddProperty(Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="op" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty" />
+      </Parameters>
+      <Docs>
+        <param name="op">Eigenschaft hinzufügen</param>
+        <summary>
+            Fügt der Auflistung von Eigenschaften hinzu
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputeFixedProperties">
+      <MemberSignature Language="C#" Value="public bool ComputeFixedProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ComputeFixedProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.ComputeFixedProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Berechnen Sie die Liste fester Eigenschaften (der Wert kann aus dem Filter abgeleitet werden)
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionInfo">
+      <MemberSignature Language="C#" Value="public object ConnectionInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ConnectionInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.ConnectionInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Leistung-Objekt
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode Filter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode Filter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Filter für diese Ebene
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedProperties">
+      <MemberSignature Language="C#" Value="protected System.Collections.SortedList FixedProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.SortedList FixedProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.FixedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.SortedList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Liste der Eigenschaften für das der Wert ist z. B. Namen kennen ist wissen, ob die Fileter in der Form [@Name"fff" =] oder [@Name= "fff" und (Xxxxx)]
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAliasPropertyName">
+      <MemberSignature Language="C#" Value="protected string GetAliasPropertyName (string prop);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string GetAliasPropertyName(string prop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.GetAliasPropertyName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prop" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prop">Eigenschaftenname</param>
+        <summary>
+            Rufen Sie den Namen der Eigenschaft ab, wie er mit einem Alias versehen, in das Resultset an den Benutzer kann
+            </summary>
+        <returns>Aliasname wird an den Benutzer zurückgegeben werden</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult GetData (Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erParent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult GetData(class Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.GetData(Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="erParent" Type="Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult" />
+      </Parameters>
+      <Docs>
+        <param name="erParent">
+        </param>
+        <summary>
+            Ruft ab, der die EnumResult Daten Beladungszustände an die Anforderung den wurde Previoesly festgelegt, die von der Umgebung
+            </summary>
+        <returns>Ergebnis für die Ebenenanforderung</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFixedStringProperty">
+      <MemberSignature Language="C#" Value="protected string GetFixedStringProperty (string propertyName, bool removeEscape);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetFixedStringProperty(string propertyName, bool removeEscape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.GetFixedStringProperty(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="removeEscape" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Name der angeforderten Eigenschaft</param>
+        <param name="removeEscape">Ersetzen Sie doppelte Anführungszeichen durch ein einfaches Anführungszeichen</param>
+        <summary>
+            erhalten Sie eine feste (mit bekannten Wert aus dem Filter) Eigenschaft vom Typzeichenfolge
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty[] GetProperties (Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages usage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty[] GetProperties(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages usage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.GetProperties(Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="usage" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages" />
+      </Parameters>
+      <Docs>
+        <param name="usage">verwendungsfilter</param>
+        <summary>
+            Gibt die Eigenschaften des Objekts nach Auslastung
+            </summary>
+        <returns>ObjectProperty-Array</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty GetProperty (string name, Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages usage);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty GetProperty(string name, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages usage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.GetProperty(System.String,Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="usage" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name der Eigenschaft</param>
+        <param name="usage">vorgesehene Verwendung</param>
+        <summary>
+            Accessor für eine Eigenschaft nach Namen und Verwendung (interne Verwendung)
+            </summary>
+        <returns>Ausnahme, wenn die Eigenschaft die Verwendung-Anforderung nicht erfüllt wird oder nicht vorhanden ist, andernfalls coresponding Property-Objekt</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrnProperties">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty[] GetUrnProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty[] GetUrnProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.GetUrnProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            bis wir eine formale Möglichkeit verfügen, sodass jedes Objekt deklariert, welche Eigenschaften für den Urn verwendet diese optimale Schätzung einzutragen ist, sind versuchen
+            </summary>
+        <returns>Array von Eigenschaften, die im Urn verwendet werden</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public virtual void Initialize (object ci, Microsoft.SqlServer.Management.Sdk.Sfc.XPathExpressionBlock block);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(object ci, class Microsoft.SqlServer.Management.Sdk.Sfc.XPathExpressionBlock block) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.Initialize(System.Object,Microsoft.SqlServer.Management.Sdk.Sfc.XPathExpressionBlock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ci" Type="System.Object" />
+        <Parameter Name="block" Type="Microsoft.SqlServer.Management.Sdk.Sfc.XPathExpressionBlock" />
+      </Parameters>
+      <Docs>
+        <param name="ci">Verbindungsinformationen</param>
+        <param name="block">Sysntatictal-Struktur für den Filter für diese Ebene</param>
+        <summary>
+            Diese Ebene initialisieren
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="protected string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name des XPath-Ebene
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostProcess">
+      <MemberSignature Language="C#" Value="public virtual void PostProcess (Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erChildren);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PostProcess(class Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erChildren) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.PostProcess(Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="erChildren" Type="Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult" />
+      </Parameters>
+      <Docs>
+        <param name="erChildren">
+        </param>
+        <summary>
+            Dies wird aufgerufen, nachdem die Daten wurden Diensteigenschaften durch das letzte Objekt, damit die Chian vorbereitet wird, freigegeben werden, da die Objekte zwischen den Aufrufen freien beibehalten werden bestimmte aufrufen Daten
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.Request Request { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.Request Request" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.Request" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Request</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            die Anforderung für dieser Ebene aus einer eingeht Ebene heruntergefahren oder vom Benutzer ist die letzte Ebene
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultTypes">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.Management.Sdk.Sfc.ResultType[] ResultTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ResultType[] ResultTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.ResultTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ResultType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            zurückgeben Sie, welche Arten von Ergebnissen dieses Objekt unterstützt wird
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveParentRequest">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Management.Sdk.Sfc.Request RetrieveParentRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.Request RetrieveParentRequest() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.RetrieveParentRequest" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Request</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Überschreiben Sie diese Methode, um eine Anforderung für das übergeordnete Objekt der Antwort vom übergeordneten Objekt die Teilmenge der übergeordneten Objekte uns zu wird für die aktuelle Ebene, dessen Ergebnis generieren muss zu generieren.
+            </summary>
+        <returns>Anforderung für das übergeordnete Objekt</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProperty">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty TryGetProperty (string name, Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages usage);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty TryGetProperty(string name, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages usage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.TryGetProperty(System.String,Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ObjectProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="usage" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name der Eigenschaft</param>
+        <param name="usage">vorgesehene Verwendung</param>
+        <summary>
+            Accessor für eine Eigenschaft nach Namen und Verwendung (interne Verwendung)
+            </summary>
+        <returns>NULL, wenn die Eigenschaft die Verwendung-Anforderung nicht erfüllt wird oder nicht vorhanden ist, andernfalls coresponding Property-Objekt</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Urn">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Sdk.Sfc.Urn Urn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.Urn Urn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject.Urn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Urn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Diese Eigenschaft aktiv ist, allerdings nur, wenn eine Anforderung verarbeitet wurde
+            </summary>
+        <value>der XPath-Expression für die aktuellen Anforderung enthält</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

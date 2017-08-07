@@ -1,0 +1,174 @@
+<Type Name="SfcInstance&lt;K,T&gt;" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance&lt;K,T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class SfcInstance&lt;K,T&gt; : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance where K : SfcKey where T : SfcInstancenew()" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SfcInstance`2&lt;(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey) K, .ctor (class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance) T&gt; extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance`2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="K">
+      <Constraints>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="K">Der Typ des Schlüssels für die Instanzklasse</typeparam>
+    <typeparam name="T">Der Typ der Instanzklasse.</typeparam>
+    <summary>
+            Die generische Basisklasse für alle Typen der Sfc-Objekt in einer Domäne.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance`2.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityKey">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance`2.CreateIdentityKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Wrapper für unsere stark typisierte Version. Die nicht generische SfcInstance-Basis ist dies erforderlich.
+            </summary>
+        <returns>Der Schlüssel.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateKey">
+      <MemberSignature Language="C#" Value="protected abstract K CreateKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance !K CreateKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance`2.CreateKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>K</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Abgeleitete Klassen müssen diese Option, um einen Schlüssel für eine Instanz der Klasse aus seinen Eigenschaften erstellen implementieren.
+            </summary>
+        <returns>Der Schlüssel.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectFactory">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetObjectFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetObjectFactory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance`2.GetObjectFactory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeMetadata">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata GetTypeMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata GetTypeMetadata() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance`2.GetTypeMetadata" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Zugriff auf interne statische Klasse geben Metadaten.
+In der Regel von der domänenstamminstanz über Switch aufgerufen.
+Klicken Sie zum Anpassen des Typs TypeMetadata beim Aufrufen dieser Methode zu überspringen, und geben Sie eigene SfcTypeMetadata abgeleitetes Objekt für die Klasse zurück.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeMetadataImpl">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata GetTypeMetadataImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata GetTypeMetadataImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance`2.GetTypeMetadataImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Zugriff auf interne Instanz Klasse geben Metadaten.
+Dadurch werden die statischen Standardimplementierung eines Typs serialisiert SfcTypeMetadata zurückgegeben.
+Um einen Typ TypeMetadata anzupassen, überschreiben Sie diese Methode in der abgeleiteten Typ-Klasse, um auf Ihre eigenen Singleton SfcTypeMetadata abgeleitetes Objekt für diese Klasse verweisen.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityKey">
+      <MemberSignature Language="C#" Value="public K IdentityKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !K IdentityKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance`2.IdentityKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>K</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

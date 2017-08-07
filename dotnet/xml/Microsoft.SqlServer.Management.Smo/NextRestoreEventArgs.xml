@@ -1,0 +1,142 @@
+<Type Name="NextRestoreEventArgs" FullName="Microsoft.SqlServer.Management.Smo.NextRestoreEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class NextRestoreEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NextRestoreEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.NextRestoreEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SmoExtended</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Nächste wiederherstellen Ereignisargumente
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NextRestoreEventArgs (string backupSetName, string backupSetDescription, string deviceName, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string backupSetName, string backupSetDescription, string deviceName, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.NextRestoreEventArgs.#ctor(System.String,System.String,System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="backupSetName" Type="System.String" />
+        <Parameter Name="backupSetDescription" Type="System.String" />
+        <Parameter Name="deviceName" Type="System.String" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="backupSetName">Name des Sicherungssatzes.</param>
+        <param name="backupSetDescription">Die Beschreibung des Sicherungssatzes.</param>
+        <param name="deviceName">Der Name des Geräts.</param>
+        <param name="count">Die Anzahl.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.Smo.NextRestoreEventArgs" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupSetDescription">
+      <MemberSignature Language="C#" Value="public string BackupSetDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackupSetDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.NextRestoreEventArgs.BackupSetDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Beschreibung des Sicherungssatzes ab oder legt sie fest.
+            </summary>
+        <value>Die Beschreibung des Sicherungssatzes.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupSetName">
+      <MemberSignature Language="C#" Value="public string BackupSetName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackupSetName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.NextRestoreEventArgs.BackupSetName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen des Sicherungssatzes ab oder legt ihn fest.
+            </summary>
+        <value>Name des Sicherungssatzes.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="public bool Continue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Continue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.NextRestoreEventArgs.Continue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der nächste Wiederherstellungsvorgang fortgesetzt werden soll, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if continue; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.NextRestoreEventArgs.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt die Anzahl fest.
+            </summary>
+        <value>Die Anzahl.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DevicesName">
+      <MemberSignature Language="C#" Value="public string DevicesName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DevicesName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.NextRestoreEventArgs.DevicesName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen des Sicherungsmediums ab oder legt ihn fest.
+            </summary>
+        <value>Der Name des Sicherungsmediums.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

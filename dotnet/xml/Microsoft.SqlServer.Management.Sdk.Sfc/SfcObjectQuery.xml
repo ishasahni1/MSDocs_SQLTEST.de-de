@@ -1,0 +1,174 @@
+<Type Name="SfcObjectQuery" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQuery">
+  <TypeSignature Language="C#" Value="public class SfcObjectQuery" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SfcObjectQuery extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQuery" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Muss hinzugefügt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcObjectQuery (Microsoft.SqlServer.Management.Sdk.Sfc.IAlienRoot root);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.IAlienRoot root) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQuery.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.IAlienRoot)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="root" Type="Microsoft.SqlServer.Management.Sdk.Sfc.IAlienRoot" />
+      </Parameters>
+      <Docs>
+        <param name="root">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcObjectQuery (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain domain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain domain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQuery.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="domain" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain" />
+      </Parameters>
+      <Docs>
+        <param name="domain">Die Domäne der abzufragenden SfcInstance-Objektstruktur.</param>
+        <summary>
+            Erstellen Sie eine Objektabfrage für eine bestimmte Domäne Instanz-Objekthierarchie und die Verbindung an.
+Wenn Sie ExecuteIterator verwenden, und stellen eine andere Abfrage vor dem schließen möchten, erwägen Sie die Überladung, die Unterstützung für mehrere aktive Abfragen zeigt an, oder einfach verwenden Sie ExecuteCollection, um es zu vermeiden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcObjectQuery (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain domain, Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode activeQueriesMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain domain, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode activeQueriesMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQuery.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain,Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="domain" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain" />
+        <Parameter Name="activeQueriesMode" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode" />
+      </Parameters>
+      <Docs>
+        <param name="domain">Der Stamm der abzufragende SfcInstance-Objektstruktur.</param>
+        <param name="activeQueriesMode">CachedQueries vermeidet Probleme mit mehr als eine ausgeführte Abfrage zunächst die Abfrageergebnisse zwischengespeichert und Reader für Abfragedaten geschlossen.
+SingleActive MultipleActiveQueries angegeben, dass alle bereitgestellte Verbindung über die Domäne GetConnection-Methode annehmen soll, dass die primäre Verbindung mit einer Abfrage bereits aktiv ausgelastet ist und eine Alternative Verbindung möglicherweise besser geeignet ist, verwendet werden.</param>
+        <summary>
+            Erstellen Sie eine Objektabfrage für eine bestimmte Domäne-Instanz.
+Der Abfragemodus bestimmt die Behandlung von Anforderungen an einen öffnen-Iterator zurück, und die zu verwendende bestimmte Verbindung.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveQueriesMode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode ActiveQueriesMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode ActiveQueriesMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQuery.ActiveQueriesMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Einzelne oder mehrere aktive Abfragen?
+Wenn mehrere Abfragen wird angegeben, die Verbindung zurückgegeben, muss der Ausführung einer Abfrage in der Lage sein, und Ergebnisse der Haupt-Verbindung angenommen ist ausgelastet, mit einer Abfrage bereits aktiv.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteDataTable">
+      <MemberSignature Language="C#" Value="public System.Data.DataTable ExecuteDataTable (Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression query, string[] fields, Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[] orderByFields);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ExecuteDataTable(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression query, string[] fields, class Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[] orderByFields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQuery.ExecuteDataTable(Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression,System.String[],Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression" />
+        <Parameter Name="fields" Type="System.String[]" />
+        <Parameter Name="orderByFields" Type="Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[]" />
+      </Parameters>
+      <Docs>
+        <param name="query">Die zu verarbeitende Abfragezeichenfolge.</param>
+        <param name="fields">Die abzurufenden Feldnamen. Bei NULL werden alle unaufwändig zu erstellenden Standardfelder abgerufen.</param>
+        <param name="orderByFields">Die Feldnamen, nach denen sortiert werden soll. Wenn der Wert null wird keine Sortierung verwendet werden.</param>
+        <summary>
+            Führen Sie die Abfragezeichenfolge, um die angegebenen Felder abzurufen und eine vollständig aufgefüllte Datentabelle zurückzugeben.
+            </summary>
+        <returns>Die Datentabelle der Ergebnisse.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteIterator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ExecuteIterator (Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression query, string[] fields, Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[] orderByFields);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable ExecuteIterator(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression query, string[] fields, class Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[] orderByFields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQuery.ExecuteIterator(Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression,System.String[],Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression" />
+        <Parameter Name="fields" Type="System.String[]" />
+        <Parameter Name="orderByFields" Type="Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[]" />
+      </Parameters>
+      <Docs>
+        <param name="query">Die zu verarbeitende Abfragezeichenfolge.</param>
+        <param name="fields">Die abzurufenden Feldnamen. Bei NULL werden alle unaufwändig zu erstellenden Standardfelder abgerufen.</param>
+        <param name="orderByFields">
+        </param>
+        <summary>
+            Führen Sie die Abfragezeichenfolge, und geben Sie ein SfcObjectIterator zum Aufzählen der Ergebnisse, ohne Sie zwischenzuspeichern zurück.
+Wenn MultipleActiveQueries ist "true", geben Sie entweder eine geeignete Verbindung beim anfordert, oder verwenden Sie die ExecuteCachedIterator GetConnection stattdessen um dieses Problem zu vermeiden.
+            </summary>
+        <returns>Ein SfcObjectIterator zum Aufzählen der Ergebnisse. Dies eignet sich für die Verwendung von IEnumerable und muss freigegeben werden, wenn fertig.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SfcQueryExpression">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression SfcQueryExpression { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression SfcQueryExpression" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQuery.SfcQueryExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die neuesten Abfragezeichenfolge verarbeitet. Dies ist schreibgeschützt, da es sich bei jeder Ausführung der Abfrage die auszuführende Abfrage übergeben wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

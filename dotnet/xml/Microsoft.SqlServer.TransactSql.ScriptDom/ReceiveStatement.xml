@@ -1,0 +1,193 @@
+<Type Name="ReceiveStatement" FullName="Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement">
+  <TypeSignature Language="C#" Value="public class ReceiveStatement : Microsoft.SqlServer.TransactSql.ScriptDom.WaitForSupportedStatement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ReceiveStatement extends Microsoft.SqlServer.TransactSql.ScriptDom.WaitForSupportedStatement" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.TransactSql.ScriptDom</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.TransactSql.ScriptDom.WaitForSupportedStatement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt die RECEIVE-Anweisung
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReceiveStatement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept">
+      <MemberSignature Language="C#" Value="public override void Accept (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Accept(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement.Accept(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visitor" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor" />
+      </Parameters>
+      <Docs>
+        <param name="visitor">Muss hinzugefügt werden.</param>
+        <summary>
+            Akzeptiert Besucher
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptChildren">
+      <MemberSignature Language="C#" Value="public override void AcceptChildren (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AcceptChildren(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement.AcceptChildren(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visitor" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor" />
+      </Parameters>
+      <Docs>
+        <param name="visitor">Muss hinzugefügt werden.</param>
+        <summary>
+            Akzeptiert Besucher für untergeordnete Elemente
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Into">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.VariableTableReference Into { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.TransactSql.ScriptDom.VariableTableReference Into" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement.Into" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.VariableTableReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Tabelle in die Spalten aus empfangenen Nachrichten, optionale auswählen
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConversationGroupIdWhere">
+      <MemberSignature Language="C#" Value="public bool IsConversationGroupIdWhere { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConversationGroupIdWhere" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement.IsConversationGroupIdWhere" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            True, wenn die Konversationsgruppen-Id angegeben wurde, in der Where-Klausel, "false" andernfalls. Bedeutungslos, wenn Where ist null.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Queue">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName Queue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName Queue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement.Queue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Name der Warteschlange, von der Nachrichten empfangen werden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectElements">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.SelectElement&gt; SelectElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.SelectElement&gt; SelectElements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement.SelectElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.SelectElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dies sind die ausgewählten Spalten oder Variablen festlegen, die starke Typen von Objekten, die an dieser Stelle sein können "SelectColumn", "SelectSetVariable" sein.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.ScalarExpression Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.TransactSql.ScriptDom.ScalarExpression Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement.Top" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.ScalarExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optionale Anzahl der zurückzugebenden Meldungen
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Where">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.ValueExpression Where { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.TransactSql.ScriptDom.ValueExpression Where" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.ReceiveStatement.Where" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.ValueExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Konversation oder Konversationsgruppe für empfangene Nachrichten, die optional
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

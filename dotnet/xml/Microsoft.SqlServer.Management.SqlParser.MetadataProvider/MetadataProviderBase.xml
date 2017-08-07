@@ -1,0 +1,207 @@
+<Type Name="MetadataProviderBase" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase">
+  <TypeSignature Language="C#" Value="public abstract class MetadataProviderBase : Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MetadataProviderBase extends System.Object implements class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt die abstrakte Basisklasse für das Metadatenanbieter-Objekt bereit.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MetadataProviderBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase" />-Klasse, die die Standardobjekte <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup" />, <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup" />, <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup" /> und <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory" /> verwendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MetadataProviderBase (Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup builtInFunctionLookup, Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup collationLookup, Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup systemDataTypeLookup, Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory metadataFactory);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup builtInFunctionLookup, class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup collationLookup, class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup systemDataTypeLookup, class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory metadataFactory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase.#ctor(Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup,Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup,Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup,Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="builtInFunctionLookup" Type="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup" />
+        <Parameter Name="collationLookup" Type="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup" />
+        <Parameter Name="systemDataTypeLookup" Type="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup" />
+        <Parameter Name="metadataFactory" Type="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory" />
+      </Parameters>
+      <Docs>
+        <param name="builtInFunctionLookup">
+            Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup" />-Objekt, das Suchdienste für integrierte Funktionen bereitstellt. Wenn dieser Wert ist <c>null</c>, den Standardwert <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup" /> Objekt verwendet wird.
+            </param>
+        <param name="collationLookup">
+            Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup" />-Objekt, das Suchdienste für Systemsortierungen bereitstellt. Wenn dieser Wert ist <c>null</c>, den Standardwert <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup" /> Objekt verwendet wird.
+            </param>
+        <param name="systemDataTypeLookup">
+            Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup" />-Objekt, das Suchdienste für Systemdatentypen bereitstellt. Wenn dieser Wert ist <c>null</c>, den Standardwert <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup" /> Objekt verwendet wird.
+            </param>
+        <param name="metadataFactory">
+            Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory" />-Objekt, das Dienste für die Erstellung von Metadatenobjekten bereitstellt. Wenn dieser Wert ist <c>null</c>, den Standardwert <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory" /> Objekt verwendet wird.
+            </param>
+        <summary>
+            Initialisiert eine neue Instanz der <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase" />-Klasse, die die angegebenen Objekte <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup" />, <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup" />, <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup" /> und <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory" /> verwendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterBindHandler">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderEventHandler AfterBindHandler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderEventHandler AfterBindHandler" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase.AfterBindHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Methode zur Behandlung des AfterBind-Ereignisses ab.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderEventHandler" />-Objekt, durch das das AfterBind-Ereignis behandelt wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeBindHandler">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderEventHandler BeforeBindHandler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderEventHandler BeforeBindHandler" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase.BeforeBindHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Methode zur Behandlung des BeforeBind-Ereignisses ab.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderEventHandler" />-Objekt, durch das das BeforeBind-Ereignis behandelt wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltInFunctionLookup">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup BuiltInFunctionLookup { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup BuiltInFunctionLookup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase.BuiltInFunctionLookup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup" />-Objekt ab, das für die Suche nach integrierten Funktionen und globalen Variablen verwendet werden kann.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollationLookup">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup CollationLookup { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup CollationLookup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase.CollationLookup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup" />-Objekt ab, das für die Suche nach Systemsortierungen verwendet werden kann.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ICollationLookup" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataFactory">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory MetadataFactory { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory MetadataFactory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase.MetadataFactory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory" />-Objekt ab, das zum Erstellen von Metadatenobjekten verwendet werden kann.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataFactory" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Server">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.Management.SqlParser.Metadata.IServer Server { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IServer Server" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase.Server" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IServer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekt ab, das für den Zugriff auf serverseitige Metadatenobjekte wie Datenbanken, Schemas, Tabellen usw. verwendet werden kann.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemDataTypeLookup">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup SystemDataTypeLookup { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup SystemDataTypeLookup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataProviderBase.SystemDataTypeLookup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup" />-Objekt ab, das für die Suche und das Abrufen von Systemdatentypen verwendet werden kann.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

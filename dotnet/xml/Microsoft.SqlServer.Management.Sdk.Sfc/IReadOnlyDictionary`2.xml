@@ -1,0 +1,148 @@
+<Type Name="IReadOnlyDictionary&lt;K,T&gt;" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary&lt;K,T&gt;">
+  <TypeSignature Language="C#" Value="public interface IReadOnlyDictionary&lt;K,T&gt; : Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReadOnlyDictionary`2&lt;K, T&gt; implements class Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection, class Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="K" />
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="K">Die Art der Schlüssel im Wörterbuch</typeparam>
+    <typeparam name="T">Die Art der Werte im Wörterbuch</typeparam>
+    <summary>
+            Stellt eine generische schreibgeschützte Auflistung von Schlüssel/Wert-Paaren dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContainsKey">
+      <MemberSignature Language="C#" Value="public bool ContainsKey (K key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(!K key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2.ContainsKey(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key">Zu suchende in diesem Schlüssel <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2" />.</param>
+        <summary>
+            Bestimmt, ob die <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2" /> ein Element mit dem angegebenen Schlüssel enthält.
+            </summary>
+        <returns>
+          <c>true</c> if the <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2" /> contains an element 
+            with the key; otherwise, <c>false</c>.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public T this[K key] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Item(!K)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2.Item(`0)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key">Der Schlüssel des abzurufenden Werts.</param>
+        <summary>
+            Ruft den Wert mit dem angegebenen Schlüssel ab.
+            </summary>
+        <value>Der Wert mit dem angegebenen Schlüssel.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;K&gt; Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;!K&gt; Keys" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;K&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft eine <see cref="T:System.Collections.Generic.IEnumerable`1" /> mit den Schlüsseln der der <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2" />.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public bool TryGetValue (K key, out T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(!K key, !T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2.TryGetValue(`0,`1@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+        <Parameter Name="value" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="key">Der Schlüssel des abzurufenden Werts.</param>
+        <param name="value">
+            Bei der Rückgabe dieser Methode den zugeordneten Wert mit dem angegebenen Schlüssel, wenn der Schlüssel gefunden wird; andernfalls der Standardwert für den Typ des Wertparameters. Dieser Parameter wird nicht initialisiert übergeben.
+            </param>
+        <summary>
+            Ruft den mit dem angegebenen Schlüssel zugeordneten Wert ab.
+            </summary>
+        <returns>
+          <c>true</c> if the object that implements <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2" />
+            contains an element with the specified key; otherwise, <c>false</c>.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;T&gt; Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;!T&gt; Values" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft eine <see cref="T:System.Collections.Generic.IEnumerable`1" /> mit den Werten der <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyDictionary`2" />.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

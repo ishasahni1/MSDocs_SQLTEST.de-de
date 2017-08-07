@@ -1,0 +1,231 @@
+<Type Name="ExpressionNodeConstant" FullName="Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionNodeConstant : Microsoft.SqlServer.Management.Dmf.ExpressionNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionNodeConstant extends Microsoft.SqlServer.Management.Dmf.ExpressionNode" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dmf</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Dmf.ExpressionNode</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Knoten, die Konstanten darstellt.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionNodeConstant (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Konstantenwert</param>
+        <summary>
+            Konstanten Knoten erstellt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepClone">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Management.Dmf.ExpressionNode DeepClone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.SqlServer.Management.Dmf.ExpressionNode DeepClone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant.DeepClone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.ExpressionNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Tiefen Klon des aktuellen Knotens.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeProperties">
+      <MemberSignature Language="C#" Value="protected override void DeserializeProperties (System.Xml.XmlReader xr, bool includeResult);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeserializeProperties(class System.Xml.XmlReader xr, bool includeResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant.DeserializeProperties(System.Xml.XmlReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xr" Type="System.Xml.XmlReader" />
+        <Parameter Name="includeResult" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xr">XmlReader - müssen Leerzeichen ignorieren</param>
+        <param name="includeResult">
+        </param>
+        <summary>
+            Deserialisiert die Konstante Knoteneigenschaften
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoConvertToFilterNode">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode DoConvertToFilterNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode DoConvertToFilterNode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant.DoConvertToFilterNode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualProperties">
+      <MemberSignature Language="C#" Value="protected override bool EqualProperties (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualProperties(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant.EqualProperties(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Zu vergleichendes Objekt</param>
+        <summary>
+            Bestimmte Konstantentyp Vergleichstyp und NULL-Zulässigkeit des Vergleichsobjekts überprüft, die vom Aufrufer (Equals)
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeProperties">
+      <MemberSignature Language="C#" Value="protected override void SerializeProperties (System.Xml.XmlWriter xw, bool includeResult);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SerializeProperties(class System.Xml.XmlWriter xw, bool includeResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant.SerializeProperties(System.Xml.XmlWriter,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xw" Type="System.Xml.XmlWriter" />
+        <Parameter Name="includeResult" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xw">
+        </param>
+        <param name="includeResult">
+        </param>
+        <summary>
+            Serialisiert die Konstante Knoteneigenschaften
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Stellt-Ausdruck als eine Zeichenfolge in T-SQL like-syntax
+            </summary>
+        <returns />
+        <remarks>Wenn der Ausdruck ein String-Objekt ist. es wird in Anführungszeichen eingeschlossen werden mit "</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToStringForDisplay">
+      <MemberSignature Language="C#" Value="public override string ToStringForDisplay ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToStringForDisplay() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant.ToStringForDisplay" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Eine spezielle Methode, um einige einfache Knoten in der Benutzeroberfläche in vereinfachter Form anzuzeigen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ExpressionNodeConstant.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Konstanter Wert
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

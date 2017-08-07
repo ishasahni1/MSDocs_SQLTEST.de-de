@@ -1,0 +1,144 @@
+<Type Name="CodeAnalysisServiceSettings" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings">
+  <TypeSignature Language="C#" Value="public sealed class CodeAnalysisServiceSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeAnalysisServiceSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert die optionalen Konfigurationseinstellungen für eine <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" />. Diese Einstellungen können festlegen, welche Regeln ausgeführt werden, wie bestimmte Probleme unterdrückt werden und wo die Ergebnisse gespeichert werden.
+            
+            These settings can also be set on the <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> after it has been created, but are included
+            here to make construction more convenient.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeAnalysisServiceSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt ein neues <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings" /> Objekt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeAnalysisSucceededFile">
+      <MemberSignature Language="C#" Value="public string CodeAnalysisSucceededFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CodeAnalysisSucceededFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings.CodeAnalysisSucceededFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optionaler Pfad zu einer Datei, die erstellt wird, wenn die Analyse erfolgreich ist. Hiermit können Sie überprüfen, ob die Analyse ausgeführt werden sollte oder nicht. Bei der Analyse einer DACPAC-Datei können Sie beispielsweise durch den Vergleich der Änderungszeit der DACPAC-Datei mit der der Analysedatei feststellen, ob die DACPAC-Datei neuer ist als die letzte Analyse.
+            
+            This property directly maps to <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService.CodeAnalysisSucceededFile" />.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultsFile">
+      <MemberSignature Language="C#" Value="public string ResultsFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResultsFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings.ResultsFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optionaler Pfad einer Ergebnisdatei. Wenn dieser angegeben ist, speichert der Analysedienst alle Ergebnisse am Ende der Analyse in eine XML-Datei. Wenn kein Pfad angegeben wird, wird dies nicht automatisch ausgeführt wird, aber <see cref="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.SerializeResultsToXml(System.String)" /> können verwendet werden, um die Ergebnisse ausgegeben werden, nachdem die Analyse abgeschlossen wurde.
+            
+            This property directly maps to <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService.ResultsFile" />.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleSettings">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings RuleSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings RuleSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings.RuleSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optionale Regeleinstellungen legen die während der Analyse auszuführenden Regeln sowie den Schweregrad erkannter Probleme fest. Wenn kein <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings" /> werden angegeben, das Standardverhalten besteht darin, alle erkannten Regeln ausgeführt.
+            
+            This property is applied using <see cref="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService.ApplyRuleSettings(Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings)" />. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSuppressProblem">
+      <MemberSignature Language="C#" Value="public Predicate&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSuppressionContext&gt; ShouldSuppressProblem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Predicate`1&lt;class Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSuppressionContext&gt; ShouldSuppressProblem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings.ShouldSuppressProblem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Predicate&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSuppressionContext&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein optionales Prädikat, das zum Unterdrücken von Problemen verwendet werden kann, die bei der Analyse durch Regeln ausgelöst werden.
+Finden Sie unter <see cref="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService.SetProblemSuppressor(System.Predicate{Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSuppressionContext})" /> Weitere Informationen.
+            
+            This property is applied using <see cref="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService.SetProblemSuppressor(System.Predicate{Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSuppressionContext})" />. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationMode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisModelValidationMode ValidationMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisModelValidationMode ValidationMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings.ValidationMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisModelValidationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Bestimmt die Validierung für das Modell vor der Codeanalyse ausgeführt. Dies kann die Anforderung zu umgehen, dass eine TSqlModel gültig vor der Analyse durch eine Regel zur Codeanalyse verwendet werden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

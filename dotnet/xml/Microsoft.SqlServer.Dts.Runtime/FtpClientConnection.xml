@@ -1,0 +1,429 @@
+<Type Name="FtpClientConnection" FullName="Microsoft.SqlServer.Dts.Runtime.FtpClientConnection">
+  <TypeSignature Language="C#" Value="public sealed class FtpClientConnection : Microsoft.SqlServer.Dts.Runtime.DtsObject, Microsoft.SqlServer.Dts.Runtime.IDTSPersist" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FtpClientConnection extends Microsoft.SqlServer.Dts.Runtime.DtsObject implements class Microsoft.SqlServer.Dts.Runtime.IDTSPersist" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DtsObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPersist</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Führt Uploads und Downloads von Datendateien durch und verwaltet Verzeichnisse auf Servern. Diese Klasse kann nicht vererbt werden. </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FtpClientConnection (object unmanagedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object unmanagedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="unmanagedObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="unmanagedObject">Das nicht verwaltete Verbindungsobjekt, das als verwalteter FTP-Task erstellt werden soll.</param>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection" /> Klasse. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChunkSize">
+      <MemberSignature Language="C#" Value="public int ChunkSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ChunkSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.ChunkSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Wert ab, der die Mindestanzahl von Bytes angibt, die während eines FTP-Lese-/Schreibvorgangs (File Transfer Protocol) vom Server abgerufen oder an ihn gesendet werden, oder legt ihn fest.</summary>
+        <value>Eine ganze Zahl, die die Mindestanzahl abzurufender oder zu sendender Bytes enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Schließt die FTP-Verbindung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public bool Connect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Connect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.Connect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Öffnet die Verbindung zum Server und gibt einen Wert zurück, der das Ergebnis der Verbindung angibt.</summary>
+        <returns>"true", wenn die Verbindung hergestellt wird. "false", wenn die Verbindung nicht hergestellt wurde.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRemoteDirectory">
+      <MemberSignature Language="C#" Value="public void CreateRemoteDirectory (string remoteDirectoryPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreateRemoteDirectory(string remoteDirectoryPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.CreateRemoteDirectory(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="remoteDirectoryPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="remoteDirectoryPath">Eine Zeichenfolge, die den Pfad enthält, unter dem das Remoteverzeichnis erstellt werden soll.</param>
+        <summary>Erstellt ein Remoteverzeichnis.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteFiles">
+      <MemberSignature Language="C#" Value="public void DeleteFiles (string[] remoteFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteFiles(string[] remoteFiles) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.DeleteFiles(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="remoteFiles" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="remoteFiles">Die zu löschenden Remotedateien.</param>
+        <summary>Löscht die angegebenen Dateien vom FTP-Server (File Transfer Protocol).</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteRemoteDirectory">
+      <MemberSignature Language="C#" Value="public void DeleteRemoteDirectory (string remoteDirectoryPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteRemoteDirectory(string remoteDirectoryPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.DeleteRemoteDirectory(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="remoteDirectoryPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="remoteDirectoryPath">Der Pfad des zu löschenden Remoteverzeichnisses.</param>
+        <summary>Löscht ein Remoteverzeichnis.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetListing">
+      <MemberSignature Language="C#" Value="public void GetListing (out string[] folderNames, out string[] fileNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetListing(string[] folderNames, string[] fileNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.GetListing(System.String[]@,System.String[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="folderNames" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="fileNames" Type="System.String[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="folderNames">Ein Array, das die Ordner im aktuellen Ordner enthält.</param>
+        <param name="fileNames">Ein Array, das die Dateien im aktuellen Ordner enthält.</param>
+        <summary>Listet die Namen von Verzeichnissen und Dateien im angegebenen Ordner oder Verzeichnis des FTP-Servers auf.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWorkingDirectory">
+      <MemberSignature Language="C#" Value="public string GetWorkingDirectory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetWorkingDirectory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.GetWorkingDirectory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft das aktuelle Arbeitsverzeichnis auf dem FTP-Server (File Transfer Protocol) ab.</summary>
+        <returns>Eine Zeichenfolge, die das aktuelle Arbeitsverzeichnis enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlNode node, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlNode node, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.LoadFromXML(System.Xml.XmlNode,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="node">Der XmlNode, der die zu ladenden Informationen enthält.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein im XML-Format gespeichertes Paket zu laden, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveFiles">
+      <MemberSignature Language="C#" Value="public void ReceiveFiles (string[] remoteFileNames, string localPath, bool overwrite, bool isTransferAscii);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReceiveFiles(string[] remoteFileNames, string localPath, bool overwrite, bool isTransferAscii) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.ReceiveFiles(System.String[],System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="remoteFileNames" Type="System.String[]" />
+        <Parameter Name="localPath" Type="System.String" />
+        <Parameter Name="overwrite" Type="System.Boolean" />
+        <Parameter Name="isTransferAscii" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="remoteFileNames">Die zu empfangenden Dateien auf dem FTP-Server.</param>
+        <param name="localPath">Der lokale Pfad, unter dem die Remotedateien empfangen werden sollen.</param>
+        <param name="overwrite">Gibt an, ob die Dateien überschrieben werden sollen, wenn sie bereits auf dem lokalen Computer vorhanden sind. Der Wert "true" gibt an, dass der Task vorhandene Dateien überschrieben werden.</param>
+        <param name="isTransferAscii">Gibt an, ob Dateien im ASCII-Modus empfangen werden sollen. Der Wert "true" gibt an, dass die Dateien im ASCII-Modus empfangen werden sollen.</param>
+        <summary>Empfängt Dateien vom FTP-Server (File Transfer Protocol).</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Retries">
+      <MemberSignature Language="C#" Value="public int Retries { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Retries" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.Retries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt fest, wie häufig der Task die Ausführung eines Vorgangs versuchen kann. Der Wert 0 gibt an, dass es keine Begrenzung für Versuche.</summary>
+        <value>Eine ganze Zahl, die angibt, wie oft versucht die Verbindung des Protokolls FTP (File Transfer), senden das Paket aus, bevor ein Fehler auftritt. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (ref System.Xml.XmlDocument doc, System.Xml.XmlNode node, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class System.Xml.XmlNode node, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.SaveToXML(System.Xml.XmlDocument@,System.Xml.XmlNode,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument&amp;" RefType="ref" />
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Clientverbindungsinformationen gespeichert werden sollen.</param>
+        <param name="node">Der Knoten innerhalb des oben erwähnten Dokuments, in dem die Clientverbindungsinformationen gespeichert werden sollen.</param>
+        <param name="events">Ein Objekt, das <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> zum Auslösen von Fehlern, Warnungen oder Informationsereignissen implementiert.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket als XML-Datei zu speichern, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendFiles">
+      <MemberSignature Language="C#" Value="public void SendFiles (string[] localFileNames, string remotePath, bool overwrite, bool isTransferAscii);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendFiles(string[] localFileNames, string remotePath, bool overwrite, bool isTransferAscii) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.SendFiles(System.String[],System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localFileNames" Type="System.String[]" />
+        <Parameter Name="remotePath" Type="System.String" />
+        <Parameter Name="overwrite" Type="System.Boolean" />
+        <Parameter Name="isTransferAscii" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="localFileNames">Die zu sendenden Dateien auf dem FTP-Server.</param>
+        <param name="remotePath">Der Remotepfad, unter dem sich die Dateien befinden.</param>
+        <param name="overwrite">Gibt an, ob die Dateien überschrieben werden sollen, wenn sie bereits auf dem Remotecomputer vorhanden sind. Der Wert "true" gibt an, dass der Task vorhandene Dateien überschrieben werden.</param>
+        <param name="isTransferAscii">Gibt an, ob Dateien im ASCII-Modus gesendet werden sollen. Der Wert "true" gibt an, dass die Dateien im ASCII-Modus gesendet werden sollen.</param>
+        <summary>Sendet Dateien an den FTP-Server (File Transfer Protocol).</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerName">
+      <MemberSignature Language="C#" Value="public string ServerName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.ServerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des FTP-Servers (File Transfer Protocol) ab oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Namen des FTP-Servers enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerPassword">
+      <MemberSignature Language="C#" Value="public string ServerPassword { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerPassword" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.ServerPassword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legt das Kennwort für den in der <see cref="P:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.ServerName" />-Eigenschaft angegebenen Server fest. Diese Eigenschaft ist lesegeschützt.</summary>
+        <value>Das Kennwort für den im Servernamen angegebenen die <see cref="P:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.ServerName" /> Eigenschaft.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerPort">
+      <MemberSignature Language="C#" Value="public int ServerPort { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ServerPort" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.ServerPort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Portnummer auf dem Server ab oder legt sie fest.</summary>
+        <value>Eine ganze Zahl, die die Serverportnummer enthält. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerUserName">
+      <MemberSignature Language="C#" Value="public string ServerUserName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerUserName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.ServerUserName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Anmeldealias des Benutzers ab oder legt ihn fest. </summary>
+        <value>Eine Zeichenfolge, die den Anmeldealias des Benutzers enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWorkingDirectory">
+      <MemberSignature Language="C#" Value="public void SetWorkingDirectory (string currentDirectory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetWorkingDirectory(string currentDirectory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.SetWorkingDirectory(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="currentDirectory" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="currentDirectory">Der Pfad zum Verzeichnis, das als aktuelles Arbeitsverzeichnis festgelegt werden soll.</param>
+        <summary>Legt das aktuelle Arbeitsverzeichnis auf dem FTP-Server (File Transfer Protocol) fest.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public int Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, wie lange versucht wird, die Verbindung herzustellen, bevor ein Timeout eintritt, oder legt ihn fest.</summary>
+        <value>Eine ganze Zahl, der die Anzahl der Sekunden warten soll, bevor die Verbindung fehlschlägt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsePassiveMode">
+      <MemberSignature Language="C#" Value="public bool UsePassiveMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsePassiveMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.FtpClientConnection.UsePassiveMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert ab, der angibt, ob der Task sendet und Dateien im passiven Modus empfängt fest. </summary>
+        <value>"true", wenn der Task sendet und Dateien im passiven Modus empfängt. "false", wenn der Task den aktiven Modus verwendet wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,860 @@
+<Type Name="IDTSComponentMetaData100" FullName="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100">
+  <TypeSignature Language="C#" Value="public interface IDTSComponentMetaData100 : Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSObject100" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDTSComponentMetaData100 implements class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSObject100" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.DTSPipelineWrap</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSObject100</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("C5C8827B-60EC-4B5A-9D14-724A5683811F")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(System.Runtime.InteropServices.TypeLibTypeFlags.FDual | System.Runtime.InteropServices.TypeLibTypeFlags.FDispatchable)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enthält die Definition einer Datenflusskomponente, einschließlich der für eine Datenflusskomponente definierten, benutzerdefinierten Eigenschaften, Eingaben, Ausgaben sowie Eingabe- und Ausgabespalten.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AreInputColumnsValid">
+      <MemberSignature Language="C#" Value="public bool AreInputColumnsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AreInputColumnsValid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.AreInputColumnsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die Eingabespalten in <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100" /> auf vorhandene Spalten aus der Upstreamkomponente verweisen.</summary>
+        <value>True, wenn die Eingabespalten in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumnCollection100" /> auf Upstreamspalten verweisen, andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComponentClassID">
+      <MemberSignature Language="C#" Value="public string ComponentClassID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ComponentClassID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.ComponentClassID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die CLSID einer Komponente ab, die von den Komponentenmetadaten beschrieben wird, oder legt sie fest.</summary>
+        <value>Die CLSID oder PROGID der Komponente, die durch <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100" /> dargestellt wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContactInfo">
+      <MemberSignature Language="C#" Value="public string ContactInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContactInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.ContactInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Kontaktinformationen des Entwicklers einer Komponente ab oder legt sie fest.</summary>
+        <value>Die Kontaktinformationen für die Komponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomPropertyCollection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomPropertyCollection100 CustomPropertyCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomPropertyCollection100 CustomPropertyCollection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.CustomPropertyCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomPropertyCollection100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung benutzerdefinierter Eigenschaften ab, die von einer Komponente verfügbar gemacht werden.</summary>
+        <value>Die Auflistung benutzerdefinierter Eigenschaften, die von einer Komponente verfügbar gemacht werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Beschreibung der Komponente ab oder legt sie fest.</summary>
+        <value>Die Beschreibung der Komponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireCustomEvent">
+      <MemberSignature Language="C#" Value="public void FireCustomEvent (string EventName, string EventText, ref object[] ppsaArguments, string SubComponent, out bool pbFireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FireCustomEvent(string EventName, string EventText, object[] ppsaArguments, string SubComponent, bool pbFireAgain) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.FireCustomEvent(System.String,System.String,System.Object[]@,System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(130)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EventName" Type="System.String" />
+        <Parameter Name="EventText" Type="System.String" />
+        <Parameter Name="ppsaArguments" Type="System.Object[]&amp;" RefType="ref" />
+        <Parameter Name="SubComponent" Type="System.String" />
+        <Parameter Name="pbFireAgain" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="EventName">Der Name des benutzerdefinierten Ereignisses.</param>
+        <param name="EventText">Der Text zur Beschreibung des Ereignisses.</param>
+        <param name="ppsaArguments">Das Array von Argumenten, die mit den bei der Definition des benutzerdefinierten Ereignisses festgelegten Argumenten übereinstimmen.</param>
+        <param name="SubComponent">Der Name der Komponente, die das benutzerdefinierte Ereignis auslöst.</param>
+        <param name="pbFireAgain">Gibt an, ob das Ereignis in der Zukunft erneut ausgelöst werden soll.</param>
+        <summary>Löst ein von einer Komponente definiertes, benutzerdefiniertes Ereignis aus.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireError">
+      <MemberSignature Language="C#" Value="public void FireError (int ErrorCode, string SubComponent, string Description, string HelpFile, int HelpContext, out bool pbCancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FireError(int32 ErrorCode, string SubComponent, string Description, string HelpFile, int32 HelpContext, bool pbCancel) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.FireError(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ErrorCode" Type="System.Int32" />
+        <Parameter Name="SubComponent" Type="System.String" />
+        <Parameter Name="Description" Type="System.String" />
+        <Parameter Name="HelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+        <Parameter Name="pbCancel" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ErrorCode">Der von der Komponente definierte Fehlercode.</param>
+        <param name="SubComponent">Der Name der Komponente, die das Ereignis auslöst.</param>
+        <param name="Description">Die Beschreibung des Fehlers.</param>
+        <param name="HelpFile">Die Hilfedatei, die weitere Informationen zum Fehlerereignis bereitstellt.</param>
+        <param name="HelpContext">Die Kontext-ID für den Fehler.</param>
+        <param name="pbCancel">Gibt an, ob die Ausführung der Komponente abgebrochen wird.</param>
+        <summary>Löst ein <see cref="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSEvents100.OnError(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSRuntimeObject100,System.Int32,System.String,System.String,System.String,System.Int32,System.String,System.Boolean@)" /> Ereignis.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireInformation">
+      <MemberSignature Language="C#" Value="public void FireInformation (int InformationCode, string SubComponent, string Description, string HelpFile, int HelpContext, out bool pbFireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FireInformation(int32 InformationCode, string SubComponent, string Description, string HelpFile, int32 HelpContext, bool pbFireAgain) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.FireInformation(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="InformationCode" Type="System.Int32" />
+        <Parameter Name="SubComponent" Type="System.String" />
+        <Parameter Name="Description" Type="System.String" />
+        <Parameter Name="HelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+        <Parameter Name="pbFireAgain" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="InformationCode">Der von der Komponente definierte Informationscode.</param>
+        <param name="SubComponent">Der Name der Komponente, die das Ereignis auslöst.</param>
+        <param name="Description">Die Beschreibung des Informationsereignisses.</param>
+        <param name="HelpFile">Die Hilfedatei, die weitere Informationen zum Informationsereignis bereitstellt.</param>
+        <param name="HelpContext">Die Kontext-ID für die Information.</param>
+        <param name="pbFireAgain">Gibt an, ob das Ereignis in der Zukunft erneut ausgelöst werden soll.</param>
+        <summary>Löst ein <see cref="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSEvents100.OnInformation(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSRuntimeObject100,System.Int32,System.String,System.String,System.String,System.Int32,System.String,System.Boolean@)" /> Ereignis.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireProgress">
+      <MemberSignature Language="C#" Value="public void FireProgress (string bstrProgressDescription, int lPercentComplete, int lProgressCountLow, int lProgressCountHigh, string bstrSubComponent, out bool pbFireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FireProgress(string bstrProgressDescription, int32 lPercentComplete, int32 lProgressCountLow, int32 lProgressCountHigh, string bstrSubComponent, bool pbFireAgain) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.FireProgress(System.String,System.Int32,System.Int32,System.Int32,System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(134)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrProgressDescription" Type="System.String" />
+        <Parameter Name="lPercentComplete" Type="System.Int32" />
+        <Parameter Name="lProgressCountLow" Type="System.Int32" />
+        <Parameter Name="lProgressCountHigh" Type="System.Int32" />
+        <Parameter Name="bstrSubComponent" Type="System.String" />
+        <Parameter Name="pbFireAgain" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="bstrProgressDescription">Eine Beschreibung des Fortschritts und des Status.</param>
+        <param name="lPercentComplete">Der Prozentsatz, zu dem der Task abgeschlossen wurde.</param>
+        <param name="lProgressCountLow">Die unteren 32 Bits der Einheiten wurden abgeschlossen.</param>
+        <param name="lProgressCountHigh">Die oberen 32 Bits der Einheiten wurden abgeschlossen.</param>
+        <param name="bstrSubComponent">Die Zeichenfolge, die den Namen der Komponente darstellt, welche das Ereignis auslöst.</param>
+        <param name="pbFireAgain">"true" heraufstufen weiterhin das Ereignis erneut als Ausführung der Aufgabe. andernfalls "false".</param>
+        <summary>Löst ein <see cref="M:Microsoft.SqlServer.Dts.Runtime.IDTSEvents.OnProgress(Microsoft.SqlServer.Dts.Runtime.TaskHost,System.String,System.Int32,System.Int32,System.Int32,System.String,System.Boolean@)" /> Ereignis.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireWarning">
+      <MemberSignature Language="C#" Value="public void FireWarning (int WarningCode, string SubComponent, string Description, string HelpFile, int HelpContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FireWarning(int32 WarningCode, string SubComponent, string Description, string HelpFile, int32 HelpContext) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.FireWarning(System.Int32,System.String,System.String,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="WarningCode" Type="System.Int32" />
+        <Parameter Name="SubComponent" Type="System.String" />
+        <Parameter Name="Description" Type="System.String" />
+        <Parameter Name="HelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="WarningCode">Der von der Komponente definierte Fehlercode.</param>
+        <param name="SubComponent">Der Name der Komponente, die die Warnung auslöst.</param>
+        <param name="Description">Die Beschreibung der Warnung.</param>
+        <param name="HelpFile">Die Hilfedatei, die weitere Informationen zur Warnung enthält.</param>
+        <param name="HelpContext">Die Hilfe-Kontext-ID der Warnung.</param>
+        <summary>Löst ein <see cref="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSEvents100.OnWarning(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSRuntimeObject100,System.Int32,System.String,System.String,System.String,System.Int32,System.String)" /> Ereignis.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComponentView">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentView100 GetComponentView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentView100 GetComponentView() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.GetComponentView" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(119)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentView100</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentView100" />-Schnittstelle für eine Komponente ab, die Transaktionsbearbeitungen der Komponentenmetadaten unterstützt.</summary>
+        <returns>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentView100" /> Schnittstelle der Komponente.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetErrorDescription">
+      <MemberSignature Language="C#" Value="public string GetErrorDescription (int hrError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetErrorDescription(int32 hrError) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.GetErrorDescription(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(116)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hrError" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hrError">Der Fehlercode, dessen Beschreibung abgerufen wird.</param>
+        <summary>Ruft die Beschreibung eines internen Integrationsdienste Fehlercodes ab.</summary>
+        <returns>Die Beschreibung des angegebenen Fehlercodes.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public int ID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Bezeichner einer Komponente ab oder legt ihn fest.</summary>
+        <value>Der Bezeichner einer Komponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentificationString">
+      <MemberSignature Language="C#" Value="public string IdentificationString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IdentificationString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.IdentificationString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine Zeichenfolge ab, durch die die Komponente eindeutig identifiziert wird.</summary>
+        <value>Eine Zeichenfolge, die die Komponentenmetadaten eindeutig identifiziert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementPipelinePerfCounter">
+      <MemberSignature Language="C#" Value="public void IncrementPipelinePerfCounter (uint dwCounterID, uint dwDifference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IncrementPipelinePerfCounter(unsigned int32 dwCounterID, unsigned int32 dwDifference) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.IncrementPipelinePerfCounter(System.UInt32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwCounterID" Type="System.UInt32" />
+        <Parameter Name="dwDifference" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="dwCounterID">Die ID des Leistungsindikators, der schrittweise erhöht werden soll.</param>
+        <param name="dwDifference">Der Wert, um den der Indikator schrittweise erhöht wird.</param>
+        <summary>Erhöht einen Datenfluss-Leistungsindikator schrittweise.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputCollection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputCollection100 InputCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputCollection100 InputCollection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.InputCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputCollection100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> Objekte für eine Komponente.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputCollection100" />-Auflistung der Komponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instantiate">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.CManagedComponentWrapper Instantiate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.CManagedComponentWrapper Instantiate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.Instantiate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.CManagedComponentWrapper</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Erstellt eine Instanz einer Komponente, die gemäß der <see cref="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.ComponentClassID" /> Eigenschaft.</summary>
+        <returns>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.CManagedComponentWrapper" /> -Klasse der Komponente.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultLocale">
+      <MemberSignature Language="C#" Value="public bool IsDefaultLocale { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDefaultLocale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.IsDefaultLocale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(124)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(124)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob das von einer Komponente verwendete Gebietsschema das Standardgebietsschema für den Computer ist, auf dem die Komponente ausgeführt wird.</summary>
+        <value>"true", wenn das Gebietsschema der Metadaten das Standardgebietsschema auf dem Computer ist; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocaleID">
+      <MemberSignature Language="C#" Value="public int LocaleID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LocaleID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.LocaleID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den von einer Komponente verwendeten Gebietsschemabezeichner ab oder legt diesen fest.</summary>
+        <value>Der von der Komponente verwendete Gebietsschemabezeichner.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Komponente ab oder legt ihn fest.</summary>
+        <value>Der Name der Komponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSObjectType ObjectType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSObjectType ObjectType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.ObjectType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSObjectType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die Komponente eine Datenflusskomponente ist.</summary>
+        <value>Die <see cref="F:Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSObjectType.OT_COMPONENT" /> Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSObjectType" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputCollection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputCollection100 OutputCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputCollection100 OutputCollection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.OutputCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputCollection100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung der von einer Komponente definierten <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" />-Objekte ab.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputCollection100" /> der Komponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PipelineVersion">
+      <MemberSignature Language="C#" Value="public int PipelineVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PipelineVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.PipelineVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(132)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(132)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(132)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Version des Datenflusstasks ab, in dem eine Komponente ausgeführt werden soll, oder legt sie fest.</summary>
+        <value>Die Version des Datenflusstasks, innerhalb derer die Komponente zur Ausführung entworfen wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostLogMessage">
+      <MemberSignature Language="C#" Value="public void PostLogMessage (string bstrEventName, string bstrSourceName, string bstrMessageText, DateTime dateStartTime, DateTime dateEndTime, int lDataCode, ref byte[] psaDataBytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PostLogMessage(string bstrEventName, string bstrSourceName, string bstrMessageText, valuetype System.DateTime dateStartTime, valuetype System.DateTime dateEndTime, int32 lDataCode, unsigned int8[] psaDataBytes) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.PostLogMessage(System.String,System.String,System.String,System.DateTime,System.DateTime,System.Int32,System.Byte[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrEventName" Type="System.String" />
+        <Parameter Name="bstrSourceName" Type="System.String" />
+        <Parameter Name="bstrMessageText" Type="System.String" />
+        <Parameter Name="dateStartTime" Type="System.DateTime" />
+        <Parameter Name="dateEndTime" Type="System.DateTime" />
+        <Parameter Name="lDataCode" Type="System.Int32" />
+        <Parameter Name="psaDataBytes" Type="System.Byte[]&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="bstrEventName">Der Name des Protokolleintrags.</param>
+        <param name="bstrSourceName">Der Name der Komponente, durch die der Protokolleintrag erstellt wird.</param>
+        <param name="bstrMessageText">Die im Protokolltext enthaltene Meldung.</param>
+        <param name="dateStartTime">Die Anfangszeit des Ereignisses.</param>
+        <param name="dateEndTime">Die Beendigungszeit des Ereignisses.</param>
+        <param name="lDataCode">Der Datencode des Protokolleintrags.</param>
+        <param name="psaDataBytes">Ein im Protokolleintrag enthaltenes Bytearray.</param>
+        <summary>Schreibt einen Eintrag in ein Paketprotokoll.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveInvalidInputColumns">
+      <MemberSignature Language="C#" Value="public void RemoveInvalidInputColumns ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveInvalidInputColumns() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.RemoveInvalidInputColumns" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(115)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Entfernt ungültige <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" />-Objekte aus <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumnCollection100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuntimeConnectionCollection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSRuntimeConnectionCollection100 RuntimeConnectionCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSRuntimeConnectionCollection100 RuntimeConnectionCollection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.RuntimeConnectionCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSRuntimeConnectionCollection100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSRuntimeConnection100" /> Objekte für eine Komponente.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSRuntimeConnectionCollection100" /> für die Komponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsesDispositions">
+      <MemberSignature Language="C#" Value="public bool UsesDispositions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsesDispositions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.UsesDispositions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(125)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(125)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(125)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die Komponente Dispositionen verwendet, oder legt ihn fest.</summary>
+        <value>"true", wenn die Komponente Dispositionen verwendet; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus Validate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.Validate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(120)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die Überprüfung der Komponentenmetadaten auf.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateExternalMetadata">
+      <MemberSignature Language="C#" Value="public bool ValidateExternalMetadata { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidateExternalMetadata" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.ValidateExternalMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die Komponente ihre Spaltenmetadaten zur Entwurfszeit anhand ihrer externen Datenquelle überprüft, oder legt ihn fest.</summary>
+        <value>"true", wenn die Komponente ihre Spaltenmetadaten für die externe Datenquelle während der Entwurfszeit überprüfen soll; andernfalls "false". Der Standardwert ist true.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public int Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(131)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(131)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(131)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Version der Komponente ab oder legt sie fest.</summary>
+        <value>Die Versionsnummer der Komponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

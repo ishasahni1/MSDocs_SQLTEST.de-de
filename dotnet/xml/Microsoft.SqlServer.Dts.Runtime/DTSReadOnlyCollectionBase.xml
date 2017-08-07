@@ -1,0 +1,195 @@
+<Type Name="DTSReadOnlyCollectionBase" FullName="Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase">
+  <TypeSignature Language="C#" Value="public abstract class DTSReadOnlyCollectionBase : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DTSReadOnlyCollectionBase extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Definiert eine abstrakte Basisklasse zur Implementierung der allgemeinen Elemente, die von allen schreibgeschützten Integration Services-Auflistungen verwendet werden. Es stellt die abstrakte Basisklasse (MustInherit in Visual Basic) für eine stark typisierte Auflistung bereit.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">Das eindimensionale http://go.microsoft.com/fwlink/?LinkId=27029 array, das Ziel der aus kopierten Elemente <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />. Das Array muss über eine nullbasierte Indizierung verfügen.</param>
+        <param name="index">Der nullbasierte Index im Array, bei dem das Kopieren beginnt.</param>
+        <summary>Kopiert die gesamte <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" /> auf ein kompatibles eindimensionales Array, beginnend am angegebenen Index des Zielarrays.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Anzahl der Elemente in der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" /> Instanz.</summary>
+        <value>Eine ganze Zahl, die die Anzahl der in der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />-Instanz enthaltenen Elemente enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateManagedObject">
+      <MemberSignature Language="C#" Value="protected abstract object CreateManagedObject (object unmanagedObj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object CreateManagedObject(object unmanagedObj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase.CreateManagedObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unmanagedObj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="unmanagedObj">Das nicht verwaltete Objekt.</param>
+        <summary>Erstellt ein verwaltetes Objekt aus einem nicht verwalteten Objekt.</summary>
+        <returns>Ein verwaltetes Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCount">
+      <MemberSignature Language="C#" Value="protected abstract int GetCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 GetCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase.GetCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die Anzahl der Objekte in der Auflistung ab.</summary>
+        <returns>Die Anzahl der -Objekte in der -Auflistung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt einen Enumerator, der durchlaufen kann die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" /> Instanz.</summary>
+        <returns>Gibt einen IEnumerator für die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" /> Instanz.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedEnumerator">
+      <MemberSignature Language="C#" Value="protected abstract System.Collections.IEnumerator GetManagedEnumerator (object unmanagedEnum);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.IEnumerator GetManagedEnumerator(object unmanagedEnum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase.GetManagedEnumerator(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unmanagedEnum" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="unmanagedEnum">Der nicht verwaltete Enumerator.</param>
+        <summary>Ruft den verwalteten Enumerator aus einem nicht verwalteten Enumerator ab.</summary>
+        <returns>Ein verwalteter Enumerator.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert, der angibt, ob der Zugriff auf die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" /> synchronisiert (threadsicher) ist.</summary>
+        <value>True, wenn der Zugriff auf die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" /> synchronisiert (threadsicher) ist, andernfalls false. Der Standardwert ist false.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_unmanagedColl">
+      <MemberSignature Language="C#" Value="protected System.Collections.IEnumerable m_unmanagedColl;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Collections.IEnumerable m_unmanagedColl" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase.m_unmanagedColl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Die nicht verwaltete Auflistung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein Objekt, das verwendet werden kann, zum Synchronisieren des Zugriffs auf die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />.</summary>
+        <value>Ein Objekt, das verwendet werden kann, zum Synchronisieren des Zugriffs auf die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

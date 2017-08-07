@@ -1,0 +1,193 @@
+<Type Name="DacPackageExtensions" FullName="Microsoft.SqlServer.Dac.DacPackageExtensions">
+  <TypeSignature Language="C#" Value="public static class DacPackageExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DacPackageExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.DacPackageExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt Erweiterungsmethoden zur Unterstützung der Bearbeitung von DacPackage-Objekten bereit.
+Diese Erweiterungsmethoden werden auf einer vorhandenen<see cref="T:Microsoft.SqlServer.Dac.DacPackage" /></summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuildPackage">
+      <MemberSignature Language="C#" Value="public static void BuildPackage (System.IO.Stream stream, Microsoft.SqlServer.Dac.Model.TSqlModel model, Microsoft.SqlServer.Dac.PackageMetadata packageMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BuildPackage(class System.IO.Stream stream, class Microsoft.SqlServer.Dac.Model.TSqlModel model, class Microsoft.SqlServer.Dac.PackageMetadata packageMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackageExtensions.BuildPackage(System.IO.Stream,Microsoft.SqlServer.Dac.Model.TSqlModel,Microsoft.SqlServer.Dac.PackageMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="model" Type="Microsoft.SqlServer.Dac.Model.TSqlModel" />
+        <Parameter Name="packageMetadata" Type="Microsoft.SqlServer.Dac.PackageMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+          <see cref="T:System.IO.Stream" />, in den der Paketinhalt serialisiert wurde.</param>
+        <param name="model">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />, das das Modell darstellt, das im Paket gespeichert werden soll.</param>
+        <param name="packageMetadata">Metadateninformationen, die das Paket beschreiben.</param>
+        <summary>
+            Erstellt ein Paket mit dem angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> und speichert es im angegebenen <see cref="T:System.IO.Stream" />.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">Wenn Fehler während der Paketserialisierung auftreten, einschließlich Fehler beim Validieren des Modells.</exception>
+        <exception cref="T:System.ArgumentNullException">Wenn der <paramref name="stream" />-Parameter oder der <paramref name="model" />-Parameter NULL ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildPackage">
+      <MemberSignature Language="C#" Value="public static void BuildPackage (string packageFilePath, Microsoft.SqlServer.Dac.Model.TSqlModel model, Microsoft.SqlServer.Dac.PackageMetadata packageMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BuildPackage(string packageFilePath, class Microsoft.SqlServer.Dac.Model.TSqlModel model, class Microsoft.SqlServer.Dac.PackageMetadata packageMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackageExtensions.BuildPackage(System.String,Microsoft.SqlServer.Dac.Model.TSqlModel,Microsoft.SqlServer.Dac.PackageMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageFilePath" Type="System.String" />
+        <Parameter Name="model" Type="Microsoft.SqlServer.Dac.Model.TSqlModel" />
+        <Parameter Name="packageMetadata" Type="Microsoft.SqlServer.Dac.PackageMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="packageFilePath">Pfad der Paketdatei.</param>
+        <param name="model">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />, das das Modell darstellt, das im Paket gespeichert werden soll.</param>
+        <param name="packageMetadata">Metadateninformationen, die das Paket beschreiben.</param>
+        <summary>
+            Erstellt ein Paket mit dem angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> und speichert es am angegebenen Speicherort.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">Wenn Fehler während der Paketserialisierung auftreten, einschließlich Fehler beim Validieren des Modells.</exception>
+        <exception cref="T:System.ArgumentNullException">Wenn der <paramref name="packageFilePath" />-Parameter oder der <paramref name="model" />-Parameter NULL ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildPackage">
+      <MemberSignature Language="C#" Value="public static void BuildPackage (System.IO.Stream stream, Microsoft.SqlServer.Dac.Model.TSqlModel model, Microsoft.SqlServer.Dac.PackageMetadata packageMetadata, Microsoft.SqlServer.Dac.PackageOptions packageOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BuildPackage(class System.IO.Stream stream, class Microsoft.SqlServer.Dac.Model.TSqlModel model, class Microsoft.SqlServer.Dac.PackageMetadata packageMetadata, class Microsoft.SqlServer.Dac.PackageOptions packageOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackageExtensions.BuildPackage(System.IO.Stream,Microsoft.SqlServer.Dac.Model.TSqlModel,Microsoft.SqlServer.Dac.PackageMetadata,Microsoft.SqlServer.Dac.PackageOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="model" Type="Microsoft.SqlServer.Dac.Model.TSqlModel" />
+        <Parameter Name="packageMetadata" Type="Microsoft.SqlServer.Dac.PackageMetadata" />
+        <Parameter Name="packageOptions" Type="Microsoft.SqlServer.Dac.PackageOptions" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+          <see cref="T:System.IO.Stream" />, in den der Paketinhalt serialisiert wurde.</param>
+        <param name="model">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />, das das Modell darstellt, das im Paket gespeichert werden soll.</param>
+        <param name="packageMetadata">Metadateninformationen, die das Paket beschreiben.</param>
+        <param name="packageOptions">
+          <see cref="T:Microsoft.SqlServer.Dac.PackageOptions" />, die erweiterte Optionen und zusätzliche Artefakte definieren.</param>
+        <summary>
+            Erstellt ein Paket mit dem angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> und speichert es im angegebenen <see cref="T:System.IO.Stream" />.
+Zusätzlich zum <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> können andere Artefakte wie Umgestaltungsprotokoll und Bereitstellungs-Contributors in <paramref name="packageOptions" /> angegeben werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">Wenn Fehler während der Paketserialisierung auftreten, einschließlich Fehler beim Validieren des Modells.</exception>
+        <exception cref="T:System.ArgumentNullException">Wenn der <paramref name="stream" />-Parameter oder der <paramref name="model" />-Parameter NULL ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildPackage">
+      <MemberSignature Language="C#" Value="public static void BuildPackage (string packageFilePath, Microsoft.SqlServer.Dac.Model.TSqlModel model, Microsoft.SqlServer.Dac.PackageMetadata packageMetadata, Microsoft.SqlServer.Dac.PackageOptions packageOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BuildPackage(string packageFilePath, class Microsoft.SqlServer.Dac.Model.TSqlModel model, class Microsoft.SqlServer.Dac.PackageMetadata packageMetadata, class Microsoft.SqlServer.Dac.PackageOptions packageOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackageExtensions.BuildPackage(System.String,Microsoft.SqlServer.Dac.Model.TSqlModel,Microsoft.SqlServer.Dac.PackageMetadata,Microsoft.SqlServer.Dac.PackageOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageFilePath" Type="System.String" />
+        <Parameter Name="model" Type="Microsoft.SqlServer.Dac.Model.TSqlModel" />
+        <Parameter Name="packageMetadata" Type="Microsoft.SqlServer.Dac.PackageMetadata" />
+        <Parameter Name="packageOptions" Type="Microsoft.SqlServer.Dac.PackageOptions" />
+      </Parameters>
+      <Docs>
+        <param name="packageFilePath">Pfad der Paketdatei.</param>
+        <param name="model">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />, das das Modell darstellt, das im Paket gespeichert werden soll.</param>
+        <param name="packageMetadata">Metadateninformationen, die das Paket beschreiben.</param>
+        <param name="packageOptions">
+          <see cref="T:Microsoft.SqlServer.Dac.PackageOptions" />, die erweiterte Optionen und zusätzliche Artefakte definieren.</param>
+        <summary>
+            Erstellt ein Paket mit dem angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> und speichert es am angegebenen Speicherort.
+Zusätzlich zum <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> können andere Artefakte wie Umgestaltungsprotokoll und Bereitstellungs-Contributors in <paramref name="packageOptions" /> angegeben werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">Wenn Fehler während der Paketserialisierung auftreten, einschließlich Fehler beim Validieren des Modells.</exception>
+        <exception cref="T:System.ArgumentNullException">Wenn der <paramref name="packageFilePath" />-Parameter oder der <paramref name="model" />-Parameter NULL ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateModel">
+      <MemberSignature Language="C#" Value="public static void UpdateModel (this Microsoft.SqlServer.Dac.DacPackage dacPackage, Microsoft.SqlServer.Dac.Model.TSqlModel newModel, Microsoft.SqlServer.Dac.PackageMetadata packageMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateModel(class Microsoft.SqlServer.Dac.DacPackage dacPackage, class Microsoft.SqlServer.Dac.Model.TSqlModel newModel, class Microsoft.SqlServer.Dac.PackageMetadata packageMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackageExtensions.UpdateModel(Microsoft.SqlServer.Dac.DacPackage,Microsoft.SqlServer.Dac.Model.TSqlModel,Microsoft.SqlServer.Dac.PackageMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dacPackage" Type="Microsoft.SqlServer.Dac.DacPackage" RefType="this" />
+        <Parameter Name="newModel" Type="Microsoft.SqlServer.Dac.Model.TSqlModel" />
+        <Parameter Name="packageMetadata" Type="Microsoft.SqlServer.Dac.PackageMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="dacPackage">
+          Das zu aktualisierende <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /></param>
+        <param name="newModel">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />, das das Modell darstellt, das im Paket gespeichert werden soll.</param>
+        <param name="packageMetadata">
+          <see cref="T:Microsoft.SqlServer.Dac.PackageMetadata" />, die Name, Version und zu verwendende Beschreibung für das <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> angeben, oder NULL, wenn die Paketinformationen unverändert beibehalten werden sollen. </param>
+        <summary>
+            Aktualisiert das Modell in einem <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />, wobei das aktuelle Modell durch ein neues Modell ersetzt wird.
+            
+            Before updating, the model will be validated and if errors are encountered a <see cref="T:Microsoft.SqlServer.Dac.DacServicesException" /> 
+            will be thrown. If callers wish to block on warnings as well as errors, they must validate the model by calling
+            <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.Validate" /> and checking if any errors or warnings are included in the messages returned.
+            
+            Note: only the model is replaced - all other artifacts such as refactor log, pre-deployment script,
+            post-deployment script and and contributor artifacts are not altered. If any of these artifacts
+            rely on elements that are no longer in the updated model then deployment may fail. It is the 
+            responsibility of the caller to ensure that these artifacts are consistent with the new model.
+            The <see cref="T:System.IO.Packaging.Package" /> API can be used to update other artifacts such as the refactor log and scripts
+            and keep them consistent with the updated model.
+            These artifacts are stored as package parts and are identified by their URI. 
+            Package parts can be examined using <see cref="M:System.IO.Packaging.Package.GetParts" />. Please refer to the 
+            <see cref="T:System.IO.Packaging.Package" /> API for further information about updating package parts.
+            
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">Wenn das <paramref name="dacPackage" /> nicht mit <see cref="F:System.IO.FileAccess.ReadWrite" /> geladen wurde.</exception>
+        <exception cref="T:System.ArgumentNullException">Wenn der <paramref name="dacPackage" />-Parameter oder der <paramref name="newModel" />-Parameter NULL ist.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

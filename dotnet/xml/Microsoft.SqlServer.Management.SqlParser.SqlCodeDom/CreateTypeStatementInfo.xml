@@ -1,0 +1,177 @@
+<Type Name="CreateTypeStatementInfo" FullName="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.CreateTypeStatementInfo">
+  <TypeSignature Language="C#" Value="public class CreateTypeStatementInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CreateTypeStatementInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.CreateTypeStatementInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Enthält die Informationen für alle drei Typen von CREATE TYPE-Anweisungen.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CreateTypeStatementInfo (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlClrClassSpecifier clrClassSpecifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlClrClassSpecifier clrClassSpecifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.CreateTypeStatementInfo.#ctor(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlClrClassSpecifier)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="clrClassSpecifier" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlClrClassSpecifier" />
+      </Parameters>
+      <Docs>
+        <param name="clrClassSpecifier">Gibt an, Assembly und Klasseninformationen, die in dem der benutzerdefinierte Typ enthalten ist.</param>
+        <summary>
+            Erstellt ein Objekt zum Speichern von Typinformationen für benutzerdefinierte Typ.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CreateTypeStatementInfo (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlTableDefinition tableDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlTableDefinition tableDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.CreateTypeStatementInfo.#ctor(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlTableDefinition)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tableDefinition" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlTableDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="tableDefinition">Enthält die Definitionen der Spalten für den benutzerdefinierten Tabellentyp.</param>
+        <summary>
+            Erstellt ein Objekt zum Speichern von Informationen für den benutzerdefinierten Tabellentyp.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CreateTypeStatementInfo (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlDataTypeSpecification dataType, Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlUserDefinedDataTypeNullState nullState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlDataTypeSpecification dataType, valuetype Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlUserDefinedDataTypeNullState nullState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.CreateTypeStatementInfo.#ctor(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlDataTypeSpecification,Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlUserDefinedDataTypeNullState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataType" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlDataTypeSpecification" />
+        <Parameter Name="nullState" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlUserDefinedDataTypeNullState" />
+      </Parameters>
+      <Docs>
+        <param name="dataType">Datentyp-Spezifikation, der der benutzerdefinierte Datentyp.</param>
+        <param name="nullState">Gibt an, ob der benutzerdefinierte Datentyp null sein darf.</param>
+        <summary>
+            Erstellt ein Objekt, um die Typinformationen für benutzerdefinierte Datentyp enthalten.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClrClassSpecifier">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlClrClassSpecifier ClrClassSpecifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlClrClassSpecifier ClrClassSpecifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.CreateTypeStatementInfo.ClrClassSpecifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlClrClassSpecifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die SqlClrClassSpecifier der der Klassen- und als Assemblynamen Name ist der benutzerdefinierte Typ enthält.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlDataTypeSpecification DataType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlDataTypeSpecification DataType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.CreateTypeStatementInfo.DataType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlDataTypeSpecification</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die SqlDataTypeSpecification definiert Datentypspezifikation der Benutzer also ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlCreateTypeStatement">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCreateTypeStatement GetSqlCreateTypeStatement (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlObjectIdentifier name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCreateTypeStatement GetSqlCreateTypeStatement(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlObjectIdentifier name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.CreateTypeStatementInfo.GetSqlCreateTypeStatement(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlObjectIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCreateTypeStatement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlObjectIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NullState">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlUserDefinedDataTypeNullState NullState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlUserDefinedDataTypeNullState NullState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.CreateTypeStatementInfo.NullState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlUserDefinedDataTypeNullState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die SqlUserDefinedDataTypeNullState gibt an, ob der benutzerdefinierte Datentyp einen null-Wert aufweisen darf.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableDefinition">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlTableDefinition TableDefinition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlTableDefinition TableDefinition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.CreateTypeStatementInfo.TableDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlTableDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die SqlTableDefinition der Spaltendefinitionen für den benutzerdefinierten Tabellentyp enthält.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

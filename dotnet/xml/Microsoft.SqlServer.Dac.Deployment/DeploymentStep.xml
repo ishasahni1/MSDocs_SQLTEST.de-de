@@ -1,0 +1,135 @@
+<Type Name="DeploymentStep" FullName="Microsoft.SqlServer.Dac.Deployment.DeploymentStep">
+  <TypeSignature Language="C#" Value="public abstract class DeploymentStep" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DeploymentStep extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Deployment.DeploymentStep" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Repräsentiert einen Schritt in einem Bereitstellungsplan.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeploymentStep ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentStep.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateBatchScript">
+      <MemberSignature Language="C#" Value="public void GenerateBatchScript (System.IO.TextWriter tw);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GenerateBatchScript(class System.IO.TextWriter tw) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentStep.GenerateBatchScript(System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tw" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="tw">Muss hinzugefügt werden.</param>
+        <summary>
+            Hilfsprogramm, das den Satz an Batchskripts in den angegebenen Writer schreibt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateTSQL">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;string&gt; GenerateTSQL ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;string&gt; GenerateTSQL() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentStep.GenerateTSQL" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt eine Liste mit Zeichenfolgen zurück, die einen Satz mit TSQL-Skriptbatches darstellt, die bei der Bereitstellung angewendet werden sollen.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Deployment.DeploymentStep Next { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Deployment.DeploymentStep Next" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.DeploymentStep.Next" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Deployment.DeploymentStep</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den nächsten Schritt im Container ist ein <see cref="T:System.Collections.Generic.LinkedListNode`1" /> vom Typ DeploymentStep ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Previous">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Deployment.DeploymentStep Previous { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Deployment.DeploymentStep Previous" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.DeploymentStep.Previous" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Deployment.DeploymentStep</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den vorherigen Schritt im Container ist ein <see cref="T:System.Collections.Generic.LinkedListNode`1" /> vom Typ DeploymentStep ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentStep.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt eine Zeichenfolge zurück, die diesen Schritt beschreibt.  Die Basis gibt den Typ des Schritts zurück.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

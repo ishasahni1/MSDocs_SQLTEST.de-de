@@ -1,0 +1,206 @@
+<Type Name="CodeAnalysisResult" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult">
+  <TypeSignature Language="C#" Value="public sealed class CodeAnalysisResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeAnalysisResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Die Ergebnisse der Codeanalyse für ein bestimmtes Modell. Schließt <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem" />gefundene, zusätzlich zu gefundenen Fehlern, die während der Analyse aufgetreten sind.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeAnalysisResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt ein<see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult" /></summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnalysisErrors">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; AnalysisErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; AnalysisErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.AnalysisErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Fehler und Meldungen, die während der Analyse aufgetreten sind. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnalysisSucceeded">
+      <MemberSignature Language="C#" Value="public bool AnalysisSucceeded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AnalysisSucceeded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.AnalysisSucceeded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Werden Analyse wurde erfolgreich abgeschlossen? Die Analyse kann aus einer Reihe von Gründen fehlschlagen, z. B. wenn das Modell bereits vor der Verarbeitung Fehler enthält.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllErrors">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; GetAllErrors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; GetAllErrors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.GetAllErrors" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft alle Fehler während der Initialisierung und des Analysevorgangs ab. Dies schließt nicht die <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.Problems" /> während der Analyse gefunden werden, da diese separat zurückgegeben werden.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializationErrors">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; InitializationErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; InitializationErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.InitializationErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft Fehler ab, die bei der Initialisierung der Codeanalyse, bei der Suche nach Regeln und sonstigen Aktionen außerhalb der eigentlichen Analyse aufgetreten sind.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Problems">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem&gt; Problems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem&gt; Problems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.Problems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Führen Sie alle Probleme ermittelt, indem die Regeln während der Codeanalyse
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeResultsToXml">
+      <MemberSignature Language="C#" Value="public void SerializeResultsToXml (System.IO.Stream output);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SerializeResultsToXml(class System.IO.Stream output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.SerializeResultsToXml(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="output" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="output">
+            Ein Ausgabestream, auf den die XML-Ergebnisse geschrieben werden. Dies muss Schreibvorgänge unterstützen.
+            </param>
+        <summary>
+            Serialisiert die Ergebnisse im XML-Format in einen Ausgabestream. Für die Abwärtskompatibilität Kompatibilität 
+            
+            Only the problems discovered during analysis are output. No errors that occurred during
+            the analysis process will be output. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeResultsToXml">
+      <MemberSignature Language="C#" Value="public void SerializeResultsToXml (string outputFilename);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SerializeResultsToXml(string outputFilename) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.SerializeResultsToXml(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputFilename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="outputFilename">
+            Der Dateiname für die Ausgabedatei. Dies sollte ein vollqualifizierter Pfad zur Datei sein. Wenn ein relativer Dateipfad verwendet wird, dann ist der aufgelöste Pfad relativ zum Speicherort der Programmdatei, die für Ihren Prozess ausgeführt wird.
+Wenn ein relativer Dateipfad verwendet, wird diese w
+            </param>
+        <summary>
+            Serialisiert die Ergebnisse im XML-Format in eine Ausgabedatei.
+            
+            Only the problems discovered during analysis are output. No errors that occurred during
+            the analysis process will be output.  
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressionErrors">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; SuppressionErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; SuppressionErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisResult.SuppressionErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft Fehler ab, die während des Aufrufs der Meldungsunterdrückungsroutine aufgetreten sind.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

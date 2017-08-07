@@ -1,0 +1,190 @@
+<Type Name="Parameters" FullName="Microsoft.SqlServer.Dts.Runtime.Parameters">
+  <TypeSignature Language="C#" Value="public abstract class Parameters : Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Parameters extends Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Parameters" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stellt eine Klasse dar, die sowohl von den Paketparametern als auch der Projektparameterauflistung verwendet wird.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.Dts.Runtime.Parameter Add (string parameterName, TypeCode dataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Parameter Add(string parameterName, valuetype System.TypeCode dataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Parameters.Add(System.String,System.TypeCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Parameter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="dataType" Type="System.TypeCode" />
+      </Parameters>
+      <Docs>
+        <param name="parameterName">Der Name des Parameters.</param>
+        <param name="dataType">Der Datentyp des Parameters.</param>
+        <summary>Fügt der Parameterauflistung ein Parameterobjekt mit dem angegebenen Namen und dem Datentyp hinzu.</summary>
+        <returns>Ein neu hinzugefügtes Parameterobjekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public abstract bool Contains (string parameterName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(string parameterName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Parameters.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameterName">Der Name des Parameters.</param>
+        <summary>Bestimmt, ob ein Parameterobjekt mit dem angegebenen Namen in der Parameterauflistung enthalten ist.</summary>
+        <returns>True, wenn ein Parameterobjekt mit dem angegebenen Namen aus der Parameterauflistung enthalten ist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public abstract void Insert (int index, string parameterName, TypeCode dataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, string parameterName, valuetype System.TypeCode dataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Parameters.Insert(System.Int32,System.String,System.TypeCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="dataType" Type="System.TypeCode" />
+      </Parameters>
+      <Docs>
+        <param name="index">Die Position in der Auflistung, an der das Einfügen erfolgen soll.</param>
+        <param name="parameterName">Der Name des Parameters.</param>
+        <param name="dataType">Der Datentyp des Parameters.</param>
+        <summary>Fügt ein Parameterobjekt mit dem angegebenen Index, Namen und Datentyp in die Parameterauflistung ein. Nur Projektparameter können in die Parameterauflistung eingefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.Dts.Runtime.Parameter this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Parameter Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Parameters.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Parameter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">Die Position des Parameterobjekts in der Parameterauflistung.</param>
+        <summary>Gibt ein Parameterobjekt mit dem angegebenen Index aus der Parameterauflistung zurück.</summary>
+        <value>Ein Parameterobjekt mit dem angegebenen Index.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.Dts.Runtime.Parameter this[string parameterName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Parameter Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Parameters.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Parameter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameterName">Der Name des Parameters.</param>
+        <summary>Gibt ein Parameterobjekt mit dem angegebenen Namen aus der Parameterauflistung zurück.</summary>
+        <value>Ein Parameterobjekt mit dem angegebenen Namen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public abstract void Join (Microsoft.SqlServer.Dts.Runtime.Parameter parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Join(class Microsoft.SqlServer.Dts.Runtime.Parameter parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Parameters.Join(Microsoft.SqlServer.Dts.Runtime.Parameter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="Microsoft.SqlServer.Dts.Runtime.Parameter" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">Der Parameter.</param>
+        <summary>Vekrnüpft den angegebenen Parameter mit der Parameterauflistung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public abstract bool Remove (string parameterName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(string parameterName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Parameters.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameterName">Der Name des Parameters.</param>
+        <summary>Entfernt ein Parameterobjekt aus der Parameterauflistung.</summary>
+        <returns>"true", wenn ein Parameter entfernt wurde; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public abstract void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Parameters.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">Die Position des Parameters in der Auflistung.</param>
+        <summary>Entfernt ein Parameterobjekt mit dem angegebenen Index aus der Parameterauflistung. Nur Projektparameter können aus der Parameterauflistung entfernt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

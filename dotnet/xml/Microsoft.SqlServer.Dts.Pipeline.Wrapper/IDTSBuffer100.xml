@@ -1,0 +1,1093 @@
+<Type Name="IDTSBuffer100" FullName="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100">
+  <TypeSignature Language="C#" Value="public interface IDTSBuffer100" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDTSBuffer100" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.DTSPipelineWrap</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComConversionLoss</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("5AC8CFE4-44F4-40B3-B45D-F99ABF7005B4")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt ein zweidimensionales Speicherobjekt im Arbeitsspeicher dar, das Zeilen und Spalten enthält.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddBLOBData">
+      <MemberSignature Language="C#" Value="public void AddBLOBData (int hRow, int hCol, ref byte lpData, uint dwLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBLOBData(int32 hRow, int32 hCol, unsigned int8 lpData, unsigned int32 dwLength) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.AddBLOBData(System.Int32,System.Int32,System.Byte@,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="lpData" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="dwLength" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <param name="lpData">Ein Zeiger auf die in die Spalte geschriebenen Bytes.</param>
+        <param name="dwLength">Die Anzahl der zu schreibenden Bytes.</param>
+        <summary>Fügt Bytedaten an eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />-Spalte an.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRow">
+      <MemberSignature Language="C#" Value="public int AddRow (IntPtr ppRowStart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 AddRow(native int ppRowStart) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.AddRow(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppRowStart" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="ppRowStart">Ein Zeiger auf den Anfang der neuen Zeile in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</param>
+        <summary>Fügt eine neue Zeile ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> Objekt.</summary>
+        <returns>Das Handle für die neu erstellte Zeile.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100 Clone (Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100 pOwner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100 Clone(class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100 pOwner) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.Clone(Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pOwner" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100" />
+      </Parameters>
+      <Docs>
+        <param name="pOwner">Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100" /> der Komponente, die den geklonten Puffer erstellt.</param>
+        <summary>Erstellt eine private Kopie eines <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />-Objekts.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />-Objekt, das eine Kopie des ursprünglichen Puffers ist.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectErrorRow">
+      <MemberSignature Language="C#" Value="public void DirectErrorRow (int hRow, int lOutputID, int lErrorCode, int lErrorColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DirectErrorRow(int32 hRow, int32 lOutputID, int32 lErrorCode, int32 lErrorColumn) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.DirectErrorRow(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="lOutputID" Type="System.Int32" />
+        <Parameter Name="lErrorCode" Type="System.Int32" />
+        <Parameter Name="lErrorColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Handle der Zeile, die gesendet wird.</param>
+        <param name="lOutputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> Objekts, die Zeile gesendet wird.</param>
+        <param name="lErrorCode">Der von der Komponente definierte Fehlercode, durch den die Fehlerbedingung identifiziert wird.</param>
+        <param name="lErrorColumn">Der Index der Spalte, die die Fehlerbedingung verursacht hat.</param>
+        <summary>Sendet eine Zeile in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> -Objekt an eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , deren <see cref="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100.IsErrorOut" /> Eigenschaft ist "true".</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectRow">
+      <MemberSignature Language="C#" Value="public void DirectRow (int hRow, int lOutputID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DirectRow(int32 hRow, int32 lOutputID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.DirectRow(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="lOutputID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="lOutputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> Objekt.</param>
+        <summary>Sendet eine Zeile in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> auf eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBLOBData">
+      <MemberSignature Language="C#" Value="public void GetBLOBData (int hRow, int hCol, uint dwOffset, ref byte lpPointer, uint dwLength, out uint lpdwWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetBLOBData(int32 hRow, int32 hCol, unsigned int32 dwOffset, unsigned int8 lpPointer, unsigned int32 dwLength, unsigned int32 lpdwWritten) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetBLOBData(System.Int32,System.Int32,System.UInt32,System.Byte@,System.UInt32,System.UInt32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="dwOffset" Type="System.UInt32" />
+        <Parameter Name="lpPointer" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="dwLength" Type="System.UInt32" />
+        <Parameter Name="lpdwWritten" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <param name="dwOffset">Die Position der in der Spalte gespeicherten Bytedaten, an der mit dem Lesen von Bytes begonnen wird.</param>
+        <param name="lpPointer">Ein Verweisparameter, der auf das erste Byte im Array der abgerufenen Bytes verweist.</param>
+        <param name="dwLength">Die Anzahl der Bytes, die aus der Spalte abgerufen werden sollen.</param>
+        <param name="lpdwWritten">Ein <paramref name="out" /> Parameter, der die Anzahl der geschriebenen Bytes angibt. die <paramref name="lpPointer" /> Parameter.</param>
+        <summary>Ruft ein Array von Bytes aus ein binary large Object (BLOB) in einer Spalte des gespeicherten ab einem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBLOBLength">
+      <MemberSignature Language="C#" Value="public void GetBLOBLength (int hRow, int hCol, out uint pdwBytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetBLOBLength(int32 hRow, int32 hCol, unsigned int32 pdwBytes) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetBLOBLength(System.Int32,System.Int32,System.UInt32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="pdwBytes" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle in der Zeile.</param>
+        <param name="pdwBytes">Ein <paramref name="out" />-Parameter, der die Anzahl der Bytes in der Zeile enthält.</param>
+        <summary>Ruft die Anzahl der in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />-Spalte enthaltenen Bytes ab.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBLOBObject">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100 GetBLOBObject (int hRow, int hCol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100 GetBLOBObject(int32 hRow, int32 hCol) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetBLOBObject(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <summary>Ruft eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100" /> dient außerdem zur lesen und Schreiben der Bytes in einer Spalte in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100" /> Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBLOBStream">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IStream GetBLOBStream (int hRow, int hCol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IStream GetBLOBStream(int32 hRow, int32 hCol) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetBLOBStream(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IStream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <summary>Ruft eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IStream" />-Schnittstelle ab, die für den Zugriff auf das in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />-Spalte gespeicherte BLOB (Binary Large Object) verwendet wird.</summary>
+        <returns>Eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IStream" /> Schnittstelle.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoundaryInfo">
+      <MemberSignature Language="C#" Value="public void GetBoundaryInfo (out uint pdwCols, out uint pdwMaxRows);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetBoundaryInfo(unsigned int32 pdwCols, unsigned int32 pdwMaxRows) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetBoundaryInfo(System.UInt32@,System.UInt32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pdwCols" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="pdwMaxRows" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pdwCols">Ein <paramref name="out" /> Parameter, der die Anzahl der Spalten in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</param>
+        <param name="pdwMaxRows">Die maximale Anzahl der Zeilen, die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> aufnehmen kann.</param>
+        <summary>Ruft die Anzahl der Spalten und die maximale Anzahl von Zeilen ab, die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> aufnehmen kann.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnCount">
+      <MemberSignature Language="C#" Value="public uint GetColumnCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GetColumnCount() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetColumnCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die Anzahl der Spalten in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <returns>Eine Ganzzahl ohne Vorzeichen, der die Anzahl der Spalten in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnInfo">
+      <MemberSignature Language="C#" Value="public void GetColumnInfo (int hCol, out Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL pCol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetColumnInfo(int32 hCol, valuetype Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL pCol) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetColumnInfo(System.Int32,Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="pCol" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL&amp;" RefType="out">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <param name="pCol">Eine out DTP_BUFFCOL-Struktur.</param>
+        <summary>Ruft die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL" /> Struktur für die angegebene Spalte in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT GetData (int hRow, int hCol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT GetData(int32 hRow, int32 hCol) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetData(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <summary>Ruft die in einer angegebenen <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />-Zeile oder -Spalte gespeicherten Daten ab.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT" />-Objekt, das die in der angegebenen <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />-Spalte gespeicherten Daten enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataByRef">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT GetDataByRef (int hRow, int hCol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT GetDataByRef(int32 hRow, int32 hCol) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetDataByRef(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <summary> (Funktion veraltet, siehe Hinweise.) Ruft einen Zeiger auf die in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />-Spalte gespeicherten Daten ab.</summary>
+        <returns>Dieses Feature wird in einer künftigen Version von Microsoft SQL Server entfernt. Verwenden Sie diese Funktion beim Entwickeln neuer Anwendungen, und Planen von Anwendungen zu ändern, die dieses Feature verwenden. Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT" /> , die Daten in der Spalte enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFlatMemory">
+      <MemberSignature Language="C#" Value="public IntPtr GetFlatMemory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetFlatMemory() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetFlatMemory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft einen Zeiger auf die von <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> gespeicherten Bytes ab.</summary>
+        <returns>Ein Zeiger auf den Anfang der in <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> gespeicherten Bytes.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetID">
+      <MemberSignature Language="C#" Value="public int GetID ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetID() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HBUFFER")</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die ID eines Puffers ab.</summary>
+        <returns>Eine ganze Zahl ohne Vorzeichen, die die ID des Puffers enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManager">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBufferManager100 GetManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBufferManager100 GetManager() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetManager" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBufferManager100</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft einen Puffer-Manager ab.</summary>
+        <returns>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBufferManager100" /> für den Puffer.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowCount">
+      <MemberSignature Language="C#" Value="public uint GetRowCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GetRowCount() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetRowCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die Anzahl der in <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> gespeicherten Zeilen ab.</summary>
+        <returns>Eine ganze Zahl ohne Vorzeichen, die die Anzahl der Zeilen im Puffer enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowDataBytes">
+      <MemberSignature Language="C#" Value="public void GetRowDataBytes (int hRow, out int plCB, IntPtr pData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRowDataBytes(int32 hRow, int32 plCB, native int pData) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetRowDataBytes(System.Int32,System.Int32@,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="plCB" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pData" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="plCB">Ein <paramref name="out" />-Parameter, der die Anzahl der Bytes in der Zeile enthält.</param>
+        <param name="pData">Ein <paramref name="out" /> Parameter, der einen Zeiger auf den Anfang der Zeile enthält.</param>
+        <summary>(Funktion veraltet, siehe Hinweise.) Ruft einen Zeiger auf den Anfang einer Zeile in einem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> ab.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowStarts">
+      <MemberSignature Language="C#" Value="public void GetRowStarts (uint dwRowsRequested, IntPtr pbRowStarts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRowStarts(unsigned int32 dwRowsRequested, native int pbRowStarts) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetRowStarts(System.UInt32,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwRowsRequested" Type="System.UInt32" />
+        <Parameter Name="pbRowStarts" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="dwRowsRequested">Die Anzahl der angeforderten Zeilen.</param>
+        <param name="pbRowStarts">Ein <paramref name="out" /> Zeiger, die Adresse des Anfangs der Zeile enthält.</param>
+        <summary>(Funktion veraltet, siehe Hinweise.) Verwenden Sie anstelle der <see cref="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetData(System.Int32,System.Int32)" />-Methode die <see cref="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetBLOBData(System.Int32,System.Int32,System.UInt32,System.Byte@,System.UInt32,System.UInt32@)" />-Methode oder die <see cref="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetRowStarts(System.UInt32,System.IntPtr)" />-Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStatus">
+      <MemberSignature Language="C#" Value="public void GetStatus (int hRow, int hCol, out uint pDBStatus);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetStatus(int32 hRow, int32 hCol, unsigned int32 pDBStatus) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetStatus(System.Int32,System.Int32,System.UInt32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="pDBStatus" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <param name="pDBStatus">Der Statuswert der Spalte.</param>
+        <summary>Ruft die Statusinformationen einer Spalte in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetType">
+      <MemberSignature Language="C#" Value="public int GetType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetType() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.GetType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HBUFFERTYPE")</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft das Handle eines Puffertyps ab.</summary>
+        <returns>Eine ganze Zahl ohne Vorzeichen, die das Handle des registrierten Puffertyps enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEndOfRowset">
+      <MemberSignature Language="C#" Value="public bool IsEndOfRowset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEndOfRowset() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.IsEndOfRowset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt an, ob ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> am Ende der Auflistung der Zeilen erreicht hat.</summary>
+        <returns>"true", wenn weitere Zeilen aus der upstreamkomponente stammen vorhanden sind; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNull">
+      <MemberSignature Language="C#" Value="public void IsNull (int hRow, int hCol, out bool pfNull);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsNull(int32 hRow, int32 hCol, bool pfNull) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.IsNull(System.Int32,System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="pfNull" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <param name="pfNull">Ein <paramref name="out" /> Parameter, der angibt, ob der Spaltenwert null ist.</param>
+        <summary>Überprüft, ob eine angegebene Spalte NULL ist.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockData">
+      <MemberSignature Language="C#" Value="public void LockData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LockData() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.LockData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sperrt die Daten in eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveRow">
+      <MemberSignature Language="C#" Value="public void MoveRow (int hFrom, int hTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveRow(int32 hFrom, int32 hTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.MoveRow(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hFrom" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hTo" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hFrom">Die aktuelle Position der Zeile.</param>
+        <param name="hTo">Die neue Position der Zeile.</param>
+        <summary>Verschiebt eine Zeile in <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> an eine neue Position.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareDataStatusForInsert">
+      <MemberSignature Language="C#" Value="public void PrepareDataStatusForInsert (int hRow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrepareDataStatusForInsert(int32 hRow) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.PrepareDataStatusForInsert(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Handle der festzulegenden Zeile oder <see cref="F:Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSBufferHandlePresetValues.H_ALL" />, wenn alle Zeilen im Puffer festgelegt werden sollen.</param>
+        <summary>Legt den Statuswert der Spalten in einem Bereich von Zeilen fest.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveRow">
+      <MemberSignature Language="C#" Value="public void RemoveRow (int hRow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveRow(int32 hRow) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.RemoveRow(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Handle der zu löschenden Zeile.</param>
+        <summary>Löscht eine Zeile aus einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetBLOBData">
+      <MemberSignature Language="C#" Value="public void ResetBLOBData (int hRow, int hCol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetBLOBData(int32 hRow, int32 hCol) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.ResetBLOBData(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <summary>Löscht die in einer Spalte gespeicherten Bytes ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBLOBFromObject">
+      <MemberSignature Language="C#" Value="public void SetBLOBFromObject (int hRow, int hCol, Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100 pIDTSBLOBObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetBLOBFromObject(int32 hRow, int32 hCol, class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100 pIDTSBLOBObject) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.SetBLOBFromObject(System.Int32,System.Int32,Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="pIDTSBLOBObject" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <param name="pIDTSBLOBObject">Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100" /> , enthält die Daten, die in der Spalte geschrieben werden.</param>
+        <summary>Weist die Daten in eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBLOBObject100" /> an eine Spalte in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBLOBFromStream">
+      <MemberSignature Language="C#" Value="public void SetBLOBFromStream (int hRow, int hCol, Microsoft.SqlServer.Dts.Runtime.Wrapper.ISequentialStream pIStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetBLOBFromStream(int32 hRow, int32 hCol, class Microsoft.SqlServer.Dts.Runtime.Wrapper.ISequentialStream pIStream) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.SetBLOBFromStream(System.Int32,System.Int32,Microsoft.SqlServer.Dts.Runtime.Wrapper.ISequentialStream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="pIStream" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.ISequentialStream" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <param name="pIStream">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.ISequentialStream" /> Schnittstellenzeiger auf.</param>
+        <summary>Weist Daten aus einem sequenziellen Datenstrom einer BLOB-Spalte (Binary Large Object) zu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public void SetData (int hRow, int hCol, ref Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT pData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetData(int32 hRow, int32 hCol, valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT pData) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.SetData(System.Int32,System.Int32,Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="pData" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DTP_VARIANT&amp;" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("DTSLib.PDTP_VARIANT")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <param name="pData">Die der Spalte zugewiesenen DTP_VARIANT-Daten.</param>
+        <summary>Weist Daten an eine Spalte in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEndOfRowset">
+      <MemberSignature Language="C#" Value="public void SetEndOfRowset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetEndOfRowset() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.SetEndOfRowset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Benachrichtigt <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBufferManager100" /> darüber, dass die Komponente das Hinzufügen von Zeilen zu einem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />-Ausgabeobjekt beendet hat.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetErrorInfo">
+      <MemberSignature Language="C#" Value="public void SetErrorInfo (int hRow, int lOutputID, int lErrorCode, int lErrorColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetErrorInfo(int32 hRow, int32 lOutputID, int32 lErrorCode, int32 lErrorColumn) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.SetErrorInfo(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="lOutputID" Type="System.Int32" />
+        <Parameter Name="lErrorCode" Type="System.Int32" />
+        <Parameter Name="lErrorColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="lOutputID">Die ID des Fehlers <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , die die Zeile gesendet wurde.</param>
+        <param name="lErrorCode">Der von der Komponente definierte Fehlercode, der bei der Verarbeitung der Spalte aufgetreten ist.</param>
+        <param name="lErrorColumn">Die Herkunfts-ID der Spalte, die den Fehler verursacht.</param>
+        <summary>Legt die Fehlerinformationen für eine Zeile fest. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStatus">
+      <MemberSignature Language="C#" Value="public void SetStatus (int hRow, int hCol, uint dbStatus);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStatus(int32 hRow, int32 hCol, unsigned int32 dbStatus) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.SetStatus(System.Int32,System.Int32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hCol" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HCOL")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="dbStatus" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">Das Zeilenhandle.</param>
+        <param name="hCol">Das Spaltenhandle.</param>
+        <param name="dbStatus">Die Statusinformationen der Spalte.</param>
+        <summary>Legt die Statusinformationen einer Spalte in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwapRows">
+      <MemberSignature Language="C#" Value="public void SwapRows (int hOne, int hOther);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SwapRows(int32 hOne, int32 hOther) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.SwapRows(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hOne" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="hOther" Type="System.Int32">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.InteropServices.ComAliasName("Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_HROW")</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hOne">Das Handle der ersten Zeile.</param>
+        <param name="hOther">Das Handle der zweiten Zeile.</param>
+        <summary>Tauscht die Position von zwei Zeilen in <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" /> aus.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnlockData">
+      <MemberSignature Language="C#" Value="public void UnlockData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnlockData() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100.UnlockData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Entsperrt die Daten in einem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBuffer100" />-Objekt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

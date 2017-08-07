@@ -1,0 +1,293 @@
+<Type Name="SfcMetadataDiscovery" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery">
+  <TypeSignature Language="C#" Value="public class SfcMetadataDiscovery" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SfcMetadataDiscovery extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Muss hinzugefügt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcMetadataDiscovery (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">Eine SFC-Typ</param>
+        <summary>
+            Erstellen Sie eine Instanz der Klasse SfcMetadataDiscovery
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementTypeName">
+      <MemberSignature Language="C#" Value="public string ElementTypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ElementTypeName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.ElementTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Elementtypnamen zurück, wenn sie den vollständigen Typnamen unterscheidet.
+Dieses Element Typname wird in einen URN verwendet.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindProperty">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation FindProperty (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation FindProperty(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.FindProperty(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParentsFromType">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Type&gt; GetParentsFromType (Type childType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class System.Type&gt; GetParentsFromType(class System.Type childType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.GetParentsFromType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="childType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="childType">
+        </param>
+        <summary>
+            Die Liste der gültigen übergeordneten Typen, die eine Instanz dieses Typs untergeordneten wie das übergeordnete Objekt haben kann.
+In der Regel besteht nur ein, die das übergeordnete Element sein können, aber in einigen Fällen stehen weitere.
+            </summary>
+        <returns>NULL, wenn es kein übergeordnetes Element für den Typ, andernfalls der Liste möglicher übergeordneter Typen</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRootFromType">
+      <MemberSignature Language="C#" Value="public static Type GetRootFromType (Type inputType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetRootFromType(class System.Type inputType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.GetRootFromType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="inputType">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrnSkeletonsFromType">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;string&gt; GetUrnSkeletonsFromType (Type inputType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;string&gt; GetUrnSkeletonsFromType(class System.Type inputType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.GetUrnSkeletonsFromType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="inputType">
+        </param>
+        <summary>
+            Ruft die Liste der möglichen das Gerüst eines Urn-Zeichenfolgen, die in diesen Typ führen.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBrowsable">
+      <MemberSignature Language="C#" Value="public bool IsBrowsable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBrowsable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.IsBrowsable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, ob der Typ upgeloadet--für die Benutzeroberfläche, z. B. Powershell verwendet werden
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt; Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt; Keys" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Wenn dies auf ein Objekt mit mindestens identifizierende Schlüssel ist, wird die Liste der Eigenschaften, die die Schlüssel zurückgegeben.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Objects">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt; Objects { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt; Objects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.Objects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferredBy">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.List&lt;Type&gt; ReferredBy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.Type&gt; ReferredBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.ReferredBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Relations">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt; Relations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt; Relations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.Relations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataRelation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Liste der Eigenschaften, die dieses Objekt enthält
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Type Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Typ dieses Knotens.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeAttributes">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.AttributeCollection TypeAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.AttributeCollection TypeAttributes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcMetadataDiscovery.TypeAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

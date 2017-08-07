@@ -1,0 +1,66 @@
+<Type Name="ITableValuedFunction" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.ITableValuedFunction">
+  <TypeSignature Language="C#" Value="public interface ITableValuedFunction : Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseTable, Microsoft.SqlServer.Management.SqlParser.Metadata.IUserDefinedFunction" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITableValuedFunction implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseTable, class Microsoft.SqlServer.Management.SqlParser.Metadata.IFunction, class Microsoft.SqlServer.Management.SqlParser.Metadata.IFunctionModuleBase, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.ISchemaOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular, class Microsoft.SqlServer.Management.SqlParser.Metadata.IUserDefinedFunction, class Microsoft.SqlServer.Management.SqlParser.Metadata.IUserDefinedFunctionModuleBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableValuedFunction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseTable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IUserDefinedFunction</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt eine SQL Server-Tabellenwertfunktion dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsInline">
+      <MemberSignature Language="C#" Value="public bool IsInline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInline" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableValuedFunction.IsInline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die Tabellenwertfunktion eine Inlinefunktion ist.
+            </summary>
+        <value>
+          <c>true</c> if the table-valued function is an inline function; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableVariableName">
+      <MemberSignature Language="C#" Value="public string TableVariableName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TableVariableName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableValuedFunction.TableVariableName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Variablennamen der Rückgabetabelle ab.
+            </summary>
+        <value>Der Variablenname der Rückgabetabelle.</value>
+        <remarks>
+            Diese Eigenschaft wird nur für Funktionen mit Tabellenrückgabe festgelegt, die nicht Inline sind.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

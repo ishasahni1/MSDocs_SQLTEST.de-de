@@ -1,0 +1,111 @@
+<Type Name="ObjectReferenceTracker" FullName="Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker">
+  <TypeSignature Language="C#" Value="public sealed class ObjectReferenceTracker : Microsoft.SqlServer.Dts.Runtime.DtsObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectReferenceTracker extends Microsoft.SqlServer.Dts.Runtime.DtsObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DtsObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stellt Analysen an, wie sich das Löschen von Variablen und Verbindungen aus einem Paket auswirkt. Diese Klasse kann nicht vererbt werden. </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddReference">
+      <MemberSignature Language="C#" Value="public void AddReference (string objectNameOrID, Microsoft.SqlServer.Dts.Runtime.DTSObjectReferenceType refType, ref int refListID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddReference(string objectNameOrID, valuetype Microsoft.SqlServer.Dts.Runtime.DTSObjectReferenceType refType, int32 refListID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker.AddReference(System.String,Microsoft.SqlServer.Dts.Runtime.DTSObjectReferenceType,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectNameOrID" Type="System.String" />
+        <Parameter Name="refType" Type="Microsoft.SqlServer.Dts.Runtime.DTSObjectReferenceType" />
+        <Parameter Name="refListID" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="objectNameOrID">Der Objektname oder die ID des Objekts, das im Besitz der Liste ist, der Sie einen neuen Verweis zur Nachverfolgung hinzufügen.</param>
+        <param name="refType">Der Verweistyp, den Sie nachverfolgen möchten. Die gültigen Werte befinden sich in der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSObjectReferenceType" /> Enumeration.</param>
+        <param name="refListID">Die ID der Verweisliste.</param>
+        <summary>Diese Methode fügt einer Liste zur Verweisnachverfolgung einen Verweis hinzu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestroyList">
+      <MemberSignature Language="C#" Value="public void DestroyList (int refListID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DestroyList(int32 refListID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker.DestroyList(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="refListID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="refListID">Die Verweislisten-ID der zu zerstörenden Verweisliste.</param>
+        <summary>Diese Methode zerstört die angegebene Verweisliste aus der Verweisnachverfolgung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveReference">
+      <MemberSignature Language="C#" Value="public void RemoveReference (string objectNameOrID, Microsoft.SqlServer.Dts.Runtime.DTSObjectReferenceType refType, ref int refListID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveReference(string objectNameOrID, valuetype Microsoft.SqlServer.Dts.Runtime.DTSObjectReferenceType refType, int32 refListID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker.RemoveReference(System.String,Microsoft.SqlServer.Dts.Runtime.DTSObjectReferenceType,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectNameOrID" Type="System.String" />
+        <Parameter Name="refType" Type="Microsoft.SqlServer.Dts.Runtime.DTSObjectReferenceType" />
+        <Parameter Name="refListID" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="objectNameOrID">Der Objektname oder die ID, der bzw. die aus der Nachverfolgungsliste entfernt werden soll.</param>
+        <param name="refType">Der Verweistyp, den Sie nachverfolgen möchten. Die gültigen Werte befinden sich in der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSObjectReferenceType" /> Enumeration.</param>
+        <param name="refListID">Die ID der Liste, in der sich das zu entfernende Objekt derzeit befindet.</param>
+        <summary>Entfernt einen Verweis aus einer vorhandenen Liste.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetListInfo">
+      <MemberSignature Language="C#" Value="public void SetListInfo (int refListID, string usageLocation, string usageDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetListInfo(int32 refListID, string usageLocation, string usageDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker.SetListInfo(System.Int32,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="refListID" Type="System.Int32" />
+        <Parameter Name="usageLocation" Type="System.String" />
+        <Parameter Name="usageDescription" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="refListID">Die ID der Liste, in der sich das Objekt derzeit befindet.</param>
+        <param name="usageLocation">Die Stelle, an der das Objekt verwendet wird.</param>
+        <param name="usageDescription">Eine Beschreibung, die erläutert, wo das Objekt verwendet wird. </param>
+        <summary>Diese Methode ermöglicht die Bereitstellung von Metadaten für eine vorhandene Verweisliste.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,104 @@
+<Type Name="IMutableCheckConstraint" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint">
+  <TypeSignature Language="C#" Value="public interface IMutableCheckConstraint : Microsoft.SqlServer.Management.SqlParser.Metadata.ICheckConstraint, Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableConstraint" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMutableCheckConstraint implements class Microsoft.SqlServer.Management.SqlParser.Metadata.ICheckConstraint, class Microsoft.SqlServer.Management.SqlParser.Metadata.IConstraint, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableConstraint, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.ICheckConstraint</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableConstraint</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt eine änderbare SQL Server-CHECK-Einschränkung dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsChecked">
+      <MemberSignature Language="C#" Value="public bool IsChecked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsChecked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint.IsChecked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die CHECK-Einschränkung nur für neue oder auch für vorhandene Daten gilt, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the CHECK constraint applies to both existing data and newly added data; <c>false</c>
+            if it applies only to newly added data.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die CHECK-Einschränkung aktiviert ist, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the constraint is enabled; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotForReplication">
+      <MemberSignature Language="C#" Value="public bool NotForReplication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NotForReplication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint.NotForReplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die CHECK-Einschränkung nicht für die Replikation verwendet wird, oder legt ihn fest. 
+            </summary>
+        <value>&gt;<c>"true"</c> , um anzugeben, dass die Check-Einschränkung nicht für die Replikation ist, andernfalls <c>"false"</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Transact-SQL-Anweisung ab, durch die die CHECK-Einschränkung definiert wird, oder legt sie fest.
+            </summary>
+        <value>Die Transact-SQL-Anweisung, durch die die CHECK-Einschränkung definiert wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

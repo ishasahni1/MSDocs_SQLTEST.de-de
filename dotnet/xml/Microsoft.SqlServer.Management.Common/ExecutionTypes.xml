@@ -1,0 +1,127 @@
+<Type Name="ExecutionTypes" FullName="Microsoft.SqlServer.Management.Common.ExecutionTypes">
+  <TypeSignature Language="C#" Value="public enum ExecutionTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExecutionTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Common.ExecutionTypes" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ConnectionInfo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Muss hinzugefügt werden.</summary>
+    <remarks>
+            Anweisung Ausführung Konstanten werden verwendet, um das Verhalten der Methode ExecuteImmediate Ausführungsverhalten oder die Interpretation der Anweisung zur Ausführung übermittelt weiterzuleiten.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContinueOnError">
+      <MemberSignature Language="C#" Value="ContinueOnError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Common.ExecutionTypes ContinueOnError = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Common.ExecutionTypes.ContinueOnError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ExecutionTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Batchausführung wird fortgeführt, bei jedem Fehler, die nicht die Verbindung unterbricht
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Common.ExecutionTypes Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Common.ExecutionTypes.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ExecutionTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Keine Anweisung Ausführung Optionen festgelegt
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoCommands">
+      <MemberSignature Language="C#" Value="NoCommands" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Common.ExecutionTypes NoCommands = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Common.ExecutionTypes.NoCommands" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ExecutionTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ignorieren Sie das Befehlsabschlusszeichen im Skript. Führen Sie als ein einziger batch
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoExec">
+      <MemberSignature Language="C#" Value="NoExec" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Common.ExecutionTypes NoExec = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Common.ExecutionTypes.NoExec" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ExecutionTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Führen Sie SET NOEXEC ON vor der Batchausführung. SET NOEXEC OFF nach Batchausführung ausgeführt werden.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseOnly">
+      <MemberSignature Language="C#" Value="ParseOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Common.ExecutionTypes ParseOnly = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Common.ExecutionTypes.ParseOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ExecutionTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Führen Sie die SET PARSEONLY auf vor der Batchausführung. SET PARSEONLY OFF ausgeführt wird, nachdem die Batchausführung
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotedIdentifierOn">
+      <MemberSignature Language="C#" Value="QuotedIdentifierOn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Common.ExecutionTypes QuotedIdentifierOn = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Common.ExecutionTypes.QuotedIdentifierOn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ExecutionTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Führen Sie vor der Batchausführung SET QUOTED_IDENTIFIER ON. SET QUOTED_IDENTIFIER OFF nach Batchausführung ausgeführt werden.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

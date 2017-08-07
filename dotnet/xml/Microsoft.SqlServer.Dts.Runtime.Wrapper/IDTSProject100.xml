@@ -1,0 +1,392 @@
+<Type Name="IDTSProject100" FullName="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100">
+  <TypeSignature Language="C#" Value="public interface IDTSProject100" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDTSProject100" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.DTSRuntimeWrap</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("945E1C1E-F19F-41DA-9758-A0ECD6A28577")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(System.Runtime.InteropServices.TypeLibTypeFlags.FOleAutomation)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt eine Schnittstelle dar, die Pakete und Parameter enthält.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContainsPackage">
+      <MemberSignature Language="C#" Value="public bool ContainsPackage (string bstrPackageStreamName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsPackage(string bstrPackageStreamName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.ContainsPackage(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrPackageStreamName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrPackageStreamName">Der Datenstromname des Pakets.</param>
+        <summary>Gibt an, ob das Paket im Projekt enthalten ist.</summary>
+        <returns>True, wenn das Paket im Projekt enthalten ist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureConnectionsAreLoaded">
+      <MemberSignature Language="C#" Value="public void EnsureConnectionsAreLoaded ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnsureConnectionsAreLoaded() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.EnsureConnectionsAreLoaded" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stellt sicher, dass die Verbindungen für das Projekt geladen werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConfiguredPackageByName">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100 GetConfiguredPackageByName (string bstrPackageStreamName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100 GetConfiguredPackageByName(string bstrPackageStreamName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetConfiguredPackageByName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrPackageStreamName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrPackageStreamName">Der Datenstromname des Pakets.</param>
+        <summary>Ruft das konfigurierte Paket nach dem Namen ab.</summary>
+        <returns>Das zurückgegebene Paket.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnections">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100 GetConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100 GetConnections() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetConnections" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die Verbindungen für das Paket ab.</summary>
+        <returns>Die zurückgegebenen Verbindungen.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPackage">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100 GetPackage (int iPackage, out string bstrPackageStreamName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100 GetPackage(int32 iPackage, string bstrPackageStreamName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetPackage(System.Int32,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iPackage" Type="System.Int32" />
+        <Parameter Name="bstrPackageStreamName" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="iPackage">Das Paket.</param>
+        <param name="bstrPackageStreamName">Der Datenstromname des Pakets.</param>
+        <summary>Ruft das Paket für das Projekt ab.</summary>
+        <returns>Das zurückgegebene Paket.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPackageByName">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100 GetPackageByName (string bstrPackageStreamName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100 GetPackageByName(string bstrPackageStreamName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetPackageByName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrPackageStreamName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrPackageStreamName">Der Datenstromname des Pakets.</param>
+        <summary>Ruft das Paket nach dem Namen ab.</summary>
+        <returns>Das zurückgegebene Paket.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPackageCount">
+      <MemberSignature Language="C#" Value="public int GetPackageCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetPackageCount() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetPackageCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt die Anzahl der Pakete für das Projekt zurück.</summary>
+        <returns>Die Anzahl der Pakete.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPackageNoLoad">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100 GetPackageNoLoad (int iPackage, out string bstrPackageStreamName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100 GetPackageNoLoad(int32 iPackage, string bstrPackageStreamName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetPackageNoLoad(System.Int32,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackage100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iPackage" Type="System.Int32" />
+        <Parameter Name="bstrPackageStreamName" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="iPackage">Das Paket.</param>
+        <param name="bstrPackageStreamName">Der Datenstromname des Pakets.</param>
+        <summary>Ruft das Paket ab, das keine Paketlast aufweist.</summary>
+        <returns>Das zurückgegebene Paket.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameter">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSParameter100 GetParameter (int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSParameter100 GetParameter(int32 Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetParameter(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSParameter100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Der Index.</param>
+        <summary>Ruft die Auflistung der Projektparameter ab.</summary>
+        <returns>Die Auflistung der Projektparameter.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameterCount">
+      <MemberSignature Language="C#" Value="public int GetParameterCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetParameterCount() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetParameterCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die Nummer des Parameters ab.</summary>
+        <returns>Die Nummer des Parameters.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameterVariable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariable100 GetParameterVariable (int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariable100 GetParameterVariable(int32 Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetParameterVariable(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariable100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Der Index des Parameters.</param>
+        <summary>Ruft die Parametervariable für das Projekt ab.</summary>
+        <returns>Die Parametervariable.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameterVariableByID">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariable100 GetParameterVariableByID (string bstrID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariable100 GetParameterVariableByID(string bstrID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetParameterVariableByID(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariable100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrID">Der Parameterbezeichner.</param>
+        <summary>Ruft die Parametervariable nach dem Bezeichner ab.</summary>
+        <returns>Die zurückgegebene Parametervariable.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameterVariableByName">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariable100 GetParameterVariableByName (string bstrName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariable100 GetParameterVariableByName(string bstrName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetParameterVariableByName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariable100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrName">Der Name des Parameters.</param>
+        <summary>Ruft die Parametervariable nach dem Namen ab.</summary>
+        <returns>Die zurückgegebene Parametervariable.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProtectionLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSProtectionLevel GetProtectionLevel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSProtectionLevel GetProtectionLevel() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetProtectionLevel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die Schutzebene des Projekts ab.</summary>
+        <returns>Die Schutzebene des Projekts.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariables">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariables100 GetVariables ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariables100 GetVariables() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.GetVariables" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariables100</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die Variablen für das Projekt ab.</summary>
+        <returns>Die Variablen für das Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchPassword">
+      <MemberSignature Language="C#" Value="public bool MatchPassword (string bstrPackagePassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MatchPassword(string bstrPackagePassword) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.MatchPassword(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrPackagePassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrPackagePassword">Das Paketkennwort.</param>
+        <summary>Vergleicht das Kennwort für das Projekt.</summary>
+        <returns>Das verglichene Kennwort.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfflineMode">
+      <MemberSignature Language="C#" Value="public bool OfflineMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OfflineMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.OfflineMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610678285)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob das Projekt sich im Offlinemodus befindet, oder legt ihn fest.</summary>
+        <value>True, wenn das Projekt sich im Offlinemodus befindet. andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionLevelRequireConsistency">
+      <MemberSignature Language="C#" Value="public bool ProtectionLevelRequireConsistency { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ProtectionLevelRequireConsistency" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100.ProtectionLevelRequireConsistency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610678289)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab, ob für die Schutzebene des Projekts Konsistenz erforderlich ist.</summary>
+        <value>True, wenn für die Ebene der Schutzebene des Projekts Konsistenz erforderlich ist. andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

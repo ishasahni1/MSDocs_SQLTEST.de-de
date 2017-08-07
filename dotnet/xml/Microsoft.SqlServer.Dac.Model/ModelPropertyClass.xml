@@ -1,0 +1,342 @@
+<Type Name="ModelPropertyClass" FullName="Microsoft.SqlServer.Dac.Model.ModelPropertyClass">
+  <TypeSignature Language="C#" Value="public sealed class ModelPropertyClass" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ModelPropertyClass extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Model.ModelPropertyClass" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Die Metadatenklasse für Eigenschaften.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModelSchema" />Metadatenklassen bieten Zugriff auf die Struktur und Instanzdaten innerhalb einer <c>TSqlSchemaModel</c> Instanz.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataType">
+      <MemberSignature Language="C#" Value="public Type DataType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type DataType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.DataType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Datentyp der Eigenschaft.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultValue">
+      <MemberSignature Language="C#" Value="public object GetDefaultValue (Microsoft.SqlServer.Dac.Model.SqlServerVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetDefaultValue(valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.GetDefaultValue(Microsoft.SqlServer.Dac.Model.SqlServerVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">Die <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> auf den Standardwert zurückgegeben.</param>
+        <summary>
+            Gibt den Standardwert der Eigenschaft zurück.
+            
+            Note: for <see cref="F:Microsoft.SqlServer.Dac.Model.SqlServerVersion.SqlAzure" /> the default value may depend on the
+            <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.EngineVersion" /> being targeted. This method assumes the current default
+            version is being used. To get a default value based on a particular for a particular EngineVersion, please use
+            <see cref="M:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.GetDefaultValue(Microsoft.SqlServer.Dac.Model.SqlServerVersion,System.Int32)" />.
+            </summary>
+        <returns>Standardwert für die angegebene <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" />.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultValue">
+      <MemberSignature Language="C#" Value="public object GetDefaultValue (Microsoft.SqlServer.Dac.Model.SqlServerVersion version, int engineVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetDefaultValue(valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion version, int32 engineVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.GetDefaultValue(Microsoft.SqlServer.Dac.Model.SqlServerVersion,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+        <Parameter Name="engineVersion" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="version">Die <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> auf den Standardwert zurückgegeben.</param>
+        <param name="engineVersion">
+            Optionaler Wert für die Modulversion. Dies ordnet die <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.EngineVersion" /> Eigenschaft für ein Modell.
+            </param>
+        <summary>
+            Gibt den Standardwert der Eigenschaft zurück.
+            </summary>
+        <returns>Standardwert für die angegebene <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" />.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetDefaultValue&lt;T&gt; (Microsoft.SqlServer.Dac.Model.SqlServerVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetDefaultValue&lt;T&gt;(valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.GetDefaultValue``1(Microsoft.SqlServer.Dac.Model.SqlServerVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">
+          <see cref="T:System.Type" />der Wert der Eigenschaft.</typeparam>
+        <param name="version">Die <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> auf den Standardwert zurückgegeben.</param>
+        <summary>
+            Gibt den Standardwert der Eigenschaft zurück.
+            
+            Note: for <see cref="F:Microsoft.SqlServer.Dac.Model.SqlServerVersion.SqlAzure" /> the default value may depend on the
+            <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.EngineVersion" /> being targeted. This method assumes the current default
+            version is being used. To get a default value based on a particular for a particular EngineVersion, please use
+            <see cref="M:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.GetDefaultValue``1(Microsoft.SqlServer.Dac.Model.SqlServerVersion,System.Int32)" />.
+            </summary>
+        <returns>Standardwert für die angegebene <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" />.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.InvalidCastException">
+            Wenn der Eigenschaftswert in umgewandelt werden kann <typeparamref name="T" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetDefaultValue&lt;T&gt; (Microsoft.SqlServer.Dac.Model.SqlServerVersion version, int engineVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetDefaultValue&lt;T&gt;(valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion version, int32 engineVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.GetDefaultValue``1(Microsoft.SqlServer.Dac.Model.SqlServerVersion,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+        <Parameter Name="engineVersion" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">
+          <see cref="T:System.Type" />der Wert der Eigenschaft.</typeparam>
+        <param name="version">Die <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> auf den Standardwert zurückgegeben.</param>
+        <param name="engineVersion">
+            Optionaler Wert für die Modulversion. Dies ordnet die <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.EngineVersion" /> Eigenschaft für ein Modell.
+            </param>
+        <summary>
+            Gibt den Standardwert der Eigenschaft zurück.
+Hinweis: für <see cref="F:Microsoft.SqlServer.Dac.Model.SqlServerVersion.SqlAzure" /> der Standardwert hängt die <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.EngineVersion" /> , das das Ziel. 
+            </summary>
+        <returns>Standardwert für die angegebene <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" />.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.InvalidCastException">
+            Wenn der Eigenschaftswert in umgewandelt werden kann <typeparamref name="T" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetValue&lt;T&gt; (Microsoft.SqlServer.Dac.Model.TSqlObject instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetValue&lt;T&gt;(class Microsoft.SqlServer.Dac.Model.TSqlObject instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.GetValue``1(Microsoft.SqlServer.Dac.Model.TSqlObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="instance" Type="Microsoft.SqlServer.Dac.Model.TSqlObject" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">
+          <see cref="T:System.Type" />der Wert der Eigenschaft.</typeparam>
+        <param name="instance">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />die Instanz zum Abrufen des Eigenschaftswerts.</param>
+        <summary>
+            Gibt den Eigenschaftswert zurück.
+            </summary>
+        <returns>Eigenschaftswert.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.InvalidCastException">
+            Wenn der Eigenschaftswert in umgewandelt werden kann <typeparamref name="T" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultValue">
+      <MemberSignature Language="C#" Value="public bool IsDefaultValue (Microsoft.SqlServer.Dac.Model.TSqlObject instance, Microsoft.SqlServer.Dac.Model.SqlServerVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDefaultValue(class Microsoft.SqlServer.Dac.Model.TSqlObject instance, valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.IsDefaultValue(Microsoft.SqlServer.Dac.Model.TSqlObject,Microsoft.SqlServer.Dac.Model.SqlServerVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="Microsoft.SqlServer.Dac.Model.TSqlObject" />
+        <Parameter Name="version" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+      </Parameters>
+      <Docs>
+        <param name="instance">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />-Instanz, die für den Standardwert der Eigenschaft zu bestimmen.</param>
+        <param name="version">Die <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> um zu bestimmen, den Standardwert für.</param>
+        <summary>
+            Gibt zurück, wenn der Wert der Standardwert für die Plattform ist.
+            
+            Note: for <see cref="F:Microsoft.SqlServer.Dac.Model.SqlServerVersion.SqlAzure" /> the default value may depend on the
+            <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.EngineVersion" /> being targeted. This method assumes the current default
+            version is being used. To validate the  default value based on a particular for a particular EngineVersion, please use
+            <see cref="M:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.IsDefaultValue(Microsoft.SqlServer.Dac.Model.TSqlObject,Microsoft.SqlServer.Dac.Model.SqlServerVersion,System.Int32)" />.
+            </summary>
+        <returns>"True", wenn die Eigenschaft den Standardwert für die Plattform ist. Andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn das angegebene <paramref name="instance" /> nicht der Besitzer dieser Eigenschaft ist.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultValue">
+      <MemberSignature Language="C#" Value="public bool IsDefaultValue (Microsoft.SqlServer.Dac.Model.TSqlObject instance, Microsoft.SqlServer.Dac.Model.SqlServerVersion version, int engineVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDefaultValue(class Microsoft.SqlServer.Dac.Model.TSqlObject instance, valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion version, int32 engineVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.IsDefaultValue(Microsoft.SqlServer.Dac.Model.TSqlObject,Microsoft.SqlServer.Dac.Model.SqlServerVersion,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="Microsoft.SqlServer.Dac.Model.TSqlObject" />
+        <Parameter Name="version" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+        <Parameter Name="engineVersion" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="instance">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />-Instanz, die für den Standardwert der Eigenschaft zu bestimmen.</param>
+        <param name="version">Die <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> um zu bestimmen, den Standardwert für.</param>
+        <param name="engineVersion">
+            Optionaler Wert für die Modulversion. Dies ordnet die <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.EngineVersion" /> Eigenschaft für ein Modell.
+            </param>
+        <summary>
+            Gibt zurück, wenn der Wert der Standardwert für die Plattform ist.
+            </summary>
+        <returns>"True", wenn die Eigenschaft den Standardwert für die Plattform ist. Andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn das angegebene <paramref name="instance" /> nicht der Besitzer dieser Eigenschaft ist.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Eigenschaftsname.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwningRelationship">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.ModelRelationshipClass OwningRelationship { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass OwningRelationship" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.OwningRelationship" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.ModelRelationshipClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Besitzer <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" /> für die Eigenschaft, in denen eine Beziehung dieser Eigenschaft angefügt ist. NULL, wenn diese Eigenschaft auf einen<see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" /></summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwningType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.ModelTypeClass OwningType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.ModelTypeClass OwningType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.OwningType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.ModelTypeClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Besitzer <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" /> für die Eigenschaft, wobei diese Eigenschaft auf einen Typ angefügt ist. NULL, wenn diese Eigenschaft auf einen<see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" /></summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedPlatforms">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlPlatforms SupportedPlatforms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.Model.TSqlPlatforms SupportedPlatforms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelPropertyClass.SupportedPlatforms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlPlatforms</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlPlatforms" /> Versionen, auf denen diese Beziehung unterstützt wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

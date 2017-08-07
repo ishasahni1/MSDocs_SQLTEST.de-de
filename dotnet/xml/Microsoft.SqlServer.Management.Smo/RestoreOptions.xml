@@ -1,0 +1,271 @@
+<Type Name="RestoreOptions" FullName="Microsoft.SqlServer.Management.Smo.RestoreOptions">
+  <TypeSignature Language="C#" Value="public class RestoreOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RestoreOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.RestoreOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SmoExtended</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Muss hinzugefügt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RestoreOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestoreOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.Smo.RestoreOptions" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Blocksize">
+      <MemberSignature Language="C#" Value="public int Blocksize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Blocksize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.Blocksize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            BLOCKSIZE gibt an, der ausschließlich physische Blocks Größe in Bytes. Die unterstützten Größen sind 512, 1024, 2048, 4096, 8192, 16.384, 32.768 und 65.536 (64 KB) Bytes.
+Der Standardwert ist 65.536 für Bandmedien und andernfalls 512.
+Wenn Sie eine Sicherung von einer CD-ROM wiederherstellen, geben Sie BLOCKSIZE=2048 an.
+            </summary>
+        <value>Die Blockgröße.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferCount">
+      <MemberSignature Language="C#" Value="public int BufferCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BufferCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.BufferCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            "BUFFERCOUNT" gibt die Gesamtanzahl der e/a-Puffern an, die für den Wiederherstellungsvorgang verwendet werden. Große Anzahl an Puffern kann aufgrund unzureichender virtuelle Adressraum im Sqlservr.exe-Prozess "nicht genügend Arbeitsspeicher" Fehler führen.
+            </summary>
+        <value>Die Pufferanzahl.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearSuspectPageTableAfterRestore">
+      <MemberSignature Language="C#" Value="public bool ClearSuspectPageTableAfterRestore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ClearSuspectPageTableAfterRestore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.ClearSuspectPageTableAfterRestore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Löscht Einträge in der suspect_page-Tabelle.
+            </summary>
+        <value>
+          <c>true</c> if [clear suspect page table after restore]; otherwise, <c>false</c>.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueAfterError">
+      <MemberSignature Language="C#" Value="public bool ContinueAfterError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContinueAfterError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.ContinueAfterError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            CONTINUE_AFTER_ERROR gibt an, der der Wiederherstellungsvorgang fortgesetzt wird, wenn ein Fehler aufgetreten ist.
+            </summary>
+        <value>
+          <c>true</c> if [continue after error]; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepReplication">
+      <MemberSignature Language="C#" Value="public bool KeepReplication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepReplication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.KeepReplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            KEEP_REPLICATION KEEP_REPLICATION verhindert, dass replikationseinstellungen entfernt werden, wenn eine Datenbank- oder protokollsicherung auf einem betriebsbereiten Standbyserver wiederhergestellt und anschließend die Datenbank wiederhergestellt wird.
+            </summary>
+        <value>
+          <c>true</c> if [keep replication]; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepTemporalRetention">
+      <MemberSignature Language="C#" Value="public bool KeepTemporalRetention { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepTemporalRetention" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.KeepTemporalRetention" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            KEEP_TEMPORAL_RETENTION KEEP_TEMPORAL_RETENTION wird verhindert, dass temporale Verlaufstabellen Tabellen aufbewahrungsrichtlinieneinstellung entfernt werden, wenn eine Sicherung auf einem betriebsbereiten Standbyserver wiederhergestellt wurde und die Datenbank wiederhergestellt wird.
+            </summary>
+        <value>
+          <c>true</c> if [keep temporal retention]; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxTransferSize">
+      <MemberSignature Language="C#" Value="public int MaxTransferSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxTransferSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.MaxTransferSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            "MAXTRANSFERSIZE" gibt die größte Übertragungseinheit in Bytes, die zwischen dem Sicherungsmedium und SQL Server verwendet werden. Die möglichen Werte sind Vielfache von 65.536 Bytes (64 KB) bis hin zu 4.194.304 Bytes (4 MB).
+            </summary>
+        <value>Die maximale Übertragungsgröße.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentCompleteNotification">
+      <MemberSignature Language="C#" Value="public int PercentCompleteNotification { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PercentCompleteNotification" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.PercentCompleteNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das Prozentintervall für Aufrufe des PercentCompleteEventHandler-Ereignishandlers für einzelne Wiederherstellungsvorgänge ab oder legt es fest.
+            </summary>
+        <value>Die Benachrichtigung über den Fertigstellungsprozentsatz.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecoveryState">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState RecoveryState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState RecoveryState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.RecoveryState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>
+          <c>true</c> if [with no recovery]; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceDatabase">
+      <MemberSignature Language="C#" Value="public bool ReplaceDatabase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReplaceDatabase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.ReplaceDatabase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            REPLACE gibt an, dass SQL Server sollte die angegebene Datenbank und die zugehörigen Dateien erstellen, selbst wenn eine andere Datenbank mit dem gleichen Namen ist bereits vorhanden. In einem solchen Fall wird die vorhandene Datenbank gelöscht. Wenn die Option REPLACE nicht angegeben ist, erfolgt eine Sicherheitsüberprüfung. Dadurch wird das versehentliche Überschreiben einer anderen Datenbank verhindert.
+            </summary>
+        <value>
+          <c>true</c> if [replace database]; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRestrictedUser">
+      <MemberSignature Language="C#" Value="public bool SetRestrictedUser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SetRestrictedUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.SetRestrictedUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            RESTRICTED_USER schränkt den Zugriff für die neu wiederhergestellte Datenbank auf Mitglieder der Rollen Db_owner, Dbcreator oder Sysadmin.
+            </summary>
+        <value>
+          <c>true</c> if [set restricted user]; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandByFile">
+      <MemberSignature Language="C#" Value="public string StandByFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StandByFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestoreOptions.StandByFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            STANDBY Rückgängigmachen von Transaktionen ohne Commit, aber die Rückgängigaktionen werden in einer standbydatei gespeichert, die Auswirkungen der Wiederherstellung rückgängig gemacht werden kann.
+            </summary>
+        <value>Die Wiederherstellung mit Standbydatei.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

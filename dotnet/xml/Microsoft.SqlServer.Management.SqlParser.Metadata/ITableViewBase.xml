@@ -1,0 +1,64 @@
+<Type Name="ITableViewBase" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.ITableViewBase">
+  <TypeSignature Language="C#" Value="public interface ITableViewBase : Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseTable, Microsoft.SqlServer.Management.SqlParser.Metadata.ISchemaOwnedObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITableViewBase implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseTable, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.ISchemaOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableViewBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseTable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.ISchemaOwnedObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Basisschnittstelle für die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITable" />-Schnittstelle und die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IView" />-Schnittstelle.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsQuotedIdentifierOn">
+      <MemberSignature Language="C#" Value="public bool IsQuotedIdentifierOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsQuotedIdentifierOn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableViewBase.IsQuotedIdentifierOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert, der angibt, ob durch doppelte Anführungszeichen begrenzte Bezeichner Transact-SQL reservierte Schlüsselwörter sind oder nach den Transact-SQL-Syntaxregeln normalerweise nicht zugelassene Zeichen enthalten. 
+            </summary>
+        <value>
+          <c>true</c> if quoted identifiers are used to allow characters not usually allowed by the Transact-SQL syntax rules; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Triggers">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IDmlTrigger&gt; Triggers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IDmlTrigger&gt; Triggers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableViewBase.Triggers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IDmlTrigger&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft eine Auflistung von DML-Triggern ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDmlTrigger" />-Elemente, die die DML-Trigger enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

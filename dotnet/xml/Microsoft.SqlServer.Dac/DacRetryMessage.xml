@@ -1,0 +1,59 @@
+<Type Name="DacRetryMessage" FullName="Microsoft.SqlServer.Dac.DacRetryMessage">
+  <TypeSignature Language="C#" Value="public sealed class DacRetryMessage : Microsoft.SqlServer.Dac.DacMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DacRetryMessage extends Microsoft.SqlServer.Dac.DacMessage" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.DacRetryMessage" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dac.DacMessage</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Diese Meldung wird ausgelöst, wenn die DacFx-API einen Befehl oder eine Verbindung aufgrund eines vorübergehenden Fehlers, der vom Server zurückgegebenen wiederholt.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RetryCount">
+      <MemberSignature Language="C#" Value="public int RetryCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RetryCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacRetryMessage.RetryCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Anzahl der Wiederholungsversuche bei dieses Fehlers auftreten
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerErrorNumber">
+      <MemberSignature Language="C#" Value="public int ServerErrorNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ServerErrorNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacRetryMessage.ServerErrorNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Anzahl der Fehler von SQL Server oder 0, wenn eine andere Ausnahme aufgetreten ist (die eine Wiederholung hervorgerufen hat)
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

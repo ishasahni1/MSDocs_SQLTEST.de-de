@@ -1,0 +1,372 @@
+<Type Name="SecurityPredicate" FullName="Microsoft.SqlServer.Management.Smo.SecurityPredicate">
+  <TypeSignature Language="C#" Value="public sealed class SecurityPredicate : Microsoft.SqlServer.Management.Smo.SqlSmoObject, Microsoft.SqlServer.Management.Common.IAlterable, Microsoft.SqlServer.Management.Common.ICreatable, Microsoft.SqlServer.Management.Common.IDropIfExists, Microsoft.SqlServer.Management.Common.IDroppable, Microsoft.SqlServer.Management.Common.IMarkForDrop" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecurityPredicate extends Microsoft.SqlServer.Management.Smo.SqlSmoObject implements class Microsoft.SqlServer.Management.Common.IAlterable, class Microsoft.SqlServer.Management.Common.ICreatable, class Microsoft.SqlServer.Management.Common.IDropIfExists, class Microsoft.SqlServer.Management.Common.IDroppable, class Microsoft.SqlServer.Management.Common.IMarkForDrop" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.SecurityPredicate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Smo.SqlSmoObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.ICreatable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IDropIfExists</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IDroppable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IMarkForDrop</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElement(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElementFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElementFlags.SqlAzureDatabase)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Kapseln von Instanz-Klasse: Server [@Name= "] / Datenbank/SecurityPolicy/SecurityPredicate
+            </summary>
+    <summary>
+             Ein Sql Server-Sicherheit-Prädikat-Objekt darstellt.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityPredicate (Microsoft.SqlServer.Management.Smo.SecurityPolicy parent, Microsoft.SqlServer.Management.Smo.Table table, string predicateDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.SecurityPolicy parent, class Microsoft.SqlServer.Management.Smo.Table table, string predicateDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicate.#ctor(Microsoft.SqlServer.Management.Smo.SecurityPolicy,Microsoft.SqlServer.Management.Smo.Table,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.Smo.SecurityPolicy" />
+        <Parameter Name="table" Type="Microsoft.SqlServer.Management.Smo.Table" />
+        <Parameter Name="predicateDefinition" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die übergeordnete Sicherheitsrichtlinie</param>
+        <param name="table">Die Tabelle, für die dieses Prädikat gilt.</param>
+        <param name="predicateDefinition">Die prädikatdefinition als Zeichenfolge</param>
+        <summary>
+            Parametrisierter Konstruktor zum Erstellen von ein sicherheitsprädikat, das eine Tabelle abzielt.
+Füllt Eigenschaften von Parameterwerten an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityPredicate (Microsoft.SqlServer.Management.Smo.SecurityPolicy parent, string targetObjectSchema, string targetObjectName, int targetObjectId, string predicateDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.SecurityPolicy parent, string targetObjectSchema, string targetObjectName, int32 targetObjectId, string predicateDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicate.#ctor(Microsoft.SqlServer.Management.Smo.SecurityPolicy,System.String,System.String,System.Int32,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.Smo.SecurityPolicy" />
+        <Parameter Name="targetObjectSchema" Type="System.String" />
+        <Parameter Name="targetObjectName" Type="System.String" />
+        <Parameter Name="targetObjectId" Type="System.Int32" />
+        <Parameter Name="predicateDefinition" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die übergeordnete Sicherheitsrichtlinie</param>
+        <param name="targetObjectSchema">Das Schema, das Zielobjekt besitzt.</param>
+        <param name="targetObjectName">Den Namen des Zielobjekts</param>
+        <param name="targetObjectId">Das Zielobjekt Objekt-id</param>
+        <param name="predicateDefinition">Die prädikatdefinition als Zeichenfolge</param>
+        <summary>
+            Parametrisierter Konstruktor - füllt die Eigenschaften von Parameterwerten.
+            </summary>
+        <remarks>Dieser Konstruktor ermöglicht die Erstellung von sicherheitsprädikaten für Ansichten und andere Objekttypen.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alter">
+      <MemberSignature Language="C#" Value="public void Alter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Alter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicate.Alter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ändern Sie die Sicherheitsrichtlinie
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public void Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicate.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellen Sie das Sicherheitsprädikat dies fehl, es sei denn, das übergeordnete Element Sicherheitsrichtlinie erstellt wurde.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Drop">
+      <MemberSignature Language="C#" Value="public void Drop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Drop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicate.Drop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Löschen Sie das Sicherheitsprädikat
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropIfExists">
+      <MemberSignature Language="C#" Value="public void DropIfExists ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DropIfExists() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicate.DropIfExists" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Löscht das Objekt mit dem IF EXISTS-Option. Wenn Objekt ungültig ist, für die Drop-Funktion ohne Ausnahme zurückgegeben wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkForDrop">
+      <MemberSignature Language="C#" Value="public void MarkForDrop (bool dropOnAlter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MarkForDrop(bool dropOnAlter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicate.MarkForDrop(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dropOnAlter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dropOnAlter">Gibt an, ob das Prädikat zum Löschen markiert werden soll.</param>
+        <summary>
+            Kennzeichnet oder hebt die Markierung der Sicherheitsprädikat für Drop auf die nächste Alter für die übergeordnete Richtlinie aufgerufen
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.SecurityPolicy Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.SecurityPolicy Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SecurityPredicate.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectRelationship.ParentObject)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.SecurityPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PredicateDefinition">
+      <MemberSignature Language="C#" Value="public string PredicateDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PredicateDefinition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SecurityPredicate.PredicateDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt die prädikatdefinition.  Der Getter entfernt alle Klammern nicht erforderlichen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PredicateOperation">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.SecurityPredicateOperation PredicateOperation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.SecurityPredicateOperation PredicateOperation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SecurityPredicate.PredicateOperation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.SecurityPredicateOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PredicateType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.SecurityPredicateType PredicateType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.SecurityPredicateType PredicateType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SecurityPredicate.PredicateType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.SecurityPredicateType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPredicateID">
+      <MemberSignature Language="C#" Value="public int SecurityPredicateID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SecurityPredicateID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SecurityPredicate.SecurityPredicateID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetObjectID">
+      <MemberSignature Language="C#" Value="public int TargetObjectID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TargetObjectID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SecurityPredicate.TargetObjectID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetObjectName">
+      <MemberSignature Language="C#" Value="public string TargetObjectName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetObjectName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SecurityPredicate.TargetObjectName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetObjectSchema">
+      <MemberSignature Language="C#" Value="public string TargetObjectSchema { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetObjectSchema" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SecurityPredicate.TargetObjectSchema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

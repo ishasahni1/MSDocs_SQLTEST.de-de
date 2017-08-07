@@ -1,0 +1,1578 @@
+<Type Name="PipelineComponent" FullName="Microsoft.SqlServer.Dts.Pipeline.PipelineComponent">
+  <TypeSignature Language="C#" Value="public class PipelineComponent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PipelineComponent extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.PipelineHost</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Definiert die Basisklasse, die bei der Entwicklung verwalteter Datenflusskomponenten verwendet wird.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PipelineComponent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcquireConnections">
+      <MemberSignature Language="C#" Value="public virtual void AcquireConnections (object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AcquireConnections(object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.AcquireConnections(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="transaction">Die Transaktion, an der die Verbindung beteiligt ist.</param>
+        <summary>Stellt eine Verbindung mit einem Verbindungs-Manager her.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddErrorOutput">
+      <MemberSignature Language="C#" Value="public void AddErrorOutput (string strOutputName, int lInputID, int lExclusionGroup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddErrorOutput(string strOutputName, int32 lInputID, int32 lExclusionGroup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.AddErrorOutput(System.String,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strOutputName" Type="System.String" />
+        <Parameter Name="lInputID" Type="System.Int32" />
+        <Parameter Name="lExclusionGroup" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="strOutputName">Gibt den Namen der Ausgabe an.</param>
+        <param name="lInputID">Gibt die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> der Fehlerausgabe.</param>
+        <param name="lExclusionGroup">Gibt die Ausschlussgruppe der Ausgabe an.</param>
+        <summary>Fügt eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> Objekt, und kennzeichnet es als Fehlerausgabe durch Festlegen der <see cref="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100.IsErrorOut" /> Eigenschaft auf "true".</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferManager">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBufferManager100 BufferManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBufferManager100 BufferManager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.BufferManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBufferManager100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBufferManager100" /> der Pipelinekomponente.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSBufferManager100" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferTypeToDataRecordType">
+      <MemberSignature Language="C#" Value="protected static Type BufferTypeToDataRecordType (Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Type BufferTypeToDataRecordType(valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.BufferTypeToDataRecordType(Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" />
+      </Parameters>
+      <Docs>
+        <param name="type">Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" /> Enumeration.</param>
+        <summary>Gibt einen verwalteten Datentyp basierend auf einem Integration Services-Datentyp zurück.</summary>
+        <returns>Der verwaltete Typ, der ein Integration Services zugeordnet <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" />.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cleanup">
+      <MemberSignature Language="C#" Value="public virtual void Cleanup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cleanup() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.Cleanup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt Ressourcen frei und schließt die Ausführung der Komponente ab.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComponentMetaData">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100 ComponentMetaData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100 ComponentMetaData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.ComponentMetaData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100" /> für eine Komponente ab.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100" /> der Datenflusskomponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertBufferDataTypeToFitManaged">
+      <MemberSignature Language="C#" Value="protected static Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType ConvertBufferDataTypeToFitManaged (Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType dt, ref bool IsLong);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType ConvertBufferDataTypeToFitManaged(valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType dt, bool IsLong) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.ConvertBufferDataTypeToFitManaged(Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dt" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" />
+        <Parameter Name="IsLong" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="dt">Integrationsservices<see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" /></param>
+        <param name="IsLong">Gibt an, ob es sich um einen long-Datentyp handelt.</param>
+        <summary>Ruft die entsprechenden Integrationsdienste <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" /> aus verwaltetem Code.</summary>
+        <returns>Ein Integration Services <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" /> , die einem verwalteten Typ entspricht. </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataRecordTypeToBufferType">
+      <MemberSignature Language="C#" Value="protected static Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType DataRecordTypeToBufferType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType DataRecordTypeToBufferType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.DataRecordTypeToBufferType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">Ein verwalteter Typ.</param>
+        <summary>Ruft die Integrationsdienste <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" /> , die einem verwalteten Typ entspricht.</summary>
+        <returns>Die Integrationsdienste <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" /> , die den verwalteten Typ entspricht.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteExternalMetadataColumn">
+      <MemberSignature Language="C#" Value="public virtual void DeleteExternalMetadataColumn (int iID, int iExternalMetadataColumnID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteExternalMetadataColumn(int32 iID, int32 iExternalMetadataColumnID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.DeleteExternalMetadataColumn(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iID" Type="System.Int32" />
+        <Parameter Name="iExternalMetadataColumnID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="iID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> oder <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , die die externe Metadatenspalte zugeordnet ist.</param>
+        <param name="iExternalMetadataColumnID">Die ID der externen Metadatenspalte.</param>
+        <summary>Löscht die externe Metadatenspalte am angegebenen Index aus der Auflistung externer Metadatenspalten.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteInput">
+      <MemberSignature Language="C#" Value="public virtual void DeleteInput (int inputID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteInput(int32 inputID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.DeleteInput(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="inputID">Die ID des zu löschenden Eingabeobjekts.</param>
+        <summary>Löscht eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> -Objekt aus der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputCollection100" /> Auflistung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteOutput">
+      <MemberSignature Language="C#" Value="public virtual void DeleteOutput (int outputID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteOutput(int32 outputID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.DeleteOutput(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="outputID">Die ID des zu löschenden <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" />-Objekts.</param>
+        <summary>Löscht eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> -Objekt aus der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputCollection100" /> Auflistung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteOutputColumn">
+      <MemberSignature Language="C#" Value="public virtual void DeleteOutputColumn (int outputID, int outputColumnID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteOutputColumn(int32 outputID, int32 outputColumnID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.DeleteOutputColumn(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputID" Type="System.Int32" />
+        <Parameter Name="outputColumnID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="outputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , enthält die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" />.</param>
+        <param name="outputColumnID">Die ID des Objekts IDTSOutputColumn100 zu löschen.</param>
+        <summary>Löscht eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" /> -Objekt aus der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumnCollection100" /> Auflistung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DescribeRedirectedErrorCode">
+      <MemberSignature Language="C#" Value="public virtual string DescribeRedirectedErrorCode (int iErrorCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string DescribeRedirectedErrorCode(int32 iErrorCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.DescribeRedirectedErrorCode(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iErrorCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="iErrorCode">Der beschriebene Fehlercode.</param>
+        <summary>Stellt Fehlercodeinformationen für eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> einem Ausgabepuffer hinzugefügte Zeile.</summary>
+        <returns>Die dem Fehlercode zugeordnete Beschreibung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorSupport">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport ErrorSupport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport ErrorSupport" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.ErrorSupport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> Objekt, mit dem die Komponente Auslösen von Fehlern, Warnungen oder anderen Informationsereignissen auf der Grundlage von HRESULTs, die von Integration Services-Komponenten, die in systemeigenem Code geschriebenen zurückgegeben.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> Objekt, mit dem die Komponente Auslösen von Fehlern, Warnungen oder anderen Informationsereignissen auf der Grundlage von HRESULTs, die von Integration Services-Komponenten, die in systemeigenem Code geschriebenen zurückgegeben.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventInfos">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSEventInfos100 EventInfos { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSEventInfos100 EventInfos" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.EventInfos" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSEventInfos100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSEventInfos100" /> Auflistung von der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent" /> Objekt.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSEventInfos100" /> Objekt bereitgestellt, um die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDependentInputs">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.Collection&lt;int&gt; GetDependentInputs (int blockedInputID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.Collection`1&lt;int32&gt; GetDependentInputs(int32 blockedInputID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.GetDependentInputs(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blockedInputID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="blockedInputID">Die ID einer Eingabe, die blockiert wird, während andere Eingaben auf weitere Daten warten.</param>
+        <summary>Gibt eine Auflistung der Eingabe-IDs von Eingaben zurück, die auf weitere Daten warten und daher die angegebene Eingabe blockieren.</summary>
+        <returns>Eine Auflistung von Eingabe-IDs von Eingaben, die auf weitere Daten warten und daher die Eingabe blockieren, die identifizierte der <paramref name="blockedInputID" /> Parameter.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetErrorOutputInfo">
+      <MemberSignature Language="C#" Value="public bool GetErrorOutputInfo (ref int iErrorOutputID, ref int iErrorOutputIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetErrorOutputInfo(int32 iErrorOutputID, int32 iErrorOutputIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.GetErrorOutputInfo(System.Int32@,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iErrorOutputID" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="iErrorOutputIndex" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="iErrorOutputID">Enthält die ID des Fehlers <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> bei Rückgabe der Methode.</param>
+        <param name="iErrorOutputIndex">Enthält den Index der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> mit dem Fehler, wenn die Methode einen Wert zurückgibt.</param>
+        <summary>Gibt den Index und die ID der Fehlerausgabe der Komponente zurück.</summary>
+        <returns>"true", wenn die Komponente verfügt über eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> -Objekt mit den <see cref="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100.IsErrorOut" /> Eigenschaftensatz zu "true" ist, andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="idxOfBufferType">
+      <MemberSignature Language="C#" Value="protected static int idxOfBufferType (Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig int32 idxOfBufferType(valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.idxOfBufferType(Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" />
+      </Parameters>
+      <Docs>
+        <param name="type">Der Typ.</param>
+        <summary>Gibt den Typ des Pufferindex an.</summary>
+        <returns>Der Typ des Pufferindex.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="idxOfDataRecordType">
+      <MemberSignature Language="C#" Value="protected static int idxOfDataRecordType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig int32 idxOfDataRecordType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.idxOfDataRecordType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">Der Typ.</param>
+        <summary>Gibt den Typ des Datensatzindex an.</summary>
+        <returns>Der Typ des Datensatzindex.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public virtual void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initialisiert beim Überschreiben in einer abgeleiteten Klasse eine neue Instanz einer benutzerdefinierten Datenflusskomponente.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertExternalMetadataColumnAt">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100 InsertExternalMetadataColumnAt (int iID, int iExternalMetadataColumnIndex, string strName, string strDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100 InsertExternalMetadataColumnAt(int32 iID, int32 iExternalMetadataColumnIndex, string strName, string strDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.InsertExternalMetadataColumnAt(System.Int32,System.Int32,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iID" Type="System.Int32" />
+        <Parameter Name="iExternalMetadataColumnIndex" Type="System.Int32" />
+        <Parameter Name="strName" Type="System.String" />
+        <Parameter Name="strDescription" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="iID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> oder <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , die die externe Metadatenspalte zugeordnet ist.</param>
+        <param name="iExternalMetadataColumnIndex">Der Index, an dem die neue externe Metadatenspalte in die Auflistung eingefügt werden soll.</param>
+        <param name="strName">Der Name der neuen externen Metadatenspalte.</param>
+        <param name="strDescription">Die Beschreibung der neuen externen Metadatenspalte.</param>
+        <summary>Fügt eine neue externe Metadatenspalte am angegebenen Index in die Auflistung externer Metadatenspalten ein.</summary>
+        <returns>Das neu erstellte <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100" />.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertInput">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100 InsertInput (Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSInsertPlacement insertPlacement, int inputID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100 InsertInput(valuetype Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSInsertPlacement insertPlacement, int32 inputID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.InsertInput(Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSInsertPlacement,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="insertPlacement" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSInsertPlacement" />
+        <Parameter Name="inputID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="insertPlacement">Gibt an, ob das neue einzufügende <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> -Objekt vor oder nach der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> angegebene Objekt <paramref name="inputID" />.</param>
+        <param name="inputID">Gibt ein vorhandenes <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> Objekt, mit der neuen <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> neben eingefügt wird.</param>
+        <summary>Fügt <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputCollection100" />-Objekt hinzu.</summary>
+        <returns>Das neu erstellte <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertOutput">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 InsertOutput (Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSInsertPlacement insertPlacement, int outputID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 InsertOutput(valuetype Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSInsertPlacement insertPlacement, int32 outputID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.InsertOutput(Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSInsertPlacement,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="insertPlacement" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSInsertPlacement" />
+        <Parameter Name="outputID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="insertPlacement">Gibt an, ob das neue einzufügende <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> -Objekt vor oder nach der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> angegebene Objekt <paramref name="outputID" />.</param>
+        <param name="outputID">Gibt ein vorhandenes <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> Objekt, mit der neuen <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> neben eingefügt wird.</param>
+        <summary>Fügt ein neues <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> Objekt </summary>
+        <returns>Das neu erstellte <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> Objekt</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertOutputColumnAt">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100 InsertOutputColumnAt (int outputID, int outputColumnIndex, string name, string description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100 InsertOutputColumnAt(int32 outputID, int32 outputColumnIndex, string name, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.InsertOutputColumnAt(System.Int32,System.Int32,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputID" Type="System.Int32" />
+        <Parameter Name="outputColumnIndex" Type="System.Int32" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="outputID">Gibt das IDTSOutput100-Objekt, um die Spalte hinzuzufügen.</param>
+        <param name="outputColumnIndex">Gibt die Position in <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumnCollection100" /> an, an der die neue <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" /> eingefügt werden soll.</param>
+        <param name="name">Gibt den Wert der Name-Eigenschaft der neuen zugewiesen <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" />.</param>
+        <param name="description">Gibt den Wert, der die Description-Eigenschaft der neuen zugewiesene <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" />.</param>
+        <summary>Erstellt ein neues <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" /> -Objekt und fügt es in die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumnCollection100" />.</summary>
+        <returns>Das neu erstellte <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" /> Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCompatibleNumericTypes">
+      <MemberSignature Language="C#" Value="protected static bool IsCompatibleNumericTypes (Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType dataTypeInp, Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType dataTypeExt);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool IsCompatibleNumericTypes(valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType dataTypeInp, valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType dataTypeExt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.IsCompatibleNumericTypes(Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType,Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataTypeInp" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" />
+        <Parameter Name="dataTypeExt" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" />
+      </Parameters>
+      <Docs>
+        <param name="dataTypeInp">Der numerische Datentyp der zu konvertierenden Spalte.</param>
+        <param name="dataTypeExt">Der numerische Datentyp der Zielspalte.</param>
+        <summary>Bestimmt, ob zwei numerische Datentypen kompatibel sind, um eine Konvertierung von einem Typ in den anderen zu unterstützen.</summary>
+        <returns>"true", wenn die numerischen Typen kompatibel sind, "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInputReady">
+      <MemberSignature Language="C#" Value="public virtual void IsInputReady (int[] inputIDs, ref bool[] canProcess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsInputReady(int32[] inputIDs, bool[] canProcess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.IsInputReady(System.Int32[],System.Boolean[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputIDs" Type="System.Int32[]" />
+        <Parameter Name="canProcess" Type="System.Boolean[]&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="inputIDs">Ein Array der IDs der an die Komponente angefügten Eingaben.</param>
+        <param name="canProcess">Ein Array von booleschen Werten, die angeben, ob jede Eingabe darauf, dass mehr Daten (True wartet) oder blockiert (False), als Verweis übergeben wird. </param>
+        <summary>Bestimmt, welche der an eine Komponente angefügten Eingaben auf weitere Daten warten und welche Eingaben über ausreichend Daten für die Verarbeitung verfügen und blockiert werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogEntryInfos">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogEntryInfos100 LogEntryInfos { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogEntryInfos100 LogEntryInfos" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.LogEntryInfos" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogEntryInfos100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogEntryInfos100" /> -Auflistung von protokollierungsereignissen, die der Komponente registriert wurden.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogEntryInfos100" /> -Auflistung von protokollierungsereignissen, die der Komponente registriert wurden. Weitere Informationen finden Sie unter protokollieren und Definieren von Protokolleinträgen in einer Datenflusskomponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapInputColumn">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100 MapInputColumn (int iInputID, int iInputColumnID, int iExternalMetadataColumnID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100 MapInputColumn(int32 iInputID, int32 iInputColumnID, int32 iExternalMetadataColumnID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.MapInputColumn(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iInputID" Type="System.Int32" />
+        <Parameter Name="iInputColumnID" Type="System.Int32" />
+        <Parameter Name="iExternalMetadataColumnID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="iInputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> Objekt.</param>
+        <param name="iInputColumnID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" /> Objekt.</param>
+        <param name="iExternalMetadataColumnID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100" /> Objekt.</param>
+        <summary>Legt eine Beziehung zwischen einer Eingabespalte und einer entsprechenden externen Metadatenspalte fest.</summary>
+        <returns>Das <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100" />-Objekt, dem die Eingabespalte zugeordnet ist.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapOutputColumn">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100 MapOutputColumn (int iOutputID, int iOutputColumnID, int iExternalMetadataColumnID, bool bMatch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100 MapOutputColumn(int32 iOutputID, int32 iOutputColumnID, int32 iExternalMetadataColumnID, bool bMatch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.MapOutputColumn(System.Int32,System.Int32,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iOutputID" Type="System.Int32" />
+        <Parameter Name="iOutputColumnID" Type="System.Int32" />
+        <Parameter Name="iExternalMetadataColumnID" Type="System.Int32" />
+        <Parameter Name="bMatch" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="iOutputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> Objekt.</param>
+        <param name="iOutputColumnID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" /> Objekt.</param>
+        <param name="iExternalMetadataColumnID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100" /> Objekt.</param>
+        <param name="bMatch">Gibt an, ob die Spalten übereinstimmen.</param>
+        <summary>Legt eine Beziehung zwischen einer Ausgabespalte und einer entsprechenden externen Metadatenspalte fest.</summary>
+        <returns>Die der Ausgabespalte zugeordnete <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100" />.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeletingInputColumn">
+      <MemberSignature Language="C#" Value="public virtual void OnDeletingInputColumn (int inputID, int inputColumnID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDeletingInputColumn(int32 inputID, int32 inputColumnID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.OnDeletingInputColumn(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputID" Type="System.Int32" />
+        <Parameter Name="inputColumnID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="inputID">Gibt die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> an, die die gelöschte <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" /> enthält.</param>
+        <param name="inputColumnID">Gibt die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" /> , die gerade gelöscht.</param>
+        <summary>Löscht eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" /> -Objekt aus der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumnCollection100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInputPathAttached">
+      <MemberSignature Language="C#" Value="public virtual void OnInputPathAttached (int inputID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnInputPathAttached(int32 inputID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.OnInputPathAttached(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="inputID">Enthält die ID des angefügten <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" />-Objekts.</param>
+        <summary>Wird aufgerufen, wenn ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> -Objekt verbunden ist, an die Komponente durch die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSPath100" /> Schnittstelle.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInputPathDetached">
+      <MemberSignature Language="C#" Value="public virtual void OnInputPathDetached (int inputID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnInputPathDetached(int32 inputID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.OnInputPathDetached(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="inputID">Gibt die ID des <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" />-Objekts an, das mit dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSPath100" />-Objekt verbunden wurde.</param>
+        <summary>Wird aufgerufen, wenn ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" />-Objekt über die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSPath100" />-Schnittstelle von der Komponente getrennt wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnOutputPathAttached">
+      <MemberSignature Language="C#" Value="public virtual void OnOutputPathAttached (int outputID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnOutputPathAttached(int32 outputID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.OnOutputPathAttached(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="outputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> Objekt.</param>
+        <summary>Wird aufgerufen, wenn ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> -Objekt der Komponente an eine downstreamkomponente angefügt wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformDowngrade">
+      <MemberSignature Language="C#" Value="public virtual void PerformDowngrade (int pipelineVersion, Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSTargetServerVersion targetServerVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PerformDowngrade(int32 pipelineVersion, valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSTargetServerVersion targetServerVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.PerformDowngrade(System.Int32,Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSTargetServerVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pipelineVersion" Type="System.Int32" />
+        <Parameter Name="targetServerVersion" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSTargetServerVersion" />
+      </Parameters>
+      <Docs>
+        <param name="pipelineVersion">
+        </param>
+        <param name="targetServerVersion">
+        </param>
+        <summary>
+            Standardmäßig sollte PerformDowngrade ComponentDowngradeFailedException keine auslösen, da Common Language Runtime nur bestimmt, ob diese Methode aufgerufen wird, indem TargetServerVersion kann; Es kann nicht Komponentenversion überprüft, da er nicht weiß, ob die Version der Komponente zwischen zwei Versionen von SSIS, während die Methode geändert wurden, die PerformUpgrade überprüft wird, ob die Version der Komponente im Paket-Xml kleiner als die aktuelle Komponentenversion ist, bevor Sie aufgerufen werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformUpgrade">
+      <MemberSignature Language="C#" Value="public virtual void PerformUpgrade (int pipelineVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PerformUpgrade(int32 pipelineVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.PerformUpgrade(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pipelineVersion" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pipelineVersion">Die aktuelle Version von Integration Services-Datenflussmodul.</param>
+        <summary>Aktualisiert die Komponentenmetadaten auf die Version der Komponente, die auf dem lokalen Computer installiert ist.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostExecute">
+      <MemberSignature Language="C#" Value="public virtual void PostExecute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PostExecute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.PostExecute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Am Ende der komponentenausführung, aber vor aufgerufen <see cref="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.Cleanup" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreExecute">
+      <MemberSignature Language="C#" Value="public virtual void PreExecute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PreExecute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.PreExecute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Wird aufgerufen, nachdem <see cref="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.PrepareForExecute" />, und vor dem <see cref="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.PrimeOutput(System.Int32,System.Int32[],Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer[])" /> und <see cref="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.ProcessInput(System.Int32,Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer)" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareForExecute">
+      <MemberSignature Language="C#" Value="public virtual void PrepareForExecute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrepareForExecute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.PrepareForExecute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Wird aufgerufen, bevor <see cref="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.PreExecute" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimeOutput">
+      <MemberSignature Language="C#" Value="public virtual void PrimeOutput (int outputs, int[] outputIDs, Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer[] buffers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrimeOutput(int32 outputs, int32[] outputIDs, class Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer[] buffers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.PrimeOutput(System.Int32,System.Int32[],Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputs" Type="System.Int32" />
+        <Parameter Name="outputIDs" Type="System.Int32[]" />
+        <Parameter Name="buffers" Type="Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer[]" />
+      </Parameters>
+      <Docs>
+        <param name="outputs">Die Anzahl der Elemente in der <paramref name="outputIDs" /> und <paramref name="buffers" /> Arrays.</param>
+        <param name="outputIDs">Ein Array von <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> IDs</param>
+        <param name="buffers">Ein Array von <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Objekte.</param>
+        <summary>Wird zur Laufzeit für Quell- und Transformationskomponenten mit asynchronen Ausgaben aufgerufen, damit diese Komponenten den Ausgabepuffern Zeilen hinzufügen können.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessInput">
+      <MemberSignature Language="C#" Value="public virtual void ProcessInput (int inputID, Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessInput(int32 inputID, class Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.ProcessInput(System.Int32,Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputID" Type="System.Int32" />
+        <Parameter Name="buffer" Type="Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />
+      </Parameters>
+      <Docs>
+        <param name="inputID">Die ID der Eingabe aus der Komponente.</param>
+        <param name="buffer">Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Objekt.</param>
+        <summary>Bei der Ausführung aufgerufen Uhrzeit der Erstellung einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> von einer upstreamkomponente ist für die Komponente Komponente für die Verarbeitung eingehender Zeilen zur Verfügung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideComponentProperties">
+      <MemberSignature Language="C#" Value="public virtual void ProvideComponentProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProvideComponentProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.ProvideComponentProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Wird aufgerufen, wenn der Datenflusstask initialisiert werden zuerst eine Komponente hinzugefügt ist die <see cref="P:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.ComponentMetaData" /> der Komponente.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceTracker">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectReferenceTracker100 ReferenceTracker { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectReferenceTracker100 ReferenceTracker" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.ReferenceTracker" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectReferenceTracker100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den der Komponente zugeordneten <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectReferenceTracker100" /> ab.</summary>
+        <value>Die ReferenceTracker stellt die Auswirkungsanalyse für das SSIS-Laufzeitmodul bereit. Die von der Komponente verwendeten Variablen und Verbindungen werden von Komponenten registriert. Wenn ein anderes Objekt im Paket versucht, die Variable oder die Verbindung, auf die von der Komponente verwiesen wird, zu löschen, kann das System sicherstellen, dass die Variable oder Verbindung von der Komponente verwendet wird, und zeigt entsprechende Informationen an.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterEvents">
+      <MemberSignature Language="C#" Value="public virtual void RegisterEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.RegisterEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Wenn Sie eine benutzerdefinierte Datenflusskomponente entwickeln, überschreiben Sie diese Methode, um benutzerdefinierte Ereignisse zu erstellen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterLogEntries">
+      <MemberSignature Language="C#" Value="public virtual void RegisterLogEntries ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterLogEntries() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.RegisterLogEntries" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Registriert die Ereignisse, die von der Komponente protokolliert werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReinitializeMetaData">
+      <MemberSignature Language="C#" Value="public virtual void ReinitializeMetaData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReinitializeMetaData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.ReinitializeMetaData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Repariert alle während der Überprüfung identifizierten Fehler, die dazu führen, die Komponente dass zurückzugebenden <see cref="F:Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus.VS_NEEDSNEWMETADATA" /> zur Entwurfszeit.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseConnections">
+      <MemberSignature Language="C#" Value="public virtual void ReleaseConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseConnections() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.ReleaseConnections" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt die während <see cref="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.AcquireConnections(System.Object)" /> hergestellten Verbindungen frei. Wird zur Entwurfs- und Laufzeit aufgerufen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAllInputsOutputsAndCustomProperties">
+      <MemberSignature Language="C#" Value="public void RemoveAllInputsOutputsAndCustomProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAllInputsOutputsAndCustomProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.RemoveAllInputsOutputsAndCustomProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Löscht alle <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> und <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> -Objekt aus der Komponente.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_STOCKPROPNAME_COMPFLAGS">
+      <MemberSignature Language="C#" Value="public static string s_STOCKPROPNAME_COMPFLAGS;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string s_STOCKPROPNAME_COMPFLAGS" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.s_STOCKPROPNAME_COMPFLAGS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enthält den Namen der Datenflusskomponenten ComparisonFlags-Eigenschaft.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_STOCKPROPNAME_DELOUTPUTONPATHDETACHED">
+      <MemberSignature Language="C#" Value="public static string s_STOCKPROPNAME_DELOUTPUTONPATHDETACHED;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string s_STOCKPROPNAME_DELOUTPUTONPATHDETACHED" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.s_STOCKPROPNAME_DELOUTPUTONPATHDETACHED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enthält den Namen der Eigenschaft DeleteOutputOnPathDetached von Datenflusskomponenten.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_STOCKPROPNAME_EXCLGROUP">
+      <MemberSignature Language="C#" Value="public static string s_STOCKPROPNAME_EXCLGROUP;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string s_STOCKPROPNAME_EXCLGROUP" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.s_STOCKPROPNAME_EXCLGROUP" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enthält den Namen der "exclusiongroup"-Eigenschaft von Datenflusskomponenten.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_STOCKPROPNAME_HASSIDEEFFECTS">
+      <MemberSignature Language="C#" Value="public static string s_STOCKPROPNAME_HASSIDEEFFECTS;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string s_STOCKPROPNAME_HASSIDEEFFECTS" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.s_STOCKPROPNAME_HASSIDEEFFECTS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enthält den Namen, der die HasSideEffects-Eigenschaft von Datenflusskomponenten.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_STOCKPROPNAME_ISDISTRIBUTABLE">
+      <MemberSignature Language="C#" Value="public static string s_STOCKPROPNAME_ISDISTRIBUTABLE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string s_STOCKPROPNAME_ISDISTRIBUTABLE" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.s_STOCKPROPNAME_ISDISTRIBUTABLE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enthält den Namen der Eigenschaft IsDistributable von Datenflusskomponenten.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_STOCKPROPNAME_ISERROROUT">
+      <MemberSignature Language="C#" Value="public static string s_STOCKPROPNAME_ISERROROUT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string s_STOCKPROPNAME_ISERROROUT" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.s_STOCKPROPNAME_ISERROROUT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enthält den Namen der Datenflusskomponenten IsErrorOut-Eigenschaft.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_STOCKPROPNAME_ISSORTED">
+      <MemberSignature Language="C#" Value="public static string s_STOCKPROPNAME_ISSORTED;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string s_STOCKPROPNAME_ISSORTED" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.s_STOCKPROPNAME_ISSORTED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enthält den Namen, der die IsSorted-Eigenschaft von Datenflusskomponenten.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_STOCKPROPNAME_REFMETADATAID">
+      <MemberSignature Language="C#" Value="public static string s_STOCKPROPNAME_REFMETADATAID;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string s_STOCKPROPNAME_REFMETADATAID" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.s_STOCKPROPNAME_REFMETADATAID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enthält den Namen der Eigenschaft ReferenceMetaDataID von Datenflusskomponenten.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_STOCKPROPNAME_SORTKEYPOS">
+      <MemberSignature Language="C#" Value="public static string s_STOCKPROPNAME_SORTKEYPOS;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string s_STOCKPROPNAME_SORTKEYPOS" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.s_STOCKPROPNAME_SORTKEYPOS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enthält den Namen der Datenflusskomponenten SortKeyPosition-Eigenschaft.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="s_STOCKPROPNAME_SYNCINPUTID">
+      <MemberSignature Language="C#" Value="public static string s_STOCKPROPNAME_SYNCINPUTID;" />
+      <MemberSignature Language="ILAsm" Value=".field public static string s_STOCKPROPNAME_SYNCINPUTID" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.s_STOCKPROPNAME_SYNCINPUTID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enthält den Namen der Datenflusskomponenten SynchronousInputID-Eigenschaft.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetComponentProperty">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetComponentProperty (string propertyName, object propertyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetComponentProperty(string propertyName, object propertyValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.SetComponentProperty(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Der Name des der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> , dessen Wert festgelegt ist.</param>
+        <param name="propertyValue">Das Objekt in der Value-Eigenschaft der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> Objekt.</param>
+        <summary>Weist einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> der Komponente einen Wert zu.</summary>
+        <returns>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> Objekts, dessen Eigenschaft festgelegt wird.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetExternalMetadataColumnDataTypeProperties">
+      <MemberSignature Language="C#" Value="public virtual void SetExternalMetadataColumnDataTypeProperties (int iID, int iExternalMetadataColumnID, Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType eDataType, int iLength, int iPrecision, int iScale, int iCodePage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetExternalMetadataColumnDataTypeProperties(int32 iID, int32 iExternalMetadataColumnID, valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType eDataType, int32 iLength, int32 iPrecision, int32 iScale, int32 iCodePage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.SetExternalMetadataColumnDataTypeProperties(System.Int32,System.Int32,Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iID" Type="System.Int32" />
+        <Parameter Name="iExternalMetadataColumnID" Type="System.Int32" />
+        <Parameter Name="eDataType" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" />
+        <Parameter Name="iLength" Type="System.Int32" />
+        <Parameter Name="iPrecision" Type="System.Int32" />
+        <Parameter Name="iScale" Type="System.Int32" />
+        <Parameter Name="iCodePage" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="iID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> oder <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , die die externe Metadatenspalte zugeordnet ist.</param>
+        <param name="iExternalMetadataColumnID">Die ID der externen Metadatenspalte.</param>
+        <param name="eDataType">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" /> , der den Datentyp der neuen externen Metadatenspalte enthält.</param>
+        <param name="iLength">Die Länge der neuen externen Metadatenspalte.</param>
+        <param name="iPrecision">Die numerische Genauigkeit der neuen externen Metadatenspalte.</param>
+        <param name="iScale">Die numerischen Dezimalstellen der neuen externen Metadatenspalte.</param>
+        <param name="iCodePage">Die Codepage der neuen externen Metadatenspalte.</param>
+        <summary>Legt die Datentypeigenschaften der angegebenen externen Metadatenspalte fest.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetExternalMetadataColumnProperty">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetExternalMetadataColumnProperty (int iID, int iExternalMetadataColumnID, string strPropertyName, object oValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetExternalMetadataColumnProperty(int32 iID, int32 iExternalMetadataColumnID, string strPropertyName, object oValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.SetExternalMetadataColumnProperty(System.Int32,System.Int32,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iID" Type="System.Int32" />
+        <Parameter Name="iExternalMetadataColumnID" Type="System.Int32" />
+        <Parameter Name="strPropertyName" Type="System.String" />
+        <Parameter Name="oValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="iID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> oder <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , die die externe Metadatenspalte zugeordnet ist.</param>
+        <param name="iExternalMetadataColumnID">Die ID der externen Metadatenspalte.</param>
+        <param name="strPropertyName">Der Name der Eigenschaft, deren Wert festgelegt wird.</param>
+        <param name="oValue">Der Wert, der der Eigenschaft zugewiesen werden soll.</param>
+        <summary>Legt eine einzelne Eigenschaft einer externen Metadatenspalte fest.</summary>
+        <returns>Eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" />, die den geänderten Eigenschaftswert enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInputColumnProperty">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetInputColumnProperty (int inputID, int inputColumnID, string propertyName, object propertyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetInputColumnProperty(int32 inputID, int32 inputColumnID, string propertyName, object propertyValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.SetInputColumnProperty(System.Int32,System.Int32,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputID" Type="System.Int32" />
+        <Parameter Name="inputColumnID" Type="System.Int32" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="inputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> -Objekt, enthält die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" />.</param>
+        <param name="inputColumnID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" /> Objekt, dessen <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> festgelegt wird.</param>
+        <param name="propertyName">Der Name des der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> Objekt.</param>
+        <param name="propertyValue">Der in <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> festgelegte Wert.</param>
+        <summary>Weist einen Wert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> von einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" /> Objekt.</summary>
+        <returns>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> Objekts, dessen Eigenschaft festgelegt wird.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInputProperty">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetInputProperty (int inputID, string propertyName, object propertyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetInputProperty(int32 inputID, string propertyName, object propertyValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.SetInputProperty(System.Int32,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputID" Type="System.Int32" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="inputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> -Objekt, das die benutzerdefinierte Eigenschaft enthält.</param>
+        <param name="propertyName">Der Name des der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" />.</param>
+        <param name="propertyValue">Der zuzuweisende Wert der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" />.</param>
+        <summary>Weist einen Wert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> von einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> Objekt.</summary>
+        <returns>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> Objekt, dessen Wert festgelegt wird.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputColumnDataTypeProperties">
+      <MemberSignature Language="C#" Value="public virtual void SetOutputColumnDataTypeProperties (int iOutputID, int iOutputColumnID, Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType eDataType, int iLength, int iPrecision, int iScale, int iCodePage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOutputColumnDataTypeProperties(int32 iOutputID, int32 iOutputColumnID, valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType eDataType, int32 iLength, int32 iPrecision, int32 iScale, int32 iCodePage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.SetOutputColumnDataTypeProperties(System.Int32,System.Int32,Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iOutputID" Type="System.Int32" />
+        <Parameter Name="iOutputColumnID" Type="System.Int32" />
+        <Parameter Name="eDataType" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" />
+        <Parameter Name="iLength" Type="System.Int32" />
+        <Parameter Name="iPrecision" Type="System.Int32" />
+        <Parameter Name="iScale" Type="System.Int32" />
+        <Parameter Name="iCodePage" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="iOutputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> Objekt.</param>
+        <param name="iOutputColumnID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" /> Objekt.</param>
+        <param name="eDataType">Der <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" /> der Spalte.</param>
+        <param name="iLength">Die Länge der Spalte.</param>
+        <param name="iPrecision">Die Gesamtanzahl der Ziffern in der Spalte.</param>
+        <param name="iScale">Die Anzahl der Dezimalstellen (Genauigkeit) in der Spalte.</param>
+        <param name="iCodePage">Die Codepage der Spalte.</param>
+        <summary>Legt die Datentypeigenschaften der ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" /> Objekt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputColumnProperty">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetOutputColumnProperty (int outputID, int outputColumnID, string propertyName, object propertyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetOutputColumnProperty(int32 outputID, int32 outputColumnID, string propertyName, object propertyValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.SetOutputColumnProperty(System.Int32,System.Int32,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputID" Type="System.Int32" />
+        <Parameter Name="outputColumnID" Type="System.Int32" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="outputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , enthält die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" /> Objekt.</param>
+        <param name="outputColumnID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" /> Objekt.</param>
+        <param name="propertyName">Der Name des der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" />.</param>
+        <param name="propertyValue">Der zugewiesene Wert der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" />.</param>
+        <summary>Legt den Wert für eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> für ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100" /> Objekt.</summary>
+        <returns>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> , dessen Wert festgelegt wurde.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputProperty">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetOutputProperty (int outputID, string propertyName, object propertyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 SetOutputProperty(int32 outputID, string propertyName, object propertyValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.SetOutputProperty(System.Int32,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputID" Type="System.Int32" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="outputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , deren <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> festgelegt ist.</param>
+        <param name="propertyName">Der Name der festzulegenden <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" />.</param>
+        <param name="propertyValue">Der zugewiesene Wert der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" />.</param>
+        <summary>Legt den Wert von <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> für ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" />-Objekt fest.</summary>
+        <returns>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100" /> Objekt, dessen Wert festgelegt wurde.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUsageType">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100 SetUsageType (int inputID, Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSVirtualInput100 virtualInput, int lineageID, Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSUsageType usageType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100 SetUsageType(int32 inputID, class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSVirtualInput100 virtualInput, int32 lineageID, valuetype Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSUsageType usageType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.SetUsageType(System.Int32,Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSVirtualInput100,System.Int32,Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSUsageType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputID" Type="System.Int32" />
+        <Parameter Name="virtualInput" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSVirtualInput100" />
+        <Parameter Name="lineageID" Type="System.Int32" />
+        <Parameter Name="usageType" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSUsageType" />
+      </Parameters>
+      <Docs>
+        <param name="inputID">Die ID des Objekts IDTSInput100.</param>
+        <param name="virtualInput">Das IDTSVirtualInput100-Objekt, das verwendet wird, um die Zuordnung der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" /> Objekt.</param>
+        <param name="lineageID">Die <see cref="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSVirtualInputColumn100.LineageID" /> von der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSVirtualInputColumn100" /> Objekt.</param>
+        <param name="usageType">Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSUsageType" /> Enumeration.</param>
+        <summary>Erstellt ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" /> Objekt in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumnCollection100" /> der Komponente und legt die <see cref="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100.UsageType" /> -Eigenschaft der Spalte.</summary>
+        <returns>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100" /> Objekt, dessen <see cref="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInputColumn100.UsageType" /> festgelegt ist.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.Validate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Überprüft, ob die Komponente ordnungsgemäß konfiguriert ist.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus" />-Enumeration, der den Status der Komponente angibt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VariableDispenser">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100 VariableDispenser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100 VariableDispenser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.VariableDispenser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100" /> der Datenflusskomponente ab.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100" /> für die Komponente bereitgestellte Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

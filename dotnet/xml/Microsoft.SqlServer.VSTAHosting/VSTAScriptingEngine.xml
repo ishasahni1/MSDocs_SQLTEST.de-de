@@ -1,0 +1,449 @@
+<Type Name="VSTAScriptingEngine" FullName="Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine">
+  <TypeSignature Language="C#" Value="public class VSTAScriptingEngine" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VSTAScriptingEngine extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.VSTAScriptingLib</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary />
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VSTAScriptingEngine (Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage scriptStorage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage scriptStorage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.#ctor(Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scriptStorage" Type="Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage" />
+      </Parameters>
+      <Docs>
+        <param name="scriptStorage">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VSTAScriptingEngine (Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage scriptStorage, bool debugMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage scriptStorage, bool debugMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.#ctor(Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scriptStorage" Type="Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage" />
+        <Parameter Name="debugMode" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="scriptStorage">
+        </param>
+        <param name="debugMode">feststellen Sie die Scriptlib, ob der werden im Debugmodus befindet</param>
+        <summary>
+            Konstruktor verwendet, um das Skriptmodul für die Common Language Runtime und der Entwurf initialisieren
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="c_xmlprojAssemblyNode">
+      <MemberSignature Language="C#" Value="public const string c_xmlprojAssemblyNode;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string c_xmlprojAssemblyNode" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.c_xmlprojAssemblyNode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dies ist der Knoten, in dem der Name der Assembly gespeichert ist, im Projekt Datei vstaprojxml2015 den Alias für den Namespace, die von der oben definierten XML-Code verwendet wird
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="c_xmlprojNamespace">
+      <MemberSignature Language="C#" Value="public const string c_xmlprojNamespace;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string c_xmlprojNamespace" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.c_xmlprojNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Namespacename, nach allen Namen, die im XML-Datei von Vsta-Projekt verwendet werden soll.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="c_xmlprojNamespaceAlias">
+      <MemberSignature Language="C#" Value="public const string c_xmlprojNamespaceAlias;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string c_xmlprojNamespaceAlias" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.c_xmlprojNamespaceAlias" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dies ist der Alias in der XPath-Abfrage verwendet wird, für den Namespace der oben genannten vielmehr groß ist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckDebuggerInUsed">
+      <MemberSignature Language="C#" Value="public bool CheckDebuggerInUsed (bool setUsedFlag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckDebuggerInUsed(bool setUsedFlag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.CheckDebuggerInUsed(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="setUsedFlag" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="setUsedFlag">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearDebuggerFlag">
+      <MemberSignature Language="C#" Value="public void ClearDebuggerFlag ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearDebuggerFlag() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.ClearDebuggerFlag" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebuggerVstaHelper">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.VSTAHosting.IVstaHelper DebuggerVstaHelper { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.VSTAHosting.IVstaHelper DebuggerVstaHelper" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.DebuggerVstaHelper" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.VSTAHosting.IVstaHelper</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisposeVstaHelper">
+      <MemberSignature Language="C#" Value="public void DisposeVstaHelper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisposeVstaHelper() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.DisposeVstaHelper" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~VSTAScriptingEngine ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Is32BitProcess">
+      <MemberSignature Language="C#" Value="public static bool Is32BitProcess ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Is32BitProcess() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.Is32BitProcess" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidProjectItemName">
+      <MemberSignature Language="C#" Value="public static bool IsValidProjectItemName (string strName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidProjectItemName(string strName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.IsValidProjectItemName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strName">Muss hinzugefügt werden.</param>
+        <summary>
+            Kontrollkästchen, um festzustellen, ob die StrName einen gültigen Namen für das skriptprojekt, wir nur bieten müssen Namen beginnen mit einem Buchstaben oder "_" gefolgt von Buchstaben, Ziffern und "_". Diese Methode wird von ProjectName.set verwendet und sollte nicht verwendet werden durch die Benutzer dennoch.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVstaHelperCreated">
+      <MemberSignature Language="C#" Value="public bool IsVstaHelperCreated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsVstaHelperCreated" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.IsVstaHelperCreated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadProjectFromStorage">
+      <MemberSignature Language="C#" Value="public bool LoadProjectFromStorage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool LoadProjectFromStorage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.LoadProjectFromStorage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_debugMode">
+      <MemberSignature Language="C#" Value="protected bool m_debugMode;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool m_debugMode" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.m_debugMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_macroProjectPath">
+      <MemberSignature Language="C#" Value="protected string m_macroProjectPath;" />
+      <MemberSignature Language="ILAsm" Value=".field family string m_macroProjectPath" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.m_macroProjectPath" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_scriptStorage">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage m_scriptStorage;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage m_scriptStorage" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.m_scriptStorage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectName">
+      <MemberSignature Language="C#" Value="public string ProjectName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProjectName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.ProjectName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt den Namen des aktuellen Projekts. Nützlich für die Skripts umbenennen
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveProjectToStorage">
+      <MemberSignature Language="C#" Value="public bool SaveProjectToStorage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SaveProjectToStorage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.SaveProjectToStorage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptAppName">
+      <MemberSignature Language="C#" Value="protected virtual string ScriptAppName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScriptAppName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.ScriptAppName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateRootPath">
+      <MemberSignature Language="C#" Value="public static string TemplateRootPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TemplateRootPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.TemplateRootPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualStudioVersionString">
+      <MemberSignature Language="C#" Value="public static string VisualStudioVersionString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string VisualStudioVersionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.VisualStudioVersionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VstaHelper">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.VSTAHosting.IVstaHelper VstaHelper { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.VSTAHosting.IVstaHelper VstaHelper" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.VstaHelper" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.VSTAHosting.IVstaHelper</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VstaVersionString">
+      <MemberSignature Language="C#" Value="public static string VstaVersionString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string VstaVersionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.VSTAHosting.VSTAScriptingEngine.VstaVersionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

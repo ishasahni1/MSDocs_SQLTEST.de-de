@@ -1,0 +1,156 @@
+<Type Name="PublishOptions" FullName="Microsoft.SqlServer.Dac.PublishOptions">
+  <TypeSignature Language="C#" Value="public sealed class PublishOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PublishOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.PublishOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Konfiguriert Optionen für gemeldet, bei bestimmten Vorgängen aus <see cref="T:Microsoft.SqlServer.Dac.DacServices" />, insbesondere, ob eine "deployreport" und/oder DeployScript generiert werden
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PublishOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.PublishOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Konfiguriert Optionen für gemeldet, bei bestimmten Vorgängen aus <see cref="T:Microsoft.SqlServer.Dac.DacServices" />, insbesondere, ob eine "deployreport" und/oder DeployScript generiert werden
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelToken">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Threading.CancellationToken&gt; CancelToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; CancelToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.PublishOptions.CancelToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Threading.CancellationToken&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NULL-Werte zulassen <see cref="T:System.Threading.CancellationToken" /> an den Aufrufer zum Abbrechen einer Bereitstellung zulassen
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseScriptPath">
+      <MemberSignature Language="C#" Value="public string DatabaseScriptPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseScriptPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.PublishOptions.DatabaseScriptPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optionaler Pfad zu der DB-Anwendungsebene-Bereitstellungsskript geschrieben werden soll, wenn <see cref="P:Microsoft.SqlServer.Dac.PublishOptions.GenerateDeploymentScript" /> ist "true".
+Dieses Skript enthält alle Vorgänge, die für die Datenbank während der Bereitstellung ausgeführt werden müssen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.DacDeployOptions DeployOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.DacDeployOptions DeployOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.PublishOptions.DeployOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacDeployOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optionale <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" /> auf eine Reihe von Optionen für die Bereitstellung konfigurieren. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDeploymentReport">
+      <MemberSignature Language="C#" Value="public bool GenerateDeploymentReport { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateDeploymentReport" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.PublishOptions.GenerateDeploymentReport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Legt fest, ob während der Bereitstellung einen Bereitstellungsbericht generiert werden soll.
+Dieser Bericht ist eine Zusammenfassung der Aktionen, die während der Bereitstellung ausgeführt wird.
+            </summary>
+        <value>Der Standardwert ist "false"</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDeploymentScript">
+      <MemberSignature Language="C#" Value="public bool GenerateDeploymentScript { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateDeploymentScript" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.PublishOptions.GenerateDeploymentScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Legt fest, ob die Bereitstellung Skripten während der Bereitstellung generiert werden soll.
+Bei "true", ein Skript zum Aktualisieren der Datenbank generiert werden, und ein Skript zum Aktualisieren von Master möglicherweise auch generiert, wenn das Ziel eine Azure SQL-Datenbank ist, und diese Datenbank noch nicht erstellt wurde.
+            </summary>
+        <value>Der Standardwert ist "true"</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MasterDbScriptPath">
+      <MemberSignature Language="C#" Value="public string MasterDbScriptPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MasterDbScriptPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.PublishOptions.MasterDbScriptPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optionaler Pfad zu der master Bereitstellungsskript auf Datenbankebene, geschrieben werden soll, wenn <see cref="P:Microsoft.SqlServer.Dac.PublishOptions.GenerateDeploymentScript" /> ist "true".
+Dieses Skript wird nur erstellt, wenn Azure SQL-Datenbank das Ziel ist, wie der USE-Anweisungen auf dieser Plattform nicht unterstützt werden.
+Sie enthält alle Vorgänge, die für die master-Datenbank, z. B. Create Database-Anweisungen ausgeführt werden müssen
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

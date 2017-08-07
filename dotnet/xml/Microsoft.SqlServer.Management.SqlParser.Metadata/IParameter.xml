@@ -1,0 +1,81 @@
+<Type Name="IParameter" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IParameter">
+  <TypeSignature Language="C#" Value="public interface IParameter : Microsoft.SqlServer.Management.SqlParser.Metadata.ILocalVariable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IParameter implements class Microsoft.SqlServer.Management.SqlParser.Metadata.ILocalVariable, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IParameter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.ILocalVariable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt einen SQL Server-Parameter dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public string DefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IParameter.DefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Standardwert des Parameters ab.
+            </summary>
+        <value>Der Standardwert des Parameters.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOutput">
+      <MemberSignature Language="C#" Value="public bool IsOutput { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOutput" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IParameter.IsOutput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Parameter ein Ausgabeparameter ist.
+            </summary>
+        <value>
+          <c>true</c> if the parameter is an output parameter; otherwise, <c>false</c>.</value>
+        <remarks>Diese Eigenschaft gilt nur für die Parameter für das Modul.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IParameter.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, dass dieser Parameter schreibgeschützt ist.
+            </summary>
+        <value>
+          <c>true</c> if the parameter is read-only; otherwise, <c>false</c>.</value>
+        <remarks>Diese Eigenschaft gilt nur für Modulparameter von <c>Tabelle</c> Datentypen.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,158 @@
+<Type Name="IDataTypeFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDataTypeFactory">
+  <TypeSignature Language="C#" Value="public interface IDataTypeFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataTypeFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDataTypeFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Eigenschaften und Methoden zum Erstellen von <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDataType" />-Objekten.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateTableDataType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTableDataType CreateTableDataType (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTableDataType CreateTableDataType(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDataTypeFactory.CreateTableDataType(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTableDataType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des der <c>Tabelle</c> datentypobjekts.</param>
+        <param name="collationInfo">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt, das beim Erstellen von Objektauflistungen verwendet werden soll.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType" />-Objekt, das beim Erstellen von Objektauflistungen den angegebenen Namen und das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt verwendet.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Cursor">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType Cursor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType Cursor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDataTypeFactory.Cursor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType" />-Singleton-Objekt ab, das einen Cursordatentyp darstellt.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType" /> -Objekt, das stellt einen <c>Cursor</c> -Datentyp.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownClr">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType UnknownClr { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType UnknownClr" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDataTypeFactory.UnknownClr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Platzhalter für ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType" />-Objekt ab, der verwendet werden kann, wenn der benutzerdefinierte Datentyp unbekannt ist.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownScalar">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType UnknownScalar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType UnknownScalar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDataTypeFactory.UnknownScalar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Platzhalter für ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" />-Objekt ab, der verwendet werden kann, wenn der skalare Datentyp unbekannt ist.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownTable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType UnknownTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType UnknownTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDataTypeFactory.UnknownTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Platzhalter <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType" /> Objekt, das kann verwendet werden, wenn die <c>Tabelle</c> -Datentyp ist nicht bekannt.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Void">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType Void { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType Void" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDataTypeFactory.Void" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" />-Singleton-Objekt ab, das einen leeren Datentyp (void) darstellt.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" />-Objekt, das einen leeren Datentyp (void) darstellt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlNode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType XmlNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType XmlNode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDataTypeFactory.XmlNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Singleton <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType" /> Objekt, das einen XML-Knoten-Datentyp darstellt, die in einem Resultset xml.nodes()-Methode verwendet werden kann. 
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType" /> Objekt, das einen XML-Knoten-Datentyp darstellt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

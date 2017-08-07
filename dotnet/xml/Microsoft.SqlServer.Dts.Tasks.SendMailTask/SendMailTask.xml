@@ -1,0 +1,438 @@
+<Type Name="SendMailTask" FullName="Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask">
+  <TypeSignature Language="C#" Value="public sealed class SendMailTask : Microsoft.SqlServer.Dts.Runtime.Task, Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, Microsoft.SqlServer.Dts.Tasks.SendMailTask.IDTSSendMailTask" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SendMailTask extends Microsoft.SqlServer.Dts.Runtime.Task implements class Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, class Microsoft.SqlServer.Dts.Runtime.IDTSSuspend, class Microsoft.SqlServer.Dts.Tasks.SendMailTask.IDTSSendMailTask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SendMailTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.Task</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Tasks.SendMailTask.IDTSSendMailTask</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Dts.Runtime.DtsTask(HelpKeyword="sql13.dts.designer.sendmailtask.F1", LocalizationType=typeof(Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTaskMessages), SamplesTag="SsisSendMailTask", TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1", TaskType="DTS90", UITypeName="Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTaskUI, Microsoft.SqlServer.SendMailTaskUI, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Sendet eine E-Mail-Nachricht. Diese Klasse kann nicht vererbt werden. </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SendMailTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask" /> Klasse. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptBreakpointManager">
+      <MemberSignature Language="C#" Value="public void AcceptBreakpointManager (Microsoft.SqlServer.Dts.Runtime.BreakpointManager breakPointMgr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AcceptBreakpointManager(class Microsoft.SqlServer.Dts.Runtime.BreakpointManager breakPointMgr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakPointMgr" Type="Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />
+      </Parameters>
+      <Docs>
+        <param name="breakPointMgr">Der für diesen Task spezifische Breakpoint-Manager.</param>
+        <summary>Übergibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> auf den Task "Mail senden". Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BCCLine">
+      <MemberSignature Language="C#" Value="public string BCCLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BCCLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.BCCLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die E-Mail-Adressen der Empfänger ab, die eine Blindkopie der Nachricht erhalten, oder legt sie fest. Falls mehrere Adressen vorhanden sind, werden sie durch ein Semikolon getrennt.</summary>
+        <value>Eine Zeichenfolge, enthält die e-Mail-Adressen der Empfänger Blindkopie erhalten.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CCLine">
+      <MemberSignature Language="C#" Value="public string CCLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CCLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.CCLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die E-Mail-Adressen der Empfänger ab, die eine Kopie der Nachricht erhalten, oder legt sie fest. Falls mehrere Adressen vorhanden sind, werden sie durch ein Semikolon getrennt.</summary>
+        <value>Eine Zeichenfolge, enthält die e-Mail-Adressen der Empfänger eine Kopie.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugMode">
+      <MemberSignature Language="C#" Value="public bool DebugMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DebugMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.DebugMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen booleschen Wert ab, der angibt, ob das Objekt im Debugmodus befindet, und gibt an, ob es auslösen soll, oder wählen Sie die <see cref="M:Microsoft.SqlServer.Dts.Runtime.IDTSEvents.OnBreakpointHit(Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite,Microsoft.SqlServer.Dts.Runtime.BreakpointTarget)" /> Ereignis während der Ausführung.</summary>
+        <value>Ein boolescher Wert, der angibt, ob das Paket im Debugmodus befindet. Der Wert "true" gibt an, dass das Objekt im Debugmodus befindet, und löst die <see cref="M:Microsoft.SqlServer.Dts.Runtime.IDTSEvents.OnBreakpointHit(Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite,Microsoft.SqlServer.Dts.Runtime.BreakpointTarget)" /> Ereignis.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein Objekt zum Sperren von Variablen.</param>
+        <param name="events">Eine T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents-Schnittstelle, um Ereignisse auszulösen</param>
+        <param name="log">Eine T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging-Schnittstelle</param>
+        <param name="transaction">Die Transaktion, zu der der Container gehört. Die SSIS-Laufzeit bietet die Transaktion für den Container, basierend auf der Eigenschaft P:Microsoft.SqlServer.Dts.Runtime.DtsContainer.TransactionOption-. Dieser Wert kann NULL sein.</param>
+        <summary>Führt den Task "Mail senden" aus.</summary>
+        <returns>Eines der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Werte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileAttachments">
+      <MemberSignature Language="C#" Value="public string FileAttachments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileAttachments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.FileAttachments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Namen der an die E-Mail-Nachricht angefügten Dateien ab oder legt sie fest. Falls mehrere Dateinamen vorhanden sind, werden sie durch einen senkrechten Strich (|) getrennt.</summary>
+        <value>Eine Zeichenfolge, die die Namen der an die e-Mail-Nachricht angefügten Dateien enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromLine">
+      <MemberSignature Language="C#" Value="public string FromLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FromLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.FromLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die E-Mail-Adresse des Absenders ab oder legt sie fest.</summary>
+        <value>Eine Zeichenfolge, die die e-Mail-Adresse des Absenders enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeTask">
+      <MemberSignature Language="C#" Value="public override void InitializeTask (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, Microsoft.SqlServer.Dts.Runtime.EventInfos eventInfos, Microsoft.SqlServer.Dts.Runtime.LogEntryInfos logEntryInfos, Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker refTracker);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeTask(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, class Microsoft.SqlServer.Dts.Runtime.EventInfos eventInfos, class Microsoft.SqlServer.Dts.Runtime.LogEntryInfos logEntryInfos, class Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker refTracker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="eventInfos" Type="Microsoft.SqlServer.Dts.Runtime.EventInfos" />
+        <Parameter Name="logEntryInfos" Type="Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" />
+        <Parameter Name="refTracker" Type="Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein Objekt „P:Microsoft.SqlServer.Dts.Runtime.DtsContainer.VariableDispenser“ zum Sperren von Variablen</param>
+        <param name="events">Ein Objekt, das die Schnittstelle „T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents“ implementiert</param>
+        <param name="log">Ein Objekt, das die Schnittstelle „T:Microsoft.SqlServer.Dts.Runtime.IDTLogging“ implementiert</param>
+        <param name="eventInfos">Eine Auflistung mit Ereignissen, die während der Ausführung des Tasks ausgelöst werden.</param>
+        <param name="logEntryInfos">Eine Auflistung von Protokolleinträgen.</param>
+        <param name="refTracker">Eine Objektverweisnachverfolgung.</param>
+        <summary>Initialisiert die dem Task zugeordneten Eigenschaften. Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlElement element, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlElement element, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Xml.XmlElement" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="element">Der Knoten, der die zu ladenden Taskmetadaten enthält.</param>
+        <param name="events">Ein Objekt, das die Schnittstelle „T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents“ zur Auslösung von Ereignissen (Fehlermeldungen, Warnungen usw.) bei Persistenz implementiert</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein im XML-Format gespeichertes Paket zu laden, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageSource">
+      <MemberSignature Language="C#" Value="public string MessageSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.MessageSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Nachrichtentext oder den Namen der Quelle ab, die den Nachrichtentext enthält, oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Nachrichtentext oder den Namen der Quelle mit der Nachricht enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageSourceType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailMessageSourceType MessageSourceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailMessageSourceType MessageSourceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.MessageSourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailMessageSourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der den Quelltyp des Nachrichtentexts enthält, oder legt ihn fest.</summary>
+        <value>Eines der <see cref="T:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailMessageSourceType" /> Werte.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.SendMailTask.MailPriority Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.SendMailTask.MailPriority Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.SendMailTask.MailPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Priorität der Nachricht ab oder legt sie fest.</summary>
+        <value>Eines der <see cref="T:Microsoft.SqlServer.Dts.Tasks.SendMailTask.MailPriority" /> Werte.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeExecution">
+      <MemberSignature Language="C#" Value="public void ResumeExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.ResumeExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Setzt die Taskausführung nach einer Unterbrechung fort. Das Laufzeitmodul setzt die Ausführung des Tasks oder Containers fort. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (System.Xml.XmlDocument doc, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="events">Ein Objekt, das die Schnittstelle „T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents“ zur Auslösung von Ereignissen (Fehlermeldungen, Warnungen usw.) bei Persistenz implementiert</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket als XML-Datei zu speichern, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmtpConnection">
+      <MemberSignature Language="C#" Value="public string SmtpConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SmtpConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.SmtpConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen oder die IP-Adresse des SMTP-Servers (Simple Mail Transfer Protocol) ab oder legt sie fest.</summary>
+        <value>Eine Zeichenfolge mit dem Namen oder die IP-Adresse des Servers Simple Mail Transfer Protocol (SMTP).</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subject">
+      <MemberSignature Language="C#" Value="public string Subject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.Subject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Betreff der E-Mail-Nachricht ab oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Betreff der e-Mail-Nachricht enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendExecution">
+      <MemberSignature Language="C#" Value="public void SuspendExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuspendExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.SuspendExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt an, dass das ausführbare Element angehalten werden muss. Diese Methode wird vom Laufzeitmodul aufgerufen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendRequired">
+      <MemberSignature Language="C#" Value="public bool SuspendRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuspendRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.SuspendRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert ab, der angibt, ob die Taskausführung sollte bei Erreichen eines Haltepunkts. Dieser Wert wird vom Laufzeitmodul für Tasks und Container festgelegt, wenn ein Breakpoint erreicht wird.</summary>
+        <value>"true", wenn die Taskausführung bei Erreichen eines Breakpoints.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToLine">
+      <MemberSignature Language="C#" Value="public string ToLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.ToLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die E-Mail-Adressen der Empfänger ab oder legt sie fest. Falls mehrere Empfänger vorhanden sind, werden die Adressen durch ein Semikolon getrennt.</summary>
+        <value>Eine Zeichenfolge, die die e-Mail-Adressen der Empfänger enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.SendMailTask.SendMailTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein Objekt „T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser“ zum Sperren von Variablen</param>
+        <param name="events">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <summary>Überprüft, ob der Task ordnungsgemäß konfiguriert ist.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

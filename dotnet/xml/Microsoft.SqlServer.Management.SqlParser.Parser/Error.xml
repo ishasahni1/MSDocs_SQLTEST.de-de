@@ -1,0 +1,169 @@
+<Type Name="Error" FullName="Microsoft.SqlServer.Management.SqlParser.Parser.Error">
+  <TypeSignature Language="C#" Value="public class Error : IComparable&lt;Microsoft.SqlServer.Management.SqlParser.Parser.Error&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Error extends System.Object implements class System.IComparable`1&lt;class Microsoft.SqlServer.Management.SqlParser.Parser.Error&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Parser.Error" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IComparable&lt;Microsoft.SqlServer.Management.SqlParser.Parser.Error&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt einen Transact-SQL-Analysefehler dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (Microsoft.SqlServer.Management.SqlParser.Parser.Error error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(class Microsoft.SqlServer.Management.SqlParser.Parser.Error error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Error.CompareTo(Microsoft.SqlServer.Management.SqlParser.Parser.Error)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="Microsoft.SqlServer.Management.SqlParser.Parser.Error" />
+      </Parameters>
+      <Docs>
+        <param name="error">Die Error-Objekt, mit der verglichen.</param>
+        <summary>
+            Vergleicht die Position dieser Instanz in die Position des angegebenen Error-Objekt und gibt eine ganze Zahl, die ihre relative Position zueinander angibt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine ganze Zahl, die die relative Position der verglichenen Objekte angibt.
+0 gibt an, dass beide Objekte über die gleiche Position verfügen. Eine negative Zahl gibt an, dass dieser Fehler auf das angegebene Fehlerobjekt vorausgeht. Eine positive Zahl gibt an, dass dieser Fehler angegebene Error-Objekt folgt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Parser.Location End { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Parser.Location End" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Parser.Error.End" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.Location</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Endposition des Transact-SQL-Texts ab, der den Fehler verursacht.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.SqlServer.Management.SqlParser.Parser.Error error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(class Microsoft.SqlServer.Management.SqlParser.Parser.Error error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Error.Equals(Microsoft.SqlServer.Management.SqlParser.Parser.Error)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="Microsoft.SqlServer.Management.SqlParser.Parser.Error" />
+      </Parameters>
+      <Docs>
+        <param name="error">Die Error-Objekt, mit der verglichen.</param>
+        <summary>
+            Vergleicht die Position dieser Instanz an den Speicherort des angegebenen Objekts.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>"true", wenn die Speicherorte für beide Objekte übereinstimmen; andernfalls "false".</return>
+      </Docs>
+    </Member>
+    <Member MemberName="IsWarning">
+      <MemberSignature Language="C#" Value="public bool IsWarning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsWarning" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Parser.Error.IsWarning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Analysefehler eine Warnung ist.
+            </summary>
+        <value>"true", wenn der Analysefehler eine Warnung handelt; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Parser.Error.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Fehlermeldungstext ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Parser.Location Start { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Parser.Location Start" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Parser.Error.Start" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.Location</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Startposition des Transact-SQL-Texts ab, der den Fehler verursacht.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Parser.ErrorType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Parser.ErrorType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Parser.Error.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.ErrorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab, der angibt, ob der Fehler ein Syntax-, analysieren oder Bindungsfehler ist ErrorType.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

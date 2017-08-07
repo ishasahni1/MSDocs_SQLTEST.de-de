@@ -1,0 +1,192 @@
+<Type Name="Parser" FullName="Microsoft.SqlServer.Management.SqlParser.Parser.Parser">
+  <TypeSignature Language="C#" Value="public static class Parser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Parser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Parser.Parser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt einen SQL-Parser, der eine Transact-SQL-Anweisungen analysiert und gibt ein Objekt in SqlScript zurück.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IncrementalParse">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult IncrementalParse (string sql, Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult prevResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult IncrementalParse(string sql, class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult prevResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Parser.IncrementalParse(System.String,Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sql" Type="System.String" />
+        <Parameter Name="prevResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+      </Parameters>
+      <Docs>
+        <param name="sql">Die zu analysierende SQL-Zeichenfolge.</param>
+        <param name="prevResult">Das Ergebnis des vorherigen inkrementelles analysieren.</param>
+        <summary>
+            Analysiert die angegebene SQL-Zeichenfolge, die mithilfe der angegebenen Parseroptionen.
+Wenn vorherige Ergebnis der Analyse von übergeben wird dann werden verwenden, die als Basis für die Analyse von inkrementellen.
+Nur ein Ergebnis der inkrementellen Analyse kann als Argument für die nachfolgenden inkrementellen Analyse verwendet werden.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Vorherigen Analyseergebnis PrevResult übergeben, die während der inkrementellen Analyse zerstört wird.</remarks>
+        <return>Ein ParseResult-Objekt, das analysierte SQL-Zeichenfolge darstellt. Dieses Ergebnis kann für die nachfolgenden inkrementellen Analyse verwendet werden.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementalParse">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult IncrementalParse (string sql, Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult prevResult, Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult IncrementalParse(string sql, class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult prevResult, class Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Parser.IncrementalParse(System.String,Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult,Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sql" Type="System.String" />
+        <Parameter Name="prevResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions" />
+      </Parameters>
+      <Docs>
+        <param name="sql">Die zu analysierende SQL-Zeichenfolge.</param>
+        <param name="prevResult">Das Ergebnis des vorherigen inkrementelles analysieren.</param>
+        <param name="options">Das T:Microsoft.SqlServer.Management.SqlParser.ParseOptions-Objekt, das die SQL-Parseroptionen enthält.</param>
+        <summary>
+            Analysiert die angegebene SQL-Zeichenfolge, die mithilfe der angegebenen Parseroptionen.
+Wenn vorherige Ergebnis der Analyse von übergeben wird dann werden verwenden, die als Basis für die Analyse von inkrementellen.
+Nur ein Ergebnis der inkrementellen Analyse kann als Argument für die nachfolgenden inkrementellen Analyse verwendet werden.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Vorherigen Analyseergebnis PrevResult übergeben, die während der inkrementellen Analyse zerstört wird.</remarks>
+        <return>Ein ParseResult-Objekt, das analysierte SQL-Zeichenfolge darstellt. Dieses Ergebnis kann für die nachfolgenden inkrementellen Analyse verwendet werden.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementalParse">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult IncrementalParse (string sql, Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult prevResult, Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions options, out Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions resultOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult IncrementalParse(string sql, class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult prevResult, class Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions options, class Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions resultOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Parser.IncrementalParse(System.String,Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult,Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions,Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sql" Type="System.String" />
+        <Parameter Name="prevResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions" />
+        <Parameter Name="resultOptions" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="sql">Die zu analysierende SQL-Zeichenfolge.</param>
+        <param name="prevResult">Das Ergebnis des vorherigen inkrementelles analysieren.</param>
+        <param name="options">Das T:Microsoft.SqlServer.Management.SqlParser.ParseOptions-Objekt, das die SQL-Parseroptionen enthält.</param>
+        <param name="resultOptions">Das T:Microsoft.SqlServer.Management.SqlParser.ParseOptions-Objekt, das nach der Analyse die SQL-Parseroptionen enthält.</param>
+        <summary>
+            Analysiert die angegebene SQL-Zeichenfolge, die mithilfe der angegebenen Parseroptionen.
+Wenn vorherige Ergebnis der Analyse von übergeben wird dann werden verwenden, die als Basis für die Analyse von inkrementellen.
+Nur ein Ergebnis der inkrementellen Analyse kann als Argument für die nachfolgenden inkrementellen Analyse verwendet werden.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Vorherigen Analyseergebnis PrevResult übergeben, die während der inkrementellen Analyse zerstört wird.</remarks>
+        <return>Ein ParseResult-Objekt, das analysierte SQL-Zeichenfolge darstellt. Dieses Ergebnis kann für die nachfolgenden inkrementellen Analyse verwendet werden.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult Parse (string sql);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult Parse(string sql) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Parser.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sql" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sql">Die zu analysierende SQL-Zeichenfolge.</param>
+        <summary>
+            Analysiert die angegebene SQL-Zeichenfolge, die mithilfe von standardparseroptionen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein ParseResult-Objekt, das analysierte SQL-Zeichenfolge darstellt.</return>
+        <exception cref="T:System.ArgumentNullException">Die angegebene SQL-Zeichenfolge ist ein null-Verweis.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult Parse (string sql, Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult Parse(string sql, class Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Parser.Parse(System.String,Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sql" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions" />
+      </Parameters>
+      <Docs>
+        <param name="sql">Die zu analysierende SQL-Zeichenfolge.</param>
+        <param name="options">Das T:Microsoft.SqlServer.Management.SqlParser.ParseOptions-Objekt, das die SQL-Parseroptionen enthält.</param>
+        <summary>
+            Analysiert die angegebene SQL-Zeichenfolge, die mithilfe der angegebenen Parseroptionen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein ParseResult-Objekt, das analysierte SQL-Zeichenfolge darstellt.</return>
+        <exception cref="T:System.ArgumentNullException">Die angegebene SQL-Zeichenfolge ist ein null-Verweis.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult Parse (string sql, Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions options, out Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions resultOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult Parse(string sql, class Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions options, class Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions resultOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Parser.Parse(System.String,Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions,Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sql" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions" />
+        <Parameter Name="resultOptions" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="sql">Die zu analysierende SQL-Zeichenfolge.</param>
+        <param name="options">Das T:Microsoft.SqlServer.Management.SqlParser.ParseOptions-Objekt, das die SQL-Parseroptionen enthält.</param>
+        <param name="resultOptions">Das T:Microsoft.SqlServer.Management.SqlParser.ParseOptions-Objekt, das nach der Analyse die SQL-Parseroptionen enthält.</param>
+        <summary>
+            Analysiert die angegebene SQL-Zeichenfolge, die mithilfe der angegebenen Parseroptionen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein ParseResult-Objekt, das analysierte SQL-Zeichenfolge darstellt.</return>
+        <exception cref="T:System.ArgumentNullException">Die angegebene SQL-Zeichenfolge ist ein null-Verweis.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

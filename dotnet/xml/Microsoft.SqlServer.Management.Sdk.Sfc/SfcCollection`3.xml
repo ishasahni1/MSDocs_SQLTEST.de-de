@@ -1,0 +1,1017 @@
+<Type Name="SfcCollection&lt;T,K,ParentT&gt;" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection&lt;T,K,ParentT&gt;">
+  <TypeSignature Language="C#" Value="public abstract class SfcCollection&lt;T,K,ParentT&gt; : Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection, System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.ICollection, System.ComponentModel.IListSource where T : SfcInstance where K : SfcKey where ParentT : SfcInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SfcCollection`3&lt;(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance) T, (class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey) K, (class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance) ParentT&gt; extends System.Object implements class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection, class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ComponentModel.IListSource" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="K">
+      <Constraints>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="ParentT">
+      <Constraints>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.IListSource</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">
+    </typeparam>
+    <typeparam name="K">
+    </typeparam>
+    <typeparam name="ParentT">
+    </typeparam>
+    <summary>
+            Die Basisklasse für alle domänenauflistungen Sfc-Auflistung. Es abstrahiert alle Standortes erforderlichen-Handshake zwischen das übergeordnete Objekt und die Auflistung oder Element Objekte.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SfcCollection (ParentT parent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(!ParentT parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.#ctor(`2)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="ParentT" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual void Add (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Add(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">
+        </param>
+        <summary>
+              Fügt der Auflistung Obj hinzu
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImpl">
+      <MemberSignature Language="C#" Value="protected abstract void AddImpl (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddImpl(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.AddImpl(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddShadow">
+      <MemberSignature Language="C#" Value="protected abstract bool AddShadow (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool AddShadow(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.AddShadow(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public abstract void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public abstract bool Contains (K key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(!K key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Contains(`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public abstract bool Contains (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Contains(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">Muss hinzugefügt werden.</param>
+        <param name="index">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public abstract void CopyTo (T[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(!T[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.CopyTo(`0[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">Muss hinzugefügt werden.</param>
+        <param name="arrayIndex">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public abstract int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAndInitializeChildObject">
+      <MemberSignature Language="C#" Value="protected T CreateAndInitializeChildObject (K key);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance !T CreateAndInitializeChildObject(!K key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.CreateAndInitializeChildObject(`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureCollectionInitialized">
+      <MemberSignature Language="C#" Value="protected void EnsureCollectionInitialized ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnsureCollectionInitialized() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.EnsureCollectionInitialized" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinishMerge">
+      <MemberSignature Language="C#" Value="protected abstract void FinishMerge ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FinishMerge() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.FinishMerge" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCollectionElementNameImpl">
+      <MemberSignature Language="C#" Value="protected virtual string GetCollectionElementNameImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetCollectionElementNameImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.GetCollectionElementNameImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementFactoryImpl">
+      <MemberSignature Language="C#" Value="protected abstract Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.GetElementFactoryImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerator&lt;T&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExistingObjectByKey">
+      <MemberSignature Language="C#" Value="protected abstract T GetExistingObjectByKey (K key);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !T GetExistingObjectByKey(!K key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.GetExistingObjectByKey(`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectByKey">
+      <MemberSignature Language="C#" Value="protected abstract T GetObjectByKey (K key);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !T GetObjectByKey(!K key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.GetObjectByKey(`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialized">
+      <MemberSignature Language="C#" Value="protected bool Initialized { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Initialized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Initialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitInnerCollection">
+      <MemberSignature Language="C#" Value="protected abstract void InitInnerCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitInnerCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.InitInnerCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public abstract bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public T this[K key] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Item(!K)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Item(`1)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Add">
+      <MemberSignature Language="C#" Value="void ISfcCollection.Add (Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Add(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#Add(Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sfcInstance" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+      </Parameters>
+      <Docs>
+        <param name="sfcInstance">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.AddShadow">
+      <MemberSignature Language="C#" Value="bool ISfcCollection.AddShadow (Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.AddShadow(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#AddShadow(Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sfcInstance" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+      </Parameters>
+      <Docs>
+        <param name="sfcInstance">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Count">
+      <MemberSignature Language="C#" Value="int Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.EnsureInitialized">
+      <MemberSignature Language="C#" Value="void ISfcCollection.EnsureInitialized ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.EnsureInitialized() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#EnsureInitialized" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.FinishMerge">
+      <MemberSignature Language="C#" Value="void ISfcCollection.FinishMerge ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.FinishMerge() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#FinishMerge" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.GetCollectionElementNameImpl">
+      <MemberSignature Language="C#" Value="string ISfcCollection.GetCollectionElementNameImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.GetCollectionElementNameImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#GetCollectionElementNameImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.GetElementFactory">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory ISfcCollection.GetElementFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.GetElementFactory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#GetElementFactory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.GetExisting">
+      <MemberSignature Language="C#" Value="bool ISfcCollection.GetExisting (Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey key, out Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.GetExisting(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey key, class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#GetExisting(Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey,Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey" />
+        <Parameter Name="sfcInstance" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <param name="sfcInstance">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.GetObjectByKey">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance ISfcCollection.GetObjectByKey (Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.GetObjectByKey(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#GetObjectByKey(Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Initialized">
+      <MemberSignature Language="C#" Value="bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Initialized { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Initialized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#Initialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Parent">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.PrepareMerge">
+      <MemberSignature Language="C#" Value="void ISfcCollection.PrepareMerge ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.PrepareMerge() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#PrepareMerge" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Remove">
+      <MemberSignature Language="C#" Value="void ISfcCollection.Remove (Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Remove(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#Remove(Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sfcInstance" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+      </Parameters>
+      <Docs>
+        <param name="sfcInstance">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.RemoveElement">
+      <MemberSignature Language="C#" Value="void ISfcCollection.RemoveElement (Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.RemoveElement(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#RemoveElement(Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sfcInstance" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+      </Parameters>
+      <Docs>
+        <param name="sfcInstance">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Rename">
+      <MemberSignature Language="C#" Value="void ISfcCollection.Rename (Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance, Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey newKey);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection.Rename(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance sfcInstance, class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey newKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcCollection#Rename(Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance,Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sfcInstance" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+        <Parameter Name="newKey" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey" />
+      </Parameters>
+      <Docs>
+        <param name="sfcInstance">Muss hinzugefügt werden.</param>
+        <param name="newKey">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="protected ParentT Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !ParentT Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ParentT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareMerge">
+      <MemberSignature Language="C#" Value="protected abstract void PrepareMerge ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PrepareMerge() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.PrepareMerge" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh (bool refreshChildObjects);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh(bool refreshChildObjects) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Refresh(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="refreshChildObjects" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="refreshChildObjects">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public abstract bool Remove (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Remove(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveImpl">
+      <MemberSignature Language="C#" Value="protected abstract bool RemoveImpl (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool RemoveImpl(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.RemoveImpl(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveInternal">
+      <MemberSignature Language="C#" Value="protected bool RemoveInternal (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance bool RemoveInternal(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.RemoveInternal(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Der zu entfernenden Instanz.</param>
+        <summary>
+            Entfernen Sie das Element, das durch den Schlüssel erhält.
+Vorhandenes Objekt mit einem Status von ToBeDropped für löschen, wenn das übergeordnete Objekt geändert wird oder gelöschte markiert wurden.
+AT, die das markierte-Objekt wird aus der Auflistung entfernt.
+Ausstehend "," None oder gelöschte Objekte werden sofort aus der Auflistung entfernt.
+            </summary>
+        <returns>Wenn das Objekt erfolgreich markiert ist, um diese Zuordnung gelöscht werden gibt true zurück, andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rename">
+      <MemberSignature Language="C#" Value="protected void Rename (T obj, K newKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Rename(!T obj, !K newKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.Rename(`0,`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+        <Parameter Name="newKey" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <param name="newKey">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.IListSource.ContainsListCollection">
+      <MemberSignature Language="C#" Value="bool System.ComponentModel.IListSource.ContainsListCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IListSource.ContainsListCollection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.System#ComponentModel#IListSource#ContainsListCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.IListSource.GetList">
+      <MemberSignature Language="C#" Value="System.Collections.IList IListSource.GetList ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IList System.ComponentModel.IListSource.GetList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3.System#ComponentModel#IListSource#GetList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

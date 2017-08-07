@@ -1,0 +1,422 @@
+<Type Name="IVstaHelper" FullName="Microsoft.SqlServer.VSTAHosting.IVstaHelper">
+  <TypeSignature Language="C#" Value="public interface IVstaHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVstaHelper" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.VSTAHosting.IVstaHelper" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.VSTAScriptingLib</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert eine Schnittstelle, die für Visual Studio Tools for Applications (VSTA) zum Erstellen eines Skripttaskprojekts implementiert wird.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddFileToProject">
+      <MemberSignature Language="C#" Value="public bool AddFileToProject (string fileName, string contents);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AddFileToProject(string fileName, string contents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.AddFileToProject(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="contents" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Der Name der hinzuzufügenden Datei.</param>
+        <param name="contents">Der Inhalt der Datei.</param>
+        <summary>
+            Fügt eine Datei zum Projekt hinzu.
+            </summary>
+        <returns>"true", wenn die Methode erfolgreich ausgeführt wurde; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Build">
+      <MemberSignature Language="C#" Value="public System.Reflection.Assembly Build (string configuration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly Build(string configuration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.Build(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configuration" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configuration">Die Konfiguration des Projekts.</param>
+        <summary>
+            Erstellt die Assembly für das Projekt.
+            </summary>
+        <returns>Gibt zurück<see cref="T:System.Reflection.Assembly" /></returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CleanUp">
+      <MemberSignature Language="C#" Value="public void CleanUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CleanUp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.CleanUp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Bereinigt den Datencache, der vom letzten Erstellungsprozess verwendet wurde.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAssemblyBytes">
+      <MemberSignature Language="C#" Value="public byte[] GetAssemblyBytes (string configuration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetAssemblyBytes(string configuration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.GetAssemblyBytes(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configuration" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configuration">Die Konfiguration des Projekts.</param>
+        <summary>
+            Ruft die Assemblybytes ab, beim Erstellungsprozess erzeugt wurden.
+            </summary>
+        <returns>Ein <see cref="T:System.Byte" />, das einen Booleschen Wert über den Erfolg oder das Fehlschlagen der Methode darstellt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuildErrors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; GetBuildErrors (string configuration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.ICollection`1&lt;string&gt; GetBuildErrors(string configuration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.GetBuildErrors(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configuration" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configuration">Die Konfiguration des Projekts.</param>
+        <summary>
+            Ruft die Buildfehler ab.
+            </summary>
+        <returns>Eine Auflistung von Buildfehlern.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initalize">
+      <MemberSignature Language="C#" Value="public bool Initalize (string appName, bool supportDebug);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Initalize(string appName, bool supportDebug) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.Initalize(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appName" Type="System.String" />
+        <Parameter Name="supportDebug" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="appName">Der Name des Projekts.</param>
+        <param name="supportDebug">True, um Unterstützung zu debuggen; andernfalls "false".</param>
+        <summary>
+            Initialisiert das Projekt mit dem Standardcode und Einstellungen basierend auf der angewendeten Konfiguration.
+            </summary>
+        <returns>"true", wenn die Initialisierung erfolgreich war; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadNewProject">
+      <MemberSignature Language="C#" Value="public bool LoadNewProject (string templatePath, string templateName, string projectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadNewProject(string templatePath, string templateName, string projectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.LoadNewProject(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templatePath" Type="System.String" />
+        <Parameter Name="templateName" Type="System.String" />
+        <Parameter Name="projectName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="templatePath">Der Pfad zur Projektvorlage.</param>
+        <param name="templateName">Der Name der Projektvorlage.</param>
+        <param name="projectName">Der Name des Projekts.</param>
+        <summary>
+            Lädt ein neues Projekt.
+            </summary>
+        <returns>"true", wenn das Laden erfolgreich war; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadProjectFromFolder">
+      <MemberSignature Language="C#" Value="public bool LoadProjectFromFolder (string folder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadProjectFromFolder(string folder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.LoadProjectFromFolder(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="folder" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="folder">Der Ordner, aus dem das Projekt geladen wird.</param>
+        <summary>
+            Lädt ein vorhandenes Projekt aus dem angegebenen Ordner.
+            </summary>
+        <returns>"true", wenn das Laden erfolgreich war; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadProjectFromStorage">
+      <MemberSignature Language="C#" Value="public bool LoadProjectFromStorage (Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage storage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadProjectFromStorage(class Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage storage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.LoadProjectFromStorage(Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="storage" Type="Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage" />
+      </Parameters>
+      <Docs>
+        <param name="storage">Der Speicher, aus dem das Projekt geladen wird.</param>
+        <summary>
+            Lädt ein vorhandenes Projekt aus dem angegebenen Speicher.
+            </summary>
+        <returns>"true", wenn das Laden erfolgreich war; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadVSAProject">
+      <MemberSignature Language="C#" Value="public bool LoadVSAProject (Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage storage, string projTemplate, System.Collections.Generic.IEnumerable&lt;string&gt; referencesToRemove, System.Collections.Generic.IEnumerable&lt;string&gt; referenceNamesToAdd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadVSAProject(class Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage storage, string projTemplate, class System.Collections.Generic.IEnumerable`1&lt;string&gt; referencesToRemove, class System.Collections.Generic.IEnumerable`1&lt;string&gt; referenceNamesToAdd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.LoadVSAProject(Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="storage" Type="Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage" />
+        <Parameter Name="projTemplate" Type="System.String" />
+        <Parameter Name="referencesToRemove" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="referenceNamesToAdd" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="storage">Der Projektspeicher.</param>
+        <param name="projTemplate">Die Projektvorlage.</param>
+        <param name="referencesToRemove">Die zu entfernenden Assemblyverweise.</param>
+        <param name="referenceNamesToAdd">Die hinzuzufügenden Assemblyverweise.</param>
+        <summary>
+            Lädt das Projekt aus der angegebenen Projektdatei.
+            </summary>
+        <returns>"true", wenn das Laden erfolgreich war; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadVSTA2Project">
+      <MemberSignature Language="C#" Value="public bool LoadVSTA2Project (Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage storage, System.Collections.Generic.IEnumerable&lt;string&gt; referencesToRemove, System.Collections.Generic.IEnumerable&lt;string&gt; referenceNamesToAdd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadVSTA2Project(class Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage storage, class System.Collections.Generic.IEnumerable`1&lt;string&gt; referencesToRemove, class System.Collections.Generic.IEnumerable`1&lt;string&gt; referenceNamesToAdd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.LoadVSTA2Project(Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="storage" Type="Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage" />
+        <Parameter Name="referencesToRemove" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="referenceNamesToAdd" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="storage">Der Projektspeicher.</param>
+        <param name="referencesToRemove">Die zu entfernenden Assemblyverweise.</param>
+        <param name="referenceNamesToAdd">Die hinzuzufügenden Assemblyverweise.</param>
+        <summary>
+            Aktualisiert und lädt das Projekt aus der angegebenen Projektdatei.
+            </summary>
+        <returns>"true", wenn die Methode erfolgreich ausgeführt wurde; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveProjectToStorage">
+      <MemberSignature Language="C#" Value="public bool SaveProjectToStorage (Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage storage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SaveProjectToStorage(class Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage storage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.SaveProjectToStorage(Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="storage" Type="Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage" />
+      </Parameters>
+      <Docs>
+        <param name="storage">Der Speicher, in dem das Projekt gespeichert wird.</param>
+        <summary>
+            Speichert das Projekt im angegebenen Speicher.
+            </summary>
+        <returns>"true", wenn das Speichern erfolgreich war; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowIde">
+      <MemberSignature Language="C#" Value="public void ShowIde (string defaultActiveItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowIde(string defaultActiveItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.ShowIde(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultActiveItem" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="defaultActiveItem">Das standardmäßig aktive Element.</param>
+        <summary>
+            Startet das Projekt in der integrierten Entwicklungsumgebung (IDE).
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartDebugging">
+      <MemberSignature Language="C#" Value="public void StartDebugging ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartDebugging() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.StartDebugging" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Startet das Debuggen des Projekts.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopDebugging">
+      <MemberSignature Language="C#" Value="public void StopDebugging ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopDebugging() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.StopDebugging" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Stoppt das Debuggen des Projekts.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportDebug">
+      <MemberSignature Language="C#" Value="public bool SupportDebug { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportDebug" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.VSTAHosting.IVstaHelper.SupportDebug" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob das Debuggen unterstützt wird, oder legt ihn fest.
+            </summary>
+        <value>"true", wenn Debuggen unterstützt wird; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateFilePrefix">
+      <MemberSignature Language="C#" Value="public string TemplateFilePrefix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TemplateFilePrefix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.VSTAHosting.IVstaHelper.TemplateFilePrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForDebuggerAttached">
+      <MemberSignature Language="C#" Value="public bool WaitForDebuggerAttached ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool WaitForDebuggerAttached() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.VSTAHosting.IVstaHelper.WaitForDebuggerAttached" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

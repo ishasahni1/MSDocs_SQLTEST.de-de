@@ -1,0 +1,175 @@
+<Type Name="Attribute" FullName="Microsoft.MasterDataServices.Services.DataContracts.Attribute">
+  <TypeSignature Language="C#" Value="public class Attribute : Microsoft.MasterDataServices.Services.DataContracts.DataContractBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Attribute extends Microsoft.MasterDataServices.Services.DataContracts.DataContractBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.DataContracts.Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services.Contracts</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.MasterDataServices.Services.DataContracts.DataContractBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract(Name="Attribute", Namespace="http://schemas.microsoft.com/sqlserver/masterdataservices/2009/09")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.MasterDataServices.Services.DataContracts.FileAttribute))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.KnownType(typeof(Microsoft.MasterDataServices.Services.DataContracts.MemberIdentifier))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Ein komplexer Entitätsattributtyp.
+            </summary>
+    <remarks>
+            Die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.Attribute" /> komplexer Typ gibt an, ein masterdatenattribut einschließlich seiner Identifikation und des Datenwerts.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Attribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.DataContracts.Attribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standardkonstruktor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identifier">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier Identifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier Identifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.Attribute.Identifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die <see cref="P:Microsoft.MasterDataServices.Services.DataContracts.Attribute.Identifier" /> des attributmetadatenobjekts.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsChanged">
+      <MemberSignature Language="C#" Value="public bool IsChanged { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsChanged" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.Attribute.IsChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, ob der Attributwert geändert wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionAnnotation">
+      <MemberSignature Language="C#" Value="public string TransactionAnnotation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TransactionAnnotation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.Attribute.TransactionAnnotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The Attribute complex type is deprecated in SQL Server 2016 CTP3")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Anmerkung, die für die Transaktion dieses Attributs während einer Aktualisierung gilt
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.AttributeValueType Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.MasterDataServices.Services.DataContracts.AttributeValueType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.Attribute.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.AttributeValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.AttributeValueType" /> oder den Typ des Werts, der vom Attribut gespeichert wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.Attribute.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Wert, der dem masterdatenattribut als variant-Datentyp zugewiesen ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>
+            Der Typ ist Zeichenfolge das Objekt vom Typzeichenfolge, wenn der Typ eine Domäne ist, dann ist das Objekt vom Typ MemberIdentifier(Code is the Code and Name is the Name), wenn der Typ Anzahl ist dann ist das Objekt vom Typ Double, wenn der Typ "DateTime" ist, dann wird das Objekt vom Typ "DateTime", wenn der Typ Datei ist das Objekt vom Typ FileAttribute ist.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

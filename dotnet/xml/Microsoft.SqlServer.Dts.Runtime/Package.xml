@@ -1,0 +1,1492 @@
+<Type Name="Package" FullName="Microsoft.SqlServer.Dts.Runtime.Package">
+  <TypeSignature Language="C#" Value="public sealed class Package : Microsoft.SqlServer.Dts.Runtime.EventsProvider, Microsoft.SqlServer.Dts.Runtime.IDTSConfigurationControl, Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath, Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath, Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider, Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx, Microsoft.SqlServer.Dts.Runtime.IDTSSequence" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Package extends Microsoft.SqlServer.Dts.Runtime.EventsProvider implements class Microsoft.SqlServer.Dts.Runtime.IDTSConfigurationControl, class Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath, class Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath, class Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider, class Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx, class Microsoft.SqlServer.Dts.Runtime.IDTSSequence" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Package" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.EventsProvider</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSConfigurationControl</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSSequence</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Stellt den Paketcontainer dar. Diese Klasse kann nicht vererbt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Package ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.Package" /> Klasse. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDataTapPoint">
+      <MemberSignature Language="C#" Value="public void AddDataTapPoint (string mainPipeIdentification, string pathIdentification, int maxRowCount, string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDataTapPoint(string mainPipeIdentification, string pathIdentification, int32 maxRowCount, string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.AddDataTapPoint(System.String,System.String,System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mainPipeIdentification" Type="System.String" />
+        <Parameter Name="pathIdentification" Type="System.String" />
+        <Parameter Name="maxRowCount" Type="System.Int32" />
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="mainPipeIdentification">Die Identifikationszeichenfolge des Datenflusstasks</param>
+        <param name="pathIdentification">Die Identifikationszeichenfolge des datenflusspfads</param>
+        <param name="maxRowCount">Die zulässige maximale Anzahl Zeilen abgerufen werden sollen. Wenn dieser Parameter negativ ist, werden alle Zeilen abgerufen werden</param>
+        <param name="fileName">Die Dateinamen zum Speichern der abgerufenen Daten</param>
+        <summary>
+            Fügen Sie einen datenabrufpunkt in einem bestimmten Datenfluss und der angegebenen Datenflusspfad hinzu.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateContext">
+      <MemberSignature Language="C#" Value="public long CertificateContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 CertificateContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.CertificateContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "CertificateContextDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft das X.509-Zertifikatobjekt für das Paket ab oder legt es fest.</summary>
+        <value>Das X.509-Zertifikatobjekt für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateObject">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate CertificateObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate CertificateObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.CertificateObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "CertificateObjectDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft das X.509-Zertifikatobjekt für das Paket ab oder legt es fest.</summary>
+        <value>Das X.509-Zertifikatobjekt für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckpointFileName">
+      <MemberSignature Language="C#" Value="public string CheckpointFileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CheckpointFileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.CheckpointFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryCheckpoints")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "CheckpointFileNameDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.DataTransformationServices.Controls.NonValidatingFileNameEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Datei ab, die die Prüfpunktinformationen aufzeichnet, mit denen ein Paket neu gestartet werden kann, oder legt ihn fest.</summary>
+        <value>Der Name der Datei, in der Prüfpunktinformationen erfasst werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckpointUsage">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSCheckpointUsage CheckpointUsage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSCheckpointUsage CheckpointUsage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.CheckpointUsage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryCheckpoints")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "CheckpointUsageDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSCheckpointUsage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob oder wann ein Paket neu gestartet wird, oder legt ihn fest. </summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSCheckpointUsage" /> Enumeration. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckSignature">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSSignatureStatus CheckSignature ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSSignatureStatus CheckSignature() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.CheckSignature" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSSignatureStatus</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Überprüft den Status der digitalen Signatur des Pakets.</summary>
+        <returns>Einer der Enumerationswerte, die den Status der digitalen Signatur angeben.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckSignatureOnLoad">
+      <MemberSignature Language="C#" Value="public bool CheckSignatureOnLoad { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckSignatureOnLoad" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.CheckSignatureOnLoad" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "CheckSignatureOnLoadDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die digitale Signatur beim Laden eines Pakets überprüft wird, oder legt ihn fest.</summary>
+        <value>"true", wenn die digitale Signatur beim Laden des Pakets überprüft wird; andernfalls "false". Der Standardwert ist "true".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputeExpressions">
+      <MemberSignature Language="C#" Value="public void ComputeExpressions (bool recursive);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ComputeExpressions(bool recursive) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.ComputeExpressions(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recursive" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="recursive">"true", um die Berechnungsausdrücke des Objekts rekursiv eingeschlossen Paket enthalten; andernfalls "false".</param>
+        <summary>Berechnungsausdrücke des Paketobjekts.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Configurations">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Configurations Configurations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Configurations Configurations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.Configurations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Configurations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung der Konfigurationen für das Paket ab. Einem Paket kann mehr als eine Konfiguration zugeordnet werden. Diese Eigenschaft ist schreibgeschützt. </summary>
+        <value>Die Auflistung der Konfigurationen für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connections">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Connections Connections { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Connections Connections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.Connections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Connections</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung von Verbindungs-Managern für das Paket ab.</summary>
+        <value>Die Auflistung von Verbindungs-Managern für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreationDate">
+      <MemberSignature Language="C#" Value="public DateTime CreationDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreationDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.CreationDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryIdentification")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "CreationDateDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft das Datum und die Uhrzeit der Paketerstellung ab oder legt sie fest.</summary>
+        <value>Das Datum und die Uhrzeit der Paketerstellung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatorComputerName">
+      <MemberSignature Language="C#" Value="public string CreatorComputerName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatorComputerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.CreatorComputerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryIdentification")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "CreatorComputerNameDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Computers ab, auf dem das Paket erstellt wurde, oder legt ihn fest.</summary>
+        <value>Der Name des Computers.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatorName">
+      <MemberSignature Language="C#" Value="public string CreatorName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatorName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.CreatorName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryIdentification")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "CreatorNameDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Benutzers ab, der das Paket erstellt hat, oder legt ihn fest.</summary>
+        <value>Der Name der Person, die das Paket erstellt hat.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignEvents">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.IDTSEvents DesignEvents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.IDTSEvents DesignEvents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.DesignEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.IDTSEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> , der angibt, ob der Designer oder andere Drittanbieterclients während der Entwurfszeit Ereignisse empfangen werden.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignTimeProperties">
+      <MemberSignature Language="C#" Value="public string DesignTimeProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DesignTimeProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.DesignTimeProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Entwurfszeiteigenschaften eines Pakets ab, z. B. Layoutinformationen, oder legt die Eigenschaften fest.</summary>
+        <value>Die Entwurfszeiteigenschaften eines Pakets, z. B. Layoutinformationen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DumpDescriptor">
+      <MemberSignature Language="C#" Value="public string DumpDescriptor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DumpDescriptor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.DumpDescriptor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt an, wann eine Dumpdatei generiert werden soll.</summary>
+        <value>Ein Wert der angibt, wann eine Dumpdatei generiert werden soll.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DumpOnAnyError">
+      <MemberSignature Language="C#" Value="public bool DumpOnAnyError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DumpOnAnyError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.DumpOnAnyError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt an, ob eine Dumpdatei generiert werden soll, wenn während der Paketausführung Fehler auftreten.</summary>
+        <value>"true", ob eine Dumpdatei generiert werden soll, wenn während der Ausführung des Pakets ein Fehler auftritt; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableConfigurations">
+      <MemberSignature Language="C#" Value="public bool EnableConfigurations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableConfigurations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.EnableConfigurations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "EnableConfigurationsDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob das Paket Konfigurationen lädt, oder legt ihn fest.</summary>
+        <value>"true", wenn das Paket Konfigurationen lädt; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableDump">
+      <MemberSignature Language="C#" Value="public bool EnableDump { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableDump" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.EnableDump" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt an, ob das Generieren der Dumpdatei aktiviert ist.</summary>
+        <value>"true", wenn das Speicherabbild Generation Datei aktiviert ist; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptCheckpoints">
+      <MemberSignature Language="C#" Value="public bool EncryptCheckpoints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EncryptCheckpoints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.EncryptCheckpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryCheckpoints")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "EncryptCheckpointsDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die Prüfpunktdateien verschlüsselt werden, oder legt ihn fest.</summary>
+        <value>"true", wenn die Prüfpunktdateien verschlüsselt werden; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Errors">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DtsErrors Errors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.DtsErrors Errors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.Errors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DtsErrors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung von Fehlern ab, die dem Paket zugeordnet sind. Dieses Feld ist schreibgeschützt. </summary>
+        <value>Die Auflistung von Fehlern, die dem Paket zugeordnet sind.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Executables">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Executables Executables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Executables Executables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.Executables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Executables</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung ausführbarer Objekte im Paket ab, die Bestandteil des Paketworkflows sind.</summary>
+        <value>Die Auflistung ausführbarer Objekte, die im Paket enthalten sind.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> -Enumeration, die Informationen über die erfolgreiche Ausführung des Pakets enthält.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> -Enumeration, die Informationen über die erfolgreiche Ausführung des Pakets enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportConfigurationFile">
+      <MemberSignature Language="C#" Value="public void ExportConfigurationFile (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportConfigurationFile(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.ExportConfigurationFile(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">Der Pfad zur Konfigurationsdatei. </param>
+        <summary>Erstellt eine XML-Datei, die alle bereitstellbaren Variablen im Paket enthält. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedProperties">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.ExtendedProperties ExtendedProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.ExtendedProperties ExtendedProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.ExtendedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.ExtendedProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="P:Microsoft.SqlServer.Dts.Runtime.Package.ExtendedProperties" /> -Auflistung für das Paket.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.ExtendedProperties" /> -objektauflistung für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FailPackageOnFailure">
+      <MemberSignature Language="C#" Value="public bool FailPackageOnFailure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FailPackageOnFailure" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.FailPackageOnFailure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob das Paket scheitert, wenn ein Task oder eine Komponente im Paket scheitert, oder legt ihn fest.</summary>
+        <value>"true", wenn das Paket fehlschlägt, wenn ein Task oder eine Komponente im Paket fehlschlägt. andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindReferencedObjects">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.EnumReferencedObjects FindReferencedObjects (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dts.Runtime.EnumReferencedObjects FindReferencedObjects(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.FindReferencedObjects(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.EnumReferencedObjects</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">Das zu suchende Objekt.</param>
+        <summary>Gibt eine Enumeration von Verweisobjekten zurück.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.EnumReferencedObjects" /> Enumerator.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBreakpointTargets">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.BreakpointTargets GetBreakpointTargets (Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite bpSite, bool onlyEnabled);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dts.Runtime.BreakpointTargets GetBreakpointTargets(class Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite bpSite, bool onlyEnabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.GetBreakpointTargets(Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.BreakpointTargets</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bpSite" Type="Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite" />
+        <Parameter Name="onlyEnabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bpSite">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite" /> Schnittstelle.</param>
+        <param name="onlyEnabled">Ein boolescher Wert, der gibt an, welche Art von breakpointziele in die Auflistung eingeschlossen werden sollen. "true" gibt an, dass nur aktivierte Breakpoints in der Auflistung enthalten sind, "false" gibt an, dass alle breakpointziele in der Auflistung enthalten sind.</param>
+        <summary>Gibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointTargets" /> Auflistung. Abhängig von der Einstellung von der <paramref name="onlyEnabled" /> Parameter, der Auflistung enthält alle breakpointziele im Paket oder nur die aktivierten breakpointziele.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointTargets" /> Auflistung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExecutionPath">
+      <MemberSignature Language="C#" Value="public string GetExecutionPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetExecutionPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.GetExecutionPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt den Ausführungspfad des aktuellen Pakets zurück.</summary>
+        <returns>Der Ausführungspfad des aktuellen Pakets.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpression">
+      <MemberSignature Language="C#" Value="public string GetExpression (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetExpression(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.GetExpression(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Der Name der Eigenschaft, deren Ausdruck Sie anzeigen möchten.</param>
+        <summary>Gibt einen Wert zurück, der den Ausdruck für die angegebene Eigenschaft enthält. NULL bedeutet, dass kein Ausdruck zugewiesen ist.</summary>
+        <returns>Ein Wert, der den Ausdruck zum Auswerten der Eigenschaft enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectFromPackagePath">
+      <MemberSignature Language="C#" Value="public object GetObjectFromPackagePath (string packagePath, out Microsoft.SqlServer.Dts.Runtime.DtsProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetObjectFromPackagePath(string packagePath, class Microsoft.SqlServer.Dts.Runtime.DtsProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.GetObjectFromPackagePath(System.String,Microsoft.SqlServer.Dts.Runtime.DtsProperty@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packagePath" Type="System.String" />
+        <Parameter Name="property" Type="Microsoft.SqlServer.Dts.Runtime.DtsProperty&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="packagePath">Der Pfad zum Paket.</param>
+        <param name="property">Das Objekt entspricht der gewünschten Eigenschaft. Dies ist ein out-Parameter.</param>
+        <summary>Gibt eine Paketeigenschaft und das Objekt aus dem angegebenen Paketpfad zurück.</summary>
+        <returns>Eine Paketeigenschaft und das Objekt aus dem angegebenen Paketpfad.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPackagePath">
+      <MemberSignature Language="C#" Value="public string GetPackagePath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPackagePath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.GetPackagePath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt einen Wert zurück, der den relativen Pfad zum Paketspeicherort enthält.</summary>
+        <returns>Ein Wert, der den relativen Pfad zum Paketspeicherort enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasExpressions">
+      <MemberSignature Language="C#" Value="public bool HasExpressions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasExpressions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.HasExpressions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob das Paket Ausdrücke enthält.</summary>
+        <value>"true", wenn das Paket Ausdrücke enthält; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreConfigurationsOnLoad">
+      <MemberSignature Language="C#" Value="public bool IgnoreConfigurationsOnLoad { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreConfigurationsOnLoad" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.IgnoreConfigurationsOnLoad" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "IgnoreConfigurationsOnLoadDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob Konfigurationen beim Laden des Pakets ignoriert werden, oder legt ihn fest.</summary>
+        <value>"true", wenn das Paket die Konfigurationen beim Laden des Pakets ignoriert; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportConfigurationFile">
+      <MemberSignature Language="C#" Value="public void ImportConfigurationFile (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ImportConfigurationFile(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.ImportConfigurationFile(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">Der Pfad und Name der Datei, in der die Konfiguration enthalten ist.</param>
+        <summary>Lädt eine dem Paket zugeordnete Konfigurationsdatei.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InteractiveMode">
+      <MemberSignature Language="C#" Value="public bool InteractiveMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InteractiveMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.InteractiveMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob beim Ausführen von Tasks Benutzeroberflächenobjekte angezeigt werden sollen, oder legt ihn fest.</summary>
+        <value>"true", wenn die Tasks Benutzeroberflächenobjekte werden beim Ausführen angezeigt sollte; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (string packageXml, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadFromXML(string packageXml, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.LoadFromXML(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageXml" Type="System.String" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="packageXml">Eine Zeichenfolge, die das Paket im XML-Format enthält.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Lädt ein Paket und alle dazugehörigen Objekte, die im XML-Format im Speicher gespeichert wurden. Verwenden Sie die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />-Methode, um ein auf der Festplatte gespeichertes Paket zu laden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadUserCertificateByHash">
+      <MemberSignature Language="C#" Value="public void LoadUserCertificateByHash (byte[] certHash);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadUserCertificateByHash(unsigned int8[] certHash) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.LoadUserCertificateByHash(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certHash" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="certHash">Ein Bytearray, das den Hash des Paketzertifikats enthält.</param>
+        <summary>Lädt das Zertifikat für das Paket nach dem Zertifikathash.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadUserCertificateByName">
+      <MemberSignature Language="C#" Value="public void LoadUserCertificateByName (string subjectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadUserCertificateByName(string subjectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.LoadUserCertificateByName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subjectName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="subjectName">Der Name des Zertifikats für das Paket.</param>
+        <summary>Lädt das Zertifikat für das Paket nach dem Zertifikatnamen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogProviders">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.LogProviders LogProviders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.LogProviders LogProviders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.LogProviders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.LogProviders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung von Protokollanbietern ab, die dem Paket zugeordnet sind.</summary>
+        <value>Die Auflistung von Protokollanbietern, die dem Paket zugeordnet sind.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConcurrentExecutables">
+      <MemberSignature Language="C#" Value="public int MaxConcurrentExecutables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrentExecutables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.MaxConcurrentExecutables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryExecution")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "MaxConcurrentExecutablesDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Anzahl von Threads ab, die ein Paket erstellen kann, oder legt sie fest.</summary>
+        <value>Die Anzahl von Threads, die ein Paket erstellen kann.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfflineMode">
+      <MemberSignature Language="C#" Value="public bool OfflineMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OfflineMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.OfflineMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "OfflineModeDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob das Paket im Offlinemodus verwendet werden kann, oder legt ihn fest.</summary>
+        <value>"true", wenn das Paket im Offlinemodus arbeitet; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PackagePassword">
+      <MemberSignature Language="C#" Value="public string PackagePassword { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PackagePassword" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.PackagePassword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategorySecurity")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PackagePasswordDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legt den Wert des Kennworts für das Paket fest. Diese Eigenschaft ist lesegeschützt.</summary>
+        <value>Der Wert des Kennworts für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PackagePriorityClass">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSPriorityClass PackagePriorityClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSPriorityClass PackagePriorityClass" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.PackagePriorityClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryExecution")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PackagePriorityClassDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSPriorityClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Win32-Threadprioritätsklasse des Paketthreads an.</summary>
+        <value>Die Win32-Threadprioritätsklasse des Paketthreads.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PackageType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSPackageType PackageType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSPackageType PackageType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.PackageType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryIdentification")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PackageTypeDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSPackageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen Wert an, durch den das Tool zur Paketerstellung identifiziert wird.</summary>
+        <value>Gibt einen Wert an, durch den das Tool zur Paketerstellung identifiziert wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PackageUpgradeOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.PackageUpgradeOptions PackageUpgradeOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.PackageUpgradeOptions PackageUpgradeOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.PackageUpgradeOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.PackageUpgradeOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Upgradeoptionen für das Paket ab oder legt sie fest.</summary>
+        <value>Die Upgradeoptionen für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Parameters Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Parameters Parameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Parameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Parameterauflistung für das Paket ab.</summary>
+        <value>Die Parameterauflistung für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrecedenceConstraints">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraints PrecedenceConstraints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraints PrecedenceConstraints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.PrecedenceConstraints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraints</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung der dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraint" /> Objekte. Dieses Feld ist schreibgeschützt. </summary>
+        <value>Die Auflistung der <see cref="T:Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraint" /> Objekte.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessConfiguration">
+      <MemberSignature Language="C#" Value="public void ProcessConfiguration (string sPath, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProcessConfiguration(string sPath, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.ProcessConfiguration(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sPath" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="sPath">Der Speicherort der Konfigurationsdatei.</param>
+        <param name="value">Ein http://go.microsoft.com/fwlink/?LinkId=25731 typecode-Wert, der den Datentyp der Konfigurationsdatei darstellt.</param>
+        <summary>Gibt die Konfigurationsinformationen für ein Paket und die dazugehörigen Objekte an.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Project">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100 Project { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100 Project" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.Project" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSProject100</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft das dem Paket zugeordnete angegebene Projekt ab oder legt es fest.</summary>
+        <value>Das dem Paket zugeordnete angegebene Projekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DtsProperties Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.DtsProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DtsProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung der dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsProperties" /> Objekt für das Paket.</summary>
+        <value>Die Auflistung der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsProperties" /> Objekt für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel ProtectionLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel ProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.ProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategorySecurity")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PackageProtectionLevelDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Schutzebene für das Paket ab.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegenerateID">
+      <MemberSignature Language="C#" Value="public void RegenerateID ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegenerateID() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.RegenerateID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Erstellt einen neuen GUID für das Paket und aktualisiert die Paket-ID.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeRecursiveProjectPackageExecution">
+      <MemberSignature Language="C#" Value="public bool SafeRecursiveProjectPackageExecution { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SafeRecursiveProjectPackageExecution" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.SafeRecursiveProjectPackageExecution" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die rekursive Ausführung des Pakets sicher ist, oder legt ihn fest.</summary>
+        <value>"true", wenn die rekursive Ausführung des Pakets sicher ist; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveCheckpoints">
+      <MemberSignature Language="C#" Value="public bool SaveCheckpoints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveCheckpoints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.SaveCheckpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryCheckpoints")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "SaveCheckpointsDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob das Paket bei der Paketausführung Prüfpunkte verwendet, oder legt ihn fest.</summary>
+        <value>"true", wenn das Paket während der paketausführung Prüfpunkte verwendet; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (out string packageXml, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveToXML(string packageXml, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.SaveToXML(System.String@,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageXml" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="packageXml">Ein Ausgabeparameter, der XML enthält, die erstellt wird, wenn das Paket gespeichert wird.</param>
+        <param name="events">Ein Objekt, das die Ereignisse zum Auslösen von Fehlern, Warnungen oder Informationsereignissen implementiert.</param>
+        <summary>Speichert das Paket in einem XML-Format im Arbeitsspeicher. Verwenden Sie die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />-Methode, um ein Paket als XML-Datei auf der Festplatte zu speichern.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetExpression">
+      <MemberSignature Language="C#" Value="public void SetExpression (string propertyName, string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetExpression(string propertyName, string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Package.SetExpression(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Der Name der Eigenschaft, der der Ausdruck zugewiesen werden soll.</param>
+        <param name="expression">Der Ausdruck.</param>
+        <summary>Weist der Eigenschaft den angegebenen Ausdruck zu. Geben Sie Null an, wenn Sie einen vorhandenen Ausdruck aus der Eigenschaft zu entfernen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressConfigurationWarnings">
+      <MemberSignature Language="C#" Value="public bool SuppressConfigurationWarnings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressConfigurationWarnings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.SuppressConfigurationWarnings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "SuppressConfigurationWarningsDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die von Konfigurationen generierten Warnungen unterdrückt werden, oder legt ihn fest.</summary>
+        <value>"true", wenn die von Konfigurationen generierten Warnungen unterdrückt werden; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateObjects">
+      <MemberSignature Language="C#" Value="public bool UpdateObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UpdateObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.UpdateObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Element veraltet; finden Sie unter "Hinweise". Ruft ab oder legt einen Wert, der angibt, ob erweiterbare Objekte zur Ladezeit des Pakets aktualisiert werden können, wenn eine aktualisierte Version gefunden wird.</summary>
+        <value>"true", wenn erweiterbare Objekte zur Ladezeit des Pakets aktualisiert werden können, wenn eine aktualisierte Version gefunden wird; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionBuild">
+      <MemberSignature Language="C#" Value="public int VersionBuild { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VersionBuild" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.VersionBuild" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryVersion")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "VersionBuildDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Buildversion des Pakets ab.</summary>
+        <value>Die Buildversion des Pakets.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionComments">
+      <MemberSignature Language="C#" Value="public string VersionComments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VersionComments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.VersionComments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryVersion")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "VersionCommentsDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die dem Paket zugeordneten Versionskommentare ab.</summary>
+        <value>Die Versionskommentare für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionGUID">
+      <MemberSignature Language="C#" Value="public string VersionGUID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VersionGUID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.VersionGUID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryVersion")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "VersionGUIDDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die bei der anfänglichen Paketerstellung generierte, eindeutige Versions-GUID ab. Dieses Feld ist schreibgeschützt. </summary>
+        <value>Die Versions-GUID für das Paket.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionMajor">
+      <MemberSignature Language="C#" Value="public int VersionMajor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VersionMajor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.VersionMajor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryVersion")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "VersionMajorDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Hauptbuildversion des Pakets ab.</summary>
+        <value>Die Hauptbuildversion des Pakets.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionMinor">
+      <MemberSignature Language="C#" Value="public int VersionMinor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VersionMinor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.VersionMinor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyCategory(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "PropertyCategoryVersion")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "VersionMinorDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Nebenbuildversion des Pakets ab.</summary>
+        <value>Die Nebenbuildversion des Pakets.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Warnings">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DtsWarnings Warnings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.DtsWarnings Warnings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Package.Warnings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DtsWarnings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die für das Paket festgelegte Auflistung von Warnungen ab. Dieses Feld ist schreibgeschützt. </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsWarnings" /> für das Paket festgelegte Auflistung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

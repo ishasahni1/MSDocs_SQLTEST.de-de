@@ -1,0 +1,299 @@
+<Type Name="PolicyExtender" FullName="Microsoft.SqlServer.Management.Dmf.PolicyExtender">
+  <TypeSignature Language="C#" Value="public sealed class PolicyExtender : Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender&lt;Microsoft.SqlServer.Management.Dmf.Policy&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PolicyExtender extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1&lt;class Microsoft.SqlServer.Management.Dmf.Policy&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Dmf.PolicyExtender" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dmf</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender&lt;Microsoft.SqlServer.Management.Dmf.Policy&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.SqlServer.Management.Dmf.Policy</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Decorator-Element für das Richtlinienobjekt. Verwendet das Basisobjekt Richtlinie Hinzufügen zusätzlicher Eigenschaften
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyExtender ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyExtender.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standard-ctor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyExtender (Microsoft.SqlServer.Management.Dmf.Policy policy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Dmf.Policy policy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyExtender.#ctor(Microsoft.SqlServer.Management.Dmf.Policy)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="policy" Type="Microsoft.SqlServer.Management.Dmf.Policy" />
+      </Parameters>
+      <Docs>
+        <param name="policy">
+        </param>
+        <summary>
+            Ctor. Nimmt übergeordnete Richtlinienobjekt zum Aggregieren
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyExtender (Microsoft.SqlServer.Management.Dmf.PolicyStore policyStore, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Dmf.PolicyStore policyStore, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyExtender.#ctor(Microsoft.SqlServer.Management.Dmf.PolicyStore,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="policyStore" Type="Microsoft.SqlServer.Management.Dmf.PolicyStore" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="policyStore">
+        </param>
+        <param name="name">
+        </param>
+        <summary>
+            Ctor. Erstellen Sie ein neues Richtlinienobjekt und Aggregate darauf.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Categories">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Dmf.PolicyCategory&gt; Categories { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Management.Dmf.PolicyCategory&gt; Categories" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyExtender.Categories" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Dmf.PolicyCategory&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Enthält eine Liste der verfügbaren Kategorien
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Category">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.PolicyCategory Category { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.PolicyCategory Category" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyExtender.Category" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty("PolicyCategory")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.PolicyCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Übersetzt 'PolicyCategory'-Eigenschaft des übergeordneten Elements in der Objekteigenschaft PolicyCategory
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionInstance">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.Condition ConditionInstance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.Condition ConditionInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyExtender.ConditionInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty("Condition")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.Condition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Übersetzt Elternteils "Condition" Zeichenfolge-Eigenschaft in Bedingungseigenschaft-Objekt
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableRootRestriction">
+      <MemberSignature Language="C#" Value="public bool EnableRootRestriction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableRootRestriction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyExtender.EnableRootRestriction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty("Condition")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Stammnamen der das Richtlinienobjekt
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filters">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.TargetSetCollection Filters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.TargetSetCollection Filters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyExtender.Filters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.TargetSetCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Aktuellen Filter
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfflineMode">
+      <MemberSignature Language="C#" Value="public bool OfflineMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OfflineMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyExtender.OfflineMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Im Offlinemodus oder nicht
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyFilePath">
+      <MemberSignature Language="C#" Value="public string PolicyFilePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PolicyFilePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyExtender.PolicyFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Pfad der Datei im Offlinemodus
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootName">
+      <MemberSignature Language="C#" Value="public string RootName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyExtender.RootName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty("Condition")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Stammnamen der das Richtlinienobjekt
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedPolicyEvaluationMode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode SupportedPolicyEvaluationMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode SupportedPolicyEvaluationMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyExtender.SupportedPolicyEvaluationMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty("Condition")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt unterstützt die auswertungsmodi für ausgewählte Bedingung
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

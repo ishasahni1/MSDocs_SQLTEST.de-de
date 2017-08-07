@@ -1,0 +1,99 @@
+<Type Name="AvailabilityReplicaConnectionModeInSecondaryRole" FullName="Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole">
+  <TypeSignature Language="C#" Value="public enum AvailabilityReplicaConnectionModeInSecondaryRole" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AvailabilityReplicaConnectionModeInSecondaryRole extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SqlEnum</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRoleConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Beabsichtigten Verbindungsmodi eines verfügbarkeitsreplikats in der sekundären Rolle
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowAllConnections">
+      <MemberSignature Language="C#" Value="AllowAllConnections" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole AllowAllConnections = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole.AllowAllConnections" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Verfügbarkeitsreplikat in der sekundären Rolle lässt alle Verbindungen zu.
+Dies ist für Clientverbindungen, die von der Verfügbarkeit Replikat Teilnahme an einer verfügbarkeitsgruppe nicht bekannt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowNoConnections">
+      <MemberSignature Language="C#" Value="AllowNoConnections" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole AllowNoConnections = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole.AllowNoConnections" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das verfügbarkeitsreplikat in der sekundären Rolle lässt alle Verbindungen nicht
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowReadIntentConnectionsOnly">
+      <MemberSignature Language="C#" Value="AllowReadIntentConnectionsOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole AllowReadIntentConnectionsOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole.AllowReadIntentConnectionsOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das verfügbarkeitsreplikat in der sekundären Rolle lässt nur Verbindungen für beabsichtigte Lesevorgänge
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole Unknown = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityReplicaConnectionModeInSecondaryRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das verfügbarkeitsreplikat in der sekundären Rolle ist unbekannt. Das Replikat kann nicht in der Lage, für die Kommunikation mit dem Cluster oder Quorum möglicherweise nicht über die Windows Server Failover Cluster festgelegt werden.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

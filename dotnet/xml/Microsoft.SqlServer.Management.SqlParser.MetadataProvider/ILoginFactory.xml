@@ -1,0 +1,143 @@
+<Type Name="ILoginFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILoginFactory">
+  <TypeSignature Language="C#" Value="public interface ILoginFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILoginFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILoginFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden zum Erstellen von SQL Server Anmeldeobjekten.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateAsymmetricKeyLogin">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin CreateAsymmetricKeyLogin (Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin CreateAsymmetricKeyLogin(class Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILoginFactory.CreateAsymmetricKeyLogin(Microsoft.SqlServer.Management.SqlParser.Metadata.IServer,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="server">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekt ist das übergeordnete Objekt des Anmeldeobjekts.</param>
+        <param name="name">Der Name für das Anmeldeobjekt.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin" />-Objekt unter Verwendung des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekts und des angegebenen Namens. Die <see cref="P:Microsoft.SqlServer.Management.SqlParser.Metadata.ILogin.LoginType" />-Eigenschaft des erstellten Objekts ist auf AsymmetricKey festgelegt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCertificateLogin">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin CreateCertificateLogin (Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin CreateCertificateLogin(class Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILoginFactory.CreateCertificateLogin(Microsoft.SqlServer.Management.SqlParser.Metadata.IServer,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="server">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekt ist das übergeordnete Objekt des Anmeldeobjekts.</param>
+        <param name="name">Der Name des Anmeldeobjekts.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin" /> -Objekt unter Verwendung der angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" /> Objekt und den Namen. Die <see cref="P:Microsoft.SqlServer.Management.SqlParser.Metadata.ILogin.LoginType" />-Eigenschaft des erstellten Objekts ist auf Certificate festgelegt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein Objekt, das implementiert <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin" /> Schnittstelle.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePassword">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutablePassword CreatePassword ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutablePassword CreatePassword() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILoginFactory.CreatePassword" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutablePassword</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutablePassword" /> Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutablePassword" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSqlLogin">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin CreateSqlLogin (Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin CreateSqlLogin(class Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILoginFactory.CreateSqlLogin(Microsoft.SqlServer.Management.SqlParser.Metadata.IServer,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="server">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekt ist das übergeordnete Objekt des Anmeldeobjekts.</param>
+        <param name="name">Der Name des Anmeldeobjekts.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin" />-Objekt unter Verwendung des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekts und des angegebenen Namens. Die <see cref="P:Microsoft.SqlServer.Management.SqlParser.Metadata.ILogin.LoginType" />-Eigenschaft des erstellten Objekts ist auf Sql festgelegt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWindowsLogin">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin CreateWindowsLogin (Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin CreateWindowsLogin(class Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILoginFactory.CreateWindowsLogin(Microsoft.SqlServer.Management.SqlParser.Metadata.IServer,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="server">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekt ist das übergeordnete Objekt des Anmeldeobjekts.</param>
+        <param name="name">Der Name des Anmeldeobjekts.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin" />-Objekt unter Verwendung des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekts und des angegebenen Namens. Die <see cref="P:Microsoft.SqlServer.Management.SqlParser.Metadata.ILogin.LoginType" />-Eigenschaft des erstellten Objekts ist auf Windows festgelegt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein Objekt, das implementiert <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableLogin" /> Schnittstelle.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

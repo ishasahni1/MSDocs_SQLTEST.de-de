@@ -1,0 +1,121 @@
+<Type Name="BreakpointManager" FullName="Microsoft.SqlServer.Dts.Runtime.BreakpointManager">
+  <TypeSignature Language="C#" Value="public sealed class BreakpointManager : Microsoft.SqlServer.Dts.Runtime.DtsObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BreakpointManager extends Microsoft.SqlServer.Dts.Runtime.DtsObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DtsObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Verwaltet alle für einen Task festgelegten Breakpoints. Diese Klasse kann nicht vererbt werden. </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClearBreakpointTargets">
+      <MemberSignature Language="C#" Value="public void ClearBreakpointTargets ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearBreakpointTargets() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.BreakpointManager.ClearBreakpointTargets" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Entfernt alle in einem Task festgelegten Breakpoints.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBreakpointTarget">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.BreakpointTarget CreateBreakpointTarget (int breakpointID, string description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dts.Runtime.BreakpointTarget CreateBreakpointTarget(int32 breakpointID, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.BreakpointManager.CreateBreakpointTarget(System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.BreakpointTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakpointID" Type="System.Int32" />
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="breakpointID">Die ID, die dem Breakpoint zugewiesen werden soll, um ihn von anderen Breakpoints zu unterscheiden.</param>
+        <param name="description">Eine Zeichenfolge, die den Breakpoint beschreibt.</param>
+        <summary>Erstellt einen neuen Breakpoint im Task unter Verwendung der ID und Beschreibung des angegebenen Breakpoints.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointTarget" /> Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBreakpointTarget">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.BreakpointTarget GetBreakpointTarget (int breakpointID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dts.Runtime.BreakpointTarget GetBreakpointTarget(int32 breakpointID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.BreakpointManager.GetBreakpointTarget(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.BreakpointTarget</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakpointID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="breakpointID">Die ID des zurückzugebenden Breakpoints.</param>
+        <summary>Gibt das Breakpointobjekt für eine bestimmte Breakpoint-ID zurück.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointTarget" /> Objekt. </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBreakpointTargetEnabled">
+      <MemberSignature Language="C#" Value="public bool IsBreakpointTargetEnabled (int breakpointID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsBreakpointTargetEnabled(int32 breakpointID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.BreakpointManager.IsBreakpointTargetEnabled(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakpointID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="breakpointID">Die ID des Breakpoints, den Sie daraufhin überprüfen möchten, ob er aktiviert ist oder nicht.</param>
+        <summary>Ein boolescher Wert, der angibt, ob der Breakpoint aktiviert ist.</summary>
+        <returns>Ein boolescher Wert, der angibt, ob der Breakpoint aktiviert ist. Der Wert "true" gibt an, dass ein zuvor erstellter Breakpoint durch den Clienttask aktiviert wurde.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveBreakpointTarget">
+      <MemberSignature Language="C#" Value="public void RemoveBreakpointTarget (int breakpointID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveBreakpointTarget(int32 breakpointID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.BreakpointManager.RemoveBreakpointTarget(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakpointID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="breakpointID">Die ID des zu entfernenden Breakpoints.</param>
+        <summary>Entfernt einen zuvor erstellten Breakpoint aus einem Task.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

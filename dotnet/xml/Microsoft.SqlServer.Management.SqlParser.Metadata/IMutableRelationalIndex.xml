@@ -1,0 +1,258 @@
+<Type Name="IMutableRelationalIndex" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex">
+  <TypeSignature Language="C#" Value="public interface IMutableRelationalIndex : Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex, Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMutableRelationalIndex implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IIndex, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt einen änderbaren relationalen SQL Server-Index dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompactLargeObjects">
+      <MemberSignature Language="C#" Value="public bool CompactLargeObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CompactLargeObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.CompactLargeObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die LOB-Daten (Large Object) im Index komprimiert werden, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> to compact the LOB data in the index; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IFileGroup FileGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IFileGroup FileGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.FileGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IFileGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Dateigruppe ab, in der die Indexseiten gespeichert sind, oder legt sie fest.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IFileGroup" />-Objekt, das die Dateigruppe darstellt, in der die Indexseiten gespeichert sind.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileStreamFileGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IFileGroup FileStreamFileGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IFileGroup FileStreamFileGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.FileStreamFileGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IFileGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Dateigruppe des Indexdateidatenstroms ab oder legt sie fest.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IFileGroup" />-Objekt, das die Dateigruppe des Indexdateidatenstroms darstellt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileStreamPartitionScheme">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IPartitionScheme FileStreamPartitionScheme { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IPartitionScheme FileStreamPartitionScheme" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.FileStreamPartitionScheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IPartitionScheme</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt den Partitionsschemanamen für den Index.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IPartitionScheme" />-Objekt, das das Partitionsschema für den Index darstellt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterDefinition">
+      <MemberSignature Language="C#" Value="public string FilterDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FilterDefinition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.FilterDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Text der Indexfilterdefinition ab oder legt ihn fest.
+            </summary>
+        <value>Der Text der Indexfilterdefinition.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexedColumns">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn&gt; IndexedColumns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataOrderedCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn&gt; IndexedColumns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.IndexedColumns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung von Spalten ab, die Teil des Indexes sind. 
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn" />-Elemente, die die Spalten enthält, die Teil des Indexes sind.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexKey">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraintBase IndexKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraintBase IndexKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.IndexKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraintBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Indexschlüssel ab, der dem Index zugeordnet ist, oder legt ihn fest.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraintBase" />-Objekt, das den Indexschlüssel darstellt, der dem Index zugeordnet ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClustered">
+      <MemberSignature Language="C#" Value="public bool IsClustered { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsClustered" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.IsClustered" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Index gruppiert ist, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the index is clustered; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSystemNamed">
+      <MemberSignature Language="C#" Value="public bool IsSystemNamed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSystemNamed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.IsSystemNamed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Index automatisch vom System benannt wurde, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the index was named automatically by the system; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnique">
+      <MemberSignature Language="C#" Value="public bool IsUnique { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsUnique" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.IsUnique" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Index eindeutig ist, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the index is unique; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoAutomaticRecomputation">
+      <MemberSignature Language="C#" Value="public bool NoAutomaticRecomputation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NoAutomaticRecomputation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.NoAutomaticRecomputation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob Statistiken bei der Indexerstellung erneut generiert werden, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if statistics are not regenerated when the index is created; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartitionScheme">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IPartitionScheme PartitionScheme { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IPartitionScheme PartitionScheme" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex.PartitionScheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IPartitionScheme</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das Partitionsschema ab, das dem Index zugeordnet ist, oder legt es fest.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IPartitionScheme" />-Objekt, das das Partitionsschema darstellt, das dem Index zugeordnet ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

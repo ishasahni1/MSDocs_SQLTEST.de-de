@@ -1,0 +1,128 @@
+<Type Name="DacExportOptions" FullName="Microsoft.SqlServer.Dac.DacExportOptions">
+  <TypeSignature Language="C#" Value="public sealed class DacExportOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DacExportOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.DacExportOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Optionen, die sich auf das Verhalten des Paketexports aus einer Datenbank auswirken.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DacExportOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacExportOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.DacExportOptions" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandTimeout">
+      <MemberSignature Language="C#" Value="public int CommandTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CommandTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExportOptions.CommandTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt das Zeitlimit für Befehle in Sekunden für Abfragen an SQL Server an.
+            </summary>
+        <value>
+            Das Zeitlimit für Befehle in Sekunden.
+Standardwert ist 60
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Storage">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.DacSchemaModelStorageType Storage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType Storage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExportOptions.Storage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacSchemaModelStorageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Typ des Hintergrundspeichers ab, der während der Extraktion für das Schemamodell verwendet wird.
+            </summary>
+        <value>
+            Aufzählungswert für den Typ des Hintergrundspeichers, der während der Extraktion für das Schemamodell verwendet wird.
+Der Standardwert ist "File".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetEngineVersion">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.EngineVersion TargetEngineVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.EngineVersion TargetEngineVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExportOptions.TargetEngineVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.EngineVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, wie die Ziel-Modulversion erwartet wird. Diese Option kann beim Export verwendet werden, um die zulässige Modulversion für die Validierung festzulegen und zu überprüfen, ob die Funktionen der Datenbank den Funktionen dieser Modulversion entsprechen.
+            </summary>
+        <value>
+            Die neueste Version von Azure enthält die Unterstützung für zusätzliche Funktionen. Wenn dieser Wert ist <see cref="F:Microsoft.SqlServer.Dac.EngineVersion.Default" /> oder <see cref="F:Microsoft.SqlServer.Dac.EngineVersion.V11" />, der Exportvorgang fehl, wenn die Zieldatenbank Objekte enthält, die eine neuere Version des Datenbankmoduls erfordern.
+            
+            The default value for this option is <see cref="F:Microsoft.SqlServer.Dac.EngineVersion.Latest" />, which means that 
+            validation will ensure that the export operation will only fail if the target database is 
+            found to contain any objects that are not supported in the latest engine version.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyFullTextDocumentTypesSupported">
+      <MemberSignature Language="C#" Value="public bool VerifyFullTextDocumentTypesSupported { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VerifyFullTextDocumentTypesSupported" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExportOptions.VerifyFullTextDocumentTypesSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob die unterstützte Volltext-Dokumenttypen für Microsoft Azure SQL-Datenbank v12 überprüft werden soll.
+            </summary>
+        <value>
+            "True", wenn das Paket überprüft werden soll, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

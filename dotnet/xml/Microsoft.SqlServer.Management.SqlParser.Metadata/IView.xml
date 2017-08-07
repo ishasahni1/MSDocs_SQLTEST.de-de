@@ -1,0 +1,141 @@
+<Type Name="IView" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IView">
+  <TypeSignature Language="C#" Value="public interface IView : Microsoft.SqlServer.Management.SqlParser.Metadata.ITableViewBase" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IView implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseTable, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.ISchemaOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.ITableViewBase, class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IView" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.ITableViewBase</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt eine SQL Server-Datenbank-Ansicht dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HasCheckOption">
+      <MemberSignature Language="C#" Value="public bool HasCheckOption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasCheckOption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IView.HasCheckOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die Sicht die WITH CHECK-Option verwendet.
+            </summary>
+        <value>
+          <c>true</c> if the view uses the WITH CHECK option; othewise, <c>false</c>. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasColumnSpecification">
+      <MemberSignature Language="C#" Value="public bool HasColumnSpecification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasColumnSpecification" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IView.HasColumnSpecification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob die Spaltennamen in der Sicht explizit angegeben
+            </summary>
+        <value>
+          <c>true</c> if the view explicitly specifies column names; othewise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEncrypted">
+      <MemberSignature Language="C#" Value="public bool IsEncrypted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEncrypted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IView.IsEncrypted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die Sicht verschlüsselt ist.
+            </summary>
+        <value>
+          <c>true</c> if the view is encrypted; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSchemaBound">
+      <MemberSignature Language="C#" Value="public bool IsSchemaBound { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSchemaBound" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IView.IsSchemaBound" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob ein Schema an die Sicht gebunden ist. 
+            </summary>
+        <value>
+          <c>true</c> if a schema is bound to the view; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryText">
+      <MemberSignature Language="C#" Value="public string QueryText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IView.QueryText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Transact-SQL-Zeichenfolge, die die sichtabfrage definiert.
+            </summary>
+        <value>Die Transact-SQL-Zeichenfolge, die die sichtabfrage definiert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnsViewMetadata">
+      <MemberSignature Language="C#" Value="public bool ReturnsViewMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReturnsViewMetadata" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IView.ReturnsViewMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die Metadaten mit den Sichtdaten zurückgegeben werden.
+            </summary>
+        <value>
+          <c>true</c> if the metadata is returned with the view data; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

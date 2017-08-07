@@ -1,0 +1,556 @@
+<Type Name="DatabaseXEStore" FullName="Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore">
+  <TypeSignature Language="C#" Value="public sealed class DatabaseXEStore : Microsoft.SqlServer.Management.XEvent.BaseXEStore, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DatabaseXEStore extends Microsoft.SqlServer.Management.XEvent.BaseXEStore implements class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.XEventDbScoped</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.XEvent.BaseXEStore</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            XEStore ist der Stamm für alle Metadatenklassen und Laufzeitklassen.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DatabaseXEStore ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore" /> Klasse.
+Dieser Konstruktor wird nur verwendet, um die Serialisierung unterstützt. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DatabaseXEStore (Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">
+        </param>
+        <summary>
+            Erstellt eine neue DatabaseXEStore-Instanz, deren Name mit der aktuellen aktiven Datenbank identisch ist
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DatabaseXEStore (Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection connection, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection connection, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connection">Die Verbindung.</param>
+        <param name="name">Name des Zertifikatspeichers.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityKey">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.CreateIdentityKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt einen Schlüssel, den Speicher identifiziert.
+            </summary>
+        <returns>Ein Schlüssel, den Speicher identifiziert.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEventProvider">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.XEvent.IEventProvider GetEventProvider (Microsoft.SqlServer.Management.XEvent.Event xevent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.XEvent.IEventProvider GetEventProvider(class Microsoft.SqlServer.Management.XEvent.Event xevent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.GetEventProvider(Microsoft.SqlServer.Management.XEvent.Event)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.IEventProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xevent" Type="Microsoft.SqlServer.Management.XEvent.Event" />
+      </Parameters>
+      <Docs>
+        <param name="xevent">Ein Ereignis zu verwenden.</param>
+        <summary>
+            Ruft die Anbieter für Vorgänge des Ereignisses ab.
+            </summary>
+        <returns>Die zu verwendenden Anbieter an.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSessionProivder">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.XEvent.ISessionProvider GetSessionProivder (Microsoft.SqlServer.Management.XEvent.Session session);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.XEvent.ISessionProvider GetSessionProivder(class Microsoft.SqlServer.Management.XEvent.Session session) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.GetSessionProivder(Microsoft.SqlServer.Management.XEvent.Session)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.ISessionProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="session" Type="Microsoft.SqlServer.Management.XEvent.Session" />
+      </Parameters>
+      <Docs>
+        <param name="session">Eine Sitzung zu verwenden.</param>
+        <summary>
+            Ruft die Anbieter für Vorgänge der Sitzung ab.
+            </summary>
+        <returns>Die zu verwendenden Anbieter an.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStoreProvider">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.XEvent.IXEStoreProvider GetStoreProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.XEvent.IXEStoreProvider GetStoreProvider() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.GetStoreProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.IXEStoreProvider</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die Anbieter zum Ausführen von Vorgängen für den Speicher ab.
+            </summary>
+        <returns>Die zu verwendenden Anbieter an.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTargetProvider">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.XEvent.ITargetProvider GetTargetProvider (Microsoft.SqlServer.Management.XEvent.Target target);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.XEvent.ITargetProvider GetTargetProvider(class Microsoft.SqlServer.Management.XEvent.Target target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.GetTargetProvider(Microsoft.SqlServer.Management.XEvent.Target)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.ITargetProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.XEvent.Target" />
+      </Parameters>
+      <Docs>
+        <param name="target">Ein Ziel zu verwenden.</param>
+        <summary>
+            Ruft die Anbieter für Ziel-Vorgänge ab.
+            </summary>
+        <returns>Die zu verwendenden Anbieter an.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityKey">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey IdentityKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey IdentityKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.IdentityKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Schlüssel, der dem Speicher zugeordnet.
+            </summary>
+        <value>Der Schlüssel, der dem Speicher zugeordnet wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetExecutionEngine">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine ISfcDomain.GetExecutionEngine ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetExecutionEngine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetExecutionEngine" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft das Ausführungsmodul ab.
+            </summary>
+        <returns>Das Ausführungsmodul verwenden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetKey">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey ISfcDomain.GetKey (Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment urnFragment);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetKey(class Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment urnFragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetKey(Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urnFragment" Type="Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment" />
+      </Parameters>
+      <Docs>
+        <param name="urnFragment">Ein Urn-Fragment.</param>
+        <summary>
+            Gibt ein Urn-Fragment angegebene Schlüsselobjekt.
+            </summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey" /> für bestimmte Urn-Fragment.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetType">
+      <MemberSignature Language="C#" Value="Type ISfcDomain.GetType (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetType(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">Der Name des Typs.</param>
+        <summary>
+            Ruft den Typ ab.
+            </summary>
+        <returns>Geben Sie Correspoding auf dem angegebenen Namen.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetTypeMetadata">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata ISfcDomain.GetTypeMetadata (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetTypeMetadata(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetTypeMetadata(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.UseSfcStateManagement">
+      <MemberSignature Language="C#" Value="bool ISfcDomain.UseSfcStateManagement ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.UseSfcStateManagement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#UseSfcStateManagement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName">
+      <MemberSignature Language="C#" Value="string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#DomainInstanceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen der Domäneninstanz ab.
+            </summary>
+        <value>Der Name der Domäneninstanz.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName">
+      <MemberSignature Language="C#" Value="string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#DomainName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen der Domäne ab.
+            </summary>
+        <value>Der Name der Domäne.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.GetLogicalVersion">
+      <MemberSignature Language="C#" Value="int ISfcDomainLite.GetLogicalVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.GetLogicalVersion() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#GetLogicalVersion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt die logische Version der Domäne zurück.
+            </summary>
+        <returns>Die logische Version der Domäne.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#ConnectionContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Verbindungskontext ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Common.ISfcConnection ISfcHasConnection.GetConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#GetConnection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die aktuelle Verbindung für die Abfrage auf.
+Zurückgeben einer Verbindungs eine einzelne serielle Abfrage unterstützt und somit die Abfrage beenden muss, bevor eine andere beginnen kann.
+            </summary>
+        <returns>Die zu verwendende Verbindung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Common.ISfcConnection ISfcHasConnection.GetConnection (Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#GetConnection(Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode" />
+      </Parameters>
+      <Docs>
+        <param name="mode">Query-Modus.</param>
+        <summary>
+            Ruft die aktuelle Verbindung für die Abfrage auf.
+Gibt eine Verbindung zurück, die je nach Anforderung entweder eine einzelne serielle Abfrage oder mehrere gleichzeitig geöffnete Abfragen unterstützt
+            </summary>
+        <returns>Die zu verwendende Verbindung, oder NULL, um den Cachemodus zu verwenden Im Cachemodus werden Verbindungsprobleme und Probleme mit dem Öffnen des Datenlesers vermieden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.SetConnection">
+      <MemberSignature Language="C#" Value="void ISfcHasConnection.SetConnection (Microsoft.SqlServer.Management.Common.ISfcConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.SetConnection(class Microsoft.SqlServer.Management.Common.ISfcConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#SetConnection(Microsoft.SqlServer.Management.Common.ISfcConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Common.ISfcConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">Zu verwendende Verbindung.</param>
+        <summary>
+            Legt die aktive Verbindung fest.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen des XEStore ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerName">
+      <MemberSignature Language="C#" Value="public override string ServerName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.ServerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den ServerName für den Speicher ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erzeugt eine Zeichenfolge, die den Speicher darstellt.
+            </summary>
+        <returns>Eine Zeichenfolge, die Speicher darstellt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeTypeName">
+      <MemberSignature Language="C#" Value="public const string TypeTypeName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TypeTypeName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEventDbScoped.DatabaseXEStore.TypeTypeName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name des Typs.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

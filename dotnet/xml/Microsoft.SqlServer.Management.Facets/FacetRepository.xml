@@ -1,0 +1,320 @@
+<Type Name="FacetRepository" FullName="Microsoft.SqlServer.Management.Facets.FacetRepository">
+  <TypeSignature Language="C#" Value="public sealed class FacetRepository" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FacetRepository extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Facets.FacetRepository" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dmf</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Hilfsklasse, die die Factory-Methode der Klasse verfügbar macht.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FacetRepository ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFacetEvaluationMode">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode GetFacetEvaluationMode (Type facet);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode GetFacetEvaluationMode(class System.Type facet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.GetFacetEvaluationMode(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="facet" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="facet">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFacetProperties">
+      <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo[] GetFacetProperties (Type managementFacet);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PropertyInfo[] GetFacetProperties(class System.Type managementFacet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.GetFacetProperties(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managementFacet" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="managementFacet">ManagementFacet</param>
+        <summary>
+             Eigenschaften für die angegebene ManagementFacet
+            </summary>
+        <returns>Eigenschaften des Facets oder Null, wenn es sich nicht um ein Facet handelt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFacetsForType">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Type&gt; GetFacetsForType (Type target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class System.Type&gt; GetFacetsForType(class System.Type target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.GetFacetsForType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="target">
+        </param>
+        <summary>
+            Gibt eine Liste von Facets der Verwaltung von angegebene Objekttyp verfügbar gemacht werden
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFacetSupportedRootType">
+      <MemberSignature Language="C#" Value="public static Type GetFacetSupportedRootType (Type facet);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetFacetSupportedRootType(class System.Type facet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.GetFacetSupportedRootType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="facet" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="facet">
+        </param>
+        <summary>
+            Gibt den durch das angegebene Facet unterstützt Stammtyp
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFacetSupportedTypes">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Type&gt; GetFacetSupportedTypes (Type managementFacet);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class System.Type&gt; GetFacetSupportedTypes(class System.Type managementFacet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.GetFacetSupportedTypes(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managementFacet" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="managementFacet">
+        </param>
+        <summary>
+            Objekttypen, die vom angegebenen ManagementFacet unterstützt
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFacetType">
+      <MemberSignature Language="C#" Value="public static Type GetFacetType (string facetShortName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetFacetType(string facetShortName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.GetFacetType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="facetShortName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="facetShortName">
+        </param>
+        <summary>
+            Ruft Typ benannte Facets
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRootFacets">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Type&gt; GetRootFacets (Type rootType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class System.Type&gt; GetRootFacets(class System.Type rootType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.GetRootFacets(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="rootType">
+        </param>
+        <summary>
+            Stammfacets derzeit registriert
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPropertyConfigurable">
+      <MemberSignature Language="C#" Value="public static bool IsPropertyConfigurable (Type managementFacet, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPropertyConfigurable(class System.Type managementFacet, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.IsPropertyConfigurable(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managementFacet" Type="System.Type" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="managementFacet">
+        </param>
+        <param name="propertyName">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRegisteredFacet">
+      <MemberSignature Language="C#" Value="public static bool IsRegisteredFacet (Type facet);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsRegisteredFacet(class System.Type facet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.IsRegisteredFacet(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="facet" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="facet">
+        </param>
+        <summary>
+            Überprüft, ob das angegebene Facet von DMF registriert ist
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRootFacet">
+      <MemberSignature Language="C#" Value="public static bool IsRootFacet (Type rootType, Type facet);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsRootFacet(class System.Type rootType, class System.Type facet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Facets.FacetRepository.IsRootFacet(System.Type,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootType" Type="System.Type" />
+        <Parameter Name="facet" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="rootType">
+        </param>
+        <param name="facet">
+        </param>
+        <summary>
+            Signalisiert, ob das angegebene Facet ein Facet der Stamm für Root erhält
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisteredFacets">
+      <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable RegisteredFacets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.IEnumerable RegisteredFacets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Facets.FacetRepository.RegisteredFacets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Eine Liste mit allen registrierten facets
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

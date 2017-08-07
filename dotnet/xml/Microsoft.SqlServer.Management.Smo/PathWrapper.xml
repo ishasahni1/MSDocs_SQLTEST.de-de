@@ -1,0 +1,220 @@
+<Type Name="PathWrapper" FullName="Microsoft.SqlServer.Management.Smo.PathWrapper">
+  <TypeSignature Language="C#" Value="public static class PathWrapper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PathWrapper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.PathWrapper" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SqlEnum</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Eine Hilfsklasse für den Umgang mit Manipulation und Handles XI Pfade ebenfalls.
+Wir nehmen ServerConnection als Parameter und der PathSeparator daraus abrufen, aber diese können in Situationen verwendet werden offline zu
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Combine">
+      <MemberSignature Language="C#" Value="public static string Combine (string path1, string path2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Combine(string path1, string path2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PathWrapper.Combine(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path1" Type="System.String" />
+        <Parameter Name="path2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path1">Erste Zeichenfolge.</param>
+        <param name="path2">Zweite Zeichenfolge</param>
+        <summary>
+            2 Pfadzeichenfolgen zu kombinieren. Erforderlich, um XI Pfad ebenfalls behandeln.
+            </summary>
+        <returns>kombinierte Pfadzeichenfolge</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Combine">
+      <MemberSignature Language="C#" Value="public static string Combine (string path1, string path2, Microsoft.SqlServer.Management.Smo.PathType pathType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Combine(string path1, string path2, valuetype Microsoft.SqlServer.Management.Smo.PathType pathType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PathWrapper.Combine(System.String,System.String,Microsoft.SqlServer.Management.Smo.PathType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path1" Type="System.String" />
+        <Parameter Name="path2" Type="System.String" />
+        <Parameter Name="pathType" Type="Microsoft.SqlServer.Management.Smo.PathType" />
+      </Parameters>
+      <Docs>
+        <param name="path1">Erste Zeichenfolge.</param>
+        <param name="path2">Zweite Zeichenfolge</param>
+        <param name="pathType">Der Typ des Pfads. Falls nicht angegeben, verwendet die Funktion Linux beginnt s1 mit /, Windows, die andernfalls </param>
+        <summary>
+            2 Pfadzeichenfolgen zu kombinieren. Erforderlich, um XI Pfad ebenfalls behandeln.
+            </summary>
+        <returns>kombinierte Pfadzeichenfolge</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectoryName">
+      <MemberSignature Language="C#" Value="public static string GetDirectoryName (string s1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDirectoryName(string s1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PathWrapper.GetDirectoryName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s1" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s1">Ursprüngliche Pfad.</param>
+        <summary>
+            Gibt die Directory-Zeichenfolge, die kein Pfad angegeben. Handles XI Pfad. Es ist ein einfacher Wrapper, damit es werden Garbage In | Garbage-Out. 
+            </summary>
+        <returns>Directory-Zeichenfolge</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectoryName">
+      <MemberSignature Language="C#" Value="public static string GetDirectoryName (string s1, Microsoft.SqlServer.Management.Smo.PathType pathType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDirectoryName(string s1, valuetype Microsoft.SqlServer.Management.Smo.PathType pathType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PathWrapper.GetDirectoryName(System.String,Microsoft.SqlServer.Management.Smo.PathType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s1" Type="System.String" />
+        <Parameter Name="pathType" Type="Microsoft.SqlServer.Management.Smo.PathType" />
+      </Parameters>
+      <Docs>
+        <param name="s1">Ursprüngliche Pfad.</param>
+        <param name="pathType">Der Typ des Pfads. Falls nicht angegeben, verwendet die Funktion Linux beginnt s1 mit /, Windows, die andernfalls </param>
+        <summary>
+            Gibt die Directory-Zeichenfolge, die kein Pfad angegeben. Handles XI Pfad. Es ist ein einfacher Wrapper, damit es werden Garbage In | Garbage-Out. 
+            </summary>
+        <returns>Directory-Zeichenfolge</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRooted">
+      <MemberSignature Language="C#" Value="public static bool IsRooted (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsRooted(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PathWrapper.IsRooted(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">
+        </param>
+        <summary>
+            Bestimmt, ob der Pfad ein Stammverzeichnis, z. B. einen UNC-Pfad oder einen Laufwerkbuchstaben für Windows enthält oder beginnt mit / auf Linux-If der Pfad beginnt mit / Pfad als ein Linux-Pfad,, andernfalls als eine Windows-Pfad behandelt wird
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRooted">
+      <MemberSignature Language="C#" Value="public static bool IsRooted (string path, Microsoft.SqlServer.Management.Smo.PathType pathType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsRooted(string path, valuetype Microsoft.SqlServer.Management.Smo.PathType pathType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PathWrapper.IsRooted(System.String,Microsoft.SqlServer.Management.Smo.PathType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="pathType" Type="Microsoft.SqlServer.Management.Smo.PathType" />
+      </Parameters>
+      <Docs>
+        <param name="path">
+        </param>
+        <param name="pathType">Der Typ des Pfads. Wenn auf Unspecified - festgelegt werden, wenn der Pfad beginnt mit / Pfad als ein Linux-Pfad,, andernfalls als eine Windows-Pfad behandelt wird
+            </param>
+        <summary>
+            Bestimmt, ob der Pfad ein Stammverzeichnis, z. B. einen UNC-Pfad oder einen Laufwerkbuchstaben für Windows enthält oder mit / unter Linux beginnt
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsXIPath">
+      <MemberSignature Language="C#" Value="public static bool IsXIPath (string s1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsXIPath(string s1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PathWrapper.IsXIPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s1" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s1">Ursprüngliche Pfad.</param>
+        <summary>
+            Der angegebene Pfad Gibt true zurück, wenn der Pfad eines Pfads XI ist
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathSeparatorFromServerConnection">
+      <MemberSignature Language="C#" Value="public static string PathSeparatorFromServerConnection (Microsoft.SqlServer.Management.Common.ServerConnection serverConnection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PathSeparatorFromServerConnection(class Microsoft.SqlServer.Management.Common.ServerConnection serverConnection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PathWrapper.PathSeparatorFromServerConnection(Microsoft.SqlServer.Management.Common.ServerConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serverConnection" Type="Microsoft.SqlServer.Management.Common.ServerConnection" />
+      </Parameters>
+      <Docs>
+        <param name="serverConnection">
+        </param>
+        <summary>
+            Gibt die geeigneten Pfad als Trennzeichen Zeichenfolge für die Serververbindung angegebenen zurück
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

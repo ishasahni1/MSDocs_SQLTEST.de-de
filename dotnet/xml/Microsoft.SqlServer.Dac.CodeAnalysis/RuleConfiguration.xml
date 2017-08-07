@@ -1,0 +1,168 @@
+<Type Name="RuleConfiguration" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration">
+  <TypeSignature Language="C#" Value="public class RuleConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuleConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("id = {RuleId}, enabled ={Enabled}, severity = {Severity}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Gibt an, wie eine Regel konfiguriert werden soll - soll diese aktiviert oder deaktiviert werden? Welcher Schweregrad soll für die Regel angewendet werden?
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleConfiguration (string ruleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ruleId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ruleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ruleId">ID der Regel, die durch die diese Konfiguration gibt. NULL oder Leerzeichen sind nicht zulässig.</param>
+        <summary>
+            Erstellt ein neues <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" /> für eine Regel verwenden Sie die Standardeinstellungen für <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration.Enabled" /> und <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration.Severity" />.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleConfiguration (string ruleId, bool enabled, Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity severity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ruleId, bool enabled, valuetype Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity severity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration.#ctor(System.String,System.Boolean,Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ruleId" Type="System.String" />
+        <Parameter Name="enabled" Type="System.Boolean" />
+        <Parameter Name="severity" Type="Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity" />
+      </Parameters>
+      <Docs>
+        <param name="ruleId">ID der Regel, die durch die diese Konfiguration gibt. NULL oder Leerzeichen sind nicht zulässig.</param>
+        <param name="enabled">Diese Regel aktiviert oder deaktiviert ist?</param>
+        <param name="severity">Was ist der Schweregrad der von dieser Regel ermittelten Probleme? Muss entweder <see cref="F:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity.Warning" /> oder <see cref="F:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity.Error" />.</param>
+        <summary>
+            Erstellt ein neues <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" /> für eine Regel.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, ob die Regel aktiviert ist und in die Codeanalyse eingeschlossen werden soll.
+            
+            The default value is true
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namespace der Regel ab. Dies ist der Teil der Regel vor dem letzten "." im ID-Namen.
+Der Namespace der Regel-ID "My.Org.MyRuleName" wäre zum Beispiel "My.Org".
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleId">
+      <MemberSignature Language="C#" Value="public string RuleId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RuleId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration.RuleId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die eindeutige Id zur Identifizierung der Regel ab. Dies ist die vollständig qualifizierte ID, in der Regel in der Form "My.Org.MyRuleName".
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Severity">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity Severity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity Severity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration.Severity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Welchen Schweregrad sollen Probleme, die von der Regel erstellt haben?
+            
+            The default severity is <see cref="F:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity.Warning" /></summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortRuleId">
+      <MemberSignature Language="C#" Value="public string ShortRuleId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShortRuleId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration.ShortRuleId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den letzten Teil der Regel-ID auf. Dies ist der Teil der Regel nach dem letzten "." im ID-Namen.
+Für die Regel-ID "My.Org.MyRuleName" wäre zum Beispiel "MyRuleName" die abgekürzte Regel-ID.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

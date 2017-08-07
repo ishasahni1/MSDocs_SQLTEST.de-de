@@ -1,0 +1,2227 @@
+<Type Name="Service" FullName="Microsoft.MasterDataServices.Services.Service">
+  <TypeSignature Language="C#" Value="public sealed class Service : Microsoft.MasterDataServices.Services.ServiceContracts.IService, System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Service extends System.Object implements class Microsoft.MasterDataServices.Services.ServiceContracts.IService, class System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.Service" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.MasterDataServices.Services.ServiceContracts.IService</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IServiceBehavior</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.Activation.AspNetCompatibilityRequirements(RequirementsMode=System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ServiceModel.ServiceBehavior(ConcurrencyMode=System.ServiceModel.ConcurrencyMode.Multiple, InstanceContextMode=System.ServiceModel.InstanceContextMode.Single, Namespace="http://schemas.microsoft.com/sqlserver/masterdataservices/2009/09")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Enthält die verschiedenen Business Regeln-API-Vorgänge.
+            
+            User must have System Administration Function permission to use BusinessRulesGet.
+            User must have System Administration Function permission and be a Model Administrator 
+            (Update at the Model level) to use all other operations.
+            </summary>
+    <summary>
+            Stellt die öffentliche, WCF-basierte Schnittstelle für Master Data Services dar.
+            </summary>
+    <summary>
+            Haupteinstiegspunkt für die Datenqualitäts-API
+            </summary>
+    <summary>
+            Enthält die verschiedenen API-Vorgänge für Metadaten.
+            </summary>
+    <summary>
+            Haupteinstiegspunkt für den MasterData-Dienst
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Service ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.MasterDataServices.Services.Service" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBindingParameters">
+      <MemberSignature Language="C#" Value="public void AddBindingParameters (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+        <Parameter Name="endpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+        <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">
+        </param>
+        <param name="serviceHostBase">
+        </param>
+        <param name="endpoints">
+        </param>
+        <param name="bindingParameters">
+        </param>
+        <summary>
+            Führt keine Aktion aus.
+Finden Sie unter <seealso cref="T:System.ServiceModel.Description.IServiceBehavior" /> Dokumentation weitere Informationen zu Wenn diese Methode aufgerufen wird und seine Parameter.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnnotationsDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsDeleteResponse AnnotationsDelete (Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsDeleteResponse AnnotationsDelete(class Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.AnnotationsDelete(Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsDeleteResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Löscht vorhandene Anmerkungen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnnotationsUpdate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsUpdateResponse AnnotationsUpdate (Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsUpdateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsUpdateResponse AnnotationsUpdate(class Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsUpdateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.AnnotationsUpdate(Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsUpdateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsUpdateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsUpdateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Aktualisiert vorhandene Anmerkungen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="public void ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">
+        </param>
+        <param name="serviceHostBase">
+        </param>
+        <summary>
+            Registriert für alle Dienstvorgänge einen Parameterinspektor, der WCF-Clientgebietsschema-Informationen extrahiert und übernimmt. Registriert einen Fehlerhandler für alle Channels.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeChange">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.AttributeChangeResponse AttributeChange (Microsoft.MasterDataServices.Services.MessageContracts.AttributeChangeRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.AttributeChangeResponse AttributeChange(class Microsoft.MasterDataServices.Services.MessageContracts.AttributeChangeRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.AttributeChange(Microsoft.MasterDataServices.Services.MessageContracts.AttributeChangeRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.AttributeChangeResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.AttributeChangeRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Muss hinzugefügt werden.</param>
+        <summary>
+            Ändert den Namen und/oder Typ eines Attributs
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.AttributeChangeRequest" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessRulesClone">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse BusinessRulesClone (Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCloneRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse BusinessRulesClone(class Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCloneRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.BusinessRulesClone(Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCloneRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCloneRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Erstellen Sie neue Geschäftsregeln, die exakte Kopien der Geschäftsregeln aus einer anderen Instanz sind.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessRulesCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCreateResponse BusinessRulesCreate (Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCreateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCreateResponse BusinessRulesCreate(class Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCreateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.BusinessRulesCreate(Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCreateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCreateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesCreateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Erstellen Sie neue Geschäftsregeln.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessRulesDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse BusinessRulesDelete (Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse BusinessRulesDelete(class Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.BusinessRulesDelete(Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Löschen Sie eine Geschäftsregel oder Komponenten von Regeln.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessRulesGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesGetResponse BusinessRulesGet (Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesGetResponse BusinessRulesGet(class Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.BusinessRulesGet(Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Abrufen von Geschäftsregeln.
+            
+            Must have System Administration Function permission 
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessRulesPaletteGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPaletteGetResponse BusinessRulesPaletteGet (Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPaletteGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPaletteGetResponse BusinessRulesPaletteGet(class Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPaletteGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.BusinessRulesPaletteGet(Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPaletteGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPaletteGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPaletteGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Rufen Sie die verfügbaren geschäftsregelkomponenten (die komponentenpalette).
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessRulesPublish">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse BusinessRulesPublish (Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPublishRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse BusinessRulesPublish(class Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPublishRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.BusinessRulesPublish(Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPublishRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesPublishRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Veröffentlichen Sie Geschäftsregeln für ein Modell / Entität / Elementtyp.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessRulesUpdate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse BusinessRulesUpdate (Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesUpdateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse BusinessRulesUpdate(class Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesUpdateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.BusinessRulesUpdate(Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesUpdateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.BusinessRulesUpdateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Aktualisieren Sie die vorhandenen Geschäftsregeln.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataQualityCleansingOperationCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationCreateResponse DataQualityCleansingOperationCreate (Microsoft.MasterDataServices.Services.MessageContracts.DataQualityCleansingOperationCreateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationCreateResponse DataQualityCleansingOperationCreate(class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityCleansingOperationCreateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.DataQualityCleansingOperationCreate(Microsoft.MasterDataServices.Services.MessageContracts.DataQualityCleansingOperationCreateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationCreateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.DataQualityCleansingOperationCreateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die Anforderung.</param>
+        <summary>
+            Erstellt einen Bereinigungsvorgang
+            </summary>
+        <returns>Die Antwort</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataQualityInstalledState">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.DataQualityInstalledStateResponse DataQualityInstalledState (Microsoft.MasterDataServices.Services.MessageContracts.DataQualityInstalledStateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityInstalledStateResponse DataQualityInstalledState(class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityInstalledStateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.DataQualityInstalledState(Microsoft.MasterDataServices.Services.MessageContracts.DataQualityInstalledStateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.DataQualityInstalledStateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.DataQualityInstalledStateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Abrufen des Status des DQS - die Antwort ist positiv, wenn DQS ordnungsgemäß installiert ist und die Zusammenarbeit mit MDS konfiguriert
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataQualityKnowledgeBasesGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.DataQualityKnowledgeBasesGetResponse DataQualityKnowledgeBasesGet (Microsoft.MasterDataServices.Services.MessageContracts.DataQualityKnowledgeBasesGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityKnowledgeBasesGetResponse DataQualityKnowledgeBasesGet(class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityKnowledgeBasesGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.DataQualityKnowledgeBasesGet(Microsoft.MasterDataServices.Services.MessageContracts.DataQualityKnowledgeBasesGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.DataQualityKnowledgeBasesGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.DataQualityKnowledgeBasesGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Ruft eine Liste der in DQS konfigurierten knowledgebases
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataQualityMatchingOperationCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationCreateResponse DataQualityMatchingOperationCreate (Microsoft.MasterDataServices.Services.MessageContracts.DataQualityMatchingOperationCreateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationCreateResponse DataQualityMatchingOperationCreate(class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityMatchingOperationCreateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.DataQualityMatchingOperationCreate(Microsoft.MasterDataServices.Services.MessageContracts.DataQualityMatchingOperationCreateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationCreateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.DataQualityMatchingOperationCreateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die Anforderung.</param>
+        <summary>
+            Erstellt einen Abgleichsvorgang
+            </summary>
+        <returns>Die Antwort</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataQualityOperationPurgeOperation">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationPurgeOperationResponse DataQualityOperationPurgeOperation (Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationPurgeOperationRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationPurgeOperationResponse DataQualityOperationPurgeOperation(class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationPurgeOperationRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.DataQualityOperationPurgeOperation(Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationPurgeOperationRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationPurgeOperationResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationPurgeOperationRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Ruft die Ergebnisse eines abgeschlossenen DQS-Vorgangs ab
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataQualityOperationResultsGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationResultsGetResponse DataQualityOperationResultsGet (Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationResultsGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationResultsGetResponse DataQualityOperationResultsGet(class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationResultsGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.DataQualityOperationResultsGet(Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationResultsGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationResultsGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationResultsGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Ruft die Ergebnisse eines abgeschlossenen DQS-Vorgangs ab
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataQualityOperationStart">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStartResponse DataQualityOperationStart (Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStartRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStartResponse DataQualityOperationStart(class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStartRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.DataQualityOperationStart(Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStartRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStartResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStartRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die Anforderung.</param>
+        <summary>
+            Startet einen bereits vorhandenen DQS-Vorgang
+            </summary>
+        <returns>Die Antwort</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataQualityOperationStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStatusResponse DataQualityOperationStatus (Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStatusRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStatusResponse DataQualityOperationStatus(class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStatusRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.DataQualityOperationStatus(Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStatusRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStatusResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.DataQualityOperationStatusRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Ruft den Status eines ausgeführten DQS-Vorgangs ab
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataQualityStoreInputData">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.DataQualityStoreInputDataResponse DataQualityStoreInputData (Microsoft.MasterDataServices.Services.MessageContracts.DataQualityStoreInputDataRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityStoreInputDataResponse DataQualityStoreInputData(class Microsoft.MasterDataServices.Services.MessageContracts.DataQualityStoreInputDataRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.DataQualityStoreInputData(Microsoft.MasterDataServices.Services.MessageContracts.DataQualityStoreInputDataRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.DataQualityStoreInputDataResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.DataQualityStoreInputDataRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die Anforderung.</param>
+        <summary>
+            Speichert DQS-Eingabedaten auf dem Server. Kann mehrmals für den gleichen Vorgang aufgerufen werden.
+            </summary>
+        <returns>Die Antwort</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMemberAnnotationDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationDeleteResponse EntityMemberAnnotationDelete (Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationDeleteResponse EntityMemberAnnotationDelete(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMemberAnnotationDelete(Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationDeleteResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Löschen Sie die Anmerkungen im Zusammenhang mit einer elementrevision
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMemberAnnotationSave">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationSaveResponse EntityMemberAnnotationSave (Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationSaveRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationSaveResponse EntityMemberAnnotationSave(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationSaveRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMemberAnnotationSave(Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationSaveRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationSaveResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationSaveRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Erstellen Sie oder aktualisieren Sie die Anmerkungen im Zusammenhang mit einer elementrevision
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMemberAnnotationsCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsCreateResponse EntityMemberAnnotationsCreate (Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsCreateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsCreateResponse EntityMemberAnnotationsCreate(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsCreateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMemberAnnotationsCreate(Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsCreateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsCreateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsCreateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Erstellt neue Anmerkungen, die im Zusammenhang mit der ein Element
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMemberAnnotationsGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsGetResponse EntityMemberAnnotationsGet (Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsGetResponse EntityMemberAnnotationsGet(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMemberAnnotationsGet(Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAnnotationsGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Abrufen von Anmerkungen im Zusammenhang mit einer elementrevision
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMemberAttributesGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAttributesGetResponse EntityMemberAttributesGet (Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAttributesGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAttributesGetResponse EntityMemberAttributesGet(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAttributesGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMemberAttributesGet(Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAttributesGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAttributesGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberAttributesGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Ruft einen einzelnen Attributwert für ein Element in einer Entität ab.
+Zum Abrufen von Binärdateien entworfen, kann jedoch um Abrufen beliebiger Attributwerte verwendet werden.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMemberChangesetDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetDeleteResponse EntityMemberChangesetDelete (Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetDeleteResponse EntityMemberChangesetDelete(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMemberChangesetDelete(Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetDeleteResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Löschen Sie ein changeset
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMemberChangesetSave">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetSaveResponse EntityMemberChangesetSave (Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetSaveRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetSaveResponse EntityMemberChangesetSave(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetSaveRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMemberChangesetSave(Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetSaveRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetSaveResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetSaveRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Erstellen Sie oder aktualisieren Sie ein changeset
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMemberChangesetsGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetsGetResponse EntityMemberChangesetsGet (Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetsGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetsGetResponse EntityMemberChangesetsGet(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetsGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMemberChangesetsGet(Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetsGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetsGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberChangesetsGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Abrufen von changesets
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMemberHistoryRollback">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberHistoryRollbackResponse EntityMemberHistoryRollback (Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberHistoryRollbackRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberHistoryRollbackResponse EntityMemberHistoryRollback(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberHistoryRollbackRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMemberHistoryRollback(Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberHistoryRollbackRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberHistoryRollbackResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberHistoryRollbackRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            EntityMemberHistoriesGet ist ein Dienst, den Verlauf des entitätselements zurückgeben
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMemberKeyLookup">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberKeyGetResponse EntityMemberKeyLookup (Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberKeyGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberKeyGetResponse EntityMemberKeyLookup(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberKeyGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMemberKeyLookup(Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberKeyGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberKeyGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMemberKeyGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Sucht auf Grundlage der Kriterien entweder nach einem memberCode oder nach einer memberId.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMembersCopy">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCopyResponse EntityMembersCopy (Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCopyRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCopyResponse EntityMembersCopy(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCopyRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMembersCopy(Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCopyRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCopyResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCopyRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">EntityMembersCopyRequest</param>
+        <summary>
+            Erstellen Sie ein Element mit einem anderen identisch.  Set-Attribut und dieselbe Position in der Hierarchie.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMembersCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCreateResponse EntityMembersCreate (Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCreateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCreateResponse EntityMembersCreate(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCreateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMembersCreate(Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCreateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCreateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersCreateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Erstellen Sie einen oder Elemente sowie Menge Werte des Attributs angegeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMembersDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersDeleteResponse EntityMembersDelete (Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersDeleteResponse EntityMembersDelete(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMembersDelete(Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersDeleteResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Löschen Sie ein oder mehrere Elemente
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMembersGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersGetResponse EntityMembersGet (Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersGetResponse EntityMembersGet(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMembersGet(Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            MembersGet ist ein Dienst, der die spezifischen Entitätselemente für die angegebenen Kriterien abruft
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMembersMerge">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersMergeResponse EntityMembersMerge (Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersMergeRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersMergeResponse EntityMembersMerge(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersMergeRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMembersMerge(Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersMergeRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersMergeResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersMergeRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">EntityMembersMergeRequest-Anforderung</param>
+        <summary>
+            Erstellt/aktualisiert ein oder mehrere Elemente sowie alle Attribute, Sammlungen und Beziehungen
+            </summary>
+        <returns>EntityMembersMergeResponse</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMembersPurge">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersPurgeResponse EntityMembersPurge (Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersPurgeRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersPurgeResponse EntityMembersPurge(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersPurgeRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMembersPurge(Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersPurgeRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersPurgeResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersPurgeRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Löscht vorläufig gelöschte Elemente aus einer Modellversion.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityMembersUpdate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersUpdateResponse EntityMembersUpdate (Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersUpdateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersUpdateResponse EntityMembersUpdate(class Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersUpdateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityMembersUpdate(Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersUpdateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersUpdateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityMembersUpdateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Aktualisieren Sie ein oder mehrere Elemente
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityStagingClear">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingClearResponse EntityStagingClear (Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingClearRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingClearResponse EntityStagingClear(class Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingClearRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityStagingClear(Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingClearRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingClearResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingClearRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Legen Sie für den Batch (über die eindeutige Batch-ID) den Status „Zum Löschen vorgemerkt“ fest
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityStagingGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingGetResponse EntityStagingGet (Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingGetResponse EntityStagingGet(class Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityStagingGet(Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Verwendet, um die Liste der Batches im System für ein angegebenes Modell abrufen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityStagingLoad">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadResponse EntityStagingLoad (Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadResponse EntityStagingLoad(class Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityStagingLoad(Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Zum Massenladen von Elementen und Beziehungen in Entitätsbasierte Stagingtabellen.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityStagingProcess">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessResponse EntityStagingProcess (Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessResponse EntityStagingProcess(class Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.EntityStagingProcess(Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Legen Sie die jeweilige Batch (per batchtag, Entitäts-ID, Elementtyp und Versions ID) für die Verarbeitung in die Warteschlange gestellt werden
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorLogsGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.ErrorLogsGetResponse ErrorLogsGet (Microsoft.MasterDataServices.Services.MessageContracts.ErrorLogsGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.ErrorLogsGetResponse ErrorLogsGet(class Microsoft.MasterDataServices.Services.MessageContracts.ErrorLogsGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ErrorLogsGet(Microsoft.MasterDataServices.Services.MessageContracts.ErrorLogsGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.ErrorLogsGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.ErrorLogsGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Abgerufen Sie das Fehlerprotokoll einer bestimmten Korrelations-ID aus dem Cache werden.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportViewCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.ExportViewCreateResponse ExportViewCreate (Microsoft.MasterDataServices.Services.MessageContracts.ExportViewCreateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.ExportViewCreateResponse ExportViewCreate(class Microsoft.MasterDataServices.Services.MessageContracts.ExportViewCreateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ExportViewCreate(Microsoft.MasterDataServices.Services.MessageContracts.ExportViewCreateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.ExportViewCreateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.ExportViewCreateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Erstellt eine neue export(subscription)-Ansicht
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportViewDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.ExportViewDeleteResponse ExportViewDelete (Microsoft.MasterDataServices.Services.MessageContracts.ExportViewDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.ExportViewDeleteResponse ExportViewDelete(class Microsoft.MasterDataServices.Services.MessageContracts.ExportViewDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ExportViewDelete(Microsoft.MasterDataServices.Services.MessageContracts.ExportViewDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.ExportViewDeleteResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.ExportViewDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Löscht eine vorhandene export(subscription)-Ansicht
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportViewListGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.ExportViewListGetResponse ExportViewListGet (Microsoft.MasterDataServices.Services.MessageContracts.ExportViewListGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.ExportViewListGetResponse ExportViewListGet(class Microsoft.MasterDataServices.Services.MessageContracts.ExportViewListGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ExportViewListGet(Microsoft.MasterDataServices.Services.MessageContracts.ExportViewListGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.ExportViewListGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.ExportViewListGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Ruft die Liste der export(subscription) Autorbereich
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportViewUpdate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.ExportViewUpdateResponse ExportViewUpdate (Microsoft.MasterDataServices.Services.MessageContracts.ExportViewUpdateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.ExportViewUpdateResponse ExportViewUpdate(class Microsoft.MasterDataServices.Services.MessageContracts.ExportViewUpdateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ExportViewUpdate(Microsoft.MasterDataServices.Services.MessageContracts.ExportViewUpdateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.ExportViewUpdateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.ExportViewUpdateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Aktualisiert eine vorhandene export(subscription)-Ansicht
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.FileGetResponse FileGet (Microsoft.MasterDataServices.Services.MessageContracts.FileGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.FileGetResponse FileGet(class Microsoft.MasterDataServices.Services.MessageContracts.FileGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.FileGet(Microsoft.MasterDataServices.Services.MessageContracts.FileGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.FileGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.FileGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Rufen Sie die Datei aus dem cache
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileSave">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.FileSaveResponse FileSave (Microsoft.MasterDataServices.Services.MessageContracts.FileSaveRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.FileSaveResponse FileSave(class Microsoft.MasterDataServices.Services.MessageContracts.FileSaveRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.FileSave(Microsoft.MasterDataServices.Services.MessageContracts.FileSaveRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.FileSaveResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.FileSaveRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Speichern Sie die Datei in den cache
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HierarchyMembersGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.HierarchyMembersGetResponse HierarchyMembersGet (Microsoft.MasterDataServices.Services.MessageContracts.HierarchyMembersGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.HierarchyMembersGetResponse HierarchyMembersGet(class Microsoft.MasterDataServices.Services.MessageContracts.HierarchyMembersGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.HierarchyMembersGet(Microsoft.MasterDataServices.Services.MessageContracts.HierarchyMembersGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.HierarchyMembersGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.HierarchyMembersGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            HierarchyGet Ruft die Daten "ParentChild" für eine bestimmte Hierarchie
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HierarchyParentSave">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.HierarchyParentSaveResponse HierarchyParentSave (Microsoft.MasterDataServices.Services.MessageContracts.HierarchyParentSaveRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.HierarchyParentSaveResponse HierarchyParentSave(class Microsoft.MasterDataServices.Services.MessageContracts.HierarchyParentSaveRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.HierarchyParentSave(Microsoft.MasterDataServices.Services.MessageContracts.HierarchyParentSaveRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.HierarchyParentSaveResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.HierarchyParentSaveRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Ändert die angegebenen untergeordneten Elemente für die angegebene Hierarchieebene übergeordneten abgeleiteten Hierarchie.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataClone">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MetadataCloneResponse MetadataClone (Microsoft.MasterDataServices.Services.MessageContracts.MetadataCloneRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MetadataCloneResponse MetadataClone(class Microsoft.MasterDataServices.Services.MessageContracts.MetadataCloneRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.MetadataClone(Microsoft.MasterDataServices.Services.MessageContracts.MetadataCloneRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MetadataCloneResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.MetadataCloneRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MetadataCloneRequest" /> für den Vorgang.</param>
+        <summary>
+            Erstellt neue Metadatenobjekte, die exakte Kopien von Metadatenobjekten einer anderen Instanz sind.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MetadataCloneResponse" />für den Vorgang.</returns>
+        <remarks>
+            Nur ein Typ des Metadatenobjekts kann zu einem Zeitpunkt geklont werden.  Alle enthaltenen untergeordneten Objekte des Metadatenobjekts werden ebenfalls geklont werden.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MetadataCreateResponse MetadataCreate (Microsoft.MasterDataServices.Services.MessageContracts.MetadataCreateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MetadataCreateResponse MetadataCreate(class Microsoft.MasterDataServices.Services.MessageContracts.MetadataCreateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.MetadataCreate(Microsoft.MasterDataServices.Services.MessageContracts.MetadataCreateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MetadataCreateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.MetadataCreateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MetadataCreateRequest" /> für den Vorgang.</param>
+        <summary>
+            Erstellen neuer Metadatenobjekte.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MetadataCreateResponse" />für den Vorgang.</returns>
+        <remarks>
+            Nur ein Typ des Metadatenobjekts kann zu einem Zeitpunkt erstellt werden.  Alle enthaltenen untergeordneten Objekte des Metadatenobjekts werden auch erstellt werden.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MetadataDeleteResponse MetadataDelete (Microsoft.MasterDataServices.Services.MessageContracts.MetadataDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MetadataDeleteResponse MetadataDelete(class Microsoft.MasterDataServices.Services.MessageContracts.MetadataDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.MetadataDelete(Microsoft.MasterDataServices.Services.MessageContracts.MetadataDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MetadataDeleteResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.MetadataDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MetadataDeleteRequest" /> für den Vorgang.</param>
+        <summary>
+            Löschen verschiedener Metadatenobjekte.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MetadataDeleteResponse" />für den Vorgang.</returns>
+        <remarks>
+            Nur ein Typ des Metadatenobjekts kann zu einem Zeitpunkt gelöscht werden.  Alle enthaltenen untergeordneten Objekte des Metadatenobjekts werden ebenfalls gelöscht werden.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MetadataGetResponse MetadataGet (Microsoft.MasterDataServices.Services.MessageContracts.MetadataGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MetadataGetResponse MetadataGet(class Microsoft.MasterDataServices.Services.MessageContracts.MetadataGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.MetadataGet(Microsoft.MasterDataServices.Services.MessageContracts.MetadataGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MetadataGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.MetadataGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MetadataGetRequest" /> für den Vorgang.</param>
+        <summary>
+            Abrufen verschiedener Metadatenobjekte.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MetadataGetResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataUpdate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MetadataUpdateResponse MetadataUpdate (Microsoft.MasterDataServices.Services.MessageContracts.MetadataUpdateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MetadataUpdateResponse MetadataUpdate(class Microsoft.MasterDataServices.Services.MessageContracts.MetadataUpdateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.MetadataUpdate(Microsoft.MasterDataServices.Services.MessageContracts.MetadataUpdateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MetadataUpdateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.MetadataUpdateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MetadataUpdateRequest" /> für den Vorgang.</param>
+        <summary>
+            Aktualisieren verschiedener Metadatenobjekte.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MetadataUpdateResponse" />für den Vorgang.</returns>
+        <remarks>
+            Nur ein Typ des Metadatenobjekts kann zu einem Zeitpunkt aktualisiert werden.  Alle enthaltenen untergeordneten Objekte des Metadatenobjekts werden ebenfalls aktualisiert werden.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelMembersGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.ModelMembersGetResponse ModelMembersGet (Microsoft.MasterDataServices.Services.MessageContracts.ModelMembersGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.ModelMembersGetResponse ModelMembersGet(class Microsoft.MasterDataServices.Services.MessageContracts.ModelMembersGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ModelMembersGet(Microsoft.MasterDataServices.Services.MessageContracts.ModelMembersGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.ModelMembersGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.ModelMembersGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Rufen Sie alle Daten im Modell pro Anforderung
+            </summary>
+        <returns>Gibt das HierarchyGetResponse-Objekt</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPrincipalsClone">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrincipalsClone (Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrincipalsClone(class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SecurityPrincipalsClone(Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest" />.</param>
+        <summary>
+            Erstellt ein neues Sicherheitsrecht <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest" /> als exakte Kopien der Objekte in einer anderen MDS-hubinstanz. Für diesen Vorgang ist sowohl die GUID als auch der Name der neuen Elemente in der Anforderung erforderlich. Die GUID wird nicht generiert, sondern eingefügt.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPrincipalsCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SecurityCreateResponse SecurityPrincipalsCreate (Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SecurityCreateResponse SecurityPrincipalsCreate(class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SecurityPrincipalsCreate(Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SecurityCreateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest" /> für den Vorgang.</param>
+        <summary>
+            Erstellt neue Sicherheitsprinzipalobjekte im MDS-Repository.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityCreateResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPrincipalsDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrincipalsDelete (Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrincipalsDelete(class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SecurityPrincipalsDelete(Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsDeleteRequest" />.</param>
+        <summary>
+            Löscht die Prinzipale, angegeben als Teil der <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsDeleteRequest" />.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse" /> für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPrincipalsGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsGetResponse SecurityPrincipalsGet (Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsGetResponse SecurityPrincipalsGet(class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SecurityPrincipalsGet(Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsGetRequest" />.</param>
+        <summary>
+            Ruft der Vorgang der <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.SecuritySet" /> Daten vollständig oder teilweise. Der Vorgang gibt eins repräsentatives Datenmodell der Sicherheitsstruktur und -inhalte zurück.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsGetResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPrincipalsUpdate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrincipalsUpdate (Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrincipalsUpdate(class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SecurityPrincipalsUpdate(Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrincipalsRequest" /> für die Anforderung.</param>
+        <summary>
+            Aktualisiert die Sicherheitsprinzipale, Auflistung von <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.User" /> und <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.Group" /> im Repository.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPrivilegesClone">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrivilegesClone (Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrivilegesClone(class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SecurityPrivilegesClone(Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest" />für den Vorgang.</param>
+        <summary>
+            Erstellen Sie neue Sicherheitsberechtigungen als exakte Kopien von Berechtigungen in einer anderen MDS-hubinstanz.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPrivilegesCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SecurityCreateResponse SecurityPrivilegesCreate (Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SecurityCreateResponse SecurityPrivilegesCreate(class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SecurityPrivilegesCreate(Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SecurityCreateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest" />für den Vorgang.</param>
+        <summary>
+            Erstellt neue Sicherheitsberechtigungen im MDS-repository
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityCreateResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPrivilegesDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrivilegesDelete (Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrivilegesDelete(class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SecurityPrivilegesDelete(Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesDeleteRequest" />für den Vorgang.</param>
+        <summary>
+            Löscht die Sicherheitsberechtigungen, die in der Anforderung angegeben sind.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPrivilegesGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesGetResponse SecurityPrivilegesGet (Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesGetResponse SecurityPrivilegesGet(class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SecurityPrivilegesGet(Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesGetRequest" />für den Vorgang.</param>
+        <summary>
+            Ruft die Sicherheitsberechtigungen aus dem MDS-Repository auf der Grundlage der angegebenen abrufkriterien. 
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesGetResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPrivilegesUpdate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrivilegesUpdate (Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse SecurityPrivilegesUpdate(class Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SecurityPrivilegesUpdate(Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SecurityPrivilegesRequest" />für den Vorgang.</param>
+        <summary>
+            Aktualisiert die Informationen zu Sicherheitsberechtigungen im MDS-Repository.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceCheck">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse ServiceCheck (Microsoft.MasterDataServices.Services.MessageContracts.ServiceCheckGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse ServiceCheck(class Microsoft.MasterDataServices.Services.MessageContracts.ServiceCheckGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ServiceCheck(Microsoft.MasterDataServices.Services.MessageContracts.ServiceCheckGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.ServiceCheckGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.ServiceCheckGetRequest" /> für den Vorgang.</param>
+        <summary>
+            Dienstüberprüfung durchführen, um zu ermitteln, ob MDS einen fehlerfreien Status aufweist.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MessageResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceVersionGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.ServiceVersionGetResponse ServiceVersionGet (Microsoft.MasterDataServices.Services.MessageContracts.ServiceVersionGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.ServiceVersionGetResponse ServiceVersionGet(class Microsoft.MasterDataServices.Services.MessageContracts.ServiceVersionGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ServiceVersionGet(Microsoft.MasterDataServices.Services.MessageContracts.ServiceVersionGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.ServiceVersionGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.ServiceVersionGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.ServiceVersionGetRequest" /> Objekt.</param>
+        <summary>
+            Ruft die Version der Dienstinstanz ab.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.ServiceVersionGetResponse" /> Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StagingNameCheck">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.StagingNameCheckResponse StagingNameCheck (Microsoft.MasterDataServices.Services.MessageContracts.StagingNameCheckRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.StagingNameCheckResponse StagingNameCheck(class Microsoft.MasterDataServices.Services.MessageContracts.StagingNameCheckRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.StagingNameCheck(Microsoft.MasterDataServices.Services.MessageContracts.StagingNameCheckRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.StagingNameCheckResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.StagingNameCheckRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.StagingNameCheckRequest" /> für den Vorgang.</param>
+        <summary>
+            Überprüfen, ob der Stagingname eindeutig ist oder bereits verwendet wird.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.StagingNameCheckResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRelationshipDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipDeleteResponse SyncRelationshipDelete (Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipDeleteResponse SyncRelationshipDelete(class Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SyncRelationshipDelete(Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipDeleteResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipDeleteRequest" /> für den Vorgang.</param>
+        <summary>
+            Löscht eine Synchronisierungsbeziehung zwischen zwei Entitätsversionen.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipDeleteResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRelationshipMerge">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipMergeResponse SyncRelationshipMerge (Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipMergeRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipMergeResponse SyncRelationshipMerge(class Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipMergeRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SyncRelationshipMerge(Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipMergeRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipMergeResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipMergeRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipMergeRequest" /> für den Vorgang.</param>
+        <summary>
+            Erstellt oder aktualisiert eine Synchronisierungsbeziehung zwischen zwei Entitätsversionen.
+Nachdem die Beziehung erfolgreich eingerichtet wurde, wird ein erster Synchronisierungsvorgang gestartet.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipMergeResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRelationshipRefresh">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipRefreshResponse SyncRelationshipRefresh (Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipRefreshRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipRefreshResponse SyncRelationshipRefresh(class Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipRefreshRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SyncRelationshipRefresh(Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipRefreshRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipRefreshResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipRefreshRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipRefreshRequest" /> für den Vorgang.</param>
+        <summary>
+            Aktualisiert eine Synchronisierungsbeziehung, indem die Entitätsversion des Ziels auf die Entitätsversion der Quelle abgestimmt wird.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipRefreshResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRelationshipsGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipsGetResponse SyncRelationshipsGet (Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipsGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipsGetResponse SyncRelationshipsGet(class Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipsGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SyncRelationshipsGet(Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipsGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipsGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipsGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipsGetRequest" /> für den Vorgang.</param>
+        <summary>
+            Ruft Synchronisierungsbeziehungen ab.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SyncRelationshipsGetResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemDomainListGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SystemDomainListGetResponse SystemDomainListGet (Microsoft.MasterDataServices.Services.MessageContracts.SystemDomainListGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SystemDomainListGetResponse SystemDomainListGet(class Microsoft.MasterDataServices.Services.MessageContracts.SystemDomainListGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SystemDomainListGet(Microsoft.MasterDataServices.Services.MessageContracts.SystemDomainListGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SystemDomainListGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SystemDomainListGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SystemDomainListGetRequest" /> für den Vorgang.</param>
+        <summary>
+            Ruft Systemdomänenlisten ab.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SystemDomainListGetResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemPropertiesGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SystemPropertiesGetResponse SystemPropertiesGet (Microsoft.MasterDataServices.Services.MessageContracts.SystemPropertiesGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SystemPropertiesGetResponse SystemPropertiesGet(class Microsoft.MasterDataServices.Services.MessageContracts.SystemPropertiesGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SystemPropertiesGet(Microsoft.MasterDataServices.Services.MessageContracts.SystemPropertiesGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SystemPropertiesGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SystemPropertiesGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SystemPropertiesGetRequest" /> für den Vorgang.</param>
+        <summary>
+            Ruft Systemeigenschaften ab.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SystemPropertiesGetResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemSettingsGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsGetResponse SystemSettingsGet (Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsGetResponse SystemSettingsGet(class Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SystemSettingsGet(Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsGetRequest" /> für den Vorgang.</param>
+        <summary>
+            Ruft die Systemeinstellungen ab.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsGetResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemSettingsUpdate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsUpdateResponse SystemSettingsUpdate (Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsUpdateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsUpdateResponse SystemSettingsUpdate(class Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsUpdateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.SystemSettingsUpdate(Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsUpdateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsUpdateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsUpdateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsUpdateRequest" /> für den Vorgang.</param>
+        <summary>
+            Aktualisieren von Systemeinstellungen.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.SystemSettingsUpdateResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionAnnotationsCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsCreateResponse TransactionAnnotationsCreate (Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsCreateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsCreateResponse TransactionAnnotationsCreate(class Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsCreateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.TransactionAnnotationsCreate(Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsCreateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.AnnotationsCreateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsCreateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Erstellt neue Anmerkungen, die im Zusammenhang mit einer Transaktion
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionAnnotationsGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsGetResponse TransactionAnnotationsGet (Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsGetResponse TransactionAnnotationsGet(class Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.TransactionAnnotationsGet(Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+            Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsGetRequest" /> -Instanz, die identifiziert die Transaktion eine Anmerkung abgerufen werden soll.
+            </param>
+        <summary>
+            Abrufen von Anmerkungen zu einer Transaktion
+            </summary>
+        <returns>
+            Ein <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.TransactionAnnotationsGetResponse" /> Instanz, die die Ergebnisse der anmerkungsanforderung enthält.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionsGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.TransactionsGetResponse TransactionsGet (Microsoft.MasterDataServices.Services.MessageContracts.TransactionsGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.TransactionsGetResponse TransactionsGet(class Microsoft.MasterDataServices.Services.MessageContracts.TransactionsGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.TransactionsGet(Microsoft.MasterDataServices.Services.MessageContracts.TransactionsGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.TransactionsGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.TransactionsGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+            Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.TransactionsGetRequest" /> -Instanz, die die Kriterien für die abzurufenden Transaktionen.
+            </param>
+        <summary>
+            Ruft die Transaktionen für die angegebenen Kriterien ab.
+            </summary>
+        <returns>
+            Eine <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.TransactionsGetResponse" />-Instanz, in der die Ergebnisse der Transaktionsanforderung enthalten sind.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionsReverse">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.TransactionsReverseResponse TransactionsReverse (Microsoft.MasterDataServices.Services.MessageContracts.TransactionsReverseRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.TransactionsReverseResponse TransactionsReverse(class Microsoft.MasterDataServices.Services.MessageContracts.TransactionsReverseRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.TransactionsReverse(Microsoft.MasterDataServices.Services.MessageContracts.TransactionsReverseRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.TransactionsReverseResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.TransactionsReverseRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Kehrt die MDM-Transaktionen 
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserEffectiveObjectPermissionsGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.UserEffectiveObjectPermissionsGetResponse UserEffectiveObjectPermissionsGet (Microsoft.MasterDataServices.Services.MessageContracts.UserEffectiveObjectPermissionsGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.UserEffectiveObjectPermissionsGetResponse UserEffectiveObjectPermissionsGet(class Microsoft.MasterDataServices.Services.MessageContracts.UserEffectiveObjectPermissionsGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.UserEffectiveObjectPermissionsGet(Microsoft.MasterDataServices.Services.MessageContracts.UserEffectiveObjectPermissionsGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.UserEffectiveObjectPermissionsGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.UserEffectiveObjectPermissionsGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.UserEffectiveObjectPermissionsGetRequest" />für den Vorgang.</param>
+        <summary>
+            Ruft die Benutzer aus dem MDS-Repository, die basierend auf der angegebenen Objektberechtigung
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.UserEffectiveObjectPermissionsGetResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPreferencesDelete">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesDeleteResponse UserPreferencesDelete (Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesDeleteRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesDeleteResponse UserPreferencesDelete(class Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesDeleteRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.UserPreferencesDelete(Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesDeleteRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesDeleteResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesDeleteRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesDeleteRequest" /> für den Vorgang.</param>
+        <summary>
+            Löschen der Benutzereinstellungen.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesDeleteResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPreferencesGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesGetResponse UserPreferencesGet (Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesGetResponse UserPreferencesGet(class Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.UserPreferencesGet(Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesGetRequest" /> für den Vorgang.</param>
+        <summary>
+            Abrufen aller Benutzereinstellungen.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesGetResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPreferencesUpdate">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesUpdateResponse UserPreferencesUpdate (Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesUpdateRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesUpdateResponse UserPreferencesUpdate(class Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesUpdateRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.UserPreferencesUpdate(Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesUpdateRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesUpdateResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesUpdateRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesUpdateRequest" /> für den Vorgang.</param>
+        <summary>
+            Aktualisieren der Benutzereinstellungen.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.UserPreferencesUpdateResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">
+        </param>
+        <param name="serviceHostBase">
+        </param>
+        <summary>
+            Führt keine Aktion aus.
+Finden Sie unter <seealso cref="T:System.ServiceModel.Description.IServiceBehavior" /> Dokumentation weitere Informationen zu Wenn diese Methode aufgerufen wird und seine Parameter.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationGet">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.ValidationGetResponse ValidationGet (Microsoft.MasterDataServices.Services.MessageContracts.ValidationGetRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.ValidationGetResponse ValidationGet(class Microsoft.MasterDataServices.Services.MessageContracts.ValidationGetRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ValidationGet(Microsoft.MasterDataServices.Services.MessageContracts.ValidationGetRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.ValidationGetResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.ValidationGetRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Ruft die Validierung Probleme für die angegebenen Kriterien
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationProcess">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.ValidationProcessResponse ValidationProcess (Microsoft.MasterDataServices.Services.MessageContracts.ValidationProcessRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.ValidationProcessResponse ValidationProcess(class Microsoft.MasterDataServices.Services.MessageContracts.ValidationProcessRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.ValidationProcess(Microsoft.MasterDataServices.Services.MessageContracts.ValidationProcessRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.ValidationProcessResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.ValidationProcessRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+            Die Daten für die angegebenen Kriterien werden überprüft
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionCopy">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.MessageContracts.VersionCopyResponse VersionCopy (Microsoft.MasterDataServices.Services.MessageContracts.VersionCopyRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.MasterDataServices.Services.MessageContracts.VersionCopyResponse VersionCopy(class Microsoft.MasterDataServices.Services.MessageContracts.VersionCopyRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.Service.VersionCopy(Microsoft.MasterDataServices.Services.MessageContracts.VersionCopyRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.MessageContracts.VersionCopyResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.MasterDataServices.Services.MessageContracts.VersionCopyRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.VersionCopyRequest" /> für den Vorgang.</param>
+        <summary>
+            Erstellen Sie eine Kopie einer Version, wobei eine Kopie aller Entitätselementdaten erstellt wird.
+            </summary>
+        <returns>Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.VersionCopyResponse" />für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

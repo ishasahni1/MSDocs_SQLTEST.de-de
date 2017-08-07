@@ -1,0 +1,85 @@
+<Type Name="ISqlAnalysisRuleMetadata" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.ISqlAnalysisRuleMetadata">
+  <TypeSignature Language="C#" Value="public interface ISqlAnalysisRuleMetadata : Microsoft.SqlServer.Dac.Extensibility.IStandardMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISqlAnalysisRuleMetadata implements class Microsoft.SqlServer.Dac.Extensibility.IStandardMetadata" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.ISqlAnalysisRuleMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dac.Extensibility.IStandardMetadata</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Die Metadaten zum Beschreiben einer Regel – Namespace, ID, Bereich usw.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Category">
+      <MemberSignature Language="C#" Value="public string Category { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Category" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.ISqlAnalysisRuleMetadata.Category" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            (Optional) Kategorie, zum Gruppieren der Regel in der Visual Studio-Benutzeroberfläche. Sollte nicht lokalisiert werden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.ISqlAnalysisRuleMetadata.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Beschreibung der Regel. Dies sollte eine kurze lesbare Beschreibung dessen sein, wofür die Regel vorgesehen ist: wovor sie warnt oder was sie blockiert.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleScope">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleScope RuleScope { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleScope RuleScope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.ISqlAnalysisRuleMetadata.RuleScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Bereich dieser Regel. Wählen Sie zwischen <see cref="F:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleScope.Element" /> und <see cref="F:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleScope.Model" />.
+Hinweis: damit das Element Regeln, die <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlAnalysisRule.SupportedElementTypes" /> Eigenschaft muss mindestens ein können werden Elementtypen unterstützt, für die Analyse durch die Regel zurückgeben.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

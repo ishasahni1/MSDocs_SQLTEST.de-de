@@ -1,0 +1,298 @@
+<Type Name="OrderedCollection&lt;T&gt;" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class OrderedCollection&lt;T&gt; : Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollectionBase&lt;T&gt;, Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;, Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;, System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; where T : class, IMetadataObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OrderedCollection`1&lt;class (class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject) T&gt; extends Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollectionBase`1&lt;!T&gt; implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+        <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollectionBase&lt;T&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">T</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">Der Typ der Elemente in der Auflistung, beschränkt auf <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />.</typeparam>
+    <summary>
+            Stellt eine sortierte Auflistung dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OrderedCollection (Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.#ctor(Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="collationInfo">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" /> -Objekt, das verwendet wird, um Elemente zu suchen.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection" /> -Klasse, die dem angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" /> -Objekt und besitzt eine Anfangskapazität von 16.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OrderedCollection (int initialCapacity, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCapacity, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.#ctor(System.Int32,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="initialCapacity" Type="System.Int32" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="initialCapacity">Die Anzahl der Elemente, die die neue Auflistung anfänglich speichern kann.</param>
+        <param name="collationInfo">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" /> -Objekt, das verwendet wird, um Elemente zu suchen.</param>
+        <summary>
+            Initialisiert eine neue Instanz der <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection" />-Klasse, die die angegebene Kapazität und das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt verwendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsMetadataObjectCollection">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; AsMetadataObjectCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; AsMetadataObjectCollection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.AsMetadataObjectCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />-Objekt ab, das diese Auflistung enthält.
+            </summary>
+        <value>Eine <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />-Elemente, die diese Auflistung enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.AsMetadataObjectCollection">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.AsMetadataObjectCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.AsMetadataObjectCollection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataCollection&lt;Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataObject&gt;#AsMetadataObjectCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Contains">
+      <MemberSignature Language="C#" Value="bool IMetadataCollection&lt;IMetadataObject&gt;.Contains (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Contains(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataCollection&lt;Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataObject&gt;#Contains(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+      </Parameters>
+      <Docs>
+        <param name="item">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Contains">
+      <MemberSignature Language="C#" Value="bool IMetadataCollection&lt;IMetadataObject&gt;.Contains (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Contains(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataCollection&lt;Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataObject&gt;#Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Count">
+      <MemberSignature Language="C#" Value="int Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataCollection&lt;Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataObject&gt;#Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.FindAll">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; IMetadataCollection&lt;IMetadataObject&gt;.FindAll (Predicate&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; match);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.FindAll(class System.Predicate`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; match) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataCollection&lt;Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataObject&gt;#FindAll(System.Predicate{Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="match" Type="System.Predicate&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="match">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.FindAll">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; IMetadataCollection&lt;IMetadataObject&gt;.FindAll (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.FindAll(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataCollection&lt;Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataObject&gt;#FindAll(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Item">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Item[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataCollection&lt;Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataObject&gt;#Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Item">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Item[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataOrderedCollection&lt;Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataObject&gt;#Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; IEnumerable&lt;IMetadataObject&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt; System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.System#Collections#Generic#IEnumerable&lt;Microsoft#SqlServer#Management#SqlParser#Metadata#IMetadataObject&gt;#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.OrderedCollection`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

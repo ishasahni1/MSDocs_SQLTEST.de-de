@@ -1,0 +1,82 @@
+<Type Name="IScalarFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IScalarFactory">
+  <TypeSignature Language="C#" Value="public interface IScalarFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScalarFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IScalarFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden und Eigenschaften, die zum Erstellen von Skalarobjekten verwendet werden können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateScalarExpression">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression CreateScalarExpression (Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType dataType, bool nullable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression CreateScalarExpression(class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType dataType, bool nullable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IScalarFactory.CreateScalarExpression(Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" />
+        <Parameter Name="nullable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dataType">Der skalare Datentyp des zu erstellenden Skalarwerts.</param>
+        <param name="nullable">Gibt an, ob das Skalarwert NULL zulässt.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression" />-Objekt, das die Auswertung eines Skalarausdrucks darstellt, der über den angegebenen Datentyp verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Literal">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILiteralScalarFactory Literal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILiteralScalarFactory Literal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IScalarFactory.Literal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILiteralScalarFactory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILiteralScalarFactory" />-Objekt ab, das zum Erstellen literaler Skalarausdrücke verwendet werden kann.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ILiteralScalarFactory" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar Null { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar Null" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IScalarFactory.Null" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar" />-Objekt ab, das als Platzhalter-Skalarwert verwendet werden kann.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,436 @@
+<Type Name="CodeAnalysisRuleSettings" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings">
+  <TypeSignature Language="C#" Value="public sealed class CodeAnalysisRuleSettings : System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeAnalysisRuleSettings extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Die Einstellungen zum Konfigurieren von Regeln, die während der Analyse verwendet. 
+            
+            Before analysis begins, this settings object will be applied to the rules discovered 
+            by the analysis service. If DisableRulesNotInSettings is set to true then any rules 
+            not included in these settings will be disabled and not run during analysis. 
+            
+            These settings are applied by calling the <see cref="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.ApplySettingsToRules(System.Collections.Generic.IEnumerable{Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration})" /> method
+            on rules returned by the engine.
+            
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeAnalysisRuleSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt ein neues <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings" /> Objekt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeAnalysisRuleSettings (System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt; rules);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt; rules) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.#ctor(System.Collections.Generic.IEnumerable{Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rules" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="rules">Die einzuschließenden Regeln</param>
+        <summary>
+            Erstellt ein neues <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings" /> mit einem Satz von Regeln.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Wenn <paramref name="rules" /> ist null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.Add(Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" />
+      </Parameters>
+      <Docs>
+        <param name="item">Element, das hinzugefügt werden</param>
+        <summary>
+            Fügt ein neues <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" /> Objekt, das die Liste der Regeln
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplySettingsToRules">
+      <MemberSignature Language="C#" Value="public void ApplySettingsToRules (System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt; rules);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplySettingsToRules(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt; rules) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.ApplySettingsToRules(System.Collections.Generic.IEnumerable{Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rules" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="rules">Die Regeln die Einstellungen angewendet werden soll</param>
+        <summary>
+            Wendet diese Einstellungen auf einen anderen Satz von Regeln an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToSettingsString">
+      <MemberSignature Language="C#" Value="public string ConvertToSettingsString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ConvertToSettingsString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.ConvertToSettingsString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Konvertiert die regelkonfigurationsinformationen dieses <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings" /> Objekt in eine einstellungszeichenfolge, wie Sie in SSDT-Projektdateien verwendet. Diese Zeichenfolge legt fest, welche Regeln deaktiviert werden sollen bzw. für welche Regeln erkannte Probleme als Fehler anstatt als Warnungen behandelt werden sollen. Jede Regel, die nicht in der Einstellungszeichenfolge enthalten ist, wird standardmäßig aktiviert.
+            </summary>
+        <returns>
+            Eine durch Semikolons getrennte Zeichenfolge, die zu deaktivierende Regeln festlegt bzw. Regeln, deren Probleme als Fehler behandelt werden sollen.
+Das Format ist "-My.Disabled.Rule;+!My.Enabled.RuleWithError;-!My.Disabled.RuleWithError". Bei deaktivierten Regeln geht der ID also ein "-" voran, bei aktivierten Regeln mit Fehlern hingegen ein "+!" Bevor Sie ihrer ID. Die Einstellungszeichenfolge sollte nur Regeln enthalten, die deaktiviert bzw. deren Probleme als Fehler behandelt werden sollen.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromSettingsString">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings CreateFromSettingsString (string settingsString, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings CreateFromSettingsString(string settingsString, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.CreateFromSettingsString(System.String,System.Collections.Generic.IList{Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settingsString" Type="System.String" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="settingsString">
+            Eine durch Semikolons getrennte Zeichenfolge, die zu deaktivierende Regeln festlegt bzw. Regeln, deren Probleme als Fehler behandelt werden sollen.
+Das Format ist "-My.Disabled.Rule;+!My.Enabled.RuleWithError;-!My.Disabled.RuleWithError". Bei deaktivierten Regeln muss der ID also ein "-" vorangehen, bei aktivierten Regeln mit Fehlern hingegen ein "+!" Bevor Sie ihrer ID. Die Einstellungszeichenfolge sollte nur Regeln enthalten, die deaktiviert bzw. deren Probleme als Fehler behandelt werden sollen.
+            
+            If this parameter is null or contains no valid rules, a default empty configuration will be returned. This will result in all
+            discovered rules being run.
+            </param>
+        <param name="errors">Liste der bei der Verarbeitung der Liste erkannten Fehler.</param>
+        <summary>
+            Erstellt eine <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings" /> -Konfiguration auf Grundlage einer einstellungszeichenfolge, wie in SSDT-Projektdateien verwendet. Diese Zeichenfolge legt fest, welche Regeln deaktiviert werden sollen bzw. für welche Regeln erkannte Probleme als Fehler anstatt als Warnungen behandelt werden sollen. Jede Regel, die nicht in der Einstellungszeichenfolge enthalten ist, wird standardmäßig aktiviert.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableRule">
+      <MemberSignature Language="C#" Value="public void DisableRule (string ruleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisableRule(string ruleId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.DisableRule(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ruleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ruleId">Vollständig qualifizierte Id für die Regel</param>
+        <summary>
+            Schließt eine Regel aus der Ausführung
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">Wenn die <paramref name="ruleId" /> ist Null oder leer</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableRulesNotInSettings">
+      <MemberSignature Language="C#" Value="public bool DisableRulesNotInSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisableRulesNotInSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.DisableRulesNotInSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            In diesen Einstellungen nicht gefundenen Regeln deaktiviert werden soll? Der Standardwert ist "false", sodass alle Regeln, die nicht explizit in den Einstellungen abgedeckt werden, während der Analyse weiterhin ausgeführt werden. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableRule">
+      <MemberSignature Language="C#" Value="public void EnableRule (string ruleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnableRule(string ruleId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.EnableRule(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ruleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ruleId">Vollständig qualifizierte Id für die Regel</param>
+        <summary>
+            Enthält eine Regel für die Ausführung
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">Wenn die <paramref name="ruleId" /> ist Null oder leer</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindConfiguration">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration FindConfiguration (string ruleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration FindConfiguration(string ruleId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.FindConfiguration(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ruleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ruleId">Die vollqualifizierte Regel-ID</param>
+        <summary>
+            Sucht nach der <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" /> , entspricht dem angegebenen <paramref name="ruleId" />. Wenn die Konfiguration nicht vorhanden ist, wird Null zurückgegeben
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" />, oder null, wenn keine Übereinstimmung mit den<paramref name="ruleId" /></returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="M:System.Collections.IEnumerable.GetEnumerator" />
+        </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRuleDisabled">
+      <MemberSignature Language="C#" Value="public bool IsRuleDisabled (string ruleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsRuleDisabled(string ruleId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.IsRuleDisabled(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ruleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ruleId">Vollständig qualifizierte Id für die Regel</param>
+        <summary>
+            Ist eine bestimmte Regel in den regeleinstellungen deaktiviert?
+            </summary>
+        <returns>"true", wenn das Problem deaktiviert ist; "false" andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">Wenn die <paramref name="ruleId" /> ist Null oder leer</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRuleProblemTreatedAsError">
+      <MemberSignature Language="C#" Value="public bool IsRuleProblemTreatedAsError (string ruleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsRuleProblemTreatedAsError(string ruleId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.IsRuleProblemTreatedAsError(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ruleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ruleId">Vollständig qualifizierte Id für die Regel</param>
+        <summary>
+            Ist eine bestimmte Regel in den regeleinstellungen als Fehler behandelt?
+            </summary>
+        <returns>"true", wenn das Problem als Fehler behandelt wird; "false" andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">Wenn die <paramref name="ruleId" /> ist Null oder leer</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(class Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.Remove(Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" />
+      </Parameters>
+      <Docs>
+        <param name="item">zu entfernende Element</param>
+        <summary>
+            Entfernt eine <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" /> Objekt aus der Liste der Regeln.
+            </summary>
+        <returns>"true", wenn das Element erfolgreich entfernt wurde</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TreatRuleProblemAsError">
+      <MemberSignature Language="C#" Value="public void TreatRuleProblemAsError (string ruleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TreatRuleProblemAsError(string ruleId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.TreatRuleProblemAsError(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ruleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ruleId">Vollständig qualifizierte Id für die Regel</param>
+        <summary>
+            Behandeln Sie alle Probleme, die eine Regel gefunden werden als Fehler
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">Wenn die <paramref name="ruleId" /> ist Null oder leer</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TreatRuleProblemAsWarning">
+      <MemberSignature Language="C#" Value="public void TreatRuleProblemAsWarning (string ruleId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TreatRuleProblemAsWarning(string ruleId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.TreatRuleProblemAsWarning(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ruleId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ruleId">Vollständig qualifizierte Id für die Regel</param>
+        <summary>
+            Sollen Sie alle Probleme, die eine Regel gefunden werden als Warnungen behandelt werden
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">Wenn die <paramref name="ruleId" /> ist Null oder leer</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetRuleConfiguration">
+      <MemberSignature Language="C#" Value="public bool TryGetRuleConfiguration (string ruleId, out Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetRuleConfiguration(string ruleId, class Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisRuleSettings.TryGetRuleConfiguration(System.String,Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ruleId" Type="System.String" />
+        <Parameter Name="config" Type="Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ruleId">Die vollqualifizierte Regel-ID</param>
+        <param name="config">out <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" />, oder null, wenn keine Übereinstimmung mit den<paramref name="ruleId" /></param>
+        <summary>
+            Sucht nach der <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.RuleConfiguration" /> , entspricht dem angegebenen <paramref name="ruleId" />.  
+            </summary>
+        <returns>"true", wenn eine Konfiguration, dass die angegebenen <paramref name="ruleId" /> gefunden wurde, wird "false" andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

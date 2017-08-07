@@ -1,0 +1,87 @@
+<Type Name="SchemaCompareDatabaseEndpoint" FullName="Microsoft.SqlServer.Dac.Compare.SchemaCompareDatabaseEndpoint">
+  <TypeSignature Language="C#" Value="public sealed class SchemaCompareDatabaseEndpoint : Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SchemaCompareDatabaseEndpoint extends Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Compare.SchemaCompareDatabaseEndpoint" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Bezieht sich auf eine Datenbank als Quelle oder Ziel für Schemavergleich
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SchemaCompareDatabaseEndpoint (string connectionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaCompareDatabaseEndpoint.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">Eine Verbindungszeichenfolge für eine Datenbankinstanz</param>
+        <summary>
+            Erstellt einen Schema vergleichen-Endpunkt, der in einer Datenbank verweist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Die bereitgestellte Verbindungszeichenfolge ist null.</exception>
+        <exception cref="T:System.FormatException">Ungültiger Wert in der Verbindungszeichenfolge (z. B., wenn ein boolescher oder numerischer Wert wurde erwartet, jedoch nicht angegeben).</exception>
+        <exception cref="T:System.ArgumentException">Der angegebene "ConnectionString" ist ungültig.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SchemaCompareDatabaseEndpoint (string connectionString, System.Security.SecureString password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString, class System.Security.SecureString password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaCompareDatabaseEndpoint.#ctor(System.String,System.Security.SecureString)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+        <Parameter Name="password" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">Eine Verbindungszeichenfolge für eine Datenbankinstanz</param>
+        <param name="password">
+          <see cref="T:System.Security.SecureString" />die liefert des Kennworts für die datenbankverbindung, die dieser Instanz verwendet wird.</param>
+        <summary>
+            Erstellt einen Schema vergleichen-Endpunkt, der in einer Datenbank verweist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Die bereitgestellte Verbindungszeichenfolge oder das Kennwort ist null.</exception>
+        <exception cref="T:System.FormatException">Ungültiger Wert in der Verbindungszeichenfolge (z. B., wenn ein boolescher oder numerischer Wert wurde erwartet, jedoch nicht angegeben).</exception>
+        <exception cref="T:System.ArgumentException">Der angegebene "ConnectionString" ist ungültig.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseName">
+      <MemberSignature Language="C#" Value="public string DatabaseName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaCompareDatabaseEndpoint.DatabaseName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Name der Datenbank
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,64 @@
+<Type Name="IServerDdlTrigger" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger">
+  <TypeSignature Language="C#" Value="public interface IServerDdlTrigger : Microsoft.SqlServer.Management.SqlParser.Metadata.IServerOwnedObject, Microsoft.SqlServer.Management.SqlParser.Metadata.ITrigger" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServerDdlTrigger implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IServerOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.ITrigger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IServerOwnedObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.ITrigger</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt einen SQL Server-DDL-Trigger.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsQuotedIdentifierOn">
+      <MemberSignature Language="C#" Value="public bool IsQuotedIdentifierOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsQuotedIdentifierOn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger.IsQuotedIdentifierOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert, der angibt, ob durch doppelte Anführungszeichen begrenzte Bezeichner Transact-SQL reservierte Schlüsselwörter sind oder nach den Transact-SQL-Syntaxregeln normalerweise nicht zugelassene Zeichen enthalten. 
+            </summary>
+        <value>
+          <c>true</c> if quoted identifiers are used to allow characters not usually allowed by the Transact-SQL syntax rules; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerDdlEvents">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ITriggerEventTypeSet ServerDdlEvents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ITriggerEventTypeSet ServerDdlEvents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger.ServerDdlEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ITriggerEventTypeSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Satz von DDL-Ereignistypen auf Serverebene ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITriggerEventTypeSet" /> Objekt, das die DDL-Ereignistypen auf Serverebene enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

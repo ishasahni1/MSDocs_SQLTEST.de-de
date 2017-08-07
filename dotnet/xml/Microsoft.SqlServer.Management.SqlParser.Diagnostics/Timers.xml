@@ -1,0 +1,105 @@
+<Type Name="Timers" FullName="Microsoft.SqlServer.Management.SqlParser.Diagnostics.Timers">
+  <TypeSignature Language="C#" Value="public static class Timers" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Timers extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Diagnostics.Timers" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt Zeitgeber für Codebereiche bereit.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="public static void Begin (int recordCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Begin(int32 recordCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Diagnostics.Timers.Begin(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="recordCount">Die maximale Anzahl aufzuzeichnender Zeitgeberereignisse.</param>
+        <summary>
+            Setzt alle Zeitgeber zurück, initialisiert eine neue Liste von Zeitgeber-Datensätzen und aktiviert Zeitgeber.
+            </summary>
+        <remarks>
+            Ein Überlauffehler tritt auf, wenn die maximale Anzahl von Datensätzen überschritten wird. Erhöhen Sie die maximale Anzahl von Datensätzen, und führen Sie erneut aus.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finish">
+      <MemberSignature Language="C#" Value="public static void Finish ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Finish() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Diagnostics.Timers.Finish" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Beendet die Aufzeichnung von Ereignissen und schreibt den Zeitbericht in registrierte Writer.
+            </summary>
+        <remarks>
+            Beim Aufrufen dieser Methode wird auch der Timer zurückgesetzt, nachdem der Bericht generiert wird. Rufen Sie zum Fortsetzen der Aufzeichnung der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Diagnostics.Timers.Begin" /> Methode.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputFormat">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Diagnostics.Format OutputFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.SqlServer.Management.SqlParser.Diagnostics.Format OutputFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Diagnostics.Timers.OutputFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Diagnostics.Format</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das Ausgabeformat ab oder legt es fest.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerfWriters">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.IO.TextWriter&gt; PerfWriters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IList`1&lt;class System.IO.TextWriter&gt; PerfWriters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Diagnostics.Timers.PerfWriters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.IO.TextWriter&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung von Writern ab, in die der generierte Bericht geschrieben wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die Auflistung der Writer, die verwendet wird.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

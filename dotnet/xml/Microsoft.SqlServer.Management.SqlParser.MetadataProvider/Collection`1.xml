@@ -1,0 +1,421 @@
+<Type Name="Collection&lt;T&gt;" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public static class Collection&lt;T&gt; where T : class, IMetadataObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Collection`1&lt;class (class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject) T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+        <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">Der Typ der Elemente in der Auflistung.</typeparam>
+    <summary>
+            Stellt Hilfsmethoden und Klassen für Auflistungen von Metadatenobjekten bereit.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplyOnFirstAccess&lt;C&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; ApplyOnFirstAccess&lt;C&gt; (Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection&lt;C&gt; collection, Action&lt;C&gt; action, Predicate&lt;C&gt; actionCompleted) where C : class, T;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; ApplyOnFirstAccess&lt;class (!T) C&gt;(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1&lt;!!C&gt; collection, class System.Action`1&lt;!!C&gt; action, class System.Predicate`1&lt;!!C&gt; actionCompleted) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.ApplyOnFirstAccess``1(Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection{``0},System.Action{``0},System.Predicate{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="C">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+            <BaseTypeName>T</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="collection" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection&lt;C&gt;" />
+        <Parameter Name="action" Type="System.Action&lt;C&gt;" />
+        <Parameter Name="actionCompleted" Type="System.Predicate&lt;C&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="C">Der Typ der Aktion.</typeparam>
+        <param name="collection">Die Auflistung von Elementen, für die die Aktion ausgeführt werden soll.</param>
+        <param name="action">Die Aktion, die für jedes Element in der Auflistung ausgeführt werden soll.</param>
+        <param name="actionCompleted">Ein Prädikat, das angibt, ob die ausgeführte Aktion abgeschlossen ist.</param>
+        <summary>
+            Wendet die angegebene Aktion auf jedes Element der angegebenen Auflistung an, sobald erstmalig auf das Element zugegriffen wird.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>
+            Eine Wrapperauflistung, durch die auf jedes Element eine Aktion angewendet wird, sobald erstmalig darauf zugegriffen wird.
+            </return>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert&lt;TDerived&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; Convert&lt;TDerived&gt; (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;TDerived&gt; collection) where TDerived : class, T;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; Convert&lt;class (!T) TDerived&gt;(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!!TDerived&gt; collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.Convert``1(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TDerived">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+            <BaseTypeName>T</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="collection" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;TDerived&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TDerived">Der Typ der Elemente in der zu konvertierenden Auflistung.</typeparam>
+        <param name="collection">Die zu konvertierende Auflistung.</param>
+        <summary>
+            Erstellt eine Wrapperauflistung, mit der unter Verwendung des zugehörigen Basistyps auf die Elemente in der angegebenen Auflistung zugegriffen werden kann.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />-Objekt, das die gleichen Elemente wie die angegebene Auflistung enthält.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyToArray">
+      <MemberSignature Language="C#" Value="public static T[] CopyToArray (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !T[] CopyToArray(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.CopyToArray(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="collection">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />-Objekt, das die zu kopierenden Elemente enthält.</param>
+        <summary>
+            Erstellt ein Array, das alle Elemente aus der angegebenen Auflistung enthält.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein Array vom Typ <typeparamref name="T" /> , Elemente aus der Auflistung enthalten.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrderedCollection">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt; CreateOrderedCollection (Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo, T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1&lt;!T&gt; CreateOrderedCollection(class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo, !T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.CreateOrderedCollection(Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="collationInfo">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt, das zum Vergleichen von Elementnamen verwendet wird.</param>
+        <param name="item">Das Element, das der Auflistung hinzugefügt werden soll.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1" />-Objekt, das das angegebene Element enthält.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1" />-Objekt, das das angegebene Element enthält.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrderedCollection">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt; CreateOrderedCollection (Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo, T[] items);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1&lt;!T&gt; CreateOrderedCollection(class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo, !T[] items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.CreateOrderedCollection(Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo,`0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+        <Parameter Name="items" Type="T[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="collationInfo">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt, das zum Vergleichen von Elementnamen verwendet wird.</param>
+        <param name="items">Das Array des Typs <typeparamref name="T" /> , die die zu kopierenden Elemente enthält.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1" />-Objekt und kopiert alle Elemente aus dem angegebenen Array.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1" /> -Objekt, das alle Elemente aus dem Array enthält.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrderedCollection">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt; CreateOrderedCollection (Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo, T item1, T item2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1&lt;!T&gt; CreateOrderedCollection(class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo, !T item1, !T item2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.CreateOrderedCollection(Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo,`0,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+        <Parameter Name="item1" Type="T" />
+        <Parameter Name="item2" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="collationInfo">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt, das zum Vergleichen von Elementnamen verwendet wird.</param>
+        <param name="item1">Das erste Element, das der erstellten Auflistung hinzugefügt werden soll.</param>
+        <param name="item2">Das zweite Element, das der erstellten Auflistung hinzugefügt werden soll.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1" />-Objekt, das die beiden angegebenen Elemente enthält.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1" />-Objekt, das die beiden angegebenen Elemente enthält.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrderedCollection">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt; CreateOrderedCollection (Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo, T[] items, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1&lt;!T&gt; CreateOrderedCollection(class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo, !T[] items, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.CreateOrderedCollection(Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo,`0[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+        <Parameter Name="items" Type="T[]" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="collationInfo">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt, das zum Vergleichen von Elementnamen verwendet wird.</param>
+        <param name="items">Das Array des Typs <typeparamref name="T" /> , die die zu kopierenden Elemente enthält.</param>
+        <param name="count">Die Anzahl der zu kopierenden Arrayelemente ab dem ersten Element im Array.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1" /> -Objekt und kopiert eine angegebene Anzahl von Elementen aus dem angegebenen Array.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1" /> Objekt, das die angegebenen Elemente aus dem Array enthält.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; Empty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; Empty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.Empty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft eine schreibgeschützte Singleton-Instanz einer leeren Auflistung ab.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyOrdered">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt; EmptyOrdered { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1&lt;!T&gt; EmptyOrdered" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.EmptyOrdered" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft eine schreibgeschützte Singleton-Instanz einer sortierten Auflistung ab.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; Filter (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; collection, Predicate&lt;T&gt; match);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; Filter(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; collection, class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.Filter(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{`0},System.Predicate{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;" />
+        <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="collection">Die ursprüngliche Auflistung.</param>
+        <param name="match">Der Prädikatdelegat, der die Bedingungen der in die neue Auflistung aufzunehmenden Elemente definiert.</param>
+        <summary>
+            Erstellt eine Wrapperauflistung, bei der alle Elemente herausgefiltert werden, die nicht mit den vom angegebenen Prädikat definierten Bedingungen übereinstimmen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine Wrapperauflistung, die nur die Elemente enthält, die mit den im Prädikat definierten Bedingungen übereinstimmen.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; Merge (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;[] collections);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; Merge(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt;[] collections) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.Merge(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{`0}[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="collections">Die Liste der zusammenzuführenden <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />-Objekte.</param>
+        <summary>
+            Führt die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />-Objekte in einer Auflistung zusammen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> -Objekt, das die zusammengeführte Auflistung darstellt. Wenn keine Sammlungen angegeben sind, wird eine leere Auflistung zurückgegeben. Wenn nur eine Sammlung angegeben ist, wird diese Sammlungsinstanz zurückgegeben.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; Merge (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; collection1, Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; collection2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; Merge(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; collection1, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; collection2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.Merge(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{`0},Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection1" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;" />
+        <Parameter Name="collection2" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="collection1">Die erste zusammenzuführende <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />.</param>
+        <param name="collection2">Die zweite zusammenzuführende <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />.</param>
+        <summary>
+            Führt die beiden angegebenen Auflistungen in einer Auflistung zusammen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />-Objekt, das die zusammengeführte Auflistung darstellt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; Merge (bool allowDuplicates, Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;[] collections);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; Merge(bool allowDuplicates, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt;[] collections) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.Merge(System.Boolean,Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{`0}[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allowDuplicates" Type="System.Boolean" />
+        <Parameter Name="collections" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="allowDuplicates">
+          <c>true</c> to allow duplicates in the collection; otherwise, <c>false</c>.</param>
+        <param name="collections">Die Liste der zusammenzuführenden <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />-Objekte.</param>
+        <summary>
+            Führt mindestens zwei Auflistungen in einer Auflistung zusammen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> -Objekt, das die zusammengeführte Auflistung darstellt. Wenn keine Sammlungen angegeben sind, wird eine leere Auflistung zurückgegeben. Wenn nur eine Sammlung angegeben ist, wird diese Sammlungsinstanz zurückgegeben.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; Merge (bool allowDuplicates, Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; collection1, Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; collection2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; Merge(bool allowDuplicates, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; collection1, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt; collection2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.Collection`1.Merge(System.Boolean,Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{`0},Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allowDuplicates" Type="System.Boolean" />
+        <Parameter Name="collection1" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;" />
+        <Parameter Name="collection2" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="allowDuplicates">
+          <c>true</c> to allow duplicates in the collection; otherwise, <c>false</c>.</param>
+        <param name="collection1">Die erste zusammenzuführende <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />.</param>
+        <param name="collection2">Die zweite zusammenzuführende <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />.</param>
+        <summary>
+            Führt die beiden angegebenen Auflistungen in einer Auflistung zusammen.
+            </summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />-Objekt, das die zusammengeführte Auflistung darstellt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

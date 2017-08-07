@@ -1,0 +1,123 @@
+<Type Name="IdentityColumnInfo" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IdentityColumnInfo">
+  <TypeSignature Language="C#" Value="public class IdentityColumnInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IdentityColumnInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IdentityColumnInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt die Spezifikation für SQL Server-Identitätsspalten bereit.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IdentityColumnInfo (long seed, long increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 seed, int64 increment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IdentityColumnInfo.#ctor(System.Int64,System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="seed" Type="System.Int64" />
+        <Parameter Name="increment" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="seed">Der ID-Ausgangswert der Identitätsspalte.</param>
+        <param name="increment">Das ID-Inkrement der Identitätsspalte.</param>
+        <summary>
+            Initialisiert eine neue Instanz der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IdentityColumnInfo" />-Klasse unter Verwendung des angegebenen Ausgangs- und Inkrementwerts.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IdentityColumnInfo (long seed, long increment, bool notForReplication);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 seed, int64 increment, bool notForReplication) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IdentityColumnInfo.#ctor(System.Int64,System.Int64,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="seed" Type="System.Int64" />
+        <Parameter Name="increment" Type="System.Int64" />
+        <Parameter Name="notForReplication" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="seed">Der ID-Ausgangswert der Identitätsspalte.</param>
+        <param name="increment">Das ID-Inkrement der Identitätsspalte.</param>
+        <param name="notForReplication">
+          <c>true</c> to indicate that the identity is not for replication; otherwise, <c>false</c>.</param>
+        <summary>
+            Initialisiert eine neue Instanz der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IdentityColumnInfo" />-Klasse unter Verwendung des angegebenen Ausgangs- und Inkrementwerts.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Increment">
+      <MemberSignature Language="C#" Value="public long Increment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Increment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IdentityColumnInfo.Increment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das ID-Inkrement der Identitätsspalte ab.
+            </summary>
+        <value>Das ID-Inkrement der Identitätsspalte.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotForReplication">
+      <MemberSignature Language="C#" Value="public bool NotForReplication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NotForReplication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IdentityColumnInfo.NotForReplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die Identität nicht für die Replikation verwendet wird. 
+            </summary>
+        <value>&gt;<c>"true"</c> um anzugeben, dass die Identität nicht für die Replikation verwendet wird, andernfalls <c>"false"</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seed">
+      <MemberSignature Language="C#" Value="public long Seed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Seed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IdentityColumnInfo.Seed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den ID-Ausgangswert der Identitätsspalte ab.
+            </summary>
+        <value>Der ID-Ausgangswert der Identitätsspalte.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

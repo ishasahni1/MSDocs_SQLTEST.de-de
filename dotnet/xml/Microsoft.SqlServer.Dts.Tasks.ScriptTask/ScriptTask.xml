@@ -1,0 +1,585 @@
+<Type Name="ScriptTask" FullName="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask">
+  <TypeSignature Language="C#" Value="public class ScriptTask : Microsoft.SqlServer.Dts.Runtime.Task, Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptTask extends Microsoft.SqlServer.Dts.Runtime.Task implements class Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, class Microsoft.SqlServer.Dts.Runtime.IDTSSuspend" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ScriptTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.Task</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Dts.Runtime.DtsTask(HelpKeyword="sql13.dts.designer.scripttask.F1", LocalizationType=typeof(Microsoft.SqlServer.Dts.Tasks.ScriptTask.Localized), SamplesTag="SsisScriptTask", TaskType="DTS90", UITypeName="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTaskUI, Microsoft.SqlServer.ScriptTaskUI, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("4DF420FB-D5C2-4357-8FBE-ECB5E15554F8")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Definiert die Klassen für den Skripttask, der ermöglicht Entwicklern das Schreiben von benutzerdefiniertem Code, um Funktionen auszuführen, die in den integrierten Tasks von Integration Services bereitgestellte nicht verfügbar sind.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptBreakpointManager">
+      <MemberSignature Language="C#" Value="public void AcceptBreakpointManager (Microsoft.SqlServer.Dts.Runtime.BreakpointManager bpManager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AcceptBreakpointManager(class Microsoft.SqlServer.Dts.Runtime.BreakpointManager bpManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bpManager" Type="Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />
+      </Parameters>
+      <Docs>
+        <param name="bpManager">Der für diesen Task spezifische Breakpoint-Manager.</param>
+        <summary>Übergibt <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> an den Task. Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BreakpointManager">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.BreakpointManager BreakpointManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.BreakpointManager BreakpointManager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.BreakpointManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.BreakpointManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> zum Steuern von Breakpoints in diesem Task verwendet.</summary>
+        <value>Der <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />, der zum Steuern von Breakpoints in diesem Task verwendet wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Breakpoints">
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList Breakpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList Breakpoints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.Breakpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein Array von Breakpoints ab, die für diesen Task festgelegt wurden.</summary>
+        <value>Eine Arrayliste der für diesen Task festgelegten Breakpoints.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugMode">
+      <MemberSignature Language="C#" Value="public bool DebugMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DebugMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.DebugMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen Wert, der angibt, ob der Task im Debugmodus ausgeführt wird, und gibt an, ob es auslösen soll die <see cref="M:Microsoft.SqlServer.Dts.Runtime.IDTSEvents.OnBreakpointHit(Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite,Microsoft.SqlServer.Dts.Runtime.BreakpointTarget)" /> Ereignis während der Task ausgeführt wird.</summary>
+        <value>"true", wenn das Objekt im Debugmodus befindet und löst die <see cref="M:Microsoft.SqlServer.Dts.Runtime.IDTSEvents.OnBreakpointHit(Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite,Microsoft.SqlServer.Dts.Runtime.BreakpointTarget)" /> Ereignis, andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultActiveItem">
+      <MemberSignature Language="C#" Value="public string DefaultActiveItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultActiveItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.DefaultActiveItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft das Standardskript ab.</summary>
+        <value>Das Standardskript.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntryPoint">
+      <MemberSignature Language="C#" Value="public string EntryPoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EntryPoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.EntryPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Klasse ab, die als Einstiegspunkt ausgeführt wird, oder legt ihn fest.</summary>
+        <value>Der Name der Klasse, die als Einstiegspunkt in den Code ausgeführt wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="transaction">Das Transaktionsobjekt, dem der Container angehört. Die Common Language Runtime bietet die Transaktion für den Container auf Grundlage der <see cref="P:Microsoft.SqlServer.Dts.Runtime.DtsContainer.TransactionOption" /> Eigenschaft. Dieser Wert kann NULL sein.</param>
+        <summary>Führt das in dieser Instanz des DTS-Skripttasks enthaltene Skript aus.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionValue">
+      <MemberSignature Language="C#" Value="public override object ExecutionValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExecutionValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ExecutionValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein benutzerdefiniertes Objekt ab. Dieses Feld ist schreibgeschützt.</summary>
+        <value>Ein benutzerdefiniertes Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~ScriptTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt alle von verwendete Ressourcen frei der <see cref="T:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeTask">
+      <MemberSignature Language="C#" Value="public override void InitializeTask (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, Microsoft.SqlServer.Dts.Runtime.EventInfos eventInfos, Microsoft.SqlServer.Dts.Runtime.LogEntryInfos logEntryInfos, Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker refTracker);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeTask(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, class Microsoft.SqlServer.Dts.Runtime.EventInfos eventInfos, class Microsoft.SqlServer.Dts.Runtime.LogEntryInfos logEntryInfos, class Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker refTracker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="eventInfos" Type="Microsoft.SqlServer.Dts.Runtime.EventInfos" />
+        <Parameter Name="logEntryInfos" Type="Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" />
+        <Parameter Name="refTracker" Type="Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="eventInfos">Eine Auflistung mit Ereignissen, die während der Ausführung des Tasks ausgelöst werden.</param>
+        <param name="logEntryInfos">Eine Auflistung von Protokolleinträgen.</param>
+        <param name="refTracker">Eine Objektverweisnachverfolgung.</param>
+        <summary>Initialisiert die dem Skripttask zugeordneten Eigenschaften. Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlElement elemProj, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlElement elemProj, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elemProj" Type="System.Xml.XmlElement" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="elemProj">Das XML-Element, das als Quelle des Ladevorgangs verwendet wird.</param>
+        <param name="events">Eine Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Implementiert das Laden von Eigenschaften aus einem XML-Dokument.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectTemplatePath">
+      <MemberSignature Language="C#" Value="public string ProjectTemplatePath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProjectTemplatePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ProjectTemplatePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Pfad der angegebenen Projektvorlage ab.</summary>
+        <value>Der Pfad der angegebenen Projektvorlage.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnlyVariables">
+      <MemberSignature Language="C#" Value="public string ReadOnlyVariables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReadOnlyVariables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ReadOnlyVariables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die durch Trennzeichen getrennte Liste vorhandener Variablen ab, die der Benutzer dem Paket für den schreibgeschützten Zugriff zur Verfügung gestellt hat, oder legt sie fest.</summary>
+        <value>Die durch Trennzeichen getrennte Liste vorhandener Variablen, die der Benutzer dem Paket für den schreibgeschützten Zugriff zur Verfügung gestellt hat.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadWriteVariables">
+      <MemberSignature Language="C#" Value="public string ReadWriteVariables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReadWriteVariables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ReadWriteVariables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die durch Trennzeichen getrennte Liste vorhandener Variablen ab, die der Benutzer dem Paket für den Lese-/Schreibzugriff zur Verfügung gestellt hat, oder legt sie fest.</summary>
+        <value>Die durch Trennzeichen getrennte Liste vorhandener Variablen, die der Benutzer dem Paket für den Lese-/Schreibzugriff zur Verfügung gestellt hat.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportBreakpointChanges">
+      <MemberSignature Language="C#" Value="public void ReportBreakpointChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReportBreakpointChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ReportBreakpointChanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Meldet die Breakpointänderungen aus dem Task.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeExecution">
+      <MemberSignature Language="C#" Value="public void ResumeExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ResumeExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Das Laufzeitmodul setzt die Ausführung des Tasks oder Containers nach einer Unterbrechung fort.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (System.Xml.XmlDocument doc, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, das als Quelle des Ladevorgangs verwendet wird.</param>
+        <param name="events">Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Implementiert das Speichern von Eigenschaften in einem XML-Dokument.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptingEngine">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTATaskScriptingEngine ScriptingEngine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTATaskScriptingEngine ScriptingEngine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ScriptingEngine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTATaskScriptingEngine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die <see cref="T:Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTATaskScriptingEngine" />-Klasse ab.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTATaskScriptingEngine" />-Klasse.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptLanguage">
+      <MemberSignature Language="C#" Value="public string ScriptLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScriptLanguage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ScriptLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Programmiersprache ab, in der das Skript geschrieben ist, oder legt sie fest.</summary>
+        <value>Die Programmiersprache, in der das Skript geschrieben ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptLoaded">
+      <MemberSignature Language="C#" Value="public bool ScriptLoaded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScriptLoaded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ScriptLoaded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob der Task ein benutzerdefiniertes Skript enthält.</summary>
+        <value>"true", wenn die Komponente ein Skript enthält; andernfalls "false". Der Standardwert ist "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptProjectName">
+      <MemberSignature Language="C#" Value="public string ScriptProjectName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScriptProjectName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ScriptProjectName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Skriptprojekts ab oder legt ihn fest.</summary>
+        <value>Der Name des Skriptprojekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptStorage">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage ScriptStorage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage ScriptStorage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.ScriptStorage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.VSTAHosting.VSTAScriptProjectStorage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die VSTAScriptProjectStorage für das Skript ab.</summary>
+        <value>Die VSTAScriptProjectStorage für das Skript.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUniqueScriptProjectName">
+      <MemberSignature Language="C#" Value="public void SetUniqueScriptProjectName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetUniqueScriptProjectName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.SetUniqueScriptProjectName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Legt den eindeutigen Namen des Skriptprojekts fest.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendExecution">
+      <MemberSignature Language="C#" Value="public void SuspendExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuspendExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.SuspendExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt an, dass die Ausführung des ausführbaren Elements angehalten werden muss. Diese Methode wird vom Laufzeitmodul aufgerufen. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendRequired">
+      <MemberSignature Language="C#" Value="public bool SuspendRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuspendRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.SuspendRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert, der angibt, ob eine Aufgabe Ausführung angehalten werden soll, wenn die Aufgabe einen Haltepunkt erreicht. Dieser Wert wird vom Laufzeitmodul für Tasks und Container festgelegt, wenn ein Breakpoint erreicht wird.</summary>
+        <value>"true", wenn die Taskausführung bei Erreichen eines Breakpoints; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <summary>Überprüft, ob die Komponente ordnungsgemäß konfiguriert ist.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

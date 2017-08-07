@@ -1,0 +1,263 @@
+<Type Name="Resolver" FullName="Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver">
+  <TypeSignature Language="C#" Value="public abstract class Resolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Resolver extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt IntelliSense-Funktionen bereit.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Resolver ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindBreakPointInformation">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.BlockInformation FindBreakPointInformation (Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int line, int col);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver/BlockInformation FindBreakPointInformation(class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int32 line, int32 col) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.FindBreakPointInformation(Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver+BlockInformation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+        <Parameter Name="line" Type="System.Int32" />
+        <Parameter Name="col" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parseResult">Das ParseResult-Objekt, das durch die Hintergrundanalyse erzeugt wurde.</param>
+        <param name="line">Die Zeilennummer.</param>
+        <param name="col">Die Spaltennummer.</param>
+        <summary>
+            Ruft einen Sprachblock am angegebenen Ort ab. 
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Gültige Breakpointposition BlockInformation, andernfalls NULL zurück.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="FindCompletions">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Microsoft.SqlServer.Management.SqlParser.Intellisense.Declaration&gt; FindCompletions (Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int line, int col, Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider displayInfoProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.Management.SqlParser.Intellisense.Declaration&gt; FindCompletions(class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int32 line, int32 col, class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider displayInfoProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.FindCompletions(Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult,System.Int32,System.Int32,Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.Management.SqlParser.Intellisense.Declaration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+        <Parameter Name="line" Type="System.Int32" />
+        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="displayInfoProvider" Type="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider" />
+      </Parameters>
+      <Docs>
+        <param name="parseResult">Das ParseResult-Objekt, das durch die Hintergrundanalyse erzeugt wurde.</param>
+        <param name="line">Die Zeilennummer.</param>
+        <param name="col">Die Spaltennummer.</param>
+        <param name="displayInfoProvider">Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider" />-Objekt, das zur Anzeige der Vervollständigungsliste verwendet wird.</param>
+        <summary>
+            Gibt die Vervollständigungsliste am angegebenen Ort zurück.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine Liste der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Intellisense.Declaration" /> Listenelemente für Objekte, die den Abschluss darstellen.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="FindMethods">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Babel.MethodHelpText&gt; FindMethods (Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int line, int col, Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider displayInfoProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class Babel.MethodHelpText&gt; FindMethods(class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int32 line, int32 col, class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider displayInfoProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.FindMethods(Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult,System.Int32,System.Int32,Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Babel.MethodHelpText&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+        <Parameter Name="line" Type="System.Int32" />
+        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="displayInfoProvider" Type="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider" />
+      </Parameters>
+      <Docs>
+        <param name="parseResult">Das ParseResult-Objekt, das durch die Hintergrundanalyse erzeugt wurde.</param>
+        <param name="line">Die Zeilennummer.</param>
+        <param name="col">Die Spaltenposition.</param>
+        <param name="displayInfoProvider">Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider" />-Objekt, das zur Anzeige des Methodenhilfetexts verwendet wird.</param>
+        <summary>
+            Ruft eine Hilfetextliste für die Methode am angegebenen Ort ab.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine Liste der Hilfetext für die Methode.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="FindPairMatch">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Parser.PairMatch FindPairMatch (Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int line, int col);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Parser.PairMatch FindPairMatch(class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int32 line, int32 col) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.FindPairMatch(Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.PairMatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+        <Parameter Name="line" Type="System.Int32" />
+        <Parameter Name="col" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parseResult">Das ParseResult-Objekt, das durch die Hintergrundanalyse erzeugt wurde.</param>
+        <param name="line">Die Zeilennummer.</param>
+        <param name="col">Die Spaltennummer.</param>
+        <summary>
+            Sucht eine Übereinstimmung für ein Tokenpaar am angegebenen Ort.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Parser.PairMatch" /> -Objekt, wenn ein Paar, andernfalls ist, ein null-Verweis.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="FindRegionObjects">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Babel.Region&gt; FindRegionObjects (Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Babel.Region&gt; FindRegionObjects(class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.FindRegionObjects(Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Babel.Region&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+      </Parameters>
+      <Docs>
+        <param name="parseResult">Das ParseResult, gesucht werden soll.</param>
+        <summary>
+            Sucht alle Bereiche in der angegebenen SQL-Code.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine Enumeration von Objekten, die als Regionen dargestellt werden sollen.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBlockInformation">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.BlockInformation GetBlockInformation (Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int line, int col);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver/BlockInformation GetBlockInformation(class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int32 line, int32 col) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.GetBlockInformation(Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver+BlockInformation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+        <Parameter Name="line" Type="System.Int32" />
+        <Parameter Name="col" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="parseResult">Das ParseResult-Objekt, das durch die Hintergrundanalyse erzeugt wurde.</param>
+        <param name="line">Die Zeilennummer.</param>
+        <param name="col">Die Spaltennummer.</param>
+        <summary>
+            Ruft einen Sprachblock am angegebenen Ort ab. Dies ist entweder die Anweisung auf der obersten Ebene oder ein ganzer Batch von Transact-SQL-Anweisungen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die BlockInformation, die die Anweisung der obersten Ebene oder ein ganzer Batch von Transact-SQL-Anweisungen darstellt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMethodNameAndParams">
+      <MemberSignature Language="C#" Value="public static Babel.MethodNameAndParamLocations GetMethodNameAndParams (Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int line, int column, Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider displayInfoProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Babel.MethodNameAndParamLocations GetMethodNameAndParams(class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int32 line, int32 column, class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider displayInfoProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.GetMethodNameAndParams(Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult,System.Int32,System.Int32,Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Babel.MethodNameAndParamLocations</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+        <Parameter Name="line" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="displayInfoProvider" Type="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider" />
+      </Parameters>
+      <Docs>
+        <param name="parseResult">Das ParseResult-Objekt, das durch die Hintergrundanalyse erzeugt wurde.</param>
+        <param name="line">Die Zeilennummer.</param>
+        <param name="column">Die Spaltennummer.</param>
+        <param name="displayInfoProvider">Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider" />-Objekt, das zur Anzeige des Hilfetexts verwendet wird.</param>
+        <summary>
+            Ruft den Methodennamen und Parametertrennzeichen am angegebenen Ort im Skript ab.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <see cref="T:Babel.MethodNameAndParamLocations" /> -Objekt, das den Methodennamen und Parameter-Trennzeichen enthält.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQuickInfo">
+      <MemberSignature Language="C#" Value="public static Babel.CodeObjectQuickInfo GetQuickInfo (Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int line, int col, Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider displayInfoProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Babel.CodeObjectQuickInfo GetQuickInfo(class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult parseResult, int32 line, int32 col, class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider displayInfoProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Intellisense.Resolver.GetQuickInfo(Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult,System.Int32,System.Int32,Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Babel.CodeObjectQuickInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseResult" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />
+        <Parameter Name="line" Type="System.Int32" />
+        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="displayInfoProvider" Type="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider" />
+      </Parameters>
+      <Docs>
+        <param name="parseResult">Das ParseResult-Objekt, das durch die Hintergrundanalyse erzeugt wurde.</param>
+        <param name="line">Die Zeilennummer der Cursorposition.</param>
+        <param name="col">Die Spaltennummer der Cursorposition.</param>
+        <param name="displayInfoProvider">Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider" />-Objekt, das zur Anzeige des QuickInfo-Texts verwendet wird.</param>
+        <summary>
+            Ruft die IntelliSense-QuickInfo-Daten für das Codeobjekt am angegebenen Ort ab.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die QuickInfo für den angegebenen Speicherort.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

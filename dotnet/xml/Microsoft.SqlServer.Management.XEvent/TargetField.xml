@@ -1,0 +1,334 @@
+<Type Name="TargetField" FullName="Microsoft.SqlServer.Management.XEvent.TargetField">
+  <TypeSignature Language="C#" Value="public sealed class TargetField : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TargetField extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.XEvent.TargetField" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.XEvent</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Eine TargetField Objekt Reprensents eine Zeile in Sys. server_event_session_fields.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TargetField ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.TargetField.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standardkonstruktor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TargetField (Microsoft.SqlServer.Management.XEvent.Target parent, Microsoft.SqlServer.Management.XEvent.TargetColumnInfo targetColumnInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.XEvent.Target parent, class Microsoft.SqlServer.Management.XEvent.TargetColumnInfo targetColumnInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.TargetField.#ctor(Microsoft.SqlServer.Management.XEvent.Target,Microsoft.SqlServer.Management.XEvent.TargetColumnInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.XEvent.Target" />
+        <Parameter Name="targetColumnInfo" Type="Microsoft.SqlServer.Management.XEvent.TargetColumnInfo" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Das übergeordnete Element.</param>
+        <param name="targetColumnInfo">Die Ziel-Spalteninformationen.</param>
+        <summary>
+            Konstruktor akzeptiert ein Ziel und einen Namen als Parameter
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Übergeordnete Element von Parameter oder TargetColumnInfo ist null.</exception>
+        <exception cref="T:System.NullReferenceException">TargetColumnInfo des übergeordneten (oder ein übergeordnetes Element) ist null. Meistens, da es nicht ordnungsgemäß enumeriert wurde.</exception>
+        <exception cref="T:Microsoft.SqlServer.Management.XEvent.XEventException">Parameter TargetColumnInfo ist ungültig.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityKey">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.TargetField.CreateIdentityKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt den Identitätsschlüssel.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.TargetField.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Required)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Beschreibung ab.
+            </summary>
+        <value>Die Beschreibung des Felds. Kann null sein.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCollection">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection (string elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection(string elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.TargetField.GetChildCollection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">Der Typ des Elements.</param>
+        <summary>
+            Ruft die untergeordnete Auflistung ab.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectFactory">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetObjectFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetObjectFactory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.TargetField.GetObjectFactory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die Objektfactory ab.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeMetadata">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata GetTypeMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata GetTypeMetadata() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.TargetField.GetTypeMetadata" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die Metadaten der Sfc-Typ ab.
+            </summary>
+        <returns>Die Typmetadaten.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public int ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.TargetField.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Required | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die ID ab.
+            </summary>
+        <value>Die ID.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityKey">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.TargetField.Key IdentityKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.XEvent.TargetField/Key IdentityKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.TargetField.IdentityKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.TargetField+Key</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Identitätsschlüssel ab.
+            </summary>
+        <value>Der Identitätsschlüssel.</value>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.TargetField.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcKey(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Required | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen ab.
+            </summary>
+        <value>Der Name.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Target Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.XEvent.Target Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.TargetField.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectRelationship.ParentObject, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectCardinality.One)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Target</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das übergeordnete Element ab oder legt es fest.
+            </summary>
+        <value>Das übergeordnete Element.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.TargetField.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Status des Objekts in Sitzung in Alter Function verwendet.
+            </summary>
+        <value>Der Zustand.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeTypeName">
+      <MemberSignature Language="C#" Value="public const string TypeTypeName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TypeTypeName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.TargetField.TypeTypeName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name des Typs
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.TargetField.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Wert ab.
+            </summary>
+        <value>Der Wert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

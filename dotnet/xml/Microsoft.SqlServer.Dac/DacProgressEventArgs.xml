@@ -1,0 +1,94 @@
+<Type Name="DacProgressEventArgs" FullName="Microsoft.SqlServer.Dac.DacProgressEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class DacProgressEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DacProgressEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.DacProgressEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Die Daten, die dem Ereignis zugeordnet sind, das beim Abschließen einzelner Verarbeitungsschritte durch einen gerade ausgeführten Vorgang ausgelöst wird.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacProgressEventArgs.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft eine benutzerfreundliche Meldung ab, die dem aktuellen Schritt in einem Vorgang zugeordnet ist.
+            </summary>
+        <value>
+            Meldung als Zeichenfolge, die dem aktuellen Schritt in einem Vorgang zugeordnet ist.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationId">
+      <MemberSignature Language="C#" Value="public int OperationId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 OperationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacProgressEventArgs.OperationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die ID der obersten Ebene Aufgabe, der auf das Statusereignis bezieht.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>
+          <ul>
+            <li>Extract = 1</li>
+            <li>Publish = 2</li>
+            <li>ImportData = 3</li>
+            <li>ExportData = 4</li>
+            <li>Unregister = 5</li>
+            <li>Register = 6</li>
+            <li>DriftReport = 7</li>
+            <li>DeployReport = 8</li>
+            <li>Script = 9</li>
+          </ul>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.DacOperationStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.DacOperationStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacProgressEventArgs.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacOperationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Status eines aktiven Vorgangs ab.
+            </summary>
+        <value>
+          <see cref="T:Microsoft.SqlServer.Dac.DacOperationStatus" />-Enumerationswert, der den aktuellen Status eines Vorgangs angibt.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

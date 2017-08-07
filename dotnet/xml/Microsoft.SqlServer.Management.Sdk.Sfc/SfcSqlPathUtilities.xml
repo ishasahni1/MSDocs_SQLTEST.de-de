@@ -1,0 +1,129 @@
+<Type Name="SfcSqlPathUtilities" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcSqlPathUtilities">
+  <TypeSignature Language="C#" Value="public class SfcSqlPathUtilities" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SfcSqlPathUtilities extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcSqlPathUtilities" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Muss hinzugefügt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcSqlPathUtilities ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcSqlPathUtilities.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertUrnToPath">
+      <MemberSignature Language="C#" Value="public static string ConvertUrnToPath (Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ConvertUrnToPath(class Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcSqlPathUtilities.ConvertUrnToPath(Microsoft.SqlServer.Management.Sdk.Sfc.Urn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urn" Type="Microsoft.SqlServer.Management.Sdk.Sfc.Urn" />
+      </Parameters>
+      <Docs>
+        <param name="urn">
+        </param>
+        <summary>
+            Konvertiert einen URN in einen Pfad
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeSqlName">
+      <MemberSignature Language="C#" Value="public static string DecodeSqlName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string DecodeSqlName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcSqlPathUtilities.DecodeSqlName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeSqlName">
+      <MemberSignature Language="C#" Value="public static string[] DecodeSqlName (string[] names);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] DecodeSqlName(string[] names) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcSqlPathUtilities.DecodeSqlName(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="names" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="names">
+        </param>
+        <summary>
+            Decodiert ein Array von Namen an.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodeSqlName">
+      <MemberSignature Language="C#" Value="public static string EncodeSqlName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EncodeSqlName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcSqlPathUtilities.EncodeSqlName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">
+        </param>
+        <summary>
+            Codiert die Zeichenfolge in eine URL-codierte Zeichenfolge.
+Beachten Sie, die codiert werden wir ":". Dies ist ein bekanntes Problem in PowerShell 1.0, die Sie cd an einem Speicherort, der hat keine ":".
+Wir müssen zum Empfangen der "\' wie wir nicht wissen, ob es sich um eine Pfadtrennzeichen oder einen Teil des Namens (also ein Zeichen für rechtliche Id ist in SQL) mit Escapezeichen versehen.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

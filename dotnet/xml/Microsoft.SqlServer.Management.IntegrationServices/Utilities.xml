@@ -1,0 +1,156 @@
+<Type Name="Utilities" FullName="Microsoft.SqlServer.Management.IntegrationServices.Utilities">
+  <TypeSignature Language="C#" Value="public class Utilities" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Utilities extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.IntegrationServices.Utilities" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.IntegrationServices</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary />
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Utilities ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Utilities.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAlwaysOnSecondaryReplicaData">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;string&gt; GetAlwaysOnSecondaryReplicaData (Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices store);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;string&gt; GetAlwaysOnSecondaryReplicaData(class Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices store) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Utilities.GetAlwaysOnSecondaryReplicaData(Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices" />
+      </Parameters>
+      <Docs>
+        <param name="store">
+        </param>
+        <summary>
+            Erhalten Sie die sekundären Replikate der Strom-Instanz in der AlwaysOn-Gruppe aus, für SSISDB sollte nur im primären Knoten aufgerufen werden
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentServerName">
+      <MemberSignature Language="C#" Value="public static string GetCurrentServerName (Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices store);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetCurrentServerName(class Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices store) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Utilities.GetCurrentServerName(Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices" />
+      </Parameters>
+      <Docs>
+        <param name="store">
+        </param>
+        <summary>
+            Abrufen der aktuellen SQL Server-Instanz vollständigen Namen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalAlwaysOnRole">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.IntegrationServices.Utilities.AlwaysOnNodeType GetLocalAlwaysOnRole (Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices store);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.SqlServer.Management.IntegrationServices.Utilities/AlwaysOnNodeType GetLocalAlwaysOnRole(class Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices store) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Utilities.GetLocalAlwaysOnRole(Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.IntegrationServices.Utilities+AlwaysOnNodeType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices" />
+      </Parameters>
+      <Docs>
+        <param name="store">
+        </param>
+        <summary>
+            Abrufen der lokalen Instanz Rolle in der AlwaysOn-Gruppe für SSISDB
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLoginSidFromName">
+      <MemberSignature Language="C#" Value="public static string GetLoginSidFromName (Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices store, string loginName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetLoginSidFromName(class Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices store, string loginName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Utilities.GetLoginSidFromName(Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices" />
+        <Parameter Name="loginName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="store">
+        </param>
+        <param name="loginName">
+        </param>
+        <summary>
+            Hiermit wird die SID des SQL-Anmeldung über den Anmeldenamen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreparedReplicaData">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;string&gt; GetPreparedReplicaData (Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices store);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;string&gt; GetPreparedReplicaData(class Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices store) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Utilities.GetPreparedReplicaData(Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.SqlServer.Management.IntegrationServices.IntegrationServices" />
+      </Parameters>
+      <Docs>
+        <param name="store">
+        </param>
+        <summary>
+            Abrufen von vorbereiteten Replikate der Strom-Instanz in der AlwaysOn-Gruppe für SSISDB sortiert nach [Status]
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

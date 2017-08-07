@@ -1,0 +1,89 @@
+<Type Name="ConnectionInfoHelper" FullName="Microsoft.SqlServer.Management.Common.ConnectionInfoHelper">
+  <TypeSignature Language="C#" Value="public static class ConnectionInfoHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ConnectionInfoHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Common.ConnectionInfoHelper" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ConnectionInfo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Muss hinzugefügt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateSqlConnection">
+      <MemberSignature Language="C#" Value="public static System.Data.SqlClient.SqlConnection CreateSqlConnection (Microsoft.SqlServer.Management.Common.SqlConnectionInfo connectionInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.SqlClient.SqlConnection CreateSqlConnection(class Microsoft.SqlServer.Management.Common.SqlConnectionInfo connectionInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionInfoHelper.CreateSqlConnection(Microsoft.SqlServer.Management.Common.SqlConnectionInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionInfo" Type="Microsoft.SqlServer.Management.Common.SqlConnectionInfo" />
+      </Parameters>
+      <Docs>
+        <param name="connectionInfo">Muss hinzugefügt werden.</param>
+        <summary>
+            SqlConnection erstellt, von der SqlConnectionInfo-Klasse
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenFromSqlConnection">
+      <MemberSignature Language="C#" Value="public static string GetTokenFromSqlConnection (System.Data.SqlClient.SqlConnection conn);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTokenFromSqlConnection(class System.Data.SqlClient.SqlConnection conn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionInfoHelper.GetTokenFromSqlConnection(System.Data.SqlClient.SqlConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conn" Type="System.Data.SqlClient.SqlConnection" />
+      </Parameters>
+      <Docs>
+        <param name="conn">Muss hinzugefügt werden.</param>
+        <summary>
+            Abrufen von AccessToken aus SqlConnection
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Wird eine leere Zeichenfolge sein, wenn AccessToken in der aktuellen .NET Framework nicht unterstützt wird (&lt;4.6)</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTokenOnConnection">
+      <MemberSignature Language="C#" Value="public static void SetTokenOnConnection (System.Data.SqlClient.SqlConnection conn, string accessToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTokenOnConnection(class System.Data.SqlClient.SqlConnection conn, string accessToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionInfoHelper.SetTokenOnConnection(System.Data.SqlClient.SqlConnection,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conn" Type="System.Data.SqlClient.SqlConnection" />
+        <Parameter Name="accessToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conn">Muss hinzugefügt werden.</param>
+        <param name="accessToken">Muss hinzugefügt werden.</param>
+        <summary>
+            Wird die Eigenschaft AccessToken SqlConnection-Objekt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

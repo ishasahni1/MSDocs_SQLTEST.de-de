@@ -1,0 +1,101 @@
+<Type Name="DeploymentContributorConfigurationStream" FullName="Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream">
+  <TypeSignature Language="C#" Value="public sealed class DeploymentContributorConfigurationStream" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DeploymentContributorConfigurationStream extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Eine streamfähige Version einer Konfigurationsdatei, die von DacFx für Bereitstellungs- und Buildprozesse verwendet wird. Diese Streams ermöglichen Bereitstellungserweiterungen zur Verbesserung und Erweiterung der Bereitstellung.
+            
+            Input configuration files can be defined in a .sqlproj file as part of the MSBuild process.
+            The files are treated as streams, and will be passed to contributors
+            via the <see cref="M:Microsoft.SqlServer.Dac.Deployment.DeploymentContributor.EstablishDeploymentConfiguration(Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationSetup)" /> method, where they can
+            be copied as outputs that are stored in the generated dacpac. 
+            
+            These streams will then be made available 
+            in the <see cref="M:Microsoft.SqlServer.Dac.Deployment.DeploymentContributor.ApplyDeploymentConfiguration(Microsoft.SqlServer.Dac.Deployment.DeploymentContributorContext,System.Collections.Generic.ICollection{Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream})" />, where they can be
+            consumed for configuration and data during deployment. At the end of the 
+            <see cref="M:Microsoft.SqlServer.Dac.Deployment.DeploymentContributor.ApplyDeploymentConfiguration(Microsoft.SqlServer.Dac.Deployment.DeploymentContributorContext,System.Collections.Generic.ICollection{Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream})" /> method all streams will be disposed. 
+            Contributors that need to obtain data from the streams must read and cache the data during this method -
+            attempts to read from the stream during the <see cref="M:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributor.OnExecute(Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributorContext)" /> method
+            will fail.
+            
+            Inside a .sqproj file, Deployment Configuration files are specified as follows:
+            &lt;ItemGroup&gt;
+              &lt;DeploymentExtensionConfiguration Include="MyContributorName.MyFileName1.sql" /&gt;
+              &lt;DeploymentExtensionConfiguration Include="MyContributorName.MyFileName2.sql" /&gt;
+            &lt;/ItemGroup&gt;
+            
+            Note that configuration streams are accessible to all contributors. Contributors may employ a
+            file naming pattern to identify which input files related to that contributor.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeploymentContributorConfigurationStream (string filePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filePath">Einen Dateipfad, für den ein Stream erstellt werden kann</param>
+        <summary>
+            Erstellt eine Instanz der<see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream" /></summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filename">
+      <MemberSignature Language="C#" Value="public string Filename { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filename" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream.Filename" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Dateiname, der zur Darstellung dieses Streams verwendet wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream GetStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream.GetStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die<see cref="T:System.IO.Stream" /></summary>
+        <returns>
+          <see cref="T:System.IO.Stream" />
+        </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

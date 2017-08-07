@@ -1,0 +1,151 @@
+<Type Name="IDTSPackageSigning100" FullName="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackageSigning100">
+  <TypeSignature Language="C#" Value="public interface IDTSPackageSigning100" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDTSPackageSigning100" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackageSigning100" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.DTSRuntimeWrap</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("206E1E8C-F147-4F3A-8E9E-3B3E16F74106")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(System.Runtime.InteropServices.TypeLibTypeFlags.FOleAutomation)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt eine Schnittstelle für die Paketsignierung dar.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CertificateContext">
+      <MemberSignature Language="C#" Value="public long CertificateContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 CertificateContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackageSigning100.CertificateContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610678274)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den dem Paket zugeordneten Zertifikatkontext ab oder legt ihn fest.</summary>
+        <value>Der Kontext des Zertifikats.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateObject">
+      <MemberSignature Language="C#" Value="public object CertificateObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CertificateObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackageSigning100.CertificateObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610678272)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft das dem Paket zugeordnete Zertifikatobjekt ab oder legt es fest.</summary>
+        <value>Das dem Paket zugeordnete Zertifikatobjekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckSignature">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSSignatureStatus CheckSignature ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSSignatureStatus CheckSignature() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackageSigning100.CheckSignature" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSSignatureStatus</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Überprüft die Signatur des Pakets.</summary>
+        <returns>Die überprüfte Signatur.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckSignatureOnLoad">
+      <MemberSignature Language="C#" Value="public bool CheckSignatureOnLoad { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckSignatureOnLoad" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackageSigning100.CheckSignatureOnLoad" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610678279)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt fest, ob die Signatur beim Laden vom Paket überprüft wird.</summary>
+        <value>"true", wenn das Paket die Signatur beim Laden überprüft; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadUserCertificateByHash">
+      <MemberSignature Language="C#" Value="public void LoadUserCertificateByHash (ref byte[] ppsaCertHash);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadUserCertificateByHash(unsigned int8[] ppsaCertHash) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackageSigning100.LoadUserCertificateByHash(System.Byte[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppsaCertHash" Type="System.Byte[]&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ppsaCertHash">Der Hash.</param>
+        <summary>Lädt das Benutzerzertifikat mithilfe eines Hashs.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadUserCertificateByName">
+      <MemberSignature Language="C#" Value="public void LoadUserCertificateByName (string SubjectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadUserCertificateByName(string SubjectName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSPackageSigning100.LoadUserCertificateByName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SubjectName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="SubjectName">Der Name des Antragstellers.</param>
+        <summary>Lädt das Benutzerzertifikat anhand des Namens.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

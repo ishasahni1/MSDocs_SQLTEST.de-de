@@ -1,0 +1,231 @@
+<Type Name="IAvailabilityGroupState" FullName="Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState">
+  <TypeSignature Language="C#" Value="public interface IAvailabilityGroupState : Microsoft.SqlServer.Management.Common.IRefreshable, Microsoft.SqlServer.Management.Sdk.Sfc.IDmfFacet" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAvailabilityGroupState implements class Microsoft.SqlServer.Management.Common.IRefreshable, class Microsoft.SqlServer.Management.Sdk.Sfc.IDmfFacet" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IRefreshable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.IDmfFacet</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Facets.EvaluationMode(Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode.CheckOnSchedule)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayDescriptionKey("AvailabilityGroupStateDesc")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayNameKey("AvailabilityGroupStateName")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.LocalizedPropertyResources("Microsoft.SqlServer.Management.Smo.FacetSR")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.SqlServer.Management.Sdk.Sfc.LocalizableTypeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Dieses Facet aggregiert die verschiedenen verfügbarkeitsgruppeninformationen Zustand. Es wird zur Unterstützung der SQL Server-Verwaltbarkeitstools verwendet.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsAutoFailover">
+      <MemberSignature Language="C#" Value="public bool IsAutoFailover { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAutoFailover" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState.IsAutoFailover" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayDescriptionKey("AvailabilityGroupState_IsAutoFailoverDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayNameKey("AvailabilityGroupState_IsAutoFailoverName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert, der angibt, ob der Failovermodus der verfügbarkeitsgruppe automatisches Failover ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOnline">
+      <MemberSignature Language="C#" Value="public bool IsOnline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOnline" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState.IsOnline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayDescriptionKey("AvailabilityGroupState_IsOnlineDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayNameKey("AvailabilityGroupState_IsOnlineName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert, der angibt, ob die Verfügbarkeitsgruppe aktiviert ist. Dies ist "true", wenn ein funktionsfähige primäres Replikat für die Verfügbarkeitsgruppe vorhanden ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfDisconnectedReplicas">
+      <MemberSignature Language="C#" Value="public int NumberOfDisconnectedReplicas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfDisconnectedReplicas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState.NumberOfDisconnectedReplicas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayDescriptionKey("AvailabilityGroupState_NumberOfDisconnectedReplicasDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayNameKey("AvailabilityGroupState_NumberOfDisconnectedReplicasName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Verbindungsfehlers der Replikate, die nicht im Zustand "Verbunden"
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfNotSynchronizedReplicas">
+      <MemberSignature Language="C#" Value="public int NumberOfNotSynchronizedReplicas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfNotSynchronizedReplicas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState.NumberOfNotSynchronizedReplicas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayDescriptionKey("AvailabilityGroupState_NumberOfNotSynchronizedReplicasDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayNameKey("AvailabilityGroupState_NumberOfNotSynchronizedReplicasName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der Replikate, die nicht in einem Zustand "Synchronisiert" befinden. Da nur synchrone Replikate im Zustand "synchronisiert" sein können, gilt dies nicht für asynchrone Replikate
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfNotSynchronizingReplicas">
+      <MemberSignature Language="C#" Value="public int NumberOfNotSynchronizingReplicas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfNotSynchronizingReplicas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState.NumberOfNotSynchronizingReplicas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayDescriptionKey("AvailabilityGroupState_NumberOfNotSynchronizingReplicasDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayNameKey("AvailabilityGroupState_NumberOfNotSynchronizingReplicasName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Verbindungsfehlers Replikate im Zustand "Wird nicht synchronisiert".
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfReplicasWithUnhealthyRole">
+      <MemberSignature Language="C#" Value="public int NumberOfReplicasWithUnhealthyRole { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfReplicasWithUnhealthyRole" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState.NumberOfReplicasWithUnhealthyRole" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayDescriptionKey("AvailabilityGroupState_NumberOfReplicasWithUnhealthyRoleDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayNameKey("AvailabilityGroupState_NumberOfReplicasWithUnhealthyRoleName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der Replikate ab, die weder ein primäres noch ein sekundäres Replikat in der Verfügbarkeitsgruppe darstellen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfSynchronizedSecondaryReplicas">
+      <MemberSignature Language="C#" Value="public int NumberOfSynchronizedSecondaryReplicas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfSynchronizedSecondaryReplicas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState.NumberOfSynchronizedSecondaryReplicas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayDescriptionKey("AvailabilityGroupState_NumberOfSynchronizedSecondaryReplicasDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DisplayNameKey("AvailabilityGroupState_NumberOfSynchronizedSecondaryReplicasName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl synchroner sekundärer Replikate mit automatischem Failovermodus und dem Zustand "Synchronisiert" ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

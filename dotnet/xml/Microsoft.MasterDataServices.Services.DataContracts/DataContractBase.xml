@@ -1,0 +1,76 @@
+<Type Name="DataContractBase" FullName="Microsoft.MasterDataServices.Services.DataContracts.DataContractBase">
+  <TypeSignature Language="C#" Value="public abstract class DataContractBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DataContractBase extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.DataContracts.DataContractBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services.Contracts</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract(Name="DataContractBase", Namespace="http://schemas.microsoft.com/sqlserver/masterdataservices/2009/09")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Basisklasse für alle Datenverträge.
+            </summary>
+    <remarks>
+            Die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.DataContractBase" /> gibt die Basisklasse für alle Datenverträge.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DataContractBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.DataContracts.DataContractBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected void SetProperty&lt;T&gt; (ref T propertyBackingField, T newValue, string propertyName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetProperty&lt;T&gt;(!!T propertyBackingField, !!T newValue, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.DataContracts.DataContractBase.SetProperty``1(``0@,``0,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertyBackingField" Type="T&amp;" RefType="ref" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Der Eigenschaftstyp.</typeparam>
+        <param name="propertyBackingField">Das dahinter liegende Feld der zu ändernden Eigenschaft.</param>
+        <param name="newValue">Der neue Wert, auf den die Eigenschaft festgelegt werden soll.</param>
+        <param name="propertyName">
+            Der Name der Eigenschaft. Es wird empfohlen, dass dieser Wert von der aufrufenden Funktion der Methode hartcodiert wird. Diese Vorgehensweise sollte der Verwendung eines weniger leistungsstarken Ansatzes (der jedoch eine einfachere Umgestaltung ermöglicht) vorgezogen werden, wie z. B. der Verwendung von Reflektion oder Lambda-Ausdrücken zum Abrufen des Eigenschaftennamens. Der Nachteil der Hartcodierung ist das Risiko von Tippfehlern oder Fehlern beim Kopieren und Einfügen von Text. Dieses Risiko wird jedoch durch Komponententests gemindert, bei denen dieser Parameter mithilfe von Reflektion für alle Datenvertrag-Klasseneigenschaften überprüft wird. Diese Vorgehensweise wird gewählt, weil es sich anbietet, die Leistungseinbußen aufgrund der Reflektion nicht im Produktionscode, sondern bei den Komponententests in Kauf zu nehmen.
+            </param>
+        <summary>
+            Ändert die Eigenschaft in den angegebenen Wert.  
+            Gibt die Information zurück, ob sich der neue Wert vom alten Wert unterscheidet.
+            </summary>
+        <returns>Gibt an, ob die Eigenschaft geändert wurde. Das heißt, ob der angegebene neue Wert sich vom alten Wert der Eigenschaft unterscheidet.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

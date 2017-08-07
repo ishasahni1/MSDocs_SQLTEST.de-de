@@ -1,0 +1,363 @@
+<Type Name="DatabaseRestorePlanner" FullName="Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner">
+  <TypeSignature Language="C#" Value="public sealed class DatabaseRestorePlanner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DatabaseRestorePlanner extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SmoExtended</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Planer zur Datenbankwiederherstellung.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DatabaseRestorePlanner (Microsoft.SqlServer.Management.Smo.Server server);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Server server) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.#ctor(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="server">Der Server.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DatabaseRestorePlanner (Microsoft.SqlServer.Management.Smo.Server server, string databaseName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Server server, string databaseName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.#ctor(Microsoft.SqlServer.Management.Smo.Server,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="databaseName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="server">Der Server.</param>
+        <param name="databaseName">Der Name der Datenbank.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DatabaseRestorePlanner (Microsoft.SqlServer.Management.Smo.Server server, string databaseName, DateTime pointInTime, string tailLogBackupFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Server server, string databaseName, valuetype System.DateTime pointInTime, string tailLogBackupFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.#ctor(Microsoft.SqlServer.Management.Smo.Server,System.String,System.DateTime,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="pointInTime" Type="System.DateTime" />
+        <Parameter Name="tailLogBackupFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="server">Der Server.</param>
+        <param name="databaseName">Der Name der Datenbank.</param>
+        <param name="pointInTime">Der Zeitpunkt für die Wiederherstellung.</param>
+        <param name="tailLogBackupFile">Das Medium für die Sicherung des Protokollfragments.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner" /> Klasse.
+Point-in Time-Wiederherstellung.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupMediaList">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Smo.BackupDeviceItem&gt; BackupMediaList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.SqlServer.Management.Smo.BackupDeviceItem&gt; BackupMediaList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.BackupMediaList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Smo.BackupDeviceItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Sicherungsmedienliste ab.
+            </summary>
+        <value>Der sicherungsmedienliste.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupTailLog">
+      <MemberSignature Language="C#" Value="public bool BackupTailLog { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BackupTailLog" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.BackupTailLog" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob [Sicherung des Protokollfragments] fest.
+            </summary>
+        <value>
+          <c>true</c> if [backup tail log]; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRestorePlan">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.RestorePlan CreateRestorePlan ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Smo.RestorePlan CreateRestorePlan() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.CreateRestorePlan" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RestorePlan</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt den Wiederherstellungsplan.
+            </summary>
+        <returns>Wiederherstellungsplan</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRestorePlan">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.RestorePlan CreateRestorePlan (Microsoft.SqlServer.Management.Smo.RestoreOptions ro);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Smo.RestorePlan CreateRestorePlan(class Microsoft.SqlServer.Management.Smo.RestoreOptions ro) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.CreateRestorePlan(Microsoft.SqlServer.Management.Smo.RestoreOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RestorePlan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ro" Type="Microsoft.SqlServer.Management.Smo.RestoreOptions" />
+      </Parameters>
+      <Docs>
+        <param name="ro">Die Restore-Optionen.</param>
+        <summary>
+            Erstellt den Wiederherstellungsplan.
+            </summary>
+        <returns>Wiederherstellungsplan</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRestorePlanUpdates">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.CreateRestorePlanEventHandler CreateRestorePlanUpdates;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner/CreateRestorePlanEventHandler CreateRestorePlanUpdates" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.CreateRestorePlanUpdates" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner+CreateRestorePlanEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Erstellen Sie Restore Plan Status aktualisieren-Ereignishandler
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseName">
+      <MemberSignature Language="C#" Value="public string DatabaseName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.DatabaseName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen der Datenbank ab oder legt ihn fest.
+            </summary>
+        <value>Der Name der Datenbank.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBackupDeviceReadErrors">
+      <MemberSignature Language="C#" Value="public Exception GetBackupDeviceReadErrors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Exception GetBackupDeviceReadErrors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.GetBackupDeviceReadErrors" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft den Fehler ab, die beim Lesen der Bachup-Geräte
+            </summary>
+        <returns>Eine Ausnahme aus, einschließlich der Fehlermeldung</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeSnapshotBackups">
+      <MemberSignature Language="C#" Value="public bool IncludeSnapshotBackups;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool IncludeSnapshotBackups" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.IncludeSnapshotBackups" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Angibt, ob die Enumeration momentaufnahmesicherungen einschließt. Muss vor dem Abrufen der Sicherungssätze-Eigenschaft festgelegt werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadHeaderFromMedia">
+      <MemberSignature Language="C#" Value="public bool ReadHeaderFromMedia { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadHeaderFromMedia" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.ReadHeaderFromMedia" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob [Header von Geräten gelesen].
+            </summary>
+        <value>
+          <c>true</c> if [read header from devices]; otherwise, <c>false</c>.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestoreToLastBackup">
+      <MemberSignature Language="C#" Value="public bool RestoreToLastBackup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RestoreToLastBackup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.RestoreToLastBackup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob [für die letzte Sicherung wiederherstellen].
+            </summary>
+        <value>
+          <c>true</c> if [restore to last backup]; otherwise, <c>false</c>.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestoreToPointInTime">
+      <MemberSignature Language="C#" Value="public DateTime RestoreToPointInTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime RestoreToPointInTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.RestoreToPointInTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Wiederherstellung zu einem bestimmten Zeitpunkt ab oder legt sie fest.
+            </summary>
+        <value>Die Wiederherstellung zu einem bestimmten Zeitpunkt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Server">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.Server Server { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.Server Server" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.Server" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.Server</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Server ab oder legt ihn fest.
+            </summary>
+        <value>Der Server.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailLogBackupFile">
+      <MemberSignature Language="C#" Value="public string TailLogBackupFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TailLogBackupFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.TailLogBackupFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Sicherungsdatei des Protokollfragments ab oder legt sie fest..
+            </summary>
+        <value>Neue Sicherungsdatei des Protokollfragments.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailLogWithNoRecovery">
+      <MemberSignature Language="C#" Value="public bool TailLogWithNoRecovery { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TailLogWithNoRecovery" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.DatabaseRestorePlanner.TailLogWithNoRecovery" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob die Sicherung des Protokollfragments mithilfe von with NoRecovery.
+            </summary>
+        <value>
+          <c>true</c> if NoRecovery is set; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

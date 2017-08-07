@@ -1,0 +1,136 @@
+<Type Name="DacAzureDatabaseSpecification" FullName="Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification">
+  <TypeSignature Language="C#" Value="public class DacAzureDatabaseSpecification" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DacAzureDatabaseSpecification extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert optionale Parameter mit einer Microsoft Azure SQL-Datenbank
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DacAzureDatabaseSpecification ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standardkonstruktor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Edition">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.DacAzureEdition Edition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.DacAzureEdition Edition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification.Edition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dac.DeploymentPropertyAlias("DatabaseEdition")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacAzureEdition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Database Edition
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>
+            CREATE DATABASE Datenbankname [COLLATE Sortierungsname] {({editionoptionen} [,... n])}
+            
+            {edition_options} ::= 
+            {
+               (MAXSIZE = { 100 MB | 500 MB | 1 | 5 | 10 | 20 | 30 ... 150 ... 500 } GB
+                |<b>(EDITION = {'web' | 'business' | 'basic' | 'standard' | 'premium' | 'premiumRS'})</b>
+                |<b>(SERVICE_OBJECTIVE = { 'shared' | 'basic' | 'S0' | 'S1' | 'S2' | 'S3' | 'P1' | 'P2' | 'P3' | 'P4' | 'P6' | 'P11' | 'P15' | 'PRS1' | 'PRS2' | 'PRS4' | 'PRS6' })</b>
+            }
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumSize">
+      <MemberSignature Language="C#" Value="public int MaximumSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification.MaximumSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dac.DeploymentPropertyAlias("DatabaseMaximumSize")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Maximale Größe in GB
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>
+            CREATE DATABASE Datenbankname [COLLATE Sortierungsname] {({editionoptionen} [,... n])}
+            
+            {edition_options} ::= 
+            {
+               <b>(MAXSIZE = { 100 MB | 500 MB | 1 | 5 | 10 | 20 | 30 ... 150 ... 500 } GB</b>
+                |(EDITION = {'web' | 'business' | 'basic' | 'standard' | 'premium' | 'premiumRS'})
+                |(SERVICE_OBJECTIVE = { 'shared' | 'basic' | 'S0' | 'S1' | 'S2' | 'S3' | 'P1' | 'P2' | 'P3' | 'P4' | 'P6' | 'P11' | 'P15' | 'PRS1' | 'PRS2' | 'PRS4' | 'PRS6' })
+            }
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceObjective">
+      <MemberSignature Language="C#" Value="public string ServiceObjective { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceObjective" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification.ServiceObjective" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dac.DeploymentPropertyAlias("DatabaseServiceObjective")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Leistungsebene der Datenbank
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>
+            CREATE DATABASE Datenbankname [COLLATE Sortierungsname] {({editionoptionen} [,... n])}
+            
+            {edition_options} ::= 
+            {
+               (MAXSIZE = { 100 MB | 500 MB | 1 | 5 | 10 | 20 | 30 ... 150 ... 500 } GB  
+                |(EDITION = {'web' | 'business' | 'basic' | 'standard' | 'premium' | 'premiumRS'})
+                |<b>(SERVICE_OBJECTIVE = { 'shared' | 'basic' | 'S0' | 'S1' | 'S2' | 'S3' | 'P1' | 'P2' | 'P3' | 'P4' | 'P6' | 'P11' | 'P15' | 'PRS1' | 'PRS2' | 'PRS4' | 'PRS6' })</b>
+            }
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

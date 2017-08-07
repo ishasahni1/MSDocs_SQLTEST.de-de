@@ -1,0 +1,155 @@
+<Type Name="UpgradeSession" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.UpgradeSession">
+  <TypeSignature Language="C#" Value="public class UpgradeSession" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UpgradeSession extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.UpgradeSession" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Diese Klasse stellt die Informationen der einzelnen Instanzen mit der Domäne und Suchvorgängen aktualisierte Inhalte, die die aktuelle Version von einem Objektmodell entspricht
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UpgradeSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.UpgradeSession.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUpgradeRequiredOnType">
+      <MemberSignature Language="C#" Value="public virtual bool IsUpgradeRequiredOnType (string instanceType, int fileVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUpgradeRequiredOnType(string instanceType, int32 fileVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.UpgradeSession.IsUpgradeRequiredOnType(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceType" Type="System.String" />
+        <Parameter Name="fileVersion" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="instanceType">
+        </param>
+        <param name="fileVersion">
+        </param>
+        <summary>
+            SFC-Aufrufe dieser Funktion in der Domäne für jeden Typ (mit Version) vor dem Deserialisieren möchten.
+            
+            A false return value indicates a no-upgrade and hence SFC can deserialize the 
+            content itself. If a true is returned, the upgrade sequence needs to be run.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostProcessUpgrade">
+      <MemberSignature Language="C#" Value="public virtual void PostProcessUpgrade (System.Collections.Generic.Dictionary&lt;string,object&gt; sfcCache, int fileVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PostProcessUpgrade(class System.Collections.Generic.Dictionary`2&lt;string, object&gt; sfcCache, int32 fileVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.UpgradeSession.PostProcessUpgrade(System.Collections.Generic.Dictionary{System.String,System.Object},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sfcCache" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="fileVersion" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sfcCache">
+        </param>
+        <param name="fileVersion">
+        </param>
+        <summary>
+            Der Post-Prozess ist eine zusätzliche Hilfe zu den Domänen, um eine beliebige Hierarchie, Uri Änderungen oder solchen allgemeinen Änderungen anpassen zu können. Diese Funktion wird aufgerufen, sobald die Deserialisierung jeder Instanz abgeschlossen ist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpgradeInstance">
+      <MemberSignature Language="C#" Value="public object UpgradeInstance (Type newInstanceType, System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstanceSerializedData&gt; sfcInstanceData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object UpgradeInstance(class System.Type newInstanceType, class System.Collections.Generic.List`1&lt;valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstanceSerializedData&gt; sfcInstanceData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.UpgradeSession.UpgradeInstance(System.Type,System.Collections.Generic.List{Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstanceSerializedData})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newInstanceType" Type="System.Type" />
+        <Parameter Name="sfcInstanceData" Type="System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstanceSerializedData&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="newInstanceType">
+        </param>
+        <param name="sfcInstanceData">
+        </param>
+        <summary>
+            Dies ist eine Hilfsfunktion, die für die Domäne so serialisierten Instanzdaten für die Instanz ab
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpgradeInstance">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; UpgradeInstance (System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstanceSerializedData&gt; sfcInstanceData, int fileVersion, string smlUri, System.Collections.Generic.Dictionary&lt;string,object&gt; sfcCache);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; UpgradeInstance(class System.Collections.Generic.List`1&lt;valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstanceSerializedData&gt; sfcInstanceData, int32 fileVersion, string smlUri, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; sfcCache) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.UpgradeSession.UpgradeInstance(System.Collections.Generic.List{Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstanceSerializedData},System.Int32,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sfcInstanceData" Type="System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstanceSerializedData&gt;" />
+        <Parameter Name="fileVersion" Type="System.Int32" />
+        <Parameter Name="smlUri" Type="System.String" />
+        <Parameter Name="sfcCache" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="sfcInstanceData">
+        </param>
+        <param name="fileVersion">
+        </param>
+        <param name="smlUri">
+        </param>
+        <param name="sfcCache">
+        </param>
+        <summary>
+            Diese Funktion werden die serialisierte Informationen zur Domäne übertragen und die aktualisierten Objektinstanz Suchvorgängen
+            
+            The output needs to be a list of pairs, of sml uri and corresponding instance.
+            An upgrade can result in multiple instances and hence we expect a list.
+            If the instance is deleted, a null can be returned.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

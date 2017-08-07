@@ -1,0 +1,421 @@
+<Type Name="TransferLoginsTask" FullName="Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask">
+  <TypeSignature Language="C#" Value="public sealed class TransferLoginsTask : Microsoft.SqlServer.Dts.Runtime.Task, Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransferLoginsTask extends Microsoft.SqlServer.Dts.Runtime.Task implements class Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, class Microsoft.SqlServer.Dts.Runtime.IDTSSuspend, class Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.TransferLoginsTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.Task</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Dts.Runtime.DtsTask(HelpKeyword="sql13.dts.designer.transferloginstask.F1", LocalizationType=typeof(Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.Localized), SamplesTag="SsisTransferLoginsTask", TaskContact="Transfer Error Messages Task; Microsoft Corporation; SQL Server 2017 RC1; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1", TaskType="DTS90", UITypeName="Microsoft.SqlServer.Dts.Tasks.TransferLoginsTaskUI.TransferLoginsTaskUI, Microsoft.SqlServer.TransferLoginsTaskUI, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("6EEF5CD2-7663-4749-8ADD-3C84BB1EC862")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Enthält die Elemente und Enumerationen, mit die Sie SQL Server-Anmeldungen von einer Instanz von SQL Server an einen anderen übertragen können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransferLoginsTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask" /> Klasse. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptBreakpointManager">
+      <MemberSignature Language="C#" Value="public void AcceptBreakpointManager (Microsoft.SqlServer.Dts.Runtime.BreakpointManager manager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AcceptBreakpointManager(class Microsoft.SqlServer.Dts.Runtime.BreakpointManager manager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manager" Type="Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />
+      </Parameters>
+      <Docs>
+        <param name="manager">Der für diesen Task spezifische Breakpoint-Manager.</param>
+        <summary>Übergibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> einer Aufgabe. Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopySids">
+      <MemberSignature Language="C#" Value="public bool CopySids { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopySids" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.CopySids" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt ihn fest Boolean, der angibt, ob die den Anmeldungen zugeordneten Sicherheits-IDs an das Ziel kopiert werden sollen.</summary>
+        <value>"true", wenn die den Anmeldungen zugeordneten Sicherheits-IDs kopiert werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabasesList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection DatabasesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection DatabasesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DatabasesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt eine StringCollection, die mit den Datenbanken auf dem Quellserver, die auf den Zielserver zu kopierenden Anmeldungen enthalten.</summary>
+        <value>Ein StringCollection, die die Datenbanken auf dem Quellserver auflistet, die dem auf dem Zielserver zu kopierenden Anmeldungen enthalten.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugMode">
+      <MemberSignature Language="C#" Value="public bool DebugMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DebugMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DebugMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt an, ob ein Task eine Überprüfung auf aktivierte Breakpoints ausführen soll. Diese Eigenschaft wird vom Laufzeitmodul festgelegt.</summary>
+        <value>"true", wenn der Task überprüfen soll, ob Breakpoints aktiviert sind; "false", wenn der Task die Überprüfung auf Breakpoints überspringen kann.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationConnection">
+      <MemberSignature Language="C#" Value="public string DestinationConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DestinationConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.DestinationConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt eine Zeichenfolge, die mit dem Namen des SMO-Verbindungs-Managers für die Zieldatenbank.</summary>
+        <value>Eine Zeichenfolge, die die SMO-Verbindungs-Manager enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="transaction">Das Transaktionsobjekt, dem der Container angehört. Dieser Wert kann NULL sein.</param>
+        <summary>Führt den Task aus.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionValue">
+      <MemberSignature Language="C#" Value="public override object ExecutionValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExecutionValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.ExecutionValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein Objekt zurück, das die Anzahl der übertragenen Anmeldungen enthält.</summary>
+        <value>Ein Objekt, das die Anzahl der übertragenen Anmeldungen enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfObjectExists">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists IfObjectExists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists IfObjectExists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.IfObjectExists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists" />-Enumeration ab, der angibt, ob der Task einen Fehler verursacht, die vorhandene Anmeldung ignoriert oder die Übertragung der Anmeldung überspringt, wenn am Ziel eine Anmeldung mit dem gleichen Namen vorhanden ist, oder legt ihn fest.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeTask">
+      <MemberSignature Language="C#" Value="public override void InitializeTask (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, Microsoft.SqlServer.Dts.Runtime.EventInfos eventInfos, Microsoft.SqlServer.Dts.Runtime.LogEntryInfos logEntryInfos, Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker refTracker);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeTask(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, class Microsoft.SqlServer.Dts.Runtime.EventInfos eventInfos, class Microsoft.SqlServer.Dts.Runtime.LogEntryInfos logEntryInfos, class Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker refTracker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="eventInfos" Type="Microsoft.SqlServer.Dts.Runtime.EventInfos" />
+        <Parameter Name="logEntryInfos" Type="Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" />
+        <Parameter Name="refTracker" Type="Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="eventInfos">Eine Auflistung mit Ereignissen, die während der Ausführung des Tasks ausgelöst werden.</param>
+        <param name="logEntryInfos">Eine Auflistung von Protokolleinträgen.</param>
+        <param name="refTracker">Eine Objektverweisnachverfolgung.</param>
+        <summary>Initialisiert die dem Task zugeordneten Eigenschaften. Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlElement rootNode, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlElement rootNode, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootNode" Type="System.Xml.XmlElement" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="rootNode">Der Knoten, der die zu ladenden Informationen enthält.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein im XML-Format gespeichertes Paket zu laden, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginsList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection LoginsList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection LoginsList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoginsList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt eine StringCollection, die die Namen der zu übertragenden Anmeldungen enthält.</summary>
+        <value>Ein StringCollection, die die Namen der zu übertragenden Anmeldungen enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginsToTransfer">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer LoginsToTransfer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer LoginsToTransfer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.LoginsToTransfer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer" /> Enumeration, der angibt, der zu übertragenden Anmeldungen.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeExecution">
+      <MemberSignature Language="C#" Value="public void ResumeExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.ResumeExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Setzt die Taskausführung nach einer Unterbrechung fort. Das Laufzeitmodul setzt die Ausführung des Tasks oder Containers fort. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (System.Xml.XmlDocument doc, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket als XML-Datei zu speichern, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceConnection">
+      <MemberSignature Language="C#" Value="public string SourceConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SourceConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt eine Zeichenfolge, die mit dem Namen des SMO-Verbindungs-Managers für die Quelldatenbank.</summary>
+        <value>Eine Zeichenfolge, die Verbindungszeichenfolge des SMO-Verbindungs-Managers enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendExecution">
+      <MemberSignature Language="C#" Value="public void SuspendExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuspendExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SuspendExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt an, dass das ausführbare Element angehalten werden muss. Diese Methode wird vom Laufzeitmodul aufgerufen. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendRequired">
+      <MemberSignature Language="C#" Value="public bool SuspendRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuspendRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.SuspendRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert, der angibt, ob ein Task bei Erreichen eines Breakpoints angehalten werden soll. Dieser Wert wird vom Laufzeitmodul für die Tasks und Container festgelegt, wenn ein Breakpoint erreicht wird.</summary>
+        <value>"true", wenn die Taskausführung bei Erreichen eines Breakpoints. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.TransferLoginsTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <summary>Überprüft, ob die Komponente ordnungsgemäß konfiguriert ist.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

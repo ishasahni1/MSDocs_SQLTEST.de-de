@@ -1,0 +1,73 @@
+<Type Name="ExportBuildContributorAttribute" FullName="Microsoft.SqlServer.Dac.Deployment.ExportBuildContributorAttribute">
+  <TypeSignature Language="C#" Value="public class ExportBuildContributorAttribute : Microsoft.SqlServer.Dac.Extensibility.ExportStandardMetadataAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExportBuildContributorAttribute extends Microsoft.SqlServer.Dac.Extensibility.ExportStandardMetadataAttribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Deployment.ExportBuildContributorAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dac.Extensibility.ExportStandardMetadataAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Composition.MetadataAttribute</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1813:AvoidUnsealedAttributes", Justification="Need to allow inheritance for display name localization")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Konkrete Klassen implementieren <see cref="T:Microsoft.SqlServer.Dac.Deployment.BuildContributor" /> müssen Hinzufügen der <see cref="T:Microsoft.SqlServer.Dac.Deployment.ExportBuildContributorAttribute" /> -Attribut auf ihre Klassendefinition. Dadurch wird sichergestellt, dass sie erkannt werden und während des Buildvorgangs zur Verwendung bereitstehen.
+            <see cref="T:Microsoft.SqlServer.Dac.Deployment.BuildContributor" />s erfordern eine eindeutige ID der basierend auf deren vollqualifizierten Typnamen oder explizit als Zeichenfolge übergeben werden kann
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExportBuildContributorAttribute (string id, string version);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.ExportBuildContributorAttribute.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">Eindeutige Id zur eindeutigen Identifizierung des Exports </param>
+        <param name="version">Optionale Zeichenfolge mit der Versionsnummer der Erweiterung. Eine gültige Versionszeichenfolge muss sein werden. </param>
+        <summary>
+            Initialisiert ein<see cref="T:Microsoft.SqlServer.Dac.Deployment.ExportBuildContributorAttribute" /></summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExportBuildContributorAttribute (Type implementingType, string version);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type implementingType, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.ExportBuildContributorAttribute.#ctor(System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="implementingType" Type="System.Type" />
+        <Parameter Name="version" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="implementingType">Der konkrete Typ, erweitert <see cref="T:Microsoft.SqlServer.Dac.Deployment.BuildContributor" /> – wird verwendet, um die Generierung der eindeutigen Id für diesen Export </param>
+        <param name="version">Optionale Zeichenfolge mit der Versionsnummer der Erweiterung. Eine gültige Versionszeichenfolge muss sein werden. </param>
+        <summary>
+            Initialisiert ein<see cref="T:Microsoft.SqlServer.Dac.Deployment.ExportBuildContributorAttribute" /></summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

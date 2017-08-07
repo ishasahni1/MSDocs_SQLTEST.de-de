@@ -1,0 +1,274 @@
+<Type Name="ModelCollationComparer" FullName="Microsoft.SqlServer.Dac.Model.ModelCollationComparer">
+  <TypeSignature Language="C#" Value="public abstract class ModelCollationComparer : System.Collections.Generic.IComparer&lt;Microsoft.SqlServer.Dac.Model.ObjectIdentifier&gt;, System.Collections.Generic.IComparer&lt;string&gt;, System.Collections.Generic.IComparer&lt;System.Collections.Generic.IList&lt;string&gt;&gt;, System.Collections.Generic.IEqualityComparer&lt;Microsoft.SqlServer.Dac.Model.ObjectIdentifier&gt;, System.Collections.Generic.IEqualityComparer&lt;string&gt;, System.Collections.Generic.IEqualityComparer&lt;System.Collections.Generic.IList&lt;string&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ModelCollationComparer extends System.Object implements class System.Collections.Generic.IComparer`1&lt;class Microsoft.SqlServer.Dac.Model.ObjectIdentifier&gt;, class System.Collections.Generic.IComparer`1&lt;class System.Collections.Generic.IList`1&lt;string&gt;&gt;, class System.Collections.Generic.IComparer`1&lt;string&gt;, class System.Collections.Generic.IEqualityComparer`1&lt;class Microsoft.SqlServer.Dac.Model.ObjectIdentifier&gt;, class System.Collections.Generic.IEqualityComparer`1&lt;class System.Collections.Generic.IList`1&lt;string&gt;&gt;, class System.Collections.Generic.IEqualityComparer`1&lt;string&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Model.ModelCollationComparer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IComparer&lt;Microsoft.SqlServer.Dac.Model.ObjectIdentifier&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IComparer&lt;System.Collections.Generic.IList&lt;System.String&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IComparer&lt;System.String&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEqualityComparer&lt;Microsoft.SqlServer.Dac.Model.ObjectIdentifier&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEqualityComparer&lt;System.Collections.Generic.IList&lt;System.String&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEqualityComparer&lt;System.String&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Vergleich, der Zeichenfolgen zu vergleichen und <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />anhand der Sortierung einer <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />.
+Dies kann sehr nützlich sein, wenn Vergleichen von Objekten im Modell, da Vergleiche mit den erwarteten Vergleichsergebnissen in SQL Server konsistent sein wird
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ModelCollationComparer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public abstract int Compare (Microsoft.SqlServer.Dac.Model.ObjectIdentifier x, Microsoft.SqlServer.Dac.Model.ObjectIdentifier y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(class Microsoft.SqlServer.Dac.Model.ObjectIdentifier x, class Microsoft.SqlServer.Dac.Model.ObjectIdentifier y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.Compare(Microsoft.SqlServer.Dac.Model.ObjectIdentifier,Microsoft.SqlServer.Dac.Model.ObjectIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />
+        <Parameter Name="y" Type="Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="x">Quellobjekt.</param>
+        <param name="y">Zielobjekt.</param>
+        <summary>
+            Vergleichen Sie zwei Objekte, die anhand der Sortierung dieses Vergleichs.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public abstract int Compare (System.Collections.Generic.IList&lt;string&gt; x, System.Collections.Generic.IList&lt;string&gt; y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(class System.Collections.Generic.IList`1&lt;string&gt; x, class System.Collections.Generic.IList`1&lt;string&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.Compare(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+        <Parameter Name="y" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="x">Quellobjekt.</param>
+        <param name="y">Zielobjekt.</param>
+        <summary>
+            Vergleichen Sie zwei Objekte, die anhand der Sortierung dieses Vergleichs.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public abstract int Compare (string x, string y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(string x, string y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.Compare(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.String" />
+        <Parameter Name="y" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="x">Quellobjekt.</param>
+        <param name="y">Zielobjekt.</param>
+        <summary>
+            Vergleichen Sie zwei Objekte, die anhand der Sortierung dieses Vergleichs.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public abstract bool Equals (Microsoft.SqlServer.Dac.Model.ObjectIdentifier x, Microsoft.SqlServer.Dac.Model.ObjectIdentifier y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.SqlServer.Dac.Model.ObjectIdentifier x, class Microsoft.SqlServer.Dac.Model.ObjectIdentifier y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.Equals(Microsoft.SqlServer.Dac.Model.ObjectIdentifier,Microsoft.SqlServer.Dac.Model.ObjectIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />
+        <Parameter Name="y" Type="Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="x">Die erste <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />.</param>
+        <param name="y">Die zweite <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />.</param>
+        <summary>
+            Überprüfen Sie, ob zwei Bezeichner gleich anhand der Sortierung dieses Vergleichs sind.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public abstract bool Equals (System.Collections.Generic.IList&lt;string&gt; x, System.Collections.Generic.IList&lt;string&gt; y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Collections.Generic.IList`1&lt;string&gt; x, class System.Collections.Generic.IList`1&lt;string&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.Equals(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+        <Parameter Name="y" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="x">Liste der Namensteile im ersten Bezeichner.</param>
+        <param name="y">Liste der Namensteile im zweiten Bezeichner.</param>
+        <summary>
+            Überprüfen Sie, ob zwei Bezeichner gleich anhand der Sortierung dieses Vergleichs sind.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public abstract bool Equals (string x, string y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(string x, string y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.Equals(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.String" />
+        <Parameter Name="y" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="x">Quellobjekt.</param>
+        <param name="y">Zielobjekt.</param>
+        <summary>
+            Vergleichen Sie, ob zwei Objekte gleich sind.
+            </summary>
+        <returns>"True", wenn übereinstimmen, andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public abstract int GetHashCode (Microsoft.SqlServer.Dac.Model.ObjectIdentifier obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(class Microsoft.SqlServer.Dac.Model.ObjectIdentifier obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.GetHashCode(Microsoft.SqlServer.Dac.Model.ObjectIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Das Objekt, das ein Hashcode abgerufen</param>
+        <summary>
+            Ruft einen Hashcode für das Objekt, das kompatibel mit der <see cref="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.Equals(Microsoft.SqlServer.Dac.Model.ObjectIdentifier,Microsoft.SqlServer.Dac.Model.ObjectIdentifier)" /> -Methode dieses Vergleichs
+            </summary>
+        <returns>Hashcode</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public abstract int GetHashCode (System.Collections.Generic.IList&lt;string&gt; obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(class System.Collections.Generic.IList`1&lt;string&gt; obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.GetHashCode(System.Collections.Generic.IList{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Das Objekt, das ein Hashcode abgerufen</param>
+        <summary>
+            Ruft einen Hashcode für das Objekt, das kompatibel mit der <see cref="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.Equals(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})" /> -Methode dieses Vergleichs
+            </summary>
+        <returns>Hashcode</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public abstract int GetHashCode (string obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(string obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.GetHashCode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Das Objekt, das ein Hashcode abgerufen</param>
+        <summary>
+            Ruft einen Hashcode für das Objekt, das kompatibel mit der <see cref="M:Microsoft.SqlServer.Dac.Model.ModelCollationComparer.Equals(System.String,System.String)" /> -Methode dieses Vergleichs
+            </summary>
+        <returns>Hashcode</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,247 @@
+<Type Name="ConnectionManagerItems" FullName="Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems">
+  <TypeSignature Language="C#" Value="public class ConnectionManagerItems : System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionManagerItems extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Stellt die Verbindungs-Manager-Objekte dar.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectionManagerItems (Microsoft.SqlServer.Dts.Runtime.Project project);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Dts.Runtime.Project project) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.#ctor(Microsoft.SqlServer.Dts.Runtime.Project)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="project" Type="Microsoft.SqlServer.Dts.Runtime.Project" />
+      </Parameters>
+      <Docs>
+        <param name="project">Das Projekt.</param>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem Add (string creationName, string streamName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem Add(string creationName, string streamName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.Add(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="creationName" Type="System.String" />
+        <Parameter Name="streamName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="creationName">Gibt den erstellungsnamen des Verbindungs-Managers hinzugefügt werden.</param>
+        <param name="streamName">Enthält den Namen der Streams für den Verbindungs-Manager.</param>
+        <summary>
+            Fügen Sie einen Verbindungs-Manager-Element am Ende der ConnectionManagerItems
+            </summary>
+        <returns>Das hinzugefügte Verbindungs-Manager-Element.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string streamName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string streamName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="streamName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="streamName">Der Name des Datenstroms.</param>
+        <summary>Gibt an, ob die Verbindungs-Manager-Elemente einen bestimmten Datenstromnamen enthalten.</summary>
+        <returns>True, wenn der Verbindungs-Manager-Elemente einen bestimmten Datenstromnamen enthalten. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Anzahl der Verbindungs-Manager-Objekte ab.</summary>
+        <value>Die Anzahl der Verbindungs-Manager-Objekte.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt den Enumerator der Verbindungs-Manager-Elemente zurück.</summary>
+        <returns>Der Enumerator der Verbindungs-Manager-Elemente.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">Der Index.</param>
+        <summary>Ruft das Verbindungs-Manager-Objekt mit dem angegebenen Index ab.</summary>
+        <value>Das Verbindungs-Manager-Objekt mit dem angegebenen Index.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem this[string streamName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="streamName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="streamName">Der Name des Datenstroms.</param>
+        <summary>Ruft das Verbindungs-Manager-Objekt mit dem angegebenen Datenstromnamen ab.</summary>
+        <value>Das Verbindungs-Manager-Objekt mit dem angegebenen Datenstromnamen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem Join (Microsoft.SqlServer.Dts.Runtime.ConnectionManager connectionManager, string streamName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem Join(class Microsoft.SqlServer.Dts.Runtime.ConnectionManager connectionManager, string streamName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.Join(Microsoft.SqlServer.Dts.Runtime.ConnectionManager,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionManager" Type="Microsoft.SqlServer.Dts.Runtime.ConnectionManager" />
+        <Parameter Name="streamName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionManager">Das zu verknüpfende Verbindungs-Manager-Objekt.</param>
+        <param name="streamName">Der Name des Datenstroms.</param>
+        <summary>Verknüpft ein neues Verbindungs-Manager-Objekt.</summary>
+        <returns>Das verknüpfte Verbindungs-Manager-Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (string streamName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(string streamName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="streamName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="streamName">Gibt den Datenstromnamen des Verbindungs-Manager-Element entfernt werden soll.</param>
+        <summary>
+            Entfernen Sie die angegebene Verbindungs-Manager-Element aus ConnectionManagerItems
+            </summary>
+        <returns>"true", wenn der Verbindungs-Manager-Element erfolgreich entfernt wird.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">Der Index.</param>
+        <summary>Entfernt einen Verbindungs-Manager anhand des angegebenen Index.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Entfernt einen Verbindungs-Manager anhand des Datenstromnamens.</summary>
+        <returns>Der Enumerator der Verbindungs-Manager-Elemente.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

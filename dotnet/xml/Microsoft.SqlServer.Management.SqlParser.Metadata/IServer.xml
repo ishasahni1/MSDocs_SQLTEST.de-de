@@ -1,0 +1,118 @@
+<Type Name="IServer" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IServer">
+  <TypeSignature Language="C#" Value="public interface IServer : Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServer implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt eine SQL Server-Instanz dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CollationInfo">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo CollationInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo CollationInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer.CollationInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt ab, das die Serverauflistung darstellt. 
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt, das die Serverauflistung darstellt.
+Dies ist die von der master-Datenbank verwendete Sortierung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Credentials">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.ICredential&gt; Credentials { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.ICredential&gt; Credentials" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer.Credentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.ICredential&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung von Serveranmeldeinformationen ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICredential" />-Elemente, die die Serveranmeldeinformationen enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Databases">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase&gt; Databases { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase&gt; Databases" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer.Databases" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung der Datenbanken auf dem Server ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger" />-Elemente, die die Datenbanken auf dem Server enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Logins">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.ILogin&gt; Logins { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.ILogin&gt; Logins" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer.Logins" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.ILogin&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung von Serveranmeldenamen ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ILogin" />-Elemente, die die Serveranmeldenamen enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Triggers">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger&gt; Triggers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger&gt; Triggers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer.Triggers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung von DDL-Triggern auf Serverebene ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger" />-Elemente, die die DDL-Trigger auf Serverebene enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

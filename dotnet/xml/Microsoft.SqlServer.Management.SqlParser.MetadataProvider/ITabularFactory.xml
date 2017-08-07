@@ -1,0 +1,322 @@
+<Type Name="ITabularFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory">
+  <TypeSignature Language="C#" Value="public interface ITabularFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITabularFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden, die zum Erstellen von Tabellenobjekten verwendet werden können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateCommonTableExpression">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular CreateCommonTableExpression (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular CreateCommonTableExpression(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateCommonTableExpression(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des zu erstellenden allgemeinen Tabellenausdrucks.</param>
+        <param name="collationInfo">Das vom Objekt verwendete <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt.</param>
+        <summary>
+            Erstellt ein allgemeines Tabellenausdrucksobjekt (Common Table Expression, CTE), das über den angegebenen Namen und die angegebenen Spalten verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDerivedTable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular CreateDerivedTable (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular CreateDerivedTable(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateDerivedTable(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name der zu erstellenden abgeleiteten Tabelle.</param>
+        <param name="collationInfo">Das vom Objekt verwendete <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt.</param>
+        <summary>
+            Erstellt ein abgeleitetes Tabellenobjekt, das über den angegebenen Namen und die angegebenen Spalten verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDmlDeletedTable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular CreateDmlDeletedTable (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular targetTable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular CreateDmlDeletedTable(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular targetTable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateDmlDeletedTable(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetTable" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+      </Parameters>
+      <Docs>
+        <param name="targetTable">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />-Objekt, das die Zieltabelle darstellt.</param>
+        <summary>
+            Erstellt ein DML DELETE-Tabellenobjekt mit der angegebenen Zieltabelle.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDmlInsertedTable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular CreateDmlInsertedTable (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular targetTable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular CreateDmlInsertedTable(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular targetTable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateDmlInsertedTable(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetTable" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+      </Parameters>
+      <Docs>
+        <param name="targetTable">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />-Objekt, das die Zieltabelle darstellt.</param>
+        <summary>
+            Erstellt ein DML INSERT-Tabellenobjekt mit der angegebenen Zieltabelle.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDmlTableSource">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular CreateDmlTableSource (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular CreateDmlTableSource(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateDmlTableSource(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name der zu erstellenden DML-Tabellenquelle.</param>
+        <param name="collationInfo">Das vom Objekt verwendete <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt.</param>
+        <summary>
+            Erstellt ein DML-Tabellenquellobjekt, das über den angegebenen Namen und die angegebenen Spalten verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePivotTable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular CreatePivotTable (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular CreatePivotTable(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreatePivotTable(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name der zu erstellenden PIVOT-Tabelle.</param>
+        <param name="collationInfo">Das vom Objekt verwendete <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt.</param>
+        <summary>
+            Erstellt ein PIVOT-Tabellenobjekt, das über den angegebenen Namen und die angegebenen Spalten verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTable CreateTable (Microsoft.SqlServer.Management.SqlParser.Metadata.ITable table);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTable CreateTable(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITable table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateTable(Microsoft.SqlServer.Management.SqlParser.Metadata.ITable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITable" />
+      </Parameters>
+      <Docs>
+        <param name="table">Die zu kopierende Tabelle.</param>
+        <summary>
+            Erstellt ein Datenbank-Tabellenobjekt, das eine Kopie des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITable" />-Objekts ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTable" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTable CreateTable (Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema schema, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTable CreateTable(class Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema schema, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateTable(Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="schema">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" />-Objekt, das der Tabelle übergeordnet ist.</param>
+        <param name="name">Der Name der zu erstellenden Tabelle.</param>
+        <summary>
+            Erstellt ein Datenbank-Tabellenobjekt, das zum angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" />-Objekt gehört und über den angegebenen Namen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTable" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTableAlias">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular CreateTableAlias (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular aliasedTable, string alias);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular CreateTableAlias(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular aliasedTable, string alias) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateTableAlias(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aliasedTable" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+        <Parameter Name="alias" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="aliasedTable">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" /> Objekt Alias.</param>
+        <param name="alias">Der Tabellenalias.</param>
+        <summary>
+            Erstellt einen Tabellenalias für das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />-Objekt unter Verwendung des angegebenen Alias.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUnpivotTable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular CreateUnpivotTable (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular CreateUnpivotTable(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateUnpivotTable(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name der zu erstellenden UNPIVOT-Tabelle.</param>
+        <param name="collationInfo">Das vom Objekt verwendete <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt.</param>
+        <summary>
+            Erstellt ein UNPIVOT-Tabellenobjekt, das über den angegebenen Namen und die angegebene Liste von Spalten verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTabular" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateView">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableView CreateView (Microsoft.SqlServer.Management.SqlParser.Metadata.IView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableView CreateView(class Microsoft.SqlServer.Management.SqlParser.Metadata.IView view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateView(Microsoft.SqlServer.Management.SqlParser.Metadata.IView)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IView" />
+      </Parameters>
+      <Docs>
+        <param name="view">Die zu kopierende Sicht.</param>
+        <summary>
+            Erstellt eine Datenbanksicht, die eine Kopie des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IView" />-Objekts ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableView" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateView">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableView CreateView (Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema schema, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableView CreateView(class Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema schema, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ITabularFactory.CreateView(Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="schema">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" />-Objekt, das der Sicht übergeordnet ist.</param>
+        <param name="name">Der Name der zu erstellenden Sicht.</param>
+        <summary>
+            Erstellt eine Datenbanksicht, die zum angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" />-Objekt gehört und über den angegebenen Namen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableView" /> Objekt.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

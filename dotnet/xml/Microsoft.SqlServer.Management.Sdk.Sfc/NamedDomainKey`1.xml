@@ -1,0 +1,375 @@
+<Type Name="NamedDomainKey&lt;T&gt;" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class NamedDomainKey&lt;T&gt; : Microsoft.SqlServer.Management.Sdk.Sfc.DomainRootKey, IEquatable&lt;Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt;&gt; where T : ISfcDomain" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NamedDomainKey`1&lt;(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain) T&gt; extends Microsoft.SqlServer.Management.Sdk.Sfc.DomainRootKey implements class System.IEquatable`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1&lt;!T&gt;&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.DomainRootKey</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt;&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">Muss hinzugefügt werden.</typeparam>
+    <summary>
+            Den Domänenschlüssel mit einem Zeichenfolgennamen für eine allgemeine SFC-Domäne Stamm Instanzklasse.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedDomainKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Der Standardkonstruktor für eine allgemeine SFC Domänenschlüssel benannt.
+Der Aufrufer muss daran denken, nach der Erstellung der Stamm-Eigenschaft festgelegt wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedDomainKey (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain domain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain domain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="domain" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain" />
+      </Parameters>
+      <Docs>
+        <param name="domain">Die Domäneninstanz.</param>
+        <summary>
+            Erstellen Sie eine allgemeine SFC mit dem Namen Domänenschlüssel aus einem domänenstamminstanz über den Instanznamen der Domäne an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedDomainKey (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain domain, System.Collections.Generic.IDictionary&lt;string,object&gt; fields);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain domain, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; fields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="domain" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain" />
+        <Parameter Name="fields" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="domain">Die Domäneninstanz.</param>
+        <param name="fields">Das Wörterbuch mit Feldwertpaaren.</param>
+        <summary>
+            Erstellen Sie eine allgemeine SFC mit dem Namen Domänenschlüssel aus einem domänenstamminstanz mit dem angegebenen feldwörterbuch.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NamedDomainKey (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain domain, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain domain, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="domain" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="domain">Die Domäneninstanz.</param>
+        <param name="name">Die Namenszeichenfolge.</param>
+        <summary>
+            Erstellen Sie eine allgemeine SFC mit dem Namen Domänenschlüssel aus einem domänenstamminstanz mit dem angegebenen Namen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.Equals(Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">Ein zu vergleichender Schlüssel.</param>
+        <summary>
+            Vergleichen Sie eine benannte Domänenschlüssel diesem Schlüssel Wertgleichheit.
+            </summary>
+        <returns>True, wenn die Schlüssel, deren Wert identisch ist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.Equals(Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey" />
+      </Parameters>
+      <Docs>
+        <param name="other">Ein zu vergleichender Schlüssel.</param>
+        <summary>
+            Vergleichen Sie eine benannte Domänenschlüssel diesem Schlüssel Wertgleichheit.
+            </summary>
+        <returns>True, wenn die Schlüssel, deren Wert identisch ist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Ein zu vergleichender Schlüssel.</param>
+        <summary>
+            Vergleichen Sie eine benannte Domänenschlüssel diesem Schlüssel Wertgleichheit.
+            </summary>
+        <returns>True, wenn die Schlüssel, deren Wert identisch ist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (object leftOperand, object rightOperand);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(object leftOperand, object rightOperand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.Equals(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="leftOperand" Type="System.Object" />
+        <Parameter Name="rightOperand" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="leftOperand">Ein zu vergleichender Schlüssel.</param>
+        <param name="rightOperand">Ein zu vergleichender Schlüssel.</param>
+        <summary>
+            Statischen Gleichheitsoperator für einen Schlüssel.
+            </summary>
+        <returns>True, wenn die Schlüssel gleich sind. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Einen Hashcode für den Schlüssel zu generieren.
+            </summary>
+        <returns>Der Hash für den Schlüsselwert.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrnFragment">
+      <MemberSignature Language="C#" Value="public override string GetUrnFragment ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetUrnFragment() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.GetUrnFragment" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Das Urn-ebenenfragment ruft seinen Namen aus der schlüsselnamenseigenschaft standardmäßig ab.
+Überschreiben Sie in einer abgeleiteten Klasse Schlüssel, wenn Sie ein anderes Fragment-Format benötigen.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceType">
+      <MemberSignature Language="C#" Value="public override sealed Type InstanceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type InstanceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.InstanceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Den Instanztyp, den dieser Schlüssel darstellt.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Namensschlüsselwert.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt; leftOperand, Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt; rightOperand);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1&lt;!T&gt; leftOperand, class Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1&lt;!T&gt; rightOperand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.op_Equality(Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey{`0},Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="leftOperand" Type="Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt;" />
+        <Parameter Name="rightOperand" Type="Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="leftOperand">Ein zu vergleichender Schlüssel.</param>
+        <param name="rightOperand">Ein zu vergleichender Schlüssel.</param>
+        <summary>
+            Vergleichen von zwei Schlüsseln auf Gleichheit.
+            </summary>
+        <returns>True, wenn beide Schlüssel gleich sind, oder null sind. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt; leftOperand, Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt; rightOperand);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1&lt;!T&gt; leftOperand, class Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1&lt;!T&gt; rightOperand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.op_Inequality(Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey{`0},Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="leftOperand" Type="Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt;" />
+        <Parameter Name="rightOperand" Type="Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="leftOperand">Ein zu vergleichender Schlüssel.</param>
+        <param name="rightOperand">Ein zu vergleichender Schlüssel.</param>
+        <summary>
+            Vergleichen von zwei Schlüsseln auf Ungleichheit.
+            </summary>
+        <returns>"True", wenn beide Schlüssel gleich oder nur eine sind null ist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Der Zeichenfolgenwert für den Schlüssel.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrnName">
+      <MemberSignature Language="C#" Value="protected virtual string UrnName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UrnName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.NamedDomainKey`1.UrnName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Urn-Ebenenname entsprechend der Instanz eingeben, wodurch dieser Schlüssel darstellt.
+Es ist normalerweise der Instanzname des Typ-Klasse.
+Überschreiben diese in der Regel mit den Operatoren "typeof" (T) .urnName oder ähnliche erfolgt.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

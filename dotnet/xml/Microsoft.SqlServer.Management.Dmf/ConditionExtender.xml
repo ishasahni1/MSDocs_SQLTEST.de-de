@@ -1,0 +1,203 @@
+<Type Name="ConditionExtender" FullName="Microsoft.SqlServer.Management.Dmf.ConditionExtender">
+  <TypeSignature Language="C#" Value="public sealed class ConditionExtender : Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender&lt;Microsoft.SqlServer.Management.Dmf.Condition&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConditionExtender extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1&lt;class Microsoft.SqlServer.Management.Dmf.Condition&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Dmf.ConditionExtender" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dmf</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender&lt;Microsoft.SqlServer.Management.Dmf.Condition&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.SqlServer.Management.Dmf.Condition</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Decorator-Element für das Bedingungsobjekt. Verwendet das Basisobjekt Bedingung Hinzufügen zusätzlicher Eigenschaften
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConditionExtender ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ConditionExtender.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standard-ctor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConditionExtender (Microsoft.SqlServer.Management.Dmf.Condition condition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Dmf.Condition condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ConditionExtender.#ctor(Microsoft.SqlServer.Management.Dmf.Condition)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="condition" Type="Microsoft.SqlServer.Management.Dmf.Condition" />
+      </Parameters>
+      <Docs>
+        <param name="condition">
+        </param>
+        <summary>
+            Ctor. Nimmt übergeordnete Condition-Objekt zum Aggregieren
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConditionExtender (Microsoft.SqlServer.Management.Dmf.PolicyStore policyStore, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Dmf.PolicyStore policyStore, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ConditionExtender.#ctor(Microsoft.SqlServer.Management.Dmf.PolicyStore,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="policyStore" Type="Microsoft.SqlServer.Management.Dmf.PolicyStore" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="policyStore">
+        </param>
+        <param name="name">
+        </param>
+        <summary>
+            Ctor. Erstellen Sie ein neues Condition-Objekt und Aggregate darauf.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DependentPolicies">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Dmf.Policy&gt; DependentPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Management.Dmf.Policy&gt; DependentPolicies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ConditionExtender.DependentPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Dmf.Policy&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            enthält eine Liste der abhängigen-Richtlinien
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionNode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.ExpressionNode ExpressionNode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.ExpressionNode ExpressionNode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ConditionExtender.ExpressionNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty("Expression")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.ExpressionNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Übersetzt Elternteils Zeichenfolge 'Ausdruck'-Eigenschaft in der Expression-Knoten-Eigenschaft
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FacetInfo">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.FacetInfo FacetInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.FacetInfo FacetInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ConditionExtender.FacetInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty("Facet")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.FacetInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Übersetzt Elternteils "Facet" Zeichenfolge-Eigenschaft in die Objekteigenschaft FacedInfo
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Facets">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Dmf.FacetInfo&gt; Facets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Management.Dmf.FacetInfo&gt; Facets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ConditionExtender.Facets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Dmf.FacetInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Enthält eine Liste der verfügbaren facets
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootFacets">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Dmf.FacetInfo&gt; RootFacets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Management.Dmf.FacetInfo&gt; RootFacets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ConditionExtender.RootFacets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.ExtendedProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Dmf.FacetInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Verfügbarmachen der Auflistung von Facets, die als stammfacets attributiert sind
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

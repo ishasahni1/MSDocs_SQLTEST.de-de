@@ -1,0 +1,332 @@
+<Type Name="ValidationIssue" FullName="Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue">
+  <TypeSignature Language="C#" Value="public class ValidationIssue : Microsoft.MasterDataServices.Services.DataContracts.DataContractBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidationIssue extends Microsoft.MasterDataServices.Services.DataContracts.DataContractBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services.Contracts</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.MasterDataServices.Services.DataContracts.DataContractBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract(Name="ValidationIssue", Namespace="http://schemas.microsoft.com/sqlserver/masterdataservices/2009/09")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Ein Überprüfungsproblem, das auf der Grundlage einer Überprüfungsgeschäftsregel für ein Masterdatenelement und Attribut erfasst wurde.
+            </summary>
+    <remarks>
+            Die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue" /> komplexer Typ gibt an, ein Überprüfungsproblem, die gegen ein masterdatenelement und Attribut auf Grundlage einer überprüfungsgeschäftsregel aufgezeichnet wird.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValidationIssue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standardkonstruktor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuditInfo">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.AuditInfo AuditInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.AuditInfo AuditInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.AuditInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.AuditInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, die Überwachungsinformationen des Problems
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessRuleId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier BusinessRuleId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier BusinessRuleId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.BusinessRuleId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Bezeichner des zugehörigen Geschäftsregel, die dieses Problem erstellt hat
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessRuleItemCategory">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.BRItemCategory BusinessRuleItemCategory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.MasterDataServices.Services.DataContracts.BRItemCategory BusinessRuleItemCategory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.BusinessRuleItemCategory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.BRItemCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Typ der verknüpften geschäftsregelaktion, die dieses Problem erstellt hat
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessRuleItemId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier BusinessRuleItemId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier BusinessRuleItemId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.BusinessRuleItemId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Bezeichner der verknüpften geschäftsregelaktion, die dieses Problem erstellt hat
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Beschreibung des Problems
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier EntityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier EntityId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.EntityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Entität des Problems
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HierarchyId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier HierarchyId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier HierarchyId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.HierarchyId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Hierarchie des Problems.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public int Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Bezeichner des Problems
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.MemberIdentifier MemberId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.MemberIdentifier MemberId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.MemberId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.MemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt das Element des Problems
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier ModelId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier ModelId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.ModelId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt das Modell des Problems
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotificationSent">
+      <MemberSignature Language="C#" Value="public bool NotificationSent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NotificationSent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.NotificationSent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            True, wenn dieses Problem gesendet wurde
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier VersionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier VersionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.ValidationIssue.VersionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Version des Problems
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

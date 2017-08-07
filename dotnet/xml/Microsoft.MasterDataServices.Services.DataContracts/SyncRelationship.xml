@@ -1,0 +1,330 @@
+<Type Name="SyncRelationship" FullName="Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship">
+  <TypeSignature Language="C#" Value="public class SyncRelationship : Microsoft.MasterDataServices.Services.DataContracts.DataContractBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyncRelationship extends Microsoft.MasterDataServices.Services.DataContracts.DataContractBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services.Contracts</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.MasterDataServices.Services.DataContracts.DataContractBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract(Name="SyncRelationship", Namespace="http://schemas.microsoft.com/sqlserver/masterdataservices/2009/09")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Eine Synchronisierungsbeziehung zwischen zwei Entitäten.
+            </summary>
+    <remarks>
+            Die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship" /> komplexer Typ gibt an, eine synchronisierungsbeziehung zwischen zwei Entitäten.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyncRelationship ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuditInfo">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.AuditInfo AuditInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.AuditInfo AuditInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.AuditInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(EmitDefaultValue=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.AuditInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, die <see cref="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.AuditInfo" />.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSuccessfulSyncTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastSuccessfulSyncTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastSuccessfulSyncTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.LastSuccessfulSyncTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Zeit, die in der letzten erfolgreichen synchronisierungsversuchs aufgetreten ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSyncAttemptError">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Error LastSyncAttemptError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Error LastSyncAttemptError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.LastSyncAttemptError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Error</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Fehlerinformationen zum letzten Synchronisierungsversuch an. NULL zurück, wenn <see cref="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.LastSyncAttemptStatus" /> nicht <see cref="F:Microsoft.MasterDataServices.Services.DataContracts.SyncStatus.Failed" />.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSyncAttemptStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.SyncStatus LastSyncAttemptStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.MasterDataServices.Services.DataContracts.SyncStatus LastSyncAttemptStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.LastSyncAttemptStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.SyncStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Status des letzten synchronisierungsversuchs.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSyncAttemptTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastSyncAttemptTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastSyncAttemptTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.LastSyncAttemptTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Zeit, die auf der letzten Synchronisierungsversuch aufgetreten ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshFrequencyInHours">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; RefreshFrequencyInHours { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; RefreshFrequencyInHours" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.RefreshFrequencyInHours" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die synchronisierungshäufigkeit. Wenn die Synchronisierung nur nach Bedarf ausgeführt wird, lautet der Wert „Null“ oder „NULL“.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceEntityId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier SourceEntityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier SourceEntityId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.SourceEntityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Bezeichner der Quellentität.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceModelId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier SourceModelId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier SourceModelId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.SourceModelId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Bezeichner des Quellmodells.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceVersionId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier SourceVersionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier SourceVersionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.SourceVersionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Bezeichner der quellmodellversion.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetEntityId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier TargetEntityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier TargetEntityId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.TargetEntityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Bezeichner der Zielentität.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetModelId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier TargetModelId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier TargetModelId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.TargetModelId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Bezeichner des Zielmodells.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetVersionId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier TargetVersionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier TargetVersionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.DataContracts.SyncRelationship.TargetVersionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Bezeichner einer zielmodellversion.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

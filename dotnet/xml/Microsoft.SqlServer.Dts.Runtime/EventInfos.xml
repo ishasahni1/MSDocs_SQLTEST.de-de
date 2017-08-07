@@ -1,0 +1,189 @@
+<Type Name="EventInfos" FullName="Microsoft.SqlServer.Dts.Runtime.EventInfos">
+  <TypeSignature Language="C#" Value="public sealed class EventInfos : Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventInfos extends Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enthält eine Auflistung von <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfo" /> Objekte. Das Laufzeitmodul macht eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" /> Auflistung für alle Container in der Pakethierarchie. Die von einem Task empfangene Auflistung ist ein Verweis auf die <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" />-Auflistung im <see cref="T:Microsoft.SqlServer.Dts.Runtime.TaskHost" />, der als Wrapper für den Task fungiert. Die EventInfos Auflistungen anderer Container enthalten aggregierte Inhalte der Kinder <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" /> Sammlungen. Diese Klasse kann nicht vererbt werden. </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string eventName, string description, bool allowEventHandlers, string[] parameterNames, TypeCode[] parameterTypes, string[] parameterDescriptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string eventName, string description, bool allowEventHandlers, string[] parameterNames, valuetype System.TypeCode[] parameterTypes, string[] parameterDescriptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.EventInfos.Add(System.String,System.String,System.Boolean,System.String[],System.TypeCode[],System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="allowEventHandlers" Type="System.Boolean" />
+        <Parameter Name="parameterNames" Type="System.String[]" />
+        <Parameter Name="parameterTypes" Type="System.TypeCode[]" />
+        <Parameter Name="parameterDescriptions" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="eventName">Der Name des benutzerdefinierten Ereignisses.</param>
+        <param name="description">Eine Zeichenfolge, die eine Beschreibung des Ereignisses enthält.</param>
+        <param name="allowEventHandlers">Ein boolescher Wert, der angibt, ob das Entwicklungstool Ereignis von ereignishandlerobjekten für das Ereignis erstellt werden kann. Bei "true", können ereignishandlerobjekte für das Ereignis erstellt werden.</param>
+        <param name="parameterNames">Ein Array der an das Ereignis übergebenen Parameter.</param>
+        <param name="parameterTypes">Der Typ jedes Parameters in der <paramref name="parameterNames" /> Array.</param>
+        <param name="parameterDescriptions">Ein Array mit Beschreibungen für jeden der Parameter in <paramref name="parameterNames" />.</param>
+        <summary>Fügt der aktuellen <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfo" />-Auflistung ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" />-Objekt hinzu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (object index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(object index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.EventInfos.Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">Der Name, Beschreibung, ID oder Index, der die <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfo" /> Objekt.</param>
+        <summary>Gibt einen booleschen Wert ab, der angibt, ob die Elemente in der Auflistung mit dem Namen, Beschreibung, ID oder Index als Index zugegriffen werden kann.</summary>
+        <returns>"true", wenn der angegebene Index sich in befindet der <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" />, andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateManagedObject">
+      <MemberSignature Language="C#" Value="protected override object CreateManagedObject (object unmanagedObj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateManagedObject(object unmanagedObj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.EventInfos.CreateManagedObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unmanagedObj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="unmanagedObj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCount">
+      <MemberSignature Language="C#" Value="protected override int GetCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 GetCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.EventInfos.GetCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.EventInfoEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dts.Runtime.EventInfoEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.EventInfos.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.EventInfoEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt einen Enumerator zum Durchlaufen der <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" /> Auflistung.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfoEnumerator" /> Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedEnumerator">
+      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator GetManagedEnumerator (object unmanagedEnum);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.IEnumerator GetManagedEnumerator(object unmanagedEnum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.EventInfos.GetManagedEnumerator(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unmanagedEnum" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="unmanagedEnum">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.EventInfo this[object index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.EventInfo Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.EventInfos.Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.EventInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">Der Name, Beschreibung, ID oder Index, der die <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfo" /> zurückzugebenden Objekts.</param>
+        <summary>Gibt das <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfo" />-Objekt aus der Auflistung zurück.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfo" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (object index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(object index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.EventInfos.Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">Der Name, Beschreibung, ID oder Index, der die <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfo" /> zu entfernende Objekt.</param>
+        <summary>Entfernt ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfo" /> -Objekt aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.EventInfos" /> Auflistung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

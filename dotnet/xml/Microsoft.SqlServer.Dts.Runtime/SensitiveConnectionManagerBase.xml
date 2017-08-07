@@ -1,0 +1,147 @@
+<Type Name="SensitiveConnectionManagerBase" FullName="Microsoft.SqlServer.Dts.Runtime.SensitiveConnectionManagerBase">
+  <TypeSignature Language="C#" Value="public abstract class SensitiveConnectionManagerBase : Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase, Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SensitiveConnectionManagerBase extends Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase implements class Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.SensitiveConnectionManagerBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary />
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SensitiveConnectionManagerBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.SensitiveConnectionManagerBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionStringElementName">
+      <MemberSignature Language="C#" Value="protected const string ConnectionStringElementName;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal string ConnectionStringElementName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.SensitiveConnectionManagerBase.ConnectionStringElementName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public virtual void LoadFromXML (System.Xml.XmlElement rootNode, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents infoEvents);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlElement rootNode, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents infoEvents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.SensitiveConnectionManagerBase.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootNode" Type="System.Xml.XmlElement" />
+        <Parameter Name="infoEvents" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="rootNode">
+        </param>
+        <param name="infoEvents">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveSensitiveValue">
+      <MemberSignature Language="C#" Value="protected static void SaveSensitiveValue (System.Xml.XmlDocument doc, System.Xml.XmlElement parent, string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void SaveSensitiveValue(class System.Xml.XmlDocument doc, class System.Xml.XmlElement parent, string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.SensitiveConnectionManagerBase.SaveSensitiveValue(System.Xml.XmlDocument,System.Xml.XmlElement,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="parent" Type="System.Xml.XmlElement" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="doc">
+        </param>
+        <param name="parent">
+        </param>
+        <param name="name">
+        </param>
+        <param name="value">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public virtual void SaveToXML (System.Xml.XmlDocument doc, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents infoEvents);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents infoEvents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.SensitiveConnectionManagerBase.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="infoEvents" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">
+        </param>
+        <param name="infoEvents">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SensitiveAttributeName">
+      <MemberSignature Language="C#" Value="protected const string SensitiveAttributeName;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal string SensitiveAttributeName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.SensitiveConnectionManagerBase.SensitiveAttributeName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,101 @@
+<Type Name="ISfcHasConnection" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection">
+  <TypeSignature Language="C#" Value="public interface ISfcHasConnection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISfcHasConnection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Domänenstämme isfc-Domäne müssen diese Schnittstelle implementieren.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConnectionContext">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext ConnectionContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext ConnectionContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.ISfcConnection GetConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection GetConnection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Abrufen der Verbindung-Abfrage an Speicher zu sichern. Der Standardwert ist unter der Voraussetzung einer einzelnen Abfrage öffnen werden gleichzeitig vorhanden sein.
+            </summary>
+        <returns>Die zu verwendende Verbindung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.ISfcConnection GetConnection (Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode activeQueriesMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection GetConnection(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode activeQueriesMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection(Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activeQueriesMode" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode" />
+      </Parameters>
+      <Docs>
+        <param name="activeQueriesMode">Muss hinzugefügt werden.</param>
+        <summary>
+            Rufen Sie die Verbindung zur Sicherung von Speicher, um den angeforderten abfrageverarbeitungsmodus unterstützt.
+Jede Verbindung, die mehrere geöffnete Abfragen unterstützt muss davon ausgehen, dass die GetConnection() zurückgegebene reguläre Verbindung zu einem beliebigen Zeitpunkt ausgelastet sein kann.
+            <param name="activeQueriesMode">Zwischenzuspeichern Sie Ergebnisse, oder verwenden Sie einen live-Daten-Reader-Iterator, in denen einzelne oder mehrere geöffnete Abfragen erwartet.</param></summary>
+        <returns>Die zu verwendende Verbindung, oder NULL, um den Cachemodus zu verwenden Im Cachemodus werden Verbindungsprobleme und Probleme mit dem Öffnen des Datenlesers vermieden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetConnection">
+      <MemberSignature Language="C#" Value="public void SetConnection (Microsoft.SqlServer.Management.Common.ISfcConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetConnection(class Microsoft.SqlServer.Management.Common.ISfcConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.SetConnection(Microsoft.SqlServer.Management.Common.ISfcConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Common.ISfcConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">Muss hinzugefügt werden.</param>
+        <summary>
+            Legt die aktive Verbindung für den Domänenstamm fest. Dies ist für die Domäne Instanziierung verwendet bzw. springendes.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

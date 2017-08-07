@@ -1,0 +1,383 @@
+<Type Name="DacPackage" FullName="Microsoft.SqlServer.Dac.DacPackage">
+  <TypeSignature Language="C#" Value="public sealed class DacPackage : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DacPackage extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.DacPackage" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Darstellung des Artefakts, das die Definition einer Anwendung auf Datenebene enthält.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacPackage.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft eine optionale Zusammenfassung des Pakets ab.
+            </summary>
+        <value>
+            Zusammenfassung des Pakets als Zeichenfolge, oder NULL-Verweis, wenn keine Zusammenfassung vorliegt.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackage.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt die durch diese Instanz belegten Ressourcen frei.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.DacPackage Load (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.DacPackage Load(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackage.Load(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacPackage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+            Stream, aus dem das Paket gelesen werden soll.
+            </param>
+        <summary>
+            Lädt ein Paket aus dem angegebenen <see cref="T:System.IO.Stream" />.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />-Instanz, die für das Paket geladen wird, aus dem angegebenen <see cref="T:System.IO.Stream" />.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn beim Lesen des Pakets ein Problem auftritt oder das Paket exportierte Daten enthält.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.DacPackage Load (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.DacPackage Load(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackage.Load(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacPackage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">
+            Pfad der Paketdatei.
+            </param>
+        <summary>
+            Lädt eine durch <paramref name="fileName" /> angegebene Paketdatei.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />-Instanz, die das Paket darstellt, die von der angegebenen Datei geladen werden.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn beim Lesen des Pakets ein Problem auftritt oder das Paket exportierte Daten enthält.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.DacPackage Load (System.IO.Stream stream, Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.DacPackage Load(class System.IO.Stream stream, valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackage.Load(System.IO.Stream,Microsoft.SqlServer.Dac.DacSchemaModelStorageType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacPackage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+            Stream, aus dem das Paket gelesen werden soll.
+            </param>
+        <param name="modelStorageType">
+            Der Typ des Hintergrundspeichers einer Paketinstanz.
+            </param>
+        <summary>
+            Lädt ein Paket aus dem angegebenen <see cref="T:System.IO.Stream" />.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />-Instanz, die für das Paket geladen wird, aus dem angegebenen <see cref="T:System.IO.Stream" />.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn beim Lesen des Pakets ein Problem auftritt oder das Paket exportierte Daten enthält.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.DacPackage Load (string fileName, Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.DacPackage Load(string fileName, valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackage.Load(System.String,Microsoft.SqlServer.Dac.DacSchemaModelStorageType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacPackage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">
+            Pfad der Paketdatei.
+            </param>
+        <param name="modelStorageType">
+            Der Typ des Hintergrundspeichers einer Paketinstanz.
+            </param>
+        <summary>
+            Lädt eine durch <paramref name="fileName" /> angegebene Paketdatei.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />-Instanz, die das Paket darstellt, die von der angegebenen Datei geladen werden.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn beim Lesen des Pakets ein Problem auftritt oder das Paket exportierte Daten enthält.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.DacPackage Load (System.IO.Stream stream, Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, System.IO.FileAccess packageAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.DacPackage Load(class System.IO.Stream stream, valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, valuetype System.IO.FileAccess packageAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackage.Load(System.IO.Stream,Microsoft.SqlServer.Dac.DacSchemaModelStorageType,System.IO.FileAccess)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacPackage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+        <Parameter Name="packageAccess" Type="System.IO.FileAccess" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+            Stream, aus dem das Paket gelesen werden soll.
+            </param>
+        <param name="modelStorageType">
+            Der Typ des Hintergrundspeichers einer Paketinstanz.
+            </param>
+        <param name="packageAccess">
+            Der Zugriff zum Öffnen des Pakets. Gültige Werte sind <see cref="F:System.IO.FileAccess.Read" /> oder <see cref="F:System.IO.FileAccess.ReadWrite" />.
+            </param>
+        <summary>
+            Lädt ein Paket aus dem angegebenen <see cref="T:System.IO.Stream" />.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />-Instanz, die für das Paket geladen wird, aus dem angegebenen <see cref="T:System.IO.Stream" />.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn beim Lesen des Pakets ein Problem auftritt oder das Paket exportierte Daten enthält.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.DacPackage Load (string fileName, Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, System.IO.FileAccess packageAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.DacPackage Load(string fileName, valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, valuetype System.IO.FileAccess packageAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackage.Load(System.String,Microsoft.SqlServer.Dac.DacSchemaModelStorageType,System.IO.FileAccess)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacPackage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+        <Parameter Name="packageAccess" Type="System.IO.FileAccess" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">
+            Pfad der Paketdatei.
+            </param>
+        <param name="modelStorageType">
+            Der Typ des Hintergrundspeichers einer Paketinstanz.
+            </param>
+        <param name="packageAccess">
+            Der Zugriff zum Öffnen des Pakets. Gültige Werte sind <see cref="F:System.IO.FileAccess.Read" /> oder <see cref="F:System.IO.FileAccess.ReadWrite" />.
+            </param>
+        <summary>
+            Lädt eine durch <paramref name="fileName" /> angegebene Paketdatei.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />-Instanz, die das Paket darstellt, die von der angegebenen Datei geladen werden.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn beim Lesen des Pakets ein Problem auftritt oder das Paket exportierte Daten enthält.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacPackage.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Bezeichner für dieses Paket ab.
+            </summary>
+        <value>
+            Zeichenfolgenbezeichner für dieses Paket.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostDeploymentScript">
+      <MemberSignature Language="C#" Value="public System.IO.Stream PostDeploymentScript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream PostDeploymentScript" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacPackage.PostDeploymentScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Stream ab, der zum Lesen und Schreiben von Skriptcode verwendet wird, der nach dem Bereitstellen des Schemas in diesem Paket ausgeführt wird.
+            </summary>
+        <value>
+          <see cref="T:System.IO.Stream" />Instanz, die zum Lesen und Schreiben von Inhalt des Skripts verwendet werden.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreDeploymentScript">
+      <MemberSignature Language="C#" Value="public System.IO.Stream PreDeploymentScript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream PreDeploymentScript" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacPackage.PreDeploymentScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Stream ab, der zum Lesen und Schreiben von Skriptcode verwendet wird, der vor dem Bereitstellen des Schemas in diesem Paket ausgeführt wird.
+            </summary>
+        <value>
+          <see cref="T:System.IO.Stream" />Instanz, die zum Lesen und Schreiben von Inhalt des Skripts verwendet werden.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unpack">
+      <MemberSignature Language="C#" Value="public void Unpack (string directoryPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unpack(string directoryPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacPackage.Unpack(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="directoryPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="directoryPath">
+            Basisverzeichnis, in das der Paketinhalt eingefügt wird.
+            </param>
+        <summary>
+            Fügen Sie den Inhalt dieses Pakets in das Verzeichnis gemäß <paramref name="directoryPath" />.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn <paramref name="directoryPath" /> ein NULL-Verweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn ein Fehler auftritt, bei dem Versuch, das Paket entpackt werden soll.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public Version Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacPackage.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft Versionsinformationen für dieses Paket ab.
+            </summary>
+        <value>
+          <see cref="P:Microsoft.SqlServer.Dac.DacPackage.Version" />-Struktur, die Versionsinformationen für dieses Paket angibt.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,56 @@
+<Type Name="VersionUtils" FullName="Microsoft.SqlServer.Management.Smo.VersionUtils">
+  <TypeSignature Language="C#" Value="public static class VersionUtils" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VersionUtils extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.VersionUtils" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+                Hilfsklasse, verschiedene Überprüfungen aus versionsbezogenen behandeln
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsSql13Azure12OrLater">
+      <MemberSignature Language="C#" Value="public static bool IsSql13Azure12OrLater (Microsoft.SqlServer.Management.Common.DatabaseEngineType currentDatabaseEngineType, Microsoft.SqlServer.Management.Common.ServerVersion currentServerVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSql13Azure12OrLater(valuetype Microsoft.SqlServer.Management.Common.DatabaseEngineType currentDatabaseEngineType, class Microsoft.SqlServer.Management.Common.ServerVersion currentServerVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.VersionUtils.IsSql13Azure12OrLater(Microsoft.SqlServer.Management.Common.DatabaseEngineType,Microsoft.SqlServer.Management.Common.ServerVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="currentDatabaseEngineType" Type="Microsoft.SqlServer.Management.Common.DatabaseEngineType" />
+        <Parameter Name="currentServerVersion" Type="Microsoft.SqlServer.Management.Common.ServerVersion" />
+      </Parameters>
+      <Docs>
+        <param name="currentDatabaseEngineType">aktuelle Datenbankmodultyp</param>
+        <param name="currentServerVersion">aktuelle Serverversion</param>
+        <summary>
+            Überprüfen Sie, ob die Serverversion größer als oder gleich 13 SQL "oder" SQL-12 in Azure ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

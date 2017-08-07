@@ -1,0 +1,265 @@
+<Type Name="ExpressionNodeChildren" FullName="Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren">
+  <TypeSignature Language="C#" Value="public abstract class ExpressionNodeChildren : Microsoft.SqlServer.Management.Dmf.ExpressionNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExpressionNodeChildren extends Microsoft.SqlServer.Management.Dmf.ExpressionNode" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dmf</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Dmf.ExpressionNode</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Die Basisklasse für Knoten mit untergeordneten Elementen; kann nicht instanziiert werden
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ExpressionNodeChildren ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="protected virtual void Add (Microsoft.SqlServer.Management.Dmf.ExpressionNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Add(class Microsoft.SqlServer.Management.Dmf.ExpressionNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.Add(Microsoft.SqlServer.Management.Dmf.ExpressionNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="Microsoft.SqlServer.Management.Dmf.ExpressionNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">
+        </param>
+        <summary>
+            Fügt der, dass Knoten zur Liste nicht überprüfen, wenn der Knoten vom selben Typ wie zuvor hinzugefügten Knoten besitzt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildrenList">
+      <MemberSignature Language="C#" Value="protected System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Dmf.ExpressionNode&gt; ChildrenList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Management.Dmf.ExpressionNode&gt; ChildrenList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.ChildrenList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Dmf.ExpressionNode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Anzahl der untergeordneten Knoten
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeProperties">
+      <MemberSignature Language="C#" Value="protected override void DeserializeProperties (System.Xml.XmlReader xr, bool includeResult);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeserializeProperties(class System.Xml.XmlReader xr, bool includeResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.DeserializeProperties(System.Xml.XmlReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xr" Type="System.Xml.XmlReader" />
+        <Parameter Name="includeResult" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xr">XmlReader - müssen Leerzeichen ignorieren</param>
+        <param name="includeResult">
+        </param>
+        <summary>
+            Deserialisiert die untergeordneten Knoten
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoEnumAttributes">
+      <MemberSignature Language="C#" Value="protected override void DoEnumAttributes (System.Collections.Generic.List&lt;string&gt; list);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoEnumAttributes(class System.Collections.Generic.List`1&lt;string&gt; list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.DoEnumAttributes(System.Collections.Generic.List{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="list" Type="System.Collections.Generic.List&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="list">
+        </param>
+        <summary>
+            Rekursiv listet Attribute auf.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumChildren">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.Dmf.ExpressionNode&gt; EnumChildren ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.Dmf.ExpressionNode&gt; EnumChildren() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.EnumChildren" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.Dmf.ExpressionNode&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Listet die untergeordneten Elemente des Knotens
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerableChildrenList">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.Dmf.ExpressionNode&gt; EnumerableChildrenList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.Dmf.ExpressionNode&gt; EnumerableChildrenList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.EnumerableChildrenList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.Dmf.ExpressionNode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Liste der untergeordneten Knoten
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualProperties">
+      <MemberSignature Language="C#" Value="protected override bool EqualProperties (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualProperties(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.EqualProperties(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Zu vergleichendes Objekt</param>
+        <summary>
+            Untergeordneten Knoten bestimmten Typ Vergleichstyp und NULL-Zulässigkeit des Vergleichsobjekts überprüft, die vom Aufrufer (Equals)
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeProperties">
+      <MemberSignature Language="C#" Value="protected override void SerializeProperties (System.Xml.XmlWriter xw, bool includeResult);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SerializeProperties(class System.Xml.XmlWriter xw, bool includeResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.SerializeProperties(System.Xml.XmlWriter,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xw" Type="System.Xml.XmlWriter" />
+        <Parameter Name="includeResult" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xw">
+        </param>
+        <param name="includeResult">
+        </param>
+        <summary>
+            Serialisiert die untergeordneten Knoten 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Stellt-Ausdruck als eine Zeichenfolge in T-SQL like-syntax
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

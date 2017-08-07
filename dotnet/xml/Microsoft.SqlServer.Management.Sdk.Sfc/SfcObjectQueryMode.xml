@@ -1,0 +1,71 @@
+<Type Name="SfcObjectQueryMode" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode">
+  <TypeSignature Language="C#" Value="public enum SfcObjectQueryMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SfcObjectQueryMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Diese Enumeration bestimmt die Verwendung des Abfrage-Iteratoren auf die Abfrageergebnisse Objekt. Sie gilt nur für Abfragen, die einen Iterator zurückgibt.
+Zwischenspeichern wird diese Probleme vollständig auf Kosten der ersten Zwischenspeichern aller Ergebnisse der Abfrage im Arbeitsspeicher vermieden.
+Einzelne oder mehrere aktive Abfragen sowohl einen Iterator ohne Zwischenspeicherung verwenden, jedoch beeinflussen, wie der Domäneninstanz reagiert, auf die GetConnection-Methode.
+            
+            All iterators of query results must always be disposed as soon as they are no longer in use regardless of mode.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CachedQuery">
+      <MemberSignature Language="C#" Value="CachedQuery" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode CachedQuery = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode.CachedQuery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            CachedQueries vermeidet Probleme mit geschachtelten oder überlappende aktive Abfragen intern die Abfrageergebnisse zwischengespeichert und darauf durchlaufen.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleActiveQueries">
+      <MemberSignature Language="C#" Value="MultipleActiveQueries" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode MultipleActiveQueries = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode.MultipleActiveQueries" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleActiveQuery">
+      <MemberSignature Language="C#" Value="SingleActiveQuery" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode SingleActiveQuery = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode.SingleActiveQuery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

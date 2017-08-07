@@ -1,0 +1,258 @@
+<Type Name="ConnectionManagerBase" FullName="Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase">
+  <TypeSignature Language="C#" Value="public abstract class ConnectionManagerBase : Microsoft.SqlServer.Dts.Runtime.DtsObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ConnectionManagerBase extends Microsoft.SqlServer.Dts.Runtime.DtsObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DtsObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stellt die abstrakte Basisklasse für Verbindungs-Manager dar. </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ConnectionManagerBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcquireConnection">
+      <MemberSignature Language="C#" Value="public virtual object AcquireConnection (object txn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AcquireConnection(object txn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.AcquireConnection(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="txn" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="txn">Das Handle des Transaktionsobjekts.</param>
+        <summary>Erstellt eine Instanz des Verbindungstyps.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUpdate">
+      <MemberSignature Language="C#" Value="public virtual bool CanUpdate (string CreationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanUpdate(string CreationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.CanUpdate(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="CreationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="CreationName">Der Name der zu aktualisierenden Verbindung.</param>
+        <summary>Ruft ab oder legt einen booleschen Wert ab, der bestimmt, ob ein Verbindungs-Manager unterstützt das Aktualisieren der Verbindungs-XML auf eine neuere Version.</summary>
+        <returns>"true", wenn die Unterstützung für Upgrades vorhanden ist; andernfalls "false". Der Standardwert ist "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public virtual string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Verbindungszeichenfolge für die Verbindung ab oder legt sie fest.</summary>
+        <value>Eine Zeichenfolge, die Verbindungszeichenfolge enthält. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionLevel">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel ProtectionLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel ProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.ProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft unter Verwendung der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel" />-Enumeration einen Wert ab, durch den erzwungen wird, wie vertrauliche Informationen von der Verbindung überwacht werden, oder legt ihn fest.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseConnection">
+      <MemberSignature Language="C#" Value="public virtual void ReleaseConnection (object connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseConnection(object connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.ReleaseConnection(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connection">Die freizugebende Verbindung.</param>
+        <summary>Gibt die während der hergestellte Verbindung frei <see cref="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.AcquireConnection(System.Object)" />. Wird zur Entwurfs- und Laufzeit aufgerufen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Runtime.DTSConnectionManagerScope Scope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSConnectionManagerScope Scope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.Scope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSConnectionManagerScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Bereich der DTS-Verbindungs-Manager für diesen <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase" /> Objekt.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSConnectionManagerScope" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetQualifier">
+      <MemberSignature Language="C#" Value="public virtual void SetQualifier (string qualifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetQualifier(string qualifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.SetQualifier(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qualifier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="qualifier">Der neue Qualifizierer, der für den Verbindungs-Manager festgelegt werden soll.</param>
+        <summary>Ändert einen Qualifizierer für den Verbindungs-Manager, nachdem er erstellt wurde, aber bevor er ausgeführt wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDTCTransactions">
+      <MemberSignature Language="C#" Value="public bool SupportsDTCTransactions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDTCTransactions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.SupportsDTCTransactions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen booleschen Wert zurück, der angibt, ob die Verbindung MS DTC-Transaktionen (Microsoft Distributed Transaction Coordinator) unterstützt.</summary>
+        <value>"true", wenn die Verbindung MS DTC-Transaktionen unterstützt; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetServerVersion">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSTargetServerVersion TargetServerVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSTargetServerVersion TargetServerVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.TargetServerVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSTargetServerVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public virtual void Update (ref string ObjectXml);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Update(string ObjectXml) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.Update(System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ObjectXml" Type="System.String&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ObjectXml">Die XML zur Aktualisierung der vom Verbindungs-Manager gespeicherten XML. </param>
+        <summary>Aktualisiert die von einer früheren Version des Verbindungs-Managers persistent gespeicherte XML.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate (Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents infoEvents);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate(class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents infoEvents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.Validate(Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="infoEvents" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="infoEvents">Ein Objekt, das die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />-Ereignisschnittstelle zum Auslösen von Fehlern, Warnungen oder Informationsereignissen implementiert.</param>
+        <summary>Überprüft die Verbindung und gibt eine Enumeration zurück, die die erfolgreiche Ausführung oder einen Fehler angibt.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public virtual int Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Version dieses Verbindungs-Managers zurück.</summary>
+        <value>Eine ganze Zahl, die die Version angibt. Der Standardwert ist 0.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,164 @@
+<Type Name="BuiltInFunctionLookupBase" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase">
+  <TypeSignature Language="C#" Value="public abstract class BuiltInFunctionLookupBase : Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BuiltInFunctionLookupBase extends System.Object implements class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IBuiltInFunctionLookup</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Bietet die Möglichkeit, integrierte Funktionen zu suchen.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BuiltInFunctionLookupBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BuiltInFunctionLookupBase (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt; allBuiltIns, Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart&gt; dateParts);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt; allBuiltIns, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart&gt; dateParts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase.#ctor(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction},Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="allBuiltIns" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt;" />
+        <Parameter Name="dateParts" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="allBuiltIns">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" />-Elemente, die alle integrierten Funktionen und Systemfunktionen enthält, die mit zwei @-Zeichen (@@) beginnen.</param>
+        <param name="dateParts">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart" />-Elemente, die alle unterstützten Datumsteile enthält.</param>
+        <summary>
+            Initialisiert eine neue Instanz der <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase" />-Klasse unter Verwendung der angegebenen Auflistungen von Metadatenobjekten.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllBuiltIns">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt; AllBuiltIns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt; AllBuiltIns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase.AllBuiltIns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung der integrierten Funktionen und Systemfunktionen ab, die mit zwei @-Zeichen (@@) beginnen.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" />-Elemente, die die integrierten Funktionen und Systemfunktionen enthält, die mit zwei @-Zeichen (@@) beginnen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltInFunctions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt; BuiltInFunctions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt; BuiltInFunctions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase.BuiltInFunctions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung der integrierten Funktionen ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" />-Elemente, die die integrierten Funktionen enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateParts">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart&gt; DateParts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart&gt; DateParts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase.DateParts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung von DATEPART-Argumenten integrierter Funktionen ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart" />-Elemente, die die DATEPART-Argumente integrierter Funktionen enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMultiTypeBuiltInFunction">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction GetMultiTypeBuiltInFunction (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType dataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction GetMultiTypeBuiltInFunction(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType dataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase.GetMultiTypeBuiltInFunction(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der abzurufende Funktionsname.</param>
+        <param name="dataType">Der Datentyp, durch den der generische Rückgabetyp ersetzt werden soll.</param>
+        <summary>
+            Gibt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" /> Objekt, das darstellt ein eine integrierte Funktion, die einem bestehenden Rückgabewert (z. B. "Umwandlung", "Konvertieren" und IDENTITY'functions). Die zurückgegebene Instanz ist der generische Rückgabetyp ersetzt durch das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" />.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Beim Erben von <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" />, wenn Sie eine eigene integrierte Objektliste bereitstellen, müssen Sie diese Methode überschreiben. Andernfalls wird die basisklassenimplementierung der Methode einen null-Verweis zurückgegeben.</remarks>
+        <return>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" /> , die den angegebenen Namen und den Datentyp hat.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalVariables">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt; GlobalVariables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt; GlobalVariables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.BuiltInFunctionLookupBase.GlobalVariables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung der Systemfunktionen ab, die mit zwei @-Zeichen (@@) beginnen.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" />-Elemente, die die Systemfunktionen enthält, die mit zwei @-Zeichen (@@) beginnen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

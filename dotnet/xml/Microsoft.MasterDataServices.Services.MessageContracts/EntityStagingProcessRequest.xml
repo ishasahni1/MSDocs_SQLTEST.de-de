@@ -1,0 +1,139 @@
+<Type Name="EntityStagingProcessRequest" FullName="Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest">
+  <TypeSignature Language="C#" Value="public class EntityStagingProcessRequest : Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityStagingProcessRequest extends Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services.Contracts</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.MessageContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest" /> gibt die Anforderung zum Verarbeiten der entitätsbereitstellung an.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityStagingProcessRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standardkonstruktor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchTag">
+      <MemberSignature Language="C#" Value="public string BatchTag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BatchTag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest.BatchTag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.MessageBodyMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifiziert den Batch, diese Anforderung kann auf angewendet werden.
+Dieses BatchTag sollte bereits über eine andere Methode in das System geladen worden sein.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier EntityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier EntityId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest.EntityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.MessageBodyMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Entität an, auf die sich die Prozessanforderung bezieht.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberType">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.MemberType MemberType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.MasterDataServices.Services.DataContracts.MemberType MemberType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest.MemberType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.MessageBodyMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.MemberType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Elementtyp an, auf den sich die Prozessanforderung bezieht.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionId">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.Identifier VersionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.Identifier VersionId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingProcessRequest.VersionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.MessageBodyMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.Identifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Batch wird dieser Versions-ID zugeordnet werden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

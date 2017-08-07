@@ -1,0 +1,258 @@
+<Type Name="DacExtractOptions" FullName="Microsoft.SqlServer.Dac.DacExtractOptions">
+  <TypeSignature Language="C#" Value="public sealed class DacExtractOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DacExtractOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.DacExtractOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Optionen, die sich auf das Verhalten der Paketextraktion auswirken.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DacExtractOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacExtractOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.DacExtractOptions" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandTimeout">
+      <MemberSignature Language="C#" Value="public int CommandTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CommandTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExtractOptions.CommandTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt das Zeitlimit für Befehle in Sekunden für Abfragen an SQL Server an.
+            </summary>
+        <value>
+            Das Zeitlimit für Befehle in Sekunden.
+Standardwert ist 60
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractAllTableData">
+      <MemberSignature Language="C#" Value="public bool ExtractAllTableData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExtractAllTableData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExtractOptions.ExtractAllTableData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rufen Sie einen booleschen Wert ab oder legen Sie ihn fest, um anzugeben, ob die Daten aller Benutzertabellen extrahiert werden.
+            </summary>
+        <value>
+            "True", wenn die Daten aller Benutzertabellen extrahiert werden. Andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractApplicationScopedObjectsOnly">
+      <MemberSignature Language="C#" Value="public bool ExtractApplicationScopedObjectsOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExtractApplicationScopedObjectsOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExtractOptions.ExtractApplicationScopedObjectsOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rufen Sie einen booleschen Wert ab, der den Bereich der aus der Quelle extrahierten Objekte angibt, oder legen Sie ihn fest.
+            </summary>
+        <value>
+            "True", wenn nur die Objekte im Bereich der Anwendung extrahiert werden sollen. Andernfalls "false", um alle Objekttypen zu extrahieren.
+Der Standardwert ist true.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractReferencedServerScopedElements">
+      <MemberSignature Language="C#" Value="public bool ExtractReferencedServerScopedElements { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExtractReferencedServerScopedElements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExtractOptions.ExtractReferencedServerScopedElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rufen Sie einen booleschen Wert ab oder legen Sie ihn fest, um anzugeben, ob von der Quelle referenzierte serverbezogene Element extrahiert werden sollen.
+            </summary>
+        <value>
+            "True", wenn Verweise auf serverbezogene Elemente extrahiert werden sollen. Andernfalls "false".
+Der Standardwert ist true.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractUsageProperties">
+      <MemberSignature Language="C#" Value="public bool ExtractUsageProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExtractUsageProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExtractOptions.ExtractUsageProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Einsatzeigenschaften enthalten Table.RowCount, Table.IndexSize, Table.DataSize, Table.UsedPages und Table.DataPages.
+Bei "true", werden diese Eigenschaften werden aus der Datenbank extrahiert und im Modell verfügbar sind.
+            </summary>
+        <value>
+            True, wenn von Verwendungseigenschaften extrahiert werden. andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreExtendedProperties">
+      <MemberSignature Language="C#" Value="public bool IgnoreExtendedProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExtendedProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExtractOptions.IgnoreExtendedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob erweiterte Eigenschaften ignoriert werden sollen, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn erweiterte Eigenschaften ignoriert werden, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnorePermissions">
+      <MemberSignature Language="C#" Value="public bool IgnorePermissions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnorePermissions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExtractOptions.IgnorePermissions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob Berechtigungen ignoriert werden sollen, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn die Berechtigungen ignoriert werden, andernfalls "false".
+Der Standardwert ist true.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreUserLoginMappings">
+      <MemberSignature Language="C#" Value="public bool IgnoreUserLoginMappings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreUserLoginMappings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExtractOptions.IgnoreUserLoginMappings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Zuordnungen zwischen Benutzern und Anmeldenamen aus der Datenquelle extrahiert werden sollen.
+            </summary>
+        <value>
+            "True", wenn die Benutzer-/Anmeldezuordnungen ignoriert werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Storage">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.DacSchemaModelStorageType Storage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType Storage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExtractOptions.Storage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacSchemaModelStorageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Typ des Hintergrundspeichers ab, der während der Extraktion für das Schemamodell verwendet wird.
+            </summary>
+        <value>
+            Aufzählungswert für den Typ des Hintergrundspeichers, der während der Extraktion für das Schemamodell verwendet wird.
+Der Standardwert ist "File".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyExtraction">
+      <MemberSignature Language="C#" Value="public bool VerifyExtraction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VerifyExtraction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacExtractOptions.VerifyExtraction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rufen Sie einen booleschen Wert ab, der angibt, ob das extrahierte Paket überprüft werden soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn das Paket überprüft werden soll, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

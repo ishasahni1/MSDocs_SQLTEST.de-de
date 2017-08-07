@@ -1,0 +1,97 @@
+<Type Name="Scanner" FullName="Microsoft.SqlServer.Management.SqlParser.Parser.Scanner">
+  <TypeSignature Language="C#" Value="public class Scanner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Scanner extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Parser.Scanner" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Durchsucht Transact-SQL nach einzelnen Codeeinheiten oder Token.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+    <altmember cref="T:Microsoft.SqlServer.Management.SqlParser.Parser.Parser" />
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scanner (Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Scanner.#ctor(Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">Das T:Microsoft.SqlServer.Management.SqlParser.ParseOptions-Objekt, das die SQL-Vorgang Parseroptionen enthält.</param>
+        <summary>
+            Initialisiert eine neue Instanz der Scanner-Klasse, die mit der angegebenen Parseroptionen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNext">
+      <MemberSignature Language="C#" Value="public int GetNext (ref int state, out int start, out int end, out bool isPairMatch, out bool isExecAutoParamHelp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetNext(int32 state, int32 start, int32 end, bool isPairMatch, bool isExecAutoParamHelp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Scanner.GetNext(System.Int32@,System.Int32@,System.Int32@,System.Boolean@,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="start" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="end" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="isPairMatch" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isExecAutoParamHelp" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="state">Der Lexer-Zustand.</param>
+        <param name="start">Die Startposition des Tokens.</param>
+        <param name="end">Die Endposition des Tokens.</param>
+        <param name="isPairMatch">"true", wenn es sich um ein übereinstimmendes tokenpaar handelt; andernfalls "false".</param>
+        <param name="isExecAutoParamHelp">"true", wenn Parameterhilfe vom Token angefordert wird; andernfalls "false".</param>
+        <summary>
+            Gibt das nächste Token, den internen Lexer-Zustand sowie Start- und Endposition zurück.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Das nächste Token.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSource">
+      <MemberSignature Language="C#" Value="public void SetSource (string source, int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSource(string source, int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.Scanner.SetSource(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="source">Der zu durchsuchende Text.</param>
+        <param name="offset">Der Offset im Quelltext, bei dem der Suchvorgang beginnen soll.</param>
+        <summary>
+            Legt den zu durchsuchenden Quelltext fest.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

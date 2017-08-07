@@ -1,0 +1,186 @@
+<Type Name="IDTSExecuteSQL" FullName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL">
+  <TypeSignature Language="C#" Value="public interface IDTSExecuteSQL" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDTSExecuteSQL" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SQLTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Definiert die Eigenschaften für den Task "SQL ausführen".</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BypassPrepare">
+      <MemberSignature Language="C#" Value="public bool BypassPrepare { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BypassPrepare" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL.BypassPrepare" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die Vorbereitung der Anweisung beim Senden der SQL-Anweisung an das Managementsystem für relationale Datenbanken (RDBMS) vom Task "SQL ausführen" übersprungen wird, oder legt ihn fest.</summary>
+        <value>"true", wenn der Task die Vorbereitung des SQL-Befehls umgeht; "false", wenn die Anweisung vor der Ausführung der vom RDBMS vorbereitet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodePage">
+      <MemberSignature Language="C#" Value="public uint CodePage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 CodePage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL.CodePage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Codepage ab, die beim Übersetzen von Variablenwerten, die als Unicode-Doppelbyte-Zeichen gespeichert sind, in Multibytezeichen verwendet wird, oder legt sie fest.</summary>
+        <value>Die für die Übersetzung zu verwendende Codepage.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="public string Connection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Connection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL.Connection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Verbindungs-Managers für den Task "SQL ausführen" ab oder legt ihn fest.</summary>
+        <value>Der Name des Verbindungs-Managers.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStoredProcedure">
+      <MemberSignature Language="C#" Value="public bool IsStoredProcedure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsStoredProcedure" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL.IsStoredProcedure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die vom Task "SQL ausführen" angegebene SQL-Anweisung eine gespeicherte Prozedur ist, oder legt ihn fest.</summary>
+        <value>"true", wenn die SQL-Anweisung, die der Task SQL ausführen ausgeführt wird, eine gespeicherte Prozedur ist; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterBindings">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSParameterBindings ParameterBindings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSParameterBindings ParameterBindings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL.ParameterBindings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSParameterBindings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein Objekt, das implementiert <see cref="T:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSParameterBindings" /> Schnittstelle.</summary>
+        <value>Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSParameterBindings" /> Schnittstelle.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultSetBindings">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSResultBindings ResultSetBindings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSResultBindings ResultSetBindings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL.ResultSetBindings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSResultBindings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein Objekt, das implementiert <see cref="T:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSResultBindings" /> Schnittstelle.</summary>
+        <value>Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSResultBindings" /> Schnittstelle.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultSetType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ResultSetType ResultSetType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ResultSetType ResultSetType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL.ResultSetType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ResultSetType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Typ des Resultsets angibt, das von der vom Task "SQL ausführen" ausgeführten SQL-Anweisung zurückgegeben wird, oder legt ihn fest.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ResultSetType" />-Enumeration, der den Typ des von der SQL-Anweisung zurückgegebenen Resultsets angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlStatementSource">
+      <MemberSignature Language="C#" Value="public string SqlStatementSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SqlStatementSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL.SqlStatementSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Quelle ab, in der die vom Task "SQL ausführen" ausgeführte SQL-Anweisung enthalten ist, oder legt ihn fest.</summary>
+        <value>Der Name der Quelle, in der die vom Task "SQL ausführen" ausgeführte SQL-Anweisung enthalten ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlStatementSourceType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.SqlStatementSourceType SqlStatementSourceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.SqlStatementSourceType SqlStatementSourceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL.SqlStatementSourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.SqlStatementSourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Typ der Quelle ab, in der die vom Task "SQL ausführen" ausgeführte SQL-Anweisung enthalten ist, oder legt ihn fest.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.SqlStatementSourceType" /> -Enumeration, der den Typ der Quelle für die SQL-Anweisung beschreibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeOut">
+      <MemberSignature Language="C#" Value="public uint TimeOut { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TimeOut" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.IDTSExecuteSQL.TimeOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die maximale Ausführungsdauer des Tasks in Sekunden an, bevor ein Timeout eintritt, oder legt sie fest.</summary>
+        <value>Die maximale Ausführungsdauer in Sekunden, bevor ein Timeout für den Task eintritt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

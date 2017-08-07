@@ -1,0 +1,1146 @@
+<Type Name="ServerConnection" FullName="Microsoft.SqlServer.Management.Common.ServerConnection">
+  <TypeSignature Language="C#" Value="public sealed class ServerConnection : Microsoft.SqlServer.Management.Common.ConnectionManager, Microsoft.SqlServer.Management.Common.ISfcConnection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServerConnection extends Microsoft.SqlServer.Management.Common.ConnectionManager implements class Microsoft.SqlServer.Management.Common.ISfcConnection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Common.ServerConnection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ConnectionInfo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Common.ConnectionManager</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.ISfcConnection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary />
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerConnection (Microsoft.SqlServer.Management.Common.IRenewableToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Common.IRenewableToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.#ctor(Microsoft.SqlServer.Management.Common.IRenewableToken)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="token" Type="Microsoft.SqlServer.Management.Common.IRenewableToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">Eine optionale zugriffstokenanbieter</param>
+        <summary>
+            Erstellt ein ServerConnection-Objekt, das im Token dauert.
+Der zusätzliche boolesche Wert wird verwendet, um diesen Konstruktor überladen, da ein anderer Konstruktor mit der Zeichenfolge vorhanden ist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerConnection (Microsoft.SqlServer.Management.Common.SqlConnectionInfo sci);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Common.SqlConnectionInfo sci) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.#ctor(Microsoft.SqlServer.Management.Common.SqlConnectionInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sci" Type="Microsoft.SqlServer.Management.Common.SqlConnectionInfo" />
+      </Parameters>
+      <Docs>
+        <param name="sci">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerConnection (System.Data.SqlClient.SqlConnection sqlConnection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.SqlClient.SqlConnection sqlConnection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.#ctor(System.Data.SqlClient.SqlConnection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sqlConnection" Type="System.Data.SqlClient.SqlConnection" />
+      </Parameters>
+      <Docs>
+        <param name="sqlConnection">
+        </param>
+        <summary>
+            Erstellt ein neues ServerConnection-Objekt aus der angegebenen SqlConnection
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerConnection (string serverInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverInstance" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serverInstance">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerConnection (System.Data.SqlClient.SqlConnection sqlConnection, Microsoft.SqlServer.Management.Common.IRenewableToken accessToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.SqlClient.SqlConnection sqlConnection, class Microsoft.SqlServer.Management.Common.IRenewableToken accessToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.#ctor(System.Data.SqlClient.SqlConnection,Microsoft.SqlServer.Management.Common.IRenewableToken)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sqlConnection" Type="System.Data.SqlClient.SqlConnection" />
+        <Parameter Name="accessToken" Type="Microsoft.SqlServer.Management.Common.IRenewableToken" />
+      </Parameters>
+      <Docs>
+        <param name="sqlConnection">
+        </param>
+        <param name="accessToken">
+        </param>
+        <summary>
+            Erstellt ein neues ServerConnection-Objekt 
+             </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerConnection (string serverInstance, string userName, System.Security.SecureString password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverInstance, string userName, class System.Security.SecureString password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.#ctor(System.String,System.String,System.Security.SecureString)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverInstance" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="serverInstance">Muss hinzugefügt werden.</param>
+        <param name="userName">Muss hinzugefügt werden.</param>
+        <param name="password">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerConnection (string serverInstance, string userName, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverInstance, string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serverInstance" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serverInstance">Muss hinzugefügt werden.</param>
+        <param name="userName">Muss hinzugefügt werden.</param>
+        <param name="password">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchSeparator">
+      <MemberSignature Language="C#" Value="public string BatchSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BatchSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.BatchSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Definiert die von den Methoden ExecuteNonQuery verwendete Batchtrennzeichen an. Standardwert ist "GO".
+Das Batchtrennzeichen wird Groß-/Kleinschreibung.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTransaction">
+      <MemberSignature Language="C#" Value="public void BeginTransaction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginTransaction() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.BeginTransaction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Startet eine neue Transaktion. Wenn CaptureMode auf "true" festgelegt ist, wird die Transaction-Anweisung der Capture-Puffer hinzugefügt werden. Es ist möglich, die Transaktionen verschachteln.
+Es ist Aufgabe des Benutzers zu bestätigen oder Rückgängig jede geöffnete Transaktion.
+Es ist nicht sichergestellt, dass alle T-SQL-ausgegeben, die für das Objektmodell kann von einer Transaktion gekapselt werden. Darüber hinaus wird der Status der Objekte, die geändert wurden nicht den tatsächlichen Status der widerzuspiegeln, bis eine Transaktion ein Commit ausgeführt wurde oder nachdem eine Transaktion gesicherten zurückgesetzt wurde.
+Es ist der Verantwortung des Benutzers, für die betroffenen Objekte zu aktualisieren.
+Verwenden Sie mit Vorsicht zu verwenden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public void Cancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Cancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.Cancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangePassword">
+      <MemberSignature Language="C#" Value="public void ChangePassword (System.Security.SecureString newPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ChangePassword(class System.Security.SecureString newPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ChangePassword(System.Security.SecureString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newPassword" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="newPassword">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangePassword">
+      <MemberSignature Language="C#" Value="public void ChangePassword (string newPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ChangePassword(string newPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ChangePassword(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="newPassword">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommitTransaction">
+      <MemberSignature Language="C#" Value="public void CommitTransaction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CommitTransaction() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.CommitTransaction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Führt einen Commit für die Transaktion aus.
+Wenn CaptureMode auf "true" festgelegt ist, wird der Befehl "Transaction" Sammlungspuffers hinzugefügt werden.
+Ausnahmen: NotInTransactionException
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.ServerType ConnectionType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.ServerType ConnectionType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.ConnectionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.ServerConnection Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Common.ServerConnection Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerConnection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Diese Funktion führt eine tiefe Kopie
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteNonQuery">
+      <MemberSignature Language="C#" Value="public int[] ExecuteNonQuery (System.Collections.Specialized.StringCollection sqlCommands);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32[] ExecuteNonQuery(class System.Collections.Specialized.StringCollection sqlCommands) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteNonQuery(System.Collections.Specialized.StringCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommands" Type="System.Collections.Specialized.StringCollection" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommands">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteNonQuery">
+      <MemberSignature Language="C#" Value="public int ExecuteNonQuery (string sqlCommand);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteNonQuery(string sqlCommand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteNonQuery(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommand" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommand">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteNonQuery">
+      <MemberSignature Language="C#" Value="public int[] ExecuteNonQuery (System.Collections.Specialized.StringCollection sqlCommands, Microsoft.SqlServer.Management.Common.ExecutionTypes executionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32[] ExecuteNonQuery(class System.Collections.Specialized.StringCollection sqlCommands, valuetype Microsoft.SqlServer.Management.Common.ExecutionTypes executionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteNonQuery(System.Collections.Specialized.StringCollection,Microsoft.SqlServer.Management.Common.ExecutionTypes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommands" Type="System.Collections.Specialized.StringCollection" />
+        <Parameter Name="executionType" Type="Microsoft.SqlServer.Management.Common.ExecutionTypes" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommands">
+        </param>
+        <param name="executionType">
+        </param>
+        <summary>
+            Führt die T-SQL-Anweisungen in der StringCollection.
+Der Befehl Abschlusszeichen ("GO") wird vom ExecuteNonQuery erkannt.
+Mit der GO-Anweisung getrennte Batches werden gesendet und einzeln ausgeführt werden.
+Die Anweisung aufgezeichnet und nicht ausgeführt werden, wenn CaptureMode festgelegt wurde auf "true".
+Ein Array von Int-Werten wird zurückgegeben, die die Anzahl der für jede Anweisung in der StringCollection betroffenen Zeilen enthalten.
+Wenn mehrere Batches ausgeführt werden, wird die Gesamtanzahl der betroffenen Zeilen eines alle Batches zurückgegeben.
+Wenn die Verbindung mit dem Server nicht geöffnet ist, wird die Connect()-Methode aufgerufen werden.
+Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteNonQuery">
+      <MemberSignature Language="C#" Value="public int ExecuteNonQuery (string sqlCommand, Microsoft.SqlServer.Management.Common.ExecutionTypes executionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteNonQuery(string sqlCommand, valuetype Microsoft.SqlServer.Management.Common.ExecutionTypes executionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteNonQuery(System.String,Microsoft.SqlServer.Management.Common.ExecutionTypes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommand" Type="System.String" />
+        <Parameter Name="executionType" Type="Microsoft.SqlServer.Management.Common.ExecutionTypes" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommand">
+        </param>
+        <param name="executionType">
+        </param>
+        <summary>
+            Führt eine T-SQL-Anweisung. Der Befehl Abschlusszeichen ("GO") wird vom ExecuteNonQuery erkannt. Batches werden gesendet und einzeln ausgeführt werden.
+Die Anweisung aufgezeichnet und nicht ausgeführt werden, wenn CaptureMode festgelegt wurde auf "true".
+Int-Wert wird zurückgegeben, die die Anzahl der betroffenen Zeilen enthalten. Wenn mehrere Batches ausgeführt werden, wird die Gesamtanzahl der betroffenen Zeilen eines alle Batches zurückgegeben.
+Wenn die Verbindung mit dem Server nicht geöffnet ist, wird die Connect()-Methode aufgerufen werden.
+Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteNonQuery">
+      <MemberSignature Language="C#" Value="public int[] ExecuteNonQuery (System.Collections.Specialized.StringCollection sqlCommands, Microsoft.SqlServer.Management.Common.ExecutionTypes executionType, bool retry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32[] ExecuteNonQuery(class System.Collections.Specialized.StringCollection sqlCommands, valuetype Microsoft.SqlServer.Management.Common.ExecutionTypes executionType, bool retry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteNonQuery(System.Collections.Specialized.StringCollection,Microsoft.SqlServer.Management.Common.ExecutionTypes,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommands" Type="System.Collections.Specialized.StringCollection" />
+        <Parameter Name="executionType" Type="Microsoft.SqlServer.Management.Common.ExecutionTypes" />
+        <Parameter Name="retry" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommands">
+        </param>
+        <param name="executionType">
+        </param>
+        <param name="retry">Während der Ausführung werden, ob es versucht sollten, wenn eine Ausnahme ausgelöst</param>
+        <summary>
+            Führt die T-SQL-Anweisungen in der StringCollection.
+Der Befehl Abschlusszeichen ("GO") wird vom ExecuteNonQuery erkannt.
+Mit der GO-Anweisung getrennte Batches werden gesendet und einzeln ausgeführt werden.
+Die Anweisung aufgezeichnet und nicht ausgeführt werden, wenn CaptureMode festgelegt wurde auf "true".
+Ein Array von Int-Werten wird zurückgegeben, die die Anzahl der für jede Anweisung in der StringCollection betroffenen Zeilen enthalten.
+Wenn mehrere Batches ausgeführt werden, wird die Gesamtanzahl der betroffenen Zeilen eines alle Batches zurückgegeben.
+Wenn die Verbindung mit dem Server nicht geöffnet ist, wird die Connect()-Methode aufgerufen werden.
+Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteNonQuery">
+      <MemberSignature Language="C#" Value="public int ExecuteNonQuery (string sqlCommand, Microsoft.SqlServer.Management.Common.ExecutionTypes executionType, bool retry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteNonQuery(string sqlCommand, valuetype Microsoft.SqlServer.Management.Common.ExecutionTypes executionType, bool retry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteNonQuery(System.String,Microsoft.SqlServer.Management.Common.ExecutionTypes,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommand" Type="System.String" />
+        <Parameter Name="executionType" Type="Microsoft.SqlServer.Management.Common.ExecutionTypes" />
+        <Parameter Name="retry" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommand">
+        </param>
+        <param name="executionType">
+        </param>
+        <param name="retry">Während der Ausführung werden, ob es versucht sollten, wenn eine Ausnahme ausgelöst</param>
+        <summary>
+            Führt eine T-SQL-Anweisung. Der Befehl Abschlusszeichen ("GO") wird vom ExecuteNonQuery erkannt. Batches werden gesendet und einzeln ausgeführt werden.
+Die Anweisung aufgezeichnet und nicht ausgeführt werden, wenn CaptureMode festgelegt wurde auf "true".
+Int-Wert wird zurückgegeben, die die Anzahl der betroffenen Zeilen enthalten. Wenn mehrere Batches ausgeführt werden, wird die Gesamtanzahl der betroffenen Zeilen eines alle Batches zurückgegeben.
+Wenn die Verbindung mit dem Server nicht geöffnet ist, wird die Connect()-Methode aufgerufen werden.
+Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteReader">
+      <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlDataReader ExecuteReader (string sqlCommand);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlDataReader ExecuteReader(string sqlCommand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteReader(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommand" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommand">Der SQL-Befehlstext.</param>
+        <summary>
+            T-SQL-Anweisungen ausgeführt.
+SqlDataReader-Objekt wird zurückgegeben, die verwendet werden können, zum Lesen des Streams von Zeilen, die von SQL Server zurückgegeben werden.
+Wenn die Verbindung mit dem Server nicht geöffnet ist, wird die Connect()-Methode aufgerufen werden.
+Diese nicht automatisch getrennt Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns>Der Datenleser.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteReader">
+      <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlDataReader ExecuteReader (string sqlCommand, out System.Data.SqlClient.SqlCommand command);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlDataReader ExecuteReader(string sqlCommand, class System.Data.SqlClient.SqlCommand command) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteReader(System.String,System.Data.SqlClient.SqlCommand@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommand" Type="System.String" />
+        <Parameter Name="command" Type="System.Data.SqlClient.SqlCommand&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommand">Der SQL-Befehlstext.</param>
+        <param name="command">Das resultierende Abbrüche Pipe Reader Daten SqlCommand-Objekt.</param>
+        <summary>
+            T-SQL-Anweisungen ausgeführt.
+SqlDataReader-Objekt wird zurückgegeben, die verwendet werden können, zum Lesen des Streams von Zeilen, die von SQL Server zurückgegeben werden.
+Ein SqlCommand-Objekt wird auch zurückgegeben, kann Data Reader Pipe Abbrechen, wenn ein Abbruch eine lang andauernde Abfrage erforderlich ist, verwendet werden.
+Diese nicht automatisch getrennt Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns>Der Datenleser.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteScalar">
+      <MemberSignature Language="C#" Value="public object[] ExecuteScalar (System.Collections.Specialized.StringCollection sqlCommands);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object[] ExecuteScalar(class System.Collections.Specialized.StringCollection sqlCommands) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteScalar(System.Collections.Specialized.StringCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommands" Type="System.Collections.Specialized.StringCollection" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommands">
+        </param>
+        <summary>
+            Führt die T-SQL-Anweisungen in der StringCollection.
+Ein Array von Objekten zurückgegeben werden, die jeweils die erste Spalte der ersten Zeile des Resultsets der einzelnen Anweisung ausgeführt.
+Wenn die Verbindung mit dem Server nicht geöffnet ist, wird die Connect()-Methode aufgerufen werden.
+Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteScalar">
+      <MemberSignature Language="C#" Value="public object ExecuteScalar (string sqlCommand);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ExecuteScalar(string sqlCommand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteScalar(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommand" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommand">
+        </param>
+        <summary>
+            Führt eine T-SQL-Anweisung.
+Ein Objekte zurückgegeben, die die erste Spalte der ersten Zeile des Resultsets enthält.
+Wenn die Verbindung mit dem Server nicht geöffnet ist, wird die Connect()-Methode aufgerufen werden.
+Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteWithResults">
+      <MemberSignature Language="C#" Value="public System.Data.DataSet[] ExecuteWithResults (System.Collections.Specialized.StringCollection sqlCommands);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataSet[] ExecuteWithResults(class System.Collections.Specialized.StringCollection sqlCommands) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteWithResults(System.Collections.Specialized.StringCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommands" Type="System.Collections.Specialized.StringCollection" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommands">
+        </param>
+        <summary>
+            Führt die T-SQL-Anweisungen in der StringCollection.
+Ein Array von DataSets werden zurückgegeben, die die Ergebnisse für jede Anweisung in der StringCollection enthalten.
+Wenn die Verbindung mit dem Server nicht geöffnet ist, wird die Connect()-Methode aufgerufen werden.
+Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteWithResults">
+      <MemberSignature Language="C#" Value="public System.Data.DataSet ExecuteWithResults (string sqlCommand);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataSet ExecuteWithResults(string sqlCommand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteWithResults(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommand" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommand">
+        </param>
+        <summary>
+            Führt die T-SQL-Anweisungen im "SqlCommand" aus.
+Ein DataSet wird zurückgegeben, die die Ergebnisse enthält.
+Wenn die Verbindung mit dem Server nicht geöffnet ist, wird die Connect()-Methode aufgerufen werden.
+Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteWithResults">
+      <MemberSignature Language="C#" Value="public System.Data.DataSet ExecuteWithResults (string sqlCommand, bool retry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataSet ExecuteWithResults(string sqlCommand, bool retry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.ExecuteWithResults(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlCommand" Type="System.String" />
+        <Parameter Name="retry" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sqlCommand">
+        </param>
+        <param name="retry">Während der Ausführung werden, ob es versucht sollten, wenn eine Ausnahme ausgelöst</param>
+        <summary>
+            Führt die T-SQL-Anweisungen im "SqlCommand" aus.
+Ein DataSet wird zurückgegeben, die die Ergebnisse enthält.
+Wenn die Verbindung mit dem Server nicht geöffnet ist, wird die Connect()-Methode aufgerufen werden.
+Ausnahmen: ConnectionFailureException ExecutionFailureExeception
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedServerRoles">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.FixedServerRoles FixedServerRoles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.FixedServerRoles FixedServerRoles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.FixedServerRoles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.FixedServerRoles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt eine Enumeration, die die festen Serverrolle angegeben, für der die Anmeldung Mitglied ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.ServerConnection GetDatabaseConnection (string dbName, bool poolConnection = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Common.ServerConnection GetDatabaseConnection(string dbName, bool poolConnection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.GetDatabaseConnection(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dbName" Type="System.String" />
+        <Parameter Name="poolConnection" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dbName">
+        </param>
+        <param name="poolConnection">
+        </param>
+        <summary>
+                Gibt eine Verbindung mit dem angegebenen Datenbanknamen in der Verbindungszeichenfolge
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.ServerConnection GetDatabaseConnection (string dbName, bool poolConnection, Microsoft.SqlServer.Management.Common.IRenewableToken accessToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Common.ServerConnection GetDatabaseConnection(string dbName, bool poolConnection, class Microsoft.SqlServer.Management.Common.IRenewableToken accessToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.GetDatabaseConnection(System.String,System.Boolean,Microsoft.SqlServer.Management.Common.IRenewableToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dbName" Type="System.String" />
+        <Parameter Name="poolConnection" Type="System.Boolean" />
+        <Parameter Name="accessToken" Type="Microsoft.SqlServer.Management.Common.IRenewableToken" />
+      </Parameters>
+      <Docs>
+        <param name="dbName">
+        </param>
+        <param name="poolConnection">
+        </param>
+        <param name="accessToken">
+        </param>
+        <summary>
+            Gibt eine Verbindung mit dem angegebenen Datenbanknamen in der Verbindungszeichenfolge
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInFixedServerRole">
+      <MemberSignature Language="C#" Value="public bool IsInFixedServerRole (Microsoft.SqlServer.Management.Common.FixedServerRoles fixedServerRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsInFixedServerRole(valuetype Microsoft.SqlServer.Management.Common.FixedServerRoles fixedServerRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.IsInFixedServerRole(Microsoft.SqlServer.Management.Common.FixedServerRoles)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fixedServerRole" Type="Microsoft.SqlServer.Management.Common.FixedServerRoles" />
+      </Parameters>
+      <Docs>
+        <param name="fixedServerRole">Muss hinzugefügt werden.</param>
+        <summary>
+            Testet, ob der Anmeldename Mitglied einer angegebenen Serverrolle ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Common.ISfcConnection.Connect">
+      <MemberSignature Language="C#" Value="bool ISfcConnection.Connect ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.SqlServer.Management.Common.ISfcConnection.Connect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.Microsoft#SqlServer#Management#Common#ISfcConnection#Connect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Common.ISfcConnection.Copy">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Common.ISfcConnection ISfcConnection.Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection Microsoft.SqlServer.Management.Common.ISfcConnection.Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.Microsoft#SqlServer#Management#Common#ISfcConnection#Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Common.ISfcConnection.Disconnect">
+      <MemberSignature Language="C#" Value="bool ISfcConnection.Disconnect ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.SqlServer.Management.Common.ISfcConnection.Disconnect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.Microsoft#SqlServer#Management#Common#ISfcConnection#Disconnect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Common.ISfcConnection.ServerVersion">
+      <MemberSignature Language="C#" Value="Version Microsoft.SqlServer.Management.Common.ISfcConnection.ServerVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version Microsoft.SqlServer.Management.Common.ISfcConnection.ServerVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.Microsoft#SqlServer#Management#Common#ISfcConnection#ServerVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Common.ISfcConnection.ToEnumeratorObject">
+      <MemberSignature Language="C#" Value="object ISfcConnection.ToEnumeratorObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object Microsoft.SqlServer.Management.Common.ISfcConnection.ToEnumeratorObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.Microsoft#SqlServer#Management#Common#ISfcConnection#ToEnumeratorObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizeQuery">
+      <MemberSignature Language="C#" Value="public static string NormalizeQuery (string QueryText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string NormalizeQuery(string QueryText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.NormalizeQuery(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="QueryText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="QueryText">
+        </param>
+        <summary>
+            Für die oben genannten Funktion überladen – Einzelheiten finden Sie unter
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizeQuery">
+      <MemberSignature Language="C#" Value="public static string NormalizeQuery (string QueryText, bool QuotedIdentifiers);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string NormalizeQuery(string QueryText, bool QuotedIdentifiers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.NormalizeQuery(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="QueryText" Type="System.String" />
+        <Parameter Name="QuotedIdentifiers" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="QueryText">Abfragetext normalisiert werden sollen</param>
+        <param name="QuotedIdentifiers">Wechseln Sie gibt an, ob Abfragetext QUOTED_IDENTIFER zu aktivierenden erwartet</param>
+        <summary>
+             Übersetzt eine Abfrage mit eingebetteten Literale normalisierter Form (alle Literale von einem standard-Token ersetzt)
+             </summary>
+        <returns>Abfragetext mit Inline-Literalen in übersetzt? Symbole</returns>
+        <remarks>
+             Beispiele:
+            
+             SELECT * FROM table WHERE column = 123
+            
+             becomes:
+            
+             SELECT * FROM table WHERE column = ?
+            
+             SELECT * FROM table WHERE column = 'foo'
+            
+             becomes:
+            
+             SELECT * FROM table WHERE column = '?'
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterizationMode">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Common.QueryParameterizationMode ParameterizationMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.SqlServer.Management.Common.QueryParameterizationMode ParameterizationMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.ParameterizationMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.QueryParameterizationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessID">
+      <MemberSignature Language="C#" Value="public int ProcessID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ProcessID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.ProcessID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die ProcessID-Eigenschaft gibt die SQL Server-Prozess-ID für die Verbindung verwendet wird, von dem ServerConnection-Objekt zurück.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RollBackTransaction">
+      <MemberSignature Language="C#" Value="public void RollBackTransaction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RollBackTransaction() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ServerConnection.RollBackTransaction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Bricht eine Transaktion (alle vorgenommenen Änderungen werden nicht in der Datenbank gespeichert werden).
+Wenn CaptureMode auf "true" festgelegt ist, wird der Befehl "Transaction" Sammlungspuffers hinzugefügt werden.
+Ausnahmen: NotInTransactionException
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlExecutionModes">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.SqlExecutionModes SqlExecutionModes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.SqlExecutionModes SqlExecutionModes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.SqlExecutionModes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.SqlExecutionModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Bestimmt, ob die SQL-Anweisungen erfasst oder an den Server gesendet werden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatementTimeout">
+      <MemberSignature Language="C#" Value="public int StatementTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StatementTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.StatementTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Dies ist die Anzahl der Sekunden an, denen eine Anweisung versucht wird, an den Server gesendet werden, bevor ein Fehler auftritt.
+Standardwert ist 600 Sekunden (identisch mit Shiloh).
+Ausnahmen: InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionDepth">
+      <MemberSignature Language="C#" Value="public int TransactionDepth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TransactionDepth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.TransactionDepth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die transaktionstiefe enthält, als vom Objektmodell gezählt. Dies ist keine Transaktionen, die auf dem Server oder durch das Ausgeben von BEGIN TRAN-Anweisung mit der ExecuteNonQuery-Methode kann gestartet wurden, nicht enthalten.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueLogin">
+      <MemberSignature Language="C#" Value="public string TrueLogin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TrueLogin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.TrueLogin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die TrueLogin-Eigenschaft gibt den Datensatz-Anmeldenamen, die von der aktuellen Verbindung verwendete zurück.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueName">
+      <MemberSignature Language="C#" Value="public string TrueName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TrueName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.TrueName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TrueName-Eigenschaft gibt das Resultset der globalen Microsoft® SQL Server-Funktion @@INSTANCENAME.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseMode">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Common.DeferredUseMode UseMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.SqlServer.Management.Common.DeferredUseMode UseMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.UseMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.DeferredUseMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserProfile">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.ServerUserProfiles UserProfile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.ServerUserProfiles UserProfile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ServerConnection.UserProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerUserProfiles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die UserProfile-Eigenschaft gibt eine allgemeine rollenbeschreibung für die Microsoft SQL Server-Anmeldung, die von der aktuellen Verbindung verwendet.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

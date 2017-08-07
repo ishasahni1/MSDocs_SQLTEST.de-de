@@ -1,0 +1,636 @@
+<Type Name="CollectorConfigStore" FullName="Microsoft.SqlServer.Management.Collector.CollectorConfigStore">
+  <TypeSignature Language="C#" Value="public sealed class CollectorConfigStore : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, Microsoft.SqlServer.Management.Common.IAlterable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CollectorConfigStore extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance implements class Microsoft.SqlServer.Management.Common.IAlterable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Collector.CollectorConfigStore" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Collector</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary />
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CollectorConfigStore ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt eine neue Instanz der Konfigurationsspeicher
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CollectorConfigStore (Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">
+        </param>
+        <summary>
+            Erstellt eine neue Instanz der dem Konfigurationsspeicher, der eine Verbindung mit dem Hostserver für den Collector erteilt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alter">
+      <MemberSignature Language="C#" Value="public void Alter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Alter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Alter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Aktualisieren Sie die Config-Store-Parameter auf dem server
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheDirectory">
+      <MemberSignature Language="C#" Value="public string CacheDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CacheDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.CacheDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Geben Sie die Daten zwischen den Paketen sammeln und Hochladen von jede Sammlung, auf dem temporäre Verzeichnis gespeichert ist.
+Wenn dieser Wert Null ist, wird er zum Zeitpunkt der Ausführung auf den Wert in der Umgebungsvariable "TEMP" gespeichert standardmäßig.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheWindow">
+      <MemberSignature Language="C#" Value="public int CacheWindow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CacheWindow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.CacheWindow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dies ist die Beibehaltungsdauer der lokal gesammelten Daten im Stagingbereich zwischen den Paketen sammeln und hochladen. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionSets">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Collector.CollectionSetCollection CollectionSets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Collector.CollectionSetCollection CollectionSets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.CollectionSets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Collector.CollectionSet))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Collector.CollectionSetCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt eine Auflistung von alle Sammlungssätze, die derzeit im Konfigurationsspeicher definiert.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureTransactionPerformanceCollectors">
+      <MemberSignature Language="C#" Value="public void ConfigureTransactionPerformanceCollectors (System.Data.SqlClient.SqlConnection warehouseConnection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ConfigureTransactionPerformanceCollectors(class System.Data.SqlClient.SqlConnection warehouseConnection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.ConfigureTransactionPerformanceCollectors(System.Data.SqlClient.SqlConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="warehouseConnection" Type="System.Data.SqlClient.SqlConnection" />
+      </Parameters>
+      <Docs>
+        <param name="warehouseConnection">Muss hinzugefügt werden.</param>
+        <summary>
+            Methode erstellt transaktionsleistungsdaten-Sammlungssätze, falls sie noch nicht vorhanden
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.Collector.CollectorException" />
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityKey">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.CreateIdentityKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableCollector">
+      <MemberSignature Language="C#" Value="public void DisableCollector ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisableCollector() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.DisableCollector" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Deaktivieren Sie den Sammler
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableCollector">
+      <MemberSignature Language="C#" Value="public void EnableCollector ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnableCollector() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.EnableCollector" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Aktivieren Sie den Sammler
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Data)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            True, wenn der Sammler aktiviert ist
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection EnumTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection EnumTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.EnumTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Eine Auflistung aller definierten sammlertypen auf th Server zurück
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCollection">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection (string elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection(string elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.GetChildCollection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityKey">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Key IdentityKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Collector.CollectorConfigStore/Key IdentityKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.IdentityKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Collector.CollectorConfigStore+Key</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MDWDatabase">
+      <MemberSignature Language="C#" Value="public string MDWDatabase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MDWDatabase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.MDWDatabase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Name der hosting-Verwaltungs-Data Warehouse-Datenbank
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MDWInstance">
+      <MemberSignature Language="C#" Value="public string MDWInstance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MDWInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.MDWInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Name der hosting-Verwaltungs-Data Warehouse-Instanz
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable.ScriptAlter">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ISfcAlterable.ScriptAlter ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable.ScriptAlter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcAlterable#ScriptAlter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetExecutionEngine">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine ISfcDomain.GetExecutionEngine ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetExecutionEngine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetExecutionEngine" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetKey">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey ISfcDomain.GetKey (Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment urnFragment);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetKey(class Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment urnFragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetKey(Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urnFragment" Type="Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment" />
+      </Parameters>
+      <Docs>
+        <param name="urnFragment">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetType">
+      <MemberSignature Language="C#" Value="Type ISfcDomain.GetType (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetType(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetTypeMetadata">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata ISfcDomain.GetTypeMetadata (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetTypeMetadata(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetTypeMetadata(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.UseSfcStateManagement">
+      <MemberSignature Language="C#" Value="bool ISfcDomain.UseSfcStateManagement ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.UseSfcStateManagement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#UseSfcStateManagement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName">
+      <MemberSignature Language="C#" Value="string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#DomainInstanceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der logische Name einer Domäneninstanz abgeleitet in der Regel anhand der Verbindung und der Domäne.
+Dieser Name muss nicht auf dem Client eindeutig sein, jedoch sollte identisch sein, wenn die Server Darstellung wäre.
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName">
+      <MemberSignature Language="C#" Value="string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#DomainName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Name der Domäne verwendet, um ihn von anderen Domänen zu unterscheiden. Dies ist in der Regel am Ende des namespacequalifizierers.
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.GetLogicalVersion">
+      <MemberSignature Language="C#" Value="int ISfcDomainLite.GetLogicalVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.GetLogicalVersion() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#GetLogicalVersion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt die logische Version der Domäne
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#ConnectionContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Common.ISfcConnection ISfcHasConnection.GetConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#GetConnection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die aktuelle Verbindung für die Abfrage auf.
+Zurückgeben einer Verbindungs eine einzelne serielle Abfrage unterstützt und somit die Abfrage beenden muss, bevor eine andere beginnen kann.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Common.ISfcConnection ISfcHasConnection.GetConnection (Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode activeQueriesMode);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode activeQueriesMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#GetConnection(Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activeQueriesMode" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode" />
+      </Parameters>
+      <Docs>
+        <param name="activeQueriesMode">
+        </param>
+        <summary>
+            Ruft die aktuelle Verbindung für die Abfrage auf.
+Gibt eine Verbindung zurück, die je nach Anforderung entweder eine einzelne serielle Abfrage oder mehrere gleichzeitig geöffnete Abfragen unterstützt
+            </summary>
+        <returns>Die zu verwendende Verbindung, oder NULL, um den Cachemodus zu verwenden Im Cachemodus werden Verbindungsprobleme und Probleme mit dem Öffnen des Datenlesers vermieden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.SetConnection">
+      <MemberSignature Language="C#" Value="void ISfcHasConnection.SetConnection (Microsoft.SqlServer.Management.Common.ISfcConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.SetConnection(class Microsoft.SqlServer.Management.Common.ISfcConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectorConfigStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#SetConnection(Microsoft.SqlServer.Management.Common.ISfcConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Common.ISfcConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">Muss hinzugefügt werden.</param>
+        <summary>
+            Legt die aktive Verbindung fest.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,104 @@
+<Type Name="PublishResult" FullName="Microsoft.SqlServer.Dac.PublishResult">
+  <TypeSignature Language="C#" Value="public sealed class PublishResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PublishResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.PublishResult" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Enthält die Ergebnisse einer Operation veröffentlichen oder ein Skript. Dies enthält mindestens eines der <see cref="P:Microsoft.SqlServer.Dac.PublishResult.DeploymentReport" /> oder <see cref="P:Microsoft.SqlServer.Dac.PublishResult.DatabaseScript" /> Eigenschaften je nachdem, was im angefordert wurde die<see cref="T:Microsoft.SqlServer.Dac.PublishOptions" /></summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PublishResult (string deployReport, string dbScript, string masterScript);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string deployReport, string dbScript, string masterScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.PublishResult.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="deployReport" Type="System.String" />
+        <Parameter Name="dbScript" Type="System.String" />
+        <Parameter Name="masterScript" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="deployReport">Legen Sie als die <see cref="P:Microsoft.SqlServer.Dac.PublishResult.DeploymentReport" /> zurückgeben</param>
+        <param name="dbScript">Legen Sie als die <see cref="P:Microsoft.SqlServer.Dac.PublishResult.DatabaseScript" /> zurückgeben</param>
+        <param name="masterScript">Legen Sie als die <see cref="P:Microsoft.SqlServer.Dac.PublishResult.MasterDbScript" /> zurückgeben</param>
+        <summary>
+            Erstellt eine <see cref="T:Microsoft.SqlServer.Dac.PublishResult" /> mit dem angegebenen Inhalt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseScript">
+      <MemberSignature Language="C#" Value="public string DatabaseScript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseScript" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.PublishResult.DatabaseScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Bereitstellungsskript DB-Ebene, wenn eine angefordert wurde.
+Dieses Skript enthält alle Vorgänge, die für die Datenbank während der Bereitstellung ausgeführt werden müssen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentReport">
+      <MemberSignature Language="C#" Value="public string DeploymentReport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeploymentReport" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.PublishResult.DeploymentReport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Einen Bereitstellungsbericht, sofern angefordert wurde.
+Dieser Bericht ist eine Zusammenfassung der Aktionen, die während der Bereitstellung ausgeführt wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MasterDbScript">
+      <MemberSignature Language="C#" Value="public string MasterDbScript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MasterDbScript" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.PublishResult.MasterDbScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das master auf Datenbankebene Bereitstellungsskript, sofern angefordert wurde.
+Dieses Skript wird nur erstellt, wenn Azure SQL-Datenbank das Ziel ist, wie der USE-Anweisungen auf dieser Plattform nicht unterstützt werden.
+Sie enthält alle Vorgänge, die für die master-Datenbank, z. B. Create Database-Anweisungen ausgeführt werden müssen
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

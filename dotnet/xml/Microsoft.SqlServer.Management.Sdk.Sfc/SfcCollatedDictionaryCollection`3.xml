@@ -1,0 +1,524 @@
+<Type Name="SfcCollatedDictionaryCollection&lt;T,K,ParentT&gt;" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;T,K,ParentT&gt;">
+  <TypeSignature Language="C#" Value="public abstract class SfcCollatedDictionaryCollection&lt;T,K,ParentT&gt; : Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection&lt;T,K,ParentT&gt;, System.Collections.Generic.IComparer&lt;K&gt;, System.Collections.Generic.IEnumerable&lt;T&gt; where T : SfcInstance where K : SfcKey where ParentT : SfcInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SfcCollatedDictionaryCollection`3&lt;(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance) T, (class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey) K, (class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance) ParentT&gt; extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection`3&lt;!T, !K, !ParentT&gt; implements class System.Collections.Generic.IComparer`1&lt;!K&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="K">
+      <Constraints>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="ParentT">
+      <Constraints>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollection&lt;T,K,ParentT&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">T</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="K">K</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="ParentT">ParentT</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IComparer&lt;K&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">Muss hinzugefügt werden.</typeparam>
+    <typeparam name="K">Muss hinzugefügt werden.</typeparam>
+    <typeparam name="ParentT">Muss hinzugefügt werden.</typeparam>
+    <summary>Muss hinzugefügt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SfcCollatedDictionaryCollection (ParentT parent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(!ParentT parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.#ctor(`2)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="ParentT" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SfcCollatedDictionaryCollection (ParentT parent, System.Collections.Generic.IComparer&lt;string&gt; customComparer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(!ParentT parent, class System.Collections.Generic.IComparer`1&lt;string&gt; customComparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.#ctor(`2,System.Collections.Generic.IComparer{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="ParentT" />
+        <Parameter Name="customComparer" Type="System.Collections.Generic.IComparer&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Muss hinzugefügt werden.</param>
+        <param name="customComparer">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImpl">
+      <MemberSignature Language="C#" Value="protected override void AddImpl (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddImpl(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.AddImpl(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddShadow">
+      <MemberSignature Language="C#" Value="protected override bool AddShadow (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool AddShadow(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.AddShadow(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ascending">
+      <MemberSignature Language="C#" Value="public bool Ascending { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Ascending" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.Ascending" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sortieren in aufsteigender Reihenfolge Weise für die aktuelle Kultur der Auflistung.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public override void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public override bool Contains (K key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Contains(!K key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.Contains(`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public override bool Contains (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Contains(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.Contains(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public override void CopyTo (T[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyTo(!T[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.CopyTo(`0[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">Muss hinzugefügt werden.</param>
+        <param name="arrayIndex">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public override int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CultureInfo">
+      <MemberSignature Language="C#" Value="protected System.Globalization.CultureInfo CultureInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo CultureInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.CultureInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sortieren der Auflistung, verwenden Sie diese kulturinformationen .NET.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinishMerge">
+      <MemberSignature Language="C#" Value="protected override void FinishMerge ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void FinishMerge() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.FinishMerge" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerator&lt;T&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExistingObjectByKey">
+      <MemberSignature Language="C#" Value="protected override T GetExistingObjectByKey (K key);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !T GetExistingObjectByKey(!K key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.GetExistingObjectByKey(`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectByKey">
+      <MemberSignature Language="C#" Value="protected override T GetObjectByKey (K key);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !T GetObjectByKey(!K key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.GetObjectByKey(`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreCase">
+      <MemberSignature Language="C#" Value="protected bool IgnoreCase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreCase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.IgnoreCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sortiert in Groß-/Kleinschreibung für die aktuelle Kultur der Auflistung.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitInnerCollection">
+      <MemberSignature Language="C#" Value="protected override void InitInnerCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitInnerCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.InitInnerCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareMerge">
+      <MemberSignature Language="C#" Value="protected override void PrepareMerge ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareMerge() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.PrepareMerge" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public override bool Remove (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Remove(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.Remove(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveImpl">
+      <MemberSignature Language="C#" Value="protected override bool RemoveImpl (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool RemoveImpl(!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.RemoveImpl(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetInnerCollection">
+      <MemberSignature Language="C#" Value="protected void ResetInnerCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ResetInnerCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.ResetInnerCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Rufen Sie dies aus, wenn eine der Eigenschaften CultureInfo-Objekt, IgnoreCase oder Aufsteigend nach fortgesetzt ändern.
+Die Auflistung wird zurückgesetzt, um die neuen Einstellungen berücksichtigt werden.
+TODO: Der Benutzer ist zuständig für das Aufrufen dieser nach dem Ändern der Eigenschaften, die sie erhalten möchten, automatisiert werden sollten.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IComparer&lt;K&gt;.Compare">
+      <MemberSignature Language="C#" Value="int IComparer&lt;K&gt;.Compare (K key1, K key2);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.Generic.IComparer&lt;K&gt;.Compare(!K key1, !K key2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.System#Collections#Generic#IComparer&lt;K&gt;#Compare(`1,`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key1" Type="K" />
+        <Parameter Name="key2" Type="K" />
+      </Parameters>
+      <Docs>
+        <param name="key1">
+        </param>
+        <param name="key2">
+        </param>
+        <summary>
+            Vergleichen von Schlüsseln, die basierend auf unseren aktuellen CultureInfo und IgnoreCase-Eigenschaften, es sei denn, die in einem benutzerdefinierten Vergleich übergeben wurde.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public bool TryGetValue (K key, out T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!K key, !T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3.TryGetValue(`1,`0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="K" />
+        <Parameter Name="obj" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="key">Muss hinzugefügt werden.</param>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

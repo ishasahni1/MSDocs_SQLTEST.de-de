@@ -1,0 +1,661 @@
+<Type Name="ConnectionSettings" FullName="Microsoft.SqlServer.Management.Common.ConnectionSettings">
+  <TypeSignature Language="C#" Value="public class ConnectionSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Common.ConnectionSettings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ConnectionInfo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Verbindungseinstellungen und die Erstellung
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AccessToken">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.IRenewableToken AccessToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Common.IRenewableToken AccessToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.AccessToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.IRenewableToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationIntent">
+      <MemberSignature Language="C#" Value="public string ApplicationIntent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationIntent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.ApplicationIntent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Die anwendungsabsicht der Verbindung
+             </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationName">
+      <MemberSignature Language="C#" Value="public string ApplicationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.ApplicationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Der Name der Anwendung. "SQL Management" Wenn kein Anwendungsname angegeben wurde.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authentication">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.SqlConnectionInfo.AuthenticationMethod Authentication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.SqlConnectionInfo/AuthenticationMethod Authentication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.Authentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.SqlConnectionInfo+AuthenticationMethod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Der Authentifizierungstyp der Verbindung
+             </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsUser">
+      <MemberSignature Language="C#" Value="public bool ConnectAsUser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConnectAsUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.ConnectAsUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Wenn true wird die Verbindung mit den Anmeldeinformationen des angegebenen Benutzers hergestellt wird. Diese Annahme Identitätswechsel jedoch die LoginSecure-Flags und der Felder für Benutzername und Kennwort nicht beeinflusst werden.
+ConnectionCannotBeChangedException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsUserName">
+      <MemberSignature Language="C#" Value="public string ConnectAsUserName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectAsUserName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.ConnectAsUserName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gibt an, der NT-Benutzer, der beim Erstellen einer Verbindungs mit angenommener Identität verwendet wird.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException PropertyNotSetException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsUserPassword">
+      <MemberSignature Language="C#" Value="public string ConnectAsUserPassword { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectAsUserPassword" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.ConnectAsUserPassword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gibt das Kennwort des NT-Benutzers, der beim Erstellen einer Verbindungs mit angenommener Identität verwendet wird.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException PropertyNotSetException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Die Eigenschaft gibt zurück, der Benutzer angegebenen Verbindungszeichenfolge oder die berechnete objekteinstellungen basierende Verbindungszeichenfolge zurückgegeben.
+Wenn Sie explizit festgelegt ist, alle Eigenschaften im ServerConnection-Objekt aufgefüllt wird entsprechend dem übergebenen in der Verbindungszeichenfolge angegeben.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectTimeout">
+      <MemberSignature Language="C#" Value="public int ConnectTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.ConnectTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Die Zeitdauer (in Sekunden) warten, bis eine Verbindung mit dem Server, bevor der Versuch beendet und eine Ausnahme ausgelöst.
+Standardwert ist 30 Sekunden (identisch mit Shiloh).
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseName">
+      <MemberSignature Language="C#" Value="public string DatabaseName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.DatabaseName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TBD
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptConnection">
+      <MemberSignature Language="C#" Value="public bool EncryptConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EncryptConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.EncryptConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ob "Verschlüsseln" true "=" in der Verbindungszeichenfolge angegeben ist
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Login">
+      <MemberSignature Language="C#" Value="public string Login { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Login" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.Login" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Der Name der SQL Server-Anmeldung, die für die Verbindung mit dem Server verwendet wird.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException PropertyNotSetException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginSecure">
+      <MemberSignature Language="C#" Value="public bool LoginSecure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LoginSecure" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.LoginSecure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Bei festlegen auf "true", "Windows-Sicherheit verwendet und Anmeldenamen und das Kennwort werden ignoriert.
+Wenn Sie nicht festgelegt ist, Sql Server-Authentifizierung verwendet wird.
+Ausnahmen: ConnectionCannotBeChangedException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPoolSize">
+      <MemberSignature Language="C#" Value="public int MaxPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPoolSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.MaxPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Die maximale Anzahl von Verbindungen im Pool zulässig.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinPoolSize">
+      <MemberSignature Language="C#" Value="public int MinPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinPoolSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.MinPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Die minimale Anzahl von Verbindungen im Pool verwaltet.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleActiveResultSets">
+      <MemberSignature Language="C#" Value="public bool MultipleActiveResultSets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MultipleActiveResultSets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.MultipleActiveResultSets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Aktivieren von MARS aus der Verbindung. Der Standardwert ist "false".
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkProtocol">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.NetworkProtocol NetworkProtocol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.NetworkProtocol NetworkProtocol" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.NetworkProtocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.NetworkProtocol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Identifiziert das clientnetzwerkprotokoll, das für die Verbindung mit SQL Server verwendet wird.
+Wenn Sie keinen, dass ein Netzwerk angeben, und Sie einen lokalen Server verwenden, wird freigegebener Speicher verwendet.
+Wenn Sie keinen, dass ein Netzwerk angeben, und Sie einen Remoteserver verwenden, wird die für eine der konfigurierten Clientprotokolle verwendet.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoConnectionTimeout">
+      <MemberSignature Language="C#" Value="public const int NoConnectionTimeout = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NoConnectionTimeout = (0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Common.ConnectionSettings.NoConnectionTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Unbegrenzte Wartezeit
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NonPooledConnection">
+      <MemberSignature Language="C#" Value="public bool NonPooledConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NonPooledConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.NonPooledConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Standardmäßig werden alle Verbindungen mit SQL Server aus einem Verbindungspool ADO.NET übernommen. Wenn legen Sie auf "true", damit können Benutzer eine Verbindung zum Pool-erstellen (nicht wiederverwendet, wenn geschlossen).
+Ausnahmen: ConnectionCannotBeChangedException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PacketSize">
+      <MemberSignature Language="C#" Value="public int PacketSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PacketSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.PacketSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Größe in Bytes der Netzwerkpakete, die zur Kommunikation mit einer Instanz von SQL Server verwendet. Standard ist 8192.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Password">
+      <MemberSignature Language="C#" Value="public string Password { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Password" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.Password" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Das Kennwort, das mit Anmeldung bei der Herstellung einer Verbindung mit dem Server verwendet wird.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException PropertyNotSetException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PooledConnectionLifetime">
+      <MemberSignature Language="C#" Value="public int PooledConnectionLifetime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PooledConnectionLifetime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.PooledConnectionLifetime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Wenn eine Verbindung an den Pool zurückgegeben wird, die Erstellung mit der aktuellen Zeit verglichen, und die Verbindung getrennt wird, wenn diese Zeitspanne (in Sekunden) von Verbindungslebensdauer angegebenen Wert überschreitet.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetConnectionString">
+      <MemberSignature Language="C#" Value="protected bool ResetConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ResetConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.ResetConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, ob "ConnectionString" in SqlConnectionObject-Eigenschaft des "ConnectionManager" oder nicht zurückgesetzt werden muss.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecureConnectionString">
+      <MemberSignature Language="C#" Value="public System.Security.SecureString SecureConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.SecureString SecureConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.SecureConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.SecureString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Die Eigenschaft wird einer SecureString-Version von entweder den angegebene Benutzer zurückgeben Verbindungszeichenfolge, oder er gibt die berechnete objekteinstellungen basierende Verbindungszeichenfolge zurück.  Wenn Sie explizit festgelegt ist, alle Eigenschaften im ServerConnection-Objekt aufgefüllt wird entsprechend dem übergebenen in der Verbindungszeichenfolge angegeben.  Ausnahmen: ConnectionCannotBeChangedException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurePassword">
+      <MemberSignature Language="C#" Value="public System.Security.SecureString SecurePassword { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.SecureString SecurePassword" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.SecurePassword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.SecureString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Das Kennwort, das mit Anmeldung bei der Herstellung einer Verbindung mit dem Server verwendet wird.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException PropertyNotSetException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerInstance">
+      <MemberSignature Language="C#" Value="public string ServerInstance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.ServerInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Der Name der SQL Server wird das Objekt zu verbinden.
+Wenn dies nicht festgelegt ist, dem lokalen Server wird impliziert.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfPropertyNotSet">
+      <MemberSignature Language="C#" Value="protected string ThrowIfPropertyNotSet (string propertyName, string str);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string ThrowIfPropertyNotSet(string propertyName, string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionSettings.ThrowIfPropertyNotSet(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Muss hinzugefügt werden.</param>
+        <param name="str">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfPropertyNotSet">
+      <MemberSignature Language="C#" Value="protected string ThrowIfPropertyNotSet (string propertyName, string str, bool checkEmpty);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string ThrowIfPropertyNotSet(string propertyName, string str, bool checkEmpty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionSettings.ThrowIfPropertyNotSet(System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="checkEmpty" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Muss hinzugefügt werden.</param>
+        <param name="str">Muss hinzugefügt werden.</param>
+        <param name="checkEmpty">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionSettings.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrustServerCertificate">
+      <MemberSignature Language="C#" Value="public bool TrustServerCertificate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TrustServerCertificate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.TrustServerCertificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gibt an, ob der Client das Serverzertifikat vertraut.
+             </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkstationId">
+      <MemberSignature Language="C#" Value="public string WorkstationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WorkstationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionSettings.WorkstationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Der Name der Arbeitsstation Herstellen einer Verbindung mit SQL Server.
+Ausnahmen: ConnectionCannotBeChangedException InvalidPropertyValueException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,72 @@
+<Type Name="ISequentialStream" FullName="Microsoft.SqlServer.Dts.Runtime.Wrapper.ISequentialStream">
+  <TypeSignature Language="C#" Value="public interface ISequentialStream" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISequentialStream" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.ISequentialStream" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.DTSRuntimeWrap</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0C733A30-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Definiert Methoden für die Datenstromobjekte in ihrer Abfolge.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RemoteRead">
+      <MemberSignature Language="C#" Value="public void RemoteRead (out byte pv, uint cb, out uint pcbRead);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoteRead(unsigned int8 pv, unsigned int32 cb, unsigned int32 pcbRead) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.ISequentialStream.RemoteRead(System.Byte@,System.UInt32,System.UInt32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pv" Type="System.Byte&amp;" RefType="out" />
+        <Parameter Name="cb" Type="System.UInt32" />
+        <Parameter Name="pcbRead" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pv">Enthält nach der Rückkehr dieser Methode die aus dem Datenstrom gelesenen Daten. Dieser Parameter wird nicht initialisiert übergeben.</param>
+        <param name="cb">Die Anzahl von Bytes, die aus dem Datenstromobjekt gelesen werden sollen.</param>
+        <param name="pcbRead">Ein Zeiger auf eine ULONG-Variable, die die tatsächliche Anzahl von Bytes empfängt, die aus dem Datenstromobjekt gelesen wurden.</param>
+        <summary>Liest eine angegebene Anzahl von Bytes beginnend beim aktuellen Suchzeiger aus dem Datenstromobjekt in den Arbeitsspeicher.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteWrite">
+      <MemberSignature Language="C#" Value="public void RemoteWrite (ref byte pv, uint cb, out uint pcbWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoteWrite(unsigned int8 pv, unsigned int32 cb, unsigned int32 pcbWritten) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Wrapper.ISequentialStream.RemoteWrite(System.Byte@,System.UInt32,System.UInt32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pv" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="cb" Type="System.UInt32" />
+        <Parameter Name="pcbWritten" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pv">Der Puffer, in den dieser Datenstrom geschrieben wird.</param>
+        <param name="cb">Die Anzahl von Bytes, die in den Datenstrom geschrieben werden.</param>
+        <param name="pcbWritten">Enthält nach erfolgreicher Rückkehr die tatsächliche Anzahl von Bytes, die in das Datenstromobjekt geschrieben wurden.</param>
+        <summary>Schreibt eine angegebene Anzahl von Bytes beginnend beim aktuellen Suchzeiger in das Datenstromobjekt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

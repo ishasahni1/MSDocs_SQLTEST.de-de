@@ -1,0 +1,113 @@
+<Type Name="SfcDomainInfoCollection" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfoCollection">
+  <TypeSignature Language="C#" Value="public class SfcDomainInfoCollection : System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SfcDomainInfoCollection extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfoCollection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            ReadOnly-Auflistung für die aktuelle Domänen Informationen derzeit enthält diese Informationen nur zu SMO, DC, DMF und ACME TODO-: Hinzufügen von Erweiterungen zur Unterstützung von laden weitere Domänen Informationen aus XML-Dokumenten.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcDomainInfoCollection (System.Collections.Generic.IList&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo&gt; list);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo&gt; list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfoCollection.#ctor(System.Collections.Generic.IList{Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="list" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="list">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string domainName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string domainName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfoCollection.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domainName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="domainName">
+        </param>
+        <summary>
+            Sucht nach eine bestimmte Domäne ggf. in der Auflistung oder den Domänennamen nicht verwenden.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDomainForNamespaceQualifier">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo GetDomainForNamespaceQualifier (string namespaceQualifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo GetDomainForNamespaceQualifier(string namespaceQualifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfoCollection.GetDomainForNamespaceQualifier(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="namespaceQualifier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceQualifier">
+        </param>
+        <summary>
+            Rufen Sie Domäne aus der aktuellen Auflistung, die mithilfe der Name des Prozedurqualifizierers Namespace ab
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo this[string domainName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfoCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDomainInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domainName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="domainName">
+        </param>
+        <summary>
+            Abrufen von Domänen aus der aktuellen Auflistung unter Verwendung des Domänennamens
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

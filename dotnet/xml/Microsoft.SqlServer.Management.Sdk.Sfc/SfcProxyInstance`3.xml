@@ -1,0 +1,126 @@
+<Type Name="SfcProxyInstance&lt;K,T,TRef&gt;" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcProxyInstance&lt;K,T,TRef&gt;">
+  <TypeSignature Language="C#" Value="public abstract class SfcProxyInstance&lt;K,T,TRef&gt; : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance&lt;K,T&gt; where K : SfcKey where T : SfcInstancenew() where TRef : SfcInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SfcProxyInstance`3&lt;(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey) K, .ctor (class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance) T, (class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance) TRef&gt; extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance`2&lt;!K, !T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcProxyInstance`3" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="K">
+      <Constraints>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TRef">
+      <Constraints>
+        <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance&lt;K,T&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="K">K</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="T">T</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="K">Der Typ des Schlüssels für die Instanz-Proxyklasse.</typeparam>
+    <typeparam name="T">Der Typ der Proxyklasse Instanz.</typeparam>
+    <typeparam name="TRef">Der Typ der Instanz der Zielklasse-Verweis.</typeparam>
+    <summary>
+            Die generische Basisklasse für einen Proxy mit einem anderen Zielinstanz.
+Die verfügbaren Eigenschaften sind die Eigenschaften von Netzwerkproxy Instanz plus plus die Zieleigenschaften für die Instanz.
+Wenn Sie den Proxy und die Ziel-Instanzen denselben Namen für eine Eigenschaft haben, ist Proxyeigenschaft diejenige, die verfügbar gemacht wird.
+Alle Eigenschaften des Ziel-Instanz können immer abgerufen werden, durch explizit Zugriff auf den Proxy. Reference-Eigenschaft, die Zielinstanz handelt.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcProxyInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcProxyInstance`3.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellen Sie eine neue Proxyinstanz auf ein unbekanntes Ziel-Verweis.
+Beim ersten Zugriff auf die Verweis-Eigenschaft wird der Verweis aufgelöst werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcProxyInstance (TRef reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TRef reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcProxyInstance`3.#ctor(`2)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="reference" Type="TRef" />
+      </Parameters>
+      <Docs>
+        <param name="reference">Der Verweis-Zielinstanz her.</param>
+        <summary>
+            Erstellen Sie eine neue Proxyinstanz auf einen bekannten Ziel-Verweis.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferenceImpl">
+      <MemberSignature Language="C#" Value="protected abstract TRef GetReferenceImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !TRef GetReferenceImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcProxyInstance`3.GetReferenceImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TRef</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Rufen Sie das referenzierte Objekt, das basierend auf den Proxy.
+Muss implementiert werden.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reference">
+      <MemberSignature Language="C#" Value="public TRef Reference { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TRef Reference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcProxyInstance`3.Reference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Instanz, auf die dieser Proxy verweist.
+Dies ist nur ein Mal beim ersten Zugriff auf diese Eigenschaft ist festgelegt.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

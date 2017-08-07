@@ -1,0 +1,93 @@
+<Type Name="SecurityResolutionType" FullName="Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType">
+  <TypeSignature Language="C#" Value="public enum SecurityResolutionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityResolutionType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services.Contracts</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract(Name="SecurityResolutionType", Namespace="http://schemas.microsoft.com/sqlserver/masterdataservices/2009/09")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Gibt die Auflösungsspezifikation beim Zurückgeben der Sicherheitsberechtigungen an. Berechtigungen können auf die gleiche Weise abgerufen werden, auf die sie zugewiesen wurden, oder in einer netto-effektiven Liste mit Berechtigungen.
+            </summary>
+    <remarks>
+            Die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType" /> einfacher Typ gibt die auflösungsspezifikation beim Zurückgeben der Sicherheitsberechtigungen. Berechtigungen können abgerufen werden, wie sie zugewiesen wurden oder in einer Netto effektiven Liste von Berechtigungen.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Effective">
+      <MemberSignature Language="C#" Value="Effective" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType Effective = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType.Effective" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Zurückgeben der effektiven Berechtigungssatz für die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.User" />., löst die Effekte von überschneidungen auflöst.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserAndGroup">
+      <MemberSignature Language="C#" Value="UserAndGroup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType UserAndGroup = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType.UserAndGroup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Zurückgeben der Berechtigungen, die direkt zugewiesen sind die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.User" /> und solche, die zugewiesen werden <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.Group" />s, der die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.User" /> gehört.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Users">
+      <MemberSignature Language="C#" Value="Users" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType Users = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType.Users" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.SecurityResolutionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Zurückgeben der Berechtigungen, die direkt zugewiesen sind die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.User" />.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

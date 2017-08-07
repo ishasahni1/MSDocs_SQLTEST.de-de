@@ -1,0 +1,67 @@
+<Type Name="IMutableDatabaseDdlTrigger" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseDdlTrigger">
+  <TypeSignature Language="C#" Value="public interface IMutableDatabaseDdlTrigger : Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseDdlTrigger, Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseOwnedObject, Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMutableDatabaseDdlTrigger implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseDdlTrigger, class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger, class Microsoft.SqlServer.Management.SqlParser.Metadata.ITrigger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseDdlTrigger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseDdlTrigger</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseOwnedObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt einen änderbaren DDL-Trigger auf Datenbankebene dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DatabaseDdlEvents">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTriggerEventTypeSet DatabaseDdlEvents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTriggerEventTypeSet DatabaseDdlEvents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseDdlTrigger.DatabaseDdlEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTriggerEventTypeSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Satz von DDL-Ereignistypen auf Datenbankebene ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTriggerEventTypeSet" /> Objekt, das die Datenbank-DDL-Ereignistypen enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsQuotedIdentifierOn">
+      <MemberSignature Language="C#" Value="public bool IsQuotedIdentifierOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsQuotedIdentifierOn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseDdlTrigger.IsQuotedIdentifierOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob durch doppelte Anführungszeichen begrenzte Bezeichner Transact-SQL reservierte Schlüsselwörter sind oder nach den Transact-SQL-Syntaxregeln normalerweise nicht zugelassene Zeichen enthalten. 
+            </summary>
+        <value>
+          <c>true</c> if quoted identifiers are used to allow characters not usually allowed by the Transact-SQL syntax rules; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

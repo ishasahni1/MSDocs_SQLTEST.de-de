@@ -1,0 +1,78 @@
+<Type Name="MQStringMessageCompare" FullName="Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare">
+  <TypeSignature Language="C#" Value="public enum MQStringMessageCompare" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MQStringMessageCompare extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.MSMQTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enthält Werte, mit denen die Vergleichsmethode gesteuert wird, die vom Task "Nachrichtenwarteschlange" beim Empfangen einer Nachricht verwendet wird. Zum Empfangen einer Nachricht muss <see cref="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.TaskType" /> auf <see cref="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType.DTSMQType_Receiver" /> und der Nachrichtentyp auf <see cref="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType.DTSMQMessageType_String" /> festgelegt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DTSMQStringMessageCompare_Contains">
+      <MemberSignature Language="C#" Value="DTSMQStringMessageCompare_Contains" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare DTSMQStringMessageCompare_Contains = int64(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare.DTSMQStringMessageCompare_Contains" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt an, dass der Nachrichteninhalt die Zeichenfolge in <see cref="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.StringCompareValue" /> enthalten muss.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DTSMQStringMessageCompare_Exact">
+      <MemberSignature Language="C#" Value="DTSMQStringMessageCompare_Exact" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare DTSMQStringMessageCompare_Exact = int64(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare.DTSMQStringMessageCompare_Exact" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt an, dass der Nachrichteninhalt die Zeichenfolge in genau übereinstimmen muss die <see cref="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.StringCompareValue" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DTSMQStringMessageCompare_IgnoreCase">
+      <MemberSignature Language="C#" Value="DTSMQStringMessageCompare_IgnoreCase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare DTSMQStringMessageCompare_IgnoreCase = int64(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare.DTSMQStringMessageCompare_IgnoreCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt an, ob beim Vergleichen zwischen Groß- und Kleinbuchstaben unterschieden wird. Bei Verwendung dieses Enumerationswerts wird die Groß-/Kleinschreibung beim Zeichenfolgenvergleich ignoriert. "ABC" und "abc" werden beispielsweise gleich behandelt.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DTSMQStringMessageCompare_None">
+      <MemberSignature Language="C#" Value="DTSMQStringMessageCompare_None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare DTSMQStringMessageCompare_None = int64(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare.DTSMQStringMessageCompare_None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt an, dass kein Vergleich ausgeführt wird.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

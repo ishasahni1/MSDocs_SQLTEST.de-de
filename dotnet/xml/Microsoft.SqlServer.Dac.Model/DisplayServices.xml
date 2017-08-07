@@ -1,0 +1,114 @@
+<Type Name="DisplayServices" FullName="Microsoft.SqlServer.Dac.Model.DisplayServices">
+  <TypeSignature Language="C#" Value="public abstract class DisplayServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DisplayServices extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Model.DisplayServices" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Bietet eine Reihe von Diensten zur Bereitstellung von für Benutzer sichtbaren Werten für Objekte in der öffentlichen Modell-API bereit.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DisplayServices ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.DisplayServices.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisplayName">
+      <MemberSignature Language="C#" Value="public abstract string GetDisplayName (Microsoft.SqlServer.Dac.Model.ObjectIdentifier identifier, Microsoft.SqlServer.Dac.Model.EscapeStyle escapeStyle, bool fullName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDisplayName(class Microsoft.SqlServer.Dac.Model.ObjectIdentifier identifier, valuetype Microsoft.SqlServer.Dac.Model.EscapeStyle escapeStyle, bool fullName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.DisplayServices.GetDisplayName(Microsoft.SqlServer.Dac.Model.ObjectIdentifier,Microsoft.SqlServer.Dac.Model.EscapeStyle,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identifier" Type="Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />
+        <Parameter Name="escapeStyle" Type="Microsoft.SqlServer.Dac.Model.EscapeStyle" />
+        <Parameter Name="fullName" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="identifier">Der Namensbezeichner, der mehrere Teile enthalten kann.</param>
+        <param name="escapeStyle">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.EscapeStyle" />definieren, ob die Teile des Namens oder nicht mit Escapezeichen versehen werden soll</param>
+        <param name="fullName">Gibt an, ob der Name vollständig erstellt wird oder nur der aussagekräftige letzte Teil verwendet wird.</param>
+        <summary>
+            Abrufen von Anzeigenamen eines Bezeichners, mit der Option zum Konfigurieren der Verwendung von vollständigen/kurzen Namen und Namensteile mit Escapezeichen versehen werden soll.
+            </summary>
+        <returns>Anzeigename</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementName">
+      <MemberSignature Language="C#" Value="public abstract string GetElementName (Microsoft.SqlServer.Dac.Model.TSqlObject element, Microsoft.SqlServer.Dac.Model.ElementNameStyle style);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetElementName(class Microsoft.SqlServer.Dac.Model.TSqlObject element, valuetype Microsoft.SqlServer.Dac.Model.ElementNameStyle style) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.DisplayServices.GetElementName(Microsoft.SqlServer.Dac.Model.TSqlObject,Microsoft.SqlServer.Dac.Model.ElementNameStyle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.SqlServer.Dac.Model.TSqlObject" />
+        <Parameter Name="style" Type="Microsoft.SqlServer.Dac.Model.ElementNameStyle" />
+      </Parameters>
+      <Docs>
+        <param name="element">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />
+        </param>
+        <param name="style">
+        </param>
+        <summary>
+            Ruft die Zeichenfolge des Elementnamens mit anderen Anzeigestil.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEscapedNameString">
+      <MemberSignature Language="C#" Value="public abstract string GetEscapedNameString (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetEscapedNameString(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.DisplayServices.GetEscapedNameString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>
+            Eine kurze Zeichenfolge übergeben, wieder eine mit Escapezeichen versehene Version die Namenszeichenfolge zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

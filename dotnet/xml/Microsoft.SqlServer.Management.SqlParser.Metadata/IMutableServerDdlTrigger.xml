@@ -1,0 +1,67 @@
+<Type Name="IMutableServerDdlTrigger" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServerDdlTrigger">
+  <TypeSignature Language="C#" Value="public interface IMutableServerDdlTrigger : Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServerOwnedObject, Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger, Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMutableServerDdlTrigger implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServerOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger, class Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger, class Microsoft.SqlServer.Management.SqlParser.Metadata.IServerOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.ITrigger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServerDdlTrigger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServerOwnedObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IServerDdlTrigger</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt einen änderbaren SQL Server-DDL-Trigger dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsQuotedIdentifierOn">
+      <MemberSignature Language="C#" Value="public bool IsQuotedIdentifierOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsQuotedIdentifierOn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServerDdlTrigger.IsQuotedIdentifierOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob durch doppelte Anführungszeichen begrenzte Bezeichner Transact-SQL reservierte Schlüsselwörter sind oder nach den Transact-SQL-Syntaxregeln normalerweise nicht zugelassene Zeichen enthalten. 
+            </summary>
+        <value>
+          <c>true</c> if quoted identifiers are used to allow characters not usually allowed by the Transact-SQL syntax rules; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerDdlEvents">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTriggerEventTypeSet ServerDdlEvents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTriggerEventTypeSet ServerDdlEvents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServerDdlTrigger.ServerDdlEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTriggerEventTypeSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Satz von DDL-Ereignistypen auf Serverebene ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITriggerEventTypeSet" /> Objekt, das die DDL-Ereignistypen auf Serverebene enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

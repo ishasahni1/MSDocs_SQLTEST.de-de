@@ -1,0 +1,367 @@
+<Type Name="ProviderRegistry" FullName="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry">
+  <TypeSignature Language="C#" Value="public class ProviderRegistry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProviderRegistry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Diese Klasse ist eine Einstiegspunkte für Differenzierer, dessen Anbieter erhält. In dieser Klasse kann bestimmte domänenanbieter, der den vergleichsdienst registriert werden.
+            
+            A provider supplies domain specific information or logic so that the differencer can 
+            handle different graph type and runtime behaviour correctly.
+            
+            A provider must be registered before the compare method is invoked.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProviderRegistry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Konstruktor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AvailablePropertyValueProviders">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider&gt; AvailablePropertyValueProviders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider&gt; AvailablePropertyValueProviders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.AvailablePropertyValueProviders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rufen Sie eine Liste registrierter availablepropertyvalueprovider ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerSortingProviders">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider&gt; ContainerSortingProviders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider&gt; ContainerSortingProviders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.ContainerSortingProviders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rufen Sie eine Liste registrierter containersortingprovider ab
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeItemNameAdapterProviders">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider&gt; NodeItemNameAdapterProviders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider&gt; NodeItemNameAdapterProviders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.NodeItemNameAdapterProviders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rufen Sie eine Liste registrierter nodeitemnamesadapterprovider
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyComparerProviders">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider&gt; PropertyComparerProviders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider&gt; PropertyComparerProviders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.PropertyComparerProviders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rufen Sie eine Liste registrierter sfcnodeadapterprovider ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterProvider">
+      <MemberSignature Language="C#" Value="public bool RegisterProvider (Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RegisterProvider(class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.RegisterProvider(Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Muss hinzugefügt werden.</param>
+        <summary>
+            Der angegebene Anbieter registriert
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterProvider">
+      <MemberSignature Language="C#" Value="public bool RegisterProvider (Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RegisterProvider(class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.RegisterProvider(Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Muss hinzugefügt werden.</param>
+        <summary>
+            Der angegebene Anbieter registriert
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterProvider">
+      <MemberSignature Language="C#" Value="public bool RegisterProvider (Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RegisterProvider(class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.RegisterProvider(Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Muss hinzugefügt werden.</param>
+        <summary>
+            Der angegebene Anbieter registriert
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterProvider">
+      <MemberSignature Language="C#" Value="public bool RegisterProvider (Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RegisterProvider(class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.RegisterProvider(Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Muss hinzugefügt werden.</param>
+        <summary>
+            Der angegebene Anbieter registriert
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterProvider">
+      <MemberSignature Language="C#" Value="public bool RegisterProvider (Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RegisterProvider(class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.RegisterProvider(Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Muss hinzugefügt werden.</param>
+        <summary>
+            Der angegebene Anbieter registriert
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SfcNodeAdapterProviders">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider&gt; SfcNodeAdapterProviders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider&gt; SfcNodeAdapterProviders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.SfcNodeAdapterProviders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rufen Sie eine Liste registrierter sfcnodeadapterprovider ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterProvider">
+      <MemberSignature Language="C#" Value="public bool UnregisterProvider (Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool UnregisterProvider(class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.UnregisterProvider(Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Muss hinzugefügt werden.</param>
+        <summary>
+            Aufheben der Registrierung angegebenen Anbieters
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterProvider">
+      <MemberSignature Language="C#" Value="public bool UnregisterProvider (Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool UnregisterProvider(class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.UnregisterProvider(Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Muss hinzugefügt werden.</param>
+        <summary>
+            Aufheben der Registrierung angegebenen Anbieters
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterProvider">
+      <MemberSignature Language="C#" Value="public bool UnregisterProvider (Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool UnregisterProvider(class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.UnregisterProvider(Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.NodeItemNamesAdapterProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Muss hinzugefügt werden.</param>
+        <summary>
+            Aufheben der Registrierung angegebenen Anbieters
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterProvider">
+      <MemberSignature Language="C#" Value="public bool UnregisterProvider (Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool UnregisterProvider(class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.UnregisterProvider(Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Muss hinzugefügt werden.</param>
+        <summary>
+            Aufheben der Registrierung angegebenen Anbieters
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterProvider">
+      <MemberSignature Language="C#" Value="public bool UnregisterProvider (Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool UnregisterProvider(class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ProviderRegistry.UnregisterProvider(Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Muss hinzugefügt werden.</param>
+        <summary>
+            Aufheben der Registrierung angegebenen Anbieters
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,482 @@
+<Type Name="DMQueryTask" FullName="Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask">
+  <TypeSignature Language="C#" Value="public class DMQueryTask : Microsoft.SqlServer.Dts.Runtime.Task, Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, Microsoft.SqlServer.Dts.Tasks.DMQueryTask.IDMQueryTask" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DMQueryTask extends Microsoft.SqlServer.Dts.Runtime.Task implements class Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, class Microsoft.SqlServer.Dts.Runtime.IDTSSuspend, class Microsoft.SqlServer.Dts.Tasks.DMQueryTask.IDMQueryTask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.DMQueryTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.Task</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Tasks.DMQueryTask.IDMQueryTask</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Dts.Runtime.DtsTask(IconResource="Microsoft.SqlServer.Dts.Tasks.DMQueryTask.Graphics.DMQueryTask.ico", LocalizationType=typeof(Microsoft.SqlServer.Dts.Tasks.DMQueryTask.SR), UITypeName="Microsoft.SqlServer.Dts.Tasks.DMQueryTaskUI.DMQueryTaskUI, Microsoft.SqlServer.DMQueryTaskUI, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("115AC6A7-F095-450F-A8DF-72A07052A146")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt die Eigenschaften und Methoden für den Task Data Mining-Abfragen Vorhersageabfragen basierend auf Datamining-Modelle in Analysis Services erstellt führt. Diese Klasse kann nicht vererbt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DMQueryTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptBreakpointManager">
+      <MemberSignature Language="C#" Value="public void AcceptBreakpointManager (Microsoft.SqlServer.Dts.Runtime.BreakpointManager manager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AcceptBreakpointManager(class Microsoft.SqlServer.Dts.Runtime.BreakpointManager manager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manager" Type="Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />
+      </Parameters>
+      <Docs>
+        <param name="manager">Der für diesen Task spezifische Breakpoint-Manager.</param>
+        <summary>Wird vom Laufzeitmodul beim Erstellen eines Tasks oder Containers aufgerufen. Darüber hinaus wird ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />-Manager an die Methode übergeben, damit der Task Breakpoints erstellen, entfernen und deren Status überprüfen kann. Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugMode">
+      <MemberSignature Language="C#" Value="public bool DebugMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DebugMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.DebugMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt den booleschen Wert, der angibt, ob ein Task überprüfen soll, ob Breakpoints aktiviert sind.</summary>
+        <value>"true", wenn der Task überprüfen soll, ob Breakpoints aktiviert sind; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variables, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object txn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variables, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object txn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variables" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="txn" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variables">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="txn">Das Transaktionsobjekt, dem der Container angehört. Dieser Wert kann NULL sein.</param>
+        <summary>Führt den Task aus.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteQuery">
+      <MemberSignature Language="C#" Value="public bool ExecuteQuery (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variablesDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object txn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ExecuteQuery(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variablesDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object txn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.ExecuteQuery(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variablesDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="txn" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variablesDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="txn">Das Transaktionsobjekt, dem der Container angehört. Dieser Wert kann NULL sein.</param>
+        <summary>Führt die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.QueryString" />-Eigenschaft enthaltene Abfrage aus.</summary>
+        <returns>"true" gibt an, dass die DMX-abfragetask erfolgreich ausgeführt. False gibt an, dass die Ausführung der DMX-Abfrage-Vorgang fehlgeschlagen ist.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionValue">
+      <MemberSignature Language="C#" Value="public override object ExecutionValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExecutionValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.ExecutionValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein benutzerdefiniertes Objekt ab. Dieses Feld ist schreibgeschützt.</summary>
+        <value>Ein benutzerdefiniertes Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputConnection">
+      <MemberSignature Language="C#" Value="public string InputConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.InputConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Verbindungszeichenfolge zu einer Analysis Services-Projekt oder einer Analysis Services-Datenbank.</summary>
+        <value>Eine Zeichenfolge, die Verbindung mit einem Analysis Services-Projekt oder einer Analysis Services-Datenbank enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.SqlServer.Dts.Tasks.DMQueryTask.InputParameter&gt; InputParameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Dts.Tasks.DMQueryTask.InputParameter&gt; InputParameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.InputParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Dts.Tasks.DMQueryTask.InputParameter&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt eine Auflistung von Variablen, die verwendet wird, in einer parametrisierten Abfrage des Data Mining Extensions (DMX).</summary>
+        <value>Eine Auflistung von Variablen, die in einer parametrisierten DMX-Abfrage (Data Mining Extensions, Data Mining-Erweiterungen) verwendet wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlElement element, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlElement element, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Xml.XmlElement" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="element">Der Knoten, der die zu ladenden Informationen enthält.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Lädt ein Paket als XML-Datei gespeichert verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelName">
+      <MemberSignature Language="C#" Value="public string ModelName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ModelName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.ModelName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Miningmodells ab, auf dem die Abfrage basiert, oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Namen des Miningmodells enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelStructureName">
+      <MemberSignature Language="C#" Value="public string ModelStructureName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ModelStructureName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.ModelStructureName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Miningstruktur ab, auf der die Abfrage basiert, oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Namen der Miningstruktur enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputConnection">
+      <MemberSignature Language="C#" Value="public string OutputConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OutputConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.OutputConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Verbindungszeichenfolge zu der OLE DB-Datenquelle ab, in der das Ergebnis der Vorhersageabfrage gespeichert wird, oder legt sie fest.</summary>
+        <value>Eine Zeichenfolge, die Verbindung mit der OLE DB-Datenquelle enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputTableName">
+      <MemberSignature Language="C#" Value="public string OutputTableName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OutputTableName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.OutputTableName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Tabelle ab, in die die Ergebnisse der Vorhersageabfrage geschrieben werden, oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Namen der Ausgabetabelle enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverwriteOutputTable">
+      <MemberSignature Language="C#" Value="public bool OverwriteOutputTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OverwriteOutputTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.OverwriteOutputTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt den booleschen Wert, der angibt, ob Inhalt in der Zieltabelle durch die Vorhersageabfrage überschrieben werden soll.</summary>
+        <value>"true", um den Inhalt in der Zieltabelle zu überschreiben; "false", um die Ergebnisse an die vorhandenen Ergebnisse angefügt werden sollen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryBuilderQueryString">
+      <MemberSignature Language="C#" Value="public string QueryBuilderQueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryBuilderQueryString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.QueryBuilderQueryString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine Zeichenfolge ab, die eine Data Mining-Abfrage angibt, die in der Data Mining-Benutzeroberfläche als anfängliche Abfragezeichenfolge angezeigt wird, die der Benutzer ändern kann, oder legt sie fest.</summary>
+        <value>Eine Zeichenfolge, die eine Data Mining-Abfrage angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryBuilderSpecification">
+      <MemberSignature Language="C#" Value="public string QueryBuilderSpecification { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryBuilderSpecification" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.QueryBuilderSpecification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Informationen über den Status der Benutzeroberfläche des MicrosoftSQL ServerIntegration Services zwischen den Sitzungen fest, sodass bearbeitungssitzungen beginnen kann, an dem eine vorherige Sitzung beendet.</summary>
+        <value>Die Informationen zum Status der MicrosoftSQL ServerIntegration Services-Benutzeroberfläche zwischen Sitzungen, sodass bearbeitungssitzungen beginnen kann, an dem eine vorherige Sitzung beendet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryString">
+      <MemberSignature Language="C#" Value="public string QueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.QueryString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt eine Zeichenfolge, die Text enthält, den von der Transformation zum Erstellen einer Vorhersageabfrage verwendet.</summary>
+        <value>Eine Zeichenfolge, die Text enthält, den von der Transformation zum Erstellen einer Vorhersageabfrage verwendet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.SqlServer.Dts.Tasks.DMQueryTask.ResultParameter&gt; ResultParameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Dts.Tasks.DMQueryTask.ResultParameter&gt; ResultParameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.ResultParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Dts.Tasks.DMQueryTask.ResultParameter&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt eine Auflistung von Integration Services-Variablen, die zum Speichern der Ergebnisse der DMX-Abfrage verwendet wird.</summary>
+        <value>Eine Auflistung von Integration Services-Variablen, die zum Speichern der DMX-Abfrageergebnisse.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeExecution">
+      <MemberSignature Language="C#" Value="public void ResumeExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.ResumeExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Setzt die Taskausführung nach einer Unterbrechung fort. Das Laufzeitmodul setzt die Ausführung des Tasks oder Containers fort.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (System.Xml.XmlDocument doc, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Speichert ein Paket als XML-Datei mithilfe der <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendExecution">
+      <MemberSignature Language="C#" Value="public void SuspendExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuspendExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.SuspendExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt an, dass das ausführbare Element angehalten werden muss. Diese Methode wird vom Laufzeitmodul aufgerufen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendRequired">
+      <MemberSignature Language="C#" Value="public bool SuspendRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuspendRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.SuspendRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert, der angibt, ob die Taskausführung sollte bei Erreichen eines Haltepunkts. Dieser Wert wird vom Laufzeitmodul für Tasks und Container festgelegt, wenn ein Breakpoint erreicht wird.</summary>
+        <value>True, wenn der Task bei Erreichen eines Breakpoints angehalten wird, andernfalls false.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variables, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variables, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.DMQueryTask.DMQueryTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variables" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variables">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <summary>Überprüft, ob die Komponente ordnungsgemäß konfiguriert ist.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

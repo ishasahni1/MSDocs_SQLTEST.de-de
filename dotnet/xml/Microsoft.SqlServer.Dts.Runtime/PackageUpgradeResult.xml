@@ -1,0 +1,431 @@
+<Type Name="PackageUpgradeResult" FullName="Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult">
+  <TypeSignature Language="C#" Value="public class PackageUpgradeResult : Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PackageUpgradeResult extends System.Object implements class Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSEvents</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Gibt die Upgradeergebnisse für ein Paket an.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Messages">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dts.Runtime.StatusMessage&gt; Messages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.SqlServer.Dts.Runtime.StatusMessage&gt; Messages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.Messages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dts.Runtime.StatusMessage&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Warn- oder Fehlermeldungen ab, die den Upgradeergebnissen für ein Paket zugeordnet sind.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.StatusMessage" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBreakpointHit">
+      <MemberSignature Language="C#" Value="public void OnBreakpointHit (Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite breakpointSite, Microsoft.SqlServer.Dts.Runtime.BreakpointTarget breakpointTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnBreakpointHit(class Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite breakpointSite, class Microsoft.SqlServer.Dts.Runtime.BreakpointTarget breakpointTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnBreakpointHit(Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite,Microsoft.SqlServer.Dts.Runtime.BreakpointTarget)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakpointSite" Type="Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite" />
+        <Parameter Name="breakpointTarget" Type="Microsoft.SqlServer.Dts.Runtime.BreakpointTarget" />
+      </Parameters>
+      <Docs>
+        <param name="breakpointSite">Ein Objekt, das die Schnittstelle für Breakpointsites implementiert.</param>
+        <param name="breakpointTarget">Der spezifische Breakpoint im Paket.</param>
+        <summary>Wird aufgerufen, wenn für <see cref="T:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult" /> ein Breakpoint erreicht wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCustomEvent">
+      <MemberSignature Language="C#" Value="public void OnCustomEvent (Microsoft.SqlServer.Dts.Runtime.TaskHost taskHost, string eventName, string eventText, ref object[] arguments, string subComponent, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnCustomEvent(class Microsoft.SqlServer.Dts.Runtime.TaskHost taskHost, string eventName, string eventText, object[] arguments, string subComponent, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnCustomEvent(Microsoft.SqlServer.Dts.Runtime.TaskHost,System.String,System.String,System.Object[]@,System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskHost" Type="Microsoft.SqlServer.Dts.Runtime.TaskHost" />
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="eventText" Type="System.String" />
+        <Parameter Name="arguments" Type="System.Object[]&amp;" RefType="ref" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="taskHost">Der Task, der den aktuellen Task hostet.</param>
+        <param name="eventName">Der Name des Ereignisses.</param>
+        <param name="eventText">Der Text zur Beschreibung des Ereignisses.</param>
+        <param name="arguments">Ein Array der Argumente, die an das Ereignis übergeben werden sollen.</param>
+        <param name="subComponent">Ein String-Wert, der weitere Details zur Ereignisquelle enthält.</param>
+        <param name="fireAgain">True, wenn das Objekt weiterhin ausgelöst werden soll. andernfalls "false".</param>
+        <summary>Löst ein benutzerdefiniertes Ereignis für die <see cref="T:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnError">
+      <MemberSignature Language="C#" Value="public bool OnError (Microsoft.SqlServer.Dts.Runtime.DtsObject source, int errorCode, string subComponent, string description, string helpFile, int helpContext, string idofInterfaceWithError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnError(class Microsoft.SqlServer.Dts.Runtime.DtsObject source, int32 errorCode, string subComponent, string description, string helpFile, int32 helpContext, string idofInterfaceWithError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnError(Microsoft.SqlServer.Dts.Runtime.DtsObject,System.Int32,System.String,System.String,System.String,System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.SqlServer.Dts.Runtime.DtsObject" />
+        <Parameter Name="errorCode" Type="System.Int32" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="helpFile" Type="System.String" />
+        <Parameter Name="helpContext" Type="System.Int32" />
+        <Parameter Name="idofInterfaceWithError" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">Die Fehlerquelle; das Objekt, das das Ereignis verursacht hat.</param>
+        <param name="errorCode">Ein Integer-Wert, durch den die Fehlermeldung identifiziert wird.</param>
+        <param name="subComponent">Eine beliebige Zeichenfolge, durch die das Untermodul innerhalb einer Quelle identifiziert wird.</param>
+        <param name="description">Der Text der Meldung.</param>
+        <param name="helpFile">Der Pfad zur Hilfedatei, die ausführliche Informationen enthält.</param>
+        <param name="helpContext">Der Bezeichner des Themas in der Hilfedatei.</param>
+        <param name="idofInterfaceWithError">Eine Textdarstellung der GUID der Schnittstelle, die den Fehler verursacht hat.</param>
+        <summary>Löst ein Ereignis aus, wenn ein Fehler auftritt.</summary>
+        <returns>Das ausgelöste Ereignis.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnExecutionStatusChanged">
+      <MemberSignature Language="C#" Value="public void OnExecutionStatusChanged (Microsoft.SqlServer.Dts.Runtime.Executable exec, Microsoft.SqlServer.Dts.Runtime.DTSExecStatus newStatus, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnExecutionStatusChanged(class Microsoft.SqlServer.Dts.Runtime.Executable exec, valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecStatus newStatus, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnExecutionStatusChanged(Microsoft.SqlServer.Dts.Runtime.Executable,Microsoft.SqlServer.Dts.Runtime.DTSExecStatus,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exec" Type="Microsoft.SqlServer.Dts.Runtime.Executable" />
+        <Parameter Name="newStatus" Type="Microsoft.SqlServer.Dts.Runtime.DTSExecStatus" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="exec">Der Task, der das Ereignis auslöst.</param>
+        <param name="newStatus">Der aktuelle Status der ausführbaren Datei.</param>
+        <param name="fireAgain">True, wenn das Objekt weiterhin ausgelöst werden soll. andernfalls "false".</param>
+        <summary>Tritt auf, wenn sich der Ausführungsstatus ändert.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInformation">
+      <MemberSignature Language="C#" Value="public void OnInformation (Microsoft.SqlServer.Dts.Runtime.DtsObject source, int informationCode, string subComponent, string description, string helpFile, int helpContext, string idofInterfaceWithError, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnInformation(class Microsoft.SqlServer.Dts.Runtime.DtsObject source, int32 informationCode, string subComponent, string description, string helpFile, int32 helpContext, string idofInterfaceWithError, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnInformation(Microsoft.SqlServer.Dts.Runtime.DtsObject,System.Int32,System.String,System.String,System.String,System.Int32,System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.SqlServer.Dts.Runtime.DtsObject" />
+        <Parameter Name="informationCode" Type="System.Int32" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="helpFile" Type="System.String" />
+        <Parameter Name="helpContext" Type="System.Int32" />
+        <Parameter Name="idofInterfaceWithError" Type="System.String" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="source">Die Fehlerquelle; das Objekt, das das Ereignis verursacht hat.</param>
+        <param name="informationCode">Ein Integer-Wert, durch den die Meldung identifiziert wird.</param>
+        <param name="subComponent">Eine beliebige Zeichenfolge, durch die das Untermodul innerhalb einer Quelle identifiziert wird.</param>
+        <param name="description">Der Text der Meldung.</param>
+        <param name="helpFile">Der Pfad zur Hilfedatei, die ausführliche Informationen enthält.</param>
+        <param name="helpContext">Der Bezeichner des Themas in der Hilfedatei.</param>
+        <param name="idofInterfaceWithError">Eine Textdarstellung der GUID der Schnittstelle, die den Fehler verursacht hat.</param>
+        <param name="fireAgain">True, wenn das Objekt weiterhin ausgelöst werden soll. andernfalls "false".</param>
+        <summary>Wird aufgerufen, wenn der Task Informationen bereitstellen muss.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPostExecute">
+      <MemberSignature Language="C#" Value="public void OnPostExecute (Microsoft.SqlServer.Dts.Runtime.Executable exec, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnPostExecute(class Microsoft.SqlServer.Dts.Runtime.Executable exec, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnPostExecute(Microsoft.SqlServer.Dts.Runtime.Executable,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exec" Type="Microsoft.SqlServer.Dts.Runtime.Executable" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="exec">Der Task, der als Nächstes ausgeführt werden soll.</param>
+        <param name="fireAgain">True, wenn das Objekt weiterhin ausgelöst werden soll. andernfalls "false".</param>
+        <summary>Wird aufgerufen, unmittelbar nachdem die Ausführungslogik des Tasks beendet wurde. Dieses Ereignis wird durch einen Task oder Container ausgelöst, unmittelbar nachdem er ausgeführt wurde.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPostValidate">
+      <MemberSignature Language="C#" Value="public void OnPostValidate (Microsoft.SqlServer.Dts.Runtime.Executable exec, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnPostValidate(class Microsoft.SqlServer.Dts.Runtime.Executable exec, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnPostValidate(Microsoft.SqlServer.Dts.Runtime.Executable,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exec" Type="Microsoft.SqlServer.Dts.Runtime.Executable" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="exec">Der Task, der das Ereignis auslöst.</param>
+        <param name="fireAgain">True, wenn das Objekt weiterhin ausgelöst werden soll. andernfalls "false".</param>
+        <summary>Wird aufgerufen, unmittelbar nachdem die Überprüfungslogik des Tasks beendet wurde. Dieses Ereignis wird von einem Task ausgelöst, nachdem der Task überprüft wurde.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreExecute">
+      <MemberSignature Language="C#" Value="public void OnPreExecute (Microsoft.SqlServer.Dts.Runtime.Executable exec, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnPreExecute(class Microsoft.SqlServer.Dts.Runtime.Executable exec, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnPreExecute(Microsoft.SqlServer.Dts.Runtime.Executable,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exec" Type="Microsoft.SqlServer.Dts.Runtime.Executable" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="exec">Der Task, der als Nächstes ausgeführt werden soll.</param>
+        <param name="fireAgain">True, wenn das Objekt weiterhin ausgelöst werden soll. andernfalls "false".</param>
+        <summary>Wird aufgerufen, unmittelbar bevor ein Task ausgeführt wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreValidate">
+      <MemberSignature Language="C#" Value="public void OnPreValidate (Microsoft.SqlServer.Dts.Runtime.Executable exec, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnPreValidate(class Microsoft.SqlServer.Dts.Runtime.Executable exec, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnPreValidate(Microsoft.SqlServer.Dts.Runtime.Executable,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exec" Type="Microsoft.SqlServer.Dts.Runtime.Executable" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="exec">Der Task, für den die Methode aufgerufen wird.</param>
+        <param name="fireAgain">True, wenn das Objekt weiterhin ausgelöst werden soll. andernfalls "false".</param>
+        <summary>Wird aufgerufen, sobald die tatsächliche Überprüfungslogik des Tasks gestartet wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProgress">
+      <MemberSignature Language="C#" Value="public void OnProgress (Microsoft.SqlServer.Dts.Runtime.TaskHost taskHost, string progressDescription, int percentComplete, int progressCountLow, int progressCountHigh, string subComponent, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnProgress(class Microsoft.SqlServer.Dts.Runtime.TaskHost taskHost, string progressDescription, int32 percentComplete, int32 progressCountLow, int32 progressCountHigh, string subComponent, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnProgress(Microsoft.SqlServer.Dts.Runtime.TaskHost,System.String,System.Int32,System.Int32,System.Int32,System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskHost" Type="Microsoft.SqlServer.Dts.Runtime.TaskHost" />
+        <Parameter Name="progressDescription" Type="System.String" />
+        <Parameter Name="percentComplete" Type="System.Int32" />
+        <Parameter Name="progressCountLow" Type="System.Int32" />
+        <Parameter Name="progressCountHigh" Type="System.Int32" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="taskHost">Ein NULL-Wert.</param>
+        <param name="progressDescription">Eine Zeichenfolge, die das ausgelöste Statusereignis beschreibt.</param>
+        <param name="percentComplete">Ein ganzzahliger Wert, mit dem angegeben wird, wie viel Prozent des Tasks abgeschlossen wurden.</param>
+        <param name="progressCountLow">Ein ganzzahliger Wert, der die unteren 32 Bits der abgeschlossenen Einheiten enthält.</param>
+        <param name="progressCountHigh">Ein ganzzahliger Wert, der die oberen 32 Bits der abgeschlossenen Einheiten enthält.</param>
+        <param name="subComponent">Eine Zeichenfolge, die weitere Details zur Ereignisquelle enthält.</param>
+        <param name="fireAgain">True, wenn das Objekt weiterhin ausgelöst werden soll. andernfalls "false".</param>
+        <summary>Wird aufgerufen, um den Status der Taskausführung zu aktualisieren.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnQueryCancel">
+      <MemberSignature Language="C#" Value="public bool OnQueryCancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnQueryCancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnQueryCancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Wird an jedem Punkt der Taskverarbeitung aufgerufen, an dem ein Abbruch der Ausführung sinnvoll ist.</summary>
+        <returns>Das aufgerufene Ereignis.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTaskFailed">
+      <MemberSignature Language="C#" Value="public void OnTaskFailed (Microsoft.SqlServer.Dts.Runtime.TaskHost taskHost);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnTaskFailed(class Microsoft.SqlServer.Dts.Runtime.TaskHost taskHost) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnTaskFailed(Microsoft.SqlServer.Dts.Runtime.TaskHost)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskHost" Type="Microsoft.SqlServer.Dts.Runtime.TaskHost" />
+      </Parameters>
+      <Docs>
+        <param name="taskHost">Das fehlerhafte Taskhostobjekt.</param>
+        <summary>Wird durch den Taskhost bei einem Fehler aufgerufen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnVariableValueChanged">
+      <MemberSignature Language="C#" Value="public void OnVariableValueChanged (Microsoft.SqlServer.Dts.Runtime.DtsContainer DtsContainer, Microsoft.SqlServer.Dts.Runtime.Variable variable, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnVariableValueChanged(class Microsoft.SqlServer.Dts.Runtime.DtsContainer DtsContainer, class Microsoft.SqlServer.Dts.Runtime.Variable variable, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnVariableValueChanged(Microsoft.SqlServer.Dts.Runtime.DtsContainer,Microsoft.SqlServer.Dts.Runtime.Variable,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DtsContainer" Type="Microsoft.SqlServer.Dts.Runtime.DtsContainer" />
+        <Parameter Name="variable" Type="Microsoft.SqlServer.Dts.Runtime.Variable" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="DtsContainer">Der Task.</param>
+        <param name="variable">Die geänderte Variable.</param>
+        <param name="fireAgain">True, wenn das Objekt weiterhin ausgelöst werden soll. andernfalls "false".</param>
+        <summary>Wird vom Laufzeitmodul aufgerufen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnWarning">
+      <MemberSignature Language="C#" Value="public void OnWarning (Microsoft.SqlServer.Dts.Runtime.DtsObject source, int warningCode, string subComponent, string description, string helpFile, int helpContext, string idofInterfaceWithError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnWarning(class Microsoft.SqlServer.Dts.Runtime.DtsObject source, int32 warningCode, string subComponent, string description, string helpFile, int32 helpContext, string idofInterfaceWithError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.OnWarning(Microsoft.SqlServer.Dts.Runtime.DtsObject,System.Int32,System.String,System.String,System.String,System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.SqlServer.Dts.Runtime.DtsObject" />
+        <Parameter Name="warningCode" Type="System.Int32" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="helpFile" Type="System.String" />
+        <Parameter Name="helpContext" Type="System.Int32" />
+        <Parameter Name="idofInterfaceWithError" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">Das Objekt, durch das das Ereignis verursacht wurde.</param>
+        <param name="warningCode">Ein Integer-Wert, durch den die Warnmeldung identifiziert wird.</param>
+        <param name="subComponent">Eine beliebige Zeichenfolge, durch die das Untermodul innerhalb einer Quelle identifiziert wird.</param>
+        <param name="description">Der Text der Meldung.</param>
+        <param name="helpFile">Der Pfad zur Hilfedatei, die ausführliche Informationen enthält.</param>
+        <param name="helpContext">Der Bezeichner des Themas in der Hilfedatei.</param>
+        <param name="idofInterfaceWithError">Eine Textdarstellung der GUID der Schnittstelle, die den Fehler verursacht hat.</param>
+        <summary>Wird aufgerufen, sobald sich der Task in einem Zustand befindet, der keinen Fehler, aber eine Warnung des Clients rechtfertigt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Package">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.UpgradePackageInfo Package { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.UpgradePackageInfo Package" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.Package" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.UpgradePackageInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.UpgradePackageInfo" />-Objekt für ein Paket ab.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.UpgradePackageInfo" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.UpgradeResultStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.UpgradeResultStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.PackageUpgradeResult.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.UpgradeResultStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Upgradestatus für ein Paket ab oder legt ihn fest.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.UpgradeResultStatus" /> -Enumeration, die den Status angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

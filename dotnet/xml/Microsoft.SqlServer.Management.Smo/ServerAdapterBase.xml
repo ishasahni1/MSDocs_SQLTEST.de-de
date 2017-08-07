@@ -1,0 +1,1682 @@
+<Type Name="ServerAdapterBase" FullName="Microsoft.SqlServer.Management.Smo.ServerAdapterBase">
+  <TypeSignature Language="C#" Value="public abstract class ServerAdapterBase : Microsoft.SqlServer.Management.Common.IAlterable, Microsoft.SqlServer.Management.Common.IRefreshable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ServerAdapterBase extends System.Object implements class Microsoft.SqlServer.Management.Common.IAlterable, class Microsoft.SqlServer.Management.Common.IRefreshable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.ServerAdapterBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IRefreshable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Diese Klasse fungiert als die Reduzierung Servereigenschaften in Server.Settings ausgeblendet und Server.Configuration Facets erben von dieser Klasse werden neue logische Eigenschaften hinzufügen, verwenden Sie diese Klasse des Alter und Aktualisieren von Methoden oder überschreiben Sie die Methoden Alter und aktualisieren.
+            
+            This class should not implement IDmfAdapter or any facet directly.  Facets must be on leaf-level classes and 
+            this class is not intended to be a leaf-level class.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerAdapterBase (Microsoft.SqlServer.Management.Smo.Server obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Server obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.#ctor(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdHocRemoteQueriesEnabled">
+      <MemberSignature Language="C#" Value="public bool AdHocRemoteQueriesEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AdHocRemoteQueriesEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.AdHocRemoteQueriesEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Affinity64IOMask">
+      <MemberSignature Language="C#" Value="public int Affinity64IOMask { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Affinity64IOMask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.Affinity64IOMask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Affinity64Mask">
+      <MemberSignature Language="C#" Value="public int Affinity64Mask { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Affinity64Mask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.Affinity64Mask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SQL Server-Datenträger-e/a an eine bestimmte Teilmenge der CPUs gebunden. Diese Option ist nur für die 64-Bit-Version von Microsoft SQL Server verfügbar.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffinityIOMask">
+      <MemberSignature Language="C#" Value="public int AffinityIOMask { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AffinityIOMask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.AffinityIOMask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SQL Server-Threads an eine bestimmte Teilmenge der CPUs gebunden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffinityMask">
+      <MemberSignature Language="C#" Value="public int AffinityMask { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AffinityMask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.AffinityMask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SQL Server-Datenträger-e/a an eine bestimmte Teilmenge der CPUs gebunden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AgentXPsEnabled">
+      <MemberSignature Language="C#" Value="public bool AgentXPsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AgentXPsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.AgentXPsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowUpdates">
+      <MemberSignature Language="C#" Value="public bool AllowUpdates { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowUpdates" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.AllowUpdates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alter">
+      <MemberSignature Language="C#" Value="public virtual void Alter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Alter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.Alter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AweEnabled">
+      <MemberSignature Language="C#" Value="public bool AweEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AweEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.AweEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupDirectory">
+      <MemberSignature Language="C#" Value="public string BackupDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackupDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.BackupDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockedProcessThreshold">
+      <MemberSignature Language="C#" Value="public int BlockedProcessThreshold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BlockedProcessThreshold" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.BlockedProcessThreshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserServiceAccount">
+      <MemberSignature Language="C#" Value="public string BrowserServiceAccount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BrowserServiceAccount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.BrowserServiceAccount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserStartMode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ServiceStartMode BrowserStartMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.ServiceStartMode BrowserStartMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.BrowserStartMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ServiceStartMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="C2AuditTracingEnabled">
+      <MemberSignature Language="C#" Value="public bool C2AuditTracingEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool C2AuditTracingEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.C2AuditTracingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Überwacht alle Zugriffsversuche auf Anweisungen und Objekte. Schreibt diese in eine Datei im Ordner "SQL Server-Daten".
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClrIntegrationEnabled">
+      <MemberSignature Language="C#" Value="public bool ClrIntegrationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ClrIntegrationEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ClrIntegrationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collation">
+      <MemberSignature Language="C#" Value="public string Collation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Collation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.Collation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommonCriteriaComplianceEnabled">
+      <MemberSignature Language="C#" Value="public bool CommonCriteriaComplianceEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CommonCriteriaComplianceEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.CommonCriteriaComplianceEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainmentEnabled">
+      <MemberSignature Language="C#" Value="public bool ContainmentEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContainmentEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ContainmentEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Aktiviert oder deaktiviert eigenständige Datenbanken und Authentifizierung mit Facets, über eine Server-Instanz.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CostThresholdForParallelism">
+      <MemberSignature Language="C#" Value="public int CostThresholdForParallelism { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CostThresholdForParallelism" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.CostThresholdForParallelism" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Schwellenwert, an dem SQL Server erstellt und führt parallele Pläne für Abfragen. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossDBOwnershipChainingEnabled">
+      <MemberSignature Language="C#" Value="public bool CrossDBOwnershipChainingEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CrossDBOwnershipChainingEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.CrossDBOwnershipChainingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CursorThreshold">
+      <MemberSignature Language="C#" Value="public int CursorThreshold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CursorThreshold" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.CursorThreshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseMailEnabled">
+      <MemberSignature Language="C#" Value="public bool DatabaseMailEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DatabaseMailEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.DatabaseMailEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultBackupCompressionEnabled">
+      <MemberSignature Language="C#" Value="public bool DefaultBackupCompressionEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DefaultBackupCompressionEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.DefaultBackupCompressionEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFile">
+      <MemberSignature Language="C#" Value="public string DefaultFile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.DefaultFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFullTextLanguage">
+      <MemberSignature Language="C#" Value="public int DefaultFullTextLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultFullTextLanguage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.DefaultFullTextLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultLanguage">
+      <MemberSignature Language="C#" Value="public int DefaultLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultLanguage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.DefaultLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultLog">
+      <MemberSignature Language="C#" Value="public string DefaultLog { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultLog" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.DefaultLog" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTraceEnabled">
+      <MemberSignature Language="C#" Value="public bool DefaultTraceEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DefaultTraceEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.DefaultTraceEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisallowResultsFromTriggers">
+      <MemberSignature Language="C#" Value="public bool DisallowResultsFromTriggers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisallowResultsFromTriggers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.DisallowResultsFromTriggers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynamicLocks">
+      <MemberSignature Language="C#" Value="public int DynamicLocks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DynamicLocks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.DynamicLocks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Legt die maximale Anzahl von verfügbaren Sperren fest. Diese Option beschränkt die Arbeitsspeichermenge, die das Datenbankmodul für Sperren verwendet.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtensibleKeyManagementEnabled">
+      <MemberSignature Language="C#" Value="public bool ExtensibleKeyManagementEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExtensibleKeyManagementEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ExtensibleKeyManagementEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilestreamAccessLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.FilestreamAccessLevelType FilestreamAccessLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.FilestreamAccessLevelType FilestreamAccessLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.FilestreamAccessLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.FilestreamAccessLevelType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilestreamLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.FileStreamEffectiveLevel FilestreamLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.FileStreamEffectiveLevel FilestreamLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.FilestreamLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.FileStreamEffectiveLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilestreamShareName">
+      <MemberSignature Language="C#" Value="public string FilestreamShareName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FilestreamShareName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.FilestreamShareName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillFactor">
+      <MemberSignature Language="C#" Value="public int FillFactor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FillFactor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.FillFactor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullTextCrawlBandwidthMax">
+      <MemberSignature Language="C#" Value="public int FullTextCrawlBandwidthMax { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FullTextCrawlBandwidthMax" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.FullTextCrawlBandwidthMax" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullTextCrawlBandwidthMin">
+      <MemberSignature Language="C#" Value="public int FullTextCrawlBandwidthMin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FullTextCrawlBandwidthMin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.FullTextCrawlBandwidthMin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullTextCrawlRangeMax">
+      <MemberSignature Language="C#" Value="public int FullTextCrawlRangeMax { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FullTextCrawlRangeMax" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.FullTextCrawlRangeMax" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullTextNotifyBandwidthMax">
+      <MemberSignature Language="C#" Value="public int FullTextNotifyBandwidthMax { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FullTextNotifyBandwidthMax" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.FullTextNotifyBandwidthMax" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullTextNotifyBandwidthMin">
+      <MemberSignature Language="C#" Value="public int FullTextNotifyBandwidthMin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FullTextNotifyBandwidthMin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.FullTextNotifyBandwidthMin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexCreateMemory">
+      <MemberSignature Language="C#" Value="public int IndexCreateMemory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IndexCreateMemory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.IndexCreateMemory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InDoubtTransactionResolution">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.InDoubtTransactionResolutionType InDoubtTransactionResolution { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.InDoubtTransactionResolutionType InDoubtTransactionResolution" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.InDoubtTransactionResolution" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.InDoubtTransactionResolutionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallDataDirectory">
+      <MemberSignature Language="C#" Value="public string InstallDataDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InstallDataDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.InstallDataDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallSharedDirectory">
+      <MemberSignature Language="C#" Value="public string InstallSharedDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InstallSharedDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.InstallSharedDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceName">
+      <MemberSignature Language="C#" Value="public string InstanceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InstanceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.InstanceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Instanzname des Servers
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightweightPoolingEnabled">
+      <MemberSignature Language="C#" Value="public bool LightweightPoolingEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LightweightPoolingEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.LightweightPoolingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Bietet eine Möglichkeit zum Reduzierung der systemauslastung, die mit der übermäßigen Kontextwechseln anfallen manchmal in Umgebungen symmetric Multiprocessing (SMP) auftreten.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginAuditLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.AuditLevel LoginAuditLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.AuditLevel LoginAuditLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.LoginAuditLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AuditLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Legt den Überwachungsmodus zum Nachverfolgen von Anmeldungen, die mit Erfolg/Fehler protokolliert wurden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginMode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ServerLoginMode LoginMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.ServerLoginMode LoginMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.LoginMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ServerLoginMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            SQL Server-Authentifizierungsmodus
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxDegreeOfParallelism">
+      <MemberSignature Language="C#" Value="public int MaxDegreeOfParallelism { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDegreeOfParallelism" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.MaxDegreeOfParallelism" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Schränkt die Anzahl der Prozessoren, die zur Ausführung einer einzelnen Anweisung für jede Ausführung paralleler Pläne verwendet werden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxServerMemory">
+      <MemberSignature Language="C#" Value="public int MaxServerMemory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxServerMemory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.MaxServerMemory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxWorkerThreads">
+      <MemberSignature Language="C#" Value="public int MaxWorkerThreads { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxWorkerThreads" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.MaxWorkerThreads" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Konfiguriert die Anzahl von Arbeitsthreads, die für SQL Server-Prozesse verfügbar sind.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaRetention">
+      <MemberSignature Language="C#" Value="public int MediaRetention { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MediaRetention" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.MediaRetention" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinMemoryPerQuery">
+      <MemberSignature Language="C#" Value="public int MinMemoryPerQuery { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinMemoryPerQuery" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.MinMemoryPerQuery" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinServerMemory">
+      <MemberSignature Language="C#" Value="public int MinServerMemory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinServerMemory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.MinServerMemory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamedPipesEnabled">
+      <MemberSignature Language="C#" Value="public bool NamedPipesEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NamedPipesEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.NamedPipesEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NestedTriggersEnabled">
+      <MemberSignature Language="C#" Value="public bool NestedTriggersEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NestedTriggersEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.NestedTriggersEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkPacketSize">
+      <MemberSignature Language="C#" Value="public int NetworkPacketSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NetworkPacketSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.NetworkPacketSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Legt die Paketgröße (in Bytes), die im gesamten Netzwerk verwendet wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OleAutomationEnabled">
+      <MemberSignature Language="C#" Value="public bool OleAutomationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OleAutomationEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.OleAutomationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenObjects">
+      <MemberSignature Language="C#" Value="public int OpenObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 OpenObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.OpenObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Legt die maximale Anzahl von Datenbankobjekten, die in einer Instanz von SQL Server 2000-Datenbankobjekte gleichzeitig geöffnet sein können sind die Objekte, die in der Sysobjects-Tabelle definiert sind: Tabellen, Sichten, Regeln, gespeicherte Prozeduren, Standardwerte und Trigger
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OptimizeAdhocWorkloads">
+      <MemberSignature Language="C#" Value="public bool OptimizeAdhocWorkloads { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OptimizeAdhocWorkloads" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.OptimizeAdhocWorkloads" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrecomputeRank">
+      <MemberSignature Language="C#" Value="public bool PrecomputeRank { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PrecomputeRank" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.PrecomputeRank" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PriorityBoost">
+      <MemberSignature Language="C#" Value="public bool PriorityBoost { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PriorityBoost" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.PriorityBoost" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolHandlerTimeout">
+      <MemberSignature Language="C#" Value="public int ProtocolHandlerTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ProtocolHandlerTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ProtocolHandlerTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryGovernorCostLimit">
+      <MemberSignature Language="C#" Value="public int QueryGovernorCostLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 QueryGovernorCostLimit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.QueryGovernorCostLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryWait">
+      <MemberSignature Language="C#" Value="public int QueryWait { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 QueryWait" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.QueryWait" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecoveryInterval">
+      <MemberSignature Language="C#" Value="public int RecoveryInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RecoveryInterval" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.RecoveryInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public virtual void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteAccessEnabled">
+      <MemberSignature Language="C#" Value="public bool RemoteAccessEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RemoteAccessEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.RemoteAccessEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteDacEnabled">
+      <MemberSignature Language="C#" Value="public bool RemoteDacEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RemoteDacEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.RemoteDacEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteDataArchiveEnabled">
+      <MemberSignature Language="C#" Value="public bool RemoteDataArchiveEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RemoteDataArchiveEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.RemoteDataArchiveEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Flag, das angibt, ob für den Server Stretch-Funktion aktiviert ist
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteLoginTimeout">
+      <MemberSignature Language="C#" Value="public int RemoteLoginTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RemoteLoginTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.RemoteLoginTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteProcTransEnabled">
+      <MemberSignature Language="C#" Value="public bool RemoteProcTransEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RemoteProcTransEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.RemoteProcTransEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteQueryTimeout">
+      <MemberSignature Language="C#" Value="public int RemoteQueryTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RemoteQueryTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.RemoteQueryTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplicationMaxTextSize">
+      <MemberSignature Language="C#" Value="public int ReplicationMaxTextSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ReplicationMaxTextSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ReplicationMaxTextSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplicationXPsEnabled">
+      <MemberSignature Language="C#" Value="public bool ReplicationXPsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReplicationXPsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ReplicationXPsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScanForStartupProcedures">
+      <MemberSignature Language="C#" Value="public bool ScanForStartupProcedures { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScanForStartupProcedures" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ScanForStartupProcedures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Server">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Smo.Server Server { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.Server Server" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.Server" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.Server</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerTriggerRecursionEnabled">
+      <MemberSignature Language="C#" Value="public bool ServerTriggerRecursionEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ServerTriggerRecursionEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ServerTriggerRecursionEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceName">
+      <MemberSignature Language="C#" Value="public string ServiceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ServiceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Dienstnamen, die unter die Server-Instanz ausgeführt wird
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceStartMode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ServiceStartMode ServiceStartMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.ServiceStartMode ServiceStartMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ServiceStartMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ServiceStartMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Startmodus für den Dienst
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWorkingSetSize">
+      <MemberSignature Language="C#" Value="public bool SetWorkingSetSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SetWorkingSetSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.SetWorkingSetSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowAdvancedOptions">
+      <MemberSignature Language="C#" Value="public bool ShowAdvancedOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowAdvancedOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.ShowAdvancedOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmoAndDmoXPsEnabled">
+      <MemberSignature Language="C#" Value="public bool SmoAndDmoXPsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SmoAndDmoXPsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.SmoAndDmoXPsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlDomainGroup">
+      <MemberSignature Language="C#" Value="public string SqlDomainGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SqlDomainGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.SqlDomainGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlMailEnabled">
+      <MemberSignature Language="C#" Value="public bool SqlMailEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SqlMailEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.SqlMailEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TcpEnabled">
+      <MemberSignature Language="C#" Value="public bool TcpEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TcpEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.TcpEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformNoiseWords">
+      <MemberSignature Language="C#" Value="public bool TransformNoiseWords { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TransformNoiseWords" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.TransformNoiseWords" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoDigitYearCutoff">
+      <MemberSignature Language="C#" Value="public int TwoDigitYearCutoff { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TwoDigitYearCutoff" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.TwoDigitYearCutoff" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserConnections">
+      <MemberSignature Language="C#" Value="public int UserConnections { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 UserConnections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.UserConnections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserInstancesEnabled">
+      <MemberSignature Language="C#" Value="public bool UserInstancesEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UserInstancesEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.UserInstancesEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserInstanceTimeout">
+      <MemberSignature Language="C#" Value="public int UserInstanceTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 UserInstanceTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.UserInstanceTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserOptions">
+      <MemberSignature Language="C#" Value="public int UserOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 UserOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.UserOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebAssistantEnabled">
+      <MemberSignature Language="C#" Value="public bool WebAssistantEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WebAssistantEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.WebAssistantEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPCmdShellEnabled">
+      <MemberSignature Language="C#" Value="public bool XPCmdShellEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool XPCmdShellEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ServerAdapterBase.XPCmdShellEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

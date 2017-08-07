@@ -1,0 +1,135 @@
+<Type Name="DacServicesException" FullName="Microsoft.SqlServer.Dac.DacServicesException">
+  <TypeSignature Language="C#" Value="public sealed class DacServicesException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DacServicesException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.DacServicesException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Ausgelöste Ausnahme für DAC-Dienstfehler.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DacServicesException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServicesException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.DacServicesException" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DacServicesException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServicesException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">
+            Die Meldung, die den Fehler beschreibt.
+            </param>
+        <summary>
+            Erstellt eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.DacServicesException" /> -Klasse mit der angegebenen Fehlermeldung.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DacServicesException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServicesException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">
+            Die Meldung, die den Fehler beschreibt.
+            </param>
+        <param name="innerException">
+            Die Ausnahme, die Ursache der aktuellen Ausnahme ist, oder ein NULL-Verweis, wenn keine innere Ausnahme angegeben ist. 
+            </param>
+        <summary>
+            Erstellt eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.DacServicesException" /> Klasse mit der angegebenen Fehlermeldung und einem Verweis auf die innere Ausnahme, die diese Ausnahme ausgelöst hat.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServicesException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">
+          Das <see cref="T:System.Runtime.Serialization.SerializationInfo" />-Objekt, das die serialisierten Objektdaten enthält.
+            </param>
+        <param name="context">
+          <see cref="T:System.Runtime.Serialization.StreamingContext" />mit Kontextinformationen zur Quelle bzw. zum Ziel.
+            </param>
+        <summary>
+            Schreibt Ausnahmeinformationen in das angegebene <see cref="T:System.Runtime.Serialization.SerializationInfo" />-Objekt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn <paramref name="info" /> ist ein null-Verweis.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Messages">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Dac.DacMessage&gt; Messages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.SqlServer.Dac.DacMessage&gt; Messages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacServicesException.Messages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Dac.DacMessage&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung zusätzlicher Fehler-, Warn- und Informationsmeldungen ab, die dieser Ausnahme zugeordnet sind.
+            </summary>
+        <value>
+            Auflistung zusätzlicher Fehler-, Warn- und Informationsmeldungen, die dieser Ausnahme zugeordnet sind.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

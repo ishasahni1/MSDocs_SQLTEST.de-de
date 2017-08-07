@@ -1,0 +1,154 @@
+<Type Name="EnvironmentReferenceCollection" FullName="Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReferenceCollection">
+  <TypeSignature Language="C#" Value="public sealed class EnvironmentReferenceCollection : Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference,Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference.Key,Microsoft.SqlServer.Management.IntegrationServices.ProjectInfo&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnvironmentReferenceCollection extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3&lt;class Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference, class Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference/Key, class Microsoft.SqlServer.Management.IntegrationServices.ProjectInfo&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReferenceCollection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.IntegrationServices</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference,Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference+Key,Microsoft.SqlServer.Management.IntegrationServices.ProjectInfo&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference+Key</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!2">Microsoft.SqlServer.Management.IntegrationServices.ProjectInfo</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stellt die Auflistung für Umgebungsverweise dar.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string envName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string envName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReferenceCollection.Add(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="envName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="envName">Der Name der Umgebung.</param>
+        <summary>Fügt einen lokalen Verweis auf eine Umgebung unter dem aktuellen Ordner mit dem angegebenen Umgebungsnamen hinzu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string envName, string envFolderName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string envName, string envFolderName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReferenceCollection.Add(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="envName" Type="System.String" />
+        <Parameter Name="envFolderName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="envName">Der Name der Umgebung.</param>
+        <param name="envFolderName">Der Name des Umgebungsordners.</param>
+        <summary>Fügt einen Verweis auf eine Umgebung mit dem angegebenen Umgebungsnamen und Ordnernamen hinzu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string name, string environmentFolderName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string name, string environmentFolderName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReferenceCollection.Contains(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="environmentFolderName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Umgebungsname.</param>
+        <param name="environmentFolderName">Der Name des Umgebungsordners.</param>
+        <summary>Gibt einen Wert zurück, der angibt, ob die Umgebungsverweisauflistung den angegebenen Namen und Umgebungsordnernamen enthält.</summary>
+        <returns>"true", wenn die umgebungsverweisauflistung den angegebenen Namen und umgebungsordnernamen enthält; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementFactoryImpl">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReferenceCollection.GetElementFactoryImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft das Element Factory "Impl" ab.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference this[string name, string environmentFolderName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference Item(string, string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReferenceCollection.Item(System.String,System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="environmentFolderName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des Umgebungsverweises.</param>
+        <param name="environmentFolderName">Der Name des Umgebungsordners.</param>
+        <summary>Ruft den Umgebungsverweis aus der Umgebungsverweisauflistung basierend auf dem angegebenen Namen und Umgebungsordnernamen ab.</summary>
+        <value>Der angegebene Umgebungsverweis aus der Umgebungsverweisauflistung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name, string envFolderName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name, string envFolderName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentReferenceCollection.Remove(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="envFolderName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Umgebungsname.</param>
+        <param name="envFolderName">Der Name des Umgebungsordners.</param>
+        <summary>Entfernt einen Verweis, der durch den Umgebungsnamen und Umgebungsordnernamen angegeben ist.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

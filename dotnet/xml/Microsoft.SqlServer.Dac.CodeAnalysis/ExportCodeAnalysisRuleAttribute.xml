@@ -1,0 +1,139 @@
+<Type Name="ExportCodeAnalysisRuleAttribute" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.ExportCodeAnalysisRuleAttribute">
+  <TypeSignature Language="C#" Value="public class ExportCodeAnalysisRuleAttribute : Microsoft.SqlServer.Dac.Extensibility.ExportStandardMetadataAttribute, Microsoft.SqlServer.Dac.CodeAnalysis.ISqlAnalysisRuleMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExportCodeAnalysisRuleAttribute extends Microsoft.SqlServer.Dac.Extensibility.ExportStandardMetadataAttribute implements class Microsoft.SqlServer.Dac.CodeAnalysis.ISqlAnalysisRuleMetadata, class Microsoft.SqlServer.Dac.Extensibility.IStandardMetadata" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.ExportCodeAnalysisRuleAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dac.Extensibility.ExportStandardMetadataAttribute</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dac.CodeAnalysis.ISqlAnalysisRuleMetadata</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Composition.MetadataAttribute</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Das Attribut einen regelexport und die Metadaten zu dieser Regel definieren. Implementiert ISqlAnalysisRuleMetadata, was auf der Importseite verwendet werden soll, um typkonsistenz zu gewährleisten
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExportCodeAnalysisRuleAttribute (string id, string displayName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string displayName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.ExportCodeAnalysisRuleAttribute.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">Eindeutige ID zur Identifizierung dieser Regel. Erforderliche Parameter Regel wird nicht geladen, wenn dies fehlt oder ist leer ist.</param>
+        <param name="displayName">Der Anzeigename, der in der Visual Studio-Benutzeroberfläche anzeigen. Erforderliche Parameter Regel wird nicht geladen, wenn dies fehlt oder ist leer ist.</param>
+        <summary>
+            Konstruktor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Category">
+      <MemberSignature Language="C#" Value="public string Category { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Category" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.ExportCodeAnalysisRuleAttribute.Category" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.ISqlAnalysisRuleMetadata.Category" />
+        </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public virtual string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.ExportCodeAnalysisRuleAttribute.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Beschreibung der Regel. Dies sollte eine kurze lesbare Beschreibung dessen sein, wofür die Regel vorgesehen ist: wovor sie warnt oder was sie blockiert. Dieses Feld kann lokalisiert, dies sollte aber über eine Unterklasse <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.ExportCodeAnalysisRuleAttribute" /> und überschreiben die Description-Eigenschaft. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <example>
+          <code>
+            Beispiel für eine Attributklasse, die lokalisierte Beschreibung unterstützt: öffentliche Klasse TestLocalizedExportCodeAnalysisRuleAttribute: ExportCodeAnalysisRuleAttribute {privaten Readonly Zeichenfolge _descriptionResourceName; private Zeichenfolgen _descriptionValue;
+            
+                public TestLocalizedExportCodeAnalysisRuleAttribute(string id, string displayName, string descriptionResourceName)
+                    : base(id, displayName)
+                {
+                    _descriptionResourceName = descriptionResourceName;
+                }
+            
+                public override string Description
+                {
+                    get
+                    {
+                        if (_descriptionValue == null)
+                        {
+                            // Using the descriptionResourceName as the key for looking up the description in the resources file. 
+                            // MyResources is a resource file in the same project as the LocalizedExportCodeAnalysisRuleAttribute class. 
+                            // For each rule, and entry should be added to the resources file with the descriptionResourceName as the
+                            // key and the description as the value
+                            _descriptionValue = MyResources.ResourceManager.GetString(_descriptionResourceName);
+                        }
+                        return _descriptionValue;
+                    }
+                }
+            }
+            </code>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleScope">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleScope RuleScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleScope RuleScope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.ExportCodeAnalysisRuleAttribute.RuleScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.ISqlAnalysisRuleMetadata.RuleScope" />
+        </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

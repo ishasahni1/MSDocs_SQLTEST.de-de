@@ -1,0 +1,305 @@
+<Type Name="IDTSBulkInsertTask" FullName="Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask">
+  <TypeSignature Language="C#" Value="public interface IDTSBulkInsertTask" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDTSBulkInsertTask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.BulkInsertTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Definiert die Eigenschaften und Methoden für den Masseneinfügungstask.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckConstraints">
+      <MemberSignature Language="C#" Value="public bool CheckConstraints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckConstraints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.CheckConstraints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob CHECK-Einschränkungen für Tabellen und Spalten erzwungen werden sollen, oder legt ihn fest.</summary>
+        <value>True, Check-Einschränkungen erzwingen soll. "false" Check-Einschränkungen während Massenimportvorgängen ignoriert werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFileType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.DTSBulkInsert_DataFileType DataFileType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.DTSBulkInsert_DataFileType DataFileType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.DataFileType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.DTSBulkInsert_DataFileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.DTSBulkInsert_DataFileType" /> -Enumeration, der den Datentyp angibt, der im Ladevorgang zu verwenden soll.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.DTSBulkInsert_DataFileType" /> -Enumeration, der den Datentyp angibt, der im Ladevorgang zu verwenden soll.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationConnection">
+      <MemberSignature Language="C#" Value="public string DestinationConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DestinationConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.DestinationConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Zielverbindungsobjekts ab oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Namen des Zielverbindungsobjekts enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationTableName">
+      <MemberSignature Language="C#" Value="public string DestinationTableName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DestinationTableName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.DestinationTableName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Zieltabelle oder -sicht ab oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Namen der Zieltabelle oder Sicht enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldTerminator">
+      <MemberSignature Language="C#" Value="public string FieldTerminator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FieldTerminator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.FieldTerminator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt ihn fest das Feldabschlusszeichen für die Verwendung in Char und Widechar Datendateien.</summary>
+        <value>Eine Zeichenfolge, die das Feldabschlusszeichen für die Verwendung in Char und Widechar Datendateien angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireTriggers">
+      <MemberSignature Language="C#" Value="public bool FireTriggers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FireTriggers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.FireTriggers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die INSERT-Trigger während des Vorgangs für die Tabelle ausgeführt werden sollen, oder legt ihn fest.</summary>
+        <value>"true", wenn die Insert-Trigger für die Tabelle während des Vorgangs ausgeführt werden sollen; "false", wenn Trigger ignoriert werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstRow">
+      <MemberSignature Language="C#" Value="public long FirstRow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 FirstRow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.FirstRow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die erste zu kopierende Zeile ab oder legt sie fest.</summary>
+        <value>Ein Long-Wert, der die Anzahl der ersten zu ladenden Zeile angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatFile">
+      <MemberSignature Language="C#" Value="public string FormatFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FormatFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.FormatFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den vollständigen Pfad einer Formatdatei ab oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Pfad der Formatdatei angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepIdentity">
+      <MemberSignature Language="C#" Value="public bool KeepIdentity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepIdentity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.KeepIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, auf welche Weise Identitätswerte in der importierten Datendatei für die Identitätsspalte verwendet werden, oder legt ihn fest.</summary>
+        <value>"true", wenn Identitätswerte in der importierten Datendatei für die Identitätsspalte verwendet werden soll. "true" weist die Werte, die in der Quelldatei, die Identity-Spalte angegeben werden; "false" werden die Werte von Identity-Spalte, die in der Quelle angegebenen Identitätsspaltenwerte ignoriert. Der Standardwert ist "true".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepNulls">
+      <MemberSignature Language="C#" Value="public bool KeepNulls { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepNulls" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.KeepNulls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen Wert, der angibt, ob leere Spalten einen null-Wert während des Massenladevorgangs beibehalten wird, oder Standardwerte in die Spalten eingefügt.</summary>
+        <value>"true", wenn leere Spalten einen null-Wert während des Massenladevorgangs beibehalten werden sollen; "false", wenn stattdessen die angegebenen Standardwerte eingefügt werden sollen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastRow">
+      <MemberSignature Language="C#" Value="public long LastRow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 LastRow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.LastRow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Nummer der letzten zu kopierenden Zeile ab oder legt sie fest.</summary>
+        <value>Ein Long-Wert, der die Anzahl der letzten zu kopierenden Zeile enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumErrors">
+      <MemberSignature Language="C#" Value="public long MaximumErrors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaximumErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.MaximumErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt fest, wie viele Fehler maximal auftreten dürfen, bevor der Masseneinfügungsvorgang fehlschlägt.</summary>
+        <value>Ein Long-Wert, der die maximale Anzahl von Fehlern, die auftreten können angibt, bevor der Massenladevorgang fehlschlägt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowTerminator">
+      <MemberSignature Language="C#" Value="public string RowTerminator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RowTerminator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.RowTerminator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt ihn fest Zeilenabschlusszeichen für die Verwendung in Char und Widechar Datendateien.</summary>
+        <value>Eine Zeichenfolge, die das Zeilenabschlusszeichen für die Verwendung in Char und Widechar Datendateien angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortedData">
+      <MemberSignature Language="C#" Value="public string SortedData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SortedData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.SortedData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Order by-Klausel in der Bulk Insert-Anweisung.</summary>
+        <value>Eine Zeichenfolge, die die Order by-Klausel zum Sortieren der Daten enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceConnection">
+      <MemberSignature Language="C#" Value="public string SourceConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.SourceConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Quellverbindungsobjekts ab oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Namen des Quellverbindungsobjekts enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableLock">
+      <MemberSignature Language="C#" Value="public bool TableLock { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TableLock" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.TableLock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die Tabelle während des Masseneinfügungsvorgangs gesperrt ist, oder legt ihn fest.</summary>
+        <value>"true", wenn die Tabelle während der masseneinfügung gesperrt werden sollen; "false", wenn Sie nicht gesperrt werden soll.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseFormatFile">
+      <MemberSignature Language="C#" Value="public bool UseFormatFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseFormatFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.BulkInsertTask.IDTSBulkInsertTask.UseFormatFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob der Masseneinfügungstask eine Formatdatei verwendet, oder legt ihn fest.</summary>
+        <value>"true", wenn der Masseneinfügungstask eine Formatdatei verwendet; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

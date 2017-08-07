@@ -1,0 +1,107 @@
+<Type Name="PolicyEvaluationResultsWriter" FullName="Microsoft.SqlServer.Management.Dmf.PolicyEvaluationResultsWriter">
+  <TypeSignature Language="C#" Value="public sealed class PolicyEvaluationResultsWriter : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PolicyEvaluationResultsWriter extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Dmf.PolicyEvaluationResultsWriter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dmf</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Schreibt auswertungsverläufe in einem einzelnen Stamm-XML-Dokument mit einem Stammelement mit dem Namen PolicyEvaluationResults.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyEvaluationResultsWriter (System.Xml.XmlWriter xmlWriter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlWriter xmlWriter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyEvaluationResultsWriter.#ctor(System.Xml.XmlWriter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="xmlWriter">
+        </param>
+        <summary>
+            Eine PolicyEvaluationResultsWriter schreibt auswertungsverläufe in einem einzelnen Stamm-XML-Dokument mit dem Stammelement PolicyEvaluationResults.  Fügen Sie durch Aufrufen der Methode WriteEvaluationHistory Verläufe dem XML-Code hinzu.  Schließen Sie das "Root"-Element und das Dokument durch Aufrufen von Dispose() an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyEvaluationResultsWriter.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Beenden Sie das Dokument, und lassen Sie den Verweis auf die "XmlWriter"
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXmlWriterSettings">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlWriterSettings GetXmlWriterSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlWriterSettings GetXmlWriterSettings() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyEvaluationResultsWriter.GetXmlWriterSettings" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlWriterSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Die Einstellungen einer "XmlWriter" können Sie eine aggregierte auswertungsverlauf erstellen
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvaluationHistory">
+      <MemberSignature Language="C#" Value="public void WriteEvaluationHistory (Microsoft.SqlServer.Management.Dmf.EvaluationHistory history);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteEvaluationHistory(class Microsoft.SqlServer.Management.Dmf.EvaluationHistory history) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyEvaluationResultsWriter.WriteEvaluationHistory(Microsoft.SqlServer.Management.Dmf.EvaluationHistory)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="history" Type="Microsoft.SqlServer.Management.Dmf.EvaluationHistory" />
+      </Parameters>
+      <Docs>
+        <param name="history">
+        </param>
+        <summary>
+            Schreiben Sie eine EvaluationHistory in den Stream writer 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

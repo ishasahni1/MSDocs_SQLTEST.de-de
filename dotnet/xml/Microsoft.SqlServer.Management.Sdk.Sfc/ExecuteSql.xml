@@ -1,0 +1,403 @@
+<Type Name="ExecuteSql" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql">
+  <TypeSignature Language="C#" Value="public class ExecuteSql" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExecuteSql extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Diese Klasse wird verwendet, um die Tsql ausgeführt, es handelt sich um die einzige Möglichkeit Tsql vom Enumerator ausgeführt wird</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExecuteSql (object con);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object con) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="con" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="con">Muss hinzugefügt werden.</param>
+        <summary>
+            Init-Verbindung, die versuchen, auf einen der unterstützten Verbindungstypen con umgewandelt</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteImmediate">
+      <MemberSignature Language="C#" Value="public void ExecuteImmediate (string query);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteImmediate(string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.ExecuteImmediate(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="query">Muss hinzugefügt werden.</param>
+        <summary>
+            Führen Sie eine Abfrage ohne Ergebnisse</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteImmediate">
+      <MemberSignature Language="C#" Value="public static void ExecuteImmediate (string query, object con);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExecuteImmediate(string query, object con) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.ExecuteImmediate(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="con" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="query">Muss hinzugefügt werden.</param>
+        <param name="con">Muss hinzugefügt werden.</param>
+        <summary>
+            Führen Sie die Sql für Fehler, die Verbindung angegeben, ohne Ergebnisse zurückzugeben</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteImmediateGetMessage">
+      <MemberSignature Language="C#" Value="public static System.Collections.ArrayList ExecuteImmediateGetMessage (string query, object con);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ArrayList ExecuteImmediateGetMessage(string query, object con) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.ExecuteImmediateGetMessage(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="con" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="query">Muss hinzugefügt werden.</param>
+        <param name="con">Muss hinzugefügt werden.</param>
+        <summary>
+            Führen Sie die Sql für Fehler, die Verbindung ohne Ergebnisse zurückzugeben, die Meldungen jedoch erfasst angegeben</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteWithResults">
+      <MemberSignature Language="C#" Value="public System.Data.DataTable ExecuteWithResults (string query);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ExecuteWithResults(string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.ExecuteWithResults(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="query">Muss hinzugefügt werden.</param>
+        <summary>
+            Excute einer Abfrage und der Rückgabewert eine DataTable mit den Ergebnissen</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteWithResults">
+      <MemberSignature Language="C#" Value="public static System.Data.DataTable ExecuteWithResults (System.Collections.Specialized.StringCollection query, object con);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataTable ExecuteWithResults(class System.Collections.Specialized.StringCollection query, object con) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.ExecuteWithResults(System.Collections.Specialized.StringCollection,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.Collections.Specialized.StringCollection" />
+        <Parameter Name="con" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="query">Muss hinzugefügt werden.</param>
+        <param name="con">Muss hinzugefügt werden.</param>
+        <summary>
+            Führen Sie t-SQL für die angegebene Verbindung und zurückgeben Sie die Ergebnisse, in der "DataTable"</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteWithResults">
+      <MemberSignature Language="C#" Value="public static System.Data.DataTable ExecuteWithResults (string query, object con);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataTable ExecuteWithResults(string query, object con) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.ExecuteWithResults(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="con" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="query">Muss hinzugefügt werden.</param>
+        <param name="con">Muss hinzugefügt werden.</param>
+        <summary>
+            Führen Sie die Sql für Fehler, die angegebene Verbindung Zurückgeben von Ergebnissen in einer "DataTable"</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteWithResults">
+      <MemberSignature Language="C#" Value="public static System.Data.DataTable ExecuteWithResults (System.Collections.Specialized.StringCollection query, object con, Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder sb);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataTable ExecuteWithResults(class System.Collections.Specialized.StringCollection query, object con, class Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder sb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.ExecuteWithResults(System.Collections.Specialized.StringCollection,System.Object,Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.Collections.Specialized.StringCollection" />
+        <Parameter Name="con" Type="System.Object" />
+        <Parameter Name="sb" Type="Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="query">Muss hinzugefügt werden.</param>
+        <param name="con">Muss hinzugefügt werden.</param>
+        <param name="sb">Muss hinzugefügt werden.</param>
+        <summary>
+            Führen Sie die Sql für Fehler, die angegebene Verbindung Zurückgeben von Ergebnissen in einer "DataTable" sieht eine Tsql für Endergebnisse StatementBuilder enthält Informationen zu zusätzlichen verarbeitungsanforderungen und Schriftgraden zur Verfügung, die in der Liste der ersten Tsqls ohne Resulst ausgeführt werden, die Ergebnisse werden genommen, nur für die letzten tsql</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseEngineEdition">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.DatabaseEngineEdition GetDatabaseEngineEdition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.SqlServer.Management.Common.DatabaseEngineEdition GetDatabaseEngineEdition() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.GetDatabaseEngineEdition" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.DatabaseEngineEdition</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt die DatabaseEngineEdition für die Verbindung
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseEngineEdition">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Common.DatabaseEngineEdition GetDatabaseEngineEdition (object con);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.SqlServer.Management.Common.DatabaseEngineEdition GetDatabaseEngineEdition(object con) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.GetDatabaseEngineEdition(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.DatabaseEngineEdition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="con" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="con">Muss hinzugefügt werden.</param>
+        <summary>
+            Zurückgeben der DatabaseEngineEdition für den Server mit der angegebenen Verbindung</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseEngineType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.DatabaseEngineType GetDatabaseEngineType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.SqlServer.Management.Common.DatabaseEngineType GetDatabaseEngineType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.GetDatabaseEngineType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.DatabaseEngineType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Zurückgeben der DatabaseEngineType für die Verbindung</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseEngineType">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Common.DatabaseEngineType GetDatabaseEngineType (object con);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.SqlServer.Management.Common.DatabaseEngineType GetDatabaseEngineType(object con) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.GetDatabaseEngineType(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.DatabaseEngineType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="con" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="con">Muss hinzugefügt werden.</param>
+        <summary>
+            der Datenbankmodultyp für den Server mit der angegebenen Verbindung zurückgeben</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataReader">
+      <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlDataReader GetDataReader (string query);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlDataReader GetDataReader(string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.GetDataReader(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="query">Der Abfragetext vor jeder Parametrisierung oder Zwischenspeichern überprüft.</param>
+        <summary>
+            Ausführen einer Abfrage und ein "DataReader" für die Ergebnisse abrufen.
+            </summary>
+        <returns>Der Datenleser.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataReader">
+      <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlDataReader GetDataReader (string query, out System.Data.SqlClient.SqlCommand command);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.SqlClient.SqlDataReader GetDataReader(string query, class System.Data.SqlClient.SqlCommand command) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.GetDataReader(System.String,System.Data.SqlClient.SqlCommand@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="command" Type="System.Data.SqlClient.SqlCommand&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="query">Der Abfragetext vor jeder Parametrisierung oder Zwischenspeichern überprüft.</param>
+        <param name="command">Die "SqlCommand" verwenden, für den Fall, dass verbleibende Protokolllesers Abbrechen ist erforderlich.</param>
+        <summary>
+            Ausführen einer Abfrage und ein "DataReader" für die Ergebnisse abrufen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHostPlatform">
+      <MemberSignature Language="C#" Value="public static string GetHostPlatform (object con);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetHostPlatform(object con) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.GetHostPlatform(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="con" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="con">
+        </param>
+        <summary>
+            Gibt die HostPlatform-Eigenschaft der Verbindung zurück
+            </summary>
+        <returns>Ein Wert aus der HostPlatformNames-Klasse</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServerVersion">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.ServerVersion GetServerVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Common.ServerVersion GetServerVersion() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.GetServerVersion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerVersion</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            die ServerVersion für die Verbindung zurück</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServerVersion">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Common.ServerVersion GetServerVersion (object con);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Common.ServerVersion GetServerVersion(object con) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ExecuteSql.GetServerVersion(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerVersion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="con" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="con">Muss hinzugefügt werden.</param>
+        <summary>
+            die Serverversion für den Server mit der angegebenen Verbindung zurückgeben</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

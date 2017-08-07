@@ -1,0 +1,205 @@
+<Type Name="AvailabilityGroupState" FullName="Microsoft.SqlServer.Management.Smo.AvailabilityGroupState">
+  <TypeSignature Language="C#" Value="public class AvailabilityGroupState : Microsoft.SqlServer.Management.Common.IRefreshable, Microsoft.SqlServer.Management.Facets.IDmfAdapter, Microsoft.SqlServer.Management.Sdk.Sfc.IDmfFacet, Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AvailabilityGroupState extends System.Object implements class Microsoft.SqlServer.Management.Common.IRefreshable, class Microsoft.SqlServer.Management.Facets.IDmfAdapter, class Microsoft.SqlServer.Management.Sdk.Sfc.IDmfFacet, class Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.AvailabilityGroupState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IRefreshable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Facets.IDmfAdapter</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.IDmfFacet</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Dies ist eine Adapterklasse, die implementiert die <see cref="T:Microsoft.SqlServer.Management.Smo.IAvailabilityGroupState" /> logisches Facet für eine Verfügbarkeitsgruppe.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AvailabilityGroupState (Microsoft.SqlServer.Management.Smo.AvailabilityGroup ag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.AvailabilityGroup ag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.AvailabilityGroupState.#ctor(Microsoft.SqlServer.Management.Smo.AvailabilityGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ag" Type="Microsoft.SqlServer.Management.Smo.AvailabilityGroup" />
+      </Parameters>
+      <Docs>
+        <param name="ag">Die Verfügbarkeitsgruppe, die dieses Objekt verfügbar gemacht wird.</param>
+        <summary>
+            Initialisiert eine neue Instanz der AvailabilityGroupState-Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAutoFailover">
+      <MemberSignature Language="C#" Value="public bool IsAutoFailover { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAutoFailover" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.AvailabilityGroupState.IsAutoFailover" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert, der angibt, ob der Failovermodus der verfügbarkeitsgruppe ist ein automatisches Failover. Zugriff auf diese Eigenschaft möglicherweise eine Ausnahme ausgelöst, damit wir es separat initialisiert werden.  Insbesondere, wenn das primäre Replikat nicht sichtbar ist, wird eine Ausnahme ausgelöst, die dieses angibt. Dies tritt nur auf, wenn diese Eigenschaft aus einem sekundären Replikat zugreifen, die nicht mit dem Cluster Speicher kommunizieren können. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOnline">
+      <MemberSignature Language="C#" Value="public bool IsOnline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOnline" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.AvailabilityGroupState.IsOnline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert, der angibt, ob die Verfügbarkeitsgruppe aktiviert ist. Dies ist "true", wenn ein funktionsfähige primäres Replikat für die Verfügbarkeitsgruppe vorhanden ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfDisconnectedReplicas">
+      <MemberSignature Language="C#" Value="public int NumberOfDisconnectedReplicas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfDisconnectedReplicas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.AvailabilityGroupState.NumberOfDisconnectedReplicas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Verbindungsfehlers der Replikate, die nicht im Zustand "Verbunden"
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfNotSynchronizedReplicas">
+      <MemberSignature Language="C#" Value="public int NumberOfNotSynchronizedReplicas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfNotSynchronizedReplicas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.AvailabilityGroupState.NumberOfNotSynchronizedReplicas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der Replikate, die nicht in einem Zustand "Synchronisiert" befinden. Da nur synchrone Replikate im Zustand "synchronisiert" sein können, gilt dies nicht für asynchrone Replikate
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfNotSynchronizingReplicas">
+      <MemberSignature Language="C#" Value="public int NumberOfNotSynchronizingReplicas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfNotSynchronizingReplicas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.AvailabilityGroupState.NumberOfNotSynchronizingReplicas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Verbindungsfehlers Replikate im Zustand "Wird nicht synchronisiert".
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfReplicasWithUnhealthyRole">
+      <MemberSignature Language="C#" Value="public int NumberOfReplicasWithUnhealthyRole { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfReplicasWithUnhealthyRole" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.AvailabilityGroupState.NumberOfReplicasWithUnhealthyRole" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der Replikate ab, die weder ein primäres noch ein sekundäres Replikat in der Verfügbarkeitsgruppe darstellen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfSynchronizedSecondaryReplicas">
+      <MemberSignature Language="C#" Value="public int NumberOfSynchronizedSecondaryReplicas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfSynchronizedSecondaryReplicas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.AvailabilityGroupState.NumberOfSynchronizedSecondaryReplicas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl synchroner sekundärer Replikate mit automatischem Failovermodus und dem Zustand "Synchronisiert" ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.AvailabilityGroupState.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Aktualisieren Sie die Gruppe verfügbarkeitsstatusdaten.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

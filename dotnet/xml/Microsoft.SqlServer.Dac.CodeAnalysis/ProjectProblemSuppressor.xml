@@ -1,0 +1,218 @@
+<Type Name="ProjectProblemSuppressor" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor">
+  <TypeSignature Language="C#" Value="public sealed class ProjectProblemSuppressor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProjectProblemSuppressor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Der Problemfilter für SSDT-Projekte. Die <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor.ShouldSuppressProblem" /> Methode übergeben werden kann, um <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings.ShouldSuppressProblem" /> zur Verwendung dieser Klasse.
+            
+            This reads suppression information from a file with a name matching
+            <see cref="F:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor.SuppressionFilename" /> ("StaticCodeAnalysis.SuppressMessages.xml") in the root directory.
+            
+            All relative paths will be resolved relative to the project folder defined in the constructor
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddSuppressedProblems">
+      <MemberSignature Language="C#" Value="public void AddSuppressedProblems (System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo&gt; suppressedProblems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSuppressedProblems(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo&gt; suppressedProblems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor.AddSuppressedProblems(System.Collections.Generic.IEnumerable{Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="suppressedProblems" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="suppressedProblems">
+            Ein IEnumerable von <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo" /> Objekte definieren, jede Kombination aus einer Datei, die für die Probleme unterdrückt werden sollen, und die spezielle Regel, deren Probleme unterdrückt werden sollen.
+            </param>
+        <summary>
+            Fügt eine oder mehrere Instanzen des <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo" /> auf den Satz der unterdrückten Probleme.
+Anschließend wird der vollständige Satz der unterdrückten Probleme sofort in die unterstützende XML-Datei geschrieben.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSuppressor">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor CreateSuppressor (string projectFolder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor CreateSuppressor(string projectFolder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor.CreateSuppressor(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFolder" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFolder">
+            Der Ordner, in dem sich die XML-Nachrichtenunterdrückungsdatei befindet. Für jede Regel, bei deren Unterdrückung ein relativer Dateipfad verwendet wird, gilt dieser Ordnerpfad als Basis für den vollständigen Pfad. 
+            </param>
+        <summary>
+            Erstellt ein neues <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor" />.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor" />
+        </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.ProblemSuppressionException">
+            Wird ausgelöst, wenn der Pfad der XML-Datei ungültig ist oder es wurde ein Problem beim Analysieren des XML-Codes
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSuppressor">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor CreateSuppressor (string projectFolder, string suppressionFilename);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor CreateSuppressor(string projectFolder, string suppressionFilename) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor.CreateSuppressor(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFolder" Type="System.String" />
+        <Parameter Name="suppressionFilename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFolder">
+            Der Ordner, in dem sich die XML-Nachrichtenunterdrückungsdatei befindet. Für jede Regel, bei deren Unterdrückung ein relativer Dateipfad verwendet wird, gilt dieser Ordnerpfad als Basis für den vollständigen Pfad. 
+            </param>
+        <param name="suppressionFilename">"Der Name des der XML-nachrichtenunterdrückungsdatei. Diese Datei sollte sich erwartungsgemäß unter dem Projektordner befinden.
+            </param>
+        <summary>
+            Erstellt ein neues <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor" />.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor" />
+        </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.ProblemSuppressionException">
+            Wird ausgelöst, wenn der Pfad der XML-Datei ungültig ist oder es wurde ein Problem beim Analysieren des XML-Codes
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSuppressedProblems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo&gt; GetSuppressedProblems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo&gt; GetSuppressedProblems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor.GetSuppressedProblems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft Informationen zu den zu unterdrückenden Problemen ab. Insbesondere eine Reihe von <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo" /> Objekte zurückgegeben werden, definiert, dass jede Kombination einer zu unterdrückenden Regel und den Dateinamen für die die Regel unterdrückt wird.
+            </summary>
+        <returns>Eine Liste der <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SuppressedProblemInfo" /> Objekte definieren, jede Kombination einer zu unterdrückenden Regel und die Datei zu benennen, für die die Regel unterdrückt wird</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetSuppressedProblems">
+      <MemberSignature Language="C#" Value="public void ResetSuppressedProblems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetSuppressedProblems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor.ResetSuppressedProblems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Setzt die unterdrückten Probleme auf ihren Standardstatus zurück. Wenn bereits eine XML-Unterdrückungsdatei für das Projekt besteht, wird der Status aus dieser geladen. Andernfalls wird er so zurückgesetzt, dass keine Probleme unterdrückt werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSuppressProblem">
+      <MemberSignature Language="C#" Value="public Predicate&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSuppressionContext&gt; ShouldSuppressProblem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Predicate`1&lt;class Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSuppressionContext&gt; ShouldSuppressProblem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor.ShouldSuppressProblem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Predicate&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSuppressionContext&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das Prädikat, das zum verwendet werden können
+            
+            If any errors occur during
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressionFilename">
+      <MemberSignature Language="C#" Value="public const string SuppressionFilename;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SuppressionFilename" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor.SuppressionFilename" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Standarddateiname für eine Meldungsunterdrückungsdatei innerhalb eines Projekts.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsuppressRulesFromFile">
+      <MemberSignature Language="C#" Value="public void UnsuppressRulesFromFile (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnsuppressRulesFromFile(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.ProjectProblemSuppressor.UnsuppressRulesFromFile(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Pfad zur Datei</param>
+        <summary>
+            Entfernt für einen bestimmten Dateinamen alle Problemunterdrückungsdirektiven.
+            
+            The updated set of problems to suppress will be immediately written out to the backing XML file that describes what
+            rules should be suppressed for a given file. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Wenn die <paramref name="fileName" /> ist null.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

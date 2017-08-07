@@ -1,0 +1,950 @@
+<Type Name="TSqlObject" FullName="Microsoft.SqlServer.Dac.Model.TSqlObject">
+  <TypeSignature Language="C#" Value="public sealed class TSqlObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TSqlObject extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Repräsentiert eine Objektinstanz für ein SQL Server-Datenbankschema.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">das zu vergleichende Objekt</param>
+        <summary>
+            Überprüft, ob dieses <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> ist gleich einem anderen<see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /></summary>
+        <returns>"true", wenn sie gleich sind</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAst">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript GetAst ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript GetAst() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetAst" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Generiert einen neuen <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript" /> darstellt AST für die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />, wenn dies unterstützt wird die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />. AST-Generierung wird nur unterstützt für Objekte der obersten Ebene, mit der bestimmte Objekte z. B. die <see cref="T:Microsoft.SqlServer.Dac.Model.DatabaseOptions" /> und Inline-Einschränkungen, die AST-Generierung nicht unterstützen, obwohl sie die Top-Level-Typen sind. Es ist unbekannt, ob das Objekt kann wird ein Skript erstellt dann die <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlObject.TryGetAst(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript@)" /> Methode sollte stattdessen verwendet werden.
+            
+            The generated AST is a newly generated object that defines the information about this <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> and any objects
+            that would be scripted together with it. For example a Table would also script out the Columns and inline constraint definitions of a Table. 
+            This method can be used to copy object information from one model to another, or to script out information about
+            objects in the model.
+            </summary>
+        <returns>Das generierte AST-Objekt.</returns>
+        <remarks>
+            Die AST weisen keine Informationen über die ursprüngliche Position der Datenquelle, z. B. die Quellnamen der ursprünglichen und die ursprüngliche Position im eingabeskript.
+            </remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> ist kein Anweisungsobjekt der obersten Ebene oder wenn es keine AST-Generierung unterstützt (z. B. wenn es ist ein <see cref="T:Microsoft.SqlServer.Dac.Model.DatabaseOptions" /> oder eine Einschränkung, die ursprünglich Inline in einer Tabelle definiert).
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildren">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetChildren ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetChildren() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetChildren" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt alle <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> untergeordnete Objekte innerhalb der <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.Default" /> Bereich.
+            </summary>
+        <returns>Alle untergeordneten Objekte.</returns>
+        <remarks>
+            Verweise auf Elemente, die nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> werden nicht zurückgegeben.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildren">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetChildren (Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetChildren(valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetChildren(Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Gibt alle <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> untergeordneten Objekte innerhalb des angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> Bereich.
+            </summary>
+        <returns>Alle untergeordneten Objekte.</returns>
+        <remarks>
+            Verweise auf Elemente, die nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> werden nicht zurückgegeben.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft den Hashcode für dieses Objekt
+            </summary>
+        <returns>Int-hashcode</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadata">
+      <MemberSignature Language="C#" Value="public object GetMetadata (Microsoft.SqlServer.Dac.Model.ModelMetadataClass metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetMetadata(class Microsoft.SqlServer.Dac.Model.ModelMetadataClass metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetMetadata(Microsoft.SqlServer.Dac.Model.ModelMetadataClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="Microsoft.SqlServer.Dac.Model.ModelMetadataClass" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">Der Name der Metadaten-Eigenschaft.</param>
+        <summary>
+            Gibt den Wert einer Metadateneigenschaft zurück.
+            </summary>
+        <returns>Der Wert der Metadateneigenschaft.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn <paramref name="metadata" /> für das Objekt nicht vorhanden.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadata&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetMetadata&lt;T&gt; (Microsoft.SqlServer.Dac.Model.ModelMetadataClass metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetMetadata&lt;T&gt;(class Microsoft.SqlServer.Dac.Model.ModelMetadataClass metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetMetadata``1(Microsoft.SqlServer.Dac.Model.ModelMetadataClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="metadata" Type="Microsoft.SqlServer.Dac.Model.ModelMetadataClass" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Typ der Metadateneigenschaft.</typeparam>
+        <param name="metadata">Der Name der Metadaten-Eigenschaft.</param>
+        <summary>
+            Gibt den Wert einer Metadateneigenschaft zurück.
+            </summary>
+        <returns>Der Wert der Metadateneigenschaft.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn <paramref name="metadata" /> für das Objekt nicht vorhanden.
+            </exception>
+        <exception cref="T:System.InvalidCastException">
+            Wenn der Typ der Metadateneigenschaft nicht in T umgewandelt werden kann.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlObject GetParent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.Model.TSqlObject GetParent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetParent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt die übergeordnete <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />, wenn es innerhalb der <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.Default" /> -Bereichs liegt und es ist nur ein <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> , das das übergeordnete Element für dieses Objekt werden konnte...
+            </summary>
+        <returns>Übergeordnetes Objekt andere null.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlObject GetParent (Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.Model.TSqlObject GetParent(valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetParent(Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Gibt die übergeordnete <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />, wenn es innerhalb des angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> -Bereichs liegt und es ist nur ein <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> das übergeordnete Element für dieses Objekt sein kann.
+            </summary>
+        <returns>Übergeordnetes Objekt, ansonsten Null.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="public object GetProperty (Microsoft.SqlServer.Dac.Model.ModelPropertyClass property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetProperty(class Microsoft.SqlServer.Dac.Model.ModelPropertyClass property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetProperty(Microsoft.SqlServer.Dac.Model.ModelPropertyClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="Microsoft.SqlServer.Dac.Model.ModelPropertyClass" />
+      </Parameters>
+      <Docs>
+        <param name="property">Eigenschaft.</param>
+        <summary>
+            Gibt den Eigenschaftswert zurück.
+            </summary>
+        <returns>Eigenschaftswert.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn <paramref name="property" /> für das Objekt nicht vorhanden.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetProperty&lt;T&gt; (Microsoft.SqlServer.Dac.Model.ModelPropertyClass property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetProperty&lt;T&gt;(class Microsoft.SqlServer.Dac.Model.ModelPropertyClass property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetProperty``1(Microsoft.SqlServer.Dac.Model.ModelPropertyClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="property" Type="Microsoft.SqlServer.Dac.Model.ModelPropertyClass" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Typ der Eigenschaft.</typeparam>
+        <param name="property">Eigenschaft.</param>
+        <summary>
+            Gibt den Eigenschaftswert zurück.
+            </summary>
+        <returns>Eigenschaftswert.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn <paramref name="property" /> für das Objekt nicht vorhanden.
+            </exception>
+        <exception cref="T:System.InvalidCastException">
+            Wenn der Eigenschaftstyp nicht in T umgewandelt werden kann.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferenced">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferenced ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferenced() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferenced" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft alle referenzierten Objekte innerhalb der <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.Default" /> Bereich
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />von diesem Objekt referenzierte</returns>
+        <remarks>
+            Verweise auf Elemente, die nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> werden nicht zurückgegeben. Verwendung <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances" /> für eine Liste aller möglichen referenzierten Elemente.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferenced">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferenced (Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferenced(valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferenced(Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Ruft alle referenzierten Objekte innerhalb einer bestimmten <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> Bereich.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />von diesem Objekt referenzierte</returns>
+        <remarks>
+            Verweise auf Elemente, die nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> werden nicht zurückgegeben. Verwendung <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances" /> für eine Liste aller möglichen referenzierten Elemente.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferenced">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferenced (Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferenced(class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferenced(Microsoft.SqlServer.Dac.Model.ModelRelationshipClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relationshipType" Type="Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipType">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />Die Beziehungsklasse für Abfragen definieren</param>
+        <summary>
+            Ruft referenzierte Objekte für einen bestimmten <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />, wobei sich Objekte innerhalb der <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.Default" /> Bereich
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />referenzierte von diesem Objekt für einen bestimmten<see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" /></returns>
+        <remarks>
+            Verweise auf Elemente, die nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> werden nicht zurückgegeben. Verwendung <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances" /> für eine Liste aller möglichen referenzierten Elemente.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferenced">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferenced (Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType, Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferenced(class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType, valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferenced(Microsoft.SqlServer.Dac.Model.ModelRelationshipClass,Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relationshipType" Type="Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipType">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />die Beziehung definieren zur Abfrage.</param>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Ruft referenzierte Objekte für eine bestimmte <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />, wobei sich Objekte innerhalb einer bestimmten <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> Bereich.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />referenzierte von diesem Objekt für einen bestimmten<see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" /></returns>
+        <remarks>
+            Verweise auf Elemente, die nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> werden nicht zurückgegeben. Verwendung <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances" /> für eine Liste aller möglichen referenzierten Elemente.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedRelationshipInstances">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Für jedes Objekt verwiesen wird, von diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />, gibt die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" /> Definition der Beziehungsdaten. Dies schließt das referenzierte Objekt auf, wenn er vorhanden ist, die <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" /> verwendet, um das referenzierte Objekt und alle Eigenschaften, die speziell für diese Beziehung zu identifizieren.
+Nur Objekte innerhalb der <see cref="F:Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes.Default" /> -Bereichs werden zurückgegeben.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />definieren die Beziehungen zwischen diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> und den Objekten verwiesen wird</returns>
+        <remarks>
+            Die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.Object" /> Feld ist möglicherweise null, wenn das Element nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />. In diesen Fällen die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.ObjectName" /> -Feld zum Abfragen von Informationen über das referenzierte Objekt verwendet werden kann.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedRelationshipInstances">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances (Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances(valuetype Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances(Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Für jedes Objekt verwiesen wird, von diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />, gibt die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" /> Definition der Beziehungsdaten. Dies schließt das referenzierte Objekt auf, wenn er vorhanden ist, die <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" /> verwendet, um das referenzierte Objekt und alle Eigenschaften, die speziell für diese Beziehung zu identifizieren.
+Nur Objekte innerhalb des angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> -Bereichs werden zurückgegeben.
+Um nicht zusammengesetzte Verweise oder Systemverweise zurückzugeben, muss der Bereich so festgelegt werden, dass externe Verweise eingeschlossen werden. Darüber hinaus werden in diesem Fall nur die <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" /> des referenzierten Objekts zurückgegeben werden
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />definieren die Beziehungen zwischen diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> und den Objekten verwiesen wird</returns>
+        <remarks>
+            Die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.Object" /> Feld ist möglicherweise null, wenn das Element nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />. In diesen Fällen die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.ObjectName" /> -Feld zum Abfragen von Informationen über das referenzierte Objekt verwendet werden kann.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedRelationshipInstances">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances (Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances(valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances(Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Für jedes Objekt verwiesen wird, von diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />, gibt die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" /> Definition der Beziehungsdaten. Dies schließt das referenzierte Objekt auf, wenn er vorhanden ist, die <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" /> verwendet, um das referenzierte Objekt und alle Eigenschaften, die speziell für diese Beziehung zu identifizieren.
+Nur Objekte innerhalb des angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> -Bereichs werden zurückgegeben.
+Um nicht zusammengesetzte oder Systemverweise Zurückgeben der <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances(Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes)" /> Methode sollte stattdessen aufgerufen werden
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />definieren die Beziehungen zwischen diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> und den Objekten verwiesen wird</returns>
+        <remarks>
+            Die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.Object" /> Feld ist möglicherweise null, wenn das Element nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />. In diesen Fällen die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.ObjectName" /> -Feld zum Abfragen von Informationen über das referenzierte Objekt verwendet werden kann.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedRelationshipInstances">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances (Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances(class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances(Microsoft.SqlServer.Dac.Model.ModelRelationshipClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relationshipType" Type="Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipType">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />Die Beziehungsklasse für Abfragen definieren</param>
+        <summary>
+            Für Objekte, die auf die verwiesen wird von diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> mit einem bestimmten <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />, gibt die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" /> Definition der Beziehungsdaten. Dies schließt das referenzierte Objekt auf, wenn er vorhanden ist, die <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" /> verwendet, um das referenzierte Objekt und alle Eigenschaften, die speziell für diese Beziehung zu identifizieren.
+Nur Objekte innerhalb der <see cref="F:Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes.Default" /> -Bereichs werden zurückgegeben.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />definieren die Beziehungen zwischen diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> und den Objekten verwiesen wird</returns>
+        <remarks>
+            Die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.Object" /> Feld ist möglicherweise null, wenn das Element nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />. In diesen Fällen die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.ObjectName" /> -Feld zum Abfragen von Informationen über das referenzierte Objekt verwendet werden kann.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedRelationshipInstances">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances (Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType, Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances(class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType, valuetype Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances(Microsoft.SqlServer.Dac.Model.ModelRelationshipClass,Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relationshipType" Type="Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipType">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />Die Beziehungsklasse für Abfragen definieren</param>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Für Objekte, die auf die verwiesen wird von diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> mit einem bestimmten <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />, gibt die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" /> Definition der Beziehungsdaten. Dies schließt das referenzierte Objekt auf, wenn er vorhanden ist, die <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" /> verwendet, um das referenzierte Objekt und alle Eigenschaften, die speziell für diese Beziehung zu identifizieren.
+Nur Objekte innerhalb des angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes" /> -Bereichs werden zurückgegeben.
+Um nicht zusammengesetzte Verweise oder Systemverweise zurückzugeben, muss der Bereich so festgelegt werden, dass externe Verweise eingeschlossen werden. Darüber hinaus werden in diesem Fall nur die <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" /> des referenzierten Objekts zurückgegeben werden
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />definieren die Beziehungen zwischen diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> und den Objekten verwiesen wird</returns>
+        <remarks>
+            Die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.Object" /> Feld ist möglicherweise null, wenn das Element nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />. In diesen Fällen die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.ObjectName" /> -Feld zum Abfragen von Informationen über das referenzierte Objekt verwendet werden kann.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedRelationshipInstances">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances (Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType, Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencedRelationshipInstances(class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType, valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances(Microsoft.SqlServer.Dac.Model.ModelRelationshipClass,Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relationshipType" Type="Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipType">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />Die Beziehungsklasse für Abfragen definieren</param>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Für Objekte, die auf die verwiesen wird von diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> mit einem bestimmten <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />, gibt die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" /> Definition der Beziehungsdaten. Dies schließt das referenzierte Objekt auf, wenn er vorhanden ist, die <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" /> verwendet, um das referenzierte Objekt und alle Eigenschaften, die speziell für diese Beziehung zu identifizieren.
+Nur Objekte innerhalb des angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> -Bereichs werden zurückgegeben.
+Um nicht zusammengesetzte oder Systemverweise Zurückgeben der <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencedRelationshipInstances(Microsoft.SqlServer.Dac.Model.DacExternalQueryScopes)" /> Methode sollte stattdessen aufgerufen werden
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />definieren die Beziehungen zwischen diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> und den Objekten verwiesen wird</returns>
+        <remarks>
+            Die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.Object" /> Feld ist möglicherweise null, wenn das Element nicht in der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />. In diesen Fällen die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.ObjectName" /> -Feld zum Abfragen von Informationen über das referenzierte Objekt verwendet werden kann.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencing">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferencing ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferencing() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencing" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft alle verweisenden Objekte innerhalb der <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.Default" /> Bereich
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />auf dieses Objekt verweisen</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencing">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferencing (Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferencing(valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencing(Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Ruft alle verweisenden Objekte innerhalb einer bestimmten <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> Bereich.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />auf dieses Objekt verweisen</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencing">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferencing (Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferencing(class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencing(Microsoft.SqlServer.Dac.Model.ModelRelationshipClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relationshipType" Type="Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipType">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />Die Beziehungsklasse für Abfragen definieren</param>
+        <summary>
+            Ruft verweisende Objekte, die Beziehung, in dem durch ein bestimmtes definiert wird <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" /> und innerhalb der <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.Default" /> Bereich
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />s verweisen auf dieses Objekt für einen bestimmten<see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" /></returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencing">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferencing (Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType, Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetReferencing(class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType, valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencing(Microsoft.SqlServer.Dac.Model.ModelRelationshipClass,Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relationshipType" Type="Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipType">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />die Beziehung definieren zur Abfrage.</param>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Ruft verweisende Objekte, die Beziehung, in dem durch ein bestimmtes definiert wird <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" /> und innerhalb einer bestimmten <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> Bereich.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />s verweisen auf dieses Objekt für einen bestimmten<see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" /></returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencingRelationshipInstances">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencingRelationshipInstances ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencingRelationshipInstances() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencingRelationshipInstances" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Für jedes Objekt auf diese Funktion verweisen <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />, gibt die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" /> Definition der Beziehungsdaten. Dazu gehören das verweisende Objekt – definiert die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.FromObject" /> Feld und alle Eigenschaften, die speziell für diese Beziehung.
+Nur Objekte innerhalb des angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> -Bereichs werden zurückgegeben.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />definieren die Beziehungen zwischen diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> und den Objekten verwiesen wird</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencingRelationshipInstances">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencingRelationshipInstances (Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencingRelationshipInstances(valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencingRelationshipInstances(Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Für jedes Objekt auf diese Funktion verweisen <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />, gibt die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" /> Definition der Beziehungsdaten. Dazu gehören das verweisende Objekt – definiert die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.FromObject" /> Feld und alle Eigenschaften, die speziell für diese Beziehung.
+Nur Objekte innerhalb der <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.Default" /> -Bereichs werden zurückgegeben.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />definieren die Beziehungen zwischen diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> und den Objekten verwiesen wird</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencingRelationshipInstances">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencingRelationshipInstances (Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencingRelationshipInstances(class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencingRelationshipInstances(Microsoft.SqlServer.Dac.Model.ModelRelationshipClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relationshipType" Type="Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipType">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />Die Beziehungsklasse für Abfragen definieren</param>
+        <summary>
+            Für jedes Objekt auf diese Funktion verweisen <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> mit einem bestimmten <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />, gibt die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" /> Definition der Beziehungsdaten. Dazu gehören das verweisende Objekt – definiert die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.FromObject" /> Feld und alle Eigenschaften, die speziell für diese Beziehung.
+Nur Objekte innerhalb der <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.Default" /> -Bereichs werden zurückgegeben.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />definieren die Beziehungen zwischen diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> und den Objekten verwiesen wird
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencingRelationshipInstances">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencingRelationshipInstances (Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType, Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt; GetReferencingRelationshipInstances(class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass relationshipType, valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetReferencingRelationshipInstances(Microsoft.SqlServer.Dac.Model.ModelRelationshipClass,Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relationshipType" Type="Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipType">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />Die Beziehungsklasse für Abfragen definieren</param>
+        <param name="queryScopes">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />Definition der Bereichsobjekte muss vorhanden sein.</param>
+        <summary>
+            Für jedes Objekt auf diese Funktion verweisen <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> mit einem bestimmten <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" />, gibt die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" /> Definition der Beziehungsdaten. Dazu gehören das verweisende Objekt – definiert die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.FromObject" /> Feld und alle Eigenschaften, die speziell für diese Beziehung.
+Nur Objekte innerhalb des angegebenen <see cref="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" /> -Bereichs werden zurückgegeben.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />definieren die Beziehungen zwischen diesem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> und den Objekten verwiesen wird
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScript">
+      <MemberSignature Language="C#" Value="public string GetScript ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetScript() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetScript" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Generiert aus der Objekt-AST ein CREATE-Skript. AST-Generierung wird nur unterstützt für Objekte der obersten Ebene, mit der bestimmte Objekte z. B. die <see cref="T:Microsoft.SqlServer.Dac.Model.DatabaseOptions" /> und Inline-Einschränkungen, die AST-Generierung nicht unterstützen, obwohl sie die Top-Level-Typen sind. Es ist unbekannt, ob das Objekt kann wird ein Skript erstellt dann die <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlObject.TryGetAst(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript@)" /> Methode sollte stattdessen verwendet werden.
+            </summary>
+        <returns>DDL-Erstellungsskript</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> ist kein Anweisungsobjekt der obersten Ebene oder wenn keine unterstützt skriptgenerierung (z. B. wenn es ist ein <see cref="T:Microsoft.SqlServer.Dac.Model.DatabaseOptions" /> oder eine Einschränkung, die ursprünglich Inline in einer Tabelle definiert).
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSourceInformation">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.SourceInformation GetSourceInformation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.SourceInformation GetSourceInformation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetSourceInformation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.SourceInformation</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die <see cref="T:Microsoft.SqlServer.Dac.SourceInformation" /> für dieses Objekt, wenn diese verfügbar ist
+            </summary>
+        <returns>
+            Sofern Quellinformationen verfügbar ist die <see cref="T:Microsoft.SqlServer.Dac.SourceInformation" /> angeben des Namens des Skripts in dieses Objekt gefunden wird, sowie die Zeilen- und Spaltennummer. Diese Werte können null sein oder-1 zurück, wenn keine Informationen zur Quellposition vorhanden ist.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[Microsoft.SqlServer.Dac.Model.ModelPropertyClass property] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(class Microsoft.SqlServer.Dac.Model.ModelPropertyClass)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.TSqlObject.Item(Microsoft.SqlServer.Dac.Model.ModelPropertyClass)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="Microsoft.SqlServer.Dac.Model.ModelPropertyClass" />
+      </Parameters>
+      <Docs>
+        <param name="property">Eigenschaft.</param>
+        <summary>
+            Gibt den Eigenschaftswert zurück.
+            </summary>
+        <value>Eigenschaftswert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn <paramref name="property" /> für das Objekt nicht vorhanden.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.ObjectIdentifier Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.ObjectIdentifier Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.TSqlObject.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.ObjectIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Identität des Objekts.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.ModelTypeClass ObjectType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.ModelTypeClass ObjectType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.TSqlObject.ObjectType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.ModelTypeClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Typ des Objekts.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetAst">
+      <MemberSignature Language="C#" Value="public bool TryGetAst (out Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript objectAst);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetAst(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript objectAst) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.TryGetAst(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectAst" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="objectAst">Gibt die generierte AST zurück, wenn der Aufruf erfolgreich war.</param>
+        <summary>
+            Versucht, eine AST für das Objekt zu generieren. AST-Generierung wird nur unterstützt für Objekte der obersten Ebene, mit der bestimmte Objekte z. B. die <see cref="T:Microsoft.SqlServer.Dac.Model.DatabaseOptions" /> und Inline-Einschränkungen, die AST-Generierung nicht unterstützen, obwohl sie die Top-Level-Typen sind.
+            
+            The generated AST is a newly generated object that defines the information about this <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> and any objects
+            that would be scripted together with it. For example a Table would also script out the Columns and inline constraint definitions of a Table. 
+            This method can be used to copy object information from one model to another, or to script out information about
+            objects in the model.
+            </summary>
+        <returns>"True", wenn die AST generiert. Andernfalls "false".</returns>
+        <remarks>
+            Die AST enthält keine Informationen zur ursprünglichen Position der Datenquelle wie den Namen bzw. die Position der Datenquelle im Eingabeskript.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetScript">
+      <MemberSignature Language="C#" Value="public bool TryGetScript (out string objectScript);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetScript(string objectScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlObject.TryGetScript(System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectScript" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="objectScript">Die DDL-Erstellungsskript für das Objekt </param>
+        <summary>
+            Versucht, ein CREATE-Skript aus der Objekt-AST zu generieren. AST-Generierung wird nur unterstützt für Objekte der obersten Ebene, mit der bestimmte Objekte z. B. die <see cref="T:Microsoft.SqlServer.Dac.Model.DatabaseOptions" /> und Inline-Einschränkungen, die AST-Generierung nicht unterstützen, obwohl sie die Top-Level-Typen sind. Es ist unbekannt, ob das Objekt kann wird ein Skript erstellt dann die <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlObject.TryGetAst(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript@)" /> Methode sollte stattdessen verwendet werden.
+            </summary>
+        <returns>"True", wenn das DDL-Erstellungsskript erstellt wurde.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

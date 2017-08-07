@@ -1,0 +1,161 @@
+<Type Name="TokenTriggers" FullName="Babel.TokenTriggers">
+  <TypeSignature Language="C#" Value="public enum TokenTriggers" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TokenTriggers extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Babel.TokenTriggers" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Gibt eine Reihe von Triggern an, die von der <see cref="T:Babel.LineScanner" />-Klasse ausgelöst werden können.
+            </summary>
+    <remarks>Trigger bieten eine Möglichkeit für den Scanner auf den Aufrufer über bestimmte Sprachelemente zu signalisieren, die für IntelliSense-Unterstützung von Interesse sein können.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MatchBraces">
+      <MemberSignature Language="C#" Value="MatchBraces" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Babel.TokenTriggers MatchBraces = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Babel.TokenTriggers.MatchBraces" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Babel.TokenTriggers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der öffnende oder schließende Teil eines Sprachpaars wurde analysiert.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberSelect">
+      <MemberSignature Language="C#" Value="MemberSelect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Babel.TokenTriggers MemberSelect = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Babel.TokenTriggers.MemberSelect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Babel.TokenTriggers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein Zeichen, das angibt, dass der Start einer Elementauswahl analysiert wurde.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodTip">
+      <MemberSignature Language="C#" Value="MethodTip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Babel.TokenTriggers MethodTip = int32(240)" />
+      <MemberSignature Language="DocId" Value="F:Babel.TokenTriggers.MethodTip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Babel.TokenTriggers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Eine Maske für die Flags, mit denen der Vorgang für IntelliSense-Methodentipps geregelt wird. Diese Maske wird zum Isolieren der Werte Parameter, ParameterStart, ParameterNext und ParameterEnd verwendet.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Babel.TokenTriggers None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Babel.TokenTriggers.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Babel.TokenTriggers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Wird verwendet, wenn keine Trigger festgelegt sind. Dies ist die Standardeinstellung.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameter">
+      <MemberSignature Language="C#" Value="Parameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Babel.TokenTriggers Parameter = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:Babel.TokenTriggers.Parameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Babel.TokenTriggers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein Parameter in der Parameterliste einer Methode wurde analysiert.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterEnd">
+      <MemberSignature Language="C#" Value="ParameterEnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Babel.TokenTriggers ParameterEnd = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:Babel.TokenTriggers.ParameterEnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Babel.TokenTriggers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Es wurde ein Zeichen analysiert, das das Ende einer Parameterliste kennzeichnet. Dies könnte z. B. eine schließende Klammer ")" sein.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterNext">
+      <MemberSignature Language="C#" Value="ParameterNext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Babel.TokenTriggers ParameterNext = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Babel.TokenTriggers.ParameterNext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Babel.TokenTriggers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Es wurde ein Zeichen analysiert, das Parameter in einer Liste trennt. Dies könnte z. B. ein Komma "," sein. 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterStart">
+      <MemberSignature Language="C#" Value="ParameterStart" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Babel.TokenTriggers ParameterStart = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Babel.TokenTriggers.ParameterStart" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Babel.TokenTriggers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Es wurde ein Zeichen analysiert, das den Beginn einer Parameterliste kennzeichnet. Dies könnte z. B. eine öffnende Klammer "(" sein. 
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

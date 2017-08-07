@@ -1,0 +1,70 @@
+<Type Name="IIndexFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IIndexFactory">
+  <TypeSignature Language="C#" Value="public interface IIndexFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IIndexFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IIndexFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden, die zum Erstellen von Indexobjekten verwendet werden.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateIndexedColumn">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndexedColumn CreateIndexedColumn (Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn referencedColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndexedColumn CreateIndexedColumn(class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn referencedColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IIndexFactory.CreateIndexedColumn(Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndexedColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="referencedColumn" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />
+      </Parameters>
+      <Docs>
+        <param name="referencedColumn">Das Spaltenobjekt, das die Spalte darstellt, auf die von der indizierten Spalte verwiesen wird.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndexedColumn" />-Objekt, das das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt als Spalte verwendet, auf die verwiesen wird.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRelationalIndex">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex CreateRelationalIndex (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, string name, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex CreateRelationalIndex(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IIndexFactory.CreateRelationalIndex(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular,System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" /> -Objekt, das das übergeordnete Element des Indexes ist.</param>
+        <param name="name">Der Name des relationalen Indexobjekts.</param>
+        <param name="collationInfo">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt, das vom relationalen Index verwendet wird.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex" />-Objekt, das über den angegebenen Namen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableRelationalIndex" /> Objekt.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

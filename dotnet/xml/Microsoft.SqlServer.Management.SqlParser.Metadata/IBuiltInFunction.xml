@@ -1,0 +1,120 @@
+<Type Name="IBuiltInFunction" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction">
+  <TypeSignature Language="C#" Value="public interface IBuiltInFunction : Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarFunction" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBuiltInFunction implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IFunction, class Microsoft.SqlServer.Management.SqlParser.Metadata.IFunctionModuleBase, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar, class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarFunction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarFunction</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt eine integrierte Funktion oder eine Systemfunktion dar, die mit zwei @-Zeichen (@@) beginnt.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsDatePartFunction">
+      <MemberSignature Language="C#" Value="public bool IsDatePartFunction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDatePartFunction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction.IsDatePartFunction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die Funktion eine Funktion mit Datums- und Uhrzeitteilen (z. B. DATEDIFF, DATEPART usw.) ist.
+            </summary>
+        <value>
+          <c>true</c> if the function is a date and time parts function; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGlobalVariable">
+      <MemberSignature Language="C#" Value="public bool IsGlobalVariable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsGlobalVariable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction.IsGlobalVariable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert, der angibt, ob eine Systemfunktion vorliegt, die mit zwei @-Zeichen (@@) beginnt (z. B. @@IDENTITY).
+            </summary>
+        <value>
+          <c>true</c> if this is a system function that starts with two at signs (@@); otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVarArg">
+      <MemberSignature Language="C#" Value="public bool IsVarArg { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsVarArg" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction.IsVarArg" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die Anzahl der Argumente variabel ist.
+            </summary>
+        <value>
+          <c>true</c> if the number of arguments is variable; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxNumberOfArgs">
+      <MemberSignature Language="C#" Value="public int MaxNumberOfArgs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxNumberOfArgs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction.MaxNumberOfArgs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die maximale Anzahl von Argumenten ab, die die Funktion akzeptiert.
+            </summary>
+        <value>Die maximale Anzahl von Argumenten, die die Funktion akzeptiert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinNumberOfArgs">
+      <MemberSignature Language="C#" Value="public int MinNumberOfArgs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinNumberOfArgs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction.MinNumberOfArgs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die minimale Anzahl von Argumenten ab, die die Funktion akzeptiert.
+            </summary>
+        <value>Die minimale Anzahl von Argumenten, die die Funktion akzeptiert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

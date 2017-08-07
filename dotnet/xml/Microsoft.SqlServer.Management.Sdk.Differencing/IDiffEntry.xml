@@ -1,0 +1,98 @@
+<Type Name="IDiffEntry" FullName="Microsoft.SqlServer.Management.Sdk.Differencing.IDiffEntry">
+  <TypeSignature Language="C#" Value="public interface IDiffEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDiffEntry" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Differencing.IDiffEntry" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellen Sie die Differenz zwischen zwei Versionen eines identischen Objekts dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChangeType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Differencing.DiffType ChangeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Sdk.Differencing.DiffType ChangeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Differencing.IDiffEntry.ChangeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Differencing.DiffType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Typ der zwischen dem Quell- und Zielknoten bestehenden Änderung. Die Änderungen der untergeordneten Knoten wird nicht beschrieben.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.SqlServer.Management.Sdk.Differencing.IPair&lt;object&gt;&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.SqlServer.Management.Sdk.Differencing.IPair`1&lt;object&gt;&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Differencing.IDiffEntry.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.SqlServer.Management.Sdk.Differencing.IPair&lt;System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Eine Auflistung aller relevanten Eigenschaften. 
+            
+            If the ChangeType is DiffType.Updated, this Dictionary contains paris of 
+            source (updated) and target (original) property values, keyed their property 
+            name. Otherwise, it contains no Property.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.Urn Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.Urn Source" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Differencing.IDiffEntry.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Urn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Urn, der den Quellknoten darstellt. Es unterscheidet sich von der Ziel-Urn, wenn die beiden Knoten anderen übergeordneten Objekte verfügen. Es ist null, wenn ChangeType gelöscht wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.Urn Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.Urn Target" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Differencing.IDiffEntry.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Urn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Urn, der den Zielknoten darstellt. Es unterscheidet sich von der Quelle Urn, wenn die beiden Knoten anderen übergeordneten Objekte verfügen. Es ist null, wenn ChangeType erstellt wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

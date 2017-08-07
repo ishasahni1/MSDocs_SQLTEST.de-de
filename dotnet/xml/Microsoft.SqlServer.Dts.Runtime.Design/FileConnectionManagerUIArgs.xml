@@ -1,0 +1,134 @@
+<Type Name="FileConnectionManagerUIArgs" FullName="Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs">
+  <TypeSignature Language="C#" Value="public class FileConnectionManagerUIArgs : Microsoft.SqlServer.Dts.Runtime.Design.ConnectionManagerUIArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileConnectionManagerUIArgs extends Microsoft.SqlServer.Dts.Runtime.Design.ConnectionManagerUIArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dts.Design</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.Design.ConnectionManagerUIArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt den Kontext von Argumenten, die der SSIS-Designer im Dateiverbindungs-Manager-Editor beim Erstellen oder Bearbeiten von Dateiverbindungs-Manager angezeigt.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileConnectionManagerUIArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs" /> Klasse. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileConnectionManagerUIArgs (System.Collections.ICollection supportedUsageTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection supportedUsageTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs.#ctor(System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="supportedUsageTypes" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="supportedUsageTypes">Eine Auflistung von <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSFileConnectionUsageType" /> Enumerationen, die zur Auswahl zur Verfügung. </param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs" /> -Klasse unter Verwendung einer Auflistung von Verwendungstypen, die für diese Verbindung spezifisch sind.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileConnectionManagerUIArgs (string fileFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileFilter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileFilter">Die in einer Benutzeroberfläche bereitgestellten Dateitypen werden durch einen Dateifilter, z. B. "*.txt", eingeschränkt.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs" /> -Klasse mithilfe einer Zeichenfolge angeben, welche Dateitypen für diese Verbindung gültig sind.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileConnectionManagerUIArgs (string fileFilter, System.Collections.ICollection supportedUsageTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileFilter, class System.Collections.ICollection supportedUsageTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs.#ctor(System.String,System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileFilter" Type="System.String" />
+        <Parameter Name="supportedUsageTypes" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="fileFilter">Die in einer Benutzeroberfläche bereitgestellten Dateitypen werden durch einen Dateifilter, z. B. "*.txt", eingeschränkt.</param>
+        <param name="supportedUsageTypes">Eine Auflistung von <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSFileConnectionUsageType" /> Enumerationen, die zur Auswahl zur Verfügung. </param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs" /> -Klasse, die dem Dateifilter Typ auch die Verwendungstypen initialisiert.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileFilter">
+      <MemberSignature Language="C#" Value="public string FileFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs.FileFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine senkrechte Striche getrennte Zeichenfolge, enthält die Dateitypen, die für die Verbindung gültig sind.
+            </summary>
+        <value>Eine Zeichenfolge, enthält die Dateitypen, die für die Verbindung gültig sind.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedUsageTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection SupportedUsageTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection SupportedUsageTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Design.FileConnectionManagerUIArgs.SupportedUsageTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft eine Auflistung ab, die die verfügbaren Verwendungstypen enthält, oder legt sie fest. Gültige Verwendungstypen sind in definierten <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSFileConnectionUsageType" />.
+            </summary>
+        <value>Eine Auflistung mit den verfügbaren Verwendungstypen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

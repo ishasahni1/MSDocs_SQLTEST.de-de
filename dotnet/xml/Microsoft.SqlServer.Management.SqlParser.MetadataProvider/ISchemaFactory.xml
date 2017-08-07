@@ -1,0 +1,97 @@
+<Type Name="ISchemaFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISchemaFactory">
+  <TypeSignature Language="C#" Value="public interface ISchemaFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISchemaFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISchemaFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden, die zum Erstellen von Schemaobjekten verwendet werden können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchema Create (Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema otherSchema);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchema Create(class Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema otherSchema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISchemaFactory.Create(Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherSchema" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" />
+      </Parameters>
+      <Docs>
+        <param name="otherSchema">Das zu klonende <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" />-Objekt.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchema" /> Objekt, das einen Klon des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" /> Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchema" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchema Create (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchema Create(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISchemaFactory.Create(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt, das dem Schemaobjekt übergeordnet ist.</param>
+        <param name="name">Der Name des zu erstellenden Schemaobjekts.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchema" />-Objekt, das zum angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt gehört und über den angegebenen Namen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchema" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEmptySchema">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema CreateEmptySchema (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name, bool isSystemObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema CreateEmptySchema(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name, bool isSystemObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISchemaFactory.CreateEmptySchema(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="isSystemObject" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="database">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt, das dem Schemaobjekt übergeordnet ist.</param>
+        <param name="name">Der Name des zu erstellenden Schemaobjekts.</param>
+        <param name="isSystemObject">
+          <c>true</c> to indicate that the empty schema is a system object; otherwise, <c>false</c>.</param>
+        <summary>
+            Erstellt ein leeres <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" /> Objekt (alle Auflistungen sind leer.).
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISchema" /> Objekt.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

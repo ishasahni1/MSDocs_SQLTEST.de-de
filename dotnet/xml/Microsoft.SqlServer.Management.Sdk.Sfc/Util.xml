@@ -1,0 +1,134 @@
+<Type Name="Util" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.Util">
+  <TypeSignature Language="C#" Value="public class Util" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Util extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.Util" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Enthält allgemeine Hilfsfunktionen
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Util ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Util.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DbTypeToClrType">
+      <MemberSignature Language="C#" Value="public static string DbTypeToClrType (string strDBType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string DbTypeToClrType(string strDBType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Util.DbTypeToClrType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strDBType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strDBType">
+        </param>
+        <summary>
+            Konvertieren Sie einen Datenbanknamen für den Typ der entsprechenden CLS-Typ
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EscapeString">
+      <MemberSignature Language="C#" Value="public static string EscapeString (string value, char escapeCharacter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EscapeString(string value, char escapeCharacter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Util.EscapeString(System.String,System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="escapeCharacter" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="value">Die Zeichenfolge</param>
+        <param name="escapeCharacter">Die escape-Zeichen</param>
+        <summary>
+            Ein bestimmtes Zeichen in einer Zeichenfolge mit Escapezeichen versehen
+            </summary>
+        <returns>Die entsprechende Zeichenfolge mit dem Zeichen mit Escapezeichen versehen</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAssembly">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Assembly LoadAssembly (string assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly LoadAssembly(string assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Util.LoadAssembly(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">Muss hinzugefügt werden.</param>
+        <summary>
+            Laden Sie die Assembly, deren Namen ersetzen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformToRequest">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult TransformToRequest (System.Data.DataSet ds, Microsoft.SqlServer.Management.Sdk.Sfc.ResultType res);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult TransformToRequest(class System.Data.DataSet ds, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ResultType res) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Util.TransformToRequest(System.Data.DataSet,Microsoft.SqlServer.Management.Sdk.Sfc.ResultType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ds" Type="System.Data.DataSet" />
+        <Parameter Name="res" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ResultType" />
+      </Parameters>
+      <Docs>
+        <param name="ds">
+        </param>
+        <param name="res">
+        </param>
+        <summary>
+            Transformieren Sie ein Dataset in den erwarteten Ergebnis Enumerationstyp
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

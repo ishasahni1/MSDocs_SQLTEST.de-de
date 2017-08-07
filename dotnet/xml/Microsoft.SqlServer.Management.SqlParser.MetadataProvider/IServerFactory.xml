@@ -1,0 +1,68 @@
+<Type Name="IServerFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IServerFactory">
+  <TypeSignature Language="C#" Value="public interface IServerFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServerFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IServerFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden, die zum Erstellen von Serverobjekten verwendet werden können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServer Create (Microsoft.SqlServer.Management.SqlParser.Metadata.IServer otherServer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServer Create(class Microsoft.SqlServer.Management.SqlParser.Metadata.IServer otherServer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IServerFactory.Create(Microsoft.SqlServer.Management.SqlParser.Metadata.IServer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherServer" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />
+      </Parameters>
+      <Docs>
+        <param name="otherServer">Das zu klonende <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekt.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServer" />-Objekt, das ein Klon des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekts ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServer" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServer Create (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServer Create(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IServerFactory.Create(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des zu erstellenden Serverobjekts.</param>
+        <param name="collationInfo">Die Informationen zur Serversortierung (z. B. die Sortierreihenfolge der master-Datenbank).</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServer" />-Objekt, das über den angegebenen Namen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableServer" /> Objekt.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

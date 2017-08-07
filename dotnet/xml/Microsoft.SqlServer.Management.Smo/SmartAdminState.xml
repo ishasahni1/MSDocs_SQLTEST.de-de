@@ -1,0 +1,243 @@
+<Type Name="SmartAdminState" FullName="Microsoft.SqlServer.Management.Smo.SmartAdminState">
+  <TypeSignature Language="C#" Value="public class SmartAdminState : Microsoft.SqlServer.Management.Common.IRefreshable, Microsoft.SqlServer.Management.Facets.IDmfAdapter, Microsoft.SqlServer.Management.Sdk.Sfc.IDmfFacet, Microsoft.SqlServer.Management.Smo.ISmartAdminState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SmartAdminState extends System.Object implements class Microsoft.SqlServer.Management.Common.IRefreshable, class Microsoft.SqlServer.Management.Facets.IDmfAdapter, class Microsoft.SqlServer.Management.Sdk.Sfc.IDmfFacet, class Microsoft.SqlServer.Management.Smo.ISmartAdminState" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.SmartAdminState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IRefreshable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Facets.IDmfAdapter</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.IDmfFacet</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Smo.ISmartAdminState</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Dies ist eine Adapterklasse, die implementiert die <see cref="T:Microsoft.SqlServer.Management.Smo.ISmartAdminState" /> logisches Facet für eine Verfügbarkeitsgruppe.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SmartAdminState (Microsoft.SqlServer.Management.Smo.SmartAdmin smartadmin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.SmartAdmin smartadmin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SmartAdminState.#ctor(Microsoft.SqlServer.Management.Smo.SmartAdmin)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="smartadmin" Type="Microsoft.SqlServer.Management.Smo.SmartAdmin" />
+      </Parameters>
+      <Docs>
+        <param name="smartadmin">Das SmartAdmin-Objekt.</param>
+        <summary>
+            Initialisiert eine neue Instanz der SmartAdminState-Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBackupEnabled">
+      <MemberSignature Language="C#" Value="public bool IsBackupEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBackupEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SmartAdminState.IsBackupEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die intelligente Sicherung aktiviert ist oder nicht.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMasterSwitchEnabled">
+      <MemberSignature Language="C#" Value="public bool IsMasterSwitchEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMasterSwitchEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SmartAdminState.IsMasterSwitchEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Hauptschalter aktiv ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfBackupLoops">
+      <MemberSignature Language="C#" Value="public int NumberOfBackupLoops { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfBackupLoops" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SmartAdminState.NumberOfBackupLoops" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der Sicherungsschleifen ab. Bei 0 wurde die Hauptschleife angehalten.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfCorruptedOrDeletedBackups">
+      <MemberSignature Language="C#" Value="public int NumberOfCorruptedOrDeletedBackups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfCorruptedOrDeletedBackups" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SmartAdminState.NumberOfCorruptedOrDeletedBackups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der beschädigten oder gelöschten Sicherungen ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfInvalidCredentialErrors">
+      <MemberSignature Language="C#" Value="public int NumberOfInvalidCredentialErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfInvalidCredentialErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SmartAdminState.NumberOfInvalidCredentialErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der Fehler aufgrund ungültiger Speicheranmeldeinformationen ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfOtherErrors">
+      <MemberSignature Language="C#" Value="public int NumberOfOtherErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfOtherErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SmartAdminState.NumberOfOtherErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl aller weiteren Fehler ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfRetentionLoops">
+      <MemberSignature Language="C#" Value="public int NumberOfRetentionLoops { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfRetentionLoops" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SmartAdminState.NumberOfRetentionLoops" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der Beibehaltungsschleifen ab. Bei 0 wurde der Beibehaltungsthread angehalten.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfSqlErrors">
+      <MemberSignature Language="C#" Value="public int NumberOfSqlErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfSqlErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SmartAdminState.NumberOfSqlErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der von den smartadmin-Komponenten (Hauptschleife, Beibehaltungsthreads) festgestellten SQL-Fehler ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfStorageConnectivityErrors">
+      <MemberSignature Language="C#" Value="public int NumberOfStorageConnectivityErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfStorageConnectivityErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SmartAdminState.NumberOfStorageConnectivityErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der Fehler in Zusammenhang mit Speicherverbindungen ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SmartAdminState.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Aktualisiert den Status des smartadmin-Objekts.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

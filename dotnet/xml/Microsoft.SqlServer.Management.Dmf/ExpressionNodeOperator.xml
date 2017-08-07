@@ -1,0 +1,341 @@
+<Type Name="ExpressionNodeOperator" FullName="Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionNodeOperator : Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExpressionNodeOperator extends Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dmf</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Operatorknoten - booleschen Funktion mit 2 Argumenten
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionNodeOperator (Microsoft.SqlServer.Management.Dmf.OperatorType type, Microsoft.SqlServer.Management.Dmf.ExpressionNode left, Microsoft.SqlServer.Management.Dmf.ExpressionNode right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.SqlServer.Management.Dmf.OperatorType type, class Microsoft.SqlServer.Management.Dmf.ExpressionNode left, class Microsoft.SqlServer.Management.Dmf.ExpressionNode right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.#ctor(Microsoft.SqlServer.Management.Dmf.OperatorType,Microsoft.SqlServer.Management.Dmf.ExpressionNode,Microsoft.SqlServer.Management.Dmf.ExpressionNode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="Microsoft.SqlServer.Management.Dmf.OperatorType" />
+        <Parameter Name="left" Type="Microsoft.SqlServer.Management.Dmf.ExpressionNode" />
+        <Parameter Name="right" Type="Microsoft.SqlServer.Management.Dmf.ExpressionNode" />
+      </Parameters>
+      <Docs>
+        <param name="type">Operatortyp</param>
+        <param name="left">linken Knoten</param>
+        <param name="right">richtige Knoten</param>
+        <summary>
+            Operator-Knoten erstellt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepClone">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Management.Dmf.ExpressionNode DeepClone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.SqlServer.Management.Dmf.ExpressionNode DeepClone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.DeepClone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.ExpressionNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Tiefen Klon des aktuellen Knotens.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeProperties">
+      <MemberSignature Language="C#" Value="protected override void DeserializeProperties (System.Xml.XmlReader xr, bool includeResult);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeserializeProperties(class System.Xml.XmlReader xr, bool includeResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.DeserializeProperties(System.Xml.XmlReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xr" Type="System.Xml.XmlReader" />
+        <Parameter Name="includeResult" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xr">XmlReader - müssen Leerzeichen ignorieren</param>
+        <param name="includeResult">
+        </param>
+        <summary>
+            Deserialisiert die Eigenschaften des Knotens Operator
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoConvertToFilterNode">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode DoConvertToFilterNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode DoConvertToFilterNode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.DoConvertToFilterNode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualProperties">
+      <MemberSignature Language="C#" Value="protected override bool EqualProperties (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualProperties(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.EqualProperties(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Zu vergleichendes Objekt</param>
+        <summary>
+            Operator bestimmten Typ Vergleichstyp und NULL-Zulässigkeit des Vergleichsobjekts überprüft, die vom Aufrufer (Equals)
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.ExpressionNode Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.ExpressionNode Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.Left" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.ExpressionNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Linker Operand Knoten
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperatorTypeFromString">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Dmf.OperatorType OperatorTypeFromString (string opType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.SqlServer.Management.Dmf.OperatorType OperatorTypeFromString(string opType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.OperatorTypeFromString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.OperatorType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="opType">
+        </param>
+        <summary>
+            Gibt OperatorType für die angegebene Zeichenfolgendarstellung (statt OperatorTypeToString)
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">Keine Übereinstimmung ist für die angegebene Zeichenfolge gefunden.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OperatorTypeToString">
+      <MemberSignature Language="C#" Value="public static string OperatorTypeToString (Microsoft.SqlServer.Management.Dmf.OperatorType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string OperatorTypeToString(valuetype Microsoft.SqlServer.Management.Dmf.OperatorType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.OperatorTypeToString(Microsoft.SqlServer.Management.Dmf.OperatorType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="Microsoft.SqlServer.Management.Dmf.OperatorType" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+        </param>
+        <summary>
+            Symbolische Repesentation von OperatorType (T-Sql-Stil)
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.OperatorType OpType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Dmf.OperatorType OpType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.OpType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.OperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Operator objectTypeName
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.ExpressionNode Right { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.ExpressionNode Right" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.Right" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.ExpressionNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Rechter Operand Knoten
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeProperties">
+      <MemberSignature Language="C#" Value="protected override void SerializeProperties (System.Xml.XmlWriter xw, bool includeResult);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SerializeProperties(class System.Xml.XmlWriter xw, bool includeResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.SerializeProperties(System.Xml.XmlWriter,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xw" Type="System.Xml.XmlWriter" />
+        <Parameter Name="includeResult" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xw">
+        </param>
+        <param name="includeResult">
+        </param>
+        <summary>
+            Serialisiert die Eigenschaften des Knotens Operator
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperties">
+      <MemberSignature Language="C#" Value="protected override void SetProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.SetProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedFilterOperators">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Dmf.OperatorType&gt; SupportedFilterOperators (Type type, Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;valuetype Microsoft.SqlServer.Management.Dmf.OperatorType&gt; SupportedFilterOperators(class System.Type type, valuetype Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.SupportedFilterOperators(System.Type,Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Dmf.OperatorType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="mode" Type="Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+        </param>
+        <param name="mode">
+        </param>
+        <summary>
+            Gibt eine Liste der Operatoren für den angegebenen Typ in Filtern unterstützt (Filter sind restriktiver als Bedingungsausdrücke) leere Liste, wenn die Auswertung für den Typ nicht unterstützt wird
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeOperator.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Stellt-Ausdruck als eine Zeichenfolge in T-SQL like-syntax
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

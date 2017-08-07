@@ -1,0 +1,798 @@
+<Type Name="Restore" FullName="Microsoft.SqlServer.Management.Smo.Restore">
+  <TypeSignature Language="C#" Value="public sealed class Restore : Microsoft.SqlServer.Management.Smo.BackupRestoreBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Restore extends Microsoft.SqlServer.Management.Smo.BackupRestoreBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.Restore" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SmoExtended</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Smo.BackupRestoreBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Muss hinzugefügt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Restore ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Restore (string DestinationDatabaseName, Microsoft.SqlServer.Management.Smo.BackupSet backupSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string DestinationDatabaseName, class Microsoft.SqlServer.Management.Smo.BackupSet backupSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.#ctor(System.String,Microsoft.SqlServer.Management.Smo.BackupSet)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="DestinationDatabaseName" Type="System.String" />
+        <Parameter Name="backupSet" Type="Microsoft.SqlServer.Management.Smo.BackupSet" />
+      </Parameters>
+      <Docs>
+        <param name="DestinationDatabaseName">Der Name der Datenbank wiederhergestellt werden.</param>
+        <param name="backupSet">Der Sicherungssatz.</param>
+        <summary>
+            Erstellt ein Restore-Objekt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.RestoreActionType Action { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.RestoreActionType Action" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RestoreActionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupSet">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.BackupSet BackupSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.BackupSet BackupSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.BackupSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.BackupSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Sicherungssatz wiederherstellen
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearSuspectPageTable">
+      <MemberSignature Language="C#" Value="public void ClearSuspectPageTable (Microsoft.SqlServer.Management.Smo.Server srv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearSuspectPageTable(class Microsoft.SqlServer.Management.Smo.Server srv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.ClearSuspectPageTable(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearSuspectPageTableAfterRestore">
+      <MemberSignature Language="C#" Value="public bool ClearSuspectPageTableAfterRestore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ClearSuspectPageTableAfterRestore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.ClearSuspectPageTableAfterRestore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabasePages">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Smo.SuspectPage&gt; DatabasePages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Management.Smo.SuspectPage&gt; DatabasePages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.DatabasePages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Smo.SuspectPage&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die wiederherstellungsseiten ab.
+            </summary>
+        <value>Der wiederherstellungsseiten.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileNumber">
+      <MemberSignature Language="C#" Value="public int FileNumber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FileNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.FileNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepReplication">
+      <MemberSignature Language="C#" Value="public bool KeepReplication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepReplication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.KeepReplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepTemporalRetention">
+      <MemberSignature Language="C#" Value="public bool KeepTemporalRetention { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepTemporalRetention" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.KeepTemporalRetention" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public long[] Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64[] Offset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Partial">
+      <MemberSignature Language="C#" Value="public bool Partial { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Partial" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.Partial" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadBackupHeader">
+      <MemberSignature Language="C#" Value="public System.Data.DataTable ReadBackupHeader (Microsoft.SqlServer.Management.Smo.Server srv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ReadBackupHeader(class Microsoft.SqlServer.Management.Smo.Server srv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.ReadBackupHeader(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFileList">
+      <MemberSignature Language="C#" Value="public System.Data.DataTable ReadFileList (Microsoft.SqlServer.Management.Smo.Server srv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ReadFileList(class Microsoft.SqlServer.Management.Smo.Server srv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.ReadFileList(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadMediaHeader">
+      <MemberSignature Language="C#" Value="public System.Data.DataTable ReadMediaHeader (Microsoft.SqlServer.Management.Smo.Server srv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ReadMediaHeader(class Microsoft.SqlServer.Management.Smo.Server srv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.ReadMediaHeader(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSuspectPageTable">
+      <MemberSignature Language="C#" Value="public System.Data.DataTable ReadSuspectPageTable (Microsoft.SqlServer.Management.Smo.Server server);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable ReadSuspectPageTable(class Microsoft.SqlServer.Management.Smo.Server server) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.ReadSuspectPageTable(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="server">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelocateFiles">
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList RelocateFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList RelocateFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.RelocateFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceDatabase">
+      <MemberSignature Language="C#" Value="public bool ReplaceDatabase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReplaceDatabase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.ReplaceDatabase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestrictedUser">
+      <MemberSignature Language="C#" Value="public bool RestrictedUser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RestrictedUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.RestrictedUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Script (Microsoft.SqlServer.Management.Smo.Server server);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection Script(class Microsoft.SqlServer.Management.Smo.Server server) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.Script(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="server">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlRestore">
+      <MemberSignature Language="C#" Value="public void SqlRestore (Microsoft.SqlServer.Management.Smo.Server srv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SqlRestore(class Microsoft.SqlServer.Management.Smo.Server srv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlRestore(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Server für die Ausführung von Restore auf.</param>
+        <summary>
+            Führt Restore-Vorgang auf synchrone Weise, d. h. der Aufruf blockiert, bis Überprüfung abgeschlossen ist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlRestoreAsync">
+      <MemberSignature Language="C#" Value="public void SqlRestoreAsync (Microsoft.SqlServer.Management.Smo.Server srv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SqlRestoreAsync(class Microsoft.SqlServer.Management.Smo.Server srv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlRestoreAsync(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Der Server beim Ausführen des Vorgangs auf.</param>
+        <summary>
+            Führt Restore-Vorgang auf asynchrone Weise, d. h. der Aufruf sofort zurückgegeben, und Überprüfen der Vorgang wird im Hintergrund fortgesetzt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlVerify">
+      <MemberSignature Language="C#" Value="public bool SqlVerify (Microsoft.SqlServer.Management.Smo.Server srv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SqlVerify(class Microsoft.SqlServer.Management.Smo.Server srv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlVerify(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Server Überprüfung ausgeführt.</param>
+        <summary>
+            Führt Prüfvorgängen auf synchrone Weise, d. h. der Aufruf blockiert, bis Überprüfung abgeschlossen ist.
+            </summary>
+        <returns>"true", wenn die Überprüfung "false" erfolgreich war, andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlVerify">
+      <MemberSignature Language="C#" Value="public bool SqlVerify (Microsoft.SqlServer.Management.Smo.Server srv, bool loadHistory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SqlVerify(class Microsoft.SqlServer.Management.Smo.Server srv, bool loadHistory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlVerify(Microsoft.SqlServer.Management.Smo.Server,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="loadHistory" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Server Überprüfung ausgeführt.</param>
+        <param name="loadHistory">Verlauf zu laden.</param>
+        <summary>
+            Führt Prüfvorgängen auf synchrone Weise, d. h. der Aufruf blockiert, bis Überprüfung abgeschlossen ist.
+            </summary>
+        <returns>"true", wenn die Überprüfung "false" erfolgreich war, andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlVerify">
+      <MemberSignature Language="C#" Value="public bool SqlVerify (Microsoft.SqlServer.Management.Smo.Server srv, out string errorMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SqlVerify(class Microsoft.SqlServer.Management.Smo.Server srv, string errorMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlVerify(Microsoft.SqlServer.Management.Smo.Server,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="errorMessage" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Server Überprüfung ausgeführt.</param>
+        <param name="errorMessage">Gibt eine detaillierte Fehlermeldung zurück, wenn Fehler bei der Überprüfung.</param>
+        <summary>
+            Führt Prüfvorgängen auf synchrone Weise, d. h. der Aufruf blockiert, bis Überprüfung abgeschlossen ist.
+            </summary>
+        <returns>"true", wenn die Überprüfung "false" erfolgreich war, andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlVerify">
+      <MemberSignature Language="C#" Value="public bool SqlVerify (Microsoft.SqlServer.Management.Smo.Server srv, bool loadHistory, out string errorMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SqlVerify(class Microsoft.SqlServer.Management.Smo.Server srv, bool loadHistory, string errorMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlVerify(Microsoft.SqlServer.Management.Smo.Server,System.Boolean,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="loadHistory" Type="System.Boolean" />
+        <Parameter Name="errorMessage" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Server Überprüfung ausgeführt.</param>
+        <param name="loadHistory">Verlauf zu laden.</param>
+        <param name="errorMessage">Gibt eine detaillierte Fehlermeldung zurück, wenn Fehler bei der Überprüfung.</param>
+        <summary>
+            Führt Prüfvorgängen auf synchrone Weise, d. h. der Aufruf blockiert, bis Überprüfung abgeschlossen ist.
+            </summary>
+        <returns>"true", wenn die Überprüfung "false" erfolgreich war, andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlVerifyAsync">
+      <MemberSignature Language="C#" Value="public void SqlVerifyAsync (Microsoft.SqlServer.Management.Smo.Server srv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SqlVerifyAsync(class Microsoft.SqlServer.Management.Smo.Server srv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlVerifyAsync(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Der Server beim Ausführen des Vorgangs auf.</param>
+        <summary>
+            Führt überprüfen-Vorgang auf asynchrone Weise, d. h. der Aufruf sofort zurückgegeben, und stellen Sie sicher, dass im Hintergrund fortgesetzt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlVerifyAsync">
+      <MemberSignature Language="C#" Value="public void SqlVerifyAsync (Microsoft.SqlServer.Management.Smo.Server srv, bool loadHistory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SqlVerifyAsync(class Microsoft.SqlServer.Management.Smo.Server srv, bool loadHistory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlVerifyAsync(Microsoft.SqlServer.Management.Smo.Server,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="loadHistory" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Der Server beim Ausführen des Vorgangs auf.</param>
+        <param name="loadHistory">Verlauf der Auslastung</param>
+        <summary>
+            Führt überprüfen-Vorgang auf asynchrone Weise, d. h. der Aufruf sofort zurückgegeben, und stellen Sie sicher, dass im Hintergrund fortgesetzt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlVerifyLatest">
+      <MemberSignature Language="C#" Value="public bool SqlVerifyLatest (Microsoft.SqlServer.Management.Smo.Server srv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SqlVerifyLatest(class Microsoft.SqlServer.Management.Smo.Server srv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlVerifyLatest(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Der Server beim Ausführen des Vorgangs auf.</param>
+        <summary>
+            Führt eine Überprüfung der letzten Sicherung in den Sicherungsverlauf aufgezeichnet. Dateinummer wird ignoriert werden, da die Nummer des aktuelle automatisch bestimmt wird.
+            </summary>
+        <returns>"true", wenn die Überprüfung "false" erfolgreich war, andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlVerifyLatest">
+      <MemberSignature Language="C#" Value="public bool SqlVerifyLatest (Microsoft.SqlServer.Management.Smo.Server srv, Microsoft.SqlServer.Management.Smo.SqlVerifyAction sqlVerifyAction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SqlVerifyLatest(class Microsoft.SqlServer.Management.Smo.Server srv, valuetype Microsoft.SqlServer.Management.Smo.SqlVerifyAction sqlVerifyAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlVerifyLatest(Microsoft.SqlServer.Management.Smo.Server,Microsoft.SqlServer.Management.Smo.SqlVerifyAction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="sqlVerifyAction" Type="Microsoft.SqlServer.Management.Smo.SqlVerifyAction" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Der Server beim Ausführen des Vorgangs auf.</param>
+        <param name="sqlVerifyAction">Gibt an, was die Aktion ist, deren aktuelle Ergebnisse</param>
+        <summary>
+            Führt eine Überprüfung der letzten Sicherung in den Sicherungsverlauf aufgezeichnet. Dateinummer wird ignoriert werden, da die Nummer des aktuelle automatisch bestimmt wird.
+            </summary>
+        <returns>"true", wenn die Überprüfung "false" erfolgreich war, andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlVerifyLatest">
+      <MemberSignature Language="C#" Value="public bool SqlVerifyLatest (Microsoft.SqlServer.Management.Smo.Server srv, out string errorMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SqlVerifyLatest(class Microsoft.SqlServer.Management.Smo.Server srv, string errorMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlVerifyLatest(Microsoft.SqlServer.Management.Smo.Server,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="errorMessage" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Der Server beim Ausführen des Vorgangs auf.</param>
+        <param name="errorMessage">Gibt eine detaillierte Fehlermeldung zurück, wenn Fehler bei der Überprüfung.</param>
+        <summary>
+            Führt eine Überprüfung der letzten Sicherung in den Sicherungsverlauf aufgezeichnet. Dateinummer wird ignoriert werden, da die Nummer des aktuelle automatisch bestimmt wird.
+            </summary>
+        <returns>"true", wenn die Überprüfung "false" erfolgreich war, andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlVerifyLatest">
+      <MemberSignature Language="C#" Value="public bool SqlVerifyLatest (Microsoft.SqlServer.Management.Smo.Server srv, Microsoft.SqlServer.Management.Smo.SqlVerifyAction sqlVerifyAction, out string errorMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SqlVerifyLatest(class Microsoft.SqlServer.Management.Smo.Server srv, valuetype Microsoft.SqlServer.Management.Smo.SqlVerifyAction sqlVerifyAction, string errorMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Restore.SqlVerifyLatest(Microsoft.SqlServer.Management.Smo.Server,Microsoft.SqlServer.Management.Smo.SqlVerifyAction,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srv" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="sqlVerifyAction" Type="Microsoft.SqlServer.Management.Smo.SqlVerifyAction" />
+        <Parameter Name="errorMessage" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="srv">Der Server beim Ausführen des Vorgangs auf.</param>
+        <param name="sqlVerifyAction">Gibt an, was die Aktion ist, deren aktuelle Ergebnisse</param>
+        <param name="errorMessage">Gibt eine detaillierte Fehlermeldung zurück, wenn Fehler bei der Überprüfung.</param>
+        <summary>
+            Führt eine Überprüfung der letzten Sicherung in den Sicherungsverlauf aufgezeichnet. Dateinummer wird ignoriert werden, da die Nummer des aktuelle automatisch bestimmt wird.
+            </summary>
+        <returns>"true", wenn die Überprüfung "false" erfolgreich war, andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandbyFile">
+      <MemberSignature Language="C#" Value="public string StandbyFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StandbyFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.StandbyFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopAtMarkAfterDate">
+      <MemberSignature Language="C#" Value="public string StopAtMarkAfterDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StopAtMarkAfterDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.StopAtMarkAfterDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopAtMarkName">
+      <MemberSignature Language="C#" Value="public string StopAtMarkName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StopAtMarkName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.StopAtMarkName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopBeforeMarkAfterDate">
+      <MemberSignature Language="C#" Value="public string StopBeforeMarkAfterDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StopBeforeMarkAfterDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.StopBeforeMarkAfterDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopBeforeMarkName">
+      <MemberSignature Language="C#" Value="public string StopBeforeMarkName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StopBeforeMarkName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.StopBeforeMarkName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToPointInTime">
+      <MemberSignature Language="C#" Value="public string ToPointInTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToPointInTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Restore.ToPointInTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyComplete">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.VerifyCompleteEventHandler VerifyComplete;" />
+      <MemberSignature Language="ILAsm" Value=".field public class Microsoft.SqlServer.Management.Smo.VerifyCompleteEventHandler VerifyComplete" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.Restore.VerifyComplete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.VerifyCompleteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein am Ende des Vorgangs SqlVerify ausgelöstes Ereignis.
+Es gibt an, ob die Überprüfung erfolgreich war.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

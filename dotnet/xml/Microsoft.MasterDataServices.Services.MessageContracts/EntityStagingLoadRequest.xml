@@ -1,0 +1,125 @@
+<Type Name="EntityStagingLoadRequest" FullName="Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest">
+  <TypeSignature Language="C#" Value="public class EntityStagingLoadRequest : Microsoft.MasterDataServices.Services.MessageContracts.ModelMembersBulkRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityStagingLoadRequest extends Microsoft.MasterDataServices.Services.MessageContracts.ModelMembersBulkRequest" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services.Contracts</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.MasterDataServices.Services.MessageContracts.ModelMembersBulkRequest</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.MessageContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Die <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest" /> Zuordnungsparameter die Anforderung zum Laden.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityStagingLoadRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchTag">
+      <MemberSignature Language="C#" Value="public string BatchTag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BatchTag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest.BatchTag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.MessageBodyMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt das Batchtag zum Identifizieren des Stagingbatches an.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportType">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.EntityStagingImportType ImportType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.MasterDataServices.Services.DataContracts.EntityStagingImportType ImportType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest.ImportType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.MessageBodyMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.EntityStagingImportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Importtyp für das Staging an.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueForProcessing">
+      <MemberSignature Language="C#" Value="public bool QueueForProcessing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool QueueForProcessing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.MessageContracts.EntityStagingLoadRequest.QueueForProcessing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.MessageBodyMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gibt an, ob die während dieses Ladevorgangs erstellten Stagingbatches der Warteschlange hinzugefügt werden sollen, um verarbeitet zu werden.
+             </summary>
+        <value>
+          <list type="table">
+            <item>
+              <term>true (Standardwert)</term>
+              <description>Legt den Batchstatus auf QueuedToRun fest.</description>
+            </item>
+            <item>
+              <term>false</term>
+              <description>Legt den Batchstatus auf NotRunning fest.  Der Batch wird nicht in die Verarbeitungswarteschlange eingefügt.</description>
+            </item>
+          </list>
+        </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

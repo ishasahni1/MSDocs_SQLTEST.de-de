@@ -1,0 +1,113 @@
+<Type Name="MessageRequest" FullName="Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest">
+  <TypeSignature Language="C#" Value="public abstract class MessageRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MessageRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services.Contracts</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.MessageContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Definiert die Basisklasse für alle Anforderungen, die von einer Master Data Services-Instanz verarbeitet werden können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageRequest (Microsoft.MasterDataServices.Services.DataContracts.International intl, Guid reqId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.MasterDataServices.Services.DataContracts.International intl, valuetype System.Guid reqId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest.#ctor(Microsoft.MasterDataServices.Services.DataContracts.International,System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="intl" Type="Microsoft.MasterDataServices.Services.DataContracts.International" />
+        <Parameter Name="reqId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="intl">Muss hinzugefügt werden.</param>
+        <param name="reqId">Muss hinzugefügt werden.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="International">
+      <MemberSignature Language="C#" Value="public Microsoft.MasterDataServices.Services.DataContracts.International International { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.MasterDataServices.Services.DataContracts.International International" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest.International" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.MessageHeader(MustUnderstand=true, Namespace="http://www.w3.org/2005/09/ws-i18n", Relay=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.International</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die clientlokalisierungsinformationen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestId">
+      <MemberSignature Language="C#" Value="public Guid RequestId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid RequestId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.MasterDataServices.Services.MessageContracts.MessageRequest.RequestId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.MessageBodyMember(Namespace="http://schemas.microsoft.com/sqlserver/masterdataservices/2009/09")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Anforderungsbezeichner an.
+            </summary>
+        <value>
+            Der Anforderungsbezeichner.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

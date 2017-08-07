@@ -1,0 +1,49 @@
+<Type Name="ConnectionHelpers" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.ConnectionHelpers">
+  <TypeSignature Language="C#" Value="public static class ConnectionHelpers" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ConnectionHelpers extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.ConnectionHelpers" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt Methoden zum Bereitstellen von Verbindungen mit Datenbankbereich, statt eine Verbindung mit einem Serverbereich
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToScopedServerConnection">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Common.ServerConnection ToScopedServerConnection (this System.Data.SqlClient.SqlConnection sqlConnection, Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Common.ServerConnection ToScopedServerConnection(class System.Data.SqlClient.SqlConnection sqlConnection, class Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ConnectionHelpers.ToScopedServerConnection(System.Data.SqlClient.SqlConnection,Microsoft.SqlServer.Management.Sdk.Sfc.Urn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlConnection" Type="System.Data.SqlClient.SqlConnection" RefType="this" />
+        <Parameter Name="urn" Type="Microsoft.SqlServer.Management.Sdk.Sfc.Urn" />
+      </Parameters>
+      <Docs>
+        <param name="sqlConnection">
+        </param>
+        <param name="urn">
+        </param>
+        <summary>
+            Gibt für eine SqlConnection und Urn der Bereich der Datenbank, die durch den Urn angegeben ServerConnection zurück.        
+            Wenn der Urn nicht mit einem Datenbankbereich erfordert, sind die ServerConnection je Eingabe Datenbank verwendeten SqlConnection begrenzt.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

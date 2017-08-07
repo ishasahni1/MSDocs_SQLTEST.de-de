@@ -1,0 +1,123 @@
+<Type Name="IMutableTrigger" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger">
+  <TypeSignature Language="C#" Value="public interface IMutableTrigger : Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject, Microsoft.SqlServer.Management.SqlParser.Metadata.ITrigger" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMutableTrigger implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.ITrigger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.ITrigger</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt einen änderbaren SQL Server-Trigger dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BodyText">
+      <MemberSignature Language="C#" Value="public string BodyText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BodyText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger.BodyText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Transact-SQL-Anweisungen ab, die das Modul definieren, oder legt sie fest.
+            </summary>
+        <value>Die Transact-SQL-Anweisungen, die das Modul definieren.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionContext">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext ExecutionContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext ExecutionContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger.ExecutionContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext" />-Objekt ab, das den Modulausführungskontext angibt, oder legt es fest.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext" />-Objekt, das den Modulausführungskontext angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob das Modul aktiviert ist.
+            </summary>
+        <value>
+          <c>true</c> if the module is enabled; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEncrypted">
+      <MemberSignature Language="C#" Value="public bool IsEncrypted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEncrypted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger.IsEncrypted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob das Modul verschlüsselt ist.
+            </summary>
+        <value>
+          <c>true</c> if the module is encrypted; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSqlClr">
+      <MemberSignature Language="C#" Value="public bool IsSqlClr { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSqlClr" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableTrigger.IsSqlClr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob ein CLR-Modul vorliegt.
+            </summary>
+        <value>
+          <c>true</c> if this is a CLR module; otherwise, false.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

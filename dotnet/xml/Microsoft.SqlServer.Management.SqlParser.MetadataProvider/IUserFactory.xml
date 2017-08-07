@@ -1,0 +1,148 @@
+<Type Name="IUserFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IUserFactory">
+  <TypeSignature Language="C#" Value="public interface IUserFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUserFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IUserFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden, die zum Erstellen von <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IUser" />-Objekten verwendet werden können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateAsymmetricKeyUser">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser CreateAsymmetricKeyUser (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser CreateAsymmetricKeyUser(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IUserFactory.CreateAsymmetricKeyUser(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt, das dem Benutzer übergeordnet ist.</param>
+        <param name="name">Der Name des zu erstellenden Benutzers.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser" />-Objekt, das zum angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt gehört und über den angegebenen Namen verfügt. Die <see cref="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IUser.UserType" />-Eigenschaft des erstellten Objekts ist auf AsymmetricKey festgelegt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCertificateUser">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser CreateCertificateUser (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser CreateCertificateUser(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IUserFactory.CreateCertificateUser(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt, das dem Benutzer übergeordnet ist.</param>
+        <param name="name">Der Name des zu erstellenden Benutzers.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser" />-Objekt, das zum angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt gehört und über den angegebenen Namen verfügt. Die <see cref="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IUser.UserType" />-Eigenschaft des erstellten Objekts ist auf Certificate festgelegt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateExternalProviderUser">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser CreateExternalProviderUser (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser CreateExternalProviderUser(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IUserFactory.CreateExternalProviderUser(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt, das dem Benutzer übergeordnet ist.</param>
+        <param name="name">Der Name des zu erstellenden Benutzers.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser" />-Objekt, das zum angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt gehört und über den angegebenen Namen verfügt. Die <see cref="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IUser.UserType" /> -Eigenschaft des erstellten Objekts auf ExternalProvider festgelegt ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNoLoginUser">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser CreateNoLoginUser (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser CreateNoLoginUser(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IUserFactory.CreateNoLoginUser(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt, das dem Benutzer übergeordnet ist.</param>
+        <param name="name">Der Name des zu erstellenden Benutzers.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser" />-Objekt, das zum angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt gehört und über den angegebenen Namen verfügt. Die <see cref="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IUser.UserType" />-Eigenschaft des erstellten Objekts ist auf NoLogin festgelegt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSqlLoginUser">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser CreateSqlLoginUser (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser CreateSqlLoginUser(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IUserFactory.CreateSqlLoginUser(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt, das dem Benutzer übergeordnet ist.</param>
+        <param name="name">Der Name des zu erstellenden Benutzers.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser" />-Objekt, das zum angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt gehört und über den angegebenen Namen verfügt. Die <see cref="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IUser.UserType" />-Eigenschaft des erstellten Objekts ist auf SqlLogin festgelegt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUser" /> Objekt.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

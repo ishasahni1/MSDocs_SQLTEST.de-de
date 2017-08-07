@@ -1,0 +1,213 @@
+<Type Name="IComponentErrorInfo" FullName="Microsoft.SqlServer.Dts.Design.IComponentErrorInfo">
+  <TypeSignature Language="C#" Value="public interface IComponentErrorInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentErrorInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dts.Design</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt ausführliche Informationen zu einem Fehler- oder Warnungsereignis bereit, das während des Entwurfs durch SSIS-Ablaufsteuerungs- oder Datenflusskomponenten generiert wurde.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Component">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent Component { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent Component" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo.Component" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die ' IComponent '-Schnittstelle des Objekts, das das Ereignis ausgelöst hat.
+            </summary>
+        <value>Ein ' IComponent '-Wert, der die Komponente, die dem Fehler zugeordnet ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Text der Meldung zurück.
+            </summary>
+        <value>Eine Zeichenfolge, die die Fehlermeldung enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorCode">
+      <MemberSignature Language="C#" Value="public int ErrorCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ErrorCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo.ErrorCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt eine ganze Zahl, die die Fehlermeldung identifiziert.
+            </summary>
+        <value>Ein Integer-Wert, durch den die Fehlermeldung identifiziert wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMessage">
+      <MemberSignature Language="C#" Value="public string GetMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo.GetMessage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt eine Zeichenfolge, die die Fehlermeldung, Komponente und Unterkomponente für jeden Fehler enthält.
+            </summary>
+        <returns>Eine Zeichenfolge, die die Fehlermeldung, Komponente und Unterkomponente enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMessage">
+      <MemberSignature Language="C#" Value="public string GetMessage (bool descriptionOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetMessage(bool descriptionOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo.GetMessage(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="descriptionOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="descriptionOnly">Ein boolescher Wert, der angibt, ob nur die Fehlermeldung zurückgegeben wird, oder die Fehlerinformationen der Komponente und Unterkomponente.</param>
+        <summary>
+            Gibt eine Zeichenfolge, die die Fehlermeldung enthält.
+            </summary>
+        <returns>Wenn "true", eine Zeichenfolge, die die Fehlermeldung enthält. Bei "false", eine Zeichenfolge, die Fehlerinformationen der Komponente und Unterkomponente enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpContext">
+      <MemberSignature Language="C#" Value="public int HelpContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HelpContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo.HelpContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Bezeichner des Themas in der Hilfedatei zurück.
+            </summary>
+        <value>Eine ganze Zahl, die den Themenbezeichner enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpFile">
+      <MemberSignature Language="C#" Value="public string HelpFile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo.HelpFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Pfad zur Hilfedatei zurück, die ausführliche Informationen enthält.
+            </summary>
+        <value>Eine Zeichenfolge, die den Pfad zur Hilfedatei enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Level">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.TraceLevel Level { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.TraceLevel Level" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo.Level" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt ein TraceLevel-Enumerationswert, der angibt, welche Ausgabe für das Debuggen, Ablaufverfolgung und TraceSwitch Klassen Meldungen zurück.
+            </summary>
+        <value>Ein Wert von TraceLevel-Enumeration, der angibt, welche Ausgabe für das Debuggen, Ablaufverfolgung und TraceSwitch Klassen Meldungen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceComponent">
+      <MemberSignature Language="C#" Value="public string SourceComponent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceComponent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo.SourceComponent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Namen der Komponente zurück, in der der Fehler aufgetreten ist.
+            </summary>
+        <value>Eine Zeichenfolge, die mit dem Namen der Komponente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubComponent">
+      <MemberSignature Language="C#" Value="public string SubComponent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SubComponent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Design.IComponentErrorInfo.SubComponent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt eine beliebige Zeichenfolge, die das Untermodul innerhalb einer Quelle identifiziert: z. B. die Transformation in einem Pipelinetask.
+            </summary>
+        <value>Eine Zeichenfolge, die das Untermodul enthält, der die Quelle des Fehlers enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,227 @@
+<Type Name="SchemaComparisonResult" FullName="Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult">
+  <TypeSignature Language="C#" Value="public sealed class SchemaComparisonResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SchemaComparisonResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Klasse, Informationen zu den Unterschieden zwischen einer Quelle und Ziel-Datenbank bereitstellt.
+Unterschiede werden in einer Baumstruktur dargestellt.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Differences">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Compare.SchemaDifference&gt; Differences { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Compare.SchemaDifference&gt; Differences" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult.Differences" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Compare.SchemaDifference&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Eine Struktur, die Ergebnisse des Schemavergleich von Quell- und Endpunkten enthält.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exclude">
+      <MemberSignature Language="C#" Value="public bool Exclude (Microsoft.SqlServer.Dac.Compare.SchemaDifference node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Exclude(class Microsoft.SqlServer.Dac.Compare.SchemaDifference node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult.Exclude(Microsoft.SqlServer.Dac.Compare.SchemaDifference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="Microsoft.SqlServer.Dac.Compare.SchemaDifference" />
+      </Parameters>
+      <Docs>
+        <param name="node">Der Konsolenstrukturknoten "" (möglicherweise) ändern.</param>
+        <summary>
+            Verwendet, um zu versuchen, einen Unterschied im Rahmen des Satzes von Update-Aktionen ausschließen, die ein Skript erstellt oder veröffentlicht werden.
+            </summary>
+        <returns>Gibt "true" zurück, wenn nach Abschluss des Vorgangs Zustand des Knotens nicht enthalten ist</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateScript">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Compare.SchemaCompareScriptGenerationResult GenerateScript (string databaseName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.Compare.SchemaCompareScriptGenerationResult GenerateScript(string databaseName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult.GenerateScript(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Compare.SchemaCompareScriptGenerationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="databaseName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="databaseName">Name der Zieldatenbank.</param>
+        <summary>
+            Generiert ein T-SQL-Updateskript, die das Zielschema mit dem Quellschema konsistent ist.
+            </summary>
+        <returns>SchemaCompareScriptGenerationResult </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">Wenn das Ziel eine DACPAC-Datei ist und ein Wert von null oder leer DatabaseName bereitgestellt wurde.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetErrors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Compare.DacSchemaComparisonMessage&gt; GetErrors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Compare.DacSchemaComparisonMessage&gt; GetErrors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult.GetErrors" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Compare.DacSchemaComparisonMessage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Stellt eine Enumeration von Fehlern, die eine erfolgreiche vergleichen Schemavorgänge zu verhindern.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Include">
+      <MemberSignature Language="C#" Value="public bool Include (Microsoft.SqlServer.Dac.Compare.SchemaDifference node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Include(class Microsoft.SqlServer.Dac.Compare.SchemaDifference node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult.Include(Microsoft.SqlServer.Dac.Compare.SchemaDifference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="Microsoft.SqlServer.Dac.Compare.SchemaDifference" />
+      </Parameters>
+      <Docs>
+        <param name="node">Der Konsolenstrukturknoten "" (möglicherweise) ändern.</param>
+        <summary>
+            Verwendet, um zu versuchen, einen Unterschied im Rahmen des Satzes von Update-Aktionen enthalten, die ein Skript erstellt oder veröffentlicht werden.
+            </summary>
+        <returns>Gibt "true" zurück, wenn nach Abschluss des Vorgangs Zustand des Knotens enthalten ist.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEqual">
+      <MemberSignature Language="C#" Value="public bool IsEqual { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEqual" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult.IsEqual" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, ob die Quell- und Endpunkte identisch sind.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, ob der Vergleich in einem gültigen, verwendbaren Ergebnis geführt hat.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublishChangesToTarget">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Compare.SchemaComparePublishResult PublishChangesToTarget ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.Compare.SchemaComparePublishResult PublishChangesToTarget() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult.PublishChangesToTarget" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Compare.SchemaComparePublishResult</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Wird generiert, und führt dann ein T-SQL-Updateskript, die das Zielschema mit dem Quellschema konsistent ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceModel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlModel SourceModel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.TSqlModel SourceModel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult.SourceModel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Datenbankmodell für die Quelle
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetModel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlModel TargetModel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.TSqlModel TargetModel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult.TargetModel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Ziel-Modell
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

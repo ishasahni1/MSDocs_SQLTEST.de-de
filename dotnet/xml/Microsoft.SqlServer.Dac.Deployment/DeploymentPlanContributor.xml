@@ -1,0 +1,58 @@
+<Type Name="DeploymentPlanContributor" FullName="Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributor">
+  <TypeSignature Language="C#" Value="public abstract class DeploymentPlanContributor : Microsoft.SqlServer.Dac.Deployment.DeploymentContributor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DeploymentPlanContributor extends Microsoft.SqlServer.Dac.Deployment.DeploymentContributor" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dac.Deployment.DeploymentContributor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Repräsentiert einen Mitwirkenden am Bereitstellungsprozess.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeploymentPlanContributor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnExecute">
+      <MemberSignature Language="C#" Value="protected abstract void OnExecute (Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnExecute(class Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributor.OnExecute(Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">Ein <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorContext" /> Objekt</param>
+        <summary>
+            Wird aufgerufen, durch das Bereitstellungsmodul, um benutzerdefinierten Contributors die Ausführung ihrer speziellen Aufgaben zu ermöglichen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentFailedException">Es ist ein schwerwiegender Fehler den beendet des Bereitstellungsprozess fortgesetzt werden soll, implementieren die Contributors löst möglicherweise eine <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentFailedException" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

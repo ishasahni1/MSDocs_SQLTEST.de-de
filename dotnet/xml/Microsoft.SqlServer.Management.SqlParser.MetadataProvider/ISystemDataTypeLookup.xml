@@ -1,0 +1,99 @@
+<Type Name="ISystemDataTypeLookup" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup">
+  <TypeSignature Language="C#" Value="public interface ISystemDataTypeLookup" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISystemDataTypeLookup" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden, die für die Suche und Rückgabe von Systemdatentypen verwendet werden können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType Find (Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec typeSpec, bool isMaximum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType Find(class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec typeSpec, bool isMaximum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup.Find(Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeSpec" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" />
+        <Parameter Name="isMaximum" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="typeSpec">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" />-Objekt, das die Spezifikation für integrierte Typen darstellt.</param>
+        <param name="isMaximum">
+          <c>true</c> to specify the maximum storage size (max); otherwise, <c>false</c>.</param>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" />-Objekt ab, das über die angegebene Datentypspezifikation und die angegebene Einstellung für die maximale Speichergröße verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" /> Objekt. <c>null</c> Wenn kein übereinstimmendes datentypobjekts System wurde nicht gefunden.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType Find (Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec typeSpec, int precisionOrMaxLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType Find(class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec typeSpec, int32 precisionOrMaxLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup.Find(Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeSpec" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" />
+        <Parameter Name="precisionOrMaxLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="typeSpec">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" />-Objekt, das die Spezifikation für integrierte Typen darstellt.</param>
+        <param name="precisionOrMaxLength">Die Genauigkeit oder maximale Länge des Datentyps.</param>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" />-Objekt ab, das über die angegebene Datentypspezifikation und Genauigkeit bzw. maximale Länge verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" /> Objekt. <c>null</c> Wenn kein übereinstimmendes datentypobjekts System wurde nicht gefunden.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType Find (Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec typeSpec, int precision, int scale);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType Find(class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec typeSpec, int32 precision, int32 scale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.ISystemDataTypeLookup.Find(Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeSpec" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" />
+        <Parameter Name="precision" Type="System.Int32" />
+        <Parameter Name="scale" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="typeSpec">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" />-Objekt, das die Spezifikation für integrierte Typen darstellt.</param>
+        <param name="precision">Die Genauigkeit des Datentyps.</param>
+        <param name="scale">Die Dezimalstellen des Datentyps.</param>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" />-Objekt ab, das über die angegebene Datentypspezifikation, Genauigkeit und Dezimalstellenanzahl verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" /> Objekt. <c>null</c> Wenn kein übereinstimmendes datentypobjekts System wurde nicht gefunden.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,113 @@
+<Type Name="SecurityPredicateCollectionBase" FullName="Microsoft.SqlServer.Management.Smo.SecurityPredicateCollectionBase">
+  <TypeSignature Language="C#" Value="public abstract class SecurityPredicateCollectionBase : Microsoft.SqlServer.Management.Smo.SortedListCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityPredicateCollectionBase extends Microsoft.SqlServer.Management.Smo.SortedListCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.SecurityPredicateCollectionBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Smo.SortedListCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            SecurityPredicateCollectionBase
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (int securityPredicateID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(int32 securityPredicateID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicateCollectionBase.Contains(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityPredicateID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="securityPredicateID">Das Prädikat Sicherheits-id</param>
+        <summary>
+             Contains-Methode
+            </summary>
+        <returns>Das sicherheitsprädikat, falls vorhanden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemByTargetObjectID">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.SecurityPredicate GetItemByTargetObjectID (int targetObjectID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Smo.SecurityPredicate GetItemByTargetObjectID(int32 targetObjectID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicateCollectionBase.GetItemByTargetObjectID(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.SecurityPredicate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetObjectID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="targetObjectID">Der Objekt-id</param>
+        <summary>
+            Ruft das Filterprädikat, das für das angegebene Objekt-Id angewendet wird, falls vorhanden.
+            </summary>
+        <returns>Die Sicherheit Prädikat If gefunden, Null andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemByTargetObjectID">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.SecurityPredicate GetItemByTargetObjectID (int targetObjectID, Microsoft.SqlServer.Management.Smo.SecurityPredicateType predicateType, Microsoft.SqlServer.Management.Smo.SecurityPredicateOperation predicateOperation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Smo.SecurityPredicate GetItemByTargetObjectID(int32 targetObjectID, valuetype Microsoft.SqlServer.Management.Smo.SecurityPredicateType predicateType, valuetype Microsoft.SqlServer.Management.Smo.SecurityPredicateOperation predicateOperation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicateCollectionBase.GetItemByTargetObjectID(System.Int32,Microsoft.SqlServer.Management.Smo.SecurityPredicateType,Microsoft.SqlServer.Management.Smo.SecurityPredicateOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.SecurityPredicate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetObjectID" Type="System.Int32" />
+        <Parameter Name="predicateType" Type="Microsoft.SqlServer.Management.Smo.SecurityPredicateType" />
+        <Parameter Name="predicateOperation" Type="Microsoft.SqlServer.Management.Smo.SecurityPredicateOperation" />
+      </Parameters>
+      <Docs>
+        <param name="targetObjectID">Der Objekt-id</param>
+        <param name="predicateType">Der Typ des sicherheitsprädikats</param>
+        <param name="predicateOperation">Der Vorgangstyp des sicherheitsprädikats</param>
+        <summary>
+            Ruft das sicherheitsprädikat für ein bestimmtes Ziel-Objekt-ID, Typ und Vorgang ab.
+            </summary>
+        <returns>Die Sicherheit Prädikat If gefunden, Null andernfalls</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitInnerCollection">
+      <MemberSignature Language="C#" Value="protected override void InitInnerCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitInnerCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SecurityPredicateCollectionBase.InitInnerCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Interner Speicher
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

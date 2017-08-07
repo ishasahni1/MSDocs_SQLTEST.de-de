@@ -1,0 +1,105 @@
+<Type Name="SqlRuleExecutionContext" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext">
+  <TypeSignature Language="C#" Value="public sealed class SqlRuleExecutionContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlRuleExecutionContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert die erforderlichen Felder für die Analyse, einschließlich des Schemamodells und des Modellelements für die Analyse.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ModelElement">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlObject ModelElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.TSqlObject ModelElement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext.ModelElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> analysiert wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleDescriptor">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.RuleDescriptor RuleDescriptor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.CodeAnalysis.RuleDescriptor RuleDescriptor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext.RuleDescriptor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.RuleDescriptor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Beschreibt die ausgeführte Regel und kann eingesetzt werden für den Zugriff auf: 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaModel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlModel SchemaModel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.TSqlModel SchemaModel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext.SchemaModel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> analysiert wird.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptFragment">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment ScriptFragment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment ScriptFragment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext.ScriptFragment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das Skriptfragment ab (sofern verfügbar), das das zu analysierende Element definiert. Kann null sein. 
+            
+            Tries to get the most suitable <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" /> for use during the rule analysis process.
+            If the TSqlObject was originally built from a scripted source then the original source fragment will be returned.
+            Otherwise a new AST will be generated from the <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext.ModelElement" />/&gt;.
+            This ensures that when reporting <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem" />s the most accurate source information can be included
+            in the error messages. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>
+            Finden Sie unter <see cref="M:Microsoft.SqlServer.Dac.TSqlModelUtils.TryGetFragmentForAnalysis(Microsoft.SqlServer.Dac.Model.TSqlObject,Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment@)" /> Details zur Implementierung
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

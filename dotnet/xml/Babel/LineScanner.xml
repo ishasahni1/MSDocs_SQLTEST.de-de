@@ -1,0 +1,175 @@
+<Type Name="LineScanner" FullName="Babel.LineScanner">
+  <TypeSignature Language="C#" Value="public class LineScanner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi LineScanner extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Babel.LineScanner" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Durchsucht Transact-SQL-Anweisungen, die Suche nach einzelnen Einheiten von Code (Token) an.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LineScanner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Babel.LineScanner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der <see cref="T:Babel.LineScanner" />-Klasse unter Verwendung eines <see cref="T:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions" />-Standardobjekts.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchSeparator">
+      <MemberSignature Language="C#" Value="public string BatchSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BatchSeparator" />
+      <MemberSignature Language="DocId" Value="P:Babel.LineScanner.BatchSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Zeichenfolge ab, die zum Aufteilen eines einzelnen Skripts in mehrere Batches verwendet wird, oder legt sie fest.
+            </summary>
+        <value>Die Zeichenfolge, die zum Aufteilen eines einzelnen Skripts in mehrere Batches verwendet wird. Der Standardwert ist GO.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineToken">
+      <MemberSignature Language="C#" Value="public static void DefineToken (int token, Babel.TokenType type, Babel.TokenTriggers trigger);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DefineToken(int32 token, valuetype Babel.TokenType type, valuetype Babel.TokenTriggers trigger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Babel.LineScanner.DefineToken(System.Int32,Babel.TokenType,Babel.TokenTriggers)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.Int32" />
+        <Parameter Name="type" Type="Babel.TokenType" />
+        <Parameter Name="trigger" Type="Babel.TokenTriggers" />
+      </Parameters>
+      <Docs>
+        <param name="token">Das zu definierende Token.</param>
+        <param name="type">Der <see cref="T:Babel.TokenType" />-Wert, der den Tokentyp angibt.</param>
+        <param name="trigger">Ein <see cref="T:Babel.TokenTriggers" />-Wert, der den Trigger angibt, der für das Token festgelegt wird.</param>
+        <summary>
+            Erstellt eine Tokendefinition und fügt sie dem Array von Tokendefinitionen hinzu.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSqlCmdModeEnabled">
+      <MemberSignature Language="C#" Value="public bool IsSqlCmdModeEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSqlCmdModeEnabled" />
+      <MemberSignature Language="DocId" Value="P:Babel.LineScanner.IsSqlCmdModeEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob der Scanner für Transact-SQL aktiviert ist.
+            </summary>
+        <value>
+          <c>true</c> if the scanner is enabled for Transact-SQL; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateDefiniton">
+      <MemberSignature Language="C#" Value="public void PopulateDefiniton (Babel.TokenInfo tokenInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PopulateDefiniton(class Babel.TokenInfo tokenInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Babel.LineScanner.PopulateDefiniton(Babel.TokenInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokenInfo" Type="Babel.TokenInfo" />
+      </Parameters>
+      <Docs>
+        <param name="tokenInfo">Das <see cref="T:Babel.TokenInfo" />-Objekt, das ausgefüllt wird.</param>
+        <summary>
+            Fügt die Tokendefinition in das <see cref="T:Babel.TokenInfo" />-Objekt ein.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScanTokenAndProvideInfoAboutIt">
+      <MemberSignature Language="C#" Value="public bool ScanTokenAndProvideInfoAboutIt (Babel.TokenInfo tokenInfo, ref int state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ScanTokenAndProvideInfoAboutIt(class Babel.TokenInfo tokenInfo, int32 state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Babel.LineScanner.ScanTokenAndProvideInfoAboutIt(Babel.TokenInfo,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokenInfo" Type="Babel.TokenInfo" />
+        <Parameter Name="state" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="tokenInfo">Das <see cref="T:Babel.TokenInfo" />-Objekt, das ausgefüllt wird.</param>
+        <param name="state">Der aktuelle Status des Scanners.</param>
+        <summary>
+            Analysiert das nächste Sprachtoken in der aktuellen Zeile und gibt Informationen dazu zurück.
+            </summary>
+        <returns>
+          <c>true</c> if a token was parsed from the current line and information was returned; otherwise, <c>false</c>, which 
+            indicates that there are no more tokens on the current line.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSource">
+      <MemberSignature Language="C#" Value="public void SetSource (string source, int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSource(string source, int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Babel.LineScanner.SetSource(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="source">Die Zeile, die in Token zerlegt werden soll.</param>
+        <param name="offset">Das Zeichenoffset in der Zeile, für die eine Analyse gestartet wird. Dieser Wert muss beachtet werden.</param>
+        <summary>
+            Legt die zu analysierende Zeile fest.
+            </summary>
+        <remarks>Language Service Scan erfolgt immer auf eine Zeile für Zeile Basis. Diese Methode wird aufgerufen, um die Zeile durch nachfolgende Aufrufe analysiert werden. legen die <see cref="M:Babel.LineScanner.ScanTokenAndProvideInfoAboutIt" /> Methode.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

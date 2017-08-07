@@ -1,0 +1,437 @@
+<Type Name="CollectionItem" FullName="Microsoft.SqlServer.Management.Collector.CollectionItem">
+  <TypeSignature Language="C#" Value="public sealed class CollectionItem : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, Microsoft.SqlServer.Management.Common.IAlterable, Microsoft.SqlServer.Management.Common.IMarkForDrop, Microsoft.SqlServer.Management.Common.IRenamable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcRenamable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CollectionItem extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance implements class Microsoft.SqlServer.Management.Common.IAlterable, class Microsoft.SqlServer.Management.Common.IMarkForDrop, class Microsoft.SqlServer.Management.Common.IRenamable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcRenamable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Collector.CollectionItem" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Collector</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IMarkForDrop</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IRenamable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcRenamable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary />
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CollectionItem (Microsoft.SqlServer.Management.Collector.CollectionSet set, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Collector.CollectionSet set, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.#ctor(Microsoft.SqlServer.Management.Collector.CollectionSet,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="set" Type="Microsoft.SqlServer.Management.Collector.CollectionSet" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="set">Muss hinzugefügt werden.</param>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>
+            Erstellen Sie eine Instanz eines sammelelements erhält der Sammlungssatz und ein Elementname <param name="set">den übergeordneten Sammlungssatz</param><param name="name">den Namen des sammelelements</param></summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alter">
+      <MemberSignature Language="C#" Value="public void Alter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Alter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.Alter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ein Sammelelement durch Anwenden der Änderungen auf den Konfigurationsspeicher zu ändern
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionFrequency">
+      <MemberSignature Language="C#" Value="public TimeSpan CollectionFrequency { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CollectionFrequency" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectionItem.CollectionFrequency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die sammelhäufigkeit für dieses Element aus, wenn der Satz CollectionMode "continuous" ausgeführt wird
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityKey">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.CreateIdentityKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Discover">
+      <MemberSignature Language="C#" Value="public override void Discover (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink sink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Discover(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink sink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.Discover(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sink" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink" />
+      </Parameters>
+      <Docs>
+        <param name="sink">
+        </param>
+        <summary>
+            Jetzt wird nicht verwendet werden. Für diese Ermittlung sollte das übergeordnete Element kümmert haben wurde.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCollection">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection (string elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection(string elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.GetChildCollection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectFactory">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetObjectFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetObjectFactory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.GetObjectFactory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public int Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectionItem.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Data)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sammlungs-Element-id
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityKey">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Collector.CollectionItem.Key IdentityKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Collector.CollectionItem/Key IdentityKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectionItem.IdentityKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Collector.CollectionItem+Key</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Key-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkForDrop">
+      <MemberSignature Language="C#" Value="public void MarkForDrop (bool dropOnAlter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MarkForDrop(bool dropOnAlter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.MarkForDrop(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dropOnAlter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dropOnAlter">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable.ScriptAlter">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ISfcAlterable.ScriptAlter ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable.ScriptAlter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcAlterable#ScriptAlter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcRenamable.Rename">
+      <MemberSignature Language="C#" Value="void ISfcRenamable.Rename (Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey newKey);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcRenamable.Rename(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey newKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcRenamable#Rename(Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newKey" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey" />
+      </Parameters>
+      <Docs>
+        <param name="newKey">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcRenamable.ScriptRename">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ISfcRenamable.ScriptRename (Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey newKey);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript Microsoft.SqlServer.Management.Sdk.Sfc.ISfcRenamable.ScriptRename(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey newKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcRenamable#ScriptRename(Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newKey" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey" />
+      </Parameters>
+      <Docs>
+        <param name="newKey">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectionItem.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcKey(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sammelelementname
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public string Parameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Parameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectionItem.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein XML-Fragment, das die spezifischen Parameter für dieses Auflistungselement darstellt. Er muss mit dem Schema des sammlertyps entsprechen, die dieses Element implementiert
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Collector.CollectionSet Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Collector.CollectionSet Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectionItem.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectRelationship.ParentObject, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectCardinality.One)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Collector.CollectionSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Übergeordnete Objekt in der Hierarchie Om; CollectionSet
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rename">
+      <MemberSignature Language="C#" Value="public void Rename (string newName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Rename(string newName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItem.Rename(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="newName">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeName">
+      <MemberSignature Language="C#" Value="public string TypeName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectionItem.TypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dem Namen des sammlertyps, den dieses sammelelement implementiert.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

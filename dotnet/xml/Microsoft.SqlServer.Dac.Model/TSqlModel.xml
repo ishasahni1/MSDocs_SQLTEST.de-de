@@ -1,0 +1,1021 @@
+<Type Name="TSqlModel" FullName="Microsoft.SqlServer.Dac.Model.TSqlModel">
+  <TypeSignature Language="C#" Value="public sealed class TSqlModel : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TSqlModel extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Repräsentiert ein Modell eines SQL Server-Datenbankschemas.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TSqlModel (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Der Dateipfad zum Paket.</param>
+        <summary>
+            Lädt ein Modell aus einem <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> oder <see cref="T:Microsoft.SqlServer.Dac.BacPackage" />.
+            
+            This is equivalent to calling <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDacpac(System.String,Microsoft.SqlServer.Dac.Model.ModelLoadOptions)" /> with default values.
+            </summary>
+        <remarks>
+            Standardmäßig wird DacSchemaModelStorageType.Memory für das Modellspeicherformat verwendet.
+Das Dacpac-Modell werden Skript gestützt, da die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> wird auf "false" festgelegt werden.
+Mit <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDacpac(System.String,Microsoft.SqlServer.Dac.Model.ModelLoadOptions)" /> mit <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> auf "true" festgelegt wird empfohlen, wenn das Modell verwendeten die <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> für statische Codeanalyse.
+            </remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn es Probleme beim Laden des Pakets aus dem angegebenen <paramref name="fileName" />. Ein solches Problem kann auftreten, wenn das Paket nicht ordnungsgemäß geladen werden kann oder vom Paket benötigte Verweise nicht im Paketverzeichnis oder unter dem ursprünglichen Verweispfad gefunden werden.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TSqlModel (Microsoft.SqlServer.Dac.Model.SqlServerVersion modelTargetVersion, Microsoft.SqlServer.Dac.Model.TSqlModelOptions modelCreationOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion modelTargetVersion, class Microsoft.SqlServer.Dac.Model.TSqlModelOptions modelCreationOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.#ctor(Microsoft.SqlServer.Dac.Model.SqlServerVersion,Microsoft.SqlServer.Dac.Model.TSqlModelOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="modelTargetVersion" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+        <Parameter Name="modelCreationOptions" Type="Microsoft.SqlServer.Dac.Model.TSqlModelOptions" />
+      </Parameters>
+      <Docs>
+        <param name="modelTargetVersion">Die Version von SQL Server als Ziel</param>
+        <param name="modelCreationOptions">Optionen, die Modelleigenschaften, einschließlich Sortierung und wie das Modell (im Arbeitsspeicher oder Datei) zu speichern.
+            </param>
+        <summary>
+            Erstellt ein leeres Modell, das ein bestimmtes<see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /></summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TSqlModel (string fileName, Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.#ctor(System.String,Microsoft.SqlServer.Dac.DacSchemaModelStorageType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Der Dateipfad zum Paket.</param>
+        <param name="modelStorageType">
+            Der Typ des Hintergrundspeichers einer Paketinstanz.
+            </param>
+        <summary>
+            Lädt ein Modell aus einem <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> oder <see cref="T:Microsoft.SqlServer.Dac.BacPackage" />.
+            
+            This is equivalent to calling <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDacpac(System.String,Microsoft.SqlServer.Dac.Model.ModelLoadOptions)" /> with default values for
+            everything except the <paramref name="modelStorageType" />.
+            </summary>
+        <remarks>
+            Das Dacpac-Modell werden Skript gestützt, da die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> wird auf "false" festgelegt werden.
+Mit <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDacpac(System.String,Microsoft.SqlServer.Dac.Model.ModelLoadOptions)" /> mit <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> auf "true" festgelegt wird empfohlen, wenn das Modell verwendeten die <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> für statische Codeanalyse.
+            </remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn es Probleme beim Laden des Pakets aus dem angegebenen <paramref name="fileName" />. Ein solches Problem kann auftreten, wenn das Paket nicht ordnungsgemäß geladen werden kann oder vom Paket benötigte Verweise nicht im Paketverzeichnis oder unter dem ursprünglichen Verweispfad gefunden werden.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TSqlModel (string fileName, Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.#ctor(System.String,Microsoft.SqlServer.Dac.DacSchemaModelStorageType,System.Threading.CancellationToken)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Der Dateipfad zum Paket.</param>
+        <param name="modelStorageType">
+            Der Typ des Hintergrundspeichers einer Paketinstanz.
+            </param>
+        <param name="cancellationToken">Ein Token zum Modell laden wird abgebrochen.</param>
+        <summary>
+            Lädt ein Modell aus einem <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> oder <see cref="T:Microsoft.SqlServer.Dac.BacPackage" />.
+            
+            This is equivalent to calling <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDacpac(System.String,Microsoft.SqlServer.Dac.Model.ModelLoadOptions)" /> with default values for
+            everything except the <paramref name="modelStorageType" />.
+            </summary>
+        <remarks>
+            Das Dacpac-Modell werden Skript gestützt, da die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> wird auf "false" festgelegt werden.
+Mit <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDacpac(System.String,Microsoft.SqlServer.Dac.Model.ModelLoadOptions)" /> mit <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> auf "true" festgelegt wird empfohlen, wenn das Modell verwendeten die <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> für statische Codeanalyse.
+            </remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn es Probleme beim Laden des Pakets aus dem angegebenen <paramref name="fileName" />. Ein solches Problem kann auftreten, wenn das Paket nicht ordnungsgemäß geladen werden kann oder vom Paket benötigte Verweise nicht im Paketverzeichnis oder unter dem ursprünglichen Verweispfad gefunden werden.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">Wenn der Ladevorgang abgebrochen wird.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddObjects">
+      <MemberSignature Language="C#" Value="public void AddObjects (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript inputScript);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddObjects(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript inputScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddObjects(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputScript" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript" />
+      </Parameters>
+      <Docs>
+        <param name="inputScript">Die <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript" /> hinzufügen</param>
+        <summary>
+            Fügt Objekte für das Modell auf Basis der Inhalte von einem <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript" /> Objekt. Das Skript sollte gültige TSql ohne Analysefehler enthalten. 
+            
+            Objects added using this method cannot be updated or deleted at a later point 
+            as update/delete requires a script name to be specified when adding the objects. If this
+            is a requirement use the <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddOrUpdateObjects(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript,System.String,Microsoft.SqlServer.Dac.Model.TSqlObjectOptions)" /> 
+            method instead.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn das angegebene <paramref name="inputScript" /> ist null.
+            </exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddObjects">
+      <MemberSignature Language="C#" Value="public void AddObjects (string inputScript);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddObjects(string inputScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddObjects(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputScript" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="inputScript">Skript mit TSql-DDL-Anweisungen</param>
+        <summary>
+            Fügt dem Modell Objekte auf Basis des Inhalts einer Zeichenfolge eines TSql-Skripts hinzu. Das Skript muss gültige TSql-DDL-Anweisungen enthalten.
+            
+            Objects added using this method cannot be updated or deleted at a later point 
+            as update/delete requires a script name to be specified when adding the objects. If this
+            is a requirement use the <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddOrUpdateObjects(System.String,System.String,Microsoft.SqlServer.Dac.Model.TSqlObjectOptions)" /> 
+            method instead.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn das angegebene <paramref name="inputScript" /> ist null.
+            </exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddObjects">
+      <MemberSignature Language="C#" Value="public void AddObjects (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript inputScript, Microsoft.SqlServer.Dac.Model.TSqlObjectOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddObjects(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript inputScript, class Microsoft.SqlServer.Dac.Model.TSqlObjectOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddObjects(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript,Microsoft.SqlServer.Dac.Model.TSqlObjectOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputScript" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.TSqlObjectOptions" />
+      </Parameters>
+      <Docs>
+        <param name="inputScript">Die <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript" /> hinzufügen</param>
+        <param name="options">Optionen, die definiert, wie Sie das Skript zu interpretieren.</param>
+        <summary>
+            Objekte auf Basis der Inhalte des Modells hinzufügen ein <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript" /> Objekt sowie zusätzliche Metadaten, die definiert, indem ein <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectOptions" /> Objekt, das Skript muss gültige TSql ohne Analysefehler. 
+            
+            Objects added using this method cannot be updated or deleted at a later point 
+            as update/delete requires a script name to be specified when adding the objects. If this
+            is a requirement use the <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddOrUpdateObjects(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript,System.String,Microsoft.SqlServer.Dac.Model.TSqlObjectOptions)" /> 
+            method instead.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn das angegebene <paramref name="inputScript" /> ist null.
+            </exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddObjects">
+      <MemberSignature Language="C#" Value="public void AddObjects (string inputScript, Microsoft.SqlServer.Dac.Model.TSqlObjectOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddObjects(string inputScript, class Microsoft.SqlServer.Dac.Model.TSqlObjectOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddObjects(System.String,Microsoft.SqlServer.Dac.Model.TSqlObjectOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputScript" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.TSqlObjectOptions" />
+      </Parameters>
+      <Docs>
+        <param name="inputScript">Skript mit TSql-DDL-Anweisungen</param>
+        <param name="options">Optionen, die definiert, wie Sie das Skript zu interpretieren.</param>
+        <summary>
+            Das Modell basierend auf den Inhalt der Zeichenfolge eines TSql-Skripts sowie zusätzliche Metadaten, die durch definierten Objekte hinzufügen einer <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectOptions" /> Objekt, das Skript sollte gültige TSql-DDL-Anweisungen bestehen. 
+            
+            Objects added using this method cannot be updated or deleted at a later point 
+            as update/delete requires a script name to be specified when adding the objects. If this
+            is a requirement use the <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddOrUpdateObjects(System.String,System.String,Microsoft.SqlServer.Dac.Model.TSqlObjectOptions)" /> 
+            method instead.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn das angegebene <paramref name="inputScript" /> ist null.
+            </exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOrUpdateObjects">
+      <MemberSignature Language="C#" Value="public void AddOrUpdateObjects (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript inputScript, string sourceName, Microsoft.SqlServer.Dac.Model.TSqlObjectOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOrUpdateObjects(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript inputScript, string sourceName, class Microsoft.SqlServer.Dac.Model.TSqlObjectOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddOrUpdateObjects(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript,System.String,Microsoft.SqlServer.Dac.Model.TSqlObjectOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputScript" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript" />
+        <Parameter Name="sourceName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.TSqlObjectOptions" />
+      </Parameters>
+      <Docs>
+        <param name="inputScript">Skript mit TSql-DDL-Anweisungen</param>
+        <param name="sourceName">
+            Ein Name zum Identifizieren der <paramref name="inputScript" />, z. B. ein Dateiname wie "MyTable.sql" oder einfach ein Alias wie "Dbo. Tabelle". Skripts werden zwischengespeichert und die TSql-Objekte werden mit dem Quellnamen verknüpft.
+Bei zukünftigen Aktualisierungs- oder Löschvorgängen werden alle vorhandenen Objekte mit demselben Skriptnamen entfernt und durch die neuen Objekte ersetzt.
+            </param>
+        <param name="options">Optionen, die definiert, wie Sie das Skript zu interpretieren.</param>
+        <summary>
+            Fügt hinzu oder aktualisiert die Objekte definiert, die für einen angegebenen <paramref name="sourceName" /> mit den Objekten definiert, die der <paramref name="inputScript" />. Wenn alle Objekte zuvor mit dem gleichen hinzugefügt wurden <paramref name="sourceName" /> diese vollständig ersetzt werden die Objektdefinitionen basieren auf den Inhalt des eine <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlScript" /> -Objekts plus zusätzliche Metadaten, die definiert, indem ein <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectOptions" /> Objekt, das Skript sollte gültige TSql-DDL-Anweisungen bestehen. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn das angegebene <paramref name="inputScript" /> ist null.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Wenn das angegebene <paramref name="sourceName" /> ist Null oder leer ist oder wenn sie auf ".xsd" endet. Hinweis: Datenquellennamen, mit der Erweiterung ".xsd" werden derzeit nicht unterstützt. Diese beziehen sich auf Xml-Schemaauflistungen und ein Hinzufügen derselben wird derzeit in der öffentlichen API noch nicht unterstützt .
+            </exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOrUpdateObjects">
+      <MemberSignature Language="C#" Value="public void AddOrUpdateObjects (string inputScript, string sourceName, Microsoft.SqlServer.Dac.Model.TSqlObjectOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOrUpdateObjects(string inputScript, string sourceName, class Microsoft.SqlServer.Dac.Model.TSqlObjectOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddOrUpdateObjects(System.String,System.String,Microsoft.SqlServer.Dac.Model.TSqlObjectOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputScript" Type="System.String" />
+        <Parameter Name="sourceName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.TSqlObjectOptions" />
+      </Parameters>
+      <Docs>
+        <param name="inputScript">Skript mit TSql-DDL-Anweisungen</param>
+        <param name="sourceName">
+            Ein Name zum Identifizieren der <paramref name="inputScript" />, z. B. ein Dateiname wie "MyTable.sql" oder einfach ein Alias wie "Dbo. Tabelle". Skripts werden zwischengespeichert und die TSql-Objekte werden mit dem Quellnamen verknüpft.
+Bei zukünftigen Aktualisierungs- oder Löschvorgängen werden alle vorhandenen Objekte mit demselben Skriptnamen entfernt und durch die neuen Objekte ersetzt.
+            </param>
+        <param name="options">Optionen, die definiert, wie Sie das Skript zu interpretieren.</param>
+        <summary>
+            Fügt hinzu oder aktualisiert die Objekte definiert, die für einen angegebenen <paramref name="sourceName" /> mit den Objekten definiert, die der <paramref name="inputScript" />. Wenn alle Objekte zuvor mit dem hinzugefügten <paramref name="sourceName" /> diese vollständig ersetzt werden die Objektdefinitionen basieren auf den Inhalt einer Zeichenfolge TSql-Skripts sowie zusätzliche Metadaten, die definiert, indem Sie eine <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectOptions" /> Objekt, das Skript sollte gültige TSql-DDL-Anweisungen bestehen. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn das angegebene <paramref name="inputScript" /> ist null.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Wenn das angegebene <paramref name="sourceName" /> ist Null oder leer ist oder wenn sie auf ".xsd" endet. Hinweis: Datenquellennamen, mit der Erweiterung ".xsd" werden derzeit nicht unterstützt. Diese beziehen sich auf Xml-Schemaauflistungen und ein Hinzufügen derselben wird derzeit in der öffentlichen API noch nicht unterstützt .
+            </exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckVersionCompatibility">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.DacModelError&gt; CheckVersionCompatibility (Microsoft.SqlServer.Dac.Model.SqlServerVersion targetVersion, System.Threading.CancellationToken cancelToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.DacModelError&gt; CheckVersionCompatibility(valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion targetVersion, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.CheckVersionCompatibility(Microsoft.SqlServer.Dac.Model.SqlServerVersion,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.DacModelError&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetVersion" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+        <Parameter Name="cancelToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="targetVersion">Die Ziel-Sql-Version des Exports</param>
+        <param name="cancelToken">Ein Token für das Abbrechen der Überprüfung des Modells verwendet.</param>
+        <summary>
+            Überprüft das Modell, um festzustellen, ob er Elemente enthält, die nicht mit einem Zielversion von SQL Server oder Azure SQL-Datenbank kompatibel sind, und gibt Sie zurück, Fehler oder Warnungen.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollationComparer">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.ModelCollationComparer CollationComparer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.ModelCollationComparer CollationComparer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.TSqlModel.CollationComparer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.ModelCollationComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Vergleich, der Zeichenfolgen zu vergleichen und <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />anhand der Sortierung dieses <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />.
+Dies kann sehr nützlich sein, wenn Vergleichen von Objekten im Modell, da Vergleiche mit den erwarteten Vergleichsergebnissen in SQL Server konsistent sein wird
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToScriptedObject">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlObject ConvertToScriptedObject (Microsoft.SqlServer.Dac.Model.TSqlObject tSqlObject, string sourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.Model.TSqlObject ConvertToScriptedObject(class Microsoft.SqlServer.Dac.Model.TSqlObject tSqlObject, string sourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.ConvertToScriptedObject(Microsoft.SqlServer.Dac.Model.TSqlObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tSqlObject" Type="Microsoft.SqlServer.Dac.Model.TSqlObject" />
+        <Parameter Name="sourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tSqlObject">Zu konvertierende Objekt. Darf nicht null sein</param>
+        <param name="sourceName">Der Quellenname ist optional. Wenn der Wert NULL wird ein Standardname für das Objekt generiert. Dieser Name kann mit gefunden <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlObject.GetSourceInformation" />des SourceName-Eigenschaft.
+            </param>
+        <summary>
+            Konvertiert ein bestimmtes auf oberster Ebene Objekt im Modell zu einer skriptgesteuerten Darstellung von sich selbst.
+Dies ist hilfreich, wenn Modell stammen aus einer Datenbank ab und möchte, dass des Aufrufers Inhalt dieses Objekts zu ändern.  
+            </summary>
+        <returns>Neue Kopie der TSqlObject, die jetzt Skript gesichert werden.
+Oder wenn das Objekt bereits skriptgestütztes wurde, wird dieses Objekt einfach zurückgeben
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Diese Klasse des Objekts ist nie skriptfähige ausgelöst, wenn das Objekt nicht ausgegeben werden kann, oder Fehler im Modell gefunden wurden, während der Skriptprozess
+            </exception>
+        <exception cref="T:System.ArgumentException">Wenn die Objekts null ist, oder wenn Leerzeichen für den Quellnamen verwendet wird</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyModelOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlModelOptions CopyModelOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.Model.TSqlModelOptions CopyModelOptions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.CopyModelOptions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModelOptions</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Kopiert die <see cref="T:Microsoft.SqlServer.Dac.Model.DatabaseOptions" /> für das Modell in einem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModelOptions" /> Objekt.
+Dies ist hilfreich, wenn Sie bei der Erstellung eines neuen Modells die Optionen für ein Modell duplizieren möchten.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModelOptions" />mit den Einstellungen entsprechen den Datenbankoptionen des Modells</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteObjects">
+      <MemberSignature Language="C#" Value="public void DeleteObjects (string sourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteObjects(string sourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.DeleteObjects(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceName">
+            Ein Name zur Identifizierung der zu löschenden Quelle, z. B. ein Dateiname wie "MyTable.sql" oder einfach ein Alias wie "dbo.Table". Skripts werden zwischengespeichert und die TSql-Objekte werden mit dem Quellnamen verknüpft.
+            </param>
+        <summary>
+            Löscht alle Objekte, die für das Modell mit dem angegebenen hinzugefügten <paramref name="sourceName" />.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn das angegebene <paramref name="sourceName" /> ist Null oder leer ist oder wenn sie auf ".xsd" endet. Hinweis: Datenquellennamen, mit der Erweiterung ".xsd" werden derzeit nicht unterstützt. Diese beziehen sich auf Xml-Schemaauflistungen und ein Hinzufügen derselben wird derzeit in der öffentlichen API noch nicht unterstützt .
+            </exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayServices">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.DisplayServices DisplayServices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.DisplayServices DisplayServices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.TSqlModel.DisplayServices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.DisplayServices</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.DisplayServices" /> , dass für Objekte im Modell unterstützen Anzeigeeigenschaften.  
+            </summary>
+        <value>
+          <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.DisplayServices" />
+        </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt alle von verwendete Ressourcen frei der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> Objekt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineVersion">
+      <MemberSignature Language="C#" Value="public int EngineVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EngineVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.TSqlModel.EngineVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die betreffende Modulversion, nach der das Modell ausgerichtet ist.
+            
+            For On Premises platforms this will be consistent with the <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> - for instance
+            <see cref="F:Microsoft.SqlServer.Dac.Model.SqlServerVersion.Sql90" /> will have an engine version of 9.
+            
+            For Microsoft Azure SQL Database the minimum valid version is 11, and the engine version will affect
+            what features are supported in the model.  
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModelErrors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.DacModelError&gt; GetModelErrors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.DacModelError&gt; GetModelErrors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.GetModelErrors" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.DacModelError&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt alle <see cref="T:Microsoft.SqlServer.Dac.Model.DacModelError" />s, die im Modell vorhanden sind.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>
+            Laden Sie das Modell mit <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.ThrowOnModelErrors" /> auf "false" festgelegt, um die Modellfehler abrufen.
+Finden Sie unter <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.ThrowOnModelErrors" /> Weitere Informationen zum Fehler im Objektmodell.
+            </remarks>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlObject GetObject (Microsoft.SqlServer.Dac.Model.ModelTypeClass objectType, Microsoft.SqlServer.Dac.Model.ObjectIdentifier id, Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.Model.TSqlObject GetObject(class Microsoft.SqlServer.Dac.Model.ModelTypeClass objectType, class Microsoft.SqlServer.Dac.Model.ObjectIdentifier id, valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.GetObject(Microsoft.SqlServer.Dac.Model.ModelTypeClass,Microsoft.SqlServer.Dac.Model.ObjectIdentifier,Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectType" Type="Microsoft.SqlServer.Dac.Model.ModelTypeClass" />
+        <Parameter Name="id" Type="Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="objectType">Typfilter. Muss in der Liste der <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" /> zurückgegeben, die von der <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModelSchema.TopLevelTypes" /> -Methode oder der Aufruf fehl. </param>
+        <param name="id">Eindeutige Identität der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> zurückgegeben.</param>
+        <param name="queryScopes">Der Bereichsfilter für die abgefragten Objekte.</param>
+        <summary>
+            Gibt <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />des angegebenen <paramref name="objectType" value="type" /> und <paramref name="id" value="identity" />.
+Nur die ersten Ebene <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" /> Typen werden von dieser Methode - unterstützt die <paramref name="objectType" value="type" /> Parameter muss in den Typen von zurückgegeben werden die <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModelSchema.TopLevelTypes" /> -Methode oder der Aufruf fehl.
+            </summary>
+        <returns>Einzelne TSqlObject oder Null.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn das angegebene <paramref name="objectType" /> und <paramref name="id" /> führen in mehreren <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />s, oder wenn die <paramref name="objectType" /> ist kein Typ oberster Ebene.
+            </exception>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn das angegebene <paramref name="objectType" /> ist null.
+            </exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjects">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetObjects (Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes, Microsoft.SqlServer.Dac.Model.ModelTypeClass[] typeFilters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetObjects(valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes, class Microsoft.SqlServer.Dac.Model.ModelTypeClass[] typeFilters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.GetObjects(Microsoft.SqlServer.Dac.Model.DacQueryScopes,Microsoft.SqlServer.Dac.Model.ModelTypeClass[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+        <Parameter Name="typeFilters" Type="Microsoft.SqlServer.Dac.Model.ModelTypeClass[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="queryScopes">Der Bereichsfilter für die abgefragten Objekte. Muss in der Liste der <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" /> zurückgegeben, die von der <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModelSchema.TopLevelTypes" /> -Methode oder der Aufruf fehl.</param>
+        <param name="typeFilters">Liste der <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" />s zurückgegeben.</param>
+        <summary>
+            Gibt alle <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />s, die die Liste der übereinstimmenden <paramref name="typeFilters" />.
+Nur die ersten Ebene <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" /> Typen werden unterstützt, die von dieser Methode – alle Typen in der <paramref name="typeFilters" value="type" /> Parameter muss im vorliegen der <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModelSchema.TopLevelTypes" /> oder der Aufruf fehl.
+            </summary>
+        <returns>Alle <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />s, die entsprechen <paramref name="typeFilters" />.</returns>
+        <remarks>
+            Wenn kein <paramref name="typeFilters" /> werden alle bereitgestellten <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />e zurückgegeben.
+            </remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn einer der Typen in der <paramref name="typeFilters" /> Parameter sind nicht den Typ auf oberster Ebene.
+            </exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjects">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetObjects (string sourceName, Microsoft.SqlServer.Dac.Model.ModelTypeClass[] typeFilters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetObjects(string sourceName, class Microsoft.SqlServer.Dac.Model.ModelTypeClass[] typeFilters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.GetObjects(System.String,Microsoft.SqlServer.Dac.Model.ModelTypeClass[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceName" Type="System.String" />
+        <Parameter Name="typeFilters" Type="Microsoft.SqlServer.Dac.Model.ModelTypeClass[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="sourceName">Name des Quelldokuments</param>
+        <param name="typeFilters">Array von ModelTypeClass, die den resultierenden <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> gefiltert werden soll.</param>
+        <summary>
+            Gibt alle <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />s in einer angegebenen <paramref name="sourceName" /> Dokument gefiltert nach <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" />s gemäß der <paramref name="typeFilters" /> Parameter.
+            </summary>
+        <returns>Liste der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />s</returns>
+        <remarks>
+            Wenn kein <paramref name="typeFilters" /> werden alle bereitgestellten <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" />e zurückgegeben.
+            </remarks>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjects">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetObjects (Microsoft.SqlServer.Dac.Model.ModelTypeClass objectType, Microsoft.SqlServer.Dac.Model.ObjectIdentifier id, Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Model.TSqlObject&gt; GetObjects(class Microsoft.SqlServer.Dac.Model.ModelTypeClass objectType, class Microsoft.SqlServer.Dac.Model.ObjectIdentifier id, valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes queryScopes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.GetObjects(Microsoft.SqlServer.Dac.Model.ModelTypeClass,Microsoft.SqlServer.Dac.Model.ObjectIdentifier,Microsoft.SqlServer.Dac.Model.DacQueryScopes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Model.TSqlObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectType" Type="Microsoft.SqlServer.Dac.Model.ModelTypeClass" />
+        <Parameter Name="id" Type="Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />
+        <Parameter Name="queryScopes" Type="Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+      </Parameters>
+      <Docs>
+        <param name="objectType">Typfilter. Muss in der Liste der <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" /> zurückgegeben, die von der <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModelSchema.TopLevelTypes" /> -Methode oder der Aufruf fehl.</param>
+        <param name="id">Identität der <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />s zurückgegeben.</param>
+        <param name="queryScopes">Der Bereichsfilter für die abgefragten Objekte.</param>
+        <summary>
+            Gibt alle <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />s, die entsprechen den <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" /> und <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" />.
+Nur die ersten Ebene <see cref="T:Microsoft.SqlServer.Dac.Model.ModelTypeClass" /> Typen werden von dieser Methode - unterstützt die <paramref name="objectType" value="type" /> Parameter muss in den Typen von zurückgegeben werden die <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModelSchema.TopLevelTypes" /> -Methode oder der Aufruf fehl.
+            </summary>
+        <returns>Alle <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />s, die entsprechen den <paramref name="objectType" /> und <paramref name="id" />.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn die <paramref name="objectType" /> ist kein Typ oberster Ebene.
+            </exception>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn das angegebene <paramref name="objectType" /> ist null.
+            </exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+            Wenn die Kommunikation mit dem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObjectService" /> ein Fehler auftritt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsScriptBacked">
+      <MemberSignature Language="C#" Value="public bool IsScriptBacked { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsScriptBacked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.TSqlModel.IsScriptBacked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Handelt es sich um ein Modell, die durch Skripts gestützt wird? In diesem Fall Objekte in der <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.UserDefined" /> Bereich müssen quellpositionsinformationen, einschließlich einer Quellenname und Informationen. Dies ist wichtig für Szenarien wie die Verwendung von der <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" />. 
+            
+            Any empty <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> created will be script-backed by default. Models loaded
+            from a Dacpac will only be scipt backed if the <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" />
+            option is enabled. Note that creating a script-backed model will take longer than using a standard model
+            loaded from a Dacpac
+            
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromDacpac">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDacpac (System.IO.Stream dacpacStream, Microsoft.SqlServer.Dac.Model.ModelLoadOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDacpac(class System.IO.Stream dacpacStream, class Microsoft.SqlServer.Dac.Model.ModelLoadOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDacpac(System.IO.Stream,Microsoft.SqlServer.Dac.Model.ModelLoadOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dacpacStream" Type="System.IO.Stream" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.ModelLoadOptions" />
+      </Parameters>
+      <Docs>
+        <param name="dacpacStream">Ein Stream mit den serialisierten DACPAC-Daten.</param>
+        <param name="options">
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelLoadOptions" /> definieren, wie das Modell geladen werden soll. Für Modelle, für die statische Codeanalyse analysiert werden, es wird empfohlen, die die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> festgelegt werden, auf "true". Dies ist wichtig, da andernfalls einige Regeln möglicherweise nicht wie erwartet funktionieren.
+            </param>
+        <summary>
+            Lädt ein Modell aus einem <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> oder <see cref="T:Microsoft.SqlServer.Dac.BacPackage" /> unter Verwendung des angegebenen <paramref name="options" /> , welche Art von Speicher verwendet wird und angibt, ob ein Skript gestütztes Modell geladen werden oder nicht konfigurieren.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn es Probleme beim Laden des Pakets aus dem angegebenen <paramref name="dacpacStream" />. Ein solches Problem kann auftreten, wenn das Paket nicht ordnungsgemäß geladen werden kann oder vom Paket benötigte Verweise nicht unter dem ursprünglichen Verweispfad gefunden werden.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromDacpac">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDacpac (string fileName, Microsoft.SqlServer.Dac.Model.ModelLoadOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDacpac(string fileName, class Microsoft.SqlServer.Dac.Model.ModelLoadOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDacpac(System.String,Microsoft.SqlServer.Dac.Model.ModelLoadOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.ModelLoadOptions" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Der Dateipfad zum Paket.</param>
+        <param name="options">
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelLoadOptions" /> definieren, wie das Modell geladen werden soll. Für Modelle, für die statische Codeanalyse analysiert werden, es wird empfohlen, die die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> festgelegt werden, auf "true". Dies ist wichtig, da andernfalls einige Regeln möglicherweise nicht wie erwartet funktionieren.
+            </param>
+        <summary>
+            Lädt ein Modell aus einem <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> oder <see cref="T:Microsoft.SqlServer.Dac.BacPackage" /> unter Verwendung des angegebenen <paramref name="options" /> , welche Art von Speicher verwendet wird und angibt, ob ein Skript gestütztes Modell geladen werden oder nicht konfigurieren.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn es Probleme beim Laden des Pakets aus dem angegebenen <paramref name="fileName" />. Ein solches Problem kann auftreten, wenn das Paket nicht ordnungsgemäß geladen werden kann oder vom Paket benötigte Verweise nicht im Paketverzeichnis oder unter dem ursprünglichen Verweispfad gefunden werden.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromDacpac">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDacpac (System.IO.Stream dacpacStream, Microsoft.SqlServer.Dac.Model.ModelLoadOptions options, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDacpac(class System.IO.Stream dacpacStream, class Microsoft.SqlServer.Dac.Model.ModelLoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDacpac(System.IO.Stream,Microsoft.SqlServer.Dac.Model.ModelLoadOptions,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dacpacStream" Type="System.IO.Stream" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.ModelLoadOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="dacpacStream">Ein Stream mit den serialisierten DACPAC-Daten.</param>
+        <param name="options">
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelLoadOptions" /> definieren, wie das Modell geladen werden soll. Für Modelle, für die statische Codeanalyse analysiert werden, es wird empfohlen, die die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> festgelegt werden, auf "true". Dies ist wichtig, da andernfalls einige Regeln möglicherweise nicht wie erwartet funktionieren.
+            </param>
+        <param name="cancellationToken">Ein Token zum Modell laden wird abgebrochen.</param>
+        <summary>
+            Lädt ein Modell aus einem <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> oder <see cref="T:Microsoft.SqlServer.Dac.BacPackage" /> unter Verwendung des angegebenen <paramref name="options" /> , welche Art von Speicher verwendet wird und angibt, ob ein Skript gestütztes Modell geladen werden oder nicht konfigurieren.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.OperationCanceledException">Wenn der Ladevorgang abgebrochen wird.</exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn es Probleme beim Laden des Pakets aus dem angegebenen <paramref name="dacpacStream" />. Ein solches Problem kann auftreten, wenn das Paket nicht ordnungsgemäß geladen werden kann oder vom Paket benötigte Verweise nicht unter dem ursprünglichen Verweispfad gefunden werden.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromDacpac">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDacpac (string fileName, Microsoft.SqlServer.Dac.Model.ModelLoadOptions options, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDacpac(string fileName, class Microsoft.SqlServer.Dac.Model.ModelLoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDacpac(System.String,Microsoft.SqlServer.Dac.Model.ModelLoadOptions,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.ModelLoadOptions" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Der Dateipfad zum Paket.</param>
+        <param name="options">
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelLoadOptions" /> definieren, wie das Modell geladen werden soll. Für Modelle, für die statische Codeanalyse analysiert werden, es wird empfohlen, die die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> festgelegt werden, auf "true". Dies ist wichtig, da andernfalls einige Regeln möglicherweise nicht wie erwartet funktionieren.
+            </param>
+        <param name="cancellationToken">Ein Token zum Modell laden wird abgebrochen.</param>
+        <summary>
+            Lädt ein Modell aus einem <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> oder <see cref="T:Microsoft.SqlServer.Dac.BacPackage" /> unter Verwendung des angegebenen <paramref name="options" /> , welche Art von Speicher verwendet wird und angibt, ob ein Skript gestütztes Modell geladen werden oder nicht konfigurieren.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.OperationCanceledException">Wenn der Ladevorgang abgebrochen wird.</exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn es Probleme beim Laden des Pakets aus dem angegebenen <paramref name="fileName" />. Ein solches Problem kann auftreten, wenn das Paket nicht ordnungsgemäß geladen werden kann oder vom Paket benötigte Verweise nicht im Paketverzeichnis oder unter dem ursprünglichen Verweispfad gefunden werden.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromDatabase">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDatabase (string connectionString, Microsoft.SqlServer.Dac.Model.ModelExtractOptions options = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDatabase(string connectionString, class Microsoft.SqlServer.Dac.Model.ModelExtractOptions options, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDatabase(System.String,Microsoft.SqlServer.Dac.Model.ModelExtractOptions,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.ModelExtractOptions" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">Eine Verbindungszeichenfolge angeben, die Datenbank und den Katalog laden.</param>
+        <param name="options">
+            Eine optionale <see cref="T:Microsoft.SqlServer.Dac.Model.ModelExtractOptions" />-Instanz, mit deren Hilfe Optionen angegeben werden, die sich auf das Verhalten der Paketextraktion auswirken.
+Für Modelle, für die statische Codeanalyse analysiert werden, es wird empfohlen, die die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelExtractOptions.LoadAsScriptBackedModel" /> festgelegt werden, auf "true". Dies ist wichtig, da andernfalls einige Regeln möglicherweise nicht wie erwartet funktionieren.</param>
+        <param name="cancellationToken">Optionale Abbruchtoken zum Abbrechen eines Load-Vorgangs verwendet.</param>
+        <summary>
+            Lädt ein Modell aus einer Datenbank unter Verwendung des angegebenen <paramref name="options" />.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Wenn "ConnectionString" null ist.</exception>
+        <exception cref="T:System.ArgumentException">Wenn "ConnectionString" keine Optionen oder eine gültige Verbindungszeichenfolge ist. Speicher ist kein gültiger Wert des enumerierten Typs.</exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn es Probleme, die das Modell aus der angegebenen Datenbank extrahieren gibt. 
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromDatabase">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDatabase (string connectionString, System.Security.SecureString password, Microsoft.SqlServer.Dac.Model.ModelExtractOptions options = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDatabase(string connectionString, class System.Security.SecureString password, class Microsoft.SqlServer.Dac.Model.ModelExtractOptions options, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDatabase(System.String,System.Security.SecureString,Microsoft.SqlServer.Dac.Model.ModelExtractOptions,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+        <Parameter Name="password" Type="System.Security.SecureString" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.ModelExtractOptions" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">Eine Verbindungszeichenfolge angeben, die Datenbank und den Katalog laden.</param>
+        <param name="password">Diese Kennwortzeichenfolge, die beim Verbinden mit der angegebenen Datenbank verwendet wird.</param>
+        <param name="options">
+            Eine optionale <see cref="T:Microsoft.SqlServer.Dac.Model.ModelExtractOptions" />-Instanz, mit deren Hilfe Optionen angegeben werden, die sich auf das Verhalten der Paketextraktion auswirken.
+Für Modelle, für die statische Codeanalyse analysiert werden, es wird empfohlen, die die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelExtractOptions.LoadAsScriptBackedModel" /> festgelegt werden, auf "true". Dies ist wichtig, da andernfalls einige Regeln möglicherweise nicht wie erwartet funktionieren.</param>
+        <param name="cancellationToken">Optionale Abbruchtoken zum Abbrechen eines Load-Vorgangs verwendet.</param>
+        <summary>
+            Lädt ein Modell aus einer Datenbank unter Verwendung des angegebenen <paramref name="options" />.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Wenn "ConnectionString" null ist.</exception>
+        <exception cref="T:System.ArgumentException">Wenn "ConnectionString" keine Optionen oder eine gültige Verbindungszeichenfolge ist. Speicher ist kein gültiger Wert des enumerierten Typs.</exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn es Probleme, die das Modell aus der angegebenen Datenbank extrahieren gibt. 
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromDatabaseWithAuthProvider">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDatabaseWithAuthProvider (string connectionString, Microsoft.SqlServer.Dac.IUniversalAuthProvider authProvider, Microsoft.SqlServer.Dac.Model.ModelExtractOptions options = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.Model.TSqlModel LoadFromDatabaseWithAuthProvider(string connectionString, class Microsoft.SqlServer.Dac.IUniversalAuthProvider authProvider, class Microsoft.SqlServer.Dac.Model.ModelExtractOptions options, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.LoadFromDatabaseWithAuthProvider(System.String,Microsoft.SqlServer.Dac.IUniversalAuthProvider,Microsoft.SqlServer.Dac.Model.ModelExtractOptions,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+        <Parameter Name="authProvider" Type="Microsoft.SqlServer.Dac.IUniversalAuthProvider" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.Model.ModelExtractOptions" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">Eine Verbindungszeichenfolge angeben, die Datenbank und den Katalog laden.</param>
+        <param name="authProvider"> 
+            Optionale universal Authentifizierungsanbieter, die zum Authentifizieren einer <see cref="T:System.Data.SqlClient.SqlConnection" /> beim Öffnen einer Verbindung.</param>
+        <param name="options">
+            Eine optionale <see cref="T:Microsoft.SqlServer.Dac.Model.ModelExtractOptions" />-Instanz, mit deren Hilfe Optionen angegeben werden, die sich auf das Verhalten der Paketextraktion auswirken.
+Für Modelle, für die statische Codeanalyse analysiert werden, es wird empfohlen, die die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelExtractOptions.LoadAsScriptBackedModel" /> festgelegt werden, auf "true". Dies ist wichtig, da andernfalls einige Regeln möglicherweise nicht wie erwartet funktionieren.</param>
+        <param name="cancellationToken">Optionale Abbruchtoken zum Abbrechen eines Load-Vorgangs verwendet.</param>
+        <summary>
+            Lädt ein Modell aus einer Datenbank unter Verwendung des angegebenen <paramref name="options" />.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Wenn "ConnectionString" null ist.</exception>
+        <exception cref="T:System.ArgumentException">Wenn "ConnectionString" keine Optionen oder eine gültige Verbindungszeichenfolge ist. Speicher ist kein gültiger Wert des enumerierten Typs.</exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn es Probleme, die das Modell aus der angegebenen Datenbank extrahieren gibt. 
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Model.DacModelMessage&gt; Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.Dac.Model.DacModelMessage&gt; Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.TSqlModel.Validate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Model.DacModelMessage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Überprüft das Modell und gibt eine Liste der Meldungen mit Fehlern/Warnungen zurück.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.SqlServerVersion Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.TSqlModel.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.SqlServerVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die spezifische SQL Server-Zielversion für das Modell.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

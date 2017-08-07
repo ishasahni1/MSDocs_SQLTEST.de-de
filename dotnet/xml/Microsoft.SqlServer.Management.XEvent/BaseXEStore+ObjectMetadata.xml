@@ -1,0 +1,141 @@
+<Type Name="BaseXEStore+ObjectMetadata" FullName="Microsoft.SqlServer.Management.XEvent.BaseXEStore+ObjectMetadata">
+  <TypeSignature Language="C#" Value="public class BaseXEStore.ObjectMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit BaseXEStore/ObjectMetadata extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.XEvent.BaseXEStore.ObjectMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.XEvent</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Bietet Hilfsprogramme Methoden über die Hierarchie Metadatenobjekte        
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectMetadata (Microsoft.SqlServer.Management.XEvent.BaseXEStore store);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.XEvent.BaseXEStore store) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.BaseXEStore.ObjectMetadata.#ctor(Microsoft.SqlServer.Management.XEvent.BaseXEStore)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="store" Type="Microsoft.SqlServer.Management.XEvent.BaseXEStore" />
+      </Parameters>
+      <Docs>
+        <param name="store">Ein Speicher - Quelle von Metadaten.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.XEvent.BaseXEStore.ObjectMetadata" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Get&lt;T&gt; (string name) where T : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, Microsoft.SqlServer.Management.XEvent.IXEObjectInfo;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Get&lt;(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, class Microsoft.SqlServer.Management.XEvent.IXEObjectInfo) T&gt;(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.BaseXEStore.ObjectMetadata.Get``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+            <InterfaceName>Microsoft.SqlServer.Management.XEvent.IXEObjectInfo</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Der Typ des abzurufenden Objekts.</typeparam>
+        <param name="name">Format: [Module_guid]. package_name. object_name; Hinweis: die ersten beiden Teile des Namens sind optional</param>
+        <summary>
+             Gibt <see cref="T:Microsoft.SqlServer.Management.XEvent.IXEObjectInfo" /> Abgleich der Vorname, falls vorhanden und eindeutig.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Management.XEvent.IXEObjectInfo" />entsprechend dem angegebenen Namen.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.XEvent.XEventException">Wenn das Objekt nicht vorhanden ist oder wenn der Objektname nicht eindeutig ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAll&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;T&gt; GetAll&lt;T&gt; (string name) where T : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, Microsoft.SqlServer.Management.XEvent.IXEObjectInfo;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.ICollection`1&lt;!!T&gt; GetAll&lt;(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, class Microsoft.SqlServer.Management.XEvent.IXEObjectInfo) T&gt;(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.BaseXEStore.ObjectMetadata.GetAll``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+            <InterfaceName>Microsoft.SqlServer.Management.XEvent.IXEObjectInfo</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Typ des Objekts aufgelistet werden.</typeparam>
+        <param name="name">Format: package_name.object_name; Hinweis: der erste Teil des Namens ist optional</param>
+        <summary>
+             Gibt eine Auflistung aller der <see cref="T:Microsoft.SqlServer.Management.XEvent.IXEObjectInfo" /> entsprechend dem angegebenen Namen.
+            </summary>
+        <returns>Eine Auflistung aller der <see cref="T:Microsoft.SqlServer.Management.XEvent.IXEObjectInfo" /> entsprechend dem angegebenen Namen.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Wenn der angegebene Name null ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAll&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;T&gt; GetAll&lt;T&gt; (string pkgName, string objName) where T : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, Microsoft.SqlServer.Management.XEvent.IXEObjectInfo;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.ICollection`1&lt;!!T&gt; GetAll&lt;(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, class Microsoft.SqlServer.Management.XEvent.IXEObjectInfo) T&gt;(string pkgName, string objName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.BaseXEStore.ObjectMetadata.GetAll``1(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+            <InterfaceName>Microsoft.SqlServer.Management.XEvent.IXEObjectInfo</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="pkgName" Type="System.String" />
+        <Parameter Name="objName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Typ des Objekts aufgelistet werden.</typeparam>
+        <param name="pkgName">Name des Pakets.</param>
+        <param name="objName">Objektname.</param>
+        <summary>
+            Gibt eine Auflistung von der <see cref="T:Microsoft.SqlServer.Management.XEvent.IXEObjectInfo" /> Abgleich der angegebenen Paketnamen, den Objektnamen.
+            </summary>
+        <returns>Eine Auflistung von der <see cref="T:Microsoft.SqlServer.Management.XEvent.IXEObjectInfo" /> Abgleich der angegebenen Paketnamen, den Objektnamen.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,184 @@
+<Type Name="BlobColumn" FullName="Microsoft.SqlServer.Dts.Pipeline.BlobColumn">
+  <TypeSignature Language="C#" Value="public class BlobColumn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlobColumn extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Pipeline.BlobColumn" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.PipelineHost</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Definiert eine Spalte in einem Datenflusspuffer, das Daten enthält, die einen SQL Server-Datentyp Text, Ntext oder Image aufweist.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddBlobData">
+      <MemberSignature Language="C#" Value="public void AddBlobData (byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBlobData(unsigned int8[] data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.BlobColumn.AddBlobData(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="data">Die binären Daten, die angefügt werden die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.BlobColumn" /> Objekt.</param>
+        <summary>Fügt einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.BlobColumn" />-Spalte Binärdaten hinzu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBlobData">
+      <MemberSignature Language="C#" Value="public void AddBlobData (byte[] data, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBlobData(unsigned int8[] data, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.BlobColumn.AddBlobData(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Byte[]" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="data">Muss hinzugefügt werden.</param>
+        <param name="count">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <member name="M:Microsoft.SqlServer.Dts.Pipeline.BlobColumn.AddBlobData(System.Byte[],System.Int32)">
+          <summary>Fügt eine angegebene Anzahl von Bytes aus Binärdaten, einen <see cref="T:Microsoft.SqlServer.Dts.Pipeline.BlobColumn" /> Spalte.</summary>
+          <param name="data">Die binären Daten, die angefügt werden die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.BlobColumn" /> Objekt.</param>
+          <param name="count">Die Anzahl von Bytes aus Binärdaten, die angefügt werden sollen.</param>
+        </member>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnInfo">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.BufferColumn ColumnInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Pipeline.BufferColumn ColumnInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.BlobColumn.ColumnInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.BufferColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Spalteninformationen des Pipelinepuffers ab</summary>
+        <value>Die Spalteninformationen des Piplinepuffers</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBlobData">
+      <MemberSignature Language="C#" Value="public byte[] GetBlobData (int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetBlobData(int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.BlobColumn.GetBlobData(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">Der Byteindex, an dem mit dem Abrufen von Daten begonnen werden soll.</param>
+        <param name="count">Die Anzahl der abzurufenden Datenbytes.</param>
+        <summary>Gibt den angegebenen Teil der Daten in der Spalte zurück.</summary>
+        <returns>Ein Bytearray, das den angegebenen Teil der Daten in der Spalte enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNull">
+      <MemberSignature Language="C#" Value="public bool IsNull { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNull" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.BlobColumn.IsNull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die Spalte NULL ist.</summary>
+        <value>Ein Wert, der angibt, ob die Spalte NULL ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public uint Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 Length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.BlobColumn.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Länge des Spalteninhalts ab.</summary>
+        <value>Die Länge des Spalteninhalts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetBlobData">
+      <MemberSignature Language="C#" Value="public void ResetBlobData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetBlobData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.BlobColumn.ResetBlobData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Löscht den Inhalt der Spalte.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNull">
+      <MemberSignature Language="C#" Value="public void SetNull ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNull() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.BlobColumn.SetNull" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Legt den Spaltenwert auf NULL fest.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

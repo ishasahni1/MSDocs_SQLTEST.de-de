@@ -1,0 +1,118 @@
+<Type Name="ITransferJobsTask" FullName="Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask">
+  <TypeSignature Language="C#" Value="public interface ITransferJobsTask" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransferJobsTask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.TransferJobsTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Stellt den Task "Aufträge übertragen" dar.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DestinationConnection">
+      <MemberSignature Language="C#" Value="public string DestinationConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DestinationConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.DestinationConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Verbindungs-Managers für die Zieldatenbank ab oder legt ihn fest.</summary>
+        <value>Der Name des Verbindungs-Managers für die Zieldatenbank.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableJobsAtDestination">
+      <MemberSignature Language="C#" Value="public bool EnableJobsAtDestination { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableJobsAtDestination" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.EnableJobsAtDestination" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die am Ziel erstellten Aufträge aktiviert werden sollen, oder legt ihn fest.</summary>
+        <value>"true", wenn die erstellten Aufträge aktiviert sind; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfObjectExists">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists IfObjectExists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists IfObjectExists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.IfObjectExists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists" /> Enumeration, der angibt, wenn die Aufgabe sollte fehlschlagen, den vorhandenen Auftrag überschreibt oder die Übertragung des Auftrags zu überspringen, wenn ein Auftrag mit demselben Namen am Ziel vorhanden ist.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.IfObjectExists" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobsList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection JobsList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection JobsList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.JobsList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Namen der zu übertragenden Aufträge ab oder legt sie fest.</summary>
+        <value>Die Namen der zu übertragenden Aufträge.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceConnection">
+      <MemberSignature Language="C#" Value="public string SourceConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.SourceConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Verbindungszeichenfolge des Verbindungs-Managers ab oder legt sie fest.</summary>
+        <value>Die Verbindungszeichenfolge des Verbindungs-Managers.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransferAllJobs">
+      <MemberSignature Language="C#" Value="public bool TransferAllJobs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TransferAllJobs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferJobsTask.ITransferJobsTask.TransferAllJobs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob einige oder alle Aufträge übertragen werden, oder legt ihn fest.</summary>
+        <value>"true", wenn alle Aufträge übertragen werden; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

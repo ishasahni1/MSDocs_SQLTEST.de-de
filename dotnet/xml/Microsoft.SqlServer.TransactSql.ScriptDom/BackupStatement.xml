@@ -1,0 +1,133 @@
+<Type Name="BackupStatement" FullName="Microsoft.SqlServer.TransactSql.ScriptDom.BackupStatement">
+  <TypeSignature Language="C#" Value="public abstract class BackupStatement : Microsoft.SqlServer.TransactSql.ScriptDom.TSqlStatement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit BackupStatement extends Microsoft.SqlServer.TransactSql.ScriptDom.TSqlStatement" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.TransactSql.ScriptDom.BackupStatement" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.TransactSql.ScriptDom</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlStatement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt die BACKUP/DUMP-Anweisung
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BackupStatement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.BackupStatement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptChildren">
+      <MemberSignature Language="C#" Value="public override void AcceptChildren (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AcceptChildren(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.BackupStatement.AcceptChildren(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visitor" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragmentVisitor" />
+      </Parameters>
+      <Docs>
+        <param name="visitor">Muss hinzugefügt werden.</param>
+        <summary>
+            Akzeptiert Besucher für untergeordnete Elemente
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseName">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.IdentifierOrValueExpression DatabaseName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.TransactSql.ScriptDom.IdentifierOrValueExpression DatabaseName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.BackupStatement.DatabaseName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.IdentifierOrValueExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Datenbank sichern (kann Bezeichner oder variabler Literalwert sein)
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Devices">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.DeviceInfo&gt; Devices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.DeviceInfo&gt; Devices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.BackupStatement.Devices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.DeviceInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Wo die Sicherungsdaten abgelegt werden soll
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MirrorToClauses">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.MirrorToClause&gt; MirrorToClauses { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.MirrorToClause&gt; MirrorToClauses" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.BackupStatement.MirrorToClauses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.MirrorToClause&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            In dem Sicherung gespiegelt werden soll.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.BackupOption&gt; Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.BackupOption&gt; Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.BackupStatement.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.BackupOption&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optionen für die Backup-Anweisung
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

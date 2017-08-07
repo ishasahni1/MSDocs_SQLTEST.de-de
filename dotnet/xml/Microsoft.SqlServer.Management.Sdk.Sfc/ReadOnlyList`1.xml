@@ -1,0 +1,251 @@
+<Type Name="ReadOnlyList&lt;T&gt;" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct ReadOnlyList&lt;T&gt; : Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection&lt;T&gt;, Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyList&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ReadOnlyList`1&lt;T&gt; extends System.ValueType implements class Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection, class Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection`1&lt;!T&gt;, class Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyList`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyList&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">Der Typ der Elemente in der Liste</typeparam>
+    <summary>
+            Eine generische Struktur, die die schreibgeschützte Schnittstelle einer Liste während Blendet die änderbare Schnittstelle verfügbar macht.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyList (System.Collections.Generic.IList&lt;T&gt; list);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;!T&gt; list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1.#ctor(System.Collections.Generic.IList{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="list" Type="System.Collections.Generic.IList&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="list">Ein <see cref="T:System.Collections.Generic.IList`1" /> Objekt, das in die schreibgeschützte Schnittstelle eingebunden werden</param>
+        <summary>
+            Initialisiert eine neue Instanz der <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1" /> , umschließt das angegebene <see cref="T:System.Collections.Generic.IList`1" /> in einer nur-Lese Schnittstelle.
+            </summary>
+        <remarks>Wenn <paramref name="list" /> ist <c>null</c>, wird dies als eine leere Liste behandelt.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1.Contains(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">Das in der Liste zu suchende Objekt.</param>
+        <summary>
+            Bestimmt, ob <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1" /> einen bestimmten Wert enthält.
+            </summary>
+        <returns>
+          <c>true</c> if item is found in the list; otherwise, <c>false</c>.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (T[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(!T[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1.CopyTo(`0[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">
+            Das eindimensionale <see cref="T:System.Array" />, das das Ziel der aus der <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1" /> kopierten Elemente darstellt.
+            </param>
+        <param name="arrayIndex">Der nullbasierte Index im Array, bei dem das Kopieren beginnt.</param>
+        <summary>
+            Kopiert die Elemente der <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1" /> auf eine <see cref="T:System.Array" />, beginnend bei einem bestimmten <see cref="T:System.Array" /> Index.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anzahl der Elemente in der <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1" />.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;T&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt einen Enumerator zurück, der die Liste durchläuft.
+            </summary>
+        <returns>Eine <see cref="T:System.Collections.Generic.IEnumerator`1" /> , die verwendet werden kann, um die Liste zu durchlaufen.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1.IndexOf(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">Das Objekt, suchen Sie in der <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1" />.</param>
+        <summary>
+            Bestimmt den Index eines bestimmten Elements in der <see cref="T:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1" />.
+            </summary>
+        <returns>Der Index des Elements Wenn in der Liste gefunden andernfalls -1.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public T this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">Der nullbasierte Index des abzurufenden Elements.</param>
+        <summary>
+            Ruft das Element am angegebenen Index ab.
+            </summary>
+        <value>Das Element am angegebenen Index.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList&lt;T&gt; op_Implicit (System.Collections.Generic.List&lt;T&gt; list);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1&lt;!T&gt; op_Implicit(class System.Collections.Generic.List`1&lt;!T&gt; list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1.op_Implicit(System.Collections.Generic.List{`0})~Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList{`0}" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="list" Type="System.Collections.Generic.List&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="list">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList&lt;T&gt; op_Implicit (T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1&lt;!T&gt; op_Implicit(!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1.op_Implicit(`0[])~Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList{`0}" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <param name="array">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ReadOnlyList`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt einen Enumerator zurück, der die Liste durchläuft.
+            </summary>
+        <returns>Eine <see cref="T:System.Collections.IEnumerator" /> , die verwendet werden kann, um die Liste zu durchlaufen.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

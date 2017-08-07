@@ -1,0 +1,131 @@
+<Type Name="Helper" FullName="Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper">
+  <TypeSignature Language="C#" Value="public class Helper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Helper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.WebServiceTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Enthält Methoden, um einen primitiven Datentyp identifizieren und Zuordnen des Grundtyps zu einem Microsoft .NET Framework-Systemtyp. 
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Helper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareArrays">
+      <MemberSignature Language="C#" Value="public static bool CompareArrays (object[] a, object[] b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareArrays(object[] a, object[] b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.CompareArrays(System.Object[],System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Object[]" />
+        <Parameter Name="b" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="a">Das erste Array für den Vergleich.</param>
+        <param name="b">Das zweite Array, das mit dem ersten verglichen werden soll.</param>
+        <summary>
+            Vergleicht zwei arrays
+            </summary>
+        <returns>True, wenn beide Arrays sind null. "false" wird zurückgegeben, wenn Parameterarray null ist, die Arraylängen unterschiedlich sind, oder ein Element in einem unterscheidet, die vom entsprechenden Element im anderen Array.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDotNetType">
+      <MemberSignature Language="C#" Value="public static string GetDotNetType (string primitiveType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetDotNetType(string primitiveType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.GetDotNetType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveType">Der Typname, wie im Werttyp angegeben.</param>
+        <summary>
+            Ruft den vollständigen Namen von der Microsoft .NET Framework System.Type verwenden, die entspricht dem Werttyp.
+            </summary>
+        <returns>Der vollständige Name von der .NET Framework System.Type verwenden, der dem Werttyp entspricht.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPrimitiveType">
+      <MemberSignature Language="C#" Value="public static bool IsPrimitiveType (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPrimitiveType(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.IsPrimitiveType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">Der Name des Typs, dessen Datentyp überprüft werden soll.</param>
+        <summary>
+            Gibt an, ob ein Datentyp ein Werttyp ist. 
+            </summary>
+        <returns>"true", wenn der Datentyp ein Werttyp ist; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public static bool Validate (string datatype, string valueToValidate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Validate(string datatype, string valueToValidate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.WebServiceTask.Helper.Validate(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="datatype" Type="System.String" />
+        <Parameter Name="valueToValidate" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="datatype">Der Primitive Datentyp.</param>
+        <param name="valueToValidate">Der zu überprüfende Wert.</param>
+        <summary>        
+            Indicates whether a value can be converted to the specified primitive data type.
+            </summary>
+        <returns>"true", wenn der Wert in den Grunddatentyp konvertiert werden kann; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

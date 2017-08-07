@@ -1,0 +1,144 @@
+<Type Name="IMutableIndex" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex">
+  <TypeSignature Language="C#" Value="public interface IMutableIndex : Microsoft.SqlServer.Management.SqlParser.Metadata.IIndex, Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMutableIndex implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IIndex, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IIndex</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt änderbare SQL Server-Index dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DisallowPageLocks">
+      <MemberSignature Language="C#" Value="public bool DisallowPageLocks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisallowPageLocks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex.DisallowPageLocks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Index Seitensperren zulässt, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the index does not allow page locks; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisallowRowLocks">
+      <MemberSignature Language="C#" Value="public bool DisallowRowLocks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisallowRowLocks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex.DisallowRowLocks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Index Zeilensperren zulässt, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the index does not allow row locks; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillFactor">
+      <MemberSignature Language="C#" Value="public byte FillFactor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 FillFactor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex.FillFactor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt fest, um wie viel Prozent eine Indexseite ausgefüllt werden soll, wenn der Index erstellt bzw. neu erstellt wird.
+            </summary>
+        <value>Der Prozentsatz, um den eine Indexseite ausgefüllt wird, wenn der Index erstellt bzw. neu erstellt wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreDuplicateKeys">
+      <MemberSignature Language="C#" Value="public bool IgnoreDuplicateKeys { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreDuplicateKeys" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex.IgnoreDuplicateKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Index doppelte Schlüssel ignoriert, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> to ignore duplicate keys; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDisabled">
+      <MemberSignature Language="C#" Value="public bool IsDisabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDisabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex.IsDisabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Index deaktiviert ist, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the index is disabled; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PadIndex">
+      <MemberSignature Language="C#" Value="public bool PadIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PadIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableIndex.PadIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob auf jeder Seite der Indexzwischenebenen Platz freigehalten wird, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the index is padded; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

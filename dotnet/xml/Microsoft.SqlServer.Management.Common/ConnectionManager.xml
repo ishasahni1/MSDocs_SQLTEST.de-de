@@ -1,0 +1,436 @@
+<Type Name="ConnectionManager" FullName="Microsoft.SqlServer.Management.Common.ConnectionManager">
+  <TypeSignature Language="C#" Value="public abstract class ConnectionManager : Microsoft.SqlServer.Management.Common.ConnectionSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ConnectionManager extends Microsoft.SqlServer.Management.Common.ConnectionSettings" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Common.ConnectionManager" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ConnectionInfo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Common.ConnectionSettings</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Verbindungseinstellungen und die Erstellung
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AutoDisconnectMode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.AutoDisconnectMode AutoDisconnectMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.AutoDisconnectMode AutoDisconnectMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.AutoDisconnectMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.AutoDisconnectMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapturedSql">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.CapturedSql CapturedSql { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Common.CapturedSql CapturedSql" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.CapturedSql" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.CapturedSql</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckServerVersion">
+      <MemberSignature Language="C#" Value="protected void CheckServerVersion (Microsoft.SqlServer.Management.Common.ServerVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckServerVersion(class Microsoft.SqlServer.Management.Common.ServerVersion version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionManager.CheckServerVersion(Microsoft.SqlServer.Management.Common.ServerVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.SqlServer.Management.Common.ServerVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">
+        </param>
+        <summary>
+            Überprüfen Sie, ob es eine Verbindung mit einer unterstützten Serverversion herstellen.
+Blockieren deaktiviert &lt;= 7.0 im ServerConnection.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public void Connect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionManager.Connect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+             Erstellt die tatsächliche Verbindung mit SQL Server. Ignoriert, wenn bereits eine Verbindung hergestellt.
+Es ist optional, diese Methode aufgerufen, wie die Verbindung geöffnet wird, wenn erforderlich.
+Ausnahmen: ConnectionFailureException
+             </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseEngineEdition">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.DatabaseEngineEdition DatabaseEngineEdition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.DatabaseEngineEdition DatabaseEngineEdition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.DatabaseEngineEdition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.DatabaseEngineEdition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Edition des Datenbankmoduls
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseEngineType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.DatabaseEngineType DatabaseEngineType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.DatabaseEngineType DatabaseEngineType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.DatabaseEngineType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.DatabaseEngineType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gibt den Datenbankmodultyp von SQL Server zurück.
+Ausnahmen: ConnectionFailureException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public void Disconnect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Disconnect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionManager.Disconnect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+             Schließt die Verbindung mit SQL Server. Ignoriert, wenn bereits getrennt.
+Ausnahmen: ConnectionFailureException
+             </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteTSql">
+      <MemberSignature Language="C#" Value="protected object ExecuteTSql (Microsoft.SqlServer.Management.Common.ConnectionManager.ExecuteTSqlAction action, object execObject, System.Data.DataSet fillDataSet, bool catchException);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object ExecuteTSql(valuetype Microsoft.SqlServer.Management.Common.ConnectionManager/ExecuteTSqlAction action, object execObject, class System.Data.DataSet fillDataSet, bool catchException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionManager.ExecuteTSql(Microsoft.SqlServer.Management.Common.ConnectionManager.ExecuteTSqlAction,System.Object,System.Data.DataSet,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.SqlServer.Management.Common.ConnectionManager+ExecuteTSqlAction" />
+        <Parameter Name="execObject" Type="System.Object" />
+        <Parameter Name="fillDataSet" Type="System.Data.DataSet" />
+        <Parameter Name="catchException" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="action">Definiert die Methode, die verwendet werden, für die Ausführung von T-SQL</param>
+        <param name="execObject">Objekt, auf dem diese Methode aufgerufen werden muss</param>
+        <param name="fillDataSet">DataSet, in denen Daten im Falle SqlDataAdapter ExecObject gefüllt müssen</param>
+        <param name="catchException">Wenn die Ausnahme abgefangen werden.</param>
+        <summary>
+            Führt die T-SQL mit den entsprechenden Methoden, abhängig von der Action-Informationen, die als Parameter übergeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceDisconnected">
+      <MemberSignature Language="C#" Value="public void ForceDisconnected ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ForceDisconnected() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ConnectionManager.ForceDisconnected" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erzwingt eine Trennung der Verbindung und stellt sicher, dass die Verbindung erneut erneut geöffnet werden kann
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostPlatform">
+      <MemberSignature Language="C#" Value="public string HostPlatform { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HostPlatform" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.HostPlatform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Hostplattform des Servers (Linux/Windows/usw.)
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InfoMessage">
+      <MemberSignature Language="C#" Value="public event System.Data.SqlClient.SqlInfoMessageEventHandler InfoMessage;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Data.SqlClient.SqlInfoMessageEventHandler InfoMessage" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Common.ConnectionManager.InfoMessage" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlInfoMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Tritt auf, wenn SQL Server eine Warnung oder eine informative Meldung zurückgibt.
+System.Data.SqlClient.SqlInfoMessageEventHandler wird verwendet.
+             </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InUse">
+      <MemberSignature Language="C#" Value="public bool InUse { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InUse" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.InUse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gibt "true" zurück, wenn das Objekt mindestens einmal mit dem Server verbunden wurde.
+Bei "true", keine weiteren eigenschaftenänderungen sind nicht zulässig und ConnectionCannotBeChangedException wird ausgelöst, wenn eine Eigenschaft geändert wurde.
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsForceDisconnected">
+      <MemberSignature Language="C#" Value="public bool IsForceDisconnected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsForceDisconnected" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.IsForceDisconnected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, dass die Verbindung erzwungen getrennt wurden
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="public bool IsOpen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.IsOpen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gibt "true" zurück, wenn die SqlConnection-Objekt mit dem Server verbunden ist.
+Dies kann nur für nicht poolverbindungen "true" zurückgeben, als immer direkt nach einem Vorgang geschlossen werden.
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockTimeout">
+      <MemberSignature Language="C#" Value="public int LockTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LockTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.LockTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            LockTimeout ist das Sperren-Timeout in Sekunden an. Der Standardwert-1 ist für unbestimmte. InvalidPropertyValueException wird für alle anderen negativen Zahlen ausgelöst. Positive LockTimeout durch 1000 multipliziert und dann für die Einstellung für "SET LOCK_TIMEOUT" verwendet.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteLoginFailed">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Common.ServerMessageEventHandler RemoteLoginFailed;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Common.ServerMessageEventHandler RemoteLoginFailed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Common.ConnectionManager.RemoteLoginFailed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Wird aufgerufen, wenn der Server in Verbindung mit Remoteservern muss und die Anmeldung ein Fehler auftritt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerMessage">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Common.ServerMessageEventHandler ServerMessage;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Common.ServerMessageEventHandler ServerMessage" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Common.ConnectionManager.ServerMessage" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Tritt auf, wenn SQL Server eine Warnung oder eine informative Meldung zurückgibt.
+System.Data.SqlClient.SqlInfoMessageEventHandler wird verwendet.
+             </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerVersion">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Common.ServerVersion ServerVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Common.ServerVersion ServerVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.ServerVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gibt die Hauptversionsnummer von SQL Server zurück. D. h. 8 für SQLServer 2000.
+Ausnahmen: ConnectionFailureException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlConnectionObject">
+      <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlConnection SqlConnectionObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlConnection SqlConnectionObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.ConnectionManager.SqlConnectionObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gibt einen Verweis auf das SqlConnection-Objekt, das vom ConnectionContext-Objekt verwendet.
+Die gültigen SqlConnection-Objekt, mit dem letzten gültigen "ConnectionString" Satz sollte immer zurückgegeben.
+Ausnahmen: PropertyNotAvailableException
+             </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateChange">
+      <MemberSignature Language="C#" Value="public event System.Data.StateChangeEventHandler StateChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Data.StateChangeEventHandler StateChange" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Common.ConnectionManager.StateChange" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.StateChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Tritt auf, wenn der Zustand der Verbindung geändert.
+System.Data.StateChangeEventHandler wird verwendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatementExecuted">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Common.StatementEventHandler StatementExecuted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Common.StatementEventHandler StatementExecuted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Common.ConnectionManager.StatementExecuted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.StatementEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

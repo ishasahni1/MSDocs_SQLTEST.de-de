@@ -1,0 +1,885 @@
+<Type Name="DataTypeSpec" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec">
+  <TypeSignature Language="C#" Value="public class DataTypeSpec" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataTypeSpec extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt eine Spezifikation für integrierte Datentypen dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllDataTypes">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec&gt; AllDataTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec&gt; AllDataTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.AllDataTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung der Datentypspezifikationen für alle Systemdatentypen ab.
+            </summary>
+        <value>Die <see cref="T:System.Generic.IEnumerable{Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec}" /> -Objekt, enthält die <c>Xml</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArgIsScale">
+      <MemberSignature Language="C#" Value="public bool ArgIsScale { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ArgIsScale" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.ArgIsScale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob das erste Argument die Dezimalstellen oder die Länge darstellt.
+            </summary>
+        <value>
+          <c>true</c> if the first argument represents the scale; <c>false</c> if the first argument represents the length.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArgSpec1">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeArgSpec ArgSpec1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeArgSpec ArgSpec1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.ArgSpec1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeArgSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeArgSpec" />-Objekt ab, das den Datentyp des ersten Arguments beschreibt.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeArgSpec" />-Objekt, das den Datentyp des ersten Arguments beschreibt. Wenn der Datentyp über keine Argumente verfügt (z. B. ein <c>Int</c> Typ), wird ein null-Verweis zurückgegeben.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArgSpec2">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeArgSpec ArgSpec2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeArgSpec ArgSpec2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.ArgSpec2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeArgSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeArgSpec" />-Objekt ab, das den Datentyp des zweiten Arguments beschreibt.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeArgSpec" />-Objekt, das den Datentyp des zweiten Arguments beschreibt. Wenn der Datentyp verfügt über keine oder nur ein (z. B. einen Typ "Int" oder "Varchar"), ein null-Verweis zurückgegeben.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BigInt">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec BigInt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec BigInt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.BigInt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>"bigint"</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>"bigint"</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Binary">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Binary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Binary" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Binary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>binäre</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>binäre</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bit">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Bit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Bit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Bit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Bit</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Bit</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Char">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Char { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Char" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Char" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Char</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Char</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Date">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Date { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Date" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Date" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Datum</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Datum</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTime">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec DateTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec DateTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.DateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>"DateTime"</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>"DateTime"</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTime2">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec DateTime2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec DateTime2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.DateTime2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>datetime2</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>datetime2</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeOffset">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec DateTimeOffset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec DateTimeOffset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.DateTimeOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>"DateTimeOffset"</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>"DateTimeOffset"</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decimal">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Decimal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Decimal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Decimal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>decimal</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>decimal</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Float">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Float { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Float" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Float" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>"float"</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>"float"</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Geography">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Geography { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Geography" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Geography" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Geography</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Geography</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Geometry">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Geometry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Geometry" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Geometry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Geometrie</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Geometrie</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataTypeSpec">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec GetDataTypeSpec (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec GetDataTypeSpec(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.GetDataTypeSpec(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">Der Name der zu suchenden Datentypspezifikation.</param>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" />-Objekt mit einem Namen ab, der mit dem angegebenen Namen übereinstimmt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>
+            Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> Objekt, sofern gefunden, andernfalls, ein null-Verweis.
+            </return>
+      </Docs>
+    </Member>
+    <Member MemberName="HierarchyId">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec HierarchyId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec HierarchyId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.HierarchyId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Hierarchyid</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Hierarchyid</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Image { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Image" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Image" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Image</c> -Datentyp
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Image</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Int">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Int { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Int" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Int" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Int</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Int</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Money">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Money { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Money" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Money" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Money</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Money</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen des Datentyps ab.
+            </summary>
+        <value>Der Name des Datentyps.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NChar">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec NChar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec NChar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.NChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Nchar</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Nchar</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NText">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec NText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec NText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.NText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Ntext</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Ntext</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Numeric">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Numeric { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Numeric" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Numeric" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den numerischen Datentyp ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> Objekt, das die Typspezifikation numerische Daten enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NVarChar">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec NVarChar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec NVarChar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.NVarChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den NVarChar-Datentyp ab.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> Objekt, das die Typspezifikation für NVarChar-Daten enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NVarCharMax">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec NVarCharMax { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec NVarCharMax" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.NVarCharMax" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>nvarchar(max)</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>nvarchar(max)</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Real">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Real { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Real" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Real" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>echte</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>echte</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireLength">
+      <MemberSignature Language="C#" Value="public bool RequireLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequireLength" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.RequireLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Datentyp eine Längenangabe erfordert.
+            </summary>
+        <value>
+          <c>true</c> if the data type requires a length; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallDateTime">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec SmallDateTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec SmallDateTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.SmallDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Smalldatetime</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Smalldatetime</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallInt">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec SmallInt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec SmallInt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.SmallInt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>"smallint"</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>"smallint"</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallMoney">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec SmallMoney { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec SmallMoney" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.SmallMoney" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Smallmoney</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Smallmoney</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlDataType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.SqlDataType SqlDataType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Metadata.SqlDataType SqlDataType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.SqlDataType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.SqlDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.SqlDataType" />-Wert des integrierten Datentyps ab.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.SqlDataType" />-Wert, der den integrierten Datentyp angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SysName">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec SysName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec SysName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.SysName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Sysname</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Sysname</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Text { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Text</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Text</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Time">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Time { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Time" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Time" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Zeit</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Zeit</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timestamp">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Timestamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Timestamp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Timestamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Zeitstempel</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Zeitstempel</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TinyInt">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec TinyInt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec TinyInt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.TinyInt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>"tinyint"</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>"tinyint"</c>t Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UniqueIdentifier">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec UniqueIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec UniqueIdentifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.UniqueIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>"uniqueidentifier"</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>"uniqueidentifier"</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VarBinary">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec VarBinary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec VarBinary" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.VarBinary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Varbinary</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Varbinary</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VarBinaryMax">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec VarBinaryMax { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec VarBinaryMax" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.VarBinaryMax" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>varbinary(max)</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>varbinary(max)</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VarChar">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec VarChar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec VarChar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.VarChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Varchar</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Varchar</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VarCharMax">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec VarCharMax { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec VarCharMax" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.VarCharMax" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>varchar(max)</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>varchar(max)</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variant">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Variant { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Variant" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Variant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Variante</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Variante</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xml">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Xml { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec Xml" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec.Xml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Datentypspezifikation für den <c>Xml</c> -Datentyp.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DataTypeSpec" /> -Objekt, enthält die <c>Xml</c> Datentypspezifikation.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

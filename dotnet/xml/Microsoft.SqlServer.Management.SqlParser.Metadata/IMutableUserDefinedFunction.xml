@@ -1,0 +1,107 @@
+<Type Name="IMutableUserDefinedFunction" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUserDefinedFunction">
+  <TypeSignature Language="C#" Value="public interface IMutableUserDefinedFunction : Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableFunction, Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUserDefinedFunctionModuleBase, Microsoft.SqlServer.Management.SqlParser.Metadata.IUserDefinedFunction" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMutableUserDefinedFunction implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IFunction, class Microsoft.SqlServer.Management.SqlParser.Metadata.IFunctionModuleBase, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableFunction, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableFunctionModuleBase, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchemaOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUserDefinedFunctionModuleBase, class Microsoft.SqlServer.Management.SqlParser.Metadata.ISchemaOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IUserDefinedFunction, class Microsoft.SqlServer.Management.SqlParser.Metadata.IUserDefinedFunctionModuleBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUserDefinedFunction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableFunction</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUserDefinedFunctionModuleBase</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IUserDefinedFunction</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt eine änderbare benutzerdefinierte Funktion dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BodyText">
+      <MemberSignature Language="C#" Value="public string BodyText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BodyText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUserDefinedFunction.BodyText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt die Transact-SQL-Zeichenfolge, die das Modul definiert.
+            </summary>
+        <value>Die Transact-SQL-Zeichenfolge, die das Modul definiert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsQuotedIdentifierOn">
+      <MemberSignature Language="C#" Value="public bool IsQuotedIdentifierOn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsQuotedIdentifierOn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUserDefinedFunction.IsQuotedIdentifierOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob durch doppelte Anführungszeichen begrenzte Bezeichner Transact-SQL reservierte Schlüsselwörter sind oder nach den Transact-SQL-Syntaxregeln normalerweise nicht zugelassene Zeichen enthalten. 
+            </summary>
+        <value>
+          <c>true</c> if quoted identifiers are used to allow characters not usually allowed by the Transact-SQL syntax rules; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSchemaBound">
+      <MemberSignature Language="C#" Value="public bool IsSchemaBound { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSchemaBound" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUserDefinedFunction.IsSchemaBound" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die benutzerdefinierte Funktion an ein Schema gebunden ist, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the user-defined function is bound to a schema; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSqlClr">
+      <MemberSignature Language="C#" Value="public bool IsSqlClr { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSqlClr" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUserDefinedFunction.IsSqlClr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob ein CLR-Modul vorliegt, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if this is a CLR module; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

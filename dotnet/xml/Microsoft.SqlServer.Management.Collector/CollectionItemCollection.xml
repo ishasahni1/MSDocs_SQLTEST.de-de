@@ -1,0 +1,136 @@
+<Type Name="CollectionItemCollection" FullName="Microsoft.SqlServer.Management.Collector.CollectionItemCollection">
+  <TypeSignature Language="C#" Value="public sealed class CollectionItemCollection : Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;Microsoft.SqlServer.Management.Collector.CollectionItem,Microsoft.SqlServer.Management.Collector.CollectionItem.Key,Microsoft.SqlServer.Management.Collector.CollectionSet&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CollectionItemCollection extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3&lt;class Microsoft.SqlServer.Management.Collector.CollectionItem, class Microsoft.SqlServer.Management.Collector.CollectionItem/Key, class Microsoft.SqlServer.Management.Collector.CollectionSet&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Collector.CollectionItemCollection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Collector</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;Microsoft.SqlServer.Management.Collector.CollectionItem,Microsoft.SqlServer.Management.Collector.CollectionItem+Key,Microsoft.SqlServer.Management.Collector.CollectionSet&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.SqlServer.Management.Collector.CollectionItem</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">Microsoft.SqlServer.Management.Collector.CollectionItem+Key</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!2">Microsoft.SqlServer.Management.Collector.CollectionSet</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            SFC-Sammelklasse für sammelelementobjekte
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CollectionItemCollection (Microsoft.SqlServer.Management.Collector.CollectionSet parent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Collector.CollectionSet parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItemCollection.#ctor(Microsoft.SqlServer.Management.Collector.CollectionSet)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.Collector.CollectionSet" />
+      </Parameters>
+      <Docs>
+        <param name="parent">
+        </param>
+        <summary>
+            Initialisiert eine neue Instanz der eine CollectionItemCollection erhält eine CollectionSet
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCollectionItem">
+      <MemberSignature Language="C#" Value="public void AddCollectionItem (Microsoft.SqlServer.Management.Collector.CollectionItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCollectionItem(class Microsoft.SqlServer.Management.Collector.CollectionItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItemCollection.AddCollectionItem(Microsoft.SqlServer.Management.Collector.CollectionItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.SqlServer.Management.Collector.CollectionItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">
+        </param>
+        <summary>
+            Auf die Auflistung ein Element explizit hinzufügen.
+TODO: Dies ist eine vorübergehende Lösung bis SFC v2.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementFactoryImpl">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItemCollection.GetElementFactoryImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt eine Objektfactory für CollectionItemCollection-Klasse
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Collector.CollectionItem this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Collector.CollectionItem Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Collector.CollectionItemCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Collector.CollectionItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Elementname</param>
+        <summary>
+            Abrufen der CollectionItem nach Namen
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCollectionItem">
+      <MemberSignature Language="C#" Value="public void RemoveCollectionItem (Microsoft.SqlServer.Management.Collector.CollectionItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveCollectionItem(class Microsoft.SqlServer.Management.Collector.CollectionItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Collector.CollectionItemCollection.RemoveCollectionItem(Microsoft.SqlServer.Management.Collector.CollectionItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.SqlServer.Management.Collector.CollectionItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">
+        </param>
+        <summary>
+            Entfernen Sie ein Element explizit aus der Auflistung TODO: Dies ist eine vorübergehende Lösung bis SFC-v2
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

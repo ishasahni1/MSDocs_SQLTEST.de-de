@@ -1,0 +1,70 @@
+<Type Name="IRoleFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IRoleFactory">
+  <TypeSignature Language="C#" Value="public interface IRoleFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRoleFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IRoleFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt Methoden bereit, die zum Erstellen von Datenbankrollen- und Anwendungsrollenobjekten verwendet werden können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateApplicationRole">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableApplicationRole CreateApplicationRole (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableApplicationRole CreateApplicationRole(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IRoleFactory.CreateApplicationRole(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableApplicationRole</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt, das dem Anwendungsrollenobjekt übergeordnet ist.</param>
+        <param name="name">Der Name des zu erstellenden Anwendungsrollenobjekts.</param>
+        <summary>
+            Erstellt ein Anwendungsrollenobjekt, das zum angegebenen Datenbankobjekt gehört und den angegebenen Namen aufweist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableApplicationRole" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDatabaseRole">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseRole CreateDatabaseRole (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseRole CreateDatabaseRole(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase database, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IRoleFactory.CreateDatabaseRole(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseRole</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt, das dem Datenbankrollen-Objekt übergeordnet ist.</param>
+        <param name="name">Der Name des zu erstellenden Datenbankrollen-Objekts.</param>
+        <summary>
+            Erstellt ein Datenbankrollen-Objekt, das zum angegebenen Datenbankobjekt gehört und den angegebenen Namen aufweist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseRole" /> Objekt.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

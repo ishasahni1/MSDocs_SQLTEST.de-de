@@ -1,0 +1,1865 @@
+<Type Name="DacDeployOptions" FullName="Microsoft.SqlServer.Dac.DacDeployOptions">
+  <TypeSignature Language="C#" Value="public sealed class DacDeployOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DacDeployOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.DacDeployOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Optionen, die sich auf das Verhalten der Paketbereitstellung für eine Datenbank auswirken.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DacDeployOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacDeployOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellen Sie eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" /> -Klasse mit Standardoptionen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalDeploymentContributorArguments">
+      <MemberSignature Language="C#" Value="public string AdditionalDeploymentContributorArguments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AdditionalDeploymentContributorArguments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.AdditionalDeploymentContributorArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt zusätzlich zu den bereits in der DACPAC-Datei aufgeführten Argumenten weitere Bereitstellungs-Contributor-Argumente an.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalDeploymentContributors">
+      <MemberSignature Language="C#" Value="public string AdditionalDeploymentContributors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AdditionalDeploymentContributors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.AdditionalDeploymentContributors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt zusätzlich zu den in der DACPAC-Datei angegebenen Argumenten weitere Bereitstellungs-Contributors zur Ausführung an.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowDropBlockingAssemblies">
+      <MemberSignature Language="C#" Value="public bool AllowDropBlockingAssemblies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowDropBlockingAssemblies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.AllowDropBlockingAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob bei der CLR-Bereitstellung blockierende Assemblys gelöscht werden.
+            </summary>
+        <value>
+            "True", wenn bei der CLR-Bereitstellung blockierende Assemblys gelöscht werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowIncompatiblePlatform">
+      <MemberSignature Language="C#" Value="public bool AllowIncompatiblePlatform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowIncompatiblePlatform" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.AllowIncompatiblePlatform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Bereitstellung aufgrund von Plattforminkompatibilitäten blockiert wird.
+            </summary>
+        <value>
+            "True", wenn die Bereitstellung für nicht kompatible Plattformen blockiert werden soll; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowUnsafeRowLevelSecurityDataMovement">
+      <MemberSignature Language="C#" Value="public bool AllowUnsafeRowLevelSecurityDataMovement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowUnsafeRowLevelSecurityDataMovement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.AllowUnsafeRowLevelSecurityDataMovement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Einem booleschen Wert, der angibt, ob blockierende Daten zu ignorieren Bewegung auf RLS Tabellen aktiviert
+            </summary>
+        <value>
+            "True", den Block auf Daten zu ignorieren, wenn die Zeile, die Sicherheit auf Zeilenebene auf eine Tabelle standardmäßig aktiviert ist "false" ist ist z. B. Daten mit RLS standardmäßig blockiert.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupDatabaseBeforeChanges">
+      <MemberSignature Language="C#" Value="public bool BackupDatabaseBeforeChanges { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BackupDatabaseBeforeChanges" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.BackupDatabaseBeforeChanges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob vor Ausführung der tatsächlichen Bereitstellungsaktionen eine Datenbanksicherung durchgeführt werden soll.
+            </summary>
+        <value>
+            "True", wenn vor der Bereitstellung eine Datenbanksicherung durchgeführt werden soll; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockOnPossibleDataLoss">
+      <MemberSignature Language="C#" Value="public bool BlockOnPossibleDataLoss { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BlockOnPossibleDataLoss" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.BlockOnPossibleDataLoss" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Bereitstellung beendet werden soll, wenn der Vorgang zu einem Datenverlust führen kann.
+            </summary>
+        <value>
+            "True", wenn die Bereitstellung bei Erkennen eines möglichen Datenverlusts beendet werden soll; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockWhenDriftDetected">
+      <MemberSignature Language="C#" Value="public bool BlockWhenDriftDetected { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BlockWhenDriftDetected" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.BlockWhenDriftDetected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab oder legt einen Wert fest, der angibt, ob das System nach Unterschieden zwischen dem aktuellen Zustand der Datenbank und dem registrierten Zustand der Datenbank sucht und die Bereitstellung blockiert, falls Änderungen erkannt werden.  Auch wenn diese Option festgelegt ist, auf "true", wird die abweichungserkennung nur dann durchgeführt, in einer Datenbank, wenn er zuvor bereitgestellt wurde, mit der <see cref="P:Microsoft.SqlServer.Dac.DacDeployOptions.RegisterDataTierApplication" /> Option aktiviert ist.
+            </summary>
+        <value>
+            "True", um bei Erkennen einer Abweichung einen Fehler festzulegen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandTimeout">
+      <MemberSignature Language="C#" Value="public int CommandTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CommandTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.CommandTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt das Zeitlimit für Befehle in Sekunden für Abfragen an SQL Server an.
+            </summary>
+        <value>
+            Das Zeitlimit für Befehle in Sekunden.
+Standardwert ist 60
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommentOutSetVarDeclarations">
+      <MemberSignature Language="C#" Value="public bool CommentOutSetVarDeclarations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CommentOutSetVarDeclarations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.CommentOutSetVarDeclarations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Deklarationen von SQLCMD-Variablen im Skriptheader auskommentiert werden, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn diese Deklarationen auskommentiert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareUsingTargetCollation">
+      <MemberSignature Language="C#" Value="public bool CompareUsingTargetCollation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CompareUsingTargetCollation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.CompareUsingTargetCollation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob die zielsortierung für den Bezeichnervergleich verwendet werden soll.
+            </summary>
+        <value>
+            "False", um die Quellsortierung zu verwenden, andernfalls "true", um die Zielsortierung zu verwenden.
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewDatabase">
+      <MemberSignature Language="C#" Value="public bool CreateNewDatabase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CreateNewDatabase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.CreateNewDatabase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob vor Ausführung der tatsächlichen Bereitstellungsaktionen die vorhandene Datenbank gelöscht und eine neue Datenbank erstellt werden soll, oder legt diesen fest.
+Wechselt vor dem Löschen der vorhandenen Datenbank in den Einzelbenutzermodus.
+            </summary>
+        <value>
+            "True", wenn die Datenbank gelöscht und neu erstellt werden soll, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseSpecification">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification DatabaseSpecification { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification DatabaseSpecification" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DatabaseSpecification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dac.NestedDeploymentProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Definiert optionale Parameter für eine Microsoft Azure SQL-Datenbank.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployDatabaseInSingleUserMode">
+      <MemberSignature Language="C#" Value="public bool DeployDatabaseInSingleUserMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DeployDatabaseInSingleUserMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DeployDatabaseInSingleUserMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob das System für die Dauer des Bereitstellungsvorgangs Einzelbenutzermodus für die Zieldatenbank erwirbt, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn für die Dauer des Bereitstellungsvorgangs Einzelbenutzermodus erworben wird, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>
+            Nach Anwendung aller Änderungen wird die Datenbank in den Mehrbenutzermodus zurückversetzt.
+Falls während der Ausführung ein Fehler auftritt, verbleibt die Datenbank im Einzelbenutzermodus.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableAndReenableDdlTriggers">
+      <MemberSignature Language="C#" Value="public bool DisableAndReenableDdlTriggers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisableAndReenableDdlTriggers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DisableAndReenableDdlTriggers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob alle DDL-Trigger für die Dauer des Bereitstellungsvorgangs deaktiviert und anschließend nach der Anwendung aller Änderungen wieder aktiviert werden sollen, oder legt diesen fest.  
+            </summary>
+        <value>
+            "True", wenn während der Bereitstellung DDL-Trigger deaktiviert sein sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>
+            Wenn während der Ausführung ein Fehler auftritt, bleiben die Trigger eventuell deaktiviert.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoNotAlterChangeDataCaptureObjects">
+      <MemberSignature Language="C#" Value="public bool DoNotAlterChangeDataCaptureObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DoNotAlterChangeDataCaptureObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DoNotAlterChangeDataCaptureObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob für CDC (Change Data Capture) konfigurierte Elemente während der Bereitstellung geändert werden sollen, oder legt diesen fest.  
+            </summary>
+        <value>
+            "True", wenn für CDC konfigurierte Elemente nicht geändert werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoNotAlterReplicatedObjects">
+      <MemberSignature Language="C#" Value="public bool DoNotAlterReplicatedObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DoNotAlterReplicatedObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DoNotAlterReplicatedObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob für die Replikation konfigurierte Elemente während der Bereitstellung geändert werden sollen.  
+            </summary>
+        <value>
+            "True", wenn für die Replikation konfigurierte Objekte nicht geändert werden sollen; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoNotDropObjectTypes">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.ObjectType[] DoNotDropObjectTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.ObjectType[] DoNotDropObjectTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DoNotDropObjectTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.ObjectType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen oder Festlegen einer Auflistung von Objekttypen, die nicht aus der Zieldatenbank gelöscht werden, wenn keine entsprechenden Objekts in der Quelle vorhanden ist. Beachten Sie gelöscht und neu erstellt Objekte des angegebenen Typs weiterhin möglicherweise notwendig, dass aufgrund von Abhängigkeiten von anderen Objekten.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropConstraintsNotInSource">
+      <MemberSignature Language="C#" Value="public bool DropConstraintsNotInSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DropConstraintsNotInSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DropConstraintsNotInSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob alle Einschränkungen, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen, oder legt diesen fest.  
+            </summary>
+        <value>
+            "True", wenn Einschränkungen, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>
+            Dies gilt für CHECK-, DEFAULT-, FOREIGN KEY-, PRIMARY KEY- und UNIQUE-Einschränkungen.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropDmlTriggersNotInSource">
+      <MemberSignature Language="C#" Value="public bool DropDmlTriggersNotInSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DropDmlTriggersNotInSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DropDmlTriggersNotInSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob alle DML-Trigger, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen.
+            </summary>
+        <value>
+            "True", wenn DML-Trigger, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropExtendedPropertiesNotInSource">
+      <MemberSignature Language="C#" Value="public bool DropExtendedPropertiesNotInSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DropExtendedPropertiesNotInSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DropExtendedPropertiesNotInSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob alle erweiterten Eigenschaften, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn erweiterte Eigenschaften, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropIndexesNotInSource">
+      <MemberSignature Language="C#" Value="public bool DropIndexesNotInSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DropIndexesNotInSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DropIndexesNotInSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob alle Indizes, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen.
+            </summary>
+        <value>
+            "True", wenn Indizes, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropObjectsNotInSource">
+      <MemberSignature Language="C#" Value="public bool DropObjectsNotInSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DropObjectsNotInSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DropObjectsNotInSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Objekte, die im Zielmodell, aber nicht im Quellmodell vorhanden sind, bei der Bereitstellung gelöscht werden sollen.
+            </summary>
+        <value>
+            "True", wenn Objekte, die im Zielmodell, aber nicht im Quellmodell vorhanden sind, bei der Bereitstellung gelöscht werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropPermissionsNotInSource">
+      <MemberSignature Language="C#" Value="public bool DropPermissionsNotInSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DropPermissionsNotInSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DropPermissionsNotInSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob alle Berechtigungen, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen.
+            </summary>
+        <value>
+            "True", wenn Berechtigungen, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropRoleMembersNotInSource">
+      <MemberSignature Language="C#" Value="public bool DropRoleMembersNotInSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DropRoleMembersNotInSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DropRoleMembersNotInSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob alle Rollenmitgliedschaften, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen.
+            </summary>
+        <value>
+            "True", wenn Rollenmitgliedschaften, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropStatisticsNotInSource">
+      <MemberSignature Language="C#" Value="public bool DropStatisticsNotInSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DropStatisticsNotInSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.DropStatisticsNotInSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob alle Rollenmitgliedschaften, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen.
+            </summary>
+        <value>
+            "True", wenn Rollenmitgliedschaften, die nicht im Quellmodell vorhanden sind, gelöscht werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludeObjectTypes">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.ObjectType[] ExcludeObjectTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.ObjectType[] ExcludeObjectTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.ExcludeObjectTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.ObjectType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen oder Festlegen einer Auflistung von Objekttypen, die beim Vergleich der Quell- und Zielmodell.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateSmartDefaults">
+      <MemberSignature Language="C#" Value="public bool GenerateSmartDefaults { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateSmartDefaults" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.GenerateSmartDefaults" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob für NULL-Spalten mit der Einschränkung NOT NULL Standardwerte generiert werden sollen, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn Standardwerte generiert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>
+            Dies ist hilfreich, wenn Sie einer vorhandenen, bereits mit Daten ausgefüllten Tabelle eine neue NOT NULL-Spalte hinzufügen wollen.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreAnsiNulls">
+      <MemberSignature Language="C#" Value="public bool IgnoreAnsiNulls { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreAnsiNulls" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreAnsiNulls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Option ANSI_NULL beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in der Option ANSI_NULL ignoriert werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreAuthorizer">
+      <MemberSignature Language="C#" Value="public bool IgnoreAuthorizer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreAuthorizer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreAuthorizer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den booleschen Wert ab, der angibt, ob die Option AUTHORIZATION beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt ihn fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in der Option AUTHORIZATION ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreColumnCollation">
+      <MemberSignature Language="C#" Value="public bool IgnoreColumnCollation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreColumnCollation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreColumnCollation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob der Sortierungsspezifizierer beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll.
+            </summary>
+        <value>
+            "True", wenn Unterschiede im Sortierungsspezifizierer ignoriert werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreColumnOrder">
+      <MemberSignature Language="C#" Value="public bool IgnoreColumnOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreColumnOrder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreColumnOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob die Reihenfolge der Spalten in Tabellen Zielmodell für den Vergleich der Quell- und Ziel-Modell.
+            </summary>
+        <value>
+            True, wenn Unterschiede in der Reihenfolge der Spalten ignoriert werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreComments">
+      <MemberSignature Language="C#" Value="public bool IgnoreComments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreComments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreComments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den booleschen Wert ab, der angibt, ob die Kommentare beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt ihn fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in Kommentaren ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreCryptographicProviderFilePath">
+      <MemberSignature Language="C#" Value="public bool IgnoreCryptographicProviderFilePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreCryptographicProviderFilePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreCryptographicProviderFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Dateispezifikation eines Kryptografieanbieters beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in der Dateispezifikation eines Kryptografieanbieters ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreDdlTriggerOrder">
+      <MemberSignature Language="C#" Value="public bool IgnoreDdlTriggerOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreDdlTriggerOrder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreDdlTriggerOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die DDL-Triggerreihenfolge beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in der DDL-Triggerreihenfolge ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreDdlTriggerState">
+      <MemberSignature Language="C#" Value="public bool IgnoreDdlTriggerState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreDdlTriggerState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreDdlTriggerState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob DDL-triggerzustand Zielmodell für den Vergleich der Quell- und Ziel-Modell.
+            </summary>
+        <value>
+            "True", wenn Unterschiede im DDL-Triggerzustand ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreDefaultSchema">
+      <MemberSignature Language="C#" Value="public bool IgnoreDefaultSchema { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreDefaultSchema" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreDefaultSchema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Option DEFAULT_SCHEMA beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in den Optionen DEFAULT_SCHEMA ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreDmlTriggerOrder">
+      <MemberSignature Language="C#" Value="public bool IgnoreDmlTriggerOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreDmlTriggerOrder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreDmlTriggerOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die DML-Triggerreihenfolge beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in der DML-Triggerreihenfolge ignoriert werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreDmlTriggerState">
+      <MemberSignature Language="C#" Value="public bool IgnoreDmlTriggerState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreDmlTriggerState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreDmlTriggerState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob der DML-Triggerzustand beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede im DML-Triggerzustand ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreExtendedProperties">
+      <MemberSignature Language="C#" Value="public bool IgnoreExtendedProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExtendedProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreExtendedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob alle erweiterten Eigenschaften beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in erweiterten Eigenschaften ignoriert werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreFileAndLogFilePath">
+      <MemberSignature Language="C#" Value="public bool IgnoreFileAndLogFilePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreFileAndLogFilePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreFileAndLogFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Option FILENAME von Dateiobjekten beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in der Option FILENAME von Dateiobjekten ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreFilegroupPlacement">
+      <MemberSignature Language="C#" Value="public bool IgnoreFilegroupPlacement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreFilegroupPlacement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreFilegroupPlacement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob der Dateigruppenspezifizierer beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede im Dateigruppenspezifizierer ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreFileSize">
+      <MemberSignature Language="C#" Value="public bool IgnoreFileSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreFileSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreFileSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Option SIZE von Dateiobjekten beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in der Option SIZE von Dateiobjekten ignoriert werden sollen; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreFillFactor">
+      <MemberSignature Language="C#" Value="public bool IgnoreFillFactor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreFillFactor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreFillFactor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Option FILLFACTOR beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in der Option FILLFACTOR ignoriert werden sollen; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreFullTextCatalogFilePath">
+      <MemberSignature Language="C#" Value="public bool IgnoreFullTextCatalogFilePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreFullTextCatalogFilePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreFullTextCatalogFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob die Pfadangabe von FULLTEXT CATALOG-Objekten Zielmodell für den Vergleich der Quell- und Ziel-Modell.
+            </summary>
+        <value>
+            "True", wenn die Unterschiede in der Pfadangabe von FULLTEXT CATALOG-Objekten ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreIdentitySeed">
+      <MemberSignature Language="C#" Value="public bool IgnoreIdentitySeed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreIdentitySeed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreIdentitySeed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Ausgangswerte der IDENTITY-Spalten beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben sollen.
+            </summary>
+        <value>
+            "True", wenn Unterschiede der Ausgangswerte von IDENTITY-Spalten ignoriert werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreIncrement">
+      <MemberSignature Language="C#" Value="public bool IgnoreIncrement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreIncrement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreIncrement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die inkrementellen Werte der IDENTITY-Spalten beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll.
+            </summary>
+        <value>
+            "True", wenn Unterschiede der inkrementellen Werte von IDENTITY-Spalten ignoriert werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreIndexOptions">
+      <MemberSignature Language="C#" Value="public bool IgnoreIndexOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreIndexOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreIndexOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob Unterschiede in den Indexoptionen Zielmodell für den Vergleich der Quell- und Ziel-Modell.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in den Indexoptionen ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreIndexPadding">
+      <MemberSignature Language="C#" Value="public bool IgnoreIndexPadding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreIndexPadding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreIndexPadding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob die Option PAD_INDEX Zielmodell für den Vergleich der Quell- und Ziel-Modell.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in der Option PAD_INDEX ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreKeywordCasing">
+      <MemberSignature Language="C#" Value="public bool IgnoreKeywordCasing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreKeywordCasing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreKeywordCasing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Unterschiede bei der Groß- und Kleinschreibung von Schlüsselwörtern beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede bei der Groß- und Kleinschreibung von Schlüsselwörtern ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreLockHintsOnIndexes">
+      <MemberSignature Language="C#" Value="public bool IgnoreLockHintsOnIndexes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreLockHintsOnIndexes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreLockHintsOnIndexes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Optionen ALLOW_ROW_LOCKS und ALLOW_PAGE_LOCKS beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben sollen, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn die Optionen ALLOW_ROW_LOCKS und ALLOW_PAGE_LOCKS ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreLoginSids">
+      <MemberSignature Language="C#" Value="public bool IgnoreLoginSids { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreLoginSids" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreLoginSids" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den booleschen Wert ab, der angibt, ob die Option SID des LOGIN-Objekts beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt ihn fest.
+            </summary>
+        <value>
+            "True", wenn die Option SID des LOGIN-Objekts ignoriert werden soll; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreNotForReplication">
+      <MemberSignature Language="C#" Value="public bool IgnoreNotForReplication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreNotForReplication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreNotForReplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Option NOT FOR REPLICATION beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll.
+            </summary>
+        <value>
+            "True", wenn die Option NOT FOR REPLICATION ignoriert werden soll; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreObjectPlacementOnPartitionScheme">
+      <MemberSignature Language="C#" Value="public bool IgnoreObjectPlacementOnPartitionScheme { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreObjectPlacementOnPartitionScheme" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreObjectPlacementOnPartitionScheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab oder legt einen Wert fest, der angibt, ob das Partitionsschemaobjekt beim Vergleich von Quell- und Zielmodell für die folgenden Objekte unberücksichtigt bleiben soll: Tabelle, Index, eindeutiger Schlüssel, Primärschlüssel und Warteschlange.
+            </summary>
+        <value>
+            "True", wenn Partitionsschemas ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnorePartitionSchemes">
+      <MemberSignature Language="C#" Value="public bool IgnorePartitionSchemes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnorePartitionSchemes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnorePartitionSchemes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob Parametertyp und Grenzwerte einer PARTITION FUNCTION beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben sollen, oder legt diesen fest.  Gibt außerdem an, dass FILEGROUP und Partitionsfunktion eines PARTITION SCHEMA beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben sollen.
+            </summary>
+        <value>
+            "True", wenn die Aspekte der Partitionsfunktionen und -schemas ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnorePermissions">
+      <MemberSignature Language="C#" Value="public bool IgnorePermissions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnorePermissions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnorePermissions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob alle berechtigungsanweisungen Zielmodell für den Vergleich der Quell- und Ziel-Modell.
+            </summary>
+        <value>
+            "True", um alle Berechtigungsanweisungen zu ignorieren, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreQuotedIdentifiers">
+      <MemberSignature Language="C#" Value="public bool IgnoreQuotedIdentifiers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreQuotedIdentifiers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreQuotedIdentifiers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob die QUOTED_IDENTIFIER-Option Zielmodell für den Vergleich der Quell- und Ziel-Modell.
+            </summary>
+        <value>
+            "True", wenn die Option QUOTED_IDENTIFIER ignoriert werden soll, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreRoleMembership">
+      <MemberSignature Language="C#" Value="public bool IgnoreRoleMembership { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreRoleMembership" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreRoleMembership" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den booleschen Wert ab, der angibt, ob alle ROLE MEMBERSHIP-Objekte beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben sollen, oder legt ihn fest.
+            </summary>
+        <value>
+            "True", um die ROLE MEMBERSHIP-Objekte zu ignorieren, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreRouteLifetime">
+      <MemberSignature Language="C#" Value="public bool IgnoreRouteLifetime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreRouteLifetime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreRouteLifetime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Option LIFETIME von ROUTE-Objekten beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn die Option LIFETIME von ROUTE-Objekten ignoriert werden soll, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreSemicolonBetweenStatements">
+      <MemberSignature Language="C#" Value="public bool IgnoreSemicolonBetweenStatements { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreSemicolonBetweenStatements" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreSemicolonBetweenStatements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob das Vorhandensein oder Fehlen von Semikola beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", um Semikola zu ignorieren, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreTableOptions">
+      <MemberSignature Language="C#" Value="public bool IgnoreTableOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreTableOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreTableOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Optionen in der Zieltabelle an die Quelltabelle angepasst werden sollen, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in den Tabellenoptionen ignoriert werden sollen und die Zieltabelle nicht aktualisiert werden soll, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreUserSettingsObjects">
+      <MemberSignature Language="C#" Value="public bool IgnoreUserSettingsObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreUserSettingsObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreUserSettingsObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den booleschen Wert ab, der angibt, ob die Benutzereinstellungen beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben sollen, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in Benutzereinstellungen ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreWhitespace">
+      <MemberSignature Language="C#" Value="public bool IgnoreWhitespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreWhitespace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreWhitespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den booleschen Wert ab, der angibt, ob die Leerzeichen beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben sollen, oder legt ihn fest.
+            </summary>
+        <value>
+            "True", wenn Unterschiede in Leerzeichen ignoriert werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreWithNocheckOnCheckConstraints">
+      <MemberSignature Language="C#" Value="public bool IgnoreWithNocheckOnCheckConstraints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreWithNocheckOnCheckConstraints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreWithNocheckOnCheckConstraints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die CHECK|NO CHECK-Option eines CHECK-Einschränkungsobjekts beim Vergleich von Quell- und Zielmodell unberücksichtigt bleiben soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn die CHECK|NO CHECK-Option eines CHECK-Einschränkungsobjekts ignoriert werden soll, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreWithNocheckOnForeignKeys">
+      <MemberSignature Language="C#" Value="public bool IgnoreWithNocheckOnForeignKeys { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreWithNocheckOnForeignKeys" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IgnoreWithNocheckOnForeignKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen oder Festlegen der boolescher Wert, der angibt, ob die Check | NO CHECK-Option eines Fremdschlüssels  
+            -Einschränkungsobjekts beim Vergleich der Quell- und Zielmodell.
+            </summary>
+        <value>
+            "True", wenn die CHECK|NO CHECK-Option eines FOREIGN KEY-Einschränkungsobjekts ignoriert werden soll, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeCompositeObjects">
+      <MemberSignature Language="C#" Value="public bool IncludeCompositeObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeCompositeObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IncludeCompositeObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab oder legt einen Wert fest, der angibt, ob referenzierte externe Elemente, die ebenso zum Quellmodell beitragen, berücksichtigt werden sollen und die Zieldatenbank dann in einem einzigen Bereitstellungsvorgang aktualisiert werden soll.
+            </summary>
+        <value>
+            "True", wenn zusammengesetzte Objekte berücksichtigt werden sollen, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeTransactionalScripts">
+      <MemberSignature Language="C#" Value="public bool IncludeTransactionalScripts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeTransactionalScripts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.IncludeTransactionalScripts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob während des Bereitstellungsvorgangs Transaktionen verwendet und nach der erfolgreichen Anwendung der Änderungen festgeschrieben werden sollen.
+            </summary>
+        <value>
+            "True", wenn während der Bereitstellung Transaktionen verwendet werden dürfen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoAlterStatementsToChangeClrTypes">
+      <MemberSignature Language="C#" Value="public bool NoAlterStatementsToChangeClrTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NoAlterStatementsToChangeClrTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.NoAlterStatementsToChangeClrTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob durch Löschen und erneute Erstellung eine Änderung an CLR-Assemblys erzwungen werden soll.
+            </summary>
+        <value>
+            "True", wenn CLR-Assemblys gelöscht werden sollen; andernfalls "false", in welchem Fall CLR-Assemblys durch ALTER-Anweisungen geändert werden können.
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopulateFilesOnFileGroups">
+      <MemberSignature Language="C#" Value="public bool PopulateFilesOnFileGroups { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PopulateFilesOnFileGroups" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.PopulateFilesOnFileGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob für die in der Bereitstellungsquelle definierten Dateigruppen Dateien bereitgestellt werden sollen.
+            </summary>
+        <value>
+            "True", wenn die Dateien für Dateigruppen angegeben werden sollen; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterDataTierApplication">
+      <MemberSignature Language="C#" Value="public bool RegisterDataTierApplication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RegisterDataTierApplication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.RegisterDataTierApplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Datenbank als Datenebenenanwendung registriert wird, oder legt diesen fest.  
+            Wenn die Zieldatenbank bereits eine registrierte Datenebenenanwendung ist, wird die Registrierung aktualisiert.
+            </summary>
+        <value>
+            "True", wenn die Datenbank als Datenebenenanwendung registriert werden soll, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunDeploymentPlanExecutors">
+      <MemberSignature Language="C#" Value="public bool RunDeploymentPlanExecutors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RunDeploymentPlanExecutors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.RunDeploymentPlanExecutors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, ob DeploymentPlanExecutor-Mitwirkende ausgeführt werden sollen, wenn andere Vorgänge ausgeführt werden.
+Der Standardwert ist "false".
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptDatabaseCollation">
+      <MemberSignature Language="C#" Value="public bool ScriptDatabaseCollation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScriptDatabaseCollation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.ScriptDatabaseCollation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Zieldatenbank entsprechend der Sortierung des Quellmodells geändert werden soll, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn die Sortierung der Zieldatenbank angepasst werden soll, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptDatabaseCompatibility">
+      <MemberSignature Language="C#" Value="public bool ScriptDatabaseCompatibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScriptDatabaseCompatibility" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.ScriptDatabaseCompatibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob die Zieldatenbank entsprechend der Kompatibilitätsgrad des Quellmodells geändert werden sollen.
+            </summary>
+        <value>
+            "True", wenn der Kompatibilitätsgrad der Zieldatenbank angepasst werden soll, andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptDatabaseOptions">
+      <MemberSignature Language="C#" Value="public bool ScriptDatabaseOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScriptDatabaseOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.ScriptDatabaseOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Datenbankoptionen in der Zieldatenbank an das Quellmodell angepasst werden sollen, oder legt diesen fest.
+            </summary>
+        <value>
+            "True", wenn die Optionen der Zieldatenbank geändert werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptDeployStateChecks">
+      <MemberSignature Language="C#" Value="public bool ScriptDeployStateChecks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScriptDeployStateChecks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.ScriptDeployStateChecks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Zieldatenbank überprüft werden soll, um sicherzustellen, dass sie vorhanden und online ist und aktualisiert werden kann.
+            </summary>
+        <value>
+            "True", wenn der Status der Zieldatenbank überprüft werden soll; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptFileSize">
+      <MemberSignature Language="C#" Value="public bool ScriptFileSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScriptFileSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.ScriptFileSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob beim Hinzufügen von Dateien zu Dateigruppen eine Dateigröße angegeben wird.
+            </summary>
+        <value>
+            "True", wenn Dateigrößen angegeben werden sollen; andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptNewConstraintValidation">
+      <MemberSignature Language="C#" Value="public bool ScriptNewConstraintValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScriptNewConstraintValidation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.ScriptNewConstraintValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob Einschränkungen nach dem Anwenden aller Änderungen überprüft werden, oder legt diesen fest.
+            </summary>
+        <value>
+            True, wenn die CHECK-Einschränkungen überprüft werden sollen, andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>
+            Einschränkungen werden immer mit der NOCHECK-Option hinzugefügt. Als Ergebnis wird deren Überprüfung während der Erstellung übersprungen.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptRefreshModule">
+      <MemberSignature Language="C#" Value="public bool ScriptRefreshModule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScriptRefreshModule" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.ScriptRefreshModule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob verweisende Prozeduren aktualisiert werden sollen, wenn Objekte, auf die verwiesen wird, aktualisiert werden.
+            </summary>
+        <value>
+            "True", wenn verweisende Prozeduren aktualisiert werden sollen; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlCommandVariableValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; SqlCommandVariableValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; SqlCommandVariableValues" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.SqlCommandVariableValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein nach Variablennamen sortiertes Wörterbuch mit Variablenwerten für SQL-Befehle ab.
+            </summary>
+        <value>
+            Wörterbuch mit Variablenwerten für SQL-Befehle, sortiert nach Variablennamen.
+            </value>
+        <remarks>
+            Damit keine Fehler auftreten, müssen vor der Bereitstellung für jede Variable gültige Werte eingegeben werden.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TreatVerificationErrorsAsWarnings">
+      <MemberSignature Language="C#" Value="public bool TreatVerificationErrorsAsWarnings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TreatVerificationErrorsAsWarnings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.TreatVerificationErrorsAsWarnings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob behandelt während auftretende Fehler als Warnungen veröffentlichen. Die Überprüfung wird für den generierten Bereitstellungsplan ausgeführt, bevor der Plan für die Zieldatenbank ausgeführt wird. Bei der Planüberprüfung werden Probleme erkannt, z. B. der Verlust von reinen Zielobjekten (z. B. Indizes), die gelöscht werden müssen, um eine Änderung vorzunehmen. Bei der Überprüfung werden auch Situationen erkannt, in denen Abhängigkeiten (z. B. Tabellen oder Sichten) aufgrund eines Verweises auf ein zusammengesetztes Projekt vorhanden sind, jedoch nicht in der Zieldatenbank vorkommen. Es empfiehlt sich beispielsweise, Überprüfungsfehler als Warnungen zu behandeln, um eine vollständige Problemliste zu erhalten, anstatt zuzulassen, dass die Veröffentlichungsaktion beim ersten Fehler beendet wird.
+            </summary>
+        <value>
+            True, wenn Fehler als Warnungen behandelt werden. andernfalls "false".
+Der Standardwert ist "false".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnmodifiableObjectWarnings">
+      <MemberSignature Language="C#" Value="public bool UnmodifiableObjectWarnings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UnmodifiableObjectWarnings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.UnmodifiableObjectWarnings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abrufen Sie oder festlegen Sie der boolescher Wert, der angibt, ob Warnungen generiert werden sollen, wenn Unterschiede in Objekte, die z. B. nicht geändert werden, können nicht gefunden werden, wenn die Dateigröße oder Dateipfade für eine Datei unterschiedlich sind.
+            </summary>
+        <value>
+            True, um Warnungen zu generieren. andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyCollationCompatibility">
+      <MemberSignature Language="C#" Value="public bool VerifyCollationCompatibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VerifyCollationCompatibility" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.VerifyCollationCompatibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob bei der Bereitstellung überprüft wird, ob die im Quellmodell angegebene Sortierung mit der im Zielmodell angegebenen Sortierung kompatibel ist.
+            </summary>
+        <value>
+            "True", wenn der Vorgang auch bei Fehlern während der Planüberprüfung fortgesetzt werden soll; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyDeployment">
+      <MemberSignature Language="C#" Value="public bool VerifyDeployment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VerifyDeployment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.DacDeployOptions.VerifyDeployment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt mit einem booleschen Wert an, ob die Planüberprüfung ausgeführt werden soll.
+            </summary>
+        <value>
+            "True", wenn die Planüberprüfung ausgeführt werden soll; andernfalls "false".
+Der Standardwert ist "true".
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

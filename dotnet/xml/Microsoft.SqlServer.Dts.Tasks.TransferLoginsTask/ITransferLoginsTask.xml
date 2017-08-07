@@ -1,0 +1,135 @@
+<Type Name="ITransferLoginsTask" FullName="Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask">
+  <TypeSignature Language="C#" Value="public interface ITransferLoginsTask" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransferLoginsTask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.TransferLoginsTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Stellt den Task "Anmeldungen übertragen" dar.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopySids">
+      <MemberSignature Language="C#" Value="public bool CopySids { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopySids" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.CopySids" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob die den Anmeldungen zugeordneten Sicherheits-IDs an das Ziel kopiert werden sollen, oder legt ihn fest.</summary>
+        <value>"true", wenn die Anmeldungen zugeordneten Sicherheits-IDs kopiert werden; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabasesList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection DatabasesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection DatabasesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.DatabasesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine Datenbankliste ab oder legt sie fest.</summary>
+        <value>Eine Datenbankliste.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationConnection">
+      <MemberSignature Language="C#" Value="public string DestinationConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DestinationConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.DestinationConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Verbindungs-Managers für die Zieldatenbank ab oder legt ihn fest.</summary>
+        <value>Der Name des Verbindungs-Managers für die Zieldatenbank.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfObjectExists">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists IfObjectExists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists IfObjectExists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.IfObjectExists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists" />-Enumeration ab, der angibt, ob der Task einen Fehler verursacht, die vorhandene Anmeldung ignoriert oder die Übertragung der Anmeldung überspringt, wenn am Ziel eine Anmeldung mit dem gleichen Namen vorhanden ist, oder legt ihn fest.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.IfObjectExists" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginsList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection LoginsList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection LoginsList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.LoginsList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Namen der zu übertragenden Anmeldungen ab oder legt sie fest.</summary>
+        <value>Die Namen der zu übertragenden Anmeldungen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginsToTransfer">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer LoginsToTransfer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer LoginsToTransfer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.LoginsToTransfer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer" /> Enumeration, der angibt, der zu übertragenden Anmeldungen.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.LoginsToTransfer" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceConnection">
+      <MemberSignature Language="C#" Value="public string SourceConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferLoginsTask.ITransferLoginsTask.SourceConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Verbindungs-Managers für die Quelldatenbank ab oder legt ihn fest.</summary>
+        <value>Der Name des Verbindungs-Managers für die Quelldatenbank.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

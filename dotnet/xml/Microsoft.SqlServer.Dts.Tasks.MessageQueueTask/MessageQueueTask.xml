@@ -1,0 +1,681 @@
+<Type Name="MessageQueueTask" FullName="Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask">
+  <TypeSignature Language="C#" Value="public sealed class MessageQueueTask : Microsoft.SqlServer.Dts.Runtime.Task, Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.IMessageQueueTask" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessageQueueTask extends Microsoft.SqlServer.Dts.Runtime.Task implements class Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, class Microsoft.SqlServer.Dts.Runtime.IDTSSuspend, class Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.IMessageQueueTask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.MSMQTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.Task</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.IMessageQueueTask</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Dts.Runtime.DtsTask(HelpKeyword="sql13.dts.designer.messagequeuetask.F1", LocalizationType=typeof(Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MSMQTaskMessages), SamplesTag="SsisMessageQueueTask", TaskContact="Message Queue Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1", TaskType="DTS90", UITypeName="Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTaskUI, Microsoft.SqlServer.MSMQTaskUI, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enthält die vom Task "Nachrichtenwarteschlange" verwendeten Methoden und Eigenschaften. Diese Klasse kann nicht vererbt werden. </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageQueueTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask" /> Klasse. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptBreakpointManager">
+      <MemberSignature Language="C#" Value="public void AcceptBreakpointManager (Microsoft.SqlServer.Dts.Runtime.BreakpointManager breakPointMgr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AcceptBreakpointManager(class Microsoft.SqlServer.Dts.Runtime.BreakpointManager breakPointMgr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakPointMgr" Type="Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />
+      </Parameters>
+      <Docs>
+        <param name="breakPointMgr">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> zum Steuern von Breakpoints in diesem Task verwendet werden soll.</param>
+        <summary>Übergibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> einer Aufgabe. Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentExecutingPackageID">
+      <MemberSignature Language="C#" Value="public string CurrentExecutingPackageID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrentExecutingPackageID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.CurrentExecutingPackageID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die ID des aktuellen, ausführenden Pakets ab oder legt sie fest.</summary>
+        <value>Eine Zeichenfolge, die die ID, dargestellt als GUID des aktuellen Ausführenden Pakets enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFileOverWritable">
+      <MemberSignature Language="C#" Value="public bool DataFileOverWritable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DataFileOverWritable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.DataFileOverWritable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert ab, der angibt, ob eine vorhandene Datendatei durch die Datendateinachricht überschrieben werden kann.</summary>
+        <value>"true", wenn die Nachricht eine vorhandene Datei überschrieben werden kann; "false", wenn sie nicht überschrieben wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugMode">
+      <MemberSignature Language="C#" Value="public bool DebugMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DebugMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.DebugMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen booleschen Wert ab, der angibt, ob das Objekt im Debugmodus befindet, und gibt an, ob es auslösen soll, oder wählen Sie die <see cref="M:Microsoft.SqlServer.Dts.Runtime.IDTSEvents.OnBreakpointHit(Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite,Microsoft.SqlServer.Dts.Runtime.BreakpointTarget)" /> Ereignis während der Ausführung.</summary>
+        <value>"true" gibt an, dass das Objekt im Debugmodus befindet, und löst die <see cref="M:Microsoft.SqlServer.Dts.Runtime.IDTSEvents.OnBreakpointHit(Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite,Microsoft.SqlServer.Dts.Runtime.BreakpointTarget)" /> Ereignis. False gibt an, dass das Objekt nicht im Debugmodus ausgeführt wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DTSMessageLineageID">
+      <MemberSignature Language="C#" Value="public string DTSMessageLineageID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DTSMessageLineageID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.DTSMessageLineageID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Herkunftsbezeichner der Nachricht ab oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Herkunftsbezeichner der Nachricht enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DTSMessagePackageID">
+      <MemberSignature Language="C#" Value="public string DTSMessagePackageID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DTSMessagePackageID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.DTSMessagePackageID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Bezeichner des Pakets ab, das die Quelle der Nachricht darstellt, oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Bezeichner des Pakets enthält, die die Quelle der Nachricht ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DTSMessageVersionID">
+      <MemberSignature Language="C#" Value="public string DTSMessageVersionID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DTSMessageVersionID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.DTSMessageVersionID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Version der Nachricht ab oder legt sie fest.</summary>
+        <value>Eine Zeichenfolge, die die Version der Nachricht enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionAlgo">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.EncryptionAlgorithmWrapper EncryptionAlgo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.EncryptionAlgorithmWrapper EncryptionAlgo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.EncryptionAlgo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.EncryptionAlgorithmWrapper</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Verschlüsselungsalgorithmus ab, mit dem der Nachrichtentext einer privaten Nachricht verschlüsselt wird, oder legt ihn fest.</summary>
+        <value>Name des Verschlüsselungsalgorithmus.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorIfMessageTimeOut">
+      <MemberSignature Language="C#" Value="public bool ErrorIfMessageTimeOut { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ErrorIfMessageTimeOut" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.ErrorIfMessageTimeOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert ab, der angibt, ob der Task fehlschlägt, wenn die Nachricht ein Timeout auftritt.</summary>
+        <value>"true", wenn der Task fehlschlägt, wenn die Nachricht ein Timeout auftritt; "false", wenn die Aufgabe nicht der Fall ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="transaction">Das Transaktionsobjekt, dem der Container angehört. Die Common Language Runtime bietet die Transaktion für den Container auf Grundlage der <see cref="P:Microsoft.SqlServer.Dts.Runtime.DtsContainer.TransactionOption" /> Eigenschaft. Dieser Wert kann NULL sein.</param>
+        <summary>Führt den Task aus. </summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeTask">
+      <MemberSignature Language="C#" Value="public override void InitializeTask (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, Microsoft.SqlServer.Dts.Runtime.EventInfos eventInfos, Microsoft.SqlServer.Dts.Runtime.LogEntryInfos logEntryInfos, Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker refTracker);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeTask(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, class Microsoft.SqlServer.Dts.Runtime.EventInfos eventInfos, class Microsoft.SqlServer.Dts.Runtime.LogEntryInfos logEntryInfos, class Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker refTracker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="eventInfos" Type="Microsoft.SqlServer.Dts.Runtime.EventInfos" />
+        <Parameter Name="logEntryInfos" Type="Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" />
+        <Parameter Name="refTracker" Type="Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen. </param>
+        <param name="events">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="eventInfos">Eine Auflistung mit Ereignissen, die während der Ausführung des Tasks ausgelöst werden.</param>
+        <param name="logEntryInfos">Eine Auflistung von Protokolleinträgen.</param>
+        <param name="refTracker">Eine Objektverweisnachverfolgung.</param>
+        <summary>Initialisiert die dem Task zugeordneten Eigenschaften. Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlElement element, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlElement element, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Xml.XmlElement" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="element">Der Knoten, der das Objekt enthält, das geladen und beibehalten werden soll.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein im XML-Format (mit der Dateinamenerweiterung .xml) gespeichertes Paket zu laden, verwenden Sie die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />-Methode. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageDataFile">
+      <MemberSignature Language="C#" Value="public string MessageDataFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageDataFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.MessageDataFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Datendatei ab, die verwendet wird, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.MessageType" /> auf <see cref="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType.DTSMQMessageType_DataFile" /> festgelegt ist, oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Namen der verwendeten Datendatei enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageString">
+      <MemberSignature Language="C#" Value="public string MessageString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.MessageString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Nachricht verwendet wird, wenn die <see cref="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.MessageType" /> festgelegt ist, um <see cref="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType.DTSMQMessageType_String" />.</summary>
+        <value>Eine Zeichenfolge, die die Nachricht enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType MessageType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType MessageType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.MessageType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der den Typ der gesendeten Nachricht angibt, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.TaskType" /> auf <see cref="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType.DTSMQType_Sender" /> festgelegt ist, oder legt ihn fest.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType" />-Enumeration, der den Typ der zu sendenden Nachricht angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageVariables">
+      <MemberSignature Language="C#" Value="public string MessageVariables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageVariables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.MessageVariables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Variablenliste, wenn die <see cref="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType" /> -Enumeration festgelegt ist, um <see cref="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType.DTSMQMessageType_Variables" />.</summary>
+        <value>Eine Zeichenfolge, die die Liste der in der Nachricht verwendeten Variablen enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MsmqConnection">
+      <MemberSignature Language="C#" Value="public string MsmqConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MsmqConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.MsmqConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Verbindung für den MSMQ-Task ab oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Namen der MSMQ-Verbindung enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationDescription">
+      <MemberSignature Language="C#" Value="public string OperationDescription { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OperationDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.OperationDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Beschreibung des Vorgangs ab oder legt sie fest.</summary>
+        <value>Eine Zeichenfolge, die eine Beschreibung des Vorgangs enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveMessageTimeOut">
+      <MemberSignature Language="C#" Value="public long ReceiveMessageTimeOut { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ReceiveMessageTimeOut" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.ReceiveMessageTimeOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, mit dem die Dauer in Sekunden angegeben wird, nach der eine empfangene Nachricht ein Timeout verursacht, oder legt ihn fest.</summary>
+        <value>Ein Long-Wert, der die Anzahl der Sekunden bis zum Timeout einer Nachricht angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveMessageType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType ReceiveMessageType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType ReceiveMessageType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.ReceiveMessageType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen <see cref="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType" /> Wert, der die zu empfangenden Nachrichtentyp angibt.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType" />-Wert, der den Typ der eingehenden Nachricht angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveVariableMessage">
+      <MemberSignature Language="C#" Value="public string ReceiveVariableMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReceiveVariableMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.ReceiveVariableMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Variablen ab, in der die Nachricht gespeichert wird, oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge mit dem Namen der Variablen, die die Nachricht gespeichert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFromQueue">
+      <MemberSignature Language="C#" Value="public bool RemoveFromQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RemoveFromQueue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.RemoveFromQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert ab, der angibt, ob die Nachricht aus der Warteschlange entfernt werden soll.</summary>
+        <value>"true", wenn die Nachricht aus der Warteschlange entfernt werden soll; "false", wenn sie in der Warteschlange verbleiben soll.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeExecution">
+      <MemberSignature Language="C#" Value="public void ResumeExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.ResumeExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Setzt die Taskausführung nach einer Unterbrechung fort. Das Laufzeitmodul setzt die Ausführung des Tasks oder Containers fort. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveDataFileName">
+      <MemberSignature Language="C#" Value="public string SaveDataFileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SaveDataFileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.SaveDataFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Datei ab, in der eine eingehende Datendateinachricht gespeichert wird, oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die den Namen der Datei angibt, in der eine eingehende Datendateinachricht gespeichert wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (System.Xml.XmlDocument doc, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket als XML-Datei zu speichern, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringCompareType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare StringCompareType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare StringCompareType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.StringCompareType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ein Wert, der angibt, die Methode zum Zeichenfolgenvergleich für eine zeichenfolgenmeldung angegeben wird, wenn die <see cref="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.TaskType" /> ist <see cref="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType.DTSMQType_Receiver" />.</summary>
+        <value>Einer der gültigen Werte in <see cref="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare" />, die Methode zum Zeichenfolgenvergleich angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringCompareValue">
+      <MemberSignature Language="C#" Value="public string StringCompareValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StringCompareValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.StringCompareValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt Sie die Zeichenfolge, die mit dem eine Zeichenfolgennachricht verglichen wird, wenn die <see cref="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.TaskType" /> ist <see cref="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType.DTSMQType_Receiver" />.</summary>
+        <value>Eine Zeichenfolge, die für den Vergleich verwendet bei der <see cref="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.TaskType" /> ist <see cref="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType.DTSMQType_Receiver" />.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringMessageToVariableName">
+      <MemberSignature Language="C#" Value="public string StringMessageToVariableName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StringMessageToVariableName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.StringMessageToVariableName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Variablen ab, in der die Nachrichteninhalte gespeichert werden, oder legt ihn fest.</summary>
+        <value>Eine Zeichenfolge, die enthält die Variable, um die Nachricht gespeichert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendExecution">
+      <MemberSignature Language="C#" Value="public void SuspendExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuspendExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.SuspendExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt an, dass das ausführbare Element angehalten werden muss. Diese Methode wird vom Laufzeitmodul aufgerufen. </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendRequired">
+      <MemberSignature Language="C#" Value="public bool SuspendRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuspendRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.SuspendRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert ab, der angibt, ob der Task bei Erreichen eines Breakpoints angehalten werden soll. Dieser Wert wird vom Laufzeitmodul für Tasks und Container festgelegt, wenn ein Breakpoint erreicht wird.</summary>
+        <value>"true", wenn die Taskausführung bei Erreichen eines Breakpoints.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType TaskType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType TaskType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.TaskType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob der Nachrichtentask Daten sendet oder empfängt, oder legt ihn fest.</summary>
+        <value>Ein gültiger Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType" />-Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Use2000Format">
+      <MemberSignature Language="C#" Value="public bool Use2000Format { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Use2000Format" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.Use2000Format" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert, der angibt, dass die Nachricht eine SQL Server 2000-Format verwendet.</summary>
+        <value>"false" gibt an, dass das SQL Server 2000-Format nicht verwendet wird. "true" gibt an, dass das SQL Server 2000-Format verwendet wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseEncryption">
+      <MemberSignature Language="C#" Value="public bool UseEncryption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseEncryption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.UseEncryption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert, der angibt, ob die Nachricht eine Verschlüsselung verwendet.</summary>
+        <value>"true" gibt an, dass die Verschlüsselung verwendet wird. False gibt an, dass keine Verschlüsselung verwendet wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <summary>Überprüft, ob der Task ordnungsgemäß konfiguriert ist.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

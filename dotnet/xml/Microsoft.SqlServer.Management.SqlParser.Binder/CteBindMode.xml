@@ -1,0 +1,93 @@
+<Type Name="CteBindMode" FullName="Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode">
+  <TypeSignature Language="C#" Value="public enum CteBindMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CteBindMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Definiert Abfragemodi Ausdruck-Bindung beim Binden der CTE-Definition an. Der CTE-Bind-Modus bestimmt, ob es sich bei CTE selbst verweisen, zulässige oder müssen unzulässig ist.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Anchor">
+      <MemberSignature Language="C#" Value="Anchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode Anchor = int8(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode.Anchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Allgemeine Tabellenausdrücke können nur ein Anker (d. h. keine Self verweisen) angehören.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AnchorOrRecursive">
+      <MemberSignature Language="C#" Value="AnchorOrRecursive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode AnchorOrRecursive = int8(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode.AnchorOrRecursive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            CTE Member konnte einen Self Verweis verfügen kann.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode None = int8(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Keine Bindung CTE-Definition.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Recursive">
+      <MemberSignature Language="C#" Value="Recursive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode Recursive = int8(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode.Recursive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Binder.CteBindMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Element des allgemeinen Tabellenausdrucks rekursiv sein muss (d. h. benötigen einen Self-Verweis).
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

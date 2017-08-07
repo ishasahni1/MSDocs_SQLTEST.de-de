@@ -1,0 +1,134 @@
+<Type Name="EnvironmentVariableCollection" FullName="Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariableCollection">
+  <TypeSignature Language="C#" Value="public sealed class EnvironmentVariableCollection : Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable,Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable.Key,Microsoft.SqlServer.Management.IntegrationServices.EnvironmentInfo&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnvironmentVariableCollection extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3&lt;class Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable, class Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable/Key, class Microsoft.SqlServer.Management.IntegrationServices.EnvironmentInfo&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariableCollection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.IntegrationServices</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable,Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable+Key,Microsoft.SqlServer.Management.IntegrationServices.EnvironmentInfo&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable+Key</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!2">Microsoft.SqlServer.Management.IntegrationServices.EnvironmentInfo</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stellt die Auflistung für Umgebungsvariablen dar.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string varName, TypeCode varType, object varValue, bool varSensitive, string varDesciption);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string varName, valuetype System.TypeCode varType, object varValue, bool varSensitive, string varDesciption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariableCollection.Add(System.String,System.TypeCode,System.Object,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varName" Type="System.String" />
+        <Parameter Name="varType" Type="System.TypeCode" />
+        <Parameter Name="varValue" Type="System.Object" />
+        <Parameter Name="varSensitive" Type="System.Boolean" />
+        <Parameter Name="varDesciption" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="varName">Der Name der Variablen.</param>
+        <param name="varType">Der Typ der Variablen.</param>
+        <param name="varValue">Der Wert der Variablen.</param>
+        <param name="varSensitive">True, wenn die Variable, die vertraulich ist; andernfalls "false".</param>
+        <param name="varDesciption">Die Variablenbeschreibung.</param>
+        <summary>Fügt eine Variable hinzu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariableCollection.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der angegebene Name.</param>
+        <summary>Gibt einen Wert zurück, der angibt, ob die Umgebungsvariablenauflistung den angegebenen Namen enthält.</summary>
+        <returns>"true", wenn die umgebungsvariablenauflistung den angegebenen Namen enthält; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementFactoryImpl">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariableCollection.GetElementFactoryImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft das Element Factory "Impl" ab.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariableCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name der Umgebungsvariablen.</param>
+        <summary>Ruft die Umgebungsvariable basierend auf dem angegebenen Namen aus der Umgebungsvariablenauflistung ab.</summary>
+        <value>Die angegebene Umgebungsvariable aus der Umgebungsvariablenauflistung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string varName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string varName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.EnvironmentVariableCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="varName">Der Name der Variablen.</param>
+        <summary>Entfernt eine Variable.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

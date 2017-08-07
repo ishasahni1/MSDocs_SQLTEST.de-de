@@ -1,0 +1,308 @@
+<Type Name="XmlUtility" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility">
+  <TypeSignature Language="C#" Value="public class XmlUtility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlUtility extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Auflistung von Funktionen für die Analyse von Xml mit SAX
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetFirstElementOnLevel">
+      <MemberSignature Language="C#" Value="public static bool GetFirstElementOnLevel (System.Xml.XmlTextReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetFirstElementOnLevel(class System.Xml.XmlTextReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.GetFirstElementOnLevel(System.Xml.XmlTextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <summary>
+            das erste Element auf der aktuellen Ebene abrufen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoDownOneLevel">
+      <MemberSignature Language="C#" Value="public static bool GoDownOneLevel (System.Xml.XmlTextReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GoDownOneLevel(class System.Xml.XmlTextReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.GoDownOneLevel(System.Xml.XmlTextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <summary>
+            Lesen Sie, bis wir eine Ebene nach unten gehen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GoUpOneLevel">
+      <MemberSignature Language="C#" Value="public static bool GoUpOneLevel (System.Xml.XmlTextReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GoUpOneLevel(class System.Xml.XmlTextReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.GoUpOneLevel(System.Xml.XmlTextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <summary>
+            Lesen Sie, bis wir eine Ebene nach oben wechseln
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsElement">
+      <MemberSignature Language="C#" Value="public static bool IsElement (System.Xml.XmlTextReader reader, string strName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsElement(class System.Xml.XmlTextReader reader, string strName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.IsElement(System.Xml.XmlTextReader,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+        <Parameter Name="strName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <param name="strName">
+        </param>
+        <summary>
+            "true", wenn die aktuelle Entität ein Element mit dem angegebenen Namen ist.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectChildrenByAttribute">
+      <MemberSignature Language="C#" Value="public static bool SelectChildrenByAttribute (System.Xml.XmlTextReader reader, string strAttribute, string strValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SelectChildrenByAttribute(class System.Xml.XmlTextReader reader, string strAttribute, string strValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.SelectChildrenByAttribute(System.Xml.XmlTextReader,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+        <Parameter Name="strAttribute" Type="System.String" />
+        <Parameter Name="strValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <param name="strAttribute">
+        </param>
+        <param name="strValue">
+        </param>
+        <summary>
+            untergeordnete Elemente nach Attribut auswählen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectChildrenByName">
+      <MemberSignature Language="C#" Value="public static bool SelectChildrenByName (System.Xml.XmlTextReader reader, string strName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SelectChildrenByName(class System.Xml.XmlTextReader reader, string strName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.SelectChildrenByName(System.Xml.XmlTextReader,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+        <Parameter Name="strName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <param name="strName">
+        </param>
+        <summary>
+            Wählen Sie die untergeordneten Elemente anhand des Namens
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectElementByName">
+      <MemberSignature Language="C#" Value="public static bool SelectElementByName (System.Xml.XmlTextReader reader, string strName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SelectElementByName(class System.Xml.XmlTextReader reader, string strName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.SelectElementByName(System.Xml.XmlTextReader,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+        <Parameter Name="strName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <param name="strName">
+        </param>
+        <summary>
+            Wählen Sie die erste Eleemtn mit dem angegebenen Namen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectNextElement">
+      <MemberSignature Language="C#" Value="public static bool SelectNextElement (System.Xml.XmlTextReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SelectNextElement(class System.Xml.XmlTextReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.SelectNextElement(System.Xml.XmlTextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <summary>
+            Wählen Sie das nächste element
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectNextElement">
+      <MemberSignature Language="C#" Value="public static bool SelectNextElement (System.Xml.XmlTextReader reader, string strName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SelectNextElement(class System.Xml.XmlTextReader reader, string strName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.SelectNextElement(System.Xml.XmlTextReader,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+        <Parameter Name="strName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <param name="strName">
+        </param>
+        <summary>
+            Wählen Sie das nächste Element nach Namen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectNextElementOnLevel">
+      <MemberSignature Language="C#" Value="public static bool SelectNextElementOnLevel (System.Xml.XmlTextReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SelectNextElementOnLevel(class System.Xml.XmlTextReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.SelectNextElementOnLevel(System.Xml.XmlTextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <summary>
+            Wählen Sie das nächste Element auf derselben Ebene
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectNextSibling">
+      <MemberSignature Language="C#" Value="public static bool SelectNextSibling (System.Xml.XmlTextReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SelectNextSibling(class System.Xml.XmlTextReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.XmlUtility.SelectNextSibling(System.Xml.XmlTextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlTextReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+        </param>
+        <summary>
+            Wählen Sie die nächste Sibbling des aktuellen Elements
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

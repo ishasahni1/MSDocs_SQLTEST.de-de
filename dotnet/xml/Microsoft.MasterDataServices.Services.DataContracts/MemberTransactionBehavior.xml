@@ -1,0 +1,93 @@
+<Type Name="MemberTransactionBehavior" FullName="Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior">
+  <TypeSignature Language="C#" Value="public enum MemberTransactionBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MemberTransactionBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.MasterDataServices.Services.Contracts</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract(Namespace="http://schemas.microsoft.com/sqlserver/masterdataservices/2009/09")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Gibt das Transaktionsverhalten beim Erstellen, Aktualisieren oder Zusammenführen eines Entitätselements an.
+            </summary>
+    <remarks>
+            Die <see cref="T:Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior" /> einfacher Typ gibt das Transaktionsverhalten beim Erstellen, aktualisieren oder Zusammenführen eines entitätselements an.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllOrNothingByBatch">
+      <MemberSignature Language="C#" Value="AllOrNothingByBatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior AllOrNothingByBatch = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior.AllOrNothingByBatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Bei einem Fehler innerhalb eines Batchs den gesamten Batch als fehlerhaft behandeln. Wenn Sie also beispielsweise mehrere neue Elemente erstellen und eines der neuen Elemente einen ungültigen Attributwert besitzt, wird weder dieses noch eines der anderen neuen Element des Batchs erstellt (auch wenn bei anderen Elementen möglicherweise kein Fehler vorliegt).
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllOrNothingByMember">
+      <MemberSignature Language="C#" Value="AllOrNothingByMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior AllOrNothingByMember = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior.AllOrNothingByMember" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Bei einem Fehler alle Änderungen in Verbindung mit dem fehlerhaften Element als fehlerhaft behandeln. Wenn Sie also beispielsweise mehrere neue Elemente erstellen und eines der neuen Elemente einen ungültigen Attributwert besitzt, wird das neue Element nicht erstellt. Andere neue Elemente des gleichen Batchs, bei denen kein Fehler vorliegt, werden dagegen erstellt. 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BestEffort">
+      <MemberSignature Language="C#" Value="BestEffort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior BestEffort = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior.BestEffort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.MasterDataServices.Services.DataContracts.MemberTransactionBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Nur Änderungen mit Fehler als nicht fehlerhaft behandeln. Wenn Sie also beispielsweise ein neues Element erstellen und einer der Attributwerte des Elements nicht gültig ist, wird das Element erstellt, und alle gültigen Attribute werden festgelegt. Das ungültige Attribut ist dagegen weiterhin NULL.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

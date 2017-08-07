@@ -1,0 +1,94 @@
+<Type Name="SfcNodeAdapterProvider" FullName="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider">
+  <TypeSignature Language="C#" Value="public abstract class SfcNodeAdapterProvider : Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SfcNodeAdapterProvider extends System.Object implements class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Der Vergleichsalgorithmus werden die Diagramme mit Hilfe der ISimpleSfcNode geführt. Das Objektmodell kann entweder direkt implementieren die Schnittstelle oder einen Wrapper zurück.
+            
+            If a graph to be compared natively implements ISimpleSfcNode, the
+            node can be returned directly. Otherwise, a wrapper should 
+            be returned.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SfcNodeAdapterProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGraphAdapter">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode GetGraphAdapter (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode GetGraphAdapter(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider.GetGraphAdapter(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>
+            Die Methode wird für den Stammknoten der Diagramme zu vergleichenden nur einmal aufgerufen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGraphSupported">
+      <MemberSignature Language="C#" Value="public abstract bool IsGraphSupported (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsGraphSupported(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.SfcNodeAdapterProvider.IsGraphSupported(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>
+            Gibt an, ob dieser Anbieter das angegebene Diagramm unterstützt. Wenn dies der Fall, gibt "true", "false" andernfalls.
+            
+            If true is returned, calls to GetGraphAdapter() must return a 
+            valid non-null graph adapter.
+            
+            The method is called only once on the root node of each graph.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

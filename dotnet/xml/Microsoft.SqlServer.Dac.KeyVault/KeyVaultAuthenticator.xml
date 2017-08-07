@@ -1,0 +1,135 @@
+<Type Name="KeyVaultAuthenticator" FullName="Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthenticator">
+  <TypeSignature Language="C#" Value="public abstract class KeyVaultAuthenticator : Microsoft.SqlServer.Dac.Extensibility.ExportableBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit KeyVaultAuthenticator extends Microsoft.SqlServer.Dac.Extensibility.ExportableBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthenticator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dac.Extensibility.ExportableBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Die Basisklasse für alle Azure Key Vault-Authentifizierungsanbieter. Dies ist verantwortlich für die Anmeldung bei Azure, Zugriffstasten abrufen und an den Aufrufer zurückgeben. Hinweise: Nur ein Anbieter ist pro Prozess, mit dem ersten zu registrieren, wird die erfolgreiche Anbieter zulässig. Um unterstützen <see cref="T:Microsoft.SqlServer.Dac.DacServices" /> und verwandten APIs, die in mehrere UI-Tools und die SqlPackage-Befehlszeile die Bindung auf DLLs für Azure-Authentifizierung verwendet wird an die Haupt-Dac-Framework lose gekoppelt wird mithilfe von MEF. Ein Standardanbieter ist zur Verwendung in SqlPackage und anderen Situationen, in der Befehlszeile die Standardanmeldeinformationen-basierte Authentifizierung unterstützen. Dies kann überschrieben werden, um mit benutzerdefinierten Authentifizierungspipelines oder in der UI-Anwendung zu integrieren, indem Sie diese Methode zu erweitern und bieten eine <see cref="T:Microsoft.SqlServer.Dac.Extensibility.ExportableAttribute" /> mit typeof(KeyVaultAuthenticator), eine eindeutige ID und hoher Priorität
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected KeyVaultAuthenticator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthenticator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToken">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;string&gt; GetToken (string authority, string resource, string scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetToken(string authority, string resource, string scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthenticator.GetToken(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authority" Type="System.String" />
+        <Parameter Name="resource" Type="System.String" />
+        <Parameter Name="scope" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="authority">
+        </param>
+        <param name="resource">
+        </param>
+        <param name="scope">
+        </param>
+        <summary>
+            Azure Key Vault-authentifizierungsrückruf
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeAuthenticator">
+      <MemberSignature Language="C#" Value="public abstract void InitializeAuthenticator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeAuthenticator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthenticator.InitializeAuthenticator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ermöglicht es der Authentifikator mit Core AlwaysEncrypted Aufrufstapel zu registrieren. Dies ist wichtig für Szenarien, in denen interaktive Authentifizierung verwendet wird, und dies ist der globale Authentifikator in der Anwendung verwendet werden
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAuthInfo">
+      <MemberSignature Language="C#" Value="public abstract void UpdateAuthInfo (Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthInfoBase authInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateAuthInfo(class Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthInfoBase authInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthenticator.UpdateAuthInfo(Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthInfoBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authInfo" Type="Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthInfoBase" />
+      </Parameters>
+      <Docs>
+        <param name="authInfo">
+        </param>
+        <summary>
+            Übergibt ein <see cref="T:Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthInfoBase" /> Objekt, das die KeyVaultAuthenticator, um Szenarien zu unterstützen, in denen ein Benutzer Authentifizierungsmethode, z. B. durch Anmeldung bei einem anderen Azure-Konto ändert,
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.Dac.KeyVault.KeyVaultValidationResult Validate (System.Collections.Generic.IList&lt;string&gt; keyVaultUrls, System.Threading.CancellationToken cancelToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dac.KeyVault.KeyVaultValidationResult Validate(class System.Collections.Generic.IList`1&lt;string&gt; keyVaultUrls, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.KeyVault.KeyVaultAuthenticator.Validate(System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.KeyVault.KeyVaultValidationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyVaultUrls" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+        <Parameter Name="cancelToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="keyVaultUrls">
+            Eine Liste von URLs, die jede Key Vault spaltenhauptschlüssel, in dem der Schlüssel an einem Datenvorgang der Bewegung zusammenhängt verweist darstellt. 
+            </param>
+        <param name="cancelToken">
+        </param>
+        <summary>
+            Wird aufgerufen, bevor die Dac-Vorgänge, die die datenverschiebung für eine Tabelle mit verschlüsselten Spalten verursacht wird durchgeführt, z. B. Bereitstellung von DACPAC-Dateien
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

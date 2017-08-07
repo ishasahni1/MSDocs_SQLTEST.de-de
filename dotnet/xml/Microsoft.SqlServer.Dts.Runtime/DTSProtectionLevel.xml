@@ -1,0 +1,108 @@
+<Type Name="DTSProtectionLevel" FullName="Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel">
+  <TypeSignature Language="C#" Value="public enum DTSProtectionLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DTSProtectionLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Steuert die Behandlung vertraulicher Informationen im Paket.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DontSaveSensitive">
+      <MemberSignature Language="C#" Value="DontSaveSensitive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel DontSaveSensitive = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel.DontSaveSensitive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Vertrauliche Informationen werden nicht im Paket gespeichert. Die vertraulichen Informationen werden entfernt und durch Leerzeichen ersetzt.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptAllWithPassword">
+      <MemberSignature Language="C#" Value="EncryptAllWithPassword" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel EncryptAllWithPassword = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel.EncryptAllWithPassword" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Verschlüsselt das ganze Paket mit einem Kennwort.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptAllWithUserKey">
+      <MemberSignature Language="C#" Value="EncryptAllWithUserKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel EncryptAllWithUserKey = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel.EncryptAllWithUserKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Verschlüsselt das gesamte Paket anhand von Schlüsseln auf Grundlage des Benutzerprofils. Das Paket kann nur von demselben Benutzer, der dasselbe Profil verwendet, geladen werden.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptSensitiveWithPassword">
+      <MemberSignature Language="C#" Value="EncryptSensitiveWithPassword" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel EncryptSensitiveWithPassword = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel.EncryptSensitiveWithPassword" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Verschlüsselt nur vertrauliche, im Paket enthaltene Informationen mit einem Kennwort. Für diese Verschlüsselung wird DPAPI verwendet.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptSensitiveWithUserKey">
+      <MemberSignature Language="C#" Value="EncryptSensitiveWithUserKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel EncryptSensitiveWithUserKey = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel.EncryptSensitiveWithUserKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Verschlüsselt nur vertrauliche Eigenschaften mit Schlüsseln auf Grundlage des aktuellen Benutzers. Das Paket kann nur von demselben Benutzer, der dasselbe Profil verwendet, geladen werden. Wenn das Paket von einem anderen Benutzer geöffnet wird, werden die vertraulichen Informationen durch Leerzeichen ersetzt. Für diese Verschlüsselung wird DPAPI verwendet.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerStorage">
+      <MemberSignature Language="C#" Value="ServerStorage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel ServerStorage = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel.ServerStorage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Verschlüsselt das Paket in einer SQL Server-Msdb-Datenbank. Diese Option wird nur unterstützt, wenn ein Paket mit SQL Server gespeichert wird. Sie wird nicht unterstützt, wenn ein Paket im Dateisystem gespeichert wird. Die Zugriffssteuerung, die das Paket entschlüsseln kann, wird von SQL Server-Datenbankrollen gesteuert. Weitere Informationen finden Sie unter Datenbankrollen und Sysssispackages (Transact-SQL).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

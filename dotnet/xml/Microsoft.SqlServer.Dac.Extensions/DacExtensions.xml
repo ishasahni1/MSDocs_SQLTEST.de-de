@@ -1,0 +1,107 @@
+<Type Name="DacExtensions" FullName="Microsoft.SqlServer.Dac.Extensions.DacExtensions">
+  <TypeSignature Language="C#" Value="public static class DacExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DacExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Extensions.DacExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt Erweiterungen für die Interaktion mit DAC-Paketen bereit, die durch <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />- oder <see cref="T:Microsoft.SqlServer.Dac.BacPackage" />-Instanzen dargestellt werden.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCollationString">
+      <MemberSignature Language="C#" Value="public static string GetCollationString (this Microsoft.SqlServer.Dac.BacPackage package);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetCollationString(class Microsoft.SqlServer.Dac.BacPackage package) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Extensions.DacExtensions.GetCollationString(Microsoft.SqlServer.Dac.BacPackage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.BacPackage" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.BacPackage" />enthält Sortierungsinformationen.
+            </param>
+        <summary>
+            Gibt die Sortierung der Datenbank für das Paket zurück.
+            </summary>
+        <returns>
+            Die Zeichenfolge der SQL Server-Sortierung oder Null, wenn die Sortierung nicht abgerufen werden kann.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert für einen erforderlichen Parameter ein null-Verweis ist.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCollationString">
+      <MemberSignature Language="C#" Value="public static string GetCollationString (this Microsoft.SqlServer.Dac.DacPackage package);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetCollationString(class Microsoft.SqlServer.Dac.DacPackage package) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Extensions.DacExtensions.GetCollationString(Microsoft.SqlServer.Dac.DacPackage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.DacPackage" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />enthält Sortierungsinformationen.
+            </param>
+        <summary>
+            Gibt die Sortierung der Datenbank für das Paket zurück.
+            </summary>
+        <returns>
+            Die Zeichenfolge der SQL Server-Sortierung oder Null, wenn die Sortierung nicht abgerufen werden kann.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert für einen erforderlichen Parameter ein null-Verweis ist.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetServiceSetting">
+      <MemberSignature Language="C#" Value="public static void SetServiceSetting (Microsoft.SqlServer.Dac.DacServices service, string settingName, object settingValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetServiceSetting(class Microsoft.SqlServer.Dac.DacServices service, string settingName, object settingValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Extensions.DacExtensions.SetServiceSetting(Microsoft.SqlServer.Dac.DacServices,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="Microsoft.SqlServer.Dac.DacServices" />
+        <Parameter Name="settingName" Type="System.String" />
+        <Parameter Name="settingValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="service">Die Dienstinstanz zum Anwenden der Einstellung</param>
+        <param name="settingName">Der Name der Einstellung</param>
+        <param name="settingValue">Der Wert der Einstellung oder Null, um die Einstellung zu entfernen.</param>
+        <summary>
+            Konfiguriert eine Einstellung für die angegebene DacServices-Instanz.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

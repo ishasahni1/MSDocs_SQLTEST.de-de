@@ -1,0 +1,2153 @@
+<Type Name="SqlSmoObject" FullName="Microsoft.SqlServer.Management.Smo.SqlSmoObject">
+  <TypeSignature Language="C#" Value="public abstract class SqlSmoObject : Microsoft.SqlServer.Management.Smo.SmoObjectBase, Microsoft.SqlServer.Management.Common.IRefreshable, Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertyProvider, System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SqlSmoObject extends Microsoft.SqlServer.Management.Smo.SmoObjectBase implements class Microsoft.SqlServer.Management.Common.IRefreshable, class Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcNotifyPropertyMetadataChanged, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertyProvider, class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.SqlSmoObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Smo.SmoObjectBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IRefreshable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertyProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.SqlServer.Management.Sdk.Sfc.LocalizableTypeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+             Enthält allgemeine Funktionen für die Instanzklassen
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SqlSmoObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDatabaseContext">
+      <MemberSignature Language="C#" Value="protected void AddDatabaseContext (System.Collections.Specialized.StringCollection queries);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddDatabaseContext(class System.Collections.Specialized.StringCollection queries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.AddDatabaseContext(System.Collections.Specialized.StringCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queries" Type="System.Collections.Specialized.StringCollection" />
+      </Parameters>
+      <Docs>
+        <param name="queries">
+        </param>
+        <summary>
+            Methodenaufrufs abrufen aus der Create Skript verknüpfte Methode (von abgeleiteten Klassen wie Tabelle, Index usw...)
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterImpl">
+      <MemberSignature Language="C#" Value="protected void AlterImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AlterImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.AlterImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterImplWorker">
+      <MemberSignature Language="C#" Value="protected void AlterImplWorker ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AlterImplWorker() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.AlterImplWorker" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindDefaultImpl">
+      <MemberSignature Language="C#" Value="protected void BindDefaultImpl (string defaultSchema, string defaultName, bool bindColumns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void BindDefaultImpl(string defaultSchema, string defaultName, bool bindColumns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.BindDefaultImpl(System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultSchema" Type="System.String" />
+        <Parameter Name="defaultName" Type="System.String" />
+        <Parameter Name="bindColumns" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="defaultSchema">Muss hinzugefügt werden.</param>
+        <param name="defaultName">Muss hinzugefügt werden.</param>
+        <param name="bindColumns">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindRuleImpl">
+      <MemberSignature Language="C#" Value="protected void BindRuleImpl (string ruleSchema, string rule, bool bindColumns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void BindRuleImpl(string ruleSchema, string rule, bool bindColumns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.BindRuleImpl(System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ruleSchema" Type="System.String" />
+        <Parameter Name="rule" Type="System.String" />
+        <Parameter Name="bindColumns" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="ruleSchema">Muss hinzugefügt werden.</param>
+        <param name="rule">Muss hinzugefügt werden.</param>
+        <param name="bindColumns">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckObjectState">
+      <MemberSignature Language="C#" Value="protected void CheckObjectState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckObjectState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.CheckObjectState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckObjectState">
+      <MemberSignature Language="C#" Value="protected virtual void CheckObjectState (bool throwIfNotCreated);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CheckObjectState(bool throwIfNotCreated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.CheckObjectState(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="throwIfNotCreated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="throwIfNotCreated">
+        </param>
+        <summary>
+            Dies ist eine virtuelle Funktion, damit abgeleitete Klassen sie überschreiben können, wenn sie zusätzliche Überprüfungen auf den Zustand des Objekts möchten
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckObjectStateImpl">
+      <MemberSignature Language="C#" Value="protected void CheckObjectStateImpl (bool throwIfNotCreated);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckObjectStateImpl(bool throwIfNotCreated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.CheckObjectStateImpl(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="throwIfNotCreated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="throwIfNotCreated">
+        </param>
+        <summary>
+            Überprüft Objekt Zustand aus, da es nicht Recusrive, diese Funktion direkt aufgerufen werden kann und dies bedeutet, dass abgeleitete Klassen kann nicht ihre eigene Überprüfung angeben
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CleanObject">
+      <MemberSignature Language="C#" Value="protected virtual void CleanObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CleanObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.CleanObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateImpl">
+      <MemberSignature Language="C#" Value="protected void CreateImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CreateImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.CreateImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrAlterImpl">
+      <MemberSignature Language="C#" Value="protected void CreateOrAlterImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CreateOrAlterImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.CreateOrAlterImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseEngineEdition">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Management.Common.DatabaseEngineEdition DatabaseEngineEdition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.DatabaseEngineEdition DatabaseEngineEdition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SqlSmoObject.DatabaseEngineEdition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.DatabaseEngineEdition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die DatabaseEngineEdition des SMO-Objekts
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseEngineType">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Management.Common.DatabaseEngineType DatabaseEngineType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Common.DatabaseEngineType DatabaseEngineType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SqlSmoObject.DatabaseEngineType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.DatabaseEngineType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den DatabaseEngineType des SMO-Objekts
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Discover">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;object&gt; Discover ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;object&gt; Discover() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Discover" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Am besten Aufwand Ermittlungsmechanismus: Diese Methode auf Metadaten wiedergibt, und ruft alle verfügbaren Objekte
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropImpl">
+      <MemberSignature Language="C#" Value="protected void DropImpl (bool isDropIfExists = false);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DropImpl(bool isDropIfExists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.DropImpl(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isDropIfExists" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isDropIfExists">Bei "true", wird Funktion keine Wirkung, wenn Objekt nicht im gültigen Status gelöscht ist.</param>
+        <summary>
+             Löscht das Objekt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropImplWorker">
+      <MemberSignature Language="C#" Value="protected void DropImplWorker (ref Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn, bool isDropIfExists = false);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DropImplWorker(class Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn, bool isDropIfExists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.DropImplWorker(Microsoft.SqlServer.Management.Sdk.Sfc.Urn@,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urn" Type="Microsoft.SqlServer.Management.Sdk.Sfc.Urn&amp;" RefType="ref" />
+        <Parameter Name="isDropIfExists" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="urn">
+        </param>
+        <param name="isDropIfExists">Bei "true", wird die Drop mit überprüft vorhanden ist aufgerufen werden.</param>
+        <summary>
+             Löscht das Objekt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteForScalar">
+      <MemberSignature Language="C#" Value="protected bool ExecuteForScalar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExecuteForScalar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ExecuteForScalar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteNonQuery">
+      <MemberSignature Language="C#" Value="protected void ExecuteNonQuery (System.Collections.Specialized.StringCollection queries, bool includeDbContext, bool executeForAlter);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ExecuteNonQuery(class System.Collections.Specialized.StringCollection queries, bool includeDbContext, bool executeForAlter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ExecuteNonQuery(System.Collections.Specialized.StringCollection,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queries" Type="System.Collections.Specialized.StringCollection" />
+        <Parameter Name="includeDbContext" Type="System.Boolean" />
+        <Parameter Name="executeForAlter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="queries">
+        </param>
+        <param name="includeDbContext">Bei "true" werden die Anweisungen mit Präfix Festlegen des Datenbankkontexts "false" sind</param>
+        <param name="executeForAlter">Gibt an, ob dieser Ausführung für eine Änderung ist.</param>
+        <summary>
+            Führt Sql-Anweisungen
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteWithModes">
+      <MemberSignature Language="C#" Value="public void ExecuteWithModes (Microsoft.SqlServer.Management.Common.SqlExecutionModes modes, Action action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteWithModes(valuetype Microsoft.SqlServer.Management.Common.SqlExecutionModes modes, class System.Action action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ExecuteWithModes(Microsoft.SqlServer.Management.Common.SqlExecutionModes,System.Action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modes" Type="Microsoft.SqlServer.Management.Common.SqlExecutionModes" />
+        <Parameter Name="action" Type="System.Action" />
+      </Parameters>
+      <Docs>
+        <param name="modes">Die Modi zum Ausführen der Aktion unter.</param>
+        <param name="action">Die Aktion ausgeführt.</param>
+        <summary>
+             Führt die angegebene Aktion unter der angegebenen Ausführungsmodi an.
+            
+             Resets the original modes after the action completes or fails.
+             </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionManager">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Management.Smo.ExecutionManager ExecutionManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.ExecutionManager ExecutionManager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ExecutionManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ExecutionManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatSqlVariant">
+      <MemberSignature Language="C#" Value="protected string FormatSqlVariant (object sqlVariant);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string FormatSqlVariant(object sqlVariant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.FormatSqlVariant(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlVariant" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="sqlVariant">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateAlterEvent">
+      <MemberSignature Language="C#" Value="protected void GenerateAlterEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void GenerateAlterEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GenerateAlterEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateAlterEvent">
+      <MemberSignature Language="C#" Value="protected void GenerateAlterEvent (Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn, object innerObject);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void GenerateAlterEvent(class Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn, object innerObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GenerateAlterEvent(Microsoft.SqlServer.Management.Sdk.Sfc.Urn,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urn" Type="Microsoft.SqlServer.Management.Sdk.Sfc.Urn" />
+        <Parameter Name="innerObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="urn">Muss hinzugefügt werden.</param>
+        <param name="innerObject">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildType">
+      <MemberSignature Language="C#" Value="public static Type GetChildType (string objectName, string parentName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetChildType(string objectName, string parentName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetChildType(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectName" Type="System.String" />
+        <Parameter Name="parentName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="objectName">Muss hinzugefügt werden.</param>
+        <param name="parentName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContextDB">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Smo.Database GetContextDB ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class Microsoft.SqlServer.Management.Smo.Database GetContextDB() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetContextDB" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.Database</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDBName">
+      <MemberSignature Language="C#" Value="protected virtual string GetDBName ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string GetDBName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetDBName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFragOptionString">
+      <MemberSignature Language="C#" Value="protected string GetFragOptionString (Microsoft.SqlServer.Management.Smo.FragmentationOption fragmentationOption);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetFragOptionString(valuetype Microsoft.SqlServer.Management.Smo.FragmentationOption fragmentationOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetFragOptionString(Microsoft.SqlServer.Management.Smo.FragmentationOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fragmentationOption" Type="Microsoft.SqlServer.Management.Smo.FragmentationOption" />
+      </Parameters>
+      <Docs>
+        <param name="fragmentationOption">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropValue">
+      <MemberSignature Language="C#" Value="protected object GetPropValue (string propName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object GetPropValue(string propName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetPropValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propName">
+        </param>
+        <summary>
+             Abrufen des Eigenschaftswerts:-die Eigenschaftenbehälter direkt Wenn Eigenschaft verfügbar ist (dirty oder abgerufenen) - einen Aufruf an unsere andernfalls OnPropertyMissing-Methode
+            
+             Will throw an exception if the property value is NULL in either case.
+             </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropValueOptional">
+      <MemberSignature Language="C#" Value="protected object GetPropValueOptional (string propName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object GetPropValueOptional(string propName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetPropValueOptional(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propName">
+        </param>
+        <summary>
+            Abrufen des Eigenschaftswerts: - die Eigenschaftensammlung, wenn der Zustand ist das Erstellen oder wir uns in den Entwurfsmodus zu wechseln (mögliche NULL-Wert) – ein Aufruf an unsere OnPropertyMissing-Methode, die andernfalls (wird Ausnahme auslösen, wenn Wert NULL ist)
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropValueOptionalAllowNull">
+      <MemberSignature Language="C#" Value="protected object GetPropValueOptionalAllowNull (string propName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object GetPropValueOptionalAllowNull(string propName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetPropValueOptionalAllowNull(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propName">
+        </param>
+        <summary>
+            Abrufen des Eigenschaftswerts: - die Eigenschaftensammlung Wenn der Zustand ist das Erstellen oder wir uns in den Entwurfsmodus zu wechseln (mögliche NULL) – ein Aufruf an unsere OnPropertyMissing-Methode, die andernfalls (mögliche NULL)
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRealValue">
+      <MemberSignature Language="C#" Value="protected object GetRealValue (Microsoft.SqlServer.Management.Smo.Property prop, object oldValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetRealValue(class Microsoft.SqlServer.Management.Smo.Property prop, object oldValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetRealValue(Microsoft.SqlServer.Management.Smo.Property,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prop" Type="Microsoft.SqlServer.Management.Smo.Property" />
+        <Parameter Name="oldValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="prop">Der Property-Objekt</param>
+        <param name="oldValue">Muss hinzugefügt werden.</param>
+        <summary>
+            Gibt den tatsächlichen Wert für die Eigenschaft.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServerName">
+      <MemberSignature Language="C#" Value="protected virtual string GetServerName ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetServerName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetServerName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServerObject">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Smo.Server GetServerObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class Microsoft.SqlServer.Management.Smo.Server GetServerObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetServerObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.Server</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlServerVersionName">
+      <MemberSignature Language="C#" Value="protected string GetSqlServerVersionName ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetSqlServerVersionName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetSqlServerVersionName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeFromUrnSkeleton">
+      <MemberSignature Language="C#" Value="public static Type GetTypeFromUrnSkeleton (Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetTypeFromUrnSkeleton(class Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetTypeFromUrnSkeleton(Microsoft.SqlServer.Management.Sdk.Sfc.Urn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urn" Type="Microsoft.SqlServer.Management.Sdk.Sfc.Urn" />
+      </Parameters>
+      <Docs>
+        <param name="urn">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrnRecursive">
+      <MemberSignature Language="C#" Value="protected virtual void GetUrnRecursive (System.Text.StringBuilder urnbuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetUrnRecursive(class System.Text.StringBuilder urnbuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetUrnRecursive(System.Text.StringBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urnbuilder" Type="System.Text.StringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="urnbuilder">
+        </param>
+        <summary>
+            Berechnet den Urn für das Objekt an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrnRecursive">
+      <MemberSignature Language="C#" Value="protected virtual void GetUrnRecursive (System.Text.StringBuilder urnbuilder, Microsoft.SqlServer.Management.Smo.UrnIdOption idOption);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetUrnRecursive(class System.Text.StringBuilder urnbuilder, valuetype Microsoft.SqlServer.Management.Smo.UrnIdOption idOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.GetUrnRecursive(System.Text.StringBuilder,Microsoft.SqlServer.Management.Smo.UrnIdOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urnbuilder" Type="System.Text.StringBuilder" />
+        <Parameter Name="idOption" Type="Microsoft.SqlServer.Management.Smo.UrnIdOption" />
+      </Parameters>
+      <Docs>
+        <param name="urnbuilder">den Urn enthält</param>
+        <param name="idOption">Muss hinzugefügt werden.</param>
+        <summary>
+            Berechnet den Urn für das Objekt, einschließlich potenziell andere Felder in der Definition neben den Schlüsselfeldern an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImplInitialize">
+      <MemberSignature Language="C#" Value="protected virtual bool ImplInitialize (string[] fields, Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[] orderby);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ImplInitialize(string[] fields, class Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[] orderby) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ImplInitialize(System.String[],Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fields" Type="System.String[]" />
+        <Parameter Name="orderby" Type="Microsoft.SqlServer.Management.Sdk.Sfc.OrderBy[]" />
+      </Parameters>
+      <Docs>
+        <param name="fields">Muss hinzugefügt werden.</param>
+        <param name="orderby">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (bool allProperties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(bool allProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Initialize(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allProperties" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="allProperties">Muss hinzugefügt werden.</param>
+        <summary>
+            Initialisiert das Objekt, durch dessen Eigenschaften aus dem Enumerator lesen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCollectionDirty">
+      <MemberSignature Language="C#" Value="protected static bool IsCollectionDirty (System.Collections.ICollection col);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool IsCollectionDirty(class System.Collections.ICollection col) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.IsCollectionDirty(System.Collections.ICollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="col" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="col">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpressSku">
+      <MemberSignature Language="C#" Value="public bool IsExpressSku ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsExpressSku() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.IsExpressSku" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt zurück, ob der Server, die dieses Objekt enthält eine Express-SKU ist
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsObjectDirty">
+      <MemberSignature Language="C#" Value="protected virtual bool IsObjectDirty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsObjectDirty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.IsObjectDirty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsObjectInitialized">
+      <MemberSignature Language="C#" Value="protected bool IsObjectInitialized ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance bool IsObjectInitialized() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.IsObjectInitialized" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsObjectInSpace">
+      <MemberSignature Language="C#" Value="protected bool IsObjectInSpace ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance bool IsObjectInSpace() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.IsObjectInSpace" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupportedOnSqlAzure">
+      <MemberSignature Language="C#" Value="public static bool IsSupportedOnSqlAzure (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSupportedOnSqlAzure(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.IsSupportedOnSqlAzure(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+        </param>
+        <summary>
+            Gibt zurück, ob ein Smo-Objekttyp auf Microsoft Azure SQL-Datenbank unterstützt wird.
+            </summary>
+        <returns />
+        <remarks>Dies ist für die interne Verwendung von SQL und möglicherweise nicht ordnungsgemäß ausgeführt werden, wenn andernfalls verwendet</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupportedProperty">
+      <MemberSignature Language="C#" Value="public bool IsSupportedProperty (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsSupportedProperty(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.IsSupportedProperty(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Zu überprüfende Eigenschaft</param>
+        <summary>
+            Überprüfen Sie, ob die angegebene Eigenschaft in den aktuellen Server-Umgebung unterstützt wird
+            </summary>
+        <returns>"True", wenn unterstützt, "false" andernfalls</returns>
+        <remarks>
+            Dies ist für die interne Verwendung von SQL und möglicherweise nicht ordnungsgemäß ausgeführt werden, wenn andernfalls verwendet
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTouched">
+      <MemberSignature Language="C#" Value="protected bool IsTouched { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTouched" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SqlSmoObject.IsTouched" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, ob das Objekt berührten wurde für bedingungslose Skripts mit Alter
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVersion80SP3">
+      <MemberSignature Language="C#" Value="protected bool IsVersion80SP3 ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsVersion80SP3() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.IsVersion80SP3" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVersion90AndAbove">
+      <MemberSignature Language="C#" Value="protected bool IsVersion90AndAbove ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsVersion90AndAbove() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.IsVersion90AndAbove" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_ExtendedProperties">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Smo.ExtendedPropertyCollection m_ExtendedProperties;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.SqlServer.Management.Smo.ExtendedPropertyCollection m_ExtendedProperties" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.SqlSmoObject.m_ExtendedProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ExtendedPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeSqlString">
+      <MemberSignature Language="C#" Value="public static string MakeSqlString (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeSqlString(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.MakeSqlString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">
+        </param>
+        <summary>
+            Gibt eine vollständig mit Escapezeichen SQL-Zeichenfolge in der SQL Zeichenfolge einfache Anführungszeichen eingeschlossen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkDropped">
+      <MemberSignature Language="C#" Value="protected virtual void MarkDropped ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void MarkDropped() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.MarkDropped" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkForDropImpl">
+      <MemberSignature Language="C#" Value="protected void MarkForDropImpl (bool dropOnAlter);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void MarkForDropImpl(bool dropOnAlter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.MarkForDropImpl(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dropOnAlter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dropOnAlter">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.Discover">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.List&lt;object&gt; IAlienObject.Discover ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;object&gt; Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.Discover() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Microsoft#SqlServer#Management#Sdk#Sfc#IAlienObject#Discover" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.GetDomainRoot">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite IAlienObject.GetDomainRoot ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.GetDomainRoot() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Microsoft#SqlServer#Management#Sdk#Sfc#IAlienObject#GetDomainRoot" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.GetParent">
+      <MemberSignature Language="C#" Value="object IAlienObject.GetParent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.GetParent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Microsoft#SqlServer#Management#Sdk#Sfc#IAlienObject#GetParent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.GetPropertyType">
+      <MemberSignature Language="C#" Value="Type IAlienObject.GetPropertyType (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.GetPropertyType(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Microsoft#SqlServer#Management#Sdk#Sfc#IAlienObject#GetPropertyType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">
+        </param>
+        <summary>
+            Ermittelt Abstürze vom Typ der Eigenschaft an.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.GetPropertyValue">
+      <MemberSignature Language="C#" Value="object IAlienObject.GetPropertyValue (string propertyName, Type propertyType);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.GetPropertyValue(string propertyName, class System.Type propertyType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Microsoft#SqlServer#Management#Sdk#Sfc#IAlienObject#GetPropertyValue(System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">
+        </param>
+        <param name="propertyType">Muss hinzugefügt werden.</param>
+        <summary>
+            Ruft die Wert für eine bestimmte Eigenschaft ab. Löst aus, wenn die Eigenschaft nicht gefunden wird.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.GetUrn">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.Urn IAlienObject.GetUrn ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.Urn Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.GetUrn() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Microsoft#SqlServer#Management#Sdk#Sfc#IAlienObject#GetUrn" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Urn</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.Resolve">
+      <MemberSignature Language="C#" Value="object IAlienObject.Resolve (string urnString);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.Resolve(string urnString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Microsoft#SqlServer#Management#Sdk#Sfc#IAlienObject#Resolve(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urnString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="urnString">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.SetObjectState">
+      <MemberSignature Language="C#" Value="void IAlienObject.SetObjectState (Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState state);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.SetObjectState(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Microsoft#SqlServer#Management#Sdk#Sfc#IAlienObject#SetObjectState(Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState" />
+      </Parameters>
+      <Docs>
+        <param name="state">
+        </param>
+        <summary>
+            Legt-Status, der dieses Objekt basierend auf bereitgestellten SfcObjectState.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.SetPropertyValue">
+      <MemberSignature Language="C#" Value="void IAlienObject.SetPropertyValue (string propertyName, Type propertyType, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.IAlienObject.SetPropertyValue(string propertyName, class System.Type propertyType, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Microsoft#SqlServer#Management#Sdk#Sfc#IAlienObject#SetPropertyValue(System.String,System.Type,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">
+        </param>
+        <param name="propertyType">Muss hinzugefügt werden.</param>
+        <param name="value">
+        </param>
+        <summary>
+            Legt den Wert der angegebenen Eigenschaft, wenn geschrieben werden kann. Wenn die Eigenschaft nicht in der Eigenschaftensammlung vorhanden ist, wird die Reflektion verwendet.
+Löst die Ausnahme aus, wenn die Eigenschaft nicht gefunden wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertyProvider.GetPropertySet">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet ISfcPropertyProvider.GetPropertySet ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertyProvider.GetPropertySet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcPropertyProvider#GetPropertySet" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectInSpace">
+      <MemberSignature Language="C#" Value="protected bool ObjectInSpace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ObjectInSpace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ObjectInSpace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostAlter">
+      <MemberSignature Language="C#" Value="protected virtual void PostAlter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PostAlter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.PostAlter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Diese Funktion soll von abgeleiteten Klassen überschrieben werden besäßen sie supplimentary Aktionen ausführen, nachdem das Objekt ändern
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostCreate">
+      <MemberSignature Language="C#" Value="protected virtual void PostCreate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PostCreate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.PostCreate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Diese Funktion soll von abgeleiteten Klassen überschrieben werden besäßen sie supplimentary Aktionen nach der Erstellung
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostDrop">
+      <MemberSignature Language="C#" Value="protected virtual void PostDrop ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PostDrop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.PostDrop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Diese Funktion soll von abgeleiteten Klassen überschrieben werden besäßen sie supplimentary Aktionen ausführen, nachdem das Objekt löschen
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.SqlPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.SqlPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.SqlPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.SqlSmoObject.PropertyChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyMetadataChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcPropertyMetadataChangedEventArgs&gt; PropertyMetadataChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.SfcPropertyMetadataChangedEventArgs&gt; PropertyMetadataChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.SqlSmoObject.PropertyMetadataChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcPropertyMetadataChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuoteString">
+      <MemberSignature Language="C#" Value="public static string QuoteString (string name, char cStart = ''', char cEnd = ''');" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string QuoteString(string name, char cStart, char cEnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.QuoteString(System.String,System.Char,System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cStart" Type="System.Char" />
+        <Parameter Name="cEnd" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="name">zum Einschließen von Namen</param>
+        <param name="cStart">Starten Sie zum Einschließen von Trennzeichen</param>
+        <param name="cEnd">Trennzeichen für eine einschließende beenden</param>
+        <summary>
+            Einschließen von Namen mit Trennzeichen zurück
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public virtual void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+             aktualisiert die Eigenschaften des Objekts, indem sie vom Server gelesen werden
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScalarResult">
+      <MemberSignature Language="C#" Value="protected object[] ScalarResult { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object[] ScalarResult" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ScalarResult" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptImpl">
+      <MemberSignature Language="C#" Value="protected System.Collections.Specialized.StringCollection ScriptImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Collections.Specialized.StringCollection ScriptImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ScriptImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptImpl">
+      <MemberSignature Language="C#" Value="protected System.Collections.Specialized.StringCollection ScriptImpl (Microsoft.SqlServer.Management.Smo.ScriptingOptions so);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Collections.Specialized.StringCollection ScriptImpl(class Microsoft.SqlServer.Management.Smo.ScriptingOptions so) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ScriptImpl(Microsoft.SqlServer.Management.Smo.ScriptingOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="so" Type="Microsoft.SqlServer.Management.Smo.ScriptingOptions" />
+      </Parameters>
+      <Docs>
+        <param name="so">
+        </param>
+        <summary>
+            Ein StringCollection-Objekt, mit dem Skript für das Objekt zurückgegeben. Diese Methode löst einen Fehler aus, wenn ScriptData "true" ist.
+            </summary>
+        <returns>StringCollection-Objekt, mit dem Skript für das Objekt</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.Smo.FailedOperationException">Wenn Options.ScriptData "true" ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAccessToken">
+      <MemberSignature Language="C#" Value="public void SetAccessToken (Microsoft.SqlServer.Management.Common.IRenewableToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessToken(class Microsoft.SqlServer.Management.Common.IRenewableToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.SetAccessToken(Microsoft.SqlServer.Management.Common.IRenewableToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="Microsoft.SqlServer.Management.Common.IRenewableToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">Muss hinzugefügt werden.</param>
+        <summary>
+            Legen Sie die AccessToken für die Verbindung an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParentImpl">
+      <MemberSignature Language="C#" Value="protected void SetParentImpl (Microsoft.SqlServer.Management.Smo.SqlSmoObject newParent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void SetParentImpl(class Microsoft.SqlServer.Management.Smo.SqlSmoObject newParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.SetParentImpl(Microsoft.SqlServer.Management.Smo.SqlSmoObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newParent" Type="Microsoft.SqlServer.Management.Smo.SqlSmoObject" />
+      </Parameters>
+      <Docs>
+        <param name="newParent">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="singletonParent">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Smo.SqlSmoObject singletonParent;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.SqlServer.Management.Smo.SqlSmoObject singletonParent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.SqlSmoObject.singletonParent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.SqlSmoObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Reguläre SMO-Objekte auf den übergeordneten Klassenverweis über ParentColl (entsprechende Auflistung im übergeordneten Klasse) zugreifen.
+Singleton-Klasse hat keine Auflistung im übergeordneten Element.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlString">
+      <MemberSignature Language="C#" Value="public static string SqlString (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string SqlString(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.SqlString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">
+        </param>
+        <summary>
+            Umgeht alle einfachen Anführungszeichen in einer Zeichenfolge
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfAboveVersion100">
+      <MemberSignature Language="C#" Value="protected void ThrowIfAboveVersion100 (string exceptionMessage = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfAboveVersion100(string exceptionMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfAboveVersion100(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionMessage">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, wenn die Hauptversion der ServerVersion für dieses Objekt über 10.0 (SQL 2008) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfAboveVersion80">
+      <MemberSignature Language="C#" Value="protected void ThrowIfAboveVersion80 (string exceptionMessage = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfAboveVersion80(string exceptionMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfAboveVersion80(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionMessage">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, wenn die Hauptversion der ServerVersion für dieses Objekt über 8.0 (SQL 2000) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion100">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion100 (string exceptionMessage = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion100(string exceptionMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion100(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionMessage">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, wenn die Hauptversion der ServerVersion für dieses Objekt unter 10.0 (SQL 2008) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion110">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion110 (string exceptionMessage = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion110(string exceptionMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion110(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionMessage">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst ein UnsupportedVersionException aus, wenn entweder die Quell-oder Zielserver unter 11.0 (SQL 2012) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion110Prop">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion110Prop (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion110Prop(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion110Prop(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, mit Text, die besagt, dass die angegebene Eigenschaft nicht unterstützt wird, wenn die Hauptversion der ServerVersion für dieses Objekt unter 11.0 (SQL 2012) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion120">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion120 (string exceptionMessage = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion120(string exceptionMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion120(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionMessage">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, wenn die Hauptversion der ServerVersion für dieses Objekt unter 12.0 (SQL 2014) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion120Prop">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion120Prop (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion120Prop(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion120Prop(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, mit Text, die besagt, dass die angegebene Eigenschaft nicht unterstützt wird, wenn die Hauptversion der ServerVersion für dieses Objekt unter 12.0 (SQL 2014) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion130">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion130 (string exceptionMessage = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion130(string exceptionMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion130(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionMessage">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, wenn die Hauptversion der ServerVersion für dieses Objekt unter 13.0 (SQL 2016) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion130Prop">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion130Prop (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion130Prop(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion130Prop(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, mit Text, die besagt, dass die angegebene Eigenschaft nicht unterstützt wird, wenn die Hauptversion der ServerVersion für dieses Objekt unter 13.0 (SQL 2016) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion140">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion140 (string exceptionMessage = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion140(string exceptionMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion140(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionMessage">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, wenn die Hauptversion der ServerVersion für dieses Objekt unter 14.0 (SQL 2017) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion140Prop">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion140Prop (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion140Prop(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion140Prop(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, mit Text, die besagt, dass die angegebene Eigenschaft nicht unterstützt wird, wenn die Hauptversion der ServerVersion für dieses Objekt unter 14.0 (SQL 2017) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion80">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion80 (string exceptionMessage = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion80(string exceptionMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion80(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionMessage">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, wenn die Hauptversion der ServerVersion für dieses Objekt unter 8.0 (SQL 2000) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion80SP3">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion80SP3 ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion80SP3() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion80SP3" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Löst eine Ausnahme aus, wenn die ServerVersion für dieses Objekt unter 8.760 (8.0 SP3) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfBelowVersion90">
+      <MemberSignature Language="C#" Value="protected void ThrowIfBelowVersion90 (string exceptionMessage = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfBelowVersion90(string exceptionMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ThrowIfBelowVersion90(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionMessage">Muss hinzugefügt werden.</param>
+        <summary>
+            Löst eine Ausnahme aus, wenn die Hauptversion der ServerVersion für dieses Objekt unter 9.0 (SQL 2005) liegt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TouchImpl">
+      <MemberSignature Language="C#" Value="protected virtual void TouchImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TouchImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.TouchImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Virtuelle Methode, die abgeleitete Klassen zusätzliche Arbeit leisten, wenn berührt werden können.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trace">
+      <MemberSignature Language="C#" Value="protected static void Trace (string traceText);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig void Trace(string traceText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Trace(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="traceText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="traceText">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnbindDefaultImpl">
+      <MemberSignature Language="C#" Value="protected void UnbindDefaultImpl (bool bindColumns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UnbindDefaultImpl(bool bindColumns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.UnbindDefaultImpl(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindColumns" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bindColumns">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnbindRuleImpl">
+      <MemberSignature Language="C#" Value="protected void UnbindRuleImpl (bool bindColumns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UnbindRuleImpl(bool bindColumns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.UnbindRuleImpl(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindColumns" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bindColumns">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateCollectionState2">
+      <MemberSignature Language="C#" Value="protected static void UpdateCollectionState2 (System.Collections.ICollection col);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblystatic hidebysig void UpdateCollectionState2(class System.Collections.ICollection col) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.SqlSmoObject.UpdateCollectionState2(System.Collections.ICollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="col" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="col">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Urn">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.Urn Urn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.Urn Urn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.SqlSmoObject.Urn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Urn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den Urn des Objekts, auf einfache Weise berechnet
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

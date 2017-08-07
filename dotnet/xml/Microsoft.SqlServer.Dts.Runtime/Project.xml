@@ -1,0 +1,827 @@
+<Type Name="Project" FullName="Microsoft.SqlServer.Dts.Runtime.Project">
+  <TypeSignature Language="C#" Value="public sealed class Project : Microsoft.SqlServer.Dts.Runtime.DtsObject, IDisposable, System.ComponentModel.IComponent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Project extends Microsoft.SqlServer.Dts.Runtime.DtsObject implements class System.ComponentModel.IComponent, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Project" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DtsObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.IComponent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt die Integration Services-Projekt, das Pakete und Parameter enthält.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConnectionManagerItems">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems ConnectionManagerItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems ConnectionManagerItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.ConnectionManagerItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.ConnectionManagerItems</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Verbindungs-Manager-Elemente des Projekts ab. Die Verbindungs-Manager werden von allen Paketen gemeinsam verwendet.</summary>
+        <value>Die Verbindungs-Manager-Elemente des Projekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project CreateProject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project CreateProject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.CreateProject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Erstellt ein neues Integration Services-Projekt.</summary>
+        <returns>Ein neues Integration Services-Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project CreateProject (System.IO.Stream projectStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project CreateProject(class System.IO.Stream projectStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.CreateProject(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="projectStream">Der E/A-Datenstrom, für den das Projekt erstellt wird.</param>
+        <summary>Erstellt ein neues Projekt für einen angegebenen E/A-Datenstrom.</summary>
+        <returns>Ein neu erstelltes-Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project CreateProject (string projectFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project CreateProject(string projectFileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.CreateProject(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFileName">Der Projektdateipfad.</param>
+        <summary>Erstellt ein neues Projekt in der angegebenen Datei.</summary>
+        <returns>Ein neu erstelltes-Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreationDate">
+      <MemberSignature Language="C#" Value="public DateTimeOffset CreationDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset CreationDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.CreationDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft das Datum und die Uhrzeit der Projekterstellung ab oder legt diesen Zeitpunkt fest.</summary>
+        <value>Das Datum und die Uhrzeit der Projekterstellung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatorComputerName">
+      <MemberSignature Language="C#" Value="public string CreatorComputerName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatorComputerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.CreatorComputerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Computers ab, auf dem das Projekt erstellt wurde, oder legt ihn fest.</summary>
+        <value>Der Computername.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatorName">
+      <MemberSignature Language="C#" Value="public string CreatorName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatorName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.CreatorName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Person ab, die das Projekt erstellt hat, oder legt ihn fest.</summary>
+        <value>Der Name der Person, die das Projekt erstellt hat.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Beschreibung der <see cref="T:Microsoft.SqlServer.Dts.Runtime.Project" /> Objekt.</summary>
+        <value>Die Beschreibung der <see cref="T:Microsoft.SqlServer.Dts.Runtime.Project" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt alle Ressourcen, die von der aktuellen Instanz von verwendet die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Project" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disposed">
+      <MemberSignature Language="C#" Value="public event EventHandler Disposed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Dts.Runtime.Project.Disposed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Tritt auf, wenn die Komponente von einem Aufruf der Dispose-Methode verworfen wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Events">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.IDTSEvents Events { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.IDTSEvents Events" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.Events" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.IDTSEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legt die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> Schnittstelle, um verschiedene Ereignisse abzurufen.</summary>
+        <value>Legt die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />-Schnittstelle fest, um verschiedene Ereignisse abzurufen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatVersion">
+      <MemberSignature Language="C#" Value="public int FormatVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FormatVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.FormatVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Formatversion des Projekts ab.</summary>
+        <value>Die Formatversion.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public string ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Projekt-ID ab, die eine GUID ist.</summary>
+        <value>Die Projekt-ID.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Projekts ab oder legt ihn fest.</summary>
+        <value>Der Name des Projekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfflineMode">
+      <MemberSignature Language="C#" Value="public bool OfflineMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OfflineMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.OfflineMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob das Projekt sich im Offlinemodus befindet, oder legt ihn fest.</summary>
+        <value>True, wenn das Projekt sich im Offlinemodus befindet. andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project OpenProject (System.IO.Stream projectStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project OpenProject(class System.IO.Stream projectStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.OpenProject(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="projectStream">Der EA-Datenstrom, für den das Projekt geöffnet wird.</param>
+        <summary>
+            Öffnen Sie ein Projekt aus einem e/a-Datenstrom.
+            </summary>
+        <returns>Ein geöffnetes Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project OpenProject (string projectFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project OpenProject(string projectFileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.OpenProject(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFileName">Gibt die Projektdateipfad an.</param>
+        <summary>
+            Öffnen Sie ein vorhandenes Projekt im angegebenen Pfad.
+            </summary>
+        <returns>Ein geöffnetes Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project OpenProject (System.IO.Stream projectStream, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project OpenProject(class System.IO.Stream projectStream, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.OpenProject(System.IO.Stream,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectStream" Type="System.IO.Stream" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="projectStream">Der EA-Datenstrom, für den das Projekt geöffnet wird.</param>
+        <param name="events">Eine IDTSEvents-Schnittstelle zum Empfangen von Ereignissen.</param>
+        <summary>
+            Öffnen Sie ein Projekt im angegebenen Pfad, einen Ereignislistener für das Empfangen von Ereignissen angeben.
+            </summary>
+        <returns>Ein geöffnetes Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project OpenProject (System.IO.Stream projectStream, string projectPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project OpenProject(class System.IO.Stream projectStream, string projectPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.OpenProject(System.IO.Stream,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectStream" Type="System.IO.Stream" />
+        <Parameter Name="projectPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectStream">Der EA-Datenstrom, für den das Projekt geöffnet wird.</param>
+        <param name="projectPassword">Stellt Projektkennwort bereit.</param>
+        <summary>
+            Öffnen Sie ein Projekt kennwortgeschützt, im angegebenen Pfad.
+            </summary>
+        <returns>Ein geöffnetes Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project OpenProject (string projectFileName, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project OpenProject(string projectFileName, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.OpenProject(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFileName" Type="System.String" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="projectFileName">Gibt die Projektdateipfad an</param>
+        <param name="events">Eine IDTSEvents-Schnittstelle zum Empfangen von Ereignissen.</param>
+        <summary>
+            Öffnen Sie ein Projekt im angegebenen Pfad, einen Ereignislistener für das Empfangen von Ereignissen angeben.
+            </summary>
+        <returns>Ein geöffnetes Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project OpenProject (string projectFileName, string projectPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project OpenProject(string projectFileName, string projectPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.OpenProject(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFileName" Type="System.String" />
+        <Parameter Name="projectPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFileName">Gibt die Projektdateipfad an.</param>
+        <param name="projectPassword">Stellt Projektkennwort bereit.</param>
+        <summary>
+            Öffnen Sie ein Projekt kennwortgeschützt, im angegebenen Pfad.
+            </summary>
+        <returns>Ein geöffnetes Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project OpenProject (System.IO.Stream projectStream, string projectPassword, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project OpenProject(class System.IO.Stream projectStream, string projectPassword, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.OpenProject(System.IO.Stream,System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectStream" Type="System.IO.Stream" />
+        <Parameter Name="projectPassword" Type="System.String" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="projectStream">Der EA-Datenstrom, für den das Projekt geöffnet wird.</param>
+        <param name="projectPassword">Stellt Projektkennwort bereit.</param>
+        <param name="events">Eine IDTSEvents-Schnittstelle zum Empfangen von Ereignissen.</param>
+        <summary>
+            Öffnen Sie ein Projekt kennwortgeschützt, aus einem e/a-Datenstrom, der einen Ereignislistener für das Empfangen von Ereignissen angeben.
+            </summary>
+        <returns>Ein geöffnetes Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project OpenProject (string projectFileName, string projectPassword, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project OpenProject(string projectFileName, string projectPassword, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.OpenProject(System.String,System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFileName" Type="System.String" />
+        <Parameter Name="projectPassword" Type="System.String" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="projectFileName">Gibt die Projektdateipfad an.</param>
+        <param name="projectPassword">Stellt Projektkennwort bereit.</param>
+        <param name="events">Eine IDTSEvents-Schnittstelle zum Empfangen von Ereignissen.</param>
+        <summary>
+            Öffnen Sie ein Projekt kennwortgeschützt, in dem angegebenen Pfad, der einen Ereignislistener für das Empfangen von Ereignissen angeben.
+            </summary>
+        <returns>Ein geöffnetes Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project OpenProject (System.IO.Stream projectStream, Microsoft.SqlServer.Dts.Runtime.Project.AccessMode accessMode, string projectPassword, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project OpenProject(class System.IO.Stream projectStream, valuetype Microsoft.SqlServer.Dts.Runtime.Project/AccessMode accessMode, string projectPassword, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.OpenProject(System.IO.Stream,Microsoft.SqlServer.Dts.Runtime.Project.AccessMode,System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectStream" Type="System.IO.Stream" />
+        <Parameter Name="accessMode" Type="Microsoft.SqlServer.Dts.Runtime.Project+AccessMode" />
+        <Parameter Name="projectPassword" Type="System.String" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="projectStream">Der EA-Datenstrom, für den das Projekt geöffnet wird.</param>
+        <param name="accessMode">Der gewünschte Zugriff für das Öffnen des Projekts.</param>
+        <param name="projectPassword">Stellt Projektkennwort bereit.</param>
+        <param name="events">Eine IDTSEvents-Schnittstelle zum Empfangen von Ereignissen.</param>
+        <summary>
+            Öffnen Sie ein Projekt kennwortgeschützt, aus einem e/a-Datenstrom, der einen Ereignislistener für das Empfangen von Ereignissen angeben.
+            </summary>
+        <returns>Ein geöffnetes Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProject">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.Project OpenProject (string projectFileName, Microsoft.SqlServer.Dts.Runtime.Project.AccessMode accessMode, string projectPassword, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.Project OpenProject(string projectFileName, valuetype Microsoft.SqlServer.Dts.Runtime.Project/AccessMode accessMode, string projectPassword, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.OpenProject(System.String,Microsoft.SqlServer.Dts.Runtime.Project.AccessMode,System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Project</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFileName" Type="System.String" />
+        <Parameter Name="accessMode" Type="Microsoft.SqlServer.Dts.Runtime.Project+AccessMode" />
+        <Parameter Name="projectPassword" Type="System.String" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="projectFileName">Gibt die Projektdateipfad an.</param>
+        <param name="accessMode">Der gewünschte Zugriff für das Öffnen des Projekts.</param>
+        <param name="projectPassword">Stellt Projektkennwort bereit.</param>
+        <param name="events">Eine IDTSEvents-Schnittstelle zum Empfangen von Ereignissen.</param>
+        <summary>
+            Öffnen Sie ein Projekt kennwortgeschützt, in dem angegebenen Pfad, der einen Ereignislistener für das Empfangen von Ereignissen angeben.
+            </summary>
+        <returns>Ein geöffnetes Projekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PackageItems">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.PackageItems PackageItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.PackageItems PackageItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.PackageItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.PackageItems</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung der Paketelemente für das Projekt ab.</summary>
+        <value>Die Auflistung der Paketelemente.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Parameters Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Parameters Parameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Parameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung der Projektparameter ab.</summary>
+        <value>Die Auflistung der Projektparameter.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Password">
+      <MemberSignature Language="C#" Value="public string Password { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Password" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.Password" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legt das Kennwort fest, das verwendet wird, um Projekte und Pakete zu verschlüsseln oder zu entschlüsseln.</summary>
+        <value>Das Kennwort, das verwendet wird, um Projekte und Pakete zu verschlüsseln oder zu entschlüsseln.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel ProtectionLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel ProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.ProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Schutzebene für das Projekt ab oder legt sie fest.</summary>
+        <value>Die Schutzebene des Projekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.Save" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Speichert das Projekt im entsprechenden Speicher. <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsException" />wird ausgelöst, wenn das Projekt entsprechenden Speicher hat.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAs">
+      <MemberSignature Language="C#" Value="public void SaveAs (System.IO.Stream projectStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(class System.IO.Stream projectStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.SaveAs(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="projectStream">Gibt e/a-Datenstrom, in dem das Projekt gespeichert.</param>
+        <summary>
+            Speichert das Projekt im angegebenen EA-Datenstrom. Der angegebene Datenstrom wird der Projektspeicher. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAs">
+      <MemberSignature Language="C#" Value="public void SaveAs (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAs(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.SaveAs(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Gibt die Datei an, in der das Projekt gespeichert werden soll.</param>
+        <summary>
+            Speichern Sie das Projekt im angegebenen Speicher. Die angegebene Datei wird der Speicher für das Projekt, wenn das Speichern erfolgreich ist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveTo">
+      <MemberSignature Language="C#" Value="public void SaveTo (System.IO.Stream projectStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveTo(class System.IO.Stream projectStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.SaveTo(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="projectStream">Gibt e/a-Datenstrom, in dem das Projekt gespeichert.</param>
+        <summary>
+            Speichert das Projekt im angegebenen EA-Datenstrom. Im Gegensatz zu speichern wird die Projektspeicher nach dem Speichern nicht geändert.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveTo">
+      <MemberSignature Language="C#" Value="public void SaveTo (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveTo(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Project.SaveTo(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Gibt die Datei an, in der das Projekt gespeichert werden soll.</param>
+        <summary>
+            Speichern Sie das Projekt in der angegebenen Datei. Im Gegensatz zu speichern wird die Projektspeicher nach dem Speichern nicht geändert.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Site">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.ISite Site { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.Site" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ISite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die ISite ab, die dem Parameterobjekt zugeordnet ist, oder legt sie fest.</summary>
+        <value>Die ISite, die dem Parameterobjekt zugeordnet ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetServerVersion">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSTargetServerVersion TargetServerVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSTargetServerVersion TargetServerVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.TargetServerVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSTargetServerVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionBuild">
+      <MemberSignature Language="C#" Value="public int VersionBuild { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VersionBuild" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.VersionBuild" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Buildversion des Projekts ab oder legt sie fest.</summary>
+        <value>Die Buildversion des Projekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionComments">
+      <MemberSignature Language="C#" Value="public string VersionComments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VersionComments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.VersionComments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die dem Projekt zugeordneten Kommentare ab oder legt sie fest.</summary>
+        <value>Die dem Projekt zugeordneten Kommentare.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionMajor">
+      <MemberSignature Language="C#" Value="public int VersionMajor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VersionMajor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.VersionMajor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Hauptbuildversion des Projekts ab oder legt sie fest.</summary>
+        <value>Die Hauptbuildversion des Projekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionMinor">
+      <MemberSignature Language="C#" Value="public int VersionMinor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VersionMinor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Project.VersionMinor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Nebenbuildversion des Projekts ab oder legt sie fest.</summary>
+        <value>Die Nebenbuildversion des Projekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

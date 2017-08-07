@@ -1,0 +1,98 @@
+<Type Name="IDtsTaskUI" FullName="Microsoft.SqlServer.Dts.Runtime.Design.IDtsTaskUI">
+  <TypeSignature Language="C#" Value="public interface IDtsTaskUI" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDtsTaskUI" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Design.IDtsTaskUI" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dts.Design</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert die Auflistung von Methoden und Eigenschaften, die vom SSIS-Designer aufgerufen werden, um die mit einem Task verbundene Benutzeroberfläche zu initialisieren und anzuzeigen.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete (System.Windows.Forms.IWin32Window parentWindow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete(class System.Windows.Forms.IWin32Window parentWindow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsTaskUI.Delete(System.Windows.Forms.IWin32Window)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentWindow" Type="System.Windows.Forms.IWin32Window" />
+      </Parameters>
+      <Docs>
+        <param name="parentWindow">Der Name des übergeordneten Fensters.</param>
+        <summary>Löscht einen vorhandenen Task aus dem Paket.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetView">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ContainerControl GetView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ContainerControl GetView() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsTaskUI.GetView" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ContainerControl</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die anzuzeigende Benutzeroberfläche ab. Diese Methode wird vom Client aufgerufen.</summary>
+        <returns>Die anzuzeigende Benutzeroberfläche.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (Microsoft.SqlServer.Dts.Runtime.TaskHost taskHost, IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.SqlServer.Dts.Runtime.TaskHost taskHost, class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsTaskUI.Initialize(Microsoft.SqlServer.Dts.Runtime.TaskHost,System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskHost" Type="Microsoft.SqlServer.Dts.Runtime.TaskHost" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="taskHost">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.TaskHost" /> des Tasks.</param>
+        <param name="serviceProvider">Die vom Designer bereitgestellte http://go.microsoft.com/fwlink/?LinkId=33994 IServiceProvider-Schnittstelle.</param>
+        <summary>Ordnet eine Benutzeroberfläche dem zugehörigen Task zu. Wird vom Client aufgerufen; dies ist normalerweise die Designer-Anwendung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public void New (System.Windows.Forms.IWin32Window parentWindow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void New(class System.Windows.Forms.IWin32Window parentWindow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsTaskUI.New(System.Windows.Forms.IWin32Window)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentWindow" Type="System.Windows.Forms.IWin32Window" />
+      </Parameters>
+      <Docs>
+        <param name="parentWindow">Der Name des übergeordneten Fensters.</param>
+        <summary>Fügt einem Paket einen neuen Task hinzu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

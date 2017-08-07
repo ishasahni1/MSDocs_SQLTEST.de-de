@@ -1,0 +1,477 @@
+<Type Name="Scripter" FullName="Microsoft.SqlServer.Management.Smo.Scripter">
+  <TypeSignature Language="C#" Value="public class Scripter : Microsoft.SqlServer.Management.Smo.DependencyWalker" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Scripter extends Microsoft.SqlServer.Management.Smo.DependencyWalker" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.Scripter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Smo.DependencyWalker</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Instanz der Klasse kapselnden Scripter-Objekts
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scripter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scripter (Microsoft.SqlServer.Management.Smo.Server svr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Server svr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.#ctor(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="svr" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="svr">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumDependencies">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Smo.UrnCollection EnumDependencies (Microsoft.SqlServer.Management.Smo.SqlSmoObject smoObject, Microsoft.SqlServer.Management.Smo.DependencyType dependencyType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Smo.UrnCollection EnumDependencies(class Microsoft.SqlServer.Management.Smo.SqlSmoObject smoObject, valuetype Microsoft.SqlServer.Management.Smo.DependencyType dependencyType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.EnumDependencies(Microsoft.SqlServer.Management.Smo.SqlSmoObject,Microsoft.SqlServer.Management.Smo.DependencyType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.UrnCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="smoObject" Type="Microsoft.SqlServer.Management.Smo.SqlSmoObject" />
+        <Parameter Name="dependencyType" Type="Microsoft.SqlServer.Management.Smo.DependencyType" />
+      </Parameters>
+      <Docs>
+        <param name="smoObject">
+        </param>
+        <param name="dependencyType">
+        </param>
+        <summary>
+            Liste der Urns in der Reihenfolge, in der die Objekte bzw. gelöschten erstellt werden müssen
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumScript">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; EnumScript (Microsoft.SqlServer.Management.Sdk.Sfc.Urn[] urns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumScript(class Microsoft.SqlServer.Management.Sdk.Sfc.Urn[] urns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.EnumScript(Microsoft.SqlServer.Management.Sdk.Sfc.Urn[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urns" Type="Microsoft.SqlServer.Management.Sdk.Sfc.Urn[]" />
+      </Parameters>
+      <Docs>
+        <param name="urns">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumScript">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; EnumScript (Microsoft.SqlServer.Management.Smo.SqlSmoObject[] objects);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumScript(class Microsoft.SqlServer.Management.Smo.SqlSmoObject[] objects) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.EnumScript(Microsoft.SqlServer.Management.Smo.SqlSmoObject[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objects" Type="Microsoft.SqlServer.Management.Smo.SqlSmoObject[]" />
+      </Parameters>
+      <Docs>
+        <param name="objects">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumScript">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; EnumScript (Microsoft.SqlServer.Management.Smo.UrnCollection list);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumScript(class Microsoft.SqlServer.Management.Smo.UrnCollection list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.EnumScript(Microsoft.SqlServer.Management.Smo.UrnCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="list" Type="Microsoft.SqlServer.Management.Smo.UrnCollection" />
+      </Parameters>
+      <Docs>
+        <param name="list">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumScriptWithList">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; EnumScriptWithList (Microsoft.SqlServer.Management.Sdk.Sfc.Urn[] urns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumScriptWithList(class Microsoft.SqlServer.Management.Sdk.Sfc.Urn[] urns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.EnumScriptWithList(Microsoft.SqlServer.Management.Sdk.Sfc.Urn[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urns" Type="Microsoft.SqlServer.Management.Sdk.Sfc.Urn[]" />
+      </Parameters>
+      <Docs>
+        <param name="urns">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumScriptWithList">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; EnumScriptWithList (Microsoft.SqlServer.Management.Smo.DependencyCollection depList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumScriptWithList(class Microsoft.SqlServer.Management.Smo.DependencyCollection depList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.EnumScriptWithList(Microsoft.SqlServer.Management.Smo.DependencyCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="depList" Type="Microsoft.SqlServer.Management.Smo.DependencyCollection" />
+      </Parameters>
+      <Docs>
+        <param name="depList">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumScriptWithList">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; EnumScriptWithList (Microsoft.SqlServer.Management.Smo.SqlSmoObject[] objects);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumScriptWithList(class Microsoft.SqlServer.Management.Smo.SqlSmoObject[] objects) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.EnumScriptWithList(Microsoft.SqlServer.Management.Smo.SqlSmoObject[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objects" Type="Microsoft.SqlServer.Management.Smo.SqlSmoObject[]" />
+      </Parameters>
+      <Docs>
+        <param name="objects">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumScriptWithList">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; EnumScriptWithList (Microsoft.SqlServer.Management.Smo.UrnCollection list);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; EnumScriptWithList(class Microsoft.SqlServer.Management.Smo.UrnCollection list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.EnumScriptWithList(Microsoft.SqlServer.Management.Smo.UrnCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="list" Type="Microsoft.SqlServer.Management.Smo.UrnCollection" />
+      </Parameters>
+      <Docs>
+        <param name="list">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="protected void Init ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Init() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.Init" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ScriptingOptions Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.ScriptingOptions Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Scripter.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ScriptingOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrefetchObjects">
+      <MemberSignature Language="C#" Value="public bool PrefetchObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PrefetchObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.Scripter.PrefetchObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Script (Microsoft.SqlServer.Management.Sdk.Sfc.Urn[] urns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection Script(class Microsoft.SqlServer.Management.Sdk.Sfc.Urn[] urns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.Script(Microsoft.SqlServer.Management.Sdk.Sfc.Urn[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urns" Type="Microsoft.SqlServer.Management.Sdk.Sfc.Urn[]" />
+      </Parameters>
+      <Docs>
+        <param name="urns">Muss hinzugefügt werden.</param>
+        <summary>
+            Ein StringCollection-Objekt, mit dem Skript für die übergebenen Objekte zurückgegeben. Diese Methode löst einen Fehler aus, wenn ScriptData "true" ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.Smo.FailedOperationException">Wenn Options.ScriptData "true" ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Script (Microsoft.SqlServer.Management.Smo.SqlSmoObject[] objects);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection Script(class Microsoft.SqlServer.Management.Smo.SqlSmoObject[] objects) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.Script(Microsoft.SqlServer.Management.Smo.SqlSmoObject[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objects" Type="Microsoft.SqlServer.Management.Smo.SqlSmoObject[]" />
+      </Parameters>
+      <Docs>
+        <param name="objects">Muss hinzugefügt werden.</param>
+        <summary>
+            Ein StringCollection-Objekt, mit dem Skript für die übergebenen Objekte zurückgegeben. Diese Methode löst einen Fehler aus, wenn ScriptData "true" ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.Smo.FailedOperationException">Wenn Options.ScriptData "true" ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Script (Microsoft.SqlServer.Management.Smo.UrnCollection list);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection Script(class Microsoft.SqlServer.Management.Smo.UrnCollection list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.Script(Microsoft.SqlServer.Management.Smo.UrnCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="list" Type="Microsoft.SqlServer.Management.Smo.UrnCollection" />
+      </Parameters>
+      <Docs>
+        <param name="list">Muss hinzugefügt werden.</param>
+        <summary>
+            Ein StringCollection-Objekt, mit dem Skript für die übergebenen Objekte zurückgegeben. Diese Methode löst einen Fehler aus, wenn ScriptData "true" ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.Smo.FailedOperationException">Wenn Options.ScriptData "true" ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptingError">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Smo.ScriptingErrorEventHandler ScriptingError;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Smo.ScriptingErrorEventHandler ScriptingError" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.Scripter.ScriptingError" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ScriptingErrorEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptingProgress">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Smo.ProgressReportEventHandler ScriptingProgress;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Smo.ProgressReportEventHandler ScriptingProgress" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.Scripter.ScriptingProgress" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ProgressReportEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptWithList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection ScriptWithList (Microsoft.SqlServer.Management.Sdk.Sfc.Urn[] urns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection ScriptWithList(class Microsoft.SqlServer.Management.Sdk.Sfc.Urn[] urns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.ScriptWithList(Microsoft.SqlServer.Management.Sdk.Sfc.Urn[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urns" Type="Microsoft.SqlServer.Management.Sdk.Sfc.Urn[]" />
+      </Parameters>
+      <Docs>
+        <param name="urns">Muss hinzugefügt werden.</param>
+        <summary>
+            Ein StringCollection-Objekt, mit dem Skript für die übergebenen Objekte zurückgegeben. Diese Methode löst einen Fehler aus, wenn ScriptData "true" ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.Smo.FailedOperationException">Wenn Options.ScriptData "true" ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptWithList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection ScriptWithList (Microsoft.SqlServer.Management.Smo.DependencyCollection depList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection ScriptWithList(class Microsoft.SqlServer.Management.Smo.DependencyCollection depList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.ScriptWithList(Microsoft.SqlServer.Management.Smo.DependencyCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="depList" Type="Microsoft.SqlServer.Management.Smo.DependencyCollection" />
+      </Parameters>
+      <Docs>
+        <param name="depList">Muss hinzugefügt werden.</param>
+        <summary>
+            Ein StringCollection-Objekt, mit dem Skript für die übergebenen Objekte zurückgegeben. Diese Methode löst einen Fehler aus, wenn ScriptData "true" ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.Smo.FailedOperationException">Wenn Options.ScriptData "true" ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptWithList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection ScriptWithList (Microsoft.SqlServer.Management.Smo.SqlSmoObject[] objects);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection ScriptWithList(class Microsoft.SqlServer.Management.Smo.SqlSmoObject[] objects) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.ScriptWithList(Microsoft.SqlServer.Management.Smo.SqlSmoObject[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objects" Type="Microsoft.SqlServer.Management.Smo.SqlSmoObject[]" />
+      </Parameters>
+      <Docs>
+        <param name="objects">Muss hinzugefügt werden.</param>
+        <summary>
+            Ein StringCollection-Objekt, mit dem Skript für die übergebenen Objekte zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.Smo.FailedOperationException">Wenn Options.ScriptData "true" ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptWithList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection ScriptWithList (Microsoft.SqlServer.Management.Smo.UrnCollection list);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection ScriptWithList(class Microsoft.SqlServer.Management.Smo.UrnCollection list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.Scripter.ScriptWithList(Microsoft.SqlServer.Management.Smo.UrnCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="list" Type="Microsoft.SqlServer.Management.Smo.UrnCollection" />
+      </Parameters>
+      <Docs>
+        <param name="list">Muss hinzugefügt werden.</param>
+        <summary>
+            Ein StringCollection-Objekt, mit dem Skript für die übergebenen Objekte zurückgegeben. Diese Methode löst einen Fehler aus, wenn ScriptData "true" ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.Smo.FailedOperationException">Wenn Options.ScriptData "true" ist.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

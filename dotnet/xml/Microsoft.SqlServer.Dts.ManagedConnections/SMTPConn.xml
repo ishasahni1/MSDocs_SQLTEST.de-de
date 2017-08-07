@@ -1,0 +1,302 @@
+<Type Name="SMTPConn" FullName="Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn">
+  <TypeSignature Language="C#" Value="public class SMTPConn : Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase, Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SMTPConn extends Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase implements class Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedConnections</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Dts.Runtime.DtsConnection(ConnectionContact="Microsoft Corporation", ConnectionType="SMTP", LocalizationType=typeof(Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn), UITypeName="Microsoft.DataTransformationServices.Design.SmtpConnectionManagerUI, Microsoft.DataTransformationServices.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Enthält die von SMTP-Verbindungen verwendeten Methoden und Eigenschaften.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SMTPConn ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der SMTPConn-Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SMTPConn (string strSmtpServer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string strSmtpServer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="strSmtpServer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strSmtpServer">Eine Zeichenfolge, die den SMTP-Servernamen enthält.</param>
+        <summary>
+            Initialisiert eine neue Instanz der Klasse SMTPConn initialisiert den SMPT-Servernamen an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SMTPConn (string strSmtpServer, bool useWindowsAuthentication, bool EnableSsl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string strSmtpServer, bool useWindowsAuthentication, bool EnableSsl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.#ctor(System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="strSmtpServer" Type="System.String" />
+        <Parameter Name="useWindowsAuthentication" Type="System.Boolean" />
+        <Parameter Name="EnableSsl" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="strSmtpServer">Eine Zeichenfolge, die den SMTP-Servernamen enthält.</param>
+        <param name="useWindowsAuthentication">Ein boolescher Wert, der angibt, dass Windows-Authentifizierung zum Authentifizieren des Zugriffs auf den Server verwendet wird.</param>
+        <param name="EnableSsl">Ein boolescher Wert, der angibt, ob die Kommunikation mit Secure Sockets Layer (SSL) beim Senden von e-Mail-Nachrichten verschlüsselt.</param>
+        <summary>
+            Initialisiert eine neue Instanz der Klasse SMTPConn, initialisiert den SMPT-Servernamen, Windows-Authentifizierung und das Festlegen für Secure Sockets Layer.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcquireConnection">
+      <MemberSignature Language="C#" Value="public override object AcquireConnection (object txn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object AcquireConnection(object txn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.AcquireConnection(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="txn" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="txn">Das Handle für einen Transaktionstyp.</param>
+        <summary>
+            Stellt die SMTP-Verbindung her und gibt ein Verbindungsobjekt zurück.
+            </summary>
+        <returns>Das Verbindungsobjekt, das die SMTP-Verbindung enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionDescription">
+      <MemberSignature Language="C#" Value="public static string ConnectionDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ConnectionDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.ConnectionDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die lokalisierte Beschreibung der Verbindung zurück.
+            </summary>
+        <value>Eine Zeichenfolge, die lokalisierte Beschreibung der Verbindung enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionDisplayName">
+      <MemberSignature Language="C#" Value="public static string ConnectionDisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ConnectionDisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.ConnectionDisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den lokalisierten Anzeigenamen der Verbindung zurück.
+            </summary>
+        <value>Eine Zeichenfolge, die den lokalisierten Anzeigenamen der Verbindung enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public override string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Verbindungszeichenfolge für die SMTP-Verbindung ab oder legt sie fest.
+            </summary>
+        <value>Eine Zeichenfolge, die Verbindungszeichenfolge für die SMTP-Verbindung enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableSsl">
+      <MemberSignature Language="C#" Value="public bool EnableSsl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableSsl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.EnableSsl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob die Kommunikation mit Secure Sockets Layer (SSL) beim Senden von e-Mail-Nachrichten verschlüsselt.
+            </summary>
+        <value>"true" gibt an, dass die Kommunikation verschlüsselt wird, mithilfe von Secure Sockets Layer (SSL) beim Senden von e-Mail-Nachrichten. False gibt an, dass keine Verschlüsselung verwendet wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlElement rootNode, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlElement rootNode, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootNode" Type="System.Xml.XmlElement" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="rootNode">Der Knoten, der die zu ladenden Informationen enthält.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>
+            Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein im XML-Format gespeichertes Paket zu laden, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (System.Xml.XmlDocument doc, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>
+            Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket als XML-Datei zu speichern, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmtpServer">
+      <MemberSignature Language="C#" Value="public string SmtpServer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SmtpServer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.SmtpServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen für die Verbindung mit dem SMTP-Server ab oder legt ihn fest.
+            </summary>
+        <value>Eine Zeichenfolge, die den Namen, die zur Verbindung mit dem SMTP-Server enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Timeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Timeout-Anforderung für die Verbindung ab oder legt diese fest.
+            </summary>
+        <value>Die Timeout-Anforderung für die Verbindung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseWindowsAuthentication">
+      <MemberSignature Language="C#" Value="public bool UseWindowsAuthentication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseWindowsAuthentication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMTPConn.UseWindowsAuthentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob der Zugriff auf den SMTP-Server mit Windows-Authentifizierung.
+            </summary>
+        <value>"true" gibt an, dass Windows-Authentifizierung zum Authentifizieren des Zugriffs auf den Server verwendet wird. False gibt an, dass keine Windows-Authentifizierung verwendet wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

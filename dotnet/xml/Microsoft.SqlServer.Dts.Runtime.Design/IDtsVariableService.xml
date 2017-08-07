@@ -1,0 +1,93 @@
+<Type Name="IDtsVariableService" FullName="Microsoft.SqlServer.Dts.Runtime.Design.IDtsVariableService">
+  <TypeSignature Language="C#" Value="public interface IDtsVariableService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDtsVariableService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Design.IDtsVariableService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dts.Design</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Greift auf vorhandene Variablen zu oder erstellt neue Variablen in einem Paket.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PromptAndCreateVariable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Variable PromptAndCreateVariable (System.Windows.Forms.IWin32Window parentWindow, Microsoft.SqlServer.Dts.Runtime.DtsContainer dtsContainer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Variable PromptAndCreateVariable(class System.Windows.Forms.IWin32Window parentWindow, class Microsoft.SqlServer.Dts.Runtime.DtsContainer dtsContainer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsVariableService.PromptAndCreateVariable(System.Windows.Forms.IWin32Window,Microsoft.SqlServer.Dts.Runtime.DtsContainer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Variable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentWindow" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="dtsContainer" Type="Microsoft.SqlServer.Dts.Runtime.DtsContainer" />
+      </Parameters>
+      <Docs>
+        <param name="parentWindow">Die <see cref="T:System.Windows.Forms.IWin32Window" /> des Designers.</param>
+        <param name="dtsContainer">Der Standardcontainer, zu dem die Variable gehört.</param>
+        <summary>Gibt eine Eingabeaufforderung aus und erstellt eine neue Variable.</summary>
+        <returns>Eine neue <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variable" />-Instanz.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PromptAndCreateVariable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Variable PromptAndCreateVariable (System.Windows.Forms.IWin32Window parentWindow, Microsoft.SqlServer.Dts.Runtime.DtsContainer dtsContainer, string defaultName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Variable PromptAndCreateVariable(class System.Windows.Forms.IWin32Window parentWindow, class Microsoft.SqlServer.Dts.Runtime.DtsContainer dtsContainer, string defaultName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsVariableService.PromptAndCreateVariable(System.Windows.Forms.IWin32Window,Microsoft.SqlServer.Dts.Runtime.DtsContainer,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Variable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentWindow" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="dtsContainer" Type="Microsoft.SqlServer.Dts.Runtime.DtsContainer" />
+        <Parameter Name="defaultName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parentWindow">Die <see cref="T:System.Windows.Forms.IWin32Window" /> des Designers.</param>
+        <param name="dtsContainer">Der Standardcontainer, zu dem die Variable gehört.</param>
+        <param name="defaultName">Der Standardname der Variablen.</param>
+        <summary>Gibt eine Eingabeaufforderung aus und erstellt dann eine Variable für ein angegebenes Fenster und einen angegebenen Container. Diese Methode ist eine Hilfsmethode zum Arbeiten mit Variablen in einer Benutzeroberfläche.</summary>
+        <returns>Eine neue <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variable" />-Instanz.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PromptAndCreateVariable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Variable PromptAndCreateVariable (System.Windows.Forms.IWin32Window parentWindow, Microsoft.SqlServer.Dts.Runtime.DtsContainer dtsContainer, string defaultName, string defaultNamespace, Type defaultType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Variable PromptAndCreateVariable(class System.Windows.Forms.IWin32Window parentWindow, class Microsoft.SqlServer.Dts.Runtime.DtsContainer dtsContainer, string defaultName, string defaultNamespace, class System.Type defaultType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsVariableService.PromptAndCreateVariable(System.Windows.Forms.IWin32Window,Microsoft.SqlServer.Dts.Runtime.DtsContainer,System.String,System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Variable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentWindow" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="dtsContainer" Type="Microsoft.SqlServer.Dts.Runtime.DtsContainer" />
+        <Parameter Name="defaultName" Type="System.String" />
+        <Parameter Name="defaultNamespace" Type="System.String" />
+        <Parameter Name="defaultType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="parentWindow">Die <see cref="T:System.Windows.Forms.IWin32Window" /> des Designers.</param>
+        <param name="dtsContainer">Der Standardcontainer, zu dem die Variable gehört.</param>
+        <param name="defaultName">Der Standardname der Variablen.</param>
+        <param name="defaultNamespace">Der Standardnamespace, zu dem die Variable gehört.</param>
+        <param name="defaultType">Der Standardtyp der Variablen.</param>
+        <summary>Gibt eine Eingabeaufforderung aus und erstellt eine Variable für das angegebene Fenster, den angegebenen Container und Namespace. Diese Methode ist eine Hilfsmethode zum Arbeiten mit Variablen in einer Benutzeroberfläche.</summary>
+        <returns>Eine neue <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variable" />-Instanz.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,150 @@
+<Type Name="EvaluationFactory" FullName="Microsoft.SqlServer.Management.Dmf.EvaluationFactory">
+  <TypeSignature Language="C#" Value="public sealed class EvaluationFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EvaluationFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Dmf.EvaluationFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dmf</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Statische Factory erzeugt Klasse Bewerter
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsTypeSupported">
+      <MemberSignature Language="C#" Value="public static bool IsTypeSupported (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTypeSupported(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.EvaluationFactory.IsTypeSupported(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+        </param>
+        <summary>
+            Gibt an, ob der angegebene Typ vom ExpressionTree unterstützt wird
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTypeSupportedForConstant">
+      <MemberSignature Language="C#" Value="public static bool IsTypeSupportedForConstant (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTypeSupportedForConstant(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.EvaluationFactory.IsTypeSupportedForConstant(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+        </param>
+        <summary>
+            Indiciate, ob der angegebene Typ kann verwendet werden, erstellen Sie eine Konstante
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LikeToRegex">
+      <MemberSignature Language="C#" Value="public static string LikeToRegex (string likePattern);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string LikeToRegex(string likePattern) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.EvaluationFactory.LikeToRegex(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="likePattern" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="likePattern">Wie Muster</param>
+        <summary>
+            Konvertiert wie Muster, mit dem entsprechenden Regex-Muster
+            </summary>
+        <returns>Regex-Muster</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedOperators">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Dmf.OperatorType&gt; SupportedOperators (Microsoft.SqlServer.Management.Dmf.TypeClass typeClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;valuetype Microsoft.SqlServer.Management.Dmf.OperatorType&gt; SupportedOperators(valuetype Microsoft.SqlServer.Management.Dmf.TypeClass typeClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.EvaluationFactory.SupportedOperators(Microsoft.SqlServer.Management.Dmf.TypeClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Dmf.OperatorType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeClass" Type="Microsoft.SqlServer.Management.Dmf.TypeClass" />
+      </Parameters>
+      <Docs>
+        <param name="typeClass">
+        </param>
+        <summary>
+            Gibt eine Liste der Operatoren für die angegebene "typeclass" löst unterstützt werden, wenn Unxepected-Klasse angefordert
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedOperators">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Dmf.OperatorType&gt; SupportedOperators (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;valuetype Microsoft.SqlServer.Management.Dmf.OperatorType&gt; SupportedOperators(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.EvaluationFactory.SupportedOperators(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Dmf.OperatorType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+        </param>
+        <summary>
+            Gibt eine Liste der Operatoren für die leere Liste des angegebenen Typs unterstützt werden, wenn die Auswertung für den Typ nicht unterstützt wird
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

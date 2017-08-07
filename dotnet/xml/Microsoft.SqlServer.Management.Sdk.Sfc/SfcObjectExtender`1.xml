@@ -1,0 +1,324 @@
+<Type Name="SfcObjectExtender&lt;TSfcInstance&gt;" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender&lt;TSfcInstance&gt;">
+  <TypeSignature Language="C#" Value="public class SfcObjectExtender&lt;TSfcInstance&gt; : Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertyProvider, System.ComponentModel.INotifyPropertyChanged where TSfcInstance : ISfcPropertyProvidernew()" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SfcObjectExtender`1&lt;.ctor (class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertyProvider) TSfcInstance&gt; extends System.Object implements class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcNotifyPropertyMetadataChanged, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertyProvider, class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TSfcInstance">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertyProvider</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertyProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TSfcInstance">
+    </typeparam>
+    <summary>
+            Verwendet als Basisklasse für Objekte, die mit zusätzlichen Eigenschaften ermöglicht, die PropertySet diese neue Eigenschaften hinzufügen, damit diese zugegriffen werden kann, verwenden auch PropertyProvider erweitert werden muss, hilft es abhängigkeitsmonitor zwischen erweiterten Eigenschaft und die ursprüngliche herstellen
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcObjectExtender ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standard-Konstruktors. Verwendet in Codegenerierungs-Szenarien
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcObjectExtender (TSfcInstance parent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TSfcInstance parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.#ctor(`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="TSfcInstance" />
+      </Parameters>
+      <Docs>
+        <param name="parent">übergeordnete Objekt. Als ein Eigenschaftenanbieter Bese verwendet</param>
+        <summary>
+            ctor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParentSfcPropertySet">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet GetParentSfcPropertySet ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet GetParentSfcPropertySet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.GetParentSfcPropertySet" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt eine Instanz des Eigenschaftensatzes des übergeordneten Elements
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertySet">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet GetPropertySet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet GetPropertySet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.GetPropertySet" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt die Auflistung der Eigenschaften
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.OnPropertyChanged(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">
+        </param>
+        <summary>
+            Wird ausgelöst, PropertyChanged-Ereignis, wenn es sich um einen Abonnenten verfügt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyMetadataChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyMetadataChanged (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyMetadataChanged(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.OnPropertyMetadataChanged(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">
+        </param>
+        <summary>
+            Löst PropertyMetadataChanged-Ereignis aus, wenn es sich um einen Abonnenten verfügt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="protected TSfcInstance Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TSfcInstance Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TSfcInstance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Übergeordnetes Objekt
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="parent_PropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void parent_PropertyChanged (object sender, System.ComponentModel.PropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void parent_PropertyChanged(object sender, class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.parent_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">Muss hinzugefügt werden.</param>
+        <param name="e">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="parent_PropertyMetadataChanged">
+      <MemberSignature Language="C#" Value="protected virtual void parent_PropertyMetadataChanged (object sender, Microsoft.SqlServer.Management.Sdk.Sfc.SfcPropertyMetadataChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void parent_PropertyMetadataChanged(object sender, class Microsoft.SqlServer.Management.Sdk.Sfc.SfcPropertyMetadataChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.parent_PropertyMetadataChanged(System.Object,Microsoft.SqlServer.Management.Sdk.Sfc.SfcPropertyMetadataChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcPropertyMetadataChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">Muss hinzugefügt werden.</param>
+        <param name="e">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.PropertyChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyMetadataChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcPropertyMetadataChangedEventArgs&gt; PropertyMetadataChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.SfcPropertyMetadataChangedEventArgs&gt; PropertyMetadataChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.PropertyMetadataChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcPropertyMetadataChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterParentProperty">
+      <MemberSignature Language="C#" Value="protected void RegisterParentProperty (System.Reflection.PropertyInfo propertyInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RegisterParentProperty(class System.Reflection.PropertyInfo propertyInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.RegisterParentProperty(System.Reflection.PropertyInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyInfo" Type="System.Reflection.PropertyInfo" />
+      </Parameters>
+      <Docs>
+        <param name="propertyInfo">
+        </param>
+        <summary>
+            Registrieren Sie die Eigenschaft für das übergeordnete Element, das nicht in der "Properties"-Sammlung (z. B. "Name" in SMO oder Sammlungen eingeschlossen wurde
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterProperty">
+      <MemberSignature Language="C#" Value="protected void RegisterProperty (System.Reflection.PropertyInfo propertyInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RegisterProperty(class System.Reflection.PropertyInfo propertyInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.RegisterProperty(System.Reflection.PropertyInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyInfo" Type="System.Reflection.PropertyInfo" />
+      </Parameters>
+      <Docs>
+        <param name="propertyInfo">
+        </param>
+        <summary>
+            Registrieren Sie eine zusätzliche reflektierte Eigenschaft
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterProperty">
+      <MemberSignature Language="C#" Value="protected void RegisterProperty (System.Reflection.PropertyInfo propertyInfo, string parentPropertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RegisterProperty(class System.Reflection.PropertyInfo propertyInfo, string parentPropertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectExtender`1.RegisterProperty(System.Reflection.PropertyInfo,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyInfo" Type="System.Reflection.PropertyInfo" />
+        <Parameter Name="parentPropertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyInfo">Reflektierte Eigenschaft</param>
+        <param name="parentPropertyName">Name der übergeordneten Eigenschaft</param>
+        <summary>
+            Registrieren Sie eine zusätzliche reflektierte Eigenschaft hängt von der Eigenschaft aus dem übergeordneten Objekt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,228 @@
+<Type Name="MetadataDisplayInfoProvider" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider">
+  <TypeSignature Language="C#" Value="public class MetadataDisplayInfoProvider : Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetadataDisplayInfoProvider extends System.Object implements class Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IMetadataDisplayInfoProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Definiert einen Satz von Methoden, die erweiterte Anzeigeinformationen für Metadatenobjekte bereitstellen.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetadataDisplayInfoProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltInCasing">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.MetadataProvider.CasingStyle BuiltInCasing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.MetadataProvider.CasingStyle BuiltInCasing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider.BuiltInCasing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.MetadataProvider.CasingStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das verwendete <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.CasingStyle" /> ab oder legt es fest.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.CasingStyle" />-Wert, der das Groß-/Kleinschreibungsformat angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionToString&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public string CollectionToString&lt;T&gt; (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt; metadataCollection, bool singleLine) where T : class, Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CollectionToString&lt;class (class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject) T&gt;(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!!T&gt; metadataCollection, bool singleLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider.CollectionToString``1(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection{``0},System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+            <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="metadataCollection" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;" />
+        <Parameter Name="singleLine" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Der Typ der Elemente in der Auflistung, beschränkt auf <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />.</typeparam>
+        <param name="metadataCollection">Die Metadatensammlung, für die eine Zeichenfolgendarstellung abgerufen werden soll.</param>
+        <param name="singleLine">
+          <c>true</c> to indicate to that the string is returned as a single line; otherwise, <c>false</c>.</param>
+        <summary>
+            Ruft eine Zeichenfolgendarstellung des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" />-Objekts ab.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine Zeichenfolgendarstellung der Metadaten-Auflistung.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionToString&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public string CollectionToString&lt;T&gt; (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt; metadataCollection, bool singleLine) where T : class, Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CollectionToString&lt;class (class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject) T&gt;(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1&lt;!!T&gt; metadataCollection, bool singleLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider.CollectionToString``1(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection{``0},System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+            <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="metadataCollection" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;T&gt;" />
+        <Parameter Name="singleLine" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Der Typ der Elemente in der Auflistung, beschränkt auf <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />.</typeparam>
+        <param name="metadataCollection">Die Metadatensammlung, für die eine Zeichenfolgendarstellung abgerufen werden soll.</param>
+        <param name="singleLine">
+          <c>true</c> to indicate to that the string is returned as a single line; otherwise, <c>false</c>.</param>
+        <summary>
+            Ruft eine Zeichenfolgendarstellung des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1" />-Objekts ab.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine Zeichenfolgendarstellung der Metadaten-Auflistung.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDatabaseQualifiedName">
+      <MemberSignature Language="C#" Value="public string GetDatabaseQualifiedName (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject metadataObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDatabaseQualifiedName(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject metadataObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider.GetDatabaseQualifiedName(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataObject" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+      </Parameters>
+      <Docs>
+        <param name="metadataObject">Das Metadatenobjekt, für das ein von der Datenbank qualifizierter Name abgerufen werden soll.</param>
+        <summary>
+            Ruft den von der Datenbank qualifizierten Namen des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />-Objekts ab.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die Datenbank-gekennzeichnete Name des Metadatenobjekts; <c>null</c> , wenn das Metadatenobjekt nicht zu einer Datenbank gehört.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescription">
+      <MemberSignature Language="C#" Value="public string GetDescription (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject metadataObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDescription(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject metadataObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider.GetDescription(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataObject" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+      </Parameters>
+      <Docs>
+        <param name="metadataObject">Das Metadatenobjekt, dessen Beschreibung abgerufen werden soll.</param>
+        <summary>
+            Ruft die Beschreibung des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />-Objekts ab.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die Beschreibung des Metadatenobjekts.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisplayName">
+      <MemberSignature Language="C#" Value="public string GetDisplayName (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject metadataObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDisplayName(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject metadataObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider.GetDisplayName(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataObject" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+      </Parameters>
+      <Docs>
+        <param name="metadataObject">Das Metadatenobjekt, für das der Anzeigename abgerufen werden soll.</param>
+        <summary>
+            Ruft den Anzeigenamen des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />-Objekts ab.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Der Anzeigename des Metadatenobjekts.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectToString">
+      <MemberSignature Language="C#" Value="public string ObjectToString (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject metadataObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ObjectToString(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject metadataObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataDisplayInfoProvider.ObjectToString(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataObject" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+      </Parameters>
+      <Docs>
+        <param name="metadataObject">Das Metadatenobjekt, für das eine Zeichenfolgendarstellung abgerufen werden soll.</param>
+        <summary>
+            Ruft eine Zeichenfolgendarstellung des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />-Objekts ab.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine Zeichenfolgendarstellung des Metadatenobjekts.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

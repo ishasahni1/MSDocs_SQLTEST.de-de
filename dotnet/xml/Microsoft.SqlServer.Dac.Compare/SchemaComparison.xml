@@ -1,0 +1,224 @@
+<Type Name="SchemaComparison" FullName="Microsoft.SqlServer.Dac.Compare.SchemaComparison">
+  <TypeSignature Language="C#" Value="public sealed class SchemaComparison" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SchemaComparison extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Compare.SchemaComparison" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Klasse, die ermöglicht den Vergleich Schema zwischen zwei Typen von Entitäten: Datenbanken und Dacpac-Dateien
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SchemaComparison (string scmpFilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scmpFilePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaComparison.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="scmpFilePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="scmpFilePath">Der Pfad zu einem Schema verglichen werden soll (SCMP-Datei)</param>
+        <summary>
+            SchemaComparison-Konstruktor, der ein Schema verwendet vergleichen-Datei (SCMP-Datei) für alle vergleichseinstellungen.  Nur von DACPAC-Datei und/oder Datenbank Endpunkte können verglichen werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">Wenn die Quelle oder der Zielendpunkt wird weder eine Datenbank noch eine Dacpac-Datei ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SchemaComparison (Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint source, Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint source, class Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaComparison.#ctor(Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint,Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint" />
+        <Parameter Name="target" Type="Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="source">Ein <see cref="T:Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint" /> , die auf eine Schemaquelle verweist.</param>
+        <param name="target">Ein <see cref="T:Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint" /> , verweist auf ein Ziel.  Vergleich wird die zum Aktualisieren des Zielschemas mit der Quelle überein.</param>
+        <summary>
+            SchemaComparison-Konstruktor, der Endpunkte akzeptiert, die die Quelle und Ziel für den Vergleich angeben.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult Compare ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult Compare() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaComparison.Compare" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Compare.SchemaComparisonResult</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Führt Schemavergleich, Auffüllen der Ergebnisse des Vergleichs an.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludedSourceObjects">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Compare.SchemaComparisonExcludedObjectId&gt; ExcludedSourceObjects { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.Dac.Compare.SchemaComparisonExcludedObjectId&gt; ExcludedSourceObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaComparison.ExcludedSourceObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Compare.SchemaComparisonExcludedObjectId&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Elemente in der Quelldatenbankmodell Vergleich ausgeschlossen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludedTargetObjects">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Compare.SchemaComparisonExcludedObjectId&gt; ExcludedTargetObjects { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.Dac.Compare.SchemaComparisonExcludedObjectId&gt; ExcludedTargetObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaComparison.ExcludedTargetObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Compare.SchemaComparisonExcludedObjectId&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Elemente in der Ziel-Datenbankmodell Vergleich ausgeschlossen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.DacDeployOptions Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.DacDeployOptions Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaComparison.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacDeployOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Optionen, die das Verhalten der paketbereitstellung zu beeinflussen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToFile">
+      <MemberSignature Language="C#" Value="public void SaveToFile (string filePath, bool overwrite = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveToFile(string filePath, bool overwrite) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaComparison.SaveToFile(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="overwrite" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="filePath">
+        </param>
+        <param name="overwrite">Bei "true", wird eine vorhandene Datei am FilePath überschrieben werden. Wenn "false" werden speichern IOException auslösen, wenn eine Datei am FilePath bereits vorhanden ist.</param>
+        <summary>
+            Speichert die SchemaComparison als Scmp-Datei an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToStream">
+      <MemberSignature Language="C#" Value="public void SaveToStream (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveToStream(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Compare.SchemaComparison.SaveToStream(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">Ein Datenstrom, der Schreibvorgänge unterstützt.</param>
+        <summary>
+            Speichert die SchemaComparison als Scmp-Datei in einen stream
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint Source" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaComparison.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die <see cref="T:Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint" /> , die auf eine Schemaquelle verweist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint Target" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Compare.SchemaComparison.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die <see cref="T:Microsoft.SqlServer.Dac.Compare.SchemaCompareEndpoint" /> , verweist auf ein Ziel.  Vergleich wird die zum Aktualisieren des Zielschemas mit der Quelle überein.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

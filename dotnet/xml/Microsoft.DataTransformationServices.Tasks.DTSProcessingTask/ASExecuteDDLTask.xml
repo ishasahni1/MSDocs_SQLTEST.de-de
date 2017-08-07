@@ -1,0 +1,299 @@
+<Type Name="ASExecuteDDLTask" FullName="Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask">
+  <TypeSignature Language="C#" Value="public class ASExecuteDDLTask : Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase, Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ASExecuteDDLTask extends Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase implements class Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ASTasks</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASTaskBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Dts.Runtime.DtsTask(IconResource="ExecuteTaskIcon", LocalizationType=typeof(Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask), UITypeName="Microsoft.DataTransformationServices.Tasks.DTSProcessingTaskUI.ASExecuteDDLTaskUI, Microsoft.SqlServer.ASTasksUI, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("B8A6644B-E7A4-4409-8B78-59572781BD15")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Führt Befehle (Data Definition Language, Datendefinitionssprache), für eine Instanz von Microsoft SQL Server Analysis Services.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ASExecuteDDLTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Erstellt eine neue Instanz der dem <see cref="T:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionValue">
+      <MemberSignature Language="C#" Value="public override object ExecutionValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExecutionValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.ExecutionValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft das Ergebnis der Analysis Services Execute DDL Task ab.</summary>
+        <value>Das Ergebnis des Tasks "Analysis Services Execute DDL".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalExecute">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Dts.Runtime.DTSExecResult InternalExecute (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult InternalExecute(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.InternalExecute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> -Auflistung für den Task.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> -Auflistung für den Task.</param>
+        <param name="events">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle zum Auslösen von Ereignissen.</param>
+        <param name="log">Eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="transaction">Das Transaktionsobjekt, zu dem der Task gehört. Dieser Wert kann NULL sein.</param>
+        <summary>Führt den DDL-Task intern aus.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalValidate">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Dts.Runtime.DTSExecResult InternalValidate (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult InternalValidate(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.InternalValidate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> -Auflistung für den Task.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> -Auflistung für den Task.</param>
+        <param name="events">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle zum Auslösen von Ereignissen.</param>
+        <param name="log">Eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <summary>Überprüft den DDL-Task intern.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlElement rootNode, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlElement rootNode, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootNode" Type="System.Xml.XmlElement" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="rootNode">Der Knoten, der die zu ladenden Informationen enthält.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein im XML-Format gespeichertes Paket zu laden, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (System.Xml.XmlDocument doc, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket als XML-Datei zu speichern, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public string Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Source" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt den Namen der Quelle, die enthalten die DDL-Anweisung an den Analysis Services-Server gesendet werden.</summary>
+        <value>Der Name der Quelle, die enthalten die DDL-Anweisung an den Analysis Services-Server gesendet werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceType">
+      <MemberSignature Language="C#" Value="public Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.DDLSourceType SourceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.DDLSourceType SourceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.SourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.DDLSourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen Wert aus der <see cref="T:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.DDLSourceType" /> Enumeration, der angibt, der des Quelltyp aus, die die DDL-Anweisungen enthält.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.DDLSourceType" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusEventName">
+      <MemberSignature Language="C#" Value="protected override string StatusEventName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StatusEventName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.StatusEventName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des statusereignisses für den Analysis Services Execute DDL Task ab.</summary>
+        <value>Den Namen des statusereignisses für den Analysis Services Execute DDL Task.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubComponentName">
+      <MemberSignature Language="C#" Value="protected override string SubComponentName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SubComponentName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.SubComponentName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen der Unterkomponente für den Analysis Services Execute DDL Task ab.</summary>
+        <value>Den Namen der Unterkomponente für den Analysis Services Execute DDL Task.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskDescription">
+      <MemberSignature Language="C#" Value="public static string TaskDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TaskDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.TaskDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine Beschreibung des Tasks "Analysis Services Execute DDL".</summary>
+        <value>Die Beschreibung des Tasks "Analysis Services Execute DDL".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskDisplayName">
+      <MemberSignature Language="C#" Value="public static string TaskDisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TaskDisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.TaskDisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den eindeutigen Namen für den Analysis Services Execute DDL Task ab.</summary>
+        <value>Der eindeutige Name für den Analysis Services Execute DDL Task.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateDDL">
+      <MemberSignature Language="C#" Value="protected override bool ValidateDDL (Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.Connections connections, out Exception ex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ValidateDDL(class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.Connections connections, class System.Exception ex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.DataTransformationServices.Tasks.DTSProcessingTask.ASExecuteDDLTask.ValidateDDL(Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.Connections,System.Exception@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="ex" Type="System.Exception&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> -Auflistung für den Task.</param>
+        <param name="connections">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> -Auflistung für den Task.</param>
+        <param name="ex">Rückkehr dieser Methode enthält die Ausnahme während der Validierung, sofern vorhanden, oder Null, wenn keine Ausnahme aufgetreten ist.</param>
+        <summary>Überprüft, ob der DDL-Task ordnungsgemäß konfiguriert ist.</summary>
+        <returns>"true", wenn die Validierung erfolgreich war; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,2206 @@
+<Type Name="UserDefinedFunction" FullName="Microsoft.SqlServer.Management.Smo.UserDefinedFunction">
+  <TypeSignature Language="C#" Value="public sealed class UserDefinedFunction : Microsoft.SqlServer.Management.Smo.ScriptSchemaObjectBase, Microsoft.SqlServer.Management.Common.IAlterable, Microsoft.SqlServer.Management.Common.ICreatable, Microsoft.SqlServer.Management.Common.ICreateOrAlterable, Microsoft.SqlServer.Management.Common.IDropIfExists, Microsoft.SqlServer.Management.Common.IDroppable, Microsoft.SqlServer.Management.Common.IRenamable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode, Microsoft.SqlServer.Management.Smo.IColumnPermission, Microsoft.SqlServer.Management.Smo.IExtendedProperties, Microsoft.SqlServer.Management.Smo.IScriptable, Microsoft.SqlServer.Management.Smo.ITextObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UserDefinedFunction extends Microsoft.SqlServer.Management.Smo.ScriptSchemaObjectBase implements class Microsoft.SqlServer.Management.Common.IAlterable, class Microsoft.SqlServer.Management.Common.ICreatable, class Microsoft.SqlServer.Management.Common.ICreateOrAlterable, class Microsoft.SqlServer.Management.Common.IDropIfExists, class Microsoft.SqlServer.Management.Common.IDroppable, class Microsoft.SqlServer.Management.Common.IRenamable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode, class Microsoft.SqlServer.Management.Smo.IColumnPermission, class Microsoft.SqlServer.Management.Smo.IExtendedProperties, class Microsoft.SqlServer.Management.Smo.IObjectPermission, class Microsoft.SqlServer.Management.Smo.IScriptable, class Microsoft.SqlServer.Management.Smo.ITextObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.UserDefinedFunction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Smo.ScriptSchemaObjectBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.ICreatable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.ICreateOrAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IDropIfExists</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IDroppable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IRenamable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Smo.IColumnPermission</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Smo.IExtendedProperties</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Smo.IScriptable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Smo.ITextObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Facets.EvaluationMode(Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode.Enforce | Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode.CheckOnChanges | Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode.CheckOnSchedule)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Facets.StateChangeEvent("CREATE_FUNCTION", "FUNCTION")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Facets.StateChangeEvent("ALTER_FUNCTION", "FUNCTION")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Facets.StateChangeEvent("RENAME", "FUNCTION")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Facets.StateChangeEvent("ALTER_AUTHORIZATION_DATABASE", "FUNCTION")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Facets.StateChangeEvent("ALTER_SCHEMA", "FUNCTION")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElement(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElementFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElementFlags.SqlAzureDatabase)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.PhysicalFacet(Microsoft.SqlServer.Management.Sdk.Sfc.PhysicalFacetOptions.ReadOnly)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Kapseln von Instanz-Klasse: Server [@Name= "] / Datenbank/UserDefinedFunction
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserDefinedFunction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserDefinedFunction (Microsoft.SqlServer.Management.Smo.Database database, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Database database, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.#ctor(Microsoft.SqlServer.Management.Smo.Database,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.Smo.Database" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Muss hinzugefügt werden.</param>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserDefinedFunction (Microsoft.SqlServer.Management.Smo.Database database, string name, string schema);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Database database, string name, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.#ctor(Microsoft.SqlServer.Management.Smo.Database,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.Smo.Database" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Muss hinzugefügt werden.</param>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <param name="schema">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alter">
+      <MemberSignature Language="C#" Value="public void Alter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Alter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Alter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnsiNullsStatus">
+      <MemberSignature Language="C#" Value="public bool AnsiNullsStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AnsiNullsStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.AnsiNullsStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyName">
+      <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.AssemblyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReference(typeof(Microsoft.SqlServer.Management.Smo.SqlAssembly), "Server[@Name = '{0}']/Database[@Name = '{1}']/SqlAssembly[@Name = '{2}']", Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeSchema">
+      <MemberSignature Language="C#" Value="public void ChangeSchema (string newSchema);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ChangeSchema(string newSchema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.ChangeSchema(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newSchema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="newSchema">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Checks">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.CheckCollection Checks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.CheckCollection Checks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Checks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Smo.Check), Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.CheckCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassName">
+      <MemberSignature Language="C#" Value="public string ClassName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClassName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.ClassName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ColumnCollection Columns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.ColumnCollection Columns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Columns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Smo.Column), Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectFlags.NaturalOrder | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ColumnCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public void Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDate">
+      <MemberSignature Language="C#" Value="public DateTime CreateDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreateDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.CreateDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrAlter">
+      <MemberSignature Language="C#" Value="public void CreateOrAlter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateOrAlter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.CreateOrAlter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellen Sie oder Ändern des Objekts an. Führen Sie zuerst eine Überprüfung auf interne vorliegen. Wenn das Objekt vorhanden ist, nehmen Sie CREATE Pfad; Versetzen Sie ALTER Pfad.
+die Rückgabe ohne Ausnahme.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.DataType DataType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.DataType DataType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.DataType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReference(typeof(Microsoft.SqlServer.Management.Smo.UserDefinedType), typeof(Microsoft.SqlServer.Management.Smo.UserDefinedTypeResolver), "Resolve", Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReference(typeof(Microsoft.SqlServer.Management.Smo.UserDefinedDataType), typeof(Microsoft.SqlServer.Management.Smo.UserDefinedDataTypeResolver), "Resolve", Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.DataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateLastModified">
+      <MemberSignature Language="C#" Value="public DateTime DateLastModified { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime DateLastModified" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.DateLastModified" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DmfIgnoreProperty</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.String[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.String[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Drop">
+      <MemberSignature Language="C#" Value="public void Drop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Drop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Drop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropIfExists">
+      <MemberSignature Language="C#" Value="public void DropIfExists ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DropIfExists() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.DropIfExists" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Löscht das Objekt mit dem IF EXISTS-Option. Wenn Objekt ungültig ist, für die Drop-Funktion ohne Ausnahme zurückgegeben wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumColumnPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumColumnPermissions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumColumnPermissions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.EnumColumnPermissions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumColumnPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumColumnPermissions (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumColumnPermissions(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.EnumColumnPermissions(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permissions" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="permissions">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumColumnPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumColumnPermissions (string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumColumnPermissions(string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.EnumColumnPermissions(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumColumnPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumColumnPermissions (string granteeName, Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumColumnPermissions(string granteeName, class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.EnumColumnPermissions(System.String,Microsoft.SqlServer.Management.Smo.ObjectPermissionSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="permissions" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="permissions">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumObjectPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.EnumObjectPermissions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumObjectPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.EnumObjectPermissions(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permissions" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="permissions">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumObjectPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions (string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions(string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.EnumObjectPermissions(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumObjectPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions (string granteeName, Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions(string granteeName, class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.EnumObjectPermissions(System.String,Microsoft.SqlServer.Management.Smo.ObjectPermissionSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="permissions" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="permissions">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Events">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.UserDefinedFunctionEvents Events { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.UserDefinedFunctionEvents Events" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Events" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.UserDefinedFunctionEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionContext">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ExecutionContext ExecutionContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.ExecutionContext ExecutionContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.ExecutionContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Deploy)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ExecutionContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionContextPrincipal">
+      <MemberSignature Language="C#" Value="public string ExecutionContextPrincipal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExecutionContextPrincipal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.ExecutionContextPrincipal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Deploy)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReference(typeof(Microsoft.SqlServer.Management.Smo.User), "Server[@Name = '{0}']/Database[@Name = '{1}']/User[@Name = '{2}']", Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedProperties">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ExtendedPropertyCollection ExtendedProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.ExtendedPropertyCollection ExtendedProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.ExtendedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Smo.ExtendedProperty))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ExtendedPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FunctionType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.UserDefinedFunctionType FunctionType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.UserDefinedFunctionType FunctionType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.FunctionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.UserDefinedFunctionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool grantGrant);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool grantGrant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool grantGrant);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool grantGrant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool grantGrant, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool grantGrant, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames, bool grantGrant);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames, bool grantGrant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.String[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool grantGrant, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool grantGrant, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames, bool grantGrant);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames, bool grantGrant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.String[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames, bool grantGrant, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames, bool grantGrant, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.String[],System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames, bool grantGrant, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames, bool grantGrant, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.String[],System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public int ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImplementationType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ImplementationType ImplementationType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.ImplementationType ImplementationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.ImplementationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design, "TransactSql")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ImplementationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indexes">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.IndexCollection Indexes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.IndexCollection Indexes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Indexes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Smo.Index), Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.IndexCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDeterministic">
+      <MemberSignature Language="C#" Value="public bool IsDeterministic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDeterministic" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.IsDeterministic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEncrypted">
+      <MemberSignature Language="C#" Value="public bool IsEncrypted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEncrypted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.IsEncrypted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Deploy, "false")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNativelyCompiled">
+      <MemberSignature Language="C#" Value="public bool IsNativelyCompiled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNativelyCompiled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.IsNativelyCompiled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsObjectDirty">
+      <MemberSignature Language="C#" Value="protected override bool IsObjectDirty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsObjectDirty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.IsObjectDirty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSchemaBound">
+      <MemberSignature Language="C#" Value="public bool IsSchemaBound { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSchemaBound" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.IsSchemaBound" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSchemaOwned">
+      <MemberSignature Language="C#" Value="public bool IsSchemaOwned { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSchemaOwned" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.IsSchemaOwned" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSystemObject">
+      <MemberSignature Language="C#" Value="public bool IsSystemObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSystemObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.IsSystemObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodName">
+      <MemberSignature Language="C#" Value="public string MethodName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.MethodName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode.IsDesignMode">
+      <MemberSignature Language="C#" Value="bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode.IsDesignMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode.IsDesignMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcSupportsDesignMode#IsDesignMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dieses Objekt ISfcSupportsDesignMode zu erweitern.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcKey(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrderColumns">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.OrderColumnCollection OrderColumns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.OrderColumnCollection OrderColumns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.OrderColumns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Smo.OrderColumn))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.OrderColumnCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public string Owner { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Owner" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReference(typeof(Microsoft.SqlServer.Management.Smo.User), "Server[@Name = '{0}']/Database[@Name = '{1}']/User[@Name = '{2}']", Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReference(typeof(Microsoft.SqlServer.Management.Smo.DatabaseRole), "Server[@Name = '{0}']/Database[@Name = '{1}']/Role[@Name = '{2}']", Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReference(typeof(Microsoft.SqlServer.Management.Smo.ApplicationRole), "Server[@Name = '{0}']/Database[@Name = '{1}']/ApplicationRole[@Name = '{2}']", Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.UserDefinedFunctionParameterCollection Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.UserDefinedFunctionParameterCollection Parameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Smo.UserDefinedFunctionParameter), Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectFlags.NaturalOrder | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.UserDefinedFunctionParameterCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.Database Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.Database Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectRelationship.ParentObject, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.Database</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostCreate">
+      <MemberSignature Language="C#" Value="protected override void PostCreate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostCreate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.PostCreate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotedIdentifierStatus">
+      <MemberSignature Language="C#" Value="public bool QuotedIdentifierStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool QuotedIdentifierStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.QuotedIdentifierStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public override void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rename">
+      <MemberSignature Language="C#" Value="public void Rename (string newname);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Rename(string newname) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Rename(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newname" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="newname">Neuen Namen der benutzerdefinierten Funktion</param>
+        <summary>
+            Benennt das Objekt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnsNullOnNullInput">
+      <MemberSignature Language="C#" Value="public bool ReturnsNullOnNullInput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReturnsNullOnNullInput" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.ReturnsNullOnNullInput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool revokeGrant, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool revokeGrant, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool revokeGrant, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool revokeGrant, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool revokeGrant, bool cascade, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool revokeGrant, bool cascade, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.Boolean,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames, bool revokeGrant, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames, bool revokeGrant, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.String[],System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool revokeGrant, bool cascade, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool revokeGrant, bool cascade, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.Boolean,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames, bool revokeGrant, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames, bool revokeGrant, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.String[],System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames, bool revokeGrant, bool cascade, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, string[] columnNames, bool revokeGrant, bool cascade, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.String[],System.Boolean,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames, bool revokeGrant, bool cascade, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, string[] columnNames, bool revokeGrant, bool cascade, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.String[],System.Boolean,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="columnNames" Type="System.String[]" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="columnNames">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema">
+      <MemberSignature Language="C#" Value="public override string Schema { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Schema" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Schema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcKey(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReference(typeof(Microsoft.SqlServer.Management.Smo.Schema), typeof(Microsoft.SqlServer.Management.Smo.SchemaCustomResolver), "Resolve", Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Script ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Specialized.StringCollection Script() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Script" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Script (Microsoft.SqlServer.Management.Smo.ScriptingOptions scriptingOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Specialized.StringCollection Script(class Microsoft.SqlServer.Management.Smo.ScriptingOptions scriptingOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.Script(Microsoft.SqlServer.Management.Smo.ScriptingOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scriptingOptions" Type="Microsoft.SqlServer.Management.Smo.ScriptingOptions" />
+      </Parameters>
+      <Docs>
+        <param name="scriptingOptions">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptHeader">
+      <MemberSignature Language="C#" Value="public string ScriptHeader (Microsoft.SqlServer.Management.Smo.ScriptNameObjectBase.ScriptHeaderType scriptHeaderType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ScriptHeader(valuetype Microsoft.SqlServer.Management.Smo.ScriptNameObjectBase/ScriptHeaderType scriptHeaderType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.ScriptHeader(Microsoft.SqlServer.Management.Smo.ScriptNameObjectBase.ScriptHeaderType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scriptHeaderType" Type="Microsoft.SqlServer.Management.Smo.ScriptNameObjectBase+ScriptHeaderType" />
+      </Parameters>
+      <Docs>
+        <param name="scriptHeaderType">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptHeader">
+      <MemberSignature Language="C#" Value="public string ScriptHeader (bool forAlter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ScriptHeader(bool forAlter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.ScriptHeader(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="forAlter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="forAlter">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableVariableName">
+      <MemberSignature Language="C#" Value="public string TableVariableName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TableVariableName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.TableVariableName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextBody">
+      <MemberSignature Language="C#" Value="public string TextBody { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextBody" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.TextBody" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Expensive | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextHeader">
+      <MemberSignature Language="C#" Value="public string TextHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextHeader" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.TextHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Expensive | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextMode">
+      <MemberSignature Language="C#" Value="public bool TextMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TextMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.UserDefinedFunction.TextMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

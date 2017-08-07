@@ -1,0 +1,182 @@
+<Type Name="DtsEventHandler" FullName="Microsoft.SqlServer.Dts.Runtime.DtsEventHandler">
+  <TypeSignature Language="C#" Value="public sealed class DtsEventHandler : Microsoft.SqlServer.Dts.Runtime.DtsContainer, Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath, Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath, Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider, Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx, Microsoft.SqlServer.Dts.Runtime.IDTSSequence" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DtsEventHandler extends Microsoft.SqlServer.Dts.Runtime.DtsContainer implements class Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath, class Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath, class Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider, class Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx, class Microsoft.SqlServer.Dts.Runtime.IDTSSequence" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.DtsEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DtsContainer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSSequence</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Ein Container für ein Paket oder andere Container, der ausführbare Elemente enthält, die bei bestimmten Ereignissen ausgeführt werden. Diese Klasse kann nicht vererbt werden. </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Executables">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Executables Executables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Executables Executables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.DtsEventHandler.Executables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Executables</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.Executables" /> Auflistung mit den ausführbaren Dateien in diesem Container auf, der bei Eintreten des Ereignisses ausgeführt. Diese Eigenschaft ist schreibgeschützt.</summary>
+        <value>Eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.Executables" /> Auflistung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExecutionPath">
+      <MemberSignature Language="C#" Value="public string GetExecutionPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetExecutionPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.DtsEventHandler.GetExecutionPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft den Ausführungspfad für den DTS-Ereignishandler ab.</summary>
+        <returns>Der Ausführungspfad des DTS-Ereignishandlers.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpression">
+      <MemberSignature Language="C#" Value="public string GetExpression (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetExpression(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.DtsEventHandler.GetExpression(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Der Name der Eigenschaft, deren Ausdruck Sie anzeigen möchten.</param>
+        <summary>Gibt den Ausdruck für die angegebene Eigenschaft zurück. NULL bedeutet, dass kein Ausdruck zugewiesen ist.</summary>
+        <returns>Eine Zeichenfolge, die den Ausdruck zum Auswerten die Eigenschaft enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPackagePath">
+      <MemberSignature Language="C#" Value="public string GetPackagePath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPackagePath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.DtsEventHandler.GetPackagePath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft den Pfad des Pakets ab, auf das der Ereignishandler angewendet wird.</summary>
+        <returns>Eine Zeichenfolge, die den Paketpfad enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasExpressions">
+      <MemberSignature Language="C#" Value="public bool HasExpressions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasExpressions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.DtsEventHandler.HasExpressions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab, ob das DTS-Ereignis Ausdrücke enthält.</summary>
+        <value>True, wenn das DTS-Ereignis Ausdrücke enthält. andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrecedenceConstraints">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraints PrecedenceConstraints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraints PrecedenceConstraints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.DtsEventHandler.PrecedenceConstraints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraints</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine Auflistung von Rangfolgeneinschränkungen zurück, die ggf. für ausführbare Elemente in diesem Container gefunden wurden. Diese Eigenschaft ist schreibgeschützt.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraints" /> Auflistung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DtsProperties Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.DtsProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.DtsEventHandler.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DtsProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsProperties" /> Auflistung. Diese Eigenschaft ist schreibgeschützt.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsProperties" /> Auflistung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetExpression">
+      <MemberSignature Language="C#" Value="public void SetExpression (string propertyName, string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetExpression(string propertyName, string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.DtsEventHandler.SetExpression(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Der Name der Eigenschaft, der der Ausdruck zugewiesen werden soll.</param>
+        <param name="expression">Der Ausdruck.</param>
+        <summary>Weist der Eigenschaft den angegebenen Ausdruck zu. Geben Sie Null an, wenn Sie einen vorhandenen Ausdruck aus der Eigenschaft zu entfernen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

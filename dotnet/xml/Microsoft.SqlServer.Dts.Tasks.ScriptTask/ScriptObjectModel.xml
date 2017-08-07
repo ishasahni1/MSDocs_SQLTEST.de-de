@@ -1,0 +1,164 @@
+<Type Name="ScriptObjectModel" FullName="Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel">
+  <TypeSignature Language="C#" Value="public class ScriptObjectModel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptObjectModel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ScriptTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Gibt den Entwickler, der das Skript programmgesteuerten Zugriff auf Objekte im Paket über das globale Dts-Objekt definiert. Dts-Objekts ist eine Instanz von der <see cref="T:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel" /> Klasse.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Connections">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Connections Connections { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Connections Connections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel.Connections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Connections</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> -Auflistung vorhandener Verbindungen, die in das Paket mit dem Skripttask definiert.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" /> -Auflistung vorhandener Verbindungen, die in das Paket mit dem Skripttask definiert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Events">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper Events { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper Events" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel.Events" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />-Auflistung vorhandener Ereignisse zurück, die im Paket mit dem Skripttask definiert sind.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />-Auflistung vorhandener Ereignisse, die im Paket mit dem Skripttask definiert sind.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionValue">
+      <MemberSignature Language="C#" Value="public object ExecutionValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExecutionValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel.ExecutionValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein benutzerdefiniertes Objekt ab, das weitere Informationen zu den Ergebnissen der Taskausführung bereitstellt, oder legt es fest.</summary>
+        <value>Ein benutzerdefiniertes Objekt, das weitere Informationen zu den Ergebnissen der Taskausführung bereitstellt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log">
+      <MemberSignature Language="C#" Value="public void Log (string messageText, int dataCode, byte[] dataBytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Log(string messageText, int32 dataCode, unsigned int8[] dataBytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel.Log(System.String,System.Int32,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageText" Type="System.String" />
+        <Parameter Name="dataCode" Type="System.Int32" />
+        <Parameter Name="dataBytes" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="messageText">Der Text des Protokollierungseintrags.</param>
+        <param name="dataCode">Ein Feld für protokollierte numerische Daten.</param>
+        <param name="dataBytes">Ein Feld für protokollierte Binärdaten.</param>
+        <summary>Protokolliert einen Eintrag für alle aktivierten Protokollanbieter.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskResult">
+      <MemberSignature Language="C#" Value="public int TaskResult { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TaskResult" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel.TaskResult" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> für den Skripttask zurück.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> des Skripttasks.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transaction">
+      <MemberSignature Language="C#" Value="public object Transaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Transaction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel.Transaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die dem Container des Skripttasks zugeordnete Transaktion zurück.</summary>
+        <value>Die dem Container des Skripttasks zugeordnete Transaktion. Dieser Wert kann NULL sein.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VariableDispenser">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.VariableDispenser VariableDispenser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.VariableDispenser VariableDispenser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel.VariableDispenser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.VariableDispenser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> , innerhalb des Skripttasks zur Bearbeitung vorhandener Variablen verwendet werden kann.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> , innerhalb des Skripttasks zur Bearbeitung vorhandener Variablen verwendet werden kann.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variables">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Variables Variables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Variables Variables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ScriptTask.ScriptObjectModel.Variables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Variables</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" />-Auflistung vorhandener Variablen zurück, die im Paket mit dem Skripttask definiert sind.</summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" />-Auflistung vorhandener Variablen, die im Paket mit dem Skripttask definiert sind.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

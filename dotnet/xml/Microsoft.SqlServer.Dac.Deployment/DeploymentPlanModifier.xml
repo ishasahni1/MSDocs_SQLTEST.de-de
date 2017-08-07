@@ -1,0 +1,111 @@
+<Type Name="DeploymentPlanModifier" FullName="Microsoft.SqlServer.Dac.Deployment.DeploymentPlanModifier">
+  <TypeSignature Language="C#" Value="public abstract class DeploymentPlanModifier : Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DeploymentPlanModifier extends Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributor" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanModifier" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dac.Deployment.DeploymentPlanContributor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Repräsentiert einen Contributor, der einen Bereitstellungsplan ändern können
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeploymentPlanModifier ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanModifier.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAfter">
+      <MemberSignature Language="C#" Value="protected void AddAfter (Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle handle, Microsoft.SqlServer.Dac.Deployment.DeploymentStep step, Microsoft.SqlServer.Dac.Deployment.DeploymentStep newStep);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddAfter(class Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle handle, class Microsoft.SqlServer.Dac.Deployment.DeploymentStep step, class Microsoft.SqlServer.Dac.Deployment.DeploymentStep newStep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanModifier.AddAfter(Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle,Microsoft.SqlServer.Dac.Deployment.DeploymentStep,Microsoft.SqlServer.Dac.Deployment.DeploymentStep)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle" />
+        <Parameter Name="step" Type="Microsoft.SqlServer.Dac.Deployment.DeploymentStep" />
+        <Parameter Name="newStep" Type="Microsoft.SqlServer.Dac.Deployment.DeploymentStep" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Die <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle" /> für den Plan</param>
+        <param name="step">Identifiziert die <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentStep" /> wonach die <paramref name="newStep" /> hinzugefügt werden.</param>
+        <param name="newStep">Die <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentStep" /> hinzugefügt werden</param>
+        <summary>
+            Bietet eine Möglichkeit, den vorhandenen Plan durch Hinzufügen eines Schritts nach dem vorhandenen Schritt geändert wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBefore">
+      <MemberSignature Language="C#" Value="protected void AddBefore (Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle handle, Microsoft.SqlServer.Dac.Deployment.DeploymentStep step, Microsoft.SqlServer.Dac.Deployment.DeploymentStep newStep);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddBefore(class Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle handle, class Microsoft.SqlServer.Dac.Deployment.DeploymentStep step, class Microsoft.SqlServer.Dac.Deployment.DeploymentStep newStep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanModifier.AddBefore(Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle,Microsoft.SqlServer.Dac.Deployment.DeploymentStep,Microsoft.SqlServer.Dac.Deployment.DeploymentStep)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle" />
+        <Parameter Name="step" Type="Microsoft.SqlServer.Dac.Deployment.DeploymentStep" />
+        <Parameter Name="newStep" Type="Microsoft.SqlServer.Dac.Deployment.DeploymentStep" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Die <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle" /> für den Plan</param>
+        <param name="step">Identifiziert die <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentStep" /> vor dem die <paramref name="newStep" /> hinzugefügt werden.</param>
+        <param name="newStep">Die <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentStep" /> hinzugefügt werden</param>
+        <summary>
+            Bietet eine Möglichkeit für Unterklassen so ändern Sie den Plan durch Hinzufügen eines Schritts nach dem angegebenen Schritt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="protected void Remove (Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle handle, Microsoft.SqlServer.Dac.Deployment.DeploymentStep step);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Remove(class Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle handle, class Microsoft.SqlServer.Dac.Deployment.DeploymentStep step) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanModifier.Remove(Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle,Microsoft.SqlServer.Dac.Deployment.DeploymentStep)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle" />
+        <Parameter Name="step" Type="Microsoft.SqlServer.Dac.Deployment.DeploymentStep" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Die <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentPlanHandle" /> für den Plan</param>
+        <param name="step">Identifiziert die zu entfernende <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentStep" />.</param>
+        <summary>
+            Bietet eine Möglichkeit, den angegebenen Schritt aus dem Plan zu entfernen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

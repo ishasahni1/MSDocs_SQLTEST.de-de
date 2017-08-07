@@ -1,0 +1,177 @@
+<Type Name="SfcKey" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey">
+  <TypeSignature Language="C#" Value="public abstract class SfcKey : IEquatable&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SfcKey extends System.Object implements class System.IEquatable`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Die SfcKey-Klasse ist die Basisklasse für alle geschachtelten Klassen der Schlüssel jeder SfcInstance-abgeleitete Objekte aufweisen muss.
+Gleichheit und Hashverfahren jedoch nicht Vergleich implementiert, da nur Schlüssel erforderlich sind, zu wissen, ob sie gleich oder nicht sind.
+            
+            Keys are meant to be immutable once constructed, hence a Key should not contain data which can change during the Key object's lifetime.
+            Do not use field(s) as part of a Key which are not truly part of the identity the Key represents. We may enforce this by disallowing set()
+            on the internal properties for the Key.
+            
+            Any ordering or collation needs are addressed by implementing:
+            1. IComparable on the SfcKey-derived class
+            2. IComparer or IComparer&lt;T&gt; on the SfcCollection-derived collection class
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SfcKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public abstract bool Equals (Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey akey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey akey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey.Equals(Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="akey" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey" />
+      </Parameters>
+      <Docs>
+        <param name="akey">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public abstract bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">
+        </param>
+        <summary>
+            Jeder Schlüssel muss richtige Wertvergleich von seinen Datenmembern tun.
+Führen Sie *nicht* Sie sich ausschließlich auf Verweis auf Gleichheit zu überprüfen, wie Objekt verweist.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public abstract int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Jeder Schlüssel muss einen angemessenen Hashcode für seinen Datenmembern angeben.
+Intern Zeichenfolgen können ihre Hashcodes Standard, und numerische Werte können direkt verwendet oder Bit verschoben und abgeschnitten, "int".
+XOR zusammen eine ordentliche Ergebnis musste können in der Regel mehrere Hashcodes für interne Daten sein.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrnFragment">
+      <MemberSignature Language="C#" Value="public abstract string GetUrnFragment ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetUrnFragment() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey.GetUrnFragment" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Jeder Schlüssel muss implementieren, wie Sie eine gültige erzeugen XPath-orientierten Identität Zeichenfolge Fragmentwhich zum Erstellen von vollständigen und gültigen Urn aus einer SfcKeyChain Schlüssel [].
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceType">
+      <MemberSignature Language="C#" Value="public virtual Type InstanceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type InstanceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey.InstanceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Typ des der dieser schlüsselklasse zugeordneten Instanzklasse.
+Die Standardeinstellung "Impl" ist eine geschachtelte schlüsselklasse für die Kompatibilität mit vorhandenen Modelle, die mit diesem Verfahren vorgehen.
+Dies dürfte außer Kraft gesetzte in alle schlüsselklasse, die nicht auf eine geschachtelte Klasse des Instanztyps ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Jeder Schlüssel
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,61 @@
+<Type Name="BuildContributor" FullName="Microsoft.SqlServer.Dac.Deployment.BuildContributor">
+  <TypeSignature Language="C#" Value="public abstract class BuildContributor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BuildContributor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Deployment.BuildContributor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Ableitungen der BuildContributor-Erweiterung werden während eines Projektbuilds ausgeführt, nachdem das Modell des Projekts erstellt und überprüft wurde.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BuildContributor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.BuildContributor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnExecute">
+      <MemberSignature Language="C#" Value="protected virtual void OnExecute (Microsoft.SqlServer.Dac.Deployment.BuildContributorContext context, System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; messages);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnExecute(class Microsoft.SqlServer.Dac.Deployment.BuildContributorContext context, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt; messages) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.BuildContributor.OnExecute(Microsoft.SqlServer.Dac.Deployment.BuildContributorContext,System.Collections.Generic.IList{Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.SqlServer.Dac.Deployment.BuildContributorContext" />
+        <Parameter Name="messages" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Extensibility.ExtensibilityError&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">
+          <see cref="T:Microsoft.SqlServer.Dac.Deployment.BuildContributorContext" />Objekt</param>
+        <param name="messages">Alle Nachrichten, die als Teil des Buildprozesses veröffentlicht werden, können zu dieser Liste hinzugefügt werden. Kann Fehler betreffen oder möglicherweise Informationen geben.</param>
+        <summary>
+            Wird aufgerufen, nachdem das Modell des Projekts vollständig erstellt wurde, was dem Build-Contributor die Möglichkeit gibt, das Modell und mögliche zusätzliche Ausgabedateien zu untersuchen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Deployment.BuildFailedException">Wenn der Build nicht fortgesetzt werden kann, sollte diese Art von Ausnahme ausgelöst werden.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

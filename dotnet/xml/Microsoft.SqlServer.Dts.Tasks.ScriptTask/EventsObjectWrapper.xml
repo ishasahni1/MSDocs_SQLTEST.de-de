@@ -1,0 +1,219 @@
+<Type Name="EventsObjectWrapper" FullName="Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper">
+  <TypeSignature Language="C#" Value="public class EventsObjectWrapper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventsObjectWrapper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ScriptTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stellt einen Ereignisse-Objektwrapper dar.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventsObjectWrapper (object innerobj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object innerobj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="innerobj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="innerobj">Das innere Objekt.</param>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireBreakpointHit">
+      <MemberSignature Language="C#" Value="public void FireBreakpointHit (Microsoft.SqlServer.Dts.Runtime.BreakpointTarget breakpointTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireBreakpointHit(class Microsoft.SqlServer.Dts.Runtime.BreakpointTarget breakpointTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper.FireBreakpointHit(Microsoft.SqlServer.Dts.Runtime.BreakpointTarget)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="breakpointTarget" Type="Microsoft.SqlServer.Dts.Runtime.BreakpointTarget" />
+      </Parameters>
+      <Docs>
+        <param name="breakpointTarget">Der Breakpoint, der dieses Ereignis auslösen soll.</param>
+        <summary>Löst ein Ereignis aus, wenn ein Breakpointziel im Paket erreicht wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireCustomEvent">
+      <MemberSignature Language="C#" Value="public void FireCustomEvent (string eventName, string eventText, ref object[] arguments, string subComponent, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireCustomEvent(string eventName, string eventText, object[] arguments, string subComponent, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper.FireCustomEvent(System.String,System.String,System.Object[]@,System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="eventText" Type="System.String" />
+        <Parameter Name="arguments" Type="System.Object[]&amp;" RefType="ref" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="eventName">Der Name des auszulösenden Ereignisses.</param>
+        <param name="eventText">Der Text, der das Ereignis beschreibt.</param>
+        <param name="arguments">Ein Array der Argumente, die an das Ereignis übergeben werden sollen.</param>
+        <param name="subComponent">Enthält weitere Details zur Ereignisquelle.</param>
+        <param name="fireAgain">True, um das Ereignis weiterhin ausgelöst werden. andernfalls "false".</param>
+        <summary>Tritt auf, wenn Tasks benutzerdefinierte Taskereignisse auslösen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireError">
+      <MemberSignature Language="C#" Value="public bool FireError (int errorCode, string subComponent, string description, string helpFile, int helpContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FireError(int32 errorCode, string subComponent, string description, string helpFile, int32 helpContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper.FireError(System.Int32,System.String,System.String,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="errorCode" Type="System.Int32" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="helpFile" Type="System.String" />
+        <Parameter Name="helpContext" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="errorCode">Gibt die Fehlermeldung an.</param>
+        <param name="subComponent">Enthält weitere Details zur Ereignisquelle.</param>
+        <param name="description">Der Text der Meldung.</param>
+        <param name="helpFile">Der Pfad zur Hilfedatei, die ausführliche Informationen enthält.</param>
+        <param name="helpContext">Der Bezeichner des Themas in der Hilfedatei.</param>
+        <summary>Löst ein Ereignis aus, wenn ein Fehler auftritt.</summary>
+        <returns>True, wenn das Ereignis weiterhin ausgelöst werden soll. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireInformation">
+      <MemberSignature Language="C#" Value="public void FireInformation (int informationCode, string subComponent, string description, string helpFile, int helpContext, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireInformation(int32 informationCode, string subComponent, string description, string helpFile, int32 helpContext, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper.FireInformation(System.Int32,System.String,System.String,System.String,System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="informationCode" Type="System.Int32" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="helpFile" Type="System.String" />
+        <Parameter Name="helpContext" Type="System.Int32" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="informationCode">Gibt die Informationsmeldung an.</param>
+        <param name="subComponent">Enthält weitere Details zur Ereignisquelle.</param>
+        <param name="description">Der Text der Meldung.</param>
+        <param name="helpFile">Der Pfad zur Hilfedatei, die ausführliche Informationen enthält.</param>
+        <param name="helpContext">Der Bezeichner des Themas in der Hilfedatei.</param>
+        <param name="fireAgain">True, um das Ereignis weiterhin ausgelöst werden. andernfalls "false".</param>
+        <summary>Löst ein Ereignis aus, das Informationen enthält.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireProgress">
+      <MemberSignature Language="C#" Value="public void FireProgress (string progressDescription, int percentComplete, int progressCountLow, int progressCountHigh, string subComponent, ref bool fireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireProgress(string progressDescription, int32 percentComplete, int32 progressCountLow, int32 progressCountHigh, string subComponent, bool fireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper.FireProgress(System.String,System.Int32,System.Int32,System.Int32,System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="progressDescription" Type="System.String" />
+        <Parameter Name="percentComplete" Type="System.Int32" />
+        <Parameter Name="progressCountLow" Type="System.Int32" />
+        <Parameter Name="progressCountHigh" Type="System.Int32" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="fireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="progressDescription">Beschreibt das ausgelöste Verlaufsereignis.</param>
+        <param name="percentComplete">Eine ganze Zahl verwendet, um anzugeben, wie viel Prozent des Tasks abgeschlossen wurden.</param>
+        <param name="progressCountLow">Eine ganze Zahl, die die unteren 32 Bits der abgeschlossenen Einheiten enthält.</param>
+        <param name="progressCountHigh">Eine ganze Zahl, die die oberen 32 Bits der abgeschlossenen Einheiten enthält.</param>
+        <param name="subComponent">Enthält weitere Details zur Ereignisquelle.</param>
+        <param name="fireAgain">True, um das Ereignis weiterhin ausgelöst werden. andernfalls "false".</param>
+        <summary>Löst ein Ereignis aus, wenn das ausführbare Element messbaren Fortschritt erzielt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireQueryCancel">
+      <MemberSignature Language="C#" Value="public bool FireQueryCancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FireQueryCancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper.FireQueryCancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Löst ein Ereignis aus, um zu bestimmen, ob die Ausführung eines ausführbaren Elements beendet werden soll.</summary>
+        <returns>True, wenn es sich bei der Ausführung die Aufgabe beendet werden soll. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireWarning">
+      <MemberSignature Language="C#" Value="public void FireWarning (int warningCode, string subComponent, string description, string helpFile, int helpContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireWarning(int32 warningCode, string subComponent, string description, string helpFile, int32 helpContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.ScriptTask.EventsObjectWrapper.FireWarning(System.Int32,System.String,System.String,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="warningCode" Type="System.Int32" />
+        <Parameter Name="subComponent" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="helpFile" Type="System.String" />
+        <Parameter Name="helpContext" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="warningCode">Gibt die Warnmeldung an.</param>
+        <param name="subComponent">Enthält weitere Details zur Ereignisquelle.</param>
+        <param name="description">Der Text der Meldung.</param>
+        <param name="helpFile">Der Pfad zur Hilfedatei, die ausführliche Informationen enthält.</param>
+        <param name="helpContext">Der Bezeichner des Themas in der Hilfedatei.</param>
+        <summary>Löst ein Ereignis aus, sobald sich der Task in einem Zustand befindet, der keinen Fehler, aber eine Warnung des Clients rechtfertigt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

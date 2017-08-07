@@ -1,0 +1,750 @@
+<Type Name="SqlObjectBase" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase">
+  <TypeSignature Language="C#" Value="public abstract class SqlObjectBase : Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject, Microsoft.SqlServer.Management.Sdk.Sfc.ISqlFilterDecoderCallback" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SqlObjectBase extends Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject implements class Microsoft.SqlServer.Management.Sdk.Sfc.ISqlFilterDecoderCallback" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.EnumObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISqlFilterDecoderCallback</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Hauptarbeitsbereich Pferd für den Sql-Enumerator. generiert die t-SQL für eine Ebene und Comunicates mit den anderen Ebenen </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlObjectBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standard-Konstruktor </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConditionals">
+      <MemberSignature Language="C#" Value="protected virtual void AddConditionals (string field);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddConditionals(string field) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.AddConditionals(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="field" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="field">Muss hinzugefügt werden.</param>
+        <summary>
+            Hinzufügen Sql eingetragen werden sollen, ist erforderlich, wenn die Eigenschaft: Feld, das angefordert wird </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConditionalsJustPropDependencies">
+      <MemberSignature Language="C#" Value="protected void AddConditionalsJustPropDependencies (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddConditionalsJustPropDependencies(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.AddConditionalsJustPropDependencies(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>
+            Fügen Sie nach Belieben zu ihrer Unterstützung erforderlich ist</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConstantForFilter">
+      <MemberSignature Language="C#" Value="public string AddConstantForFilter (string constantValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AddConstantForFilter(string constantValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.AddConstantForFilter(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constantValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="constantValue">Muss hinzugefügt werden.</param>
+        <summary>    
+            FilterDecoder reports that a constant is used in filter
+            gives client a chance to modify it</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFilterProperty">
+      <MemberSignature Language="C#" Value="public virtual string AddFilterProperty (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AddFilterProperty(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.AddFilterProperty(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>
+             der XPath-Scanner hat festgestellt, dass diese Eigenschaft im Filter verwendeten nach Belieben ist erforderlich, um es unterstützen, Rückgabewert hinzufügen </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLinkProperty">
+      <MemberSignature Language="C#" Value="protected virtual string AddLinkProperty (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string AddLinkProperty(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.AddLinkProperty(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>
+            Was ist erforderlich, um es unterstützen, Rückgabewert hinzufügen </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOrderByAcrossDatabases">
+      <MemberSignature Language="C#" Value="protected void AddOrderByAcrossDatabases ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddOrderByAcrossDatabases() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.AddOrderByAcrossDatabases" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Fügen Sie die Order by-Klausel hinzu, wenn Tsql datenbankübergreifend ausgeführt wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOrderByInDatabase">
+      <MemberSignature Language="C#" Value="protected void AddOrderByInDatabase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddOrderByInDatabase() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.AddOrderByInDatabase" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Fügen Sie die Order by-Klausel hinzu, wenn Tsql innerhalb einer Datenbank ausgeführt wird</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOrderByProperty">
+      <MemberSignature Language="C#" Value="public virtual string AddOrderByProperty (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AddOrderByProperty(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.AddOrderByProperty(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>
+             der XPath-Scanner hat festgestellt, dass diese Eigenschaft wird in Orderby verwendet nach Belieben ist erforderlich, um es unterstützen, Rückgabewert hinzufügen    </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOrderByProperty">
+      <MemberSignature Language="C#" Value="public virtual string AddOrderByProperty (string name, bool overrideFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AddOrderByProperty(string name, bool overrideFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.AddOrderByProperty(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="overrideFlags" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <param name="overrideFlags">Muss hinzugefügt werden.</param>
+        <summary>
+            Fügen Sie die Informationen, die die t-SQL nach dem Eigenschaftsnamen sortiert wird, wenn OverrideFlags Tru wird nicht überprüft, ob es zulässig, für die Order by-diese Eigenschaft zu verwenden ist</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPropertyForFilter">
+      <MemberSignature Language="C#" Value="public string AddPropertyForFilter (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AddPropertyForFilter(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.AddPropertyForFilter(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>
+            Name-Eigenschaft wird im Filter verwendet.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeStatementExecuted">
+      <MemberSignature Language="C#" Value="protected virtual void BeforeStatementExecuted (string levelName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void BeforeStatementExecuted(string levelName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.BeforeStatementExecuted(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="levelName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="levelName">Muss hinzugefügt werden.</param>
+        <summary>
+            Zulassen von Unterklassen nichts an die Anweisung hinzufügen
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildStatement">
+      <MemberSignature Language="C#" Value="protected void BuildStatement (Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erParent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void BuildStatement(class Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.BuildStatement(Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="erParent" Type="Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult" />
+      </Parameters>
+      <Docs>
+        <param name="erParent">Muss hinzugefügt werden.</param>
+        <summary>
+            Erstellen Sie-Anweisung</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearHits">
+      <MemberSignature Language="C#" Value="protected void ClearHits ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ClearHits() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.ClearHits" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Deaktivieren Sie die bedingte Tsql die für die Felder in dieser Anforderung aktiviert wurde</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionedSqlList">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Sdk.Sfc.ConditionedSqlList ConditionedSqlList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.ConditionedSqlList ConditionedSqlList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.ConditionedSqlList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ConditionedSqlList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Prefix, Postfix usw., die hinzugefügt werden muss, wenn bestimmte Felder angefordert werden</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Distinct">
+      <MemberSignature Language="C#" Value="protected bool Distinct { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Distinct" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.Distinct" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Ergebnis muss eindeutig sein.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillData">
+      <MemberSignature Language="C#" Value="protected virtual object FillData (Microsoft.SqlServer.Management.Sdk.Sfc.ResultType resultType, System.Collections.Specialized.StringCollection sql, object connectionInfo, Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder sb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object FillData(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ResultType resultType, class System.Collections.Specialized.StringCollection sql, object connectionInfo, class Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder sb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.FillData(Microsoft.SqlServer.Management.Sdk.Sfc.ResultType,System.Collections.Specialized.StringCollection,System.Object,Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resultType" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ResultType" />
+        <Parameter Name="sql" Type="System.Collections.Specialized.StringCollection" />
+        <Parameter Name="connectionInfo" Type="System.Object" />
+        <Parameter Name="sb" Type="Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="resultType">Muss hinzugefügt werden.</param>
+        <param name="sql">Muss hinzugefügt werden.</param>
+        <param name="connectionInfo">Muss hinzugefügt werden.</param>
+        <param name="sb">Muss hinzugefügt werden.</param>
+        <summary>
+            n-Abfragen zum Vorbereiten und das letzte Lesezeichen aus, um die Daten zu füllen.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillDataWithUseFailure">
+      <MemberSignature Language="C#" Value="protected object FillDataWithUseFailure (Microsoft.SqlServer.Management.Sdk.Sfc.SqlEnumResult sqlresult, Microsoft.SqlServer.Management.Sdk.Sfc.ResultType resultType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object FillDataWithUseFailure(class Microsoft.SqlServer.Management.Sdk.Sfc.SqlEnumResult sqlresult, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ResultType resultType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.FillDataWithUseFailure(Microsoft.SqlServer.Management.Sdk.Sfc.SqlEnumResult,Microsoft.SqlServer.Management.Sdk.Sfc.ResultType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlresult" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlEnumResult" />
+        <Parameter Name="resultType" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ResultType" />
+      </Parameters>
+      <Docs>
+        <param name="sqlresult">Muss hinzugefügt werden.</param>
+        <param name="resultType">Muss hinzugefügt werden.</param>
+        <summary>
+            Abrufen von Daten aus Sql Server. Wenn ein beim Abrufen in einer Datenbank Fehler ignoriert werden Sie, dass die Datenbank</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult GetData (Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erParent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult GetData(class Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.GetData(Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="erParent" Type="Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult" />
+      </Parameters>
+      <Docs>
+        <param name="erParent">Muss hinzugefügt werden.</param>
+        <summary>
+            Füllen Sie StatementBuilder mit den Informationen für diese Ebene </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlProperty">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectProperty GetSqlProperty (string field, Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages usage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectProperty GetSqlProperty(string field, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages usage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.GetSqlProperty(System.String,Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="field" Type="System.String" />
+        <Parameter Name="usage" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ObjectPropertyUsages" />
+      </Parameters>
+      <Docs>
+        <param name="field">Muss hinzugefügt werden.</param>
+        <param name="usage">Muss hinzugefügt werden.</param>
+        <summary>
+            das Eigenschaftenfeld abrufen, wenn sie für die Verwendung zulässig ist, andernfalls löst</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntegrateParentResult">
+      <MemberSignature Language="C#" Value="protected virtual void IntegrateParentResult (Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erParent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IntegrateParentResult(class Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.IntegrateParentResult(Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="erParent" Type="Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult" />
+      </Parameters>
+      <Docs>
+        <param name="erParent">Muss hinzugefügt werden.</param>
+        <summary>
+            Kombinieren von dieser Ebene StatementBuilder mit was im Ergebnis aus der übergeordneten Ebene empfangen wurde</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrderByRedirect">
+      <MemberSignature Language="C#" Value="protected System.Collections.SortedList OrderByRedirect { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.SortedList OrderByRedirect" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.OrderByRedirect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.SortedList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Um eine Übersetzen von OrderByOn postprocess zu "other" unterstützende Felder verwendet</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostProcess">
+      <MemberSignature Language="C#" Value="public override void PostProcess (Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erChildren);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PostProcess(class Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult erChildren) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.PostProcess(Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="erChildren" Type="Microsoft.SqlServer.Management.Sdk.Sfc.EnumResult" />
+      </Parameters>
+      <Docs>
+        <param name="erChildren">Muss hinzugefügt werden.</param>
+        <summary>
+            keine PostProcess Aktionen ausgeführt</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostProcessList">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Sdk.Sfc.ConditionedSqlList PostProcessList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.ConditionedSqlList PostProcessList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.PostProcessList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ConditionedSqlList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            POST-Prozesse für die Ebene</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyLinkList">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Sdk.Sfc.ConditionedSqlList PropertyLinkList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.ConditionedSqlList PropertyLinkList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.PropertyLinkList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ConditionedSqlList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Links für Eigenschaften</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestParentSelect">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Sdk.Sfc.RequestParentSelect RequestParentSelect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.RequestParentSelect RequestParentSelect" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.RequestParentSelect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.RequestParentSelect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Speichermanagement für ein übergeordnetes Element auswählen (wenn die t-SQL für die übergeordnete Ebene, in der Regel, um es in der Präfix einzufügen erforderlich) </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveComputedField">
+      <MemberSignature Language="C#" Value="protected virtual string ResolveComputedField (string fieldName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string ResolveComputedField(string fieldName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.ResolveComputedField(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fieldName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fieldName">Muss hinzugefügt werden.</param>
+        <summary>
+            ein berechnetes Feld verwendet wurde. der zugehörige dynamisch berechneten Wert zurückgegeben</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveLocalLinkLinks">
+      <MemberSignature Language="C#" Value="protected void ResolveLocalLinkLinks ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ResolveLocalLinkLinks() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.ResolveLocalLinkLinks" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Beheben Sie alle Links, die auf lokaler Ebene aufgelöst werden können</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestoreInitialState">
+      <MemberSignature Language="C#" Value="protected void RestoreInitialState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RestoreInitialState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.RestoreInitialState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Rufen Sie das Objekt in einen fehlerfreien Zustand entfernen nach Belieben geändert wurde, um die aktuelle Anforderung zu beheben.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultTypes">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Management.Sdk.Sfc.ResultType[] ResultTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Sdk.Sfc.ResultType[] ResultTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.ResultTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ResultType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die von dieser Ebene unterstützten ResultTypes</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveParentRequest">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Management.Sdk.Sfc.Request RetrieveParentRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.Request RetrieveParentRequest() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.RetrieveParentRequest" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Request</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Abrufen der Anforderung, die an die übergeordnete Ebene gesendet werden sollen. Wir müssen Wht Informationen aus der übergeordneten Ebene hier benötigten kommunizieren.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpecialQuery">
+      <MemberSignature Language="C#" Value="protected System.Collections.SortedList SpecialQuery { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.SortedList SpecialQuery" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.SpecialQuery" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.SortedList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Speichert eine Abfrage, die zum Testen einer Bedingung, z. B. eine Tabelle, die zum Auflösen von dieser Ebene erforderlich vorhanden ist, fällt, die dann die leere Menge verwendet wird und nicht-Ausnahme zurückgegeben.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlRequest">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Sdk.Sfc.SqlRequest SqlRequest { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SqlRequest SqlRequest" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.SqlRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SqlRequest</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            die SqlRequest, die dieser Ebene behoben werden muss.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatementBuilder">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder StatementBuilder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder StatementBuilder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.StatementBuilder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.StatementBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der TSQL-Platzhalter + Informationen, die später im TSQL transformiert werden</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreInitialState">
+      <MemberSignature Language="C#" Value="protected void StoreInitialState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void StoreInitialState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.StoreInitialState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            vor initialisieren Sie das Objekt mit der statischen Informationen. (Auflösen von lokalen Links)</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsParameterization">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsParameterization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsParameterization" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SqlObjectBase.SupportsParameterization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

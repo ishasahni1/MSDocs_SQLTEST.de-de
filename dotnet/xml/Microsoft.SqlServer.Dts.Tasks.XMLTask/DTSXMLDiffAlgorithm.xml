@@ -1,0 +1,71 @@
+<Type Name="DTSXMLDiffAlgorithm" FullName="Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm">
+  <TypeSignature Language="C#" Value="public enum DTSXMLDiffAlgorithm" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DTSXMLDiffAlgorithm extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.XMLTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Gibt an, welcher Algorithmus beim Vergleichen von XML-Dokumenten verwendet werden soll.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Standard. Wählt abhängig von der Größe und der angenommenen Anzahl von Änderungen in den verglichenen Dokumenten den Vergleichsalgorithmus aus.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Fast">
+      <MemberSignature Language="C#" Value="Fast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm Fast = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm.Fast" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Vergleicht die beiden XML-Dokumente, indem die XML-Struktur durchlaufen und die einzelnen Knoten verglichen werden. Dieser Algorithmus ist sehr schnell, führt aber möglicherweise zu weniger präzisen Ergebnissen. Es kann z. B. anstelle eines Verschiebungsvorgangs sowohl einen Hinzufügungsvorgang als auch einen Entfernungsvorgang für einen Knoten erkennen.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Precise">
+      <MemberSignature Language="C#" Value="Precise" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm Precise = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm.Precise" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Vergleicht Dateien auf Grundlage eines Suchalgorithmus für den Bearbeitungsabstand zwischen Strukturen, der auch als Zhang-Shasha-Algorithmus bezeichnet wird. Dieser Algorithmus ergibt sehr präzise Ergebnisse, ist aber möglicherweise bei umfangreichen XML-Dokumenten mit vielen Änderungen sehr langsam.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

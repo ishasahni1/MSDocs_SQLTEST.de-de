@@ -1,0 +1,124 @@
+<Type Name="IMutableStoredProcedure" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableStoredProcedure">
+  <TypeSignature Language="C#" Value="public interface IMutableStoredProcedure : Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCallableModule, Microsoft.SqlServer.Management.SqlParser.Metadata.IStoredProcedure" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMutableStoredProcedure implements class Microsoft.SqlServer.Management.SqlParser.Metadata.ICallableModule, class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IFunctionModuleBase, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCallableModule, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabaseObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableFunctionModuleBase, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableSchemaOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableUserDefinedFunctionModuleBase, class Microsoft.SqlServer.Management.SqlParser.Metadata.ISchemaOwnedObject, class Microsoft.SqlServer.Management.SqlParser.Metadata.IStoredProcedure, class Microsoft.SqlServer.Management.SqlParser.Metadata.IUserDefinedFunctionModuleBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableStoredProcedure" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCallableModule</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IStoredProcedure</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt eine änderbare gespeicherte SQL Server-Prozedur dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BodyText">
+      <MemberSignature Language="C#" Value="public string BodyText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BodyText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableStoredProcedure.BodyText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Transact-SQL-Anweisungen ab, die das Modul definieren, oder legt sie fest.
+            </summary>
+        <value>Die Transact-SQL-Anweisungen, die das Modul definieren.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForReplication">
+      <MemberSignature Language="C#" Value="public bool ForReplication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ForReplication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableStoredProcedure.ForReplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die gespeicherte Prozedur für die Replikation verfügbar ist, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the stored procedure is available for replication; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRecompiled">
+      <MemberSignature Language="C#" Value="public bool IsRecompiled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRecompiled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableStoredProcedure.IsRecompiled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die gespeicherte Prozedur vor der Ausführung erneut kompiliert wird, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the stored procedure is recompiled before execution; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSqlClr">
+      <MemberSignature Language="C#" Value="public bool IsSqlClr { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSqlClr" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableStoredProcedure.IsSqlClr" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob ein CLR-Modul vorliegt, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if this is a CLR module; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Startup">
+      <MemberSignature Language="C#" Value="public bool Startup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Startup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableStoredProcedure.Startup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die gespeicherte Prozedur beim Starten der SQL Server-Instanz ausgeführt wird, oder legt ihn fest.
+            </summary>
+        <value>
+          <c>true</c> if the stored procedure runs when the instance of SQL Server starts up; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

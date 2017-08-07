@@ -1,0 +1,947 @@
+<Type Name="IMetadataObjectVisitor&lt;T&gt;" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IMetadataObjectVisitor&lt;T&gt; : Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor&lt;T&gt;, Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseOwnedObjectVisitor&lt;T&gt;, Microsoft.SqlServer.Management.SqlParser.Metadata.ISchemaOwnedObjectVisitor&lt;T&gt;, Microsoft.SqlServer.Management.SqlParser.Metadata.IServerOwnedObjectVisitor&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMetadataObjectVisitor`1&lt;T&gt; implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor`1&lt;!T&gt;, class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseOwnedObjectVisitor`1&lt;!T&gt;, class Microsoft.SqlServer.Management.SqlParser.Metadata.ISchemaOwnedObjectVisitor`1&lt;!T&gt;, class Microsoft.SqlServer.Management.SqlParser.Metadata.IServerOwnedObjectVisitor`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseOwnedObjectVisitor&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.ISchemaOwnedObjectVisitor&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IServerOwnedObjectVisitor&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">Der Typ des Besuchers von Metadatenobjekten.</typeparam>
+    <summary>
+            Stellt einen Besucher von SQL Server-Metadatenobjekten dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction builtInFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction builtInFunction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builtInFunction" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" />
+      </Parameters>
+      <Docs>
+        <param name="builtInFunction">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IBuiltInFunction" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ICheckConstraint checkConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ICheckConstraint checkConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ICheckConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="checkConstraint" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ICheckConstraint" />
+      </Parameters>
+      <Docs>
+        <param name="checkConstraint">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICheckConstraint" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICheckConstraint" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType clrDataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType clrDataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clrDataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType" />
+      </Parameters>
+      <Docs>
+        <param name="clrDataType">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IClrDataType" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ICollation collation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ICollation collation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ICollation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collation" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ICollation" />
+      </Parameters>
+      <Docs>
+        <param name="collation">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICollation" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICollation" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />
+      </Parameters>
+      <Docs>
+        <param name="column">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType cursorDataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType cursorDataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cursorDataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType" />
+      </Parameters>
+      <Docs>
+        <param name="cursorDataType">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorDataType" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter cursorParameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter cursorParameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cursorParameter" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter" />
+      </Parameters>
+      <Docs>
+        <param name="cursorParameter">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorVariable cursorVariable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorVariable cursorVariable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorVariable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cursorVariable" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorVariable" />
+      </Parameters>
+      <Docs>
+        <param name="cursorVariable">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorVariable" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorVariable" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePermission databasePermission);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePermission databasePermission) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="databasePermission" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePermission" />
+      </Parameters>
+      <Docs>
+        <param name="databasePermission">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePermission" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePermission" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart datePart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart datePart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="datePart" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart" />
+      </Parameters>
+      <Docs>
+        <param name="datePart">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatePart" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IDefaultConstraint defaultConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDefaultConstraint defaultConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IDefaultConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultConstraint" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDefaultConstraint" />
+      </Parameters>
+      <Docs>
+        <param name="defaultConstraint">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDefaultConstraint" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDefaultConstraint" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IDmlTrigger dmlTrigger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDmlTrigger dmlTrigger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IDmlTrigger)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dmlTrigger" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDmlTrigger" />
+      </Parameters>
+      <Docs>
+        <param name="dmlTrigger">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDmlTrigger" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDmlTrigger" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext executionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext executionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="executionContext" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="executionContext">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IExecutionContext" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn foreignKeyColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn foreignKeyColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="foreignKeyColumn" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn" />
+      </Parameters>
+      <Docs>
+        <param name="foreignKeyColumn">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint foreignKeyConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint foreignKeyConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="foreignKeyConstraint" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint" />
+      </Parameters>
+      <Docs>
+        <param name="foreignKeyConstraint">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn indexedColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn indexedColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="indexedColumn" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn" />
+      </Parameters>
+      <Docs>
+        <param name="indexedColumn">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IIndexedColumn" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint primaryKeyConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint primaryKeyConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primaryKeyConstraint" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint" />
+      </Parameters>
+      <Docs>
+        <param name="primaryKeyConstraint">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex relationalIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex relationalIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relationalIndex" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex" />
+      </Parameters>
+      <Docs>
+        <param name="relationalIndex">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType scalarDataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType scalarDataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scalarDataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" />
+      </Parameters>
+      <Docs>
+        <param name="scalarDataType">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression scalarExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression scalarExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scalarExpression" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression" />
+      </Parameters>
+      <Docs>
+        <param name="scalarExpression">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarExpression" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter scalarParameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter scalarParameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scalarParameter" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter" />
+      </Parameters>
+      <Docs>
+        <param name="scalarParameter">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarVariable scalarVariable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarVariable scalarVariable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarVariable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scalarVariable" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarVariable" />
+      </Parameters>
+      <Docs>
+        <param name="scalarVariable">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarVariable" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarVariable" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ISpatialIndex spatialIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ISpatialIndex spatialIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ISpatialIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spatialIndex" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ISpatialIndex" />
+      </Parameters>
+      <Docs>
+        <param name="spatialIndex">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISpatialIndex" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISpatialIndex" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics statistics);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics statistics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statistics" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics" />
+      </Parameters>
+      <Docs>
+        <param name="statistics">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemClrDataType systemClrDataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemClrDataType systemClrDataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemClrDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="systemClrDataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemClrDataType" />
+      </Parameters>
+      <Docs>
+        <param name="systemClrDataType">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemClrDataType" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemClrDataType" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType systemDataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType systemDataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="systemDataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" />
+      </Parameters>
+      <Docs>
+        <param name="systemDataType">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ISystemDataType" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType tableDataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType tableDataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tableDataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType" />
+      </Parameters>
+      <Docs>
+        <param name="tableDataType">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ITableParameter tableParameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITableParameter tableParameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ITableParameter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tableParameter" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITableParameter" />
+      </Parameters>
+      <Docs>
+        <param name="tableParameter">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableParameter" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableParameter" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.ITableVariable tableVariable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITableVariable tableVariable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.ITableVariable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tableVariable" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITableVariable" />
+      </Parameters>
+      <Docs>
+        <param name="tableVariable">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableVariable" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableVariable" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtDataMember udtDataMember);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtDataMember udtDataMember) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtDataMember)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="udtDataMember" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtDataMember" />
+      </Parameters>
+      <Docs>
+        <param name="udtDataMember">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtDataMember" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtDataMember" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtMethod udtMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtMethod udtMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="udtMethod" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtMethod" />
+      </Parameters>
+      <Docs>
+        <param name="udtMethod">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtMethod" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IUdtMethod" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint uniqueConstraint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint uniqueConstraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uniqueConstraint" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint" />
+      </Parameters>
+      <Docs>
+        <param name="uniqueConstraint">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IVirtualTable virtualTable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IVirtualTable virtualTable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IVirtualTable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualTable" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IVirtualTable" />
+      </Parameters>
+      <Docs>
+        <param name="virtualTable">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IVirtualTable" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IVirtualTable" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IVoidDataType voidDataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IVoidDataType voidDataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IVoidDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="voidDataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IVoidDataType" />
+      </Parameters>
+      <Docs>
+        <param name="voidDataType">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IVoidDataType" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IVoidDataType" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType xmlDataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType xmlDataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlDataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType" />
+      </Parameters>
+      <Docs>
+        <param name="xmlDataType">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataType" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeMethod xmlDataTypeMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeMethod xmlDataTypeMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlDataTypeMethod" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeMethod" />
+      </Parameters>
+      <Docs>
+        <param name="xmlDataTypeMethod">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeMethod" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeMethod" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeTableMethod xmlDataTypeMethod);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeTableMethod xmlDataTypeMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeTableMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlDataTypeMethod" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeTableMethod" />
+      </Parameters>
+      <Docs>
+        <param name="xmlDataTypeMethod">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeTableMethod" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlDataTypeTableMethod" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Visit">
+      <MemberSignature Language="C#" Value="public T Visit (Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlIndex xmlIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Visit(class Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlIndex xmlIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1.Visit(Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlIndex" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlIndex" />
+      </Parameters>
+      <Docs>
+        <param name="xmlIndex">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlIndex" /> zu besuchendes Eigenschaftenobjekt.</param>
+        <summary>
+            Besucht das angegebene <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IXmlIndex" />-Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> durch den Besuch zurückgegebene Objekt.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,165 @@
+<Type Name="SfcReferenceCollectionAttribute" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceCollectionAttribute">
+  <TypeSignature Language="C#" Value="public class SfcReferenceCollectionAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SfcReferenceCollectionAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceCollectionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=true, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Attribut (soft) Verweise auf ein aufzählbares Ziel.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcReferenceCollectionAttribute (Type resolverType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type resolverType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceCollectionAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resolverType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="resolverType">Der Typ, der eine Auflistung Resolver instanziiert werden soll.</param>
+        <summary>
+            Verweisauflistung wird vom-Objekt angegebenen Konfliktlösers gelöst werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcReferenceCollectionAttribute (Type resolverType, string[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type resolverType, string[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceCollectionAttribute.#ctor(System.Type,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resolverType" Type="System.Type" />
+        <Parameter Name="parameters" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="resolverType">Der Typ, der eine Auflistung Resolver instanziiert werden soll.</param>
+        <param name="parameters">Alle Parameter für die Auflösung erforderlich sind.</param>
+        <summary>
+            Verweisauflistung wird durch das Erstellen einer Instanz des Typs angegebenen Konfliktlöser mit optionalen Schlüsseln und den Parametern aufgelöst werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="public string[] Arguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Arguments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceCollectionAttribute.Arguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Argumente für den Konfliktlöser.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionResolver">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.ISfcReferenceCollectionResolver CollectionResolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.ISfcReferenceCollectionResolver CollectionResolver" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceCollectionAttribute.CollectionResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.ISfcReferenceCollectionResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Benutzerdefinierte konfliktlöserschnittstelle.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveCollection">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ResolveCollection (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable ResolveCollection(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceCollectionAttribute.ResolveCollection(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">Die Quellinstanz, von der aufgelöst werden soll.</param>
+        <summary>
+            Löst ein aufzählbares Ziel vom angegebenen Quellobjekt auf.
+            </summary>
+        <returns>Das aufgelöste aufzählbare Ziel.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveCollection&lt;T,S&gt;">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;T&gt; ResolveCollection&lt;T,S&gt; (S instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; ResolveCollection&lt;T, S&gt;(!!S instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceCollectionAttribute.ResolveCollection``2(``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="S" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="instance" Type="S" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Der Typ der Zielinstanz</typeparam>
+        <typeparam name="S">Der Typ der Quellinstanz, von der aufgelöst werden soll</typeparam>
+        <param name="instance">Die Quellinstanz, von der aufgelöst werden soll.</param>
+        <summary>
+            Ein stark typisiertes aufzählbares Ziel vom angegebenen Quellobjekt zu beheben.
+            </summary>
+        <returns>Das aufgelöste aufzählbare Ziel.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

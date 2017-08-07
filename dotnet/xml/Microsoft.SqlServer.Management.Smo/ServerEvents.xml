@@ -1,0 +1,306 @@
+<Type Name="ServerEvents" FullName="Microsoft.SqlServer.Management.Smo.ServerEvents">
+  <TypeSignature Language="C#" Value="public sealed class ServerEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServerEvents extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.ServerEvents" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Klasse, die alle Funktionen für Serverereignisse kapselt.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetEventSelection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ServerEventSet GetEventSelection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Smo.ServerEventSet GetEventSelection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.GetEventSelection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ServerEventSet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt die aktuelle Auswahl von Ereignissen auf Serverebene zurück.
+Diese Methode gibt eine Kopie des Ereignisauswahl geändert und wieder über SubscribeToEvents-Methode übermittelt werden kann.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTraceEventSelection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ServerTraceEventSet GetTraceEventSelection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Smo.ServerTraceEventSet GetTraceEventSelection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.GetTraceEventSelection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ServerTraceEventSet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt die aktuelle Auswahl der Ablaufverfolgungsereignisse auf Serverebene zurück.
+Diese Methode gibt eine Kopie des Ereignisauswahl geändert und wieder über SubscribeToEvents-Methode übermittelt werden kann.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerEvent">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Smo.ServerEventHandler ServerEvent;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Smo.ServerEventHandler ServerEvent" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.ServerEvents.ServerEvent" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ServerEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Eine Standard-Ereignishandler. Fügen Sie hier die Handler zum Empfangen von Notifiactions hinzu.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCredentials">
+      <MemberSignature Language="C#" Value="public void SetCredentials (string username, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCredentials(string username, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.SetCredentials(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">Muss hinzugefügt werden.</param>
+        <param name="password">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartEvents">
+      <MemberSignature Language="C#" Value="public void StartEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.StartEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Startet die ereignisbenachrichtigungen. Diese Methode muss aufgerufen werden, um den Empfang von Benachrichtigungen starten.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopEvents">
+      <MemberSignature Language="C#" Value="public void StopEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StopEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.StopEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ereignisbenachrichtigungen wird beendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToEvents">
+      <MemberSignature Language="C#" Value="public void SubscribeToEvents (Microsoft.SqlServer.Management.Smo.ServerEventSet events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SubscribeToEvents(class Microsoft.SqlServer.Management.Smo.ServerEventSet events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.SubscribeToEvents(Microsoft.SqlServer.Management.Smo.ServerEventSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="events" Type="Microsoft.SqlServer.Management.Smo.ServerEventSet" />
+      </Parameters>
+      <Docs>
+        <param name="events">Muss hinzugefügt werden.</param>
+        <summary>
+            Abonniert eine Reihe von Ereignissen auf einem Server.
+Benachrichtigungen für diese Ereignisse werden mit einem Standardhandler für diese Klasse ausgelöst werden.
+Bereits abonniert Ereignisse wird bei jedem dieser Methode einen neuen Satz von Ereignissen Aufruf hinzugefügt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToEvents">
+      <MemberSignature Language="C#" Value="public void SubscribeToEvents (Microsoft.SqlServer.Management.Smo.ServerTraceEventSet events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SubscribeToEvents(class Microsoft.SqlServer.Management.Smo.ServerTraceEventSet events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.SubscribeToEvents(Microsoft.SqlServer.Management.Smo.ServerTraceEventSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="events" Type="Microsoft.SqlServer.Management.Smo.ServerTraceEventSet" />
+      </Parameters>
+      <Docs>
+        <param name="events">Muss hinzugefügt werden.</param>
+        <summary>
+            Abonniert ein Satz von Ablaufverfolgungsereignissen auf einem Server.
+Benachrichtigungen für diese Ereignisse werden mit einem Standardhandler für diese Klasse ausgelöst werden.
+Bereits abonniert Ereignisse wird bei jedem dieser Methode einen neuen Satz von Ereignissen Aufruf hinzugefügt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToEvents">
+      <MemberSignature Language="C#" Value="public void SubscribeToEvents (Microsoft.SqlServer.Management.Smo.ServerEventSet events, Microsoft.SqlServer.Management.Smo.ServerEventHandler eventHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SubscribeToEvents(class Microsoft.SqlServer.Management.Smo.ServerEventSet events, class Microsoft.SqlServer.Management.Smo.ServerEventHandler eventHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.SubscribeToEvents(Microsoft.SqlServer.Management.Smo.ServerEventSet,Microsoft.SqlServer.Management.Smo.ServerEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="events" Type="Microsoft.SqlServer.Management.Smo.ServerEventSet" />
+        <Parameter Name="eventHandler" Type="Microsoft.SqlServer.Management.Smo.ServerEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="events">Muss hinzugefügt werden.</param>
+        <param name="eventHandler">Muss hinzugefügt werden.</param>
+        <summary>
+            Abonniert eine Reihe von Ereignissen auf einem Server.
+Benachrichtigungen für diese Ereignisse werden über einen Ereignishandler bereitgestellt, um diese Methode ausgelöst.
+Bereits abonniert Ereignisse wird bei jedem dieser Methode einen neuen Satz von Ereignissen Aufruf hinzugefügt.
+Wenn ein Ereignis bereits abonniert ist wird durch den neuen Handler, die an diese Methode übergebenen seinem vorhandenen Handler ersetzt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToEvents">
+      <MemberSignature Language="C#" Value="public void SubscribeToEvents (Microsoft.SqlServer.Management.Smo.ServerTraceEventSet events, Microsoft.SqlServer.Management.Smo.ServerEventHandler eventHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SubscribeToEvents(class Microsoft.SqlServer.Management.Smo.ServerTraceEventSet events, class Microsoft.SqlServer.Management.Smo.ServerEventHandler eventHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.SubscribeToEvents(Microsoft.SqlServer.Management.Smo.ServerTraceEventSet,Microsoft.SqlServer.Management.Smo.ServerEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="events" Type="Microsoft.SqlServer.Management.Smo.ServerTraceEventSet" />
+        <Parameter Name="eventHandler" Type="Microsoft.SqlServer.Management.Smo.ServerEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="events">Muss hinzugefügt werden.</param>
+        <param name="eventHandler">Muss hinzugefügt werden.</param>
+        <summary>
+            Abonniert ein Satz von Ablaufverfolgungsereignissen auf einem Server.
+Benachrichtigungen für diese Ereignisse werden über einen Ereignishandler bereitgestellt, um diese Methode ausgelöst.
+Bereits abonniert Ereignisse wird bei jedem dieser Methode einen neuen Satz von Ereignissen Aufruf hinzugefügt.
+Wenn ein Ereignis bereits abonniert ist wird durch den neuen Handler, die an diese Methode übergebenen seinem vorhandenen Handler ersetzt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeAllEvents">
+      <MemberSignature Language="C#" Value="public void UnsubscribeAllEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnsubscribeAllEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.UnsubscribeAllEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Hebt das Abonnement vom alle Ereignisse aus, und gibt alle für die Ereignisse Abonnements reservierten Speicher frei.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeFromEvents">
+      <MemberSignature Language="C#" Value="public void UnsubscribeFromEvents (Microsoft.SqlServer.Management.Smo.ServerEventSet events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnsubscribeFromEvents(class Microsoft.SqlServer.Management.Smo.ServerEventSet events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.UnsubscribeFromEvents(Microsoft.SqlServer.Management.Smo.ServerEventSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="events" Type="Microsoft.SqlServer.Management.Smo.ServerEventSet" />
+      </Parameters>
+      <Docs>
+        <param name="events">Muss hinzugefügt werden.</param>
+        <summary>
+            Hebt das Abonnement aus einem Satz von Ereignissen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeFromEvents">
+      <MemberSignature Language="C#" Value="public void UnsubscribeFromEvents (Microsoft.SqlServer.Management.Smo.ServerTraceEventSet events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnsubscribeFromEvents(class Microsoft.SqlServer.Management.Smo.ServerTraceEventSet events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ServerEvents.UnsubscribeFromEvents(Microsoft.SqlServer.Management.Smo.ServerTraceEventSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="events" Type="Microsoft.SqlServer.Management.Smo.ServerTraceEventSet" />
+      </Parameters>
+      <Docs>
+        <param name="events">Muss hinzugefügt werden.</param>
+        <summary>
+            Hebt das Abonnement aus einem Satz von Ablaufverfolgungsereignissen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

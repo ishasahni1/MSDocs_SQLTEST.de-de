@@ -1,0 +1,38 @@
+<Type Name="IUniversalAuthProvider" FullName="Microsoft.SqlServer.Dac.IUniversalAuthProvider">
+  <TypeSignature Language="C#" Value="public interface IUniversalAuthProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUniversalAuthProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.IUniversalAuthProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Implementieren Sie diese Schnittstelle, um ein Zugriffstoken Zeichenfolge zu erstellen. Dieses Zugriffstoken wird verwendet, um das Festlegen der <see cref="P:System.Data.SqlClient.SqlConnection.AccessToken" /> für beliebige SqlConnection-Instanzen, die bei der Verbindung mit einer Datenbank erstellt.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetValidAccessToken">
+      <MemberSignature Language="C#" Value="public string GetValidAccessToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetValidAccessToken() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.IUniversalAuthProvider.GetValidAccessToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt ein gültiger Zugriffstoken zurück.
+            </summary>
+        <returns>Das Zugriffstoken verwendet werden, um die Eigenschaft AccessToken die SqlConnection festzulegen.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

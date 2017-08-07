@@ -1,0 +1,136 @@
+<Type Name="ISessionProvider" FullName="Microsoft.SqlServer.Management.XEvent.ISessionProvider">
+  <TypeSignature Language="C#" Value="public interface ISessionProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISessionProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.XEvent.ISessionProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.XEvent</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+              Legt die Schnittstelle fest, die der Komponentenanbieter für die Sitzung implementieren muss, mit dem der Benutzercode des Hauptobjekts interagiert
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAlterScript">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetAlterScript ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetAlterScript() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.ISessionProvider.GetAlterScript" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Das ALTER-Skript für diese Sitzung
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCreateScript">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetCreateScript ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetCreateScript() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.ISessionProvider.GetCreateScript" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+              Das CREATE-Skript für diese Sitzung
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDropScript">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetDropScript ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetDropScript() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.ISessionProvider.GetDropScript" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            "Drop"-Skripts für diese Sitzung
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.ISessionProvider.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Startet diese Sitzung
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.ISessionProvider.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Beendet diese Sitzung
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateAlter">
+      <MemberSignature Language="C#" Value="public void ValidateAlter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ValidateAlter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.ISessionProvider.ValidateAlter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+             Back-End-spezifische Validierungen, um die Sitzung zu ändern
+            </summary>
+        <returns> „true“ wird ausgegeben, wenn die Validierung erfolgreich ist.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,130 @@
+<Type Name="MetadataObjectBase" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataObjectBase">
+  <TypeSignature Language="C#" Value="public abstract class MetadataObjectBase : Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MetadataObjectBase extends System.Object implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataObjectBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt die abstrakte Basisklasse für ein Metadatenobjekt bereit.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MetadataObjectBase (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataObjectBase.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des Metadatenobjekts.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataObjectBase" /> -Klasse, die dem angegebenen Namen ab.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public abstract T Accept&lt;T&gt; (Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor&lt;T&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Accept&lt;T&gt;(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1&lt;!!T&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataObjectBase.Accept``1(Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Der Typ des vom zurückgegebene Wert den <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1" /> Objekt.</typeparam>
+        <param name="visitor">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor`1" />-Objekt, das den Besuch ausführt.</param>
+        <summary>
+            Lässt einen Besuch des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1" />-Objekts zu.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Der vom <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObjectVisitor`1" />-Objekt zurückgegebene Wert.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="m_name">
+      <MemberSignature Language="C#" Value="protected readonly string m_name;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly string m_name" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataObjectBase.m_name" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen des Metadatenobjekts ab.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataObjectBase.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen des Metadatenobjekts ab.
+            </summary>
+        <value>Der Name des Metadatenobjekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.MetadataObjectBase.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt eine Zeichenfolgendarstellung des aktuellen Metadatenobjekts zurück.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine Zeichenfolgendarstellung des aktuellen Metadatenobjekts.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

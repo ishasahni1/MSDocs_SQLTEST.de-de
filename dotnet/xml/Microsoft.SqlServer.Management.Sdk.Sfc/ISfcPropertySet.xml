@@ -1,0 +1,190 @@
+<Type Name="ISfcPropertySet" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet">
+  <TypeSignature Language="C#" Value="public interface ISfcPropertySet" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISfcPropertySet" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Dies ist die Schnittstelle, die Zugriff auf einen Satz von Eigenschaften (Auflistung, Liste oder anderen Aggregation) bietet.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet.Contains(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">Eigenschaft</param>
+        <summary>
+            Überprüft, ob die Eigenschaft mit dem angegebenen Metadaten vorhanden ist.
+            </summary>
+        <returns>"true", wenn erfolgreich war</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Eigenschaftenname</param>
+        <summary>
+            Überprüft, ob die Eigenschaft mit dem angegebenen Namen vorhanden ist.
+            </summary>
+        <returns>"true", wenn erfolgreich war</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public bool Contains&lt;T&gt; (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains&lt;T&gt;(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet.Contains``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Eigenschaftentyp</typeparam>
+        <param name="name">Eigenschaftenname</param>
+        <summary>
+            Überprüft, ob die Eigenschaft mit dem angegebenen Namen und Typ vorhanden ist.
+            </summary>
+        <returns>"true", wenn erfolgreich war</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty&gt; EnumProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty&gt; EnumProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet.EnumProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Listet alle Eigenschaften
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProperty">
+      <MemberSignature Language="C#" Value="public bool TryGetProperty (string name, out Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetProperty(string name, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet.TryGetProperty(System.String,Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="property" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcProperty&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="name">Eigenschaftenname</param>
+        <param name="property">Eigenschaftsinformationen</param>
+        <summary>
+            Versucht, Metadaten abzurufen.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetPropertyValue">
+      <MemberSignature Language="C#" Value="public bool TryGetPropertyValue (string name, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetPropertyValue(string name, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet.TryGetPropertyValue(System.String,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="name">Eigenschaftenname</param>
+        <param name="value">Eigenschaftswert</param>
+        <summary>
+            Versucht, den Eigenschaftswert vom Anbieter abgerufen werden.
+            </summary>
+        <returns>"true", wenn erfolgreich war</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetPropertyValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public bool TryGetPropertyValue&lt;T&gt; (string name, out T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetPropertyValue&lt;T&gt;(string name, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcPropertySet.TryGetPropertyValue``1(System.String,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Eigenschaftentyp</typeparam>
+        <param name="name">Name der</param>
+        <param name="value">Eigenschaftswert</param>
+        <summary>
+            Versucht, den Eigenschaftswert vom Anbieter abgerufen werden.
+            </summary>
+        <returns>"true", wenn erfolgreich war</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,127 @@
+<Type Name="DeploymentContributorConfigurationSetup" FullName="Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationSetup">
+  <TypeSignature Language="C#" Value="public sealed class DeploymentContributorConfigurationSetup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DeploymentContributorConfigurationSetup extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationSetup" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Die aktuelle Setup für <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentContributor" /> Objekte. Das Setup-Objekt kann während der Buildprozesse von Bereitstellungscontributors zum Kopieren von Dateien für die Ausgabe in die generierte DACPAC-Datei verwendet werden oder zur Erstellung neuer Dateien, die ebenfalls in der DACPAC-Datei gespeichert werden. Finden Sie unter der <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream" /> -API für Weitere Informationen zum Angeben von Eingaben.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyInputToOutput">
+      <MemberSignature Language="C#" Value="public void CopyInputToOutput (Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyInputToOutput(class Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationSetup.CopyInputToOutput(Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+          <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream" />kopiert werden soll</param>
+        <summary>
+            Kopiert die Inhalte eines Eingabestreams in einen Ausgabestream, der in einem Paket gespeichert ist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateInputs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream&gt; EnumerateInputs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream&gt; EnumerateInputs() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationSetup.EnumerateInputs" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt eine aufzählbare Auflistung von <see cref="T:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationStream" /> Objekte.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenNewOutput">
+      <MemberSignature Language="C#" Value="public System.IO.Stream OpenNewOutput (string fileName, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream OpenNewOutput(string fileName, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationSetup.OpenNewOutput(System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Ein Teil des Dateinamens.</param>
+        <param name="metadata">Die Metadaten, die in der Datei gespeichert werden.</param>
+        <summary>
+            Gibt einen neuen Ausgabekonfigurationsdatei-Stream zurück, der zum Lesen und Schreiben geöffnet ist.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationSetup.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein Wörterbuch ab, das die aktuellen Eigenschaften und Einstellungen enthält.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlCmdVariables">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; SqlCmdVariables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; SqlCmdVariables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.DeploymentContributorConfigurationSetup.SqlCmdVariables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die definierten SqlCmd-Variablen ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

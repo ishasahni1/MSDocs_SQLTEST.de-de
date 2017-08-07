@@ -1,0 +1,289 @@
+<Type Name="SfcDependencyEngine" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine">
+  <TypeSignature Language="C#" Value="public sealed class SfcDependencyEngine : IDisposable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SfcDependencyEngine extends System.Object implements class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Die DepEngine-Klasse stellt die Graph Manipulation Population, Speicherung und Ermittlung Ausführungslogik um vollständige ermittlungsdienste auszuführen und erfolgt dann über DepIterators im Anschluss daran, die Ergebnisse auf verschiedene Weise zu durchlaufen.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcDependencyEngine (Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode mode, Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode mode, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode,Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="mode" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode" />
+        <Parameter Name="action" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyAction" />
+      </Parameters>
+      <Docs>
+        <param name="mode">Muss hinzugefügt werden.</param>
+        <param name="action">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyAction Action" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.Add(Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Die einzelnen Knoten.</param>
+        <summary>
+            Fügt einem übergeordneten oder untergeordneten Knoten einen neuen einzelnen Objektknoten ohne direktionale Beziehung hinzu.
+Wenn der Knoten in anderen Diagramm bereits werden vorhandenen Beziehungen nicht gestört werden, da Add() immer nur erhöht, aber nie optimal.
+Ein Knoten kann mehrmals als übergeordnete, untergeordnete oder einzelnen Knoten in aufeinander folgenden Aufrufen hinzugefügt werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance objParent, Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance objChild, Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance objParent, class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance objChild, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.Add(Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance,Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance,Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objParent" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+        <Parameter Name="objChild" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+        <Parameter Name="relation" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation" />
+      </Parameters>
+      <Docs>
+        <param name="objParent">Der übergeordnete Knoten des abhängigen untergeordneten Knotens.</param>
+        <param name="objChild">Der vom Vorhandensein des übergeordneten Knotens abhängige untergeordnete Knoten.</param>
+        <param name="relation">
+        </param>
+        <summary>
+            Fügen Sie eine neue tupelbeziehung zwischen einem übergeordneten Knoten und dessen untergeordnete Knoten von diesem abhängig ist.
+Ein Knoten kann mehrmals als übergeordnete, untergeordnete oder einzelnen Knoten in aufeinander folgenden Aufrufen hinzugefügt werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Discover">
+      <MemberSignature Language="C#" Value="public void Discover ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Discover() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.Discover" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Führen Sie abhängigkeitsbeziehungen vollständig ermittelt. Beginnen Sie mit der Frage jedes "domainContext" dazu, was dies möglich ist, und klicken Sie dann jeden Typ von "domainContext", und schließlich Ausweg bitten, jeder Knoten über einen eigenen Beziehungen.
+            
+            Currently we only ask for bulk per DomainContext once, then simply do individual discovery until all nodes have had a discovery pass.
+            
+            For v2, we would introduce bulk DomainContext Type discovery after doing the DomainContext discovery, and maybe even repeat bulk
+            discovery until no new nodes are contributed from it, then resort to individual discovery.
+            
+            Also we may need to give bulk handlers an iterator, unless we want to rely on handing them acess to the DepEngine
+            itself as a sink for adding new nodes discovered as well as traversing directly on the nodes. This is okay as long as we assume (or know)
+            that the bulk handlers themselves just make a temp collection to hold the nodes before making the query. They have to be done walking the graph
+            before they start adding nodes. Just like any other iterator use, if they try to violate this order and add nodes before they are finished Next'ing
+            on the iterator, the iterator will throw (which is what we want to happen).
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetListEnumerator">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.DependencyListEnumerator GetListEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine/DependencyListEnumerator GetListEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.GetListEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine+DependencyListEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Zurückgeben einer DependencyListEnumerator, die das Diagramm als Liste durchlaufen vom Client verwendet werden kann.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTreeEnumerator">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.DependencyTreeEnumerator GetTreeEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine/DependencyTreeEnumerator GetTreeEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.GetTreeEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine+DependencyTreeEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Zurückgeben einer DependencyTreeEnumerator, der zum Durchlaufen der Graph-Struktur vom Client verwendet werden kann.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink.Add">
+      <MemberSignature Language="C#" Value="void ISfcDependencyDiscoveryObjectSink.Add (Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance targetObject, Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink.Add(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance targetObject, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDependencyDiscoveryObjectSink#Add(Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection,Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance,Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="direction" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection" />
+        <Parameter Name="targetObject" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+        <Parameter Name="relation" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation" />
+        <Parameter Name="discovered" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="direction">Muss hinzugefügt werden.</param>
+        <param name="targetObject">Muss hinzugefügt werden.</param>
+        <param name="relation">Muss hinzugefügt werden.</param>
+        <param name="discovered">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink.Add">
+      <MemberSignature Language="C#" Value="void ISfcDependencyDiscoveryObjectSink.Add (Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, System.Collections.IEnumerator targetObjects, Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink.Add(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, class System.Collections.IEnumerator targetObjects, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDependencyDiscoveryObjectSink#Add(Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection,System.Collections.IEnumerator,Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="direction" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection" />
+        <Parameter Name="targetObjects" Type="System.Collections.IEnumerator" />
+        <Parameter Name="relation" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation" />
+        <Parameter Name="discovered" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="direction">Muss hinzugefügt werden.</param>
+        <param name="targetObjects">Muss hinzugefügt werden.</param>
+        <param name="relation">Muss hinzugefügt werden.</param>
+        <param name="discovered">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink.Add&lt;T&gt;">
+      <MemberSignature Language="C#" Value="void ISfcDependencyDiscoveryObjectSink.Add&lt;T&gt; (Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, System.Collections.Generic.IEnumerable&lt;T&gt; targetObjects, Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered) where T : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance;" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink.Add&lt;(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance) T&gt;(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; targetObjects, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyEngine.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDependencyDiscoveryObjectSink#Add``1(Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection,System.Collections.Generic.IEnumerable{``0},Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="direction" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection" />
+        <Parameter Name="targetObjects" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="relation" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation" />
+        <Parameter Name="discovered" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Muss hinzugefügt werden.</typeparam>
+        <param name="direction">Muss hinzugefügt werden.</param>
+        <param name="targetObjects">Muss hinzugefügt werden.</param>
+        <param name="relation">Muss hinzugefügt werden.</param>
+        <param name="discovered">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

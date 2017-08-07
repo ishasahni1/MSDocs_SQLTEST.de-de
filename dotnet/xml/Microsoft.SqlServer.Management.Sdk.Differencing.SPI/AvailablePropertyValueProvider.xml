@@ -1,0 +1,106 @@
+<Type Name="AvailablePropertyValueProvider" FullName="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider">
+  <TypeSignature Language="C#" Value="public abstract class AvailablePropertyValueProvider : Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AvailablePropertyValueProvider extends System.Object implements class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Ein Anbieter, der eine partielle Diagramm in das vollständige Diagramm differenzierende einbezogen ermöglicht.
+            
+            A partial graph is a graph that does not contain all properties 
+            because some values are not set, or the values are set to some 
+            default values.
+            
+            Before a graph is walked, the differencer looks up all known 
+            AvailablePropertyValueProvider in the system and asks if any of the
+            providers supports one of the graphs to be compared. If a provider
+            indicates that it supports the graph, the graph is a partial graph.
+            
+            When a partial graph is walked, the differencer calls  
+            IsValueAvailable() for each property of each object. If true is returned,
+            the property is compared. If false is returned, then the
+            property is skipped.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AvailablePropertyValueProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGraphSupported">
+      <MemberSignature Language="C#" Value="public abstract bool IsGraphSupported (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsGraphSupported(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider.IsGraphSupported(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">Muss hinzugefügt werden.</param>
+        <summary>
+            Gibt an, ob dieser Anbieter das angegebene Diagramm unterstützt. Wenn dies der Fall, gibt "true", "false" andernfalls.
+            
+            If true is returned, calls to IsValueAvailable() 
+            must return valid meaningful value.
+            
+            The method is called only once on the root node of each graph.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValueAvailable">
+      <MemberSignature Language="C#" Value="public abstract bool IsValueAvailable (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode node, string propName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValueAvailable(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode node, string propName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.AvailablePropertyValueProvider.IsValueAvailable(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode" />
+        <Parameter Name="propName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="node">Muss hinzugefügt werden.</param>
+        <param name="propName">Muss hinzugefügt werden.</param>
+        <summary>
+            Überprüft, ob ein Eigenschaftswert verfügbar ist. Wenn es nicht der Fall ist, wird der Vergleich nicht ausgeführt. Andernfalls halten Sie es für den Vergleich.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

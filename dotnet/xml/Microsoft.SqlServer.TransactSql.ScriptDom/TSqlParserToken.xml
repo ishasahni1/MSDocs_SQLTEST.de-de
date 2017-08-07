@@ -1,0 +1,200 @@
+<Type Name="TSqlParserToken" FullName="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken">
+  <TypeSignature Language="C#" Value="public sealed class TSqlParserToken" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TSqlParserToken extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.TransactSql.ScriptDom</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt ein einzelnes Token im Eingabetext an.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TSqlParserToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TSqlParserToken (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType type, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType type, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken.#ctor(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">Der Typ des Tokens.</param>
+        <param name="text">Der Text.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TSqlParserToken (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType type, int offset, string text, int line, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType type, int32 offset, string text, int32 line, int32 column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken.#ctor(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType,System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="line" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="type">Der Typ des Tokens.</param>
+        <param name="offset">Die Offsetposition zeigt in der Eingabe.</param>
+        <param name="text">Der Text.</param>
+        <param name="line">Die Zeilennummer in der Eingabe.</param>
+        <param name="column">Die Nummer der Spalte in der Eingabe.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="public int Column { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Column" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken.Column" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Spalte ab oder legt sie fest.
+            </summary>
+        <value>Die Spalte.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsKeyword">
+      <MemberSignature Language="C#" Value="public bool IsKeyword ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsKeyword() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken.IsKeyword" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Bestimmt, ob das Token ein Schlüsselwort ist.
+            </summary>
+        <returns>"True", wenn das Token ein Schlüsselwort, andernfalls "false" ist.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="public int Line { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Line" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken.Line" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt die Zeile fest.
+            </summary>
+        <value>Die Zeile.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public int Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt den Offset fest.
+            </summary>
+        <value>Der Offset.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Text ab oder legt ihn fest.
+            </summary>
+        <value>Der Text.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType TokenType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType TokenType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken.TokenType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlTokenType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt den Typ des Tokens fest.
+            </summary>
+        <value>Der Typ des Tokens.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

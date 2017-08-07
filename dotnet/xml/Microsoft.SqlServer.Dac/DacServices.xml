@@ -1,0 +1,1447 @@
+<Type Name="DacServices" FullName="Microsoft.SqlServer.Dac.DacServices">
+  <TypeSignature Language="C#" Value="public sealed class DacServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DacServices extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.DacServices" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt Vorgänge bereit, mit denen die durch <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />-Instanzen dargestellten DAC-Pakete erstellt und genutzt werden können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DacServices (string connectionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">
+            Eine Zeichenfolge, die Verbindungsinformationen für die von dieser Instanz verwendete Datenbankverbindung bereitstellt.
+            </param>
+        <summary>
+            Erstellt eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.DacServices" /> -Klasse, die durch die bereitgestellte Verbindungszeichenfolge angegebenen Datenbank ausgeführt wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn <paramref name="connectionString" /> ist ein null-Verweis.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Wenn das angegebene <paramref name="connectionString" /> ist ungültig.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DacServices (string connectionString, Microsoft.SqlServer.Dac.IUniversalAuthProvider authProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString, class Microsoft.SqlServer.Dac.IUniversalAuthProvider authProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.#ctor(System.String,Microsoft.SqlServer.Dac.IUniversalAuthProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+        <Parameter Name="authProvider" Type="Microsoft.SqlServer.Dac.IUniversalAuthProvider" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">
+            Eine Zeichenfolge, die Verbindungsinformationen für die von dieser Instanz verwendete Datenbankverbindung bereitstellt.
+            </param>
+        <param name="authProvider">
+            Geben Sie das aktuelle Zugriffstoken für AAD-Universal-Anmeldung (Smartcard, Telefon usw.) 
+            </param>
+        <summary>
+            Erstellt eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.DacServices" /> -Klasse, die durch die angegebene Zeichenfolge und Authentifizierung Verbindungsanbieter des angegebenen Datenbank ausgeführt wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn <paramref name="connectionString" /> ist ein null-Verweis.
+Wenn <paramref name="authProvider" /> ist ein null-Verweis.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Wenn das angegebene <paramref name="connectionString" /> ist ungültig.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DacServices (string connectionString, System.Security.SecureString password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString, class System.Security.SecureString password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.#ctor(System.String,System.Security.SecureString)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+        <Parameter Name="password" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">
+            Eine Zeichenfolge, die Verbindungsinformationen für die von dieser Instanz verwendete Datenbankverbindung bereitstellt.
+            </param>
+        <param name="password">
+            SecureString, das Kennwort für die von dieser Instanz verwendeten datenbankverbindung bereitstellt.
+            </param>
+        <summary>
+            Erstellt eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.DacServices" /> -Klasse, die durch die bereitgestellte Verbindungszeichenfolge angegebenen Datenbank ausgeführt wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Wenn <paramref name="connectionString" /> ist ein null-Verweis.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Wenn das angegebene <paramref name="connectionString" /> ist ungültig.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Deploy">
+      <MemberSignature Language="C#" Value="public void Deploy (Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, bool upgradeExisting = false, Microsoft.SqlServer.Dac.DacDeployOptions options = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deploy(class Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, bool upgradeExisting, class Microsoft.SqlServer.Dac.DacDeployOptions options, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.Deploy(Microsoft.SqlServer.Dac.DacPackage,System.String,System.Boolean,Microsoft.SqlServer.Dac.DacDeployOptions,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="upgradeExisting" Type="System.Boolean" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacDeployOptions" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem bereitzustellenden Schema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="upgradeExisting">
+            True, wenn eine Änderung des vorhandenen Datenbankschemas in Anpassung an das im Quellpaket enthaltene Schema zulässig ist, false, um eine Änderung der vorhandenen Datenbank zu blockieren.
+Wenn die Datenbank nicht vorhanden ist, hat dieses Flag keine Auswirkung.
+            </param>
+        <param name="options">
+            Eine <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" />-Instanz, durch die Eigenschaften angegeben werden, die sich auf verschiedene Aspekte der Bereitstellung auswirken.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Bereitstellen des angegebenen Pakets in einer Datenbank an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn <paramref name="upgradeExisting" /> ist "true" und der Datenbank vorhanden ist oder wenn während der Bereitstellung ein Fehler auftritt.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportBacpac">
+      <MemberSignature Language="C#" Value="public void ExportBacpac (System.IO.Stream packageStream, string databaseName, System.Collections.Generic.IEnumerable&lt;Tuple&lt;string,string&gt;&gt; tables = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportBacpac(class System.IO.Stream packageStream, string databaseName, class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;string, string&gt;&gt; tables, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.ExportBacpac(System.IO.Stream,System.String,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageStream" Type="System.IO.Stream" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="tables" Type="System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="packageStream">
+          Der <see cref="T:System.IO.Stream" />, in den das Paket geschrieben wird.
+            </param>
+        <param name="databaseName">
+            Name der Quelldatenbank.
+            </param>
+        <param name="tables">
+          <para>
+            Ein optionales aufzählbares Element, mit dem ein Enumerator für eine Gruppe von Tabellen abgerufen wird, für die Daten exportiert werden sollen.
+Für jedes <see cref="T:System.Tuple" /> in der Enumeration gibt das erste Element das Schema der Tabelle und das zweite den Basisbezeichner der Tabelle an.
+            </para>
+          <para>
+            Wenn der Wert dieses Parameters ein Nullverweis ist, werden Daten für alle Tabellen exportiert.
+            </para>
+        </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Extrahiert ein Schema und exportiert Daten von einer Datenbank in ein Bacpac-Paket.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn während der Schemabereitstellung und des Datenexports ein Fehler auftritt; oder wenn <paramref name="tables" /> eine Tabelle angibt, die in dem Schema, das im bereitgestellten Paket enthalten ist, nicht vorhanden ist; oder wenn der angegebene Datenstrom nicht zum Schreiben des Pakets geeignet ist.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportBacpac">
+      <MemberSignature Language="C#" Value="public void ExportBacpac (string packageFileName, string databaseName, System.Collections.Generic.IEnumerable&lt;Tuple&lt;string,string&gt;&gt; tables = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportBacpac(string packageFileName, string databaseName, class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;string, string&gt;&gt; tables, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.ExportBacpac(System.String,System.String,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageFileName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="tables" Type="System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="packageFileName">
+            Pfad der Zielpaketdatei.
+            </param>
+        <param name="databaseName">
+            Name der Quelldatenbank.
+            </param>
+        <param name="tables">
+          <para>
+            Ein optionales aufzählbares Element, mit dem ein Enumerator für eine Gruppe von Tabellen abgerufen wird, für die Daten exportiert werden sollen.
+Für jedes <see cref="T:System.Tuple" /> in der Enumeration gibt das erste Element das Schema der Tabelle und das zweite den Basisbezeichner der Tabelle an.
+            </para>
+          <para>
+            Wenn der Wert dieses Parameters ein Nullverweis ist, werden Daten für alle Tabellen exportiert.
+            </para>
+        </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Extrahiert ein Schema und exportiert Daten von einer Datenbank in ein Bacpac-Paket.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn während der Schemabereitstellung und des Datenexports ein Fehler auftritt; oder wenn <paramref name="tables" /> eine Tabelle angibt, die im Schema, das im bereitgestellten Paket enthalten ist, nicht vorhanden ist.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportBacpac">
+      <MemberSignature Language="C#" Value="public void ExportBacpac (System.IO.Stream packageStream, string databaseName, Microsoft.SqlServer.Dac.DacExportOptions options, System.Collections.Generic.IEnumerable&lt;Tuple&lt;string,string&gt;&gt; tables, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportBacpac(class System.IO.Stream packageStream, string databaseName, class Microsoft.SqlServer.Dac.DacExportOptions options, class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;string, string&gt;&gt; tables, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.ExportBacpac(System.IO.Stream,System.String,Microsoft.SqlServer.Dac.DacExportOptions,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageStream" Type="System.IO.Stream" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacExportOptions" />
+        <Parameter Name="tables" Type="System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="packageStream">
+          Der <see cref="T:System.IO.Stream" />, in den das Paket geschrieben wird.
+            </param>
+        <param name="databaseName">
+            Name der Quelldatenbank.
+            </param>
+        <param name="options">
+            Optionale Instanz von <see cref="T:Microsoft.SqlServer.Dac.DacExportOptions" /> , Eigenschaften, die verschiedene Aspekte des Exports auswirken angibt.
+            </param>
+        <param name="tables">
+            Ein optionales aufzählbares Element, mit dem ein Enumerator für eine Gruppe von Tabellen abgerufen wird, für die Daten exportiert werden sollen.
+Für jedes <see cref="T:System.Tuple" /> in der Enumeration gibt das erste Element das Schema der Tabelle und das zweite den Basisbezeichner der Tabelle an.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Extrahiert ein Schema und exportiert Daten von einer Datenbank in ein Bacpac-Paket.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn während der Schemabereitstellung und des Datenexports ein Fehler auftritt; oder wenn <paramref name="options" /> eine Tabelle angibt, die im Schema, das im bereitgestellten Paket enthalten ist, nicht vorhanden ist.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportBacpac">
+      <MemberSignature Language="C#" Value="public void ExportBacpac (System.IO.Stream packageStream, string databaseName, Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, System.Collections.Generic.IEnumerable&lt;Tuple&lt;string,string&gt;&gt; tables = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportBacpac(class System.IO.Stream packageStream, string databaseName, valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;string, string&gt;&gt; tables, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.ExportBacpac(System.IO.Stream,System.String,Microsoft.SqlServer.Dac.DacSchemaModelStorageType,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageStream" Type="System.IO.Stream" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+        <Parameter Name="tables" Type="System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="packageStream">
+          Der <see cref="T:System.IO.Stream" />, in den das Paket geschrieben wird.
+            </param>
+        <param name="databaseName">
+            Name der Quelldatenbank.
+            </param>
+        <param name="modelStorageType">
+            Gibt den Typ des Hintergrundspeichers für ein Schemamodell an.
+            </param>
+        <param name="tables">
+          <para>
+            Ein optionales aufzählbares Element, mit dem ein Enumerator für eine Gruppe von Tabellen abgerufen wird, für die Daten exportiert werden sollen.
+Für jedes <see cref="T:System.Tuple" /> in der Enumeration gibt das erste Element das Schema der Tabelle und das zweite den Basisbezeichner der Tabelle an.
+            </para>
+          <para>
+            Wenn der Wert dieses Parameters ein Nullverweis ist, werden Daten für alle Tabellen exportiert.
+            </para>
+        </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Extrahiert ein Schema und exportiert Daten von einer Datenbank in ein Bacpac-Paket.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn während der Schemabereitstellung und des Datenexports ein Fehler auftritt; oder wenn <paramref name="tables" /> eine Tabelle angibt, die in dem Schema, das im bereitgestellten Paket enthalten ist, nicht vorhanden ist; oder wenn der angegebene Datenstrom nicht zum Schreiben des Pakets geeignet ist.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportBacpac">
+      <MemberSignature Language="C#" Value="public void ExportBacpac (string packageFileName, string databaseName, Microsoft.SqlServer.Dac.DacExportOptions options, System.Collections.Generic.IEnumerable&lt;Tuple&lt;string,string&gt;&gt; tables, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportBacpac(string packageFileName, string databaseName, class Microsoft.SqlServer.Dac.DacExportOptions options, class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;string, string&gt;&gt; tables, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.ExportBacpac(System.String,System.String,Microsoft.SqlServer.Dac.DacExportOptions,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageFileName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacExportOptions" />
+        <Parameter Name="tables" Type="System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="packageFileName">
+            Pfad der Zielpaketdatei.
+            </param>
+        <param name="databaseName">
+            Name der Quelldatenbank.
+            </param>
+        <param name="options">
+             Instanz des <see cref="T:Microsoft.SqlServer.Dac.DacExportOptions" /> , Eigenschaften, die verschiedene Aspekte des Exports auswirken angibt.
+            </param>
+        <param name="tables">
+            Ein optionales aufzählbares Element, mit dem ein Enumerator für eine Gruppe von Tabellen abgerufen wird, für die Daten exportiert werden sollen.
+Für jedes <see cref="T:System.Tuple" /> in der Enumeration gibt das erste Element das Schema der Tabelle und das zweite den Basisbezeichner der Tabelle an.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Extrahiert ein Schema und exportiert Daten von einer Datenbank in ein Bacpac-Paket.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn während der Schemabereitstellung und des Datenexports ein Fehler auftritt; oder wenn <paramref name="options" /> eine Tabelle angibt, die im Schema, das im bereitgestellten Paket enthalten ist, nicht vorhanden ist.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportBacpac">
+      <MemberSignature Language="C#" Value="public void ExportBacpac (string packageFileName, string databaseName, Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, System.Collections.Generic.IEnumerable&lt;Tuple&lt;string,string&gt;&gt; tables = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportBacpac(string packageFileName, string databaseName, valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;string, string&gt;&gt; tables, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.ExportBacpac(System.String,System.String,Microsoft.SqlServer.Dac.DacSchemaModelStorageType,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageFileName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+        <Parameter Name="tables" Type="System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="packageFileName">
+            Pfad der Zielpaketdatei.
+            </param>
+        <param name="databaseName">
+            Name der Quelldatenbank.
+            </param>
+        <param name="modelStorageType">
+            Gibt den Typ des Hintergrundspeichers für ein Schemamodell an.
+            </param>
+        <param name="tables">
+          <para>
+            Ein optionales aufzählbares Element, mit dem ein Enumerator für eine Gruppe von Tabellen abgerufen wird, für die Daten exportiert werden sollen.
+Für jedes <see cref="T:System.Tuple" /> in der Enumeration gibt das erste Element das Schema der Tabelle und das zweite den Basisbezeichner der Tabelle an.
+            </para>
+          <para>
+            Wenn der Wert dieses Parameters ein Nullverweis ist, werden Daten für alle Tabellen exportiert.
+            </para>
+        </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Extrahiert ein Schema und exportiert Daten von einer Datenbank in ein Bacpac-Paket.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn während der Schemabereitstellung und des Datenexports ein Fehler auftritt; oder wenn <paramref name="tables" /> eine Tabelle angibt, die im Schema, das im bereitgestellten Paket enthalten ist, nicht vorhanden ist.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Extract">
+      <MemberSignature Language="C#" Value="public void Extract (System.IO.Stream packageStream, string databaseName, string applicationName, Version applicationVersion, string applicationDescription = null, System.Collections.Generic.IEnumerable&lt;Tuple&lt;string,string&gt;&gt; tables = null, Microsoft.SqlServer.Dac.DacExtractOptions extractOptions = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Extract(class System.IO.Stream packageStream, string databaseName, string applicationName, class System.Version applicationVersion, string applicationDescription, class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;string, string&gt;&gt; tables, class Microsoft.SqlServer.Dac.DacExtractOptions extractOptions, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.Extract(System.IO.Stream,System.String,System.String,System.Version,System.String,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},Microsoft.SqlServer.Dac.DacExtractOptions,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageStream" Type="System.IO.Stream" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="applicationName" Type="System.String" />
+        <Parameter Name="applicationVersion" Type="System.Version" />
+        <Parameter Name="applicationDescription" Type="System.String" />
+        <Parameter Name="tables" Type="System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="extractOptions" Type="Microsoft.SqlServer.Dac.DacExtractOptions" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="packageStream">
+          Der <see cref="T:System.IO.Stream" />, in den das Paket geschrieben wird.
+            </param>
+        <param name="databaseName">
+            Name der Quelldatenbank.
+            </param>
+        <param name="applicationName">
+            Die Zeichenfolgen-ID für die DAC-Anwendung.
+            </param>
+        <param name="applicationVersion">
+            Die Version der DAC-Anwendung.
+            </param>
+        <param name="applicationDescription">
+            Eine optionale Zeichenfolgenzusammenfassung der DAC-Anwendung.
+            </param>
+        <param name="tables">
+          <para>
+            Ein optionales aufzählbares Element, mit dem ein Enumerator für eine Gruppe von Tabellen abgerufen wird, für die Daten exportiert werden sollen.
+Für jedes <see cref="T:System.Tuple" /> in der Enumeration gibt das erste Element das Schema der Tabelle und das zweite den Basisbezeichner der Tabelle an.
+            </para>
+          <para>
+            Wenn der Wert dieses Parameters ein Nullverweis ist, werden keine Daten exportiert.
+            </para>
+        </param>
+        <param name="extractOptions">
+            Eine optionale <see cref="T:Microsoft.SqlServer.Dac.DacExtractOptions" />-Instanz, mit deren Hilfe Optionen angegeben werden, die sich auf das Verhalten der Paketextraktion auswirken.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Extrahieren Sie das Schema aus einer Datenbank in ein Paket.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn <paramref name="applicationName" /> ein NULL-Verweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn während der Paketextraktion ein Fehler auftritt oder der angegebene Stream zum Schreiben des Pakets ungeeignet ist.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Extract">
+      <MemberSignature Language="C#" Value="public void Extract (string packageFileName, string databaseName, string applicationName, Version applicationVersion, string applicationDescription = null, System.Collections.Generic.IEnumerable&lt;Tuple&lt;string,string&gt;&gt; tables = null, Microsoft.SqlServer.Dac.DacExtractOptions extractOptions = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Extract(string packageFileName, string databaseName, string applicationName, class System.Version applicationVersion, string applicationDescription, class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;string, string&gt;&gt; tables, class Microsoft.SqlServer.Dac.DacExtractOptions extractOptions, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.Extract(System.String,System.String,System.String,System.Version,System.String,System.Collections.Generic.IEnumerable{System.Tuple{System.String,System.String}},Microsoft.SqlServer.Dac.DacExtractOptions,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageFileName" Type="System.String" />
+        <Parameter Name="databaseName" Type="System.String" />
+        <Parameter Name="applicationName" Type="System.String" />
+        <Parameter Name="applicationVersion" Type="System.Version" />
+        <Parameter Name="applicationDescription" Type="System.String" />
+        <Parameter Name="tables" Type="System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;System.String,System.String&gt;&gt;" />
+        <Parameter Name="extractOptions" Type="Microsoft.SqlServer.Dac.DacExtractOptions" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="packageFileName">
+            Der Pfad zu der Paketdatei, die erstellt werden soll.
+            </param>
+        <param name="databaseName">
+            Name der Quelldatenbank.
+            </param>
+        <param name="applicationName">
+            Die Zeichenfolgen-ID für die DAC-Anwendung.
+            </param>
+        <param name="applicationVersion">
+            Die Version der DAC-Anwendung.
+            </param>
+        <param name="applicationDescription">
+            Eine optionale Zeichenfolgenzusammenfassung der DAC-Anwendung.
+            </param>
+        <param name="tables">
+          <para>
+            Ein optionales aufzählbares Element, mit dem ein Enumerator für eine Gruppe von Tabellen abgerufen wird, für die Verweisdaten gespeichert werden sollen.
+Für jedes <see cref="T:System.Tuple" /> in der Enumeration gibt das erste Element das Schema der Tabelle und das zweite den Basisbezeichner der Tabelle an.
+            </para>
+          <para>
+            Wenn der Wert dieses Parameters ein Nullverweis ist, werden keine Verweisdaten gespeichert.
+            </para>
+        </param>
+        <param name="extractOptions">
+            Eine optionale <see cref="T:Microsoft.SqlServer.Dac.DacExtractOptions" />-Instanz, mit deren Hilfe Optionen angegeben werden, die sich auf das Verhalten der Paketextraktion auswirken.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Extrahieren Sie das Schema aus einer Datenbank in ein Paket.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn <paramref name="applicationName" /> ein NULL-Verweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn während der Paketextraktion ein Problem auftritt.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCreateScript">
+      <MemberSignature Language="C#" Value="public static string GenerateCreateScript (Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, Microsoft.SqlServer.Dac.DacDeployOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateCreateScript(class Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, class Microsoft.SqlServer.Dac.DacDeployOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.GenerateCreateScript(Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.DacDeployOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacDeployOptions" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem bereitzustellenden Schema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="options">
+            Eine <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" />-Instanz, durch die Eigenschaften angegeben werden, die sich auf verschiedene Aspekte der Erstellung von Bereitstellungsskripts auswirken.
+            </param>
+        <summary>
+            Erstellen von T-SQL-Skript, das verwendet werden kann, zum Bereitstellen des Schemas des angegebenen <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> in einer Datenbank.
+            </summary>
+        <returns>
+            Zeichenfolge des T-SQL-Skripts verwendet, um das Datenbankschema erstellt auf Grundlage des angegebenen <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Problem während der Skriptgenerierung.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCreateScript">
+      <MemberSignature Language="C#" Value="public static void GenerateCreateScript (System.IO.Stream outputStream, Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, Microsoft.SqlServer.Dac.DacDeployOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GenerateCreateScript(class System.IO.Stream outputStream, class Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, class Microsoft.SqlServer.Dac.DacDeployOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.GenerateCreateScript(System.IO.Stream,Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.DacDeployOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacDeployOptions" />
+      </Parameters>
+      <Docs>
+        <param name="outputStream">
+          Der <see cref="T:System.IO.Stream" />, in den das Bereitstellungsskript geschrieben werden soll.
+            </param>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem bereitzustellenden Schema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="options">
+            Eine <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" />-Instanz, durch die Eigenschaften angegeben werden, die sich auf verschiedene Aspekte der Erstellung von Bereitstellungsskripts auswirken.
+            </param>
+        <summary>
+            Erstellen von T-SQL-Skript, das verwendet werden kann, zum Bereitstellen des Schemas des angegebenen <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> in einer Datenbank.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Problem während der Skriptgenerierung.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDeployReport">
+      <MemberSignature Language="C#" Value="public static string GenerateDeployReport (Microsoft.SqlServer.Dac.DacPackage sourcePackage, Microsoft.SqlServer.Dac.DacPackage targetPackage, string targetDatabaseName, Microsoft.SqlServer.Dac.DacDeployOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateDeployReport(class Microsoft.SqlServer.Dac.DacPackage sourcePackage, class Microsoft.SqlServer.Dac.DacPackage targetPackage, string targetDatabaseName, class Microsoft.SqlServer.Dac.DacDeployOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.GenerateDeployReport(Microsoft.SqlServer.Dac.DacPackage,Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.DacDeployOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourcePackage" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetPackage" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacDeployOptions" />
+      </Parameters>
+      <Docs>
+        <param name="sourcePackage">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem zu vergleichenden Quellschema.
+            </param>
+        <param name="targetPackage">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem zu vergleichenden Zielschema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="options">
+            Eine <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" />-Instanz, durch die Eigenschaften angegeben werden, die sich auf verschiedene Aspekte der Erstellung von Bereitstellungsberichten auswirken.
+            </param>
+        <summary>
+            Erstellen von XML-Bericht mit den Schritten zur Bereitstellung der Unterschiede zwischen den Schemas der angegebenen Quell- und Ziel <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> in einer Datenbank.
+            </summary>
+        <returns>
+            Eine XML-Zeichenfolge, in der die Bereitstellungsschritte genau beschrieben sind.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Problem während der Berichtgenerierung.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDeployReport">
+      <MemberSignature Language="C#" Value="public string GenerateDeployReport (Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, Microsoft.SqlServer.Dac.DacDeployOptions options = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateDeployReport(class Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, class Microsoft.SqlServer.Dac.DacDeployOptions options, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.GenerateDeployReport(Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.DacDeployOptions,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacDeployOptions" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem bereitzustellenden Schema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="options">
+            Eine <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" />-Instanz, durch die Eigenschaften angegeben werden, die sich auf verschiedene Aspekte der Erstellung von Bereitstellungsberichten auswirken.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Erstellen von XML-Bericht über die erforderlichen Schritte zum Bereitstellen des Schemas des angegebenen <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> in einer Datenbank.
+            </summary>
+        <returns>
+            Eine XML-Zeichenfolge, in der die Schritte der Paketbereitstellung genau beschrieben sind.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Problem während der Berichtgenerierung.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDeployReport">
+      <MemberSignature Language="C#" Value="public static void GenerateDeployReport (System.IO.Stream outputStream, Microsoft.SqlServer.Dac.DacPackage sourcePackage, Microsoft.SqlServer.Dac.DacPackage targetPackage, string targetDatabaseName, Microsoft.SqlServer.Dac.DacDeployOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GenerateDeployReport(class System.IO.Stream outputStream, class Microsoft.SqlServer.Dac.DacPackage sourcePackage, class Microsoft.SqlServer.Dac.DacPackage targetPackage, string targetDatabaseName, class Microsoft.SqlServer.Dac.DacDeployOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.GenerateDeployReport(System.IO.Stream,Microsoft.SqlServer.Dac.DacPackage,Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.DacDeployOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+        <Parameter Name="sourcePackage" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetPackage" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacDeployOptions" />
+      </Parameters>
+      <Docs>
+        <param name="outputStream">
+          Der <see cref="T:System.IO.Stream" />, in den der Bereitstellungsbericht geschrieben werden soll.
+            </param>
+        <param name="sourcePackage">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem zu vergleichenden Quellschema.
+            </param>
+        <param name="targetPackage">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem zu vergleichenden Zielschema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="options">
+            Eine <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" />-Instanz, durch die Eigenschaften angegeben werden, die sich auf verschiedene Aspekte der Erstellung von Bereitstellungsberichten auswirken.
+            </param>
+        <summary>
+            Erstellen von XML-Bericht mit den Schritten zur Bereitstellung der Unterschiede zwischen den Schemas der angegebenen Quell- und Ziel <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> in einer Datenbank.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Problem während der Berichtgenerierung.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDeployScript">
+      <MemberSignature Language="C#" Value="public static string GenerateDeployScript (Microsoft.SqlServer.Dac.DacPackage sourcePackage, Microsoft.SqlServer.Dac.DacPackage targetPackage, string targetDatabaseName, Microsoft.SqlServer.Dac.DacDeployOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateDeployScript(class Microsoft.SqlServer.Dac.DacPackage sourcePackage, class Microsoft.SqlServer.Dac.DacPackage targetPackage, string targetDatabaseName, class Microsoft.SqlServer.Dac.DacDeployOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.GenerateDeployScript(Microsoft.SqlServer.Dac.DacPackage,Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.DacDeployOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourcePackage" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetPackage" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacDeployOptions" />
+      </Parameters>
+      <Docs>
+        <param name="sourcePackage">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem zu vergleichenden Quellschema.
+            </param>
+        <param name="targetPackage">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem zu vergleichenden Zielschema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="options">
+            Eine <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" />-Instanz, durch die Eigenschaften angegeben werden, die sich auf verschiedene Aspekte der Erstellung von Bereitstellungsskripts auswirken.
+            </param>
+        <summary>
+            Erstellen von T-SQL-Skript, das verwendet werden kann, um die Bereitstellung der Unterschiede zwischen den Schemas der angegebenen Quell- und Ziel <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> in einer Datenbank.
+            </summary>
+        <returns>
+            Zeichenfolge des T-SQL-Skripts, die zum Erstellen oder Aktualisieren des Datenbankschemas, auf der Grundlage des angegebenen <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Problem während der Skriptgenerierung.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDeployScript">
+      <MemberSignature Language="C#" Value="public string GenerateDeployScript (Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, Microsoft.SqlServer.Dac.DacDeployOptions options = null, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateDeployScript(class Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, class Microsoft.SqlServer.Dac.DacDeployOptions options, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.GenerateDeployScript(Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.DacDeployOptions,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacDeployOptions" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem bereitzustellenden Schema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="options">
+            Eine <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" />-Instanz, durch die Eigenschaften angegeben werden, die sich auf verschiedene Aspekte der Erstellung von Bereitstellungsskripts auswirken.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Erstellen von T-SQL-Skript, das verwendet werden kann, zum Bereitstellen des Schemas des angegebenen <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> in einer Datenbank.
+            </summary>
+        <returns>
+            Zeichenfolge des T-SQL-Skripts, die zum Erstellen oder Aktualisieren des Datenbankschemas, auf der Grundlage des angegebenen <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Problem während der Skriptgenerierung.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDeployScript">
+      <MemberSignature Language="C#" Value="public static void GenerateDeployScript (System.IO.Stream outputStream, Microsoft.SqlServer.Dac.DacPackage sourcePackage, Microsoft.SqlServer.Dac.DacPackage targetPackage, string targetDatabaseName, Microsoft.SqlServer.Dac.DacDeployOptions options = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GenerateDeployScript(class System.IO.Stream outputStream, class Microsoft.SqlServer.Dac.DacPackage sourcePackage, class Microsoft.SqlServer.Dac.DacPackage targetPackage, string targetDatabaseName, class Microsoft.SqlServer.Dac.DacDeployOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.GenerateDeployScript(System.IO.Stream,Microsoft.SqlServer.Dac.DacPackage,Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.DacDeployOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+        <Parameter Name="sourcePackage" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetPackage" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="options" Type="Microsoft.SqlServer.Dac.DacDeployOptions" />
+      </Parameters>
+      <Docs>
+        <param name="outputStream">
+          Der <see cref="T:System.IO.Stream" />, in den das Bereitstellungsskript geschrieben werden soll.
+            </param>
+        <param name="sourcePackage">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem zu vergleichenden Quellschema.
+            </param>
+        <param name="targetPackage">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem zu vergleichenden Zielschema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="options">
+            Eine <see cref="T:Microsoft.SqlServer.Dac.DacDeployOptions" />-Instanz, durch die Eigenschaften angegeben werden, die sich auf verschiedene Aspekte der Erstellung von Bereitstellungsskripts auswirken.
+            </param>
+        <summary>
+            Erstellen von T-SQL-Skript, das verwendet werden kann, um die Bereitstellung der Unterschiede zwischen den Schemas der angegebenen Quell- und Ziel <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> in einer Datenbank.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Problem während der Skriptgenerierung.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDriftReport">
+      <MemberSignature Language="C#" Value="public string GenerateDriftReport (string targetDatabaseName, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateDriftReport(string targetDatabaseName, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.GenerateDriftReport(System.String,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Erstellen von XML-Bericht zur Abweichung, die seit der letzten der Datenbank Registrierung stattgefunden hat.
+            </summary>
+        <returns>
+            Eine XML-Zeichenfolge, in der die Datenbankabweichung genau beschrieben ist, oder NULL, wenn die Datenbank nicht registriert wurde.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Problem während der Berichtgenerierung.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateDriftReport">
+      <MemberSignature Language="C#" Value="public string GenerateDriftReport (string targetDatabaseName, Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateDriftReport(string targetDatabaseName, valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.GenerateDriftReport(System.String,Microsoft.SqlServer.Dac.DacSchemaModelStorageType,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="modelStorageType">
+            Gibt den Typ des Hintergrundspeichers für ein Schemamodell an.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Erstellen von XML-Bericht zur Abweichung, die seit der letzten der Datenbank Registrierung stattgefunden hat.
+            </summary>
+        <returns>
+            Eine XML-Zeichenfolge, in der die Datenbankabweichung genau beschrieben ist, oder NULL, wenn die Datenbank nicht registriert wurde.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Problem während der Berichtgenerierung.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportBacpac">
+      <MemberSignature Language="C#" Value="public void ImportBacpac (Microsoft.SqlServer.Dac.BacPackage package, string targetDatabaseName, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ImportBacpac(class Microsoft.SqlServer.Dac.BacPackage package, string targetDatabaseName, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.ImportBacpac(Microsoft.SqlServer.Dac.BacPackage,System.String,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.BacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.BacPackage" />mit dem Schema bereitgestellt werden und die Daten importiert werden sollen.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Stellt das Schema aus dem angegebenen Paket in einer Datenbank bereit und importiert die Tabellendaten aus diesem Paket in die Datenbank.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Fehler während der Schemabereitstellung und dem Datenimport.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportBacpac">
+      <MemberSignature Language="C#" Value="public void ImportBacpac (Microsoft.SqlServer.Dac.BacPackage package, string targetDatabaseName, Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification creationDefaults, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ImportBacpac(class Microsoft.SqlServer.Dac.BacPackage package, string targetDatabaseName, class Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification creationDefaults, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.ImportBacpac(Microsoft.SqlServer.Dac.BacPackage,System.String,Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.BacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="creationDefaults" Type="Microsoft.SqlServer.Dac.DacAzureDatabaseSpecification" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.BacPackage" />mit dem Schema bereitgestellt werden und die Daten importiert werden sollen.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="creationDefaults">
+            Optionale Standardparameter für die Größe und Edition, die beim Erstellen einer neuen Azure-Datenbank verwendet werden.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Stellt das Schema aus dem angegebenen Paket in einer Datenbank bereit und importiert die Tabellendaten aus diesem Paket in die Datenbank.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Fehler während der Schemabereitstellung und dem Datenimport.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportBacpac">
+      <MemberSignature Language="C#" Value="public void ImportBacpac (Microsoft.SqlServer.Dac.BacPackage package, string targetDatabaseName, Microsoft.SqlServer.Dac.DacImportOptions importOptions, Nullable&lt;System.Threading.CancellationToken&gt; cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ImportBacpac(class Microsoft.SqlServer.Dac.BacPackage package, string targetDatabaseName, class Microsoft.SqlServer.Dac.DacImportOptions importOptions, valuetype System.Nullable`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.ImportBacpac(Microsoft.SqlServer.Dac.BacPackage,System.String,Microsoft.SqlServer.Dac.DacImportOptions,System.Nullable{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.BacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="importOptions" Type="Microsoft.SqlServer.Dac.DacImportOptions" />
+        <Parameter Name="cancellationToken" Type="System.Nullable&lt;System.Threading.CancellationToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.BacPackage" />mit dem Schema bereitgestellt werden und die Daten importiert werden sollen.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="importOptions">
+             Instanz des <see cref="T:Microsoft.SqlServer.Dac.DacImportOptions" /> , Eigenschaften, die sich auf verschiedene Aspekte des Imports angibt.
+            </param>
+        <param name="cancellationToken">
+            Ein optionales <see cref="T:System.Threading.CancellationToken" />, mit dem angegeben werden kann, dass der Vorgang abgebrochen werden soll.
+Die Verwendung dieses Objekts garantiert jedoch nicht, dass der Vorgang tatsächlich abgebrochen wird.
+            </param>
+        <summary>
+            Stellt das Schema aus dem angegebenen Paket in einer Datenbank bereit und importiert die Tabellendaten aus diesem Paket in die Datenbank.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Bei einem Fehler während der Schemabereitstellung und dem Datenimport.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.SqlServer.Dac.DacMessageEventArgs&gt; Message;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.SqlServer.Dac.DacMessageEventArgs&gt; Message" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Dac.DacServices.Message" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.SqlServer.Dac.DacMessageEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Wird aufgerufen, wie ein Vorgang statusaktualisierungen oder Fehler meldet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgressChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.SqlServer.Dac.DacProgressEventArgs&gt; ProgressChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.SqlServer.Dac.DacProgressEventArgs&gt; ProgressChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Dac.DacServices.ProgressChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.SqlServer.Dac.DacProgressEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Wird aufgerufen, wenn sich der Zustand eines Vorgangs ändert.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Publish">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.PublishResult Publish (Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, Microsoft.SqlServer.Dac.PublishOptions publishOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.PublishResult Publish(class Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, class Microsoft.SqlServer.Dac.PublishOptions publishOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.Publish(Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.PublishOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.PublishResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="publishOptions" Type="Microsoft.SqlServer.Dac.PublishOptions" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem bereitzustellenden Schema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="publishOptions">
+            Instanz des <see cref="T:Microsoft.SqlServer.Dac.PublishOptions" /> , die angibt, was ist wieder - gemeldet werden, das Bereitstellungsskript, der Bereitstellungsbericht, sobald alle verschiedene Aspekte der Bereitstellung konfigurieren.
+            </param>
+        <summary>
+            Veröffentlichen Sie das angegebene Paket in einer Datenbank. Diese Methode unterstützt das Skript verwendet, wenn die publishing zusammen mit einer Zusammenfassung der Aktionen während der Veröffentlichung Bereitstellungsbericht zurückgeben
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.PublishResult" />, mit der Skripten und/oder einem Bericht, wenn vom Aufrufer angefordert</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn ein Fehler während der Bereitstellung auftritt.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public void Register (string targetDatabaseName, string applicationName, Version applicationVersion, string applicationDescription = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Register(string targetDatabaseName, string applicationName, class System.Version applicationVersion, string applicationDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.Register(System.String,System.String,System.Version,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="applicationName" Type="System.String" />
+        <Parameter Name="applicationVersion" Type="System.Version" />
+        <Parameter Name="applicationDescription" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetDatabaseName">
+            Der Name der Datenbank, für die Registrierungsinformationen hinzugefügt werden sollen.
+            </param>
+        <param name="applicationName">
+            Die Zeichenfolgen-ID für die DAC-Anwendung.
+            </param>
+        <param name="applicationVersion">
+            Die Version der DAC-Anwendung.
+            </param>
+        <param name="applicationDescription">
+            Eine optionale Zeichenfolgenzusammenfassung der DAC-Anwendung.
+            </param>
+        <summary>
+            Fügen Sie die DAC-Registrierungsinformationen für die angegebene Zieldatenbank hinzu.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn eines der erforderlichen Argumente null oder eine leere Zeichenfolge ist.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public void Register (string targetDatabaseName, Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, string applicationName, Version applicationVersion, string applicationDescription = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Register(string targetDatabaseName, valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, string applicationName, class System.Version applicationVersion, string applicationDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.Register(System.String,Microsoft.SqlServer.Dac.DacSchemaModelStorageType,System.String,System.Version,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+        <Parameter Name="applicationName" Type="System.String" />
+        <Parameter Name="applicationVersion" Type="System.Version" />
+        <Parameter Name="applicationDescription" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetDatabaseName">
+            Der Name der Datenbank, für die Registrierungsinformationen hinzugefügt werden sollen.
+            </param>
+        <param name="modelStorageType">
+            Gibt den Typ des Hintergrundspeichers für ein Schemamodell an.
+            </param>
+        <param name="applicationName">
+            Die Zeichenfolgen-ID für die DAC-Anwendung.
+            </param>
+        <param name="applicationVersion">
+            Die Version der DAC-Anwendung.
+            </param>
+        <param name="applicationDescription">
+            Eine optionale Zeichenfolgenzusammenfassung der DAC-Anwendung.
+            </param>
+        <summary>
+            Fügen Sie die DAC-Registrierungsinformationen für die angegebene Zieldatenbank hinzu.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn eines der erforderlichen Argumente null oder eine leere Zeichenfolge ist.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.PublishResult Script (Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, Microsoft.SqlServer.Dac.PublishOptions publishOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.PublishResult Script(class Microsoft.SqlServer.Dac.DacPackage package, string targetDatabaseName, class Microsoft.SqlServer.Dac.PublishOptions publishOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.Script(Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.PublishOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.PublishResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="package" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="publishOptions" Type="Microsoft.SqlServer.Dac.PublishOptions" />
+      </Parameters>
+      <Docs>
+        <param name="package">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem bereitzustellenden Schema.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="publishOptions">
+            Instanz des <see cref="T:Microsoft.SqlServer.Dac.PublishOptions" /> , die angibt, was zurückgemeldet - das Bereitstellungsskript, der Bereitstellungsbericht sowie dazu, wie verschiedene Aspekte der Bereitstellung konfigurieren.
+            </param>
+        <summary>
+            Ein Skript erstellt die Schritte für einen Veröffentlichungsvorgang als ein Bereitstellungsskript, Bereitstellungsbericht oder beides. Mindestens eines der <see cref="P:Microsoft.SqlServer.Dac.PublishOptions.GenerateDeploymentScript" /> oder <see cref="P:Microsoft.SqlServer.Dac.PublishOptions.GenerateDeploymentReport" /> Optionen festgelegt werden müssen auf "true". Diese Methode wird nicht in der Datenbank veröffentlichen. 
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.PublishResult" />, mit der Skripten und/oder einem Bericht, wenn vom Aufrufer angefordert</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn ein Fehler während der Bereitstellung auftritt.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.PublishResult Script (Microsoft.SqlServer.Dac.DacPackage sourcePackage, Microsoft.SqlServer.Dac.DacPackage targetPackage, string targetDatabaseName, Microsoft.SqlServer.Dac.PublishOptions publishOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dac.PublishResult Script(class Microsoft.SqlServer.Dac.DacPackage sourcePackage, class Microsoft.SqlServer.Dac.DacPackage targetPackage, string targetDatabaseName, class Microsoft.SqlServer.Dac.PublishOptions publishOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.Script(Microsoft.SqlServer.Dac.DacPackage,Microsoft.SqlServer.Dac.DacPackage,System.String,Microsoft.SqlServer.Dac.PublishOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.PublishResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourcePackage" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetPackage" Type="Microsoft.SqlServer.Dac.DacPackage" />
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+        <Parameter Name="publishOptions" Type="Microsoft.SqlServer.Dac.PublishOptions" />
+      </Parameters>
+      <Docs>
+        <param name="sourcePackage">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" /> mit dem bereitzustellenden Schema.
+            </param>
+        <param name="targetPackage">
+          <see cref="T:Microsoft.SqlServer.Dac.DacPackage" />enthaltene Schema, das die Zieldatenbank darstellt.
+            </param>
+        <param name="targetDatabaseName">
+            Der Name der Zieldatenbank für die Bereitstellung.
+            </param>
+        <param name="publishOptions">
+            Instanz des <see cref="T:Microsoft.SqlServer.Dac.PublishOptions" /> , die angibt, was ist wieder - gemeldet werden, das Bereitstellungsskript, der Bereitstellungsbericht, sobald alle verschiedene Aspekte der Bereitstellung konfigurieren.
+            </param>
+        <summary>
+            Ein Skript erstellt die Schritte für einen Veröffentlichungsvorgang als ein Bereitstellungsskript, Bereitstellungsbericht oder beides. Mindestens eines der <see cref="P:Microsoft.SqlServer.Dac.PublishOptions.GenerateDeploymentScript" /> oder <see cref="P:Microsoft.SqlServer.Dac.PublishOptions.GenerateDeploymentReport" /> Optionen festgelegt werden müssen auf "true". Diese Methode wird das Ziel nicht ändern.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.PublishResult" />, mit der Skripten und/oder einem Bericht, wenn vom Aufrufer angefordert</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn der Wert eines der erforderlichen Parameter ein Nullverweis oder eine leere Zeichenfolge ist.
+            </exception>
+        <exception cref="T:Microsoft.SqlServer.Dac.DacServicesException">
+            Wenn ein Fehler während der Bereitstellung auftritt.
+            </exception>
+        <exception cref="T:System.OperationCanceledException">
+            Wenn durch <see cref="T:System.Threading.CancellationToken" /> ein Abbruch angefordert wurde und der Vorgang abgebrochen werden konnte.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister">
+      <MemberSignature Language="C#" Value="public void Unregister (string targetDatabaseName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unregister(string targetDatabaseName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.DacServices.Unregister(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetDatabaseName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetDatabaseName">
+            Der Name der Datenbank, für die Registrierungsinformationen entfernt werden sollen.
+            </param>
+        <summary>
+            Entfernen Sie die DAC-Registrierungsinformationen für die angegebene Zieldatenbank.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Wenn <paramref name="targetDatabaseName" /> ist Null oder eine Zeichenfolge der Länge 0 (null).
+            </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

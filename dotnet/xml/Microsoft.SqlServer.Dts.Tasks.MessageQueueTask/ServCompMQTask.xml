@@ -1,0 +1,128 @@
+<Type Name="ServCompMQTask" FullName="Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.ServCompMQTask">
+  <TypeSignature Language="C#" Value="public class ServCompMQTask" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServCompMQTask extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.ServCompMQTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.MSMQTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Enthält die Dienstkomponente für den Task "Nachrichtenwarteschlange".
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServCompMQTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.ServCompMQTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.ServCompMQTask" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.ServCompMQTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, durch die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="transaction">Die Transaktionsobjekte, denen der Container angehört. Die Common Language Runtime bietet die Transaktion für den Container auf Grundlage der <see cref="P:Microsoft.SqlServer.Dts.Runtime.DtsContainer.TransactionOption" /> Eigenschaft. Dieser Wert kann NULL sein.</param>
+        <summary>Führt den Task aus.</summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (string desc, bool dtFlOvrWrtable, string MsgLngID, string MsgPkgID, string MsgVrsnID, bool errIfMsgTmOt, string quPath, string msmqConn, long rcvMsgTmOt, Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType rcvMsgTp, bool rmvFromQu, string saveDtFlNm, Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare strCmpTp, string strCmpVal, Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType taskTp, string msgDtFl, string msgStr, string msgVars, Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType msgTp, bool useEncrp, System.Messaging.EncryptionAlgorithm encrpAlgthm, bool use2000Fmt, Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask otTask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize(string desc, bool dtFlOvrWrtable, string MsgLngID, string MsgPkgID, string MsgVrsnID, bool errIfMsgTmOt, string quPath, string msmqConn, int64 rcvMsgTmOt, valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType rcvMsgTp, bool rmvFromQu, string saveDtFlNm, valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare strCmpTp, string strCmpVal, valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType taskTp, string msgDtFl, string msgStr, string msgVars, valuetype Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType msgTp, bool useEncrp, valuetype System.Messaging.EncryptionAlgorithm encrpAlgthm, bool use2000Fmt, class Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask otTask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.ServCompMQTask.Initialize(System.String,System.Boolean,System.String,System.String,System.String,System.Boolean,System.String,System.String,System.Int64,Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType,System.Boolean,System.String,Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare,System.String,Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType,System.String,System.String,System.String,Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType,System.Boolean,System.Messaging.EncryptionAlgorithm,System.Boolean,Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.String" />
+        <Parameter Name="dtFlOvrWrtable" Type="System.Boolean" />
+        <Parameter Name="MsgLngID" Type="System.String" />
+        <Parameter Name="MsgPkgID" Type="System.String" />
+        <Parameter Name="MsgVrsnID" Type="System.String" />
+        <Parameter Name="errIfMsgTmOt" Type="System.Boolean" />
+        <Parameter Name="quPath" Type="System.String" />
+        <Parameter Name="msmqConn" Type="System.String" />
+        <Parameter Name="rcvMsgTmOt" Type="System.Int64" />
+        <Parameter Name="rcvMsgTp" Type="Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType" />
+        <Parameter Name="rmvFromQu" Type="System.Boolean" />
+        <Parameter Name="saveDtFlNm" Type="System.String" />
+        <Parameter Name="strCmpTp" Type="Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQStringMessageCompare" />
+        <Parameter Name="strCmpVal" Type="System.String" />
+        <Parameter Name="taskTp" Type="Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType" />
+        <Parameter Name="msgDtFl" Type="System.String" />
+        <Parameter Name="msgStr" Type="System.String" />
+        <Parameter Name="msgVars" Type="System.String" />
+        <Parameter Name="msgTp" Type="Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQMessageType" />
+        <Parameter Name="useEncrp" Type="System.Boolean" />
+        <Parameter Name="encrpAlgthm" Type="System.Messaging.EncryptionAlgorithm" />
+        <Parameter Name="use2000Fmt" Type="System.Boolean" />
+        <Parameter Name="otTask" Type="Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Die Beschreibung des Tasks.</param>
+        <param name="dtFlOvrWrtable">"true", um anzugeben, dass eine vorhandene Datendatei durch die Datendateinachricht überschrieben werden kann; andernfalls "false".</param>
+        <param name="MsgLngID">Der Herkunftsbezeichner der Nachricht.</param>
+        <param name="MsgPkgID">Der Bezeichner des Pakets, das als Quelle der Nachricht dient.</param>
+        <param name="MsgVrsnID">Der Versionsbezeichner der Nachricht.</param>
+        <param name="errIfMsgTmOt">"true", um anzugeben, dass der Task fehlschlägt, wenn die Nachricht ein Timeout auftritt; andernfalls "false".</param>
+        <param name="quPath">Der Pfad der Warteschlange.</param>
+        <param name="msmqConn">Der Verbindungsname für den MSMQ-Task.</param>
+        <param name="rcvMsgTmOt">Die Anzahl der Sekunden, nach denen eine empfangene Nachricht ein Timeout verursacht.</param>
+        <param name="rcvMsgTp">Der zu empfangende Nachrichtentyp.</param>
+        <param name="rmvFromQu">"true", um die Nachricht aus der Warteschlange zu entfernen; andernfalls "false".</param>
+        <param name="saveDtFlNm">Der Name der Datei, in der eine eingehende Datendateinachricht gespeichert wird.</param>
+        <param name="strCmpTp">Die zu verwendende Zeichenfolgenvergleichsmethode.</param>
+        <param name="strCmpVal">Die Zeichenfolge, die mit dem eine Zeichenfolgennachricht, wenn verglichen wird die <see cref="P:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MessageQueueTask.TaskType" /> ist <see cref="F:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.MQType.DTSMQType_Receiver" />.</param>
+        <param name="taskTp">Der Typ des Tasks.</param>
+        <param name="msgDtFl">Der Name der verwendeten Datendatei.</param>
+        <param name="msgStr">Eine Zeichenfolge, die die Nachricht enthält.</param>
+        <param name="msgVars">Die Liste der in der Nachricht verwendeten Variablen.</param>
+        <param name="msgTp">Der Typ der zu sendenden Nachricht.</param>
+        <param name="useEncrp">"true" verschlüsselt werden soll; andernfalls "false".</param>
+        <param name="encrpAlgthm">Der Name des zu verwendenden Verschlüsselungsalgorithmus.</param>
+        <param name="use2000Fmt">"true", das SQL Server 2000-Format verwendet; andernfalls "false".</param>
+        <param name="otTask">Der angegebene Task "Nachrichtenwarteschlange".</param>
+        <summary>Initialisiert den aktuellen <see cref="T:Microsoft.SqlServer.Dts.Tasks.MessageQueueTask.ServCompMQTask" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,50 @@
+<Type Name="IDynamicValues" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.IDynamicValues">
+  <TypeSignature Language="C#" Value="public interface IDynamicValues" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDynamicValues" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.IDynamicValues" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Die IDynamicValues-Schnittstelle wird verwendet, um dynamische Listen für Zeichenfolgeneigenschaften zu erstellen. Eine Klasse sollte diese Schnittstelle implementieren und verwenden die DynamicValuesAttribute (siehe unten), um die Generierung von dynamische Werte zu aktivieren.
+            
+             This interace and attribute can be used when a list of strings that will not be known until run-time
+             should be shown in a drop down list. Good examples of this are database names, users, collations, etc.
+            
+            
+             </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+    <example>
+             Öffentliche TypeConverter.StandardValuesCollection GetStandardValues(ITypeDescriptorContext context) {string [] CollationName = new String [] {"zuerst item", "zweite Itme"}; Zurückgeben der neuen TypeConverter.StandardValuesCollection(collationName);}
+             </example>
+  </Docs>
+  <Members>
+    <Member MemberName="GetStandardValues">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.TypeConverter/StandardValuesCollection GetStandardValues(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.IDynamicValues.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.TypeConverter+StandardValuesCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">
+        </param>
+        <summary>
+            GetStandardValues sollte ein StandardValuesCollection zurückgeben, der enthält alle Elemente, die in der Liste der die angegebene Eigenschaft im Kontext angezeigt werden.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

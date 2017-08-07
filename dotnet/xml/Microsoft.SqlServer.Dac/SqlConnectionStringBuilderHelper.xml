@@ -1,0 +1,177 @@
+<Type Name="SqlConnectionStringBuilderHelper" FullName="Microsoft.SqlServer.Dac.SqlConnectionStringBuilderHelper">
+  <TypeSignature Language="C#" Value="public sealed class SqlConnectionStringBuilderHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlConnectionStringBuilderHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.SqlConnectionStringBuilderHelper" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Öffentliche Klasse zur Unterstützung von SQL-Authentifizierungskonfiguration für DacFx
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlConnectionStringBuilderHelper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.SqlConnectionStringBuilderHelper.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthenticationString">
+      <MemberSignature Language="C#" Value="public static string GetAuthenticationString (System.Data.SqlClient.SqlConnectionStringBuilder connectionStringBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAuthenticationString(class System.Data.SqlClient.SqlConnectionStringBuilder connectionStringBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.SqlConnectionStringBuilderHelper.GetAuthenticationString(System.Data.SqlClient.SqlConnectionStringBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionStringBuilder" Type="System.Data.SqlClient.SqlConnectionStringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="connectionStringBuilder">
+        </param>
+        <summary>
+            Einrichten der Authentifizierung von ConnectionStringBuilder als Zeichenfolge
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnectionStringWithAlwaysEncryptedSetting">
+      <MemberSignature Language="C#" Value="public static string GetConnectionStringWithAlwaysEncryptedSetting (System.Data.SqlClient.SqlConnectionStringBuilder connectionStringBuilder, bool enableAlwaysEncrypted);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetConnectionStringWithAlwaysEncryptedSetting(class System.Data.SqlClient.SqlConnectionStringBuilder connectionStringBuilder, bool enableAlwaysEncrypted) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.SqlConnectionStringBuilderHelper.GetConnectionStringWithAlwaysEncryptedSetting(System.Data.SqlClient.SqlConnectionStringBuilder,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionStringBuilder" Type="System.Data.SqlClient.SqlConnectionStringBuilder" />
+        <Parameter Name="enableAlwaysEncrypted" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="connectionStringBuilder">Eine Verbindungszeichenfolgen-Generator, der angegebene Einstellung möglicherweise immer verschlüsselt haben.</param>
+        <param name="enableAlwaysEncrypted">"True", verschlüsselt um immer aktivieren festgelegt wird, andernfalls "false"</param>
+        <summary>
+            Legt AlwaysEncrypted-Einstellung in der Verbindungszeichenfolge angegeben, steht in .NET Framework aus und gibt die aktualisierte Verbindungszeichenfolge No-Op zurück, wenn .NET 4.6 nicht vorhanden ist
+            </summary>
+        <returns>Verbindungszeichenfolge mit Column Encryption Setting-Satz zu aktivierten oder deaktivierten auf der Grundlage von enableAlwaysEncrypted</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAuthenticationSpecified">
+      <MemberSignature Language="C#" Value="public static bool IsAuthenticationSpecified (System.Data.SqlClient.SqlConnectionStringBuilder connectionStringBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAuthenticationSpecified(class System.Data.SqlClient.SqlConnectionStringBuilder connectionStringBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.SqlConnectionStringBuilderHelper.IsAuthenticationSpecified(System.Data.SqlClient.SqlConnectionStringBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionStringBuilder" Type="System.Data.SqlClient.SqlConnectionStringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="connectionStringBuilder">Eine Verbindungszeichenfolgen-Generator, der möglicherweise Authentifizierung angegeben haben.</param>
+        <summary>
+            Bestimmt, ob ein Verbindungszeichenfolgen-Generator für die Authentifizierung-Eigenschaft angegeben ist.
+            </summary>
+        <returns>True, wenn die Authentifizierungseigenschaft unterstützt wird wird von der Verbindungszeichenfolgen-Generator und die Authentifizierung Eigenschaft angegeben. Andernfalls ist der Wert False.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAuthenticationSupported">
+      <MemberSignature Language="C#" Value="public static bool IsAuthenticationSupported ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAuthenticationSupported() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.SqlConnectionStringBuilderHelper.IsAuthenticationSupported" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Überprüft, ob "Authentication" in der Common Language Runtime-Umgebung unterstützt wird erst das Schlüsselwort "Authentication" unterstützt wird. Net4.6. Wenn Benutzer eine Version von .net 4.6 kleiner verwendet, vermeiden DacFx Sie die Verwendung "Authentifizierung"
+            </summary>
+        <returns>"true", wenn "Authentifizierung" in der aktuellen Version von .net vorhanden ist</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAuthentication">
+      <MemberSignature Language="C#" Value="public static void SetAuthentication (System.Data.SqlClient.SqlConnectionStringBuilder sourceBuilder, System.Data.SqlClient.SqlConnectionStringBuilder targetBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAuthentication(class System.Data.SqlClient.SqlConnectionStringBuilder sourceBuilder, class System.Data.SqlClient.SqlConnectionStringBuilder targetBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.SqlConnectionStringBuilderHelper.SetAuthentication(System.Data.SqlClient.SqlConnectionStringBuilder,System.Data.SqlClient.SqlConnectionStringBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceBuilder" Type="System.Data.SqlClient.SqlConnectionStringBuilder" />
+        <Parameter Name="targetBuilder" Type="System.Data.SqlClient.SqlConnectionStringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="sourceBuilder">die Quelle Verbindungszeichenfolgen-Generator</param>
+        <param name="targetBuilder">Das Ziel Verbindungszeichenfolgen-Generator</param>
+        <summary>
+            Legen Sie die Authentifizierung-Wert aus dem Quell-Generator des Ziel-Generators
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAuthentication">
+      <MemberSignature Language="C#" Value="public static void SetAuthentication (System.Data.SqlClient.SqlConnectionStringBuilder sbConnectionString, string authenticationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAuthentication(class System.Data.SqlClient.SqlConnectionStringBuilder sbConnectionString, string authenticationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.SqlConnectionStringBuilderHelper.SetAuthentication(System.Data.SqlClient.SqlConnectionStringBuilder,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sbConnectionString" Type="System.Data.SqlClient.SqlConnectionStringBuilder" />
+        <Parameter Name="authenticationType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sbConnectionString">
+        </param>
+        <param name="authenticationType">
+        </param>
+        <summary>
+            Festlegen der Authentifizierung mithilfe von Reflektion
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

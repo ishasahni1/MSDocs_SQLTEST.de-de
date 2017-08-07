@@ -1,0 +1,437 @@
+<Type Name="LogProvider" FullName="Microsoft.SqlServer.Dts.Runtime.LogProvider">
+  <TypeSignature Language="C#" Value="public sealed class LogProvider : Microsoft.SqlServer.Dts.Runtime.DtsObject, IDisposable, Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath, Microsoft.SqlServer.Dts.Runtime.IDTSName, Microsoft.SqlServer.Dts.Runtime.IDTSObjectHost, Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath, Microsoft.SqlServer.Dts.Runtime.IDTSPersist, Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider, Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx, System.ComponentModel.IComponent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LogProvider extends Microsoft.SqlServer.Dts.Runtime.DtsObject implements class Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath, class Microsoft.SqlServer.Dts.Runtime.IDTSName, class Microsoft.SqlServer.Dts.Runtime.IDTSObjectHost, class Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath, class Microsoft.SqlServer.Dts.Runtime.IDTSPersist, class Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider, class Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx, class System.ComponentModel.IComponent, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.LogProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DtsObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSName</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSObjectHost</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPersist</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.IComponent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Enthält Informationen zu einem Protokollanbieter, der einem Paket zugeordnet ist. Alle einem Paket zugeordneten Protokollanbieter befinden sich in der <see cref="P:Microsoft.SqlServer.Dts.Runtime.Package.LogProviders" />-Auflistung.
+Verwenden Sie für Protokollanbieter auf dem Computer, die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Application" /> Klasse, und zeigen die <see cref="P:Microsoft.SqlServer.Dts.Runtime.Application.LogProviderInfos" /> Auflistung. Diese Klasse kann nicht vererbt werden. </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CloseLog">
+      <MemberSignature Language="C#" Value="public void CloseLog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CloseLog() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.LogProvider.CloseLog" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Schließt das Protokoll.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigString">
+      <MemberSignature Language="C#" Value="public string ConfigString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.ConfigString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Verbindungs- und Konfigurationsinformationen für einen bestimmten Protokollanbieter ab oder legt sie fest. </summary>
+        <value>Eine Zeichenfolge, die den zu speichernden oder zu ladenden Konfigurationsstatus enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreationName">
+      <MemberSignature Language="C#" Value="public string CreationName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreationName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.CreationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Zeichenfolge, die zum Erstellen einer Instanz des von der Laufzeit verwendet das <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogProvider" /> Objekt. Diese Eigenschaft ist schreibgeschützt.</summary>
+        <value>Eine Zeichenfolge, die den Namen oder Bezeichner (GUID) des Protokollanbieters enthält. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DelayValidation">
+      <MemberSignature Language="C#" Value="public bool DelayValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DelayValidation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.DelayValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert ab, der angibt, ob ein Aufruf von <see cref="M:Microsoft.SqlServer.Dts.Runtime.LogProviderBase.Validate(Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" /> für den Protokollanbieter bis zur paketausführung verzögert wird.</summary>
+        <value>Ein boolescher Wert, der angibt, ob die Überprüfung bis zur paketausführung verzögert wird. Der Wert "true" gibt an, dass die Überprüfung bis zur paketausführung verzögert wird. Der Standardwert ist false.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Beschreibung der <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogProvider" /> Objekt.</summary>
+        <value>Eine Zeichenfolge, die Beschreibung enthält, der <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogProvider" />.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.LogProvider.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt die vom Protokollanbieter verwendeten Ressourcen frei.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disposed">
+      <MemberSignature Language="C#" Value="public event EventHandler Disposed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Dts.Runtime.LogProvider.Disposed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fügt einen Ereignishandler hinzu, der auf das <see cref="E:Microsoft.SqlServer.Dts.Runtime.LogProvider.Disposed" />-Ereignis für den Protokollanbieter lauscht.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExecutionPath">
+      <MemberSignature Language="C#" Value="public string GetExecutionPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetExecutionPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.LogProvider.GetExecutionPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt eine Zeichenfolge, die den Ausführungspfad des Protokollanbieters enthält.</summary>
+        <returns>Eine Zeichenfolge, die den Ausführungspfad des Protokollanbieters enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpression">
+      <MemberSignature Language="C#" Value="public string GetExpression (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetExpression(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.LogProvider.GetExpression(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Der Name der Eigenschaft, deren Ausdruck Sie anzeigen möchten.</param>
+        <summary>Gibt eine Zeichenfolge, die den Ausdruck für die angegebene Eigenschaft enthält. NULL bedeutet, dass kein Ausdruck zugewiesen ist.</summary>
+        <returns>Eine Zeichenfolge, die den Ausdruck zum Auswerten die Eigenschaft enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPackagePath">
+      <MemberSignature Language="C#" Value="public string GetPackagePath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPackagePath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.LogProvider.GetPackagePath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt eine Zeichenfolge, die den relativen Pfad zum Paketspeicherort enthält.</summary>
+        <returns>Eine Zeichenfolge, die den Pfad des Pakets enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasExpressions">
+      <MemberSignature Language="C#" Value="public bool HasExpressions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasExpressions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.HasExpressions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob der Protokollanbieter Ausdrücke enthält, oder legt ihn fest.</summary>
+        <value>"true", wenn der Protokollanbieter Ausdrücke enthält; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSObjectHostType HostType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSObjectHostType HostType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.HostType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSObjectHostType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine Enumeration ab, die den Typ des Hosts beschreibt, von dem der Protokollanbieter verwendet wird. Diese Eigenschaft ist schreibgeschützt.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSObjectHostType" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public string ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogProvider" />. Diese Eigenschaft ist schreibgeschützt. </summary>
+        <value>Gibt die ganzzahlige ID von der <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogProvider" />.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerObject">
+      <MemberSignature Language="C#" Value="public object InnerObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object InnerObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.InnerObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen bestimmten Protokollanbieter zurück, der vom <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogProvider" />-Objekt gehostet wird.</summary>
+        <value>Ein Objekt, das den gehosteten Protokollanbieter enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlNode node, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlNode node, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.LogProvider.LoadFromXML(System.Xml.XmlNode,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="node">Der XmlNode, der die zu ladenden Informationen enthält.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein im XML-Format gespeichertes Paket zu laden, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt ihn fest ein den Namen des dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogProvider" /> -Objekt, z. B. "SSIS-Protokollanbieter für Textdateien". Diese Zeichenfolge wird der Text, der in das Dialogfeld SSIS-Protokolle konfigurieren (Registerkarte Anbieter und Protokolle) im Dropdownmenü für die Anbieter-Typ zeigt.</summary>
+        <value>Eine Zeichenfolge, die den Namen der enthält die <see cref="T:Microsoft.SqlServer.Dts.Runtime.LogProvider" />.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenLog">
+      <MemberSignature Language="C#" Value="public void OpenLog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OpenLog() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.LogProvider.OpenLog" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Öffnet das Protokoll.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DtsProperties Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.DtsProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DtsProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsProperties" /> -Auflistung, die eine Auflistung von enthält <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsProperty" /> Objekte.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsProperties" /> Auflistung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (ref System.Xml.XmlDocument doc, System.Xml.XmlNode node, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class System.Xml.XmlNode node, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.LogProvider.SaveToXML(System.Xml.XmlDocument@,System.Xml.XmlNode,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument&amp;" RefType="ref" />
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="node">Der Knoten innerhalb des oben erwähnten Dokuments, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="events">Eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> Schnittstelle.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket als XML-Datei zu speichern, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetExpression">
+      <MemberSignature Language="C#" Value="public void SetExpression (string propertyName, string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetExpression(string propertyName, string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.LogProvider.SetExpression(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Der Name der Eigenschaft, der der Ausdruck zugewiesen werden soll.</param>
+        <param name="expression">Der Ausdruck.</param>
+        <summary>Weist der Eigenschaft den angegebenen Ausdruck zu. Geben Sie Null an, wenn Sie einen vorhandenen Ausdruck aus der Eigenschaft zu entfernen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Site">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.ISite Site { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.LogProvider.Site" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ISite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Site für den Protokollanbieter ab oder legt sie fest.</summary>
+        <value>Die Site für den Protokollanbieter.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

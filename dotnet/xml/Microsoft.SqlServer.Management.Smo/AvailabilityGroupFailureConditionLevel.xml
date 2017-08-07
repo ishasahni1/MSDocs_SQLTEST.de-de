@@ -1,0 +1,134 @@
+<Type Name="AvailabilityGroupFailureConditionLevel" FullName="Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel">
+  <TypeSignature Language="C#" Value="public enum AvailabilityGroupFailureConditionLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AvailabilityGroupFailureConditionLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SqlEnum</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevelConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Die unterschiedlichen Bedingungen an, die ein automatisches Failover in einer Verfügbarkeitsgruppe auslösen können.
+Diese Einstellungen sind kumulativ, was bedeutet, dass die Einstellung erhöht Wert Encompases alle oben genannten Bedingungen erfüllt, und fügt zusätzliche diejenigen.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnAnyQualifiedFailureCondition">
+      <MemberSignature Language="C#" Value="OnAnyQualifiedFailureCondition" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel OnAnyQualifiedFailureCondition = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel.OnAnyQualifiedFailureCondition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein automatisches Failover wird ausgelöst, wenn der Wert der Bedingungsebene unterschritten wird oder eine qualifizierte Fehlerbedingung auftritt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCriticalServerErrors">
+      <MemberSignature Language="C#" Value="OnCriticalServerErrors" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel OnCriticalServerErrors = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel.OnCriticalServerErrors" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein automatisches Failover wird ausgelöst, wenn der Wert der Bedingungsebene unterschritten wird oder ein kritischer Serverfehler auftritt.
+Wenn für eine Verfügbarkeitsgruppe keine Einstellung angegeben wird, ist dies der Standardwert.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnModerateServerErrors">
+      <MemberSignature Language="C#" Value="OnModerateServerErrors" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel OnModerateServerErrors = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel.OnModerateServerErrors" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein automatisches Failover wird ausgelöst, wenn der Wert der Bedingungsebene unterschritten wird oder ein mittelschwerer Serverfehler auftritt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnServerDown">
+      <MemberSignature Language="C#" Value="OnServerDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel OnServerDown = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel.OnServerDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Automatisches Failover wird ausgelöst, wenn der SQL Server-Dienst ausgefallen ist.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnServerUnresponsive">
+      <MemberSignature Language="C#" Value="OnServerUnresponsive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel OnServerUnresponsive = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel.OnServerUnresponsive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Automatisches Failover wird ausgelöst, wenn SQL Server heruntergefahren oder nicht reagiert wird, oder die Dateinamenskonvention primäre Replikat im Status "Fehler" ist.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel Unknown = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupFailureConditionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die fehlerbedingungsebene ist unbekannt. Das Replikat kann nicht in der Lage, für die Kommunikation mit dem Cluster oder Quorum möglicherweise nicht über die Windows Server Failover Cluster festgelegt werden.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

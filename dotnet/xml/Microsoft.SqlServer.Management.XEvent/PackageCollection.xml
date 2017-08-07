@@ -1,0 +1,170 @@
+<Type Name="PackageCollection" FullName="Microsoft.SqlServer.Management.XEvent.PackageCollection">
+  <TypeSignature Language="C#" Value="public sealed class PackageCollection : Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;Microsoft.SqlServer.Management.XEvent.Package,Microsoft.SqlServer.Management.XEvent.Package.Key,Microsoft.SqlServer.Management.XEvent.BaseXEStore&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PackageCollection extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3&lt;class Microsoft.SqlServer.Management.XEvent.Package, class Microsoft.SqlServer.Management.XEvent.Package/Key, class Microsoft.SqlServer.Management.XEvent.BaseXEStore&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.XEvent.PackageCollection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.XEvent</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;Microsoft.SqlServer.Management.XEvent.Package,Microsoft.SqlServer.Management.XEvent.Package+Key,Microsoft.SqlServer.Management.XEvent.BaseXEStore&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.SqlServer.Management.XEvent.Package</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">Microsoft.SqlServer.Management.XEvent.Package+Key</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!2">Microsoft.SqlServer.Management.XEvent.BaseXEStore</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            SFC-Auflistungsklasse für Paket
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.PackageCollection.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">nur der Paketname, ohne die Modul-id</param>
+        <summary>
+            Bestimmt, ob die Auflistung Paket enthält.
+            </summary>
+        <returns>
+          <c>true</c> if the collection contains Package; otherwise, <c>false</c>.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Guid moduleID, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(valuetype System.Guid moduleID, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.PackageCollection.Contains(System.Guid,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="moduleID" Type="System.Guid" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="moduleID"> Modul-Id des Pakets</param>
+        <param name="name">Name des Pakets</param>
+        <summary>
+            Bestimmt, ob die Auflistung Paket enthält.
+            </summary>
+        <returns>
+          <c>true</c> if the collection contains Package; otherwise, <c>false</c>.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementFactoryImpl">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.PackageCollection.GetElementFactoryImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Die Instanz des Objektfactory für das Paket zurückgeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Package this[Guid packageID] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.XEvent.Package Item(valuetype System.Guid)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.PackageCollection.Item(System.Guid)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Package</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageID" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="packageID">GUID des Pakets</param>
+        <summary>
+            Ruft die <see cref="T:Microsoft.SqlServer.Management.XEvent.Package" /> mit dem angegebenen Paket-GUID.
+            </summary>
+        <value>Paket mit der angegebenen GUID</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Package this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.XEvent.Package Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.PackageCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Package</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">nur der Paketname, ohne die Modul-id</param>
+        <summary>
+            Ruft die <see cref="T:Microsoft.SqlServer.Management.XEvent.Package" /> anhand des Namens.
+            </summary>
+        <value>Paket mit dem angegebenen Namen, wenn der Name eindeutig ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.XEvent.XEventException">Wenn der Paketname nicht eindeutig ist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Package this[Guid moduleID, string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.XEvent.Package Item(valuetype System.Guid, string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.PackageCollection.Item(System.Guid,System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Package</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="moduleID" Type="System.Guid" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="moduleID"> Modul-Id des Pakets</param>
+        <param name="name">Name des Pakets</param>
+        <summary>
+            Ruft die <see cref="T:Microsoft.SqlServer.Management.XEvent.Package" /> nach Modul-Id und Namen.
+            </summary>
+        <value>Paket mit der angegebenen Modul-Id und name</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

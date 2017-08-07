@@ -1,0 +1,125 @@
+<Type Name="IParameterFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IParameterFactory">
+  <TypeSignature Language="C#" Value="public interface IParameterFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IParameterFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IParameterFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden zum Erstellen von Parameterobjekten.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateCursorParameter">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter CreateCursorParameter (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter CreateCursorParameter(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IParameterFactory.CreateCursorParameter(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des Parameters, der erstellt werden soll.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter" />-Objekt, das über den angegebenen Namen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ICursorParameter" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarParameter">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter CreateScalarParameter (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType dataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter CreateScalarParameter(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType dataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IParameterFactory.CreateScalarParameter(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des Parameters, der erstellt werden soll.</param>
+        <param name="dataType">Der Datentyp des Parameters, der erstellt werden soll.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter" />-Objekt, das über den angegebenen Namen und den angegebenen Datentyp verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarParameter">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter CreateScalarParameter (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType dataType, bool isOutput, string defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter CreateScalarParameter(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType dataType, bool isOutput, string defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IParameterFactory.CreateScalarParameter(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" />
+        <Parameter Name="isOutput" Type="System.Boolean" />
+        <Parameter Name="defaultValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des Parameters, der erstellt werden soll.</param>
+        <param name="dataType">Der Datentyp des Parameters, der erstellt werden soll.</param>
+        <param name="isOutput">
+          <c>true</c> to create an output parameter; otherwise, <c>false</c>.</param>
+        <param name="defaultValue">Der Standardwert des Parameters.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter" />-Objekt, das über den angegebenen Namen, den angegebenen Datentyp und den angegebenen Standardwert verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarParameter" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTableParameter">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ITableParameter CreateTableParameter (string name, Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType dataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ITableParameter CreateTableParameter(string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType dataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IParameterFactory.CreateTableParameter(System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ITableParameter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des Parameters, der erstellt werden soll.</param>
+        <param name="dataType">Der Datentyp des Parameters, der erstellt werden soll.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableParameter" />-Objekt, das über den angegebenen Namen und den angegebenen Datentyp verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITableDataType" /> Objekt.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

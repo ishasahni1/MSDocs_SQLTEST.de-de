@@ -1,0 +1,95 @@
+<Type Name="EngineVersion" FullName="Microsoft.SqlServer.Dac.EngineVersion">
+  <TypeSignature Language="C#" Value="public enum EngineVersion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EngineVersion extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.EngineVersion" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Eine Option, die angibt, welche Modulversion festgelegt bzw. zugelassen ist.
+Derzeit wird diese Option nur in Vorgängen in Verbindung mit der SQL-Datenbank von Microsoft Azure verwendet.
+            
+            For instance this can be used during export to define the allowed engine version to validate against
+            and whether the features of the database match the capabilities of that engine version.
+            
+            Similarly when defining creation options for a public TSqlModel in the extensibility APIs, this can be
+            used to define what the expected engine version of the model should be set to.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.EngineVersion Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.EngineVersion.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.EngineVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Verwendet beim Erstellen des Modells die Standard-Modulversion.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Latest">
+      <MemberSignature Language="C#" Value="Latest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.EngineVersion Latest = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.EngineVersion.Latest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.EngineVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Verwendet beim Erstellen des Modells die neueste Modulversion. Diese Option versucht immer, die höchste unterstützte Modulversion als Ziel festzulegen, was bedeutet, dass das Modell immer die aktuellsten, zurzeit unterstützten T-SQL-Sprachfeatures zulässt. 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="V11">
+      <MemberSignature Language="C#" Value="V11" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.EngineVersion V11 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.EngineVersion.V11" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.EngineVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Version 11 
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="V12">
+      <MemberSignature Language="C#" Value="V12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.EngineVersion V12 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.EngineVersion.V12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.EngineVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Version 12
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

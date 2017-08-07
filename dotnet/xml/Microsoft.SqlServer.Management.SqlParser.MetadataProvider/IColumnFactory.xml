@@ -1,0 +1,227 @@
+<Type Name="IColumnFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IColumnFactory">
+  <TypeSignature Language="C#" Value="public interface IColumnFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IColumnFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IColumnFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden zum Erstellen von <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekten.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableColumn Create (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableColumn Create(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IColumnFactory.Create(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" /> -Objekt, das das übergeordnete Element der Spalte ist.</param>
+        <param name="name">Name der Spalte.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableColumn" />-Objekt, das über den angegebenen Namen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableColumn" /> -Objekt, das dem angegebenen Namen ab.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAnonymousColumn">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateAnonymousColumn (Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType dataType, bool nullable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateAnonymousColumn(class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType dataType, bool nullable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IColumnFactory.CreateAnonymousColumn(Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" />
+        <Parameter Name="nullable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dataType">Der Skalarwert, für den eine anonyme Spalte erstellt wird.</param>
+        <param name="nullable">Gibt an, ob das Skalarwert NULL zulässt.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt, das eine anonyme Spalte des angegebenen Skalarwerts darstellt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateColumnAlias">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateColumnAlias (Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn aliasedColumn, string alias);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateColumnAlias(class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn aliasedColumn, string alias) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IColumnFactory.CreateColumnAlias(Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aliasedColumn" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />
+        <Parameter Name="alias" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="aliasedColumn">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt, für das ein Alias erstellt werden soll.</param>
+        <param name="alias">Der zu verwendende Spaltenaliasname.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt, das ein Alias des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekts ist und über den angegebenen Spaltenaliasnamen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateColumnAlias">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateColumnAlias (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn aliasedColumn, string alias);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateColumnAlias(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn aliasedColumn, string alias) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IColumnFactory.CreateColumnAlias(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular,Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+        <Parameter Name="aliasedColumn" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />
+        <Parameter Name="alias" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" /> -Objekt, das das übergeordnete Element der Spalte ist.</param>
+        <param name="aliasedColumn">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt, für das ein Alias erstellt werden soll.</param>
+        <param name="alias">Der zu verwendende Spaltenaliasname.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt, das ein Alias des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekts ist und über den angegebenen Spaltenaliasnamen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarAlias">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateScalarAlias (Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar aliasedScalar, string alias);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateScalarAlias(class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar aliasedScalar, string alias) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IColumnFactory.CreateScalarAlias(Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aliasedScalar" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar" />
+        <Parameter Name="alias" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="aliasedScalar">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar" />-Objekt, für das ein Alias erstellt werden soll.</param>
+        <param name="alias">Der zu verwendende Spaltenaliasname.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt, das ein Alias des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar" />-Objekts ist und über den angegebenen Spaltenaliasnamen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScalarAlias">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateScalarAlias (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar aliasedScalar, string alias);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateScalarAlias(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar aliasedScalar, string alias) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IColumnFactory.CreateScalarAlias(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular,Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+        <Parameter Name="aliasedScalar" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar" />
+        <Parameter Name="alias" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" /> -Objekt, das das übergeordnete Element der Spalte ist.</param>
+        <param name="aliasedScalar">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar" />-Objekt, für das ein Alias erstellt werden soll.</param>
+        <param name="alias">Der zu verwendende Spaltenaliasname.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt, das ein Alias des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IScalar" />-Objekts ist und über den angegebenen Spaltenaliasnamen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSimpleColumn">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateSimpleColumn (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, string name, Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType dataType, bool nullable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn CreateSimpleColumn(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType dataType, bool nullable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IColumnFactory.CreateSimpleColumn(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular,System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IScalarDataType" />
+        <Parameter Name="nullable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" /> -Objekt, das das übergeordnete Element der Spalte ist.</param>
+        <param name="name">Name der Spalte.</param>
+        <param name="dataType">Der Datentyp der Spalte.</param>
+        <param name="nullable">Gibt an, ob das Skalarwert NULL zulässt.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt, das über den angegebenen Spaltennamen und den angegebenen Datentyp verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt, das über den angegebenen Namen und den angegebenen Datentyp verfügt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn Null { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn Null" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IColumnFactory.Null" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt ab, das als Platzhalterspalte verwendet werden kann.
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />-Objekt, das als Platzhalterspalte verwendet werden kann.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

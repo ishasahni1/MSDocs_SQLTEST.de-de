@@ -1,0 +1,168 @@
+<Type Name="SessionProviderBase" FullName="Microsoft.SqlServer.Management.XEvent.SessionProviderBase">
+  <TypeSignature Language="C#" Value="public abstract class SessionProviderBase : Microsoft.SqlServer.Management.XEvent.ISessionProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SessionProviderBase extends System.Object implements class Microsoft.SqlServer.Management.XEvent.ISessionProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.XEvent.SessionProviderBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.XEvent</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.XEvent.ISessionProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            SQL-Anbieter für die Sitzung.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SessionProviderBase (Microsoft.SqlServer.Management.XEvent.Session session, string eventSessionScript, Func&lt;string,string&gt; createSessionScript);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.XEvent.Session session, string eventSessionScript, class System.Func`2&lt;string, string&gt; createSessionScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.SessionProviderBase.#ctor(Microsoft.SqlServer.Management.XEvent.Session,System.String,System.Func{System.String,System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="session" Type="Microsoft.SqlServer.Management.XEvent.Session" />
+        <Parameter Name="eventSessionScript" Type="System.String" />
+        <Parameter Name="createSessionScript" Type="System.Func&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="session">
+        </param>
+        <param name="eventSessionScript">
+        </param>
+        <param name="createSessionScript">Eine Funktion, die einen Sitzungsnamen als Eingabe akzeptiert und gibt ein Sql-Skript zum Erstellen einer Sitzung</param>
+        <summary>
+            Erstellt eine neue SessionProviderBase für die angegebene Sitzung an. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAlterScript">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetAlterScript ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetAlterScript() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.SessionProviderBase.GetAlterScript" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Skript Alter für diese Sitzung.
+            </summary>
+        <returns>Änderungsskript der Sitzung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCreateScript">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetCreateScript ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetCreateScript() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.SessionProviderBase.GetCreateScript" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellen Sie Skripts für diese Sitzung.
+            </summary>
+        <returns>Create-Skript für Sitzung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDropScript">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetDropScript ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript GetDropScript() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.SessionProviderBase.GetDropScript" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            "Drop"-Skripts für diese Sitzung.
+            </summary>
+        <returns>Drop-Skript für Sitzung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.SessionProviderBase.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Startet diese Sitzung
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.SessionProviderBase.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Beendet diese Sitzung
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateAlter">
+      <MemberSignature Language="C#" Value="public void ValidateAlter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ValidateAlter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.SessionProviderBase.ValidateAlter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+             Back-End-spezifische Validierungen, um die Sitzung zu ändern.
+Hinweis: bei einem Sql-Datenbankmodul, die die Alter-Anweisung nicht atomaren, ist damit eine dummy-Sitzung verwendet wird, um zu überprüfen, bevor die Ausführung für die aktuelle Sitzung ändern.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

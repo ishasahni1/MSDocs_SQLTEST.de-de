@@ -1,0 +1,144 @@
+<Type Name="DacQueryScopes" FullName="Microsoft.SqlServer.Dac.Model.DacQueryScopes">
+  <TypeSignature Language="C#" Value="public enum DacQueryScopes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DacQueryScopes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Model.DacQueryScopes" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Definiert den Typ von Objekten, die aus dem Modell abgefragt werden sollen.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes All = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.DacQueryScopes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Alle Elemente im Modell, ausschließlich der Verweise auf externe Elemente in nicht zum System gehörigen Datenbanken.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltIn">
+      <MemberSignature Language="C#" Value="BuiltIn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes BuiltIn = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.BuiltIn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.DacQueryScopes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Integrierte Systemobjekte abfragen.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes Default = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.DacQueryScopes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Standardbereich für die Abfrage ist, fragt <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.UserDefined" /> und <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.BuiltIn" /> Bereiche Abfragen
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.DacQueryScopes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Alle Elemente herausfiltern.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SameDatabase">
+      <MemberSignature Language="C#" Value="SameDatabase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes SameDatabase = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.SameDatabase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.DacQueryScopes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Fragt benutzerdefinierte Objekte aus referenzierten Modellen ab, wobei das referenzierte Modell für dieselbe Datenbank gilt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="System">
+      <MemberSignature Language="C#" Value="System" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes System = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.System" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.DacQueryScopes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Fragt Systemobjekte ab, die nicht als integriert behandelt werden. Hierbei handelt es sich um Objekte, die angezeigt werden, wenn auf die Masterdatenbank verwiesen wird.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserDefined">
+      <MemberSignature Language="C#" Value="UserDefined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dac.Model.DacQueryScopes UserDefined = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.UserDefined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.DacQueryScopes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Benutzerdefinierte Objekte abfragen.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,494 @@
+<Type Name="PipelineComponentExt" FullName="Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt">
+  <TypeSignature Language="C#" Value="public abstract class PipelineComponentExt : Microsoft.SqlServer.Dts.Pipeline.PipelineComponent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PipelineComponentExt extends Microsoft.SqlServer.Dts.Pipeline.PipelineComponent" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.PipelineHost</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Pipeline.PipelineComponent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary />
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PipelineComponentExt ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertDataRecordTypeToBufferType">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType ConvertDataRecordTypeToBufferType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType ConvertDataRecordTypeToBufferType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.ConvertDataRecordTypeToBufferType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateColumnInfoFromDtsType">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.SqlServer.Dts.Pipeline.ColumnInformation CreateColumnInfoFromDtsType (string name, Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType dtsType, System.Data.DataRow row);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.ColumnInformation CreateColumnInfoFromDtsType(string name, valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType dtsType, class System.Data.DataRow row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.CreateColumnInfoFromDtsType(System.String,Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType,System.Data.DataRow)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.ColumnInformation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dtsType" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DataType" />
+        <Parameter Name="row" Type="System.Data.DataRow" />
+      </Parameters>
+      <Docs>
+        <param name="name">
+        </param>
+        <param name="dtsType">
+        </param>
+        <param name="row">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateColumnsFromSchemaTable">
+      <MemberSignature Language="C#" Value="protected void CreateColumnsFromSchemaTable (System.Data.DataTable schemaTable, Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 dataOutput, Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 errorOutput);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CreateColumnsFromSchemaTable(class System.Data.DataTable schemaTable, class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 dataOutput, class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 errorOutput) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.CreateColumnsFromSchemaTable(System.Data.DataTable,Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100,Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemaTable" Type="System.Data.DataTable" />
+        <Parameter Name="dataOutput" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" />
+        <Parameter Name="errorOutput" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" />
+      </Parameters>
+      <Docs>
+        <param name="schemaTable">
+        </param>
+        <param name="dataOutput">
+        </param>
+        <param name="errorOutput">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateComponentProperty">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 CreateComponentProperty (string name, string description, object value, bool expressionSupport = false);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100 CreateComponentProperty(string name, string description, object value, bool expressionSupport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.CreateComponentProperty(System.String,System.String,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSCustomProperty100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="expressionSupport" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">Eigenschaftsname</param>
+        <param name="description">Beschreibung der Eigenschaft</param>
+        <param name="value">Standardwert</param>
+        <param name="expressionSupport">Legen Sie auf "true", wenn die Eigenschaft expresionable</param>
+        <summary>
+            Fügt eine neue Eigenschaft für die Komponente
+            </summary>
+        <returns>Gibt die neu erstellte benutzerdefinierte Eigenschaft</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateExternalMetadataColumn">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100 CreateExternalMetadataColumn (Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumnCollection100 externalMetadata, Microsoft.SqlServer.Dts.Pipeline.ColumnInformation column);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100 CreateExternalMetadataColumn(class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumnCollection100 externalMetadata, class Microsoft.SqlServer.Dts.Pipeline.ColumnInformation column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.CreateExternalMetadataColumn(Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumnCollection100,Microsoft.SqlServer.Dts.Pipeline.ColumnInformation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumn100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="externalMetadata" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSExternalMetadataColumnCollection100" />
+        <Parameter Name="column" Type="Microsoft.SqlServer.Dts.Pipeline.ColumnInformation" />
+      </Parameters>
+      <Docs>
+        <param name="externalMetadata">
+        </param>
+        <param name="column">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOutput">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 CreateOutput (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 CreateOutput(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.CreateOutput(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOutputColumn">
+      <MemberSignature Language="C#" Value="protected virtual Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100 CreateOutputColumn (Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 output, Microsoft.SqlServer.Dts.Pipeline.ColumnInformation ci);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100 CreateOutputColumn(class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 output, class Microsoft.SqlServer.Dts.Pipeline.ColumnInformation ci) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.CreateOutputColumn(Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100,Microsoft.SqlServer.Dts.Pipeline.ColumnInformation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputColumn100</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="output" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" />
+        <Parameter Name="ci" Type="Microsoft.SqlServer.Dts.Pipeline.ColumnInformation" />
+      </Parameters>
+      <Docs>
+        <param name="output">
+        </param>
+        <param name="ci">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOutputColumns">
+      <MemberSignature Language="C#" Value="protected void CreateOutputColumns (System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dts.Pipeline.ColumnInformation&gt; columns, Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 output);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CreateOutputColumns(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Dts.Pipeline.ColumnInformation&gt; columns, class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.CreateOutputColumns(System.Collections.Generic.IEnumerable{Microsoft.SqlServer.Dts.Pipeline.ColumnInformation},Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columns" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Dts.Pipeline.ColumnInformation&gt;" />
+        <Parameter Name="output" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" />
+      </Parameters>
+      <Docs>
+        <param name="columns">
+        </param>
+        <param name="output">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComponentVersion">
+      <MemberSignature Language="C#" Value="protected int GetComponentVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance int32 GetComponentVersion() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.GetComponentVersion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadataValuesFromRow">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Dts.Pipeline.ColumnInformation GetMetadataValuesFromRow (System.Data.DataRow row);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.SqlServer.Dts.Pipeline.ColumnInformation GetMetadataValuesFromRow(class System.Data.DataRow row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.GetMetadataValuesFromRow(System.Data.DataRow)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.ColumnInformation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Data.DataRow" />
+      </Parameters>
+      <Docs>
+        <param name="row">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected T GetPropertyValue&lt;T&gt; (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance !!T GetPropertyValue&lt;T&gt;(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.GetPropertyValue``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">
+        </typeparam>
+        <param name="name">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostDiagnostic">
+      <MemberSignature Language="C#" Value="protected void PostDiagnostic (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PostDiagnostic(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.PostDiagnostic(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostError">
+      <MemberSignature Language="C#" Value="protected void PostError (Exception e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PostError(class System.Exception e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.PostError(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="e">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostError">
+      <MemberSignature Language="C#" Value="protected void PostError (int hr, object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PostError(int32 hr, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.PostError(System.Int32,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hr" Type="System.Int32" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hr">
+        </param>
+        <param name="args">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostError">
+      <MemberSignature Language="C#" Value="protected void PostError (string message, object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PostError(string message, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.PostError(System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="message">
+        </param>
+        <param name="args">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostWarning">
+      <MemberSignature Language="C#" Value="protected void PostWarning (string message, object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PostWarning(string message, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.PostWarning(System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="message">
+        </param>
+        <param name="args">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transfer">
+      <MemberSignature Language="C#" Value="public void Transfer (Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer dataBuffer, System.Data.IDataReader dataReader, int columnIndex, Microsoft.SqlServer.Dts.Pipeline.MappedColumnInfo mappedColumnInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transfer(class Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer dataBuffer, class System.Data.IDataReader dataReader, int32 columnIndex, class Microsoft.SqlServer.Dts.Pipeline.MappedColumnInfo mappedColumnInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.Transfer(Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer,System.Data.IDataReader,System.Int32,Microsoft.SqlServer.Dts.Pipeline.MappedColumnInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataBuffer" Type="Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />
+        <Parameter Name="dataReader" Type="System.Data.IDataReader" />
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="mappedColumnInfo" Type="Microsoft.SqlServer.Dts.Pipeline.MappedColumnInfo" />
+      </Parameters>
+      <Docs>
+        <param name="dataBuffer">
+        </param>
+        <param name="dataReader">
+        </param>
+        <param name="columnIndex">
+        </param>
+        <param name="mappedColumnInfo">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateExternalMetadata">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus ValidateExternalMetadata (System.Data.DataTable schemaTable, Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 output);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus ValidateExternalMetadata(class System.Data.DataTable schemaTable, class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100 output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineComponentExt.ValidateExternalMetadata(System.Data.DataTable,Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSValidationStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemaTable" Type="System.Data.DataTable" />
+        <Parameter Name="output" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" />
+      </Parameters>
+      <Docs>
+        <param name="schemaTable">
+        </param>
+        <param name="output">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

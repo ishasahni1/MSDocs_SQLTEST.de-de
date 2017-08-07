@@ -1,0 +1,266 @@
+<Type Name="SqlRuleProblem" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem">
+  <TypeSignature Language="C#" Value="public sealed class SqlRuleProblem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlRuleProblem extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Beschreibt ein Problem, das während der Analyse durch eine Regel gefunden wird. Enthält relevante Informationen wie z. B. die Regel, die das Problem gefunden hat, das SqlObject, das das Problem verursacht hat, den Schweregrad und die anzuzeigende Fehlermeldung.
+            
+            Source position information (source name, start line and column) are initially inferred based on
+            the <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.ModelElement" /> and <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.Fragment" /> passed into the constructor. Note that if
+            a <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.Fragment" /> is passed in then the start line/column for that <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" />
+            will be used (if present), otherwise the <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />'s values will be used (if present).
+            Note that certain models such as those generated from a dacpac may not have source position
+            information.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlRuleProblem (string description, Microsoft.SqlServer.Dac.Model.TSqlObject modelElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description, class Microsoft.SqlServer.Dac.Model.TSqlObject modelElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.#ctor(System.String,Microsoft.SqlServer.Dac.Model.TSqlObject)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="modelElement" Type="Microsoft.SqlServer.Dac.Model.TSqlObject" />
+      </Parameters>
+      <Docs>
+        <param name="description">Beschreibung des Problems</param>
+        <param name="modelElement">Das Element, das das Problem verursacht hat.  </param>
+        <summary>
+            Erstellt ein neues <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem" />. Quellpositionsinformationen (Quellenname, Startzeile und -Spalte) abgeleitet ist, basierend auf den <paramref name="modelElement" /> Parameter, solange diese Informationen im Modell vorhanden ist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlRuleProblem (string description, Microsoft.SqlServer.Dac.Model.TSqlObject modelElement, Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment fragment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description, class Microsoft.SqlServer.Dac.Model.TSqlObject modelElement, class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment fragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.#ctor(System.String,Microsoft.SqlServer.Dac.Model.TSqlObject,Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="modelElement" Type="Microsoft.SqlServer.Dac.Model.TSqlObject" />
+        <Parameter Name="fragment" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" />
+      </Parameters>
+      <Docs>
+        <param name="description">Beschreibung des Problems</param>
+        <param name="modelElement">Das Element, das das Problem verursacht hat.</param>
+        <param name="fragment">
+          <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" />die genaue </param>
+        <summary>
+            Erstellt ein neues <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem" />. Quellpositionsinformationen (Quellenname, Startzeile und -Spalte) abgeleitet ist, basierend auf den <paramref name="modelElement" /> und <paramref name="fragment" /> Parameter, solange diese Informationen sind im Modell vorhanden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Beschreibung des Problems
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorMessageString">
+      <MemberSignature Language="C#" Value="public string ErrorMessageString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessageString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.ErrorMessageString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Zeichenfolge für die Anzeige der Fehlermeldung basierend auf Regelinformationen und die Beschreibung des Problems
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fragment">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment Fragment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment Fragment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.Fragment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" />das Problem verursacht
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelElement">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlObject ModelElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.TSqlObject ModelElement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.ModelElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> das Problem verursacht
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleId">
+      <MemberSignature Language="C#" Value="public string RuleId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RuleId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.RuleId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ID der Regel, die diese Tabelle erstellt<see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem" /></summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSourceInformation">
+      <MemberSignature Language="C#" Value="public void SetSourceInformation (Microsoft.SqlServer.Dac.SourceInformation sourceInformation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSourceInformation(class Microsoft.SqlServer.Dac.SourceInformation sourceInformation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.SetSourceInformation(Microsoft.SqlServer.Dac.SourceInformation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceInformation" Type="Microsoft.SqlServer.Dac.SourceInformation" />
+      </Parameters>
+      <Docs>
+        <param name="sourceInformation">
+          <see cref="T:Microsoft.SqlServer.Dac.SourceInformation" />Angeben der Werte für die <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.SourceName" />, <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.StartLine" /> und <see cref="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.StartColumn" /> Felder</param>
+        <summary>
+            Legt die quellpositionsinformationen (Quellenname, Startzeile und -Spalte) für diesen <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem" />, überschreiben alle Informationen zur Position der Erstellung der Regel abgeleitet. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Severity">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity Severity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity Severity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.Severity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblemSeverity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Schweregrad dieses Problems kann ein Fehler, Warnung.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceName">
+      <MemberSignature Language="C#" Value="public string SourceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.SourceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Name der Quelle auf, der dieses Problem gefunden wurde. Dies wird basierend auf dem Modellelement bestimmt, das an den Konstruktor übergeben wurde. Kann null sein, wenn keine Quellinformationen verfügbar waren. Für die Instanz haben von Dacpac-Dateien geladene Modelle nicht die Quellinformationen verfügbar
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartColumn">
+      <MemberSignature Language="C#" Value="public int StartColumn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.StartColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Spalte das Problem beginnt, sofern bekannt
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartLine">
+      <MemberSignature Language="C#" Value="public int StartLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem.StartLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Zeile das Problem beginnt, sofern bekannt
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

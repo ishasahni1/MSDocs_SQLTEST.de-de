@@ -1,0 +1,784 @@
+<Type Name="BackupRestoreBase" FullName="Microsoft.SqlServer.Management.Smo.BackupRestoreBase">
+  <TypeSignature Language="C#" Value="public class BackupRestoreBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackupRestoreBase extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.BackupRestoreBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SmoExtended</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Muss hinzugefügt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BackupRestoreBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Basisklassenkonstruktors
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public void Abort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.Abort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Bricht die aktuelle Aktion ab, falls vorhanden
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.AsyncStatus AsyncStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.AsyncStatus AsyncStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.AsyncStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AsyncStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Status des letzten asynchronen Vorgangs, einschließlich möglicher Fehler.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockSize">
+      <MemberSignature Language="C#" Value="public int BlockSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BlockSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.BlockSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferCount">
+      <MemberSignature Language="C#" Value="public int BufferCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BufferCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.BufferCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForHADRMaintPlan">
+      <MemberSignature Language="C#" Value="protected System.Text.StringBuilder CheckForHADRMaintPlan (Microsoft.SqlServer.Management.Smo.Server targetServer, System.Text.StringBuilder sb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Text.StringBuilder CheckForHADRMaintPlan(class Microsoft.SqlServer.Management.Smo.Server targetServer, class System.Text.StringBuilder sb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.CheckForHADRMaintPlan(Microsoft.SqlServer.Management.Smo.Server,System.Text.StringBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.StringBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetServer" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="sb" Type="System.Text.StringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="targetServer">
+        </param>
+        <param name="sb">
+        </param>
+        <summary>
+            Beim Aufrufen von Wartung planen Sie Kontrollkästchen, wenn HADR aktiviert ist
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Checksum">
+      <MemberSignature Language="C#" Value="public bool Checksum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Checksum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.Checksum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Complete">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Common.ServerMessageEventHandler Complete;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Common.ServerMessageEventHandler Complete" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.Complete" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ausgelöste Ereignis.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueAfterError">
+      <MemberSignature Language="C#" Value="public bool ContinueAfterError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContinueAfterError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.ContinueAfterError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CredentialName">
+      <MemberSignature Language="C#" Value="public string CredentialName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CredentialName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.CredentialName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt den Anmeldenamen, der von einer Url-Sicherung verwendet wird
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="currentAsyncOperation">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Smo.BackupRestoreBase.AsyncOperation currentAsyncOperation;" />
+      <MemberSignature Language="ILAsm" Value=".field family valuetype Microsoft.SqlServer.Management.Smo.BackupRestoreBase/AsyncOperation currentAsyncOperation" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.currentAsyncOperation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.BackupRestoreBase+AsyncOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Database">
+      <MemberSignature Language="C#" Value="public string Database { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Database" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.Database" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseFileGroups">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection DatabaseFileGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection DatabaseFileGroups" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.DatabaseFileGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseFiles">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection DatabaseFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection DatabaseFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.DatabaseFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Devices">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.BackupDeviceList Devices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.BackupDeviceList Devices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.Devices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.BackupDeviceList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Eine Liste der Geräte, die als Ziel für die Sicherung verwendet.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteSql">
+      <MemberSignature Language="C#" Value="protected void ExecuteSql (Microsoft.SqlServer.Management.Smo.Server server, System.Collections.Specialized.StringCollection queries);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ExecuteSql(class Microsoft.SqlServer.Management.Smo.Server server, class System.Collections.Specialized.StringCollection queries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.ExecuteSql(Microsoft.SqlServer.Management.Smo.Server,System.Collections.Specialized.StringCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="queries" Type="System.Collections.Specialized.StringCollection" />
+      </Parameters>
+      <Docs>
+        <param name="server">Muss hinzugefügt werden.</param>
+        <param name="queries">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteSqlAsync">
+      <MemberSignature Language="C#" Value="protected void ExecuteSqlAsync (Microsoft.SqlServer.Management.Smo.Server server, System.Collections.Specialized.StringCollection queries);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ExecuteSqlAsync(class Microsoft.SqlServer.Management.Smo.Server server, class System.Collections.Specialized.StringCollection queries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.ExecuteSqlAsync(Microsoft.SqlServer.Management.Smo.Server,System.Collections.Specialized.StringCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="queries" Type="System.Collections.Specialized.StringCollection" />
+      </Parameters>
+      <Docs>
+        <param name="server">Muss hinzugefügt werden.</param>
+        <param name="queries">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteSqlWithResults">
+      <MemberSignature Language="C#" Value="protected System.Data.DataSet ExecuteSqlWithResults (Microsoft.SqlServer.Management.Smo.Server server, string cmd);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Data.DataSet ExecuteSqlWithResults(class Microsoft.SqlServer.Management.Smo.Server server, string cmd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.ExecuteSqlWithResults(Microsoft.SqlServer.Management.Smo.Server,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="cmd" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="server">Muss hinzugefügt werden.</param>
+        <param name="cmd">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDevicesScript">
+      <MemberSignature Language="C#" Value="protected void GetDevicesScript (System.Text.StringBuilder query, Microsoft.SqlServer.Management.Smo.BackupDeviceList devices, Microsoft.SqlServer.Management.Common.ServerVersion targetVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void GetDevicesScript(class System.Text.StringBuilder query, class Microsoft.SqlServer.Management.Smo.BackupDeviceList devices, class Microsoft.SqlServer.Management.Common.ServerVersion targetVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.GetDevicesScript(System.Text.StringBuilder,Microsoft.SqlServer.Management.Smo.BackupDeviceList,Microsoft.SqlServer.Management.Common.ServerVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.Text.StringBuilder" />
+        <Parameter Name="devices" Type="Microsoft.SqlServer.Management.Smo.BackupDeviceList" />
+        <Parameter Name="targetVersion" Type="Microsoft.SqlServer.Management.Common.ServerVersion" />
+      </Parameters>
+      <Docs>
+        <param name="query">Muss hinzugefügt werden.</param>
+        <param name="devices">Muss hinzugefügt werden.</param>
+        <param name="targetVersion">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Information">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Common.ServerMessageEventHandler Information;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Common.ServerMessageEventHandler Information" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.Information" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Informationsereignis
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBackupUrlDeviceSupported">
+      <MemberSignature Language="C#" Value="public static bool IsBackupUrlDeviceSupported (Microsoft.SqlServer.Management.Common.ServerVersion currentServerVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBackupUrlDeviceSupported(class Microsoft.SqlServer.Management.Common.ServerVersion currentServerVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.IsBackupUrlDeviceSupported(Microsoft.SqlServer.Management.Common.ServerVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="currentServerVersion" Type="Microsoft.SqlServer.Management.Common.ServerVersion" />
+      </Parameters>
+      <Docs>
+        <param name="currentServerVersion">
+        </param>
+        <summary>
+            Hilfsmethode zum Überprüfen, ob BackupToUrl für die verbundene Serverversion unterstützt wird
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStringValid">
+      <MemberSignature Language="C#" Value="protected bool IsStringValid (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsStringValid(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.IsStringValid(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_BackupAction">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Smo.BackupActionType m_BackupAction;" />
+      <MemberSignature Language="ILAsm" Value=".field family valuetype Microsoft.SqlServer.Management.Smo.BackupActionType m_BackupAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.m_BackupAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.BackupActionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_LogTruncation">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Smo.BackupTruncateLogType m_LogTruncation;" />
+      <MemberSignature Language="ILAsm" Value=".field family valuetype Microsoft.SqlServer.Management.Smo.BackupTruncateLogType m_LogTruncation" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.m_LogTruncation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.BackupTruncateLogType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_RestoreAction">
+      <MemberSignature Language="C#" Value="protected Microsoft.SqlServer.Management.Smo.RestoreActionType m_RestoreAction;" />
+      <MemberSignature Language="ILAsm" Value=".field family valuetype Microsoft.SqlServer.Management.Smo.RestoreActionType m_RestoreAction" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.m_RestoreAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RestoreActionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxTransferSize">
+      <MemberSignature Language="C#" Value="public int MaxTransferSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxTransferSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.MaxTransferSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaName">
+      <MemberSignature Language="C#" Value="public string MediaName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MediaName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.MediaName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextMedia">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Common.ServerMessageEventHandler NextMedia;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Common.ServerMessageEventHandler NextMedia" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.NextMedia" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NextMedia-Ereignis
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoRecovery">
+      <MemberSignature Language="C#" Value="public bool NoRecovery { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NoRecovery" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.NoRecovery" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoRewind">
+      <MemberSignature Language="C#" Value="public bool NoRewind { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NoRewind" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.NoRewind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentComplete">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Smo.PercentCompleteEventHandler PercentComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Smo.PercentCompleteEventHandler PercentComplete" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.PercentComplete" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.PercentCompleteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            PercentComplete-Ereignis
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentCompleteNotification">
+      <MemberSignature Language="C#" Value="public int PercentCompleteNotification { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PercentCompleteNotification" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.PercentCompleteNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Restart">
+      <MemberSignature Language="C#" Value="public bool Restart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Restart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.Restart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetryFailedQueries">
+      <MemberSignature Language="C#" Value="public bool RetryFailedQueries { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RetryFailedQueries" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.RetryFailedQueries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMediaPassword">
+      <MemberSignature Language="C#" Value="public void SetMediaPassword (System.Security.SecureString value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetMediaPassword(class System.Security.SecureString value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.SetMediaPassword(System.Security.SecureString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="value">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMediaPassword">
+      <MemberSignature Language="C#" Value="public void SetMediaPassword (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetMediaPassword(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.SetMediaPassword(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPassword">
+      <MemberSignature Language="C#" Value="public void SetPassword (System.Security.SecureString value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPassword(class System.Security.SecureString value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.SetPassword(System.Security.SecureString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="value">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPassword">
+      <MemberSignature Language="C#" Value="public void SetPassword (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPassword(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.SetPassword(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnloadTapeAfter">
+      <MemberSignature Language="C#" Value="public bool UnloadTapeAfter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UnloadTapeAfter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.UnloadTapeAfter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="public void Wait ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Wait() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.BackupRestoreBase.Wait" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Wartet die aktuelle asynchrone Aktion abgeschlossen ist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,898 @@
+<Type Name="ExternalDataSource" FullName="Microsoft.SqlServer.Management.Smo.ExternalDataSource">
+  <TypeSignature Language="C#" Value="public sealed class ExternalDataSource : Microsoft.SqlServer.Management.Smo.NamedSmoObject, Microsoft.SqlServer.Management.Common.IAlterable, Microsoft.SqlServer.Management.Common.ICreatable, Microsoft.SqlServer.Management.Common.IDroppable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode, Microsoft.SqlServer.Management.Smo.IObjectPermission, Microsoft.SqlServer.Management.Smo.IScriptable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExternalDataSource extends Microsoft.SqlServer.Management.Smo.NamedSmoObject implements class Microsoft.SqlServer.Management.Common.IAlterable, class Microsoft.SqlServer.Management.Common.ICreatable, class Microsoft.SqlServer.Management.Common.IDroppable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode, class Microsoft.SqlServer.Management.Smo.IObjectPermission, class Microsoft.SqlServer.Management.Smo.IScriptable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.ExternalDataSource" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Smo.NamedSmoObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.ICreatable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IDroppable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Smo.IObjectPermission</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Smo.IScriptable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElement(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElementFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcElementFlags.SqlAzureDatabase)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Kapseln von Instanz-Klasse: Server [@Name= "] / Datenbank/ExternalDataSource
+            </summary>
+    <summary>
+             Stellt ein externe SQL Server Datenquellenobjekt dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExternalDataSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExternalDataSource (Microsoft.SqlServer.Management.Smo.Database database, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Database database, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.#ctor(Microsoft.SqlServer.Management.Smo.Database,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.Smo.Database" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Muss hinzugefügt werden.</param>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExternalDataSource (Microsoft.SqlServer.Management.Smo.Database parent, string name, Microsoft.SqlServer.Management.Smo.ExternalDataSourceType dataSourceType, string location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Database parent, string name, valuetype Microsoft.SqlServer.Management.Smo.ExternalDataSourceType dataSourceType, string location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.#ctor(Microsoft.SqlServer.Management.Smo.Database,System.String,Microsoft.SqlServer.Management.Smo.ExternalDataSourceType,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.Smo.Database" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dataSourceType" Type="Microsoft.SqlServer.Management.Smo.ExternalDataSourceType" />
+        <Parameter Name="location" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Der Name der übergeordneten Datenbank.</param>
+        <param name="name">Der Name der externen Datenquelle.</param>
+        <param name="dataSourceType">Die externe Datenquelle Typ: HADOOP.</param>
+        <param name="location">Der Quellspeicherort für den externen Daten.</param>
+        <summary>
+            Parametrisierter Konstruktor - füllt die Eigenschaften von Parameterwerten.
+Überladener Konstruktor, um alle externen Daten gesetzt Datenquelle erforderliche Eigenschaften an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alter">
+      <MemberSignature Language="C#" Value="public void Alter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Alter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Alter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ändern Sie ein externe Datenquellenobjekt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public void Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellen Sie ein externe Datenquellenobjekt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Credential">
+      <MemberSignature Language="C#" Value="public string Credential { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Credential" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Credential" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReference(typeof(Microsoft.SqlServer.Management.Smo.Credential), "Server[@Name = '{0}']/Database[@Name = '{1}']/Credential[@Name = '{2}']", Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseName">
+      <MemberSignature Language="C#" Value="public string DatabaseName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ExternalDataSource.DatabaseName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ExternalDataSourceType DataSourceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.ExternalDataSourceType DataSourceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ExternalDataSource.DataSourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ExternalDataSourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Deny(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Drop">
+      <MemberSignature Language="C#" Value="public void Drop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Drop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Drop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Löschen Sie ein externe Datenquellenobjekt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropIfExists">
+      <MemberSignature Language="C#" Value="public void DropIfExists ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DropIfExists() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.DropIfExists" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Löscht das Objekt mit dem IF EXISTS-Option. Wenn Objekt ungültig ist, für die Drop-Funktion ohne Ausnahme zurückgegeben wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumObjectPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.EnumObjectPermissions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumObjectPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.EnumObjectPermissions(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permissions" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="permissions">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumObjectPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions (string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions(string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.EnumObjectPermissions(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumObjectPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions (string granteeName, Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[] EnumObjectPermissions(string granteeName, class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permissions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.EnumObjectPermissions(System.String,Microsoft.SqlServer.Management.Smo.ObjectPermissionSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ObjectPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="permissions" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="permissions">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool grantGrant);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool grantGrant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool grantGrant);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool grantGrant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool grantGrant, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool grantGrant, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool grantGrant, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Grant(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool grantGrant, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Grant(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="grantGrant" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="grantGrant">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public int ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ExternalDataSource.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public string Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Location" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode.IsDesignMode">
+      <MemberSignature Language="C#" Value="bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode.IsDesignMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSupportsDesignMode.IsDesignMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcSupportsDesignMode#IsDesignMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dieses Objekt ISfcSupportsDesignMode zu erweitern.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.Database Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.Database Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectRelationship.ParentObject, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectFlags.Design)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.Database</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceManagerLocation">
+      <MemberSignature Language="C#" Value="public string ResourceManagerLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResourceManagerLocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ExternalDataSource.ResourceManagerLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Standalone)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool revokeGrant, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool revokeGrant, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool revokeGrant, bool cascade);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool revokeGrant, bool cascade) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool revokeGrant, bool cascade, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string granteeName, bool revokeGrant, bool cascade, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String,System.Boolean,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeName" Type="System.String" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeName">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool revokeGrant, bool cascade, string asRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Revoke(class Microsoft.SqlServer.Management.Smo.ObjectPermissionSet permission, string[] granteeNames, bool revokeGrant, bool cascade, string asRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Revoke(Microsoft.SqlServer.Management.Smo.ObjectPermissionSet,System.String[],System.Boolean,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.Smo.ObjectPermissionSet" />
+        <Parameter Name="granteeNames" Type="System.String[]" />
+        <Parameter Name="revokeGrant" Type="System.Boolean" />
+        <Parameter Name="cascade" Type="System.Boolean" />
+        <Parameter Name="asRole" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Muss hinzugefügt werden.</param>
+        <param name="granteeNames">Muss hinzugefügt werden.</param>
+        <param name="revokeGrant">Muss hinzugefügt werden.</param>
+        <param name="cascade">Muss hinzugefügt werden.</param>
+        <param name="asRole">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Script ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Specialized.StringCollection Script() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Script" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Generiert ein Skript für die externe Datenquelle.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Script (Microsoft.SqlServer.Management.Smo.ScriptingOptions scriptingOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Specialized.StringCollection Script(class Microsoft.SqlServer.Management.Smo.ScriptingOptions scriptingOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.ExternalDataSource.Script(Microsoft.SqlServer.Management.Smo.ScriptingOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scriptingOptions" Type="Microsoft.SqlServer.Management.Smo.ScriptingOptions" />
+      </Parameters>
+      <Docs>
+        <param name="scriptingOptions">Die Skriptoptionen.</param>
+        <summary>
+            Generiert ein Skript für die externe Datenquelle, die unter Verwendung der angegebenen Skriptoptionen.
+            </summary>
+        <returns>Eine Auflistung von Zeichenfolgen, die die T-SQL-Skript darstellt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShardMapName">
+      <MemberSignature Language="C#" Value="public string ShardMapName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShardMapName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.ExternalDataSource.ShardMapName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.SqlAzureDatabase)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

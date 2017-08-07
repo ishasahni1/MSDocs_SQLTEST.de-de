@@ -1,0 +1,123 @@
+<Type Name="RemoteDataArchiveMigrationState" FullName="Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState">
+  <TypeSignature Language="C#" Value="public enum RemoteDataArchiveMigrationState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RemoteDataArchiveMigrationState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Smo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Aktuellen Status der Data Migration von einer gestreckten Tabelle finden Sie Remote_data_archive_migration_state in https://msdn.microsoft.com/en-us/library/ms187406.aspx
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState Disabled = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Tabelle kann nicht für die Stretch-aktivierte
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inbound">
+      <MemberSignature Language="C#" Value="Inbound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState Inbound = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState.Inbound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Tabelle ist Stretch-aktivierte und datenrichtung für die Migration ist in datengebundenen aus azure
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Outbound">
+      <MemberSignature Language="C#" Value="Outbound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState Outbound = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState.Outbound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Tabelle ist Stretch-aktivierte und datenrichtung für die Migration ist – also ausgehender in azure
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Paused">
+      <MemberSignature Language="C#" Value="Paused" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState Paused = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState.Paused" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dieser Wert wurde aus Gründen der Abwärtskompatibilität beibehalten. Dieses Verhalten wird entfernt, nachdem alle Verweise darauf entfernt werden.
+TODO: Entfernen Sie diesen Wert
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PausedInbound">
+      <MemberSignature Language="C#" Value="PausedInbound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState PausedInbound = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState.PausedInbound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Tabelle ist Stretch-aktivierte, aber die Datenmigration angehalten wird, wenn die Richtung des Datenflusses eingehende ist
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PausedOutbound">
+      <MemberSignature Language="C#" Value="PausedOutbound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState PausedOutbound = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState.PausedOutbound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RemoteDataArchiveMigrationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Tabelle ist Stretch-aktivierte, aber die Datenmigration angehalten wird, wenn die Richtung des Datenflusses ausgehende ist
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

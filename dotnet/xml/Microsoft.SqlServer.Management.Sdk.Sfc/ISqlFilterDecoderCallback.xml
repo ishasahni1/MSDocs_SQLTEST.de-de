@@ -1,0 +1,87 @@
+<Type Name="ISqlFilterDecoderCallback" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.ISqlFilterDecoderCallback">
+  <TypeSignature Language="C#" Value="public interface ISqlFilterDecoderCallback" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISqlFilterDecoderCallback" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.ISqlFilterDecoderCallback" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Schnittstelle, die von den Benutzern des FilterDecoder Implemebted zu Transportservers</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddConstantForFilter">
+      <MemberSignature Language="C#" Value="public string AddConstantForFilter (string constantValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AddConstantForFilter(string constantValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISqlFilterDecoderCallback.AddConstantForFilter(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constantValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="constantValue">Muss hinzugefügt werden.</param>
+        <summary>    
+            FilterDecoder reports that a constant is used in filter
+            gives client a chance to modify it</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPropertyForFilter">
+      <MemberSignature Language="C#" Value="public string AddPropertyForFilter (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string AddPropertyForFilter(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISqlFilterDecoderCallback.AddPropertyForFilter(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>    
+            FilterDecoder reports that the property name is used in filter
+            and requests its physical name</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsParameterization">
+      <MemberSignature Language="C#" Value="public bool SupportsParameterization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsParameterization" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.ISqlFilterDecoderCallback.SupportsParameterization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, ob der Client-Unterstützung im SQL-Format Parametrisierung Abfragen
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

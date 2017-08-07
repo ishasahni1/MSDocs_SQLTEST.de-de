@@ -1,0 +1,662 @@
+<Type Name="ConnectionManager" FullName="Microsoft.SqlServer.Dts.Runtime.ConnectionManager">
+  <TypeSignature Language="C#" Value="public sealed class ConnectionManager : Microsoft.SqlServer.Dts.Runtime.DtsObject, IDisposable, Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath, Microsoft.SqlServer.Dts.Runtime.IDTSName, Microsoft.SqlServer.Dts.Runtime.IDTSObjectHost, Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath, Microsoft.SqlServer.Dts.Runtime.IDTSPersist, Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider, Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx, System.ComponentModel.IComponent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConnectionManager extends Microsoft.SqlServer.Dts.Runtime.DtsObject implements class Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath, class Microsoft.SqlServer.Dts.Runtime.IDTSName, class Microsoft.SqlServer.Dts.Runtime.IDTSObjectHost, class Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath, class Microsoft.SqlServer.Dts.Runtime.IDTSPersist, class Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider, class Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx, class System.ComponentModel.IComponent, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManager" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DtsObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSExecutionPath</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSName</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSObjectHost</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPackagePath</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPersist</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProviderEx</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.IComponent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Stellt die Informationen bereit, die Sie für die Verbindung mit einer Datenquelle benötigen. Alle Klassen, die von <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManager" /> erben, enthalten die gleichen Eigenschaften und Methoden. Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManager" /> -Klasse werden die Implementierungsdetails der verschiedenen Verbindungstypen aus der Laufzeit isoliert. Daher kann die Laufzeit mit den einzelnen Verbindungs-Managern auf eine konsistente, vorhersehbare Weise interagieren. Verbindungs-Manager enthalten eine Reihe von Basiseigenschaften, die alle Verbindungen gemeinsam haben, z. B. die <see cref="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Name" />-, die <see cref="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.ID" />- <see cref="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Description" /> und die <see cref="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.ConnectionString" />-Eigenschaft. Die einzelnen Verbindungstypen verfügen jedoch über zusätzliche Eigenschaften, die spezifisch für den jeweiligen Verbindungstyp sind. Diese möglich, die über die <see cref="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Properties" /> Auflistung. Diese Klasse kann nicht vererbt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AcquireConnection">
+      <MemberSignature Language="C#" Value="public object AcquireConnection (object txn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object AcquireConnection(object txn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.AcquireConnection(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="txn" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="txn">Das Handle für einen Transaktionstyp.</param>
+        <summary>Erstellt eine Instanz des Verbindungstyps.</summary>
+        <returns>Ein Objekt, das die Transaktionsverbindung enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "ConnectionStringDesc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die zum Herstellen einer Verbindung mit einer Datenquelle verwendete Verbindungszeichenfolge ab oder legt sie fest.</summary>
+        <value>Eine Zeichenfolge, die den Wert der Verbindungszeichenfolge enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreationName">
+      <MemberSignature Language="C#" Value="public string CreationName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreationName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.CreationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "CreationNameDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Zeichenfolge zurück, die von der Laufzeit zum Erstellen einer Instanz des <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManager" />-Objekts und zum Hinzufügen des Objekts zur <see cref="T:Microsoft.SqlServer.Dts.Runtime.Connections" />-Auflistung verwendet wird. Diese Eigenschaft ist schreibgeschützt.</summary>
+        <value>Eine Zeichenfolge, die den Namen des Verbindungs-Managers enthält. Der Name kann der vollqualifizierte Assemblyname (für verwaltete Assemblys), die ProgID oder CLSID (für COM-DLLs) oder einer der STOCK-Moniker sein, die zum Erstellen des Verbindungs-Managers für eine Datei verwendet werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DelayValidation">
+      <MemberSignature Language="C#" Value="public bool DelayValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DelayValidation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.DelayValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt einen booleschen Wert ab, der angibt, ob die paketüberprüfung bis zur paketausführung verzögert wird.</summary>
+        <value>"true", wenn die Überprüfung bis zur Laufzeit des Pakets verzögert wird. Der Standardwert ist "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "DescriptionDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt die Beschreibung der <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManager" /> Objekt.</summary>
+        <value>Eine Zeichenfolge, die Beschreibung des Verbindungs-Managers enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Die verwendeten Ressourcen frei der <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManager" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disposed">
+      <MemberSignature Language="C#" Value="public event EventHandler Disposed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Disposed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fügt einen Ereignishandler hinzu, der auf das <see cref="E:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Disposed" />-Ereignis für <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManager" /> lauscht.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExecutionPath">
+      <MemberSignature Language="C#" Value="public string GetExecutionPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetExecutionPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.GetExecutionPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt den Ausführungspfad des Verbindungs-Managers zurück.</summary>
+        <returns>Der Ausführungspfad des Verbindungs-Managers.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpression">
+      <MemberSignature Language="C#" Value="public string GetExpression (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetExpression(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.GetExpression(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Der Name der Eigenschaft, deren Ausdruck Sie anzeigen möchten.</param>
+        <summary>Gibt eine Zeichenfolge, die den Ausdruck für die angegebene Eigenschaft enthält. NULL bedeutet, dass kein Ausdruck zugewiesen wurde.</summary>
+        <returns>Eine Zeichenfolge, die den Ausdruck zum Auswerten die Eigenschaft enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPackagePath">
+      <MemberSignature Language="C#" Value="public string GetPackagePath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPackagePath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.GetPackagePath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft den Pfad des Pakets ab, auf das die Verbindung angewendet wird, oder legt ihn fest.</summary>
+        <returns>Eine Zeichenfolge, die den Paketpfad enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasExpressions">
+      <MemberSignature Language="C#" Value="public bool HasExpressions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasExpressions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.HasExpressions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob für den Verbindungs-Manager Eigenschaften durch Ausdrücke festgelegt wurden.</summary>
+        <value>"true", wenn der Verbindungs-Manager Eigenschaften durch Ausdrücke festgelegt wurden; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSObjectHostType HostType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSObjectHostType HostType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.HostType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSObjectHostType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine Enumeration ab, die den Hosttyp beschreibt, von dem die Verbindung verwendet wird. Diese Eigenschaft ist schreibgeschützt.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSObjectHostType" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public string ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "IDDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManager" />. Diese Eigenschaft ist schreibgeschützt.</summary>
+        <value>Eine Zeichenfolge, die GUID des Verbindungs-Managers enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerObject">
+      <MemberSignature Language="C#" Value="public object InnerObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object InnerObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.InnerObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den erstellten spezifischen Verbindungstyp zurück. Diese Eigenschaft ist schreibgeschützt.</summary>
+        <value>Das Objekt, das das gehostete Element enthält. Dieses Objekt wird in die Klasse umgewandelt, die dem Verbindungstyp entspricht. Mit Ausnahme der enthaltenen Verbindungen <see cref="N:Microsoft.SqlServer.Dts.ManagedConnections" />, diese Verbindungsobjekte sind systemeigen und müssen in ihre systemeigene Klasse umgewandelt werden. Dies wird gezeigt, durch die <see cref="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.InnerObject" /> Wert "__ComObject"aufweist, aus dem Codebeispiel.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (string xmlString, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadFromXML(string xmlString, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.LoadFromXML(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlString" Type="System.String" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="xmlString">Eine Zeichenfolge, die die XML darstellt.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket laden, die als XML-Datei gespeichert wurde, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlNode node, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlNode node, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.LoadFromXML(System.Xml.XmlNode,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="node">Der Knoten, der die zu ladenden Informationen zum Verbindungs-Manager enthält.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket laden, die als XML-Datei gespeichert wurde, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "NameDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt den Namen der der <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManager" /> Objekt.</summary>
+        <value>Eine Zeichenfolge mit dem Namen, den Sie dem Verbindungs-Manager-Objekt gegeben haben, wenn er erstellt wurde.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfflineMode">
+      <MemberSignature Language="C#" Value="public bool OfflineMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OfflineMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.OfflineMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob der Verbindungs-Manager im Offlinemodus ist, oder legt ihn fest.</summary>
+        <value>"true", wenn der Verbindungs-Manager im Offlinemodus befindet; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DtsProperties Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.DtsProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DtsProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine Auflistung von Eigenschaftenobjekten für die <see cref="T:Microsoft.SqlServer.Dts.Runtime.ConnectionManager" />. Diese Vorgehensweise wird für den Zugriff auf die Eigenschaften der spezifischen Verbindung verwendet, die vom Verbindungs-Manager gehostet wird. Diese Eigenschaft ist schreibgeschützt.</summary>
+        <value>Eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsProperties" />-Auflistung, die die für den Verbindungstyp spezifischen Eigenschaften enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel ProtectionLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel ProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.ProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Verschlüsselungsebene ab, die auf sensible, im Paket enthaltene Daten angewendet wird, oder legt sie fest.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSProtectionLevel" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Qualifier">
+      <MemberSignature Language="C#" Value="public string Qualifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Qualifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Qualifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Qualifizierer für den Verbindungs-Manager ab oder legt ihn fest.</summary>
+        <value>Der Qualifizierer für den Verbindungs-Manager.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseConnection">
+      <MemberSignature Language="C#" Value="public void ReleaseConnection (object connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReleaseConnection(object connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.ReleaseConnection(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connection">Die freizugebende Verbindung.</param>
+        <summary>Gibt die während der hergestellte Verbindung frei <see cref="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.AcquireConnection(System.Object)" />. Wird zur Entwurfs- und Laufzeit aufgerufen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (ref System.Xml.XmlDocument doc, System.Xml.XmlNode node, Microsoft.SqlServer.Dts.Runtime.IDTSEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class System.Xml.XmlNode node, class Microsoft.SqlServer.Dts.Runtime.IDTSEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.SaveToXML(System.Xml.XmlDocument@,System.Xml.XmlNode,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument&amp;" RefType="ref" />
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Informationen zum Verbindungs-Manager gespeichert werden sollen.</param>
+        <param name="node">Der Knoten innerhalb des oben erwähnten Dokuments, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket als XML-Datei zu speichern, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.DTSConnectionManagerScope Scope { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSConnectionManagerScope Scope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Scope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSConnectionManagerScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Bereich des Verbindungs-Managers ab.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSConnectionManagerScope" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetExpression">
+      <MemberSignature Language="C#" Value="public void SetExpression (string propertyName, string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetExpression(string propertyName, string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.SetExpression(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Der Name der Eigenschaft, der der Ausdruck zugewiesen werden soll.</param>
+        <param name="expression">Der Ausdruck.</param>
+        <summary>Weist der Eigenschaft den angegebenen Ausdruck zu. Geben Sie Null an, wenn Sie einen vorhandenen Ausdruck aus der Eigenschaft zu entfernen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetQualifier">
+      <MemberSignature Language="C#" Value="public void SetQualifier (string qualifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetQualifier(string qualifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.SetQualifier(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qualifier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="qualifier">Der neue Qualifizierer, der für den Verbindungs-Manager festgelegt werden soll.</param>
+        <summary>Ändert einen Qualifizierer für den Verbindungs-Manager, nachdem der Verbindungs-Manager erstellt wurde, aber bevor er in einem ausgeführten Paket verwendet wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Site">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.ISite Site { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Site" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ISite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Site des Verbindungs-Managers ab oder legt sie fest.</summary>
+        <value>Die Site des Verbindungs-Managers.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDTCTransactions">
+      <MemberSignature Language="C#" Value="public bool SupportsDTCTransactions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDTCTransactions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.SupportsDTCTransactions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Dts.Runtime.Localization.LocalizablePropertyDescription(typeof(Microsoft.SqlServer.Dts.Runtime.Localized), "SupportsDTCTransactionsDesc")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen booleschen Wert zurück, der angibt, ob die Verbindung MS DTC-Transaktionen (Microsoft Distributed Transaction Coordinator) unterstützt.</summary>
+        <value>"true", wenn die Verbindung MS DTC-Transaktionen unterstützt; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VariableDispenser">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.VariableDispenser VariableDispenser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.VariableDispenser VariableDispenser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.VariableDispenser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.VariableDispenser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Verteiler der Variablen im Verbindungs-Manager ab.</summary>
+        <value>Der Verteiler der Variablen im Verbindungs-Manager.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variables">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Variables Variables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Variables Variables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ConnectionManager.Variables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Variables</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Auflistung der Variablen im Verbindungs-Manager ab.</summary>
+        <value>Die Auflistung der Variablen im Verbindungs-Manager.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

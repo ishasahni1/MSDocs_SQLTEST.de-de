@@ -1,0 +1,128 @@
+<Type Name="IDtsConnectionBaseService" FullName="Microsoft.SqlServer.Dts.Runtime.Design.IDtsConnectionBaseService">
+  <TypeSignature Language="C#" Value="public interface IDtsConnectionBaseService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDtsConnectionBaseService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Design.IDtsConnectionBaseService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dts.Design</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt einen Basisdienst bereit, der zum Erstellen einer neuen Verbindung verwendet werden kann.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateConnection">
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList CreateConnection (string connectionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ArrayList CreateConnection(string connectionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsConnectionBaseService.CreateConnection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionType">Der Verbindungstyp, den Sie in das Array aufnehmen möchten.</param>
+        <summary>
+            Erstellt eine neue Verbindung mit dem angegebenen Verbindungstyp.
+            </summary>
+        <returns>Ein <see cref="T:System.Collections.ArrayList" /> , das die Auflistung der erstellten Verbindungen enthält. Eine leere Auflistung wird zurückgegeben, wenn ein Fehler auftritt oder wenn der Benutzer die Anforderung abbricht.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConnection">
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList CreateConnection (string connectionType, Microsoft.SqlServer.Dts.Runtime.Design.ConnectionManagerUIArgs connectionUIArg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ArrayList CreateConnection(string connectionType, class Microsoft.SqlServer.Dts.Runtime.Design.ConnectionManagerUIArgs connectionUIArg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsConnectionBaseService.CreateConnection(System.String,Microsoft.SqlServer.Dts.Runtime.Design.ConnectionManagerUIArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionType" Type="System.String" />
+        <Parameter Name="connectionUIArg" Type="Microsoft.SqlServer.Dts.Runtime.Design.ConnectionManagerUIArgs" />
+      </Parameters>
+      <Docs>
+        <param name="connectionType">Der Typ der zu erstellenden Verbindung.</param>
+        <param name="connectionUIArg">Die Kontextinformationen des Arguments zum neuen Verbindungs-Manager.</param>
+        <summary>
+             Erstellt eine neue Verbindung mit dem angegebenen Verbindungstyp und dem Argument.
+            </summary>
+        <returns>Ein <see cref="T:System.Collections.ArrayList" /> , das die Auflistung der erstellten Verbindungen enthält. Eine leere Auflistung wird zurückgegeben, wenn ein Fehler auftritt oder wenn der Benutzer die Anforderung abbricht.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnections">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Connections GetConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Dts.Runtime.Connections GetConnections() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsConnectionBaseService.GetConnections" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Connections</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft alle Verbindungs-Manager im aktuellen Paket ab.
+            </summary>
+        <returns>Eine Auflistung der Verbindungen.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnectionsOfType">
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList GetConnectionsOfType (string connectionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ArrayList GetConnectionsOfType(string connectionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Design.IDtsConnectionBaseService.GetConnectionsOfType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionType">Der Typ der zurückzugebenden Verbindung.</param>
+        <summary>
+            Gibt alle Verbindungen des angegebenen Typs zurück, die sich im aktuellen Paket befinden.
+            </summary>
+        <returns>Eine <see cref="T:System.Collections.ArrayList" /> , die Verbindungen enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDesignerOnline">
+      <MemberSignature Language="C#" Value="public bool IsDesignerOnline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDesignerOnline" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Design.IDtsConnectionBaseService.IsDesignerOnline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Designer im Onlinemodus arbeitet.
+            </summary>
+        <value>"true", wenn der Designer im Onlinemodus arbeitet; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

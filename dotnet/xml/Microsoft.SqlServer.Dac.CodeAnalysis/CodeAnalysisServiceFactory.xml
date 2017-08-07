@@ -1,0 +1,158 @@
+<Type Name="CodeAnalysisServiceFactory" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceFactory">
+  <TypeSignature Language="C#" Value="public sealed class CodeAnalysisServiceFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeAnalysisServiceFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Formularbereichsfactory-Klasse, die Erstellung von unterstützt <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> Objekte.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeAnalysisServiceFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAnalysisService">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService CreateAnalysisService (Microsoft.SqlServer.Dac.Model.SqlServerVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService CreateAnalysisService(valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceFactory.CreateAnalysisService(Microsoft.SqlServer.Dac.Model.SqlServerVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">
+            Der erwartete <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> des zu analysierenden Modelle. Diese sollten bekannt sein, die zum Zeitpunkt der Erstellung des Diensts, da nur Regeln kompatibel mit dieser <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> wird geladen und ausgeführt werden. 
+            </param>
+        <summary>
+            Erstellt einen Analysedienst mit den Standardeigenschaften und allen standardmäßig aktivierten Regeln.
+            
+            </summary>
+        <returns>
+            Ein <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> können, die den Inhalt Analysieren der<see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /></returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAnalysisService">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService CreateAnalysisService (Microsoft.SqlServer.Dac.Model.TSqlModel model);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService CreateAnalysisService(class Microsoft.SqlServer.Dac.Model.TSqlModel model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceFactory.CreateAnalysisService(Microsoft.SqlServer.Dac.Model.TSqlModel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="model" Type="Microsoft.SqlServer.Dac.Model.TSqlModel" />
+      </Parameters>
+      <Docs>
+        <param name="model">
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> wird, die analysiert werden. Die Version des Modells muss bekannt sein, die zum Zeitpunkt der Erstellung des Diensts, da nur Regeln kompatibel mit <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> sind geladen und ausgeführt werden.
+            </param>
+        <summary>
+            Erstellt einen Analysedienst mit den Standardeigenschaften und allen standardmäßig aktivierten Regeln.
+            
+            This is a convenience method that takes the <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.Version" /> from the model
+            and passes it to the <see cref="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceFactory.CreateAnalysisService(Microsoft.SqlServer.Dac.Model.SqlServerVersion)" />
+            method.
+            </summary>
+        <returns>
+            Ein <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> können, die den Inhalt Analysieren der<see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /></returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAnalysisService">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService CreateAnalysisService (Microsoft.SqlServer.Dac.Model.SqlServerVersion version, Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService CreateAnalysisService(valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion version, class Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceFactory.CreateAnalysisService(Microsoft.SqlServer.Dac.Model.SqlServerVersion,Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+        <Parameter Name="settings" Type="Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings" />
+      </Parameters>
+      <Docs>
+        <param name="version">
+            Der erwartete <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> des zu analysierenden Modelle. Diese muss bekannt sein, die zum Zeitpunkt der Erstellung des Diensts, da nur Regeln kompatibel mit dieser <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> wird geladen und ausgeführt werden. 
+            </param>
+        <param name="settings">Einstellungsobjekt, das den Dienst konfigurieren</param>
+        <summary>
+            Erstellt einen Analysedienst und konfiguriert ihn unter Verwendung der <paramref name="settings" /> an die Methode übergeben.
+            
+            The settings are a convenient way to set up the service in one step, but if you wish to
+            specify some settings after creating the service this is possible via methods and properties on
+            the <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> itself.
+            </summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> können, die den Inhalt Analysieren der<see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /></returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAnalysisService">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService CreateAnalysisService (Microsoft.SqlServer.Dac.Model.TSqlModel model, Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService CreateAnalysisService(class Microsoft.SqlServer.Dac.Model.TSqlModel model, class Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceFactory.CreateAnalysisService(Microsoft.SqlServer.Dac.Model.TSqlModel,Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="model" Type="Microsoft.SqlServer.Dac.Model.TSqlModel" />
+        <Parameter Name="settings" Type="Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceSettings" />
+      </Parameters>
+      <Docs>
+        <param name="model">
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> wird, die analysiert werden. Diese muss bekannt sein, die zum Zeitpunkt der Erstellung des Diensts, da nur Regeln kompatibel mit der <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> für das Modell geladen und ausgeführt werden.
+            </param>
+        <param name="settings">Einstellungsobjekt, das den Dienst konfigurieren</param>
+        <summary>
+            Erstellt einen Analysedienst und konfiguriert ihn unter Verwendung der <paramref name="settings" /> an die Methode übergeben.
+            
+            The settings are a convenient way to set up the service in one step, but if you wish to
+            specify some settings after creating the service this is possible via methods and properties on
+            the <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> itself.
+            
+            This is a convenience method that takes the <see cref="P:Microsoft.SqlServer.Dac.Model.TSqlModel.Version" /> from the model
+            and passes it to the <see cref="M:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisServiceFactory.CreateAnalysisService(Microsoft.SqlServer.Dac.Model.SqlServerVersion)" />
+            method.
+            </summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> können, die den Inhalt Analysieren der<see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /></returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

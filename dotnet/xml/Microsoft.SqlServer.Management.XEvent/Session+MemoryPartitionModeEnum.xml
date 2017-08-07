@@ -1,0 +1,71 @@
+<Type Name="Session+MemoryPartitionModeEnum" FullName="Microsoft.SqlServer.Management.XEvent.Session+MemoryPartitionModeEnum">
+  <TypeSignature Language="C#" Value="public enum Session.MemoryPartitionModeEnum" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Session/MemoryPartitionModeEnum extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.XEvent.Session.MemoryPartitionModeEnum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.XEvent</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Speicherpartitionsmodus beschreibt die Position im Arbeitsspeicher, an der Ereignispuffer erstellt werden.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.XEvent.Session/MemoryPartitionModeEnum None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.MemoryPartitionModeEnum.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Session+MemoryPartitionModeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Innerhalb einer SQL Server-Instanz wird ein einzelner Satz von Puffern erstellt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PerCpu">
+      <MemberSignature Language="C#" Value="PerCpu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.XEvent.Session/MemoryPartitionModeEnum PerCpu = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.MemoryPartitionModeEnum.PerCpu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Session+MemoryPartitionModeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein Satz von Puffern wird für jede CPU erstellt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PerNode">
+      <MemberSignature Language="C#" Value="PerNode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.XEvent.Session/MemoryPartitionModeEnum PerNode = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.MemoryPartitionModeEnum.PerNode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Session+MemoryPartitionModeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ein Satz von Puffern wird für jeden nicht einheitlichen Speicherzugriffsknoten (Non-Uniform Memory Access, NUMA) erstellt.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

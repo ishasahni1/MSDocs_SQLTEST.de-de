@@ -1,0 +1,82 @@
+<Type Name="TSqlModelUtils" FullName="Microsoft.SqlServer.Dac.TSqlModelUtils">
+  <TypeSignature Language="C#" Value="public static class TSqlModelUtils" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TSqlModelUtils extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.TSqlModelUtils" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt Hilfsprogrammmethoden für die öffentlichen Modell-APIs bereit.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CalculatePlatformCompatibility">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dac.Extensibility.TSqlPlatformCompatibility CalculatePlatformCompatibility (Microsoft.SqlServer.Dac.Model.SqlServerVersion version);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.SqlServer.Dac.Extensibility.TSqlPlatformCompatibility CalculatePlatformCompatibility(valuetype Microsoft.SqlServer.Dac.Model.SqlServerVersion version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.TSqlModelUtils.CalculatePlatformCompatibility(Microsoft.SqlServer.Dac.Model.SqlServerVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Extensibility.TSqlPlatformCompatibility</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="version" Type="Microsoft.SqlServer.Dac.Model.SqlServerVersion" />
+      </Parameters>
+      <Docs>
+        <param name="version">Ein <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" />, z. B. die Version für eine<see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /></param>
+        <summary>
+            Ordnet eine <see cref="T:Microsoft.SqlServer.Dac.Model.SqlServerVersion" /> auf die <see cref="T:Microsoft.SqlServer.Dac.Extensibility.TSqlPlatformCompatibility" /> Enumeration, die es entspricht. Die Plattformkompatibilität kann verwendet werden, um Erweiterungen zu filtern, die diese Plattform nicht unterstützen, z. B. Codeanalyseregeln.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.SqlServer.Dac.Extensibility.TSqlPlatformCompatibility" />der angibt, die für Erweiterungen erforderlichen Kompatibilitätsgrad. Wenn keine bestimmte Version an die Methode übergeben wurde, und klicken Sie dann die Standardeinstellung zu verwenden, werden <see cref="F:Microsoft.SqlServer.Dac.Extensibility.TSqlPlatformCompatibility.All" /> , damit alle Erweiterungen geladen werden. 
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetFragmentForAnalysis">
+      <MemberSignature Language="C#" Value="public static bool TryGetFragmentForAnalysis (Microsoft.SqlServer.Dac.Model.TSqlObject tSqlObject, out Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment fragment);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetFragmentForAnalysis(class Microsoft.SqlServer.Dac.Model.TSqlObject tSqlObject, class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment fragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.TSqlModelUtils.TryGetFragmentForAnalysis(Microsoft.SqlServer.Dac.Model.TSqlObject,Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tSqlObject" Type="Microsoft.SqlServer.Dac.Model.TSqlObject" />
+        <Parameter Name="fragment" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="tSqlObject">Die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> , deren Fragment angefordert wird</param>
+        <param name="fragment">Die <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" /> für die <paramref name="tSqlObject" />, wenn es möglich ist, Fragmentinformationen für das Objekt abrufen</param>
+        <summary>
+            Versucht, die am besten geeigneten abzurufen <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" /> für die Verwendung während des Analysevorgangs Regel.
+Wenn das TSqlObject aus einer skriptgesteuerten Datenquelle generiert wurde, wird das ursprüngliche Quellfragment zurückgegeben.
+            
+            Otherwise a new AST will be generated from the <paramref name="tSqlObject" />.
+             
+            This ensures that when reporting <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem" />s the most accurate source information can be included
+            in the error messages. 
+            
+            Note that a fragment will only be returned if this is
+            supported for the <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" />. AST generation is only supported for top-level objects, with certain
+            objects such as the <see cref="T:Microsoft.SqlServer.Dac.Model.DatabaseOptions" /> and inline constraints not supporting AST generation even though
+            they are top level types.
+            </summary>
+        <returns>"True", wenn das Fragment erhalten wurde, andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

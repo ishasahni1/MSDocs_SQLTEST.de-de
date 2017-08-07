@@ -1,0 +1,1485 @@
+<Type Name="TransferSqlServerObjectsTask" FullName="Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask">
+  <TypeSignature Language="C#" Value="public sealed class TransferSqlServerObjectsTask : Microsoft.SqlServer.Dts.Runtime.Task, Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.ITransferSqlServerObjectsTask" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransferSqlServerObjectsTask extends Microsoft.SqlServer.Dts.Runtime.Task implements class Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist, class Microsoft.SqlServer.Dts.Runtime.IDTSSuspend, class Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.ITransferSqlServerObjectsTask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.TransferSqlServerObjectsTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.Task</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSBreakpointSite</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.ITransferSqlServerObjectsTask</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Dts.Runtime.DtsTask(HelpKeyword="sql13.dts.designer.transfersqlserverobjectstask.F1", LocalizationType=typeof(Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.Localized), SamplesTag="SsisTransferSqlServerObjectsTask", TaskContact="Transfer Objects Task; Microsoft Corporation; SQL Server 2017 RC1; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1", TaskType="DTS90", UITypeName="Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTaskUI.TransferSqlServerObjectsTaskUI, Microsoft.SqlServer.TransferSqlServerObjectsTaskUI, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("6D7760F0-F3E4-4C1B-BBDC-A68A3AAAF6B2")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Enthält die Methoden und Eigenschaften, die Ihnen ermöglichen, verschiedene SQL Server-Objekte von einem Server auf einen anderen kopieren. Diese Klasse kann nicht vererbt werden.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransferSqlServerObjectsTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptBreakpointManager">
+      <MemberSignature Language="C#" Value="public void AcceptBreakpointManager (Microsoft.SqlServer.Dts.Runtime.BreakpointManager manager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AcceptBreakpointManager(class Microsoft.SqlServer.Dts.Runtime.BreakpointManager manager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.AcceptBreakpointManager(Microsoft.SqlServer.Dts.Runtime.BreakpointManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manager" Type="Microsoft.SqlServer.Dts.Runtime.BreakpointManager" />
+      </Parameters>
+      <Docs>
+        <param name="manager">Der für diesen Task spezifische Breakpoint-Manager.</param>
+        <summary>
+            Übergibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.BreakpointManager" /> einer Aufgabe. Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllDefaults">
+      <MemberSignature Language="C#" Value="public bool CopyAllDefaults { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllDefaults" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllDefaults" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, dass die SQL Server-Standardwerte in den Übertragungsvorgang einbezogen.
+            </summary>
+        <value>"true" gibt an, dass SQL Server-Standardwerte aus der Quelldatenbank in die Zieldatenbank übertragen werden. False gibt an, dass nur die Objekte im gefunden die <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.DefaultsList" /> übertragen werden. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllDRIObjects">
+      <MemberSignature Language="C#" Value="public bool CopyAllDRIObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllDRIObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllDRIObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob vom Task alle Objekte kopiert werden, die sich auf deklarative referenzielle Integrität (DRI) beziehen, oder legt ihn fest.
+            </summary>
+        <value>"true", wenn der Task alle Objekte, die im Zusammenhang mit der deklarativen referenziellen Integrität kopiert; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllLogins">
+      <MemberSignature Language="C#" Value="public bool CopyAllLogins { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllLogins" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllLogins" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use CopySqlServerLogins instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle SQL Server-Anmeldungen aus der Quelldatenbank in die Zieldatenbank in den Übertragungsvorgang oder nur die angegebenen Anmeldungen kopiert werden.
+            </summary>
+        <value>"true" gibt an, dass alle SQL Server-Anmeldungen aus der Quelldatenbank in die Zieldatenbank kopiert werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllObjects">
+      <MemberSignature Language="C#" Value="public bool CopyAllObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle SQL Server-Datenbankobjekte aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen Objekte übertragen werden. Die folgenden SQL Server-Datenbankobjekte können übertragen werden: Standardwerte, Regeln, gespeicherte Prozeduren, Tabellen, Trigger, benutzerdefinierte Datentypen und Sichten. 
+            </summary>
+        <value>"true" gibt an, dass alle SQL Server-Datenbankobjekte des angegebenen Typs aus der Quelldatenbank in die Zieldatenbank übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllPartitionFunctions">
+      <MemberSignature Language="C#" Value="public bool CopyAllPartitionFunctions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllPartitionFunctions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllPartitionFunctions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle SQL Server-Partitionen aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen Partitionen übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle SQL Server-Partitionen aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.PartitionFunctionsList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllPartitionSchemes">
+      <MemberSignature Language="C#" Value="public bool CopyAllPartitionSchemes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllPartitionSchemes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllPartitionSchemes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle SQL Server-Partitionsschemas aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen Partitionsschemas übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle SQL Server-Partitionsschemas aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.PartitionSchemesList" /> enthaltenen Objekte übertragen werden. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllRules">
+      <MemberSignature Language="C#" Value="public bool CopyAllRules { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllRules" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllRules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle SQL Server-Regeln aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen Regeln übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle SQL Server-Regeln aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.RulesList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllSchemas">
+      <MemberSignature Language="C#" Value="public bool CopyAllSchemas { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllSchemas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllSchemas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle SQL Server-Schemas aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen Schemas übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle SQL Server-Schemas aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.SchemasList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllSqlAssemblies">
+      <MemberSignature Language="C#" Value="public bool CopyAllSqlAssemblies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllSqlAssemblies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllSqlAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle SQL Server-Assemblys aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen Assemblys übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle SQL Server-Assemblys aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.SqlAssembliesList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllStoredProcedures">
+      <MemberSignature Language="C#" Value="public bool CopyAllStoredProcedures { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllStoredProcedures" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllStoredProcedures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle gespeicherten SQL Server-Prozeduren aus der Quelldatenbank in die Zieldatenbank übertragen werden, oder nur die angegebenen Prozeduren gespeicherten.
+            </summary>
+        <value>"true" gibt an, dass alle gespeicherte Prozeduren übertragen werden die Quelle in die Zieldatenbank. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.StoredProceduresList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllTables">
+      <MemberSignature Language="C#" Value="public bool CopyAllTables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllTables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllTables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle SQL Server-Tabellen aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen Tabellen übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle SQL Server-Tabellen aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.TablesList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllUserDefinedAggregates">
+      <MemberSignature Language="C#" Value="public bool CopyAllUserDefinedAggregates { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllUserDefinedAggregates" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllUserDefinedAggregates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle benutzerdefinierten Aggregate aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen benutzerdefinierten Aggregate übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle benutzerdefinierten Aggregate aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.UserDefinedAggregatesList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllUserDefinedDataTypes">
+      <MemberSignature Language="C#" Value="public bool CopyAllUserDefinedDataTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllUserDefinedDataTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllUserDefinedDataTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle benutzerdefinierten Datentypen aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen benutzerdefinierten Datentypen übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle benutzerdefinierten Datentypen aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.UserDefinedDataTypesList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllUserDefinedFunctions">
+      <MemberSignature Language="C#" Value="public bool CopyAllUserDefinedFunctions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllUserDefinedFunctions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllUserDefinedFunctions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle benutzerdefinierten Funktionen aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen benutzerdefinierten Funktionen übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle benutzerdefinierten Funktionen aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.UserDefinedFunctionsList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllUserDefinedTypes">
+      <MemberSignature Language="C#" Value="public bool CopyAllUserDefinedTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllUserDefinedTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllUserDefinedTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle benutzerdefinierten Typen aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen benutzerdefinierten Typen übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle benutzerdefinierten Typen aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.UserDefinedTypesList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllUsers">
+      <MemberSignature Language="C#" Value="public bool CopyAllUsers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllUsers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllUsers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use CopyDatabaseUsers instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle SQL Server-Datenbankbenutzer aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen Benutzer kopiert werden.
+            </summary>
+        <value>"true" gibt an, dass alle SQL Server-Datenbankbenutzer aus der Quelldatenbank in die Zieldatenbank kopiert werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllViews">
+      <MemberSignature Language="C#" Value="public bool CopyAllViews { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllViews" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllViews" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle SQL Server-Sichten aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen Sichten übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle SQL Server-Sichten aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.ViewsList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyAllXmlSchemaCollections">
+      <MemberSignature Language="C#" Value="public bool CopyAllXmlSchemaCollections { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyAllXmlSchemaCollections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllXmlSchemaCollections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob alle XML-schemaauflistungen aus der Quelldatenbank in die Zieldatenbank oder nur die angegebenen XML-schemaauflistungen übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass alle XML-schemaauflistungen aus der Quelldatenbank in die Zieldatenbank übertragen werden. false gibt an, dass nur die in der <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.XmlSchemaCollectionsList" /> enthaltenen Objekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyData">
+      <MemberSignature Language="C#" Value="public bool CopyData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab, oder einen booleschen Wert ab, der angibt, ob Daten die Übertragung von Tabellen und Sichten aus der SQL Server-Quelldatenbank in die Zieldatenbank einbezogen wird.
+            </summary>
+        <value>"true" gibt an, dass Daten aus der SQL Server-Quelldatenbank in die Zieldatenbank übertragen werden. False gibt an, dass nur Objektmetadaten übertragen wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyDatabaseRoles">
+      <MemberSignature Language="C#" Value="public bool CopyDatabaseRoles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyDatabaseRoles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyDatabaseRoles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob Datenbankrollen aus der Quelldatenbank in die Zieldatenbank übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass Datenbankrollen von der Quell-in die Zieldatenbank übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyDatabaseUsers">
+      <MemberSignature Language="C#" Value="public bool CopyDatabaseUsers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyDatabaseUsers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyDatabaseUsers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob Datenbankbenutzer aus der Quelldatenbank in die Zieldatenbank übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass Datenbankbenutzer von der Quell-in die Zieldatenbank übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyForeignKeys">
+      <MemberSignature Language="C#" Value="public bool CopyForeignKeys { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyForeignKeys" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyForeignKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob Fremdschlüssel aus der Quelldatenbank in die Zieldatenbank übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass Fremdschlüssel von der Quell-in die Zieldatenbank übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyFullTextIndexes">
+      <MemberSignature Language="C#" Value="public bool CopyFullTextIndexes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyFullTextIndexes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyFullTextIndexes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob Volltexteigenschaften aus der Quelldatenbank in die Zieldatenbank übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass Volltexteigenschaften von der Quell-in die Zieldatenbank übertragen werden. False gibt an, dass nur die Datenbankobjekte übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyIndexes">
+      <MemberSignature Language="C#" Value="public bool CopyIndexes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyIndexes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyIndexes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob Indizes aus der Quelldatenbank in die Zieldatenbank übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass Indizes von der Quell-in die Zieldatenbank übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyObjectLevelPermissions">
+      <MemberSignature Language="C#" Value="public bool CopyObjectLevelPermissions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyObjectLevelPermissions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyObjectLevelPermissions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob sicherungsfähige Objekte in die Übertragung von der Quelldatenbank in die Zieldatenbank einbezogen werden.
+            </summary>
+        <value>"true" gibt an, dass sicherungsfähige Objekte, die aus der Quelldatenbank in die Zieldatenbank übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyPrimaryKeys">
+      <MemberSignature Language="C#" Value="public bool CopyPrimaryKeys { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyPrimaryKeys" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyPrimaryKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob Primärschlüssel aus der Quelldatenbank in die Zieldatenbank übertragen werden.
+            </summary>
+        <value>"true" gibt an, dass Primärschlüssel von der Quell-in die Zieldatenbank übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopySchema">
+      <MemberSignature Language="C#" Value="public bool CopySchema { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopySchema" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopySchema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert ab, der angibt, ob das Schema beim Übertragungsvorgang kopiert wird. Diese Eigenschaft ist nur für SQL Server 2005 oder höher verfügbar.
+            </summary>
+        <value>"true" gibt an, dass das Schema aus der Quelldatenbank in die Zieldatenbank kopiert wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopySqlServerLogins">
+      <MemberSignature Language="C#" Value="public bool CopySqlServerLogins { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopySqlServerLogins" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopySqlServerLogins" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob SQL Server-Anmeldungen in die Übertragung von der Quelldatenbank in die Zieldatenbank einbezogen werden.
+            </summary>
+        <value>"true" gibt an, dass SQL Server-Anmeldungen aus der Quelldatenbank in die Zieldatenbank übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTriggers">
+      <MemberSignature Language="C#" Value="public bool CopyTriggers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyTriggers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyTriggers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob Trigger in die Übertragung von der Quell-in die Zieldatenbank einbezogen werden.
+            </summary>
+        <value>"true" gibt an, dass Trigger aus der Quelldatenbank in die Zieldatenbank übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugMode">
+      <MemberSignature Language="C#" Value="public bool DebugMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DebugMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.DebugMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob von einem Task bestimmt werden soll, ob Breakpoints aktiviert sind, oder legt ihn fest.
+            </summary>
+        <value>"true", wenn vom Task bestimmt werden soll, ob Breakpoints aktiviert sind, "false", wenn alle Breakpoints vom Task ignoriert werden können.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultsList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection DefaultsList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection DefaultsList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.DefaultsList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine StringCollection, die mit den Standard-Objekten, die übertragen werden, wenn die <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllDefaults" /> auf "false" festgelegt ist.
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden Standardobjekte enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationConnection">
+      <MemberSignature Language="C#" Value="public string DestinationConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DestinationConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.DestinationConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine Zeichenfolge, die mit dem Namen des SMO-Verbindungs-Managers für die Zieldatenbank.
+            </summary>
+        <value>Eine Zeichenfolge, die die SMO-Verbindungs-Manager enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationDatabase">
+      <MemberSignature Language="C#" Value="public string DestinationDatabase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DestinationDatabase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.DestinationDatabase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine Zeichenfolge, die mit dem Namen der Zieldatenbank.
+            </summary>
+        <value>Eine Zeichenfolge, die den Namen der Datenbank am Ziel enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationTranslateChar">
+      <MemberSignature Language="C#" Value="public bool DestinationTranslateChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DestinationTranslateChar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.DestinationTranslateChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, des Wert von "autotranslate" in der Verbindungszeichenfolge des OLE DB-Ziel.
+            </summary>
+        <value>Ein boolescher Wert, der den Wert von "autotranslate" angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropObjectsFirst">
+      <MemberSignature Language="C#" Value="public bool DropObjectsFirst { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DropObjectsFirst" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.DropObjectsFirst" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert ab, der angibt, ob die Objekte, die für die Übertragung von der Quelldatenbank ausgewählt wurden vor Beginn die Übertragung zuerst auf dem Zielserver gelöscht werden.
+            </summary>
+        <value>"true", wenn Objekte am Ziel vor dem Starten des Kopiervorgangs gelöscht werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Execute(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, object transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.Execute(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="transaction" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="transaction">Das Transaktionsobjekt, dem der Container angehört. Dieser Wert kann NULL sein.</param>
+        <summary>
+            Führt den Task aus.
+            </summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionValue">
+      <MemberSignature Language="C#" Value="public override object ExecutionValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExecutionValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.ExecutionValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt ein Objekt zurück, das die Anzahl der übertragenen Objekte enthält.
+            </summary>
+        <value>Ein Objekt, das die Anzahl der übertragenen Objekte enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExistingData">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.ExistingData ExistingData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.ExistingData ExistingData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.ExistingData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.ExistingData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.ExistingData" />-Enumeration ab, um zu bestimmen, ob Daten an vorhandene Daten angefügt oder ob die vorhandenen Daten durch Überschreiben ersetzt werden sollen, oder legt ihn fest.
+            </summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.ExistingData" /> Enumeration.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateScriptsInUnicode">
+      <MemberSignature Language="C#" Value="public bool GenerateScriptsInUnicode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateScriptsInUnicode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.GenerateScriptsInUnicode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert ab, der angibt, ob das generierte Skript im Unicode-Format aufweist.
+            </summary>
+        <value>"true", wenn das Skript im Unicode-Format ist; "false" andernfalls.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeDependentObjects">
+      <MemberSignature Language="C#" Value="public bool IncludeDependentObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeDependentObjects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.IncludeDependentObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert ab, der angibt, ob die abhängigen Objekte in die Übertragung einbezogen werden.
+            </summary>
+        <value>"true", wenn abhängige Objekte ebenfalls übertragen werden; "false", wenn nur das ausgewählte Objekt übertragen wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeExtendedProperties">
+      <MemberSignature Language="C#" Value="public bool IncludeExtendedProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeExtendedProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.IncludeExtendedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob erweiterte Eigenschaften aus der Quelldatenbank in die Zieldatenbank übertragen werden.
+            </summary>
+        <value>"true", wenn erweiterte Eigenschaften aus der Quelldatenbank in die Zieldatenbank übertragen werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeTask">
+      <MemberSignature Language="C#" Value="public override void InitializeTask (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, Microsoft.SqlServer.Dts.Runtime.EventInfos eventInfos, Microsoft.SqlServer.Dts.Runtime.LogEntryInfos logEntryInfos, Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker refTracker);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeTask(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log, class Microsoft.SqlServer.Dts.Runtime.EventInfos eventInfos, class Microsoft.SqlServer.Dts.Runtime.LogEntryInfos logEntryInfos, class Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker refTracker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.InitializeTask(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging,Microsoft.SqlServer.Dts.Runtime.EventInfos,Microsoft.SqlServer.Dts.Runtime.LogEntryInfos,Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+        <Parameter Name="eventInfos" Type="Microsoft.SqlServer.Dts.Runtime.EventInfos" />
+        <Parameter Name="logEntryInfos" Type="Microsoft.SqlServer.Dts.Runtime.LogEntryInfos" />
+        <Parameter Name="refTracker" Type="Microsoft.SqlServer.Dts.Runtime.ObjectReferenceTracker" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <param name="eventInfos">Eine Auflistung mit Ereignissen, die während der Ausführung des Tasks ausgelöst werden.</param>
+        <param name="logEntryInfos">Eine Auflistung von Protokolleinträgen.</param>
+        <param name="refTracker">Eine Objektverweisnachverfolgung.</param>
+        <summary>
+            Initialisiert die dem Task zugeordneten Eigenschaften. Diese Methode wird von der Laufzeit aufgerufen und wird nicht in Code verwendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlElement rootNode, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlElement rootNode, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootNode" Type="System.Xml.XmlElement" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="rootNode">Der Knoten, der die zu ladenden Informationen enthält.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>
+            Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein im XML-Format gespeichertes Paket zu laden, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginsList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection LoginsList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection LoginsList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.LoginsList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine StringCollection, die SQL Server-Anmeldungen enthält, aus der Quelldatenbank in die Zieldatenbank übertragen, die Datenbank werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllLogins" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die zu übertragenden Anmeldungen aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartitionFunctionsList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection PartitionFunctionsList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection PartitionFunctionsList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.PartitionFunctionsList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt ihn fest, die eine StringCollection, die die Partition enthält Funktionen, die aus der Quelldatenbank in die Zieldatenbank übertragen, die Datenbank werden, wenn die <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllPartitionFunctions" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden Partitionsfunktionen aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartitionSchemesList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection PartitionSchemesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection PartitionSchemesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.PartitionSchemesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt ihn fest, die eine StringCollection, die mit den Partitionsfunktionen Formatierungsschemas aus der Quelldatenbank in die Zieldatenbank übertragen, die Datenbank werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllPartitionSchemes" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden Partitionsschemas aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeExecution">
+      <MemberSignature Language="C#" Value="public void ResumeExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.ResumeExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Setzt die Taskausführung nach einer Unterbrechung fort. Das Laufzeitmodul setzt die Ausführung des Tasks oder Containers fort.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RulesList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection RulesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection RulesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.RulesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine StringCollection, die mit den Regeln ab, aus der Quelldatenbank in die Zieldatenbank übertragen, die Datenbank werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllRules" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden Regeln aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (System.Xml.XmlDocument doc, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>
+            Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket als XML-Datei zu speichern, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemasList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection SchemasList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection SchemasList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.SchemasList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine StringCollection mit der Liste der Schemas, die aus der Quelldatenbank in die Zieldatenbank übertragen, die Datenbank werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllSchemas" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden Schemas aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceConnection">
+      <MemberSignature Language="C#" Value="public string SourceConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.SourceConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine Zeichenfolge, die mit dem Namen des SMO-Verbindungs-Managers für die Quelldatenbank.
+            </summary>
+        <value>Eine Zeichenfolge, die Verbindungszeichenfolge des SMO-Verbindungs-Managers enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceDatabase">
+      <MemberSignature Language="C#" Value="public string SourceDatabase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceDatabase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.SourceDatabase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine Zeichenfolge, die mit dem Namen der Datenbank aus der Objekte übertragen werden. 
+            </summary>
+        <value>Eine Zeichenfolge, die den Namen der Quelldatenbank enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceTranslateChar">
+      <MemberSignature Language="C#" Value="public bool SourceTranslateChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SourceTranslateChar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.SourceTranslateChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, des Wert von "autotranslate" in der Verbindungszeichenfolge des OLE DB-Quelle.
+            </summary>
+        <value>Ein boolescher Wert, der den Wert von "autotranslate" angibt. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlAssembliesList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection SqlAssembliesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection SqlAssembliesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.SqlAssembliesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine StringCollection Auflisten von SQL Server-Assemblys, die übertragen werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllSqlAssemblies" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die zu übertragenden SQL Server-Assemblys aufgeführt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoredProceduresList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection StoredProceduresList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection StoredProceduresList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.StoredProceduresList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine StringCollection Auflisten von gespeicherten Prozeduren, die übertragen werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllStoredProcedures" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden gespeicherten Prozeduren aufgeführt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendExecution">
+      <MemberSignature Language="C#" Value="public void SuspendExecution ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuspendExecution() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.SuspendExecution" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt an, dass das ausführbare Element angehalten werden muss. Diese Methode wird vom Laufzeitmodul aufgerufen. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendRequired">
+      <MemberSignature Language="C#" Value="public bool SuspendRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuspendRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.SuspendRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen booleschen Wert ab, der angibt, ob die Taskausführung bei Erreichen eines Breakpoints angehalten werden soll, oder legt ihn fest. Dieser Wert wird vom Laufzeitmodul für Tasks und Container festgelegt, wenn ein Breakpoint erreicht wird.
+            </summary>
+        <value>"true", wenn der Task angehalten; "false", wenn die Aufgabe, die der Breakpoint ignoriert werden kann.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TablesList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection TablesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection TablesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.TablesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine StringCollection, die die Tabellen aufgeführt, die übertragen werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllTables" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden Tabellen aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseCollation">
+      <MemberSignature Language="C#" Value="public bool UseCollation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseCollation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.UseCollation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert, der angibt, ob die Übertragung Sortierungen verwenden soll.
+            </summary>
+        <value>"true", wenn die Sortierung in die Übertragung einbezogen; "false", wenn die Sortierung am Ziel verwendet wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserDefinedAggregatesList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection UserDefinedAggregatesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection UserDefinedAggregatesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.UserDefinedAggregatesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine Liste der benutzerdefinierten Aggregate StringCollection übertragen werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllUserDefinedAggregates" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden benutzerdefinierten Aggregate aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserDefinedDataTypesList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection UserDefinedDataTypesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection UserDefinedDataTypesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.UserDefinedDataTypesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine Liste der benutzerdefinierten Datentypen, um die übertragen werden, wenn StringCollection <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllUserDefinedDataTypes" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden benutzerdefinierten Datentypen aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserDefinedFunctionsList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection UserDefinedFunctionsList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection UserDefinedFunctionsList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.UserDefinedFunctionsList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine StringCollection Auflisten der von benutzerdefinierten Funktionen, die übertragen werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllUserDefinedFunctions" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die benutzerdefinierten Funktionen übertragen aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserDefinedTypesList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection UserDefinedTypesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection UserDefinedTypesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.UserDefinedTypesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine Liste der benutzerdefinierten Typen um übertragen werden, wenn StringCollection <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllUserDefinedTypes" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die benutzerdefinierte Typen zu übertragenden auflistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsersList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection UsersList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection UsersList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.UsersList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt ihn fest, die eine StringCollection, die mit dem SQL Server-Datenbankbenutzer aus der Quelldatenbank in die Zieldatenbank übertragen, die Datenbank werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllUsers" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden Benutzer aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate (Microsoft.SqlServer.Dts.Runtime.Connections connections, Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, Microsoft.SqlServer.Dts.Runtime.IDTSLogging log);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.DTSExecResult Validate(class Microsoft.SqlServer.Dts.Runtime.Connections connections, class Microsoft.SqlServer.Dts.Runtime.VariableDispenser variableDispenser, class Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents events, class Microsoft.SqlServer.Dts.Runtime.IDTSLogging log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.Validate(Microsoft.SqlServer.Dts.Runtime.Connections,Microsoft.SqlServer.Dts.Runtime.VariableDispenser,Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents,Microsoft.SqlServer.Dts.Runtime.IDTSLogging)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Connections" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.VariableDispenser" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Eine Auflistung der vom Task verwendeten Verbindungen.</param>
+        <param name="variableDispenser">Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableDispenser" /> Objekt zum Sperren von Variablen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSComponentEvents" /> Schnittstelle.</param>
+        <param name="log">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" /> Schnittstelle.</param>
+        <summary>
+            Überprüft, ob der Task ordnungsgemäß konfiguriert ist.
+            </summary>
+        <returns>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.DTSExecResult" /> Enumeration.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewsList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection ViewsList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection ViewsList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.ViewsList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine StringCollection Auflisten von Ansichten, die übertragen werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllViews" /> lautet "false".
+            </summary>
+        <value>Ein StringCollection, die die zu übertragenden Sichten aufgelistet.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlSchemaCollectionsList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection XmlSchemaCollectionsList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection XmlSchemaCollectionsList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.XmlSchemaCollectionsList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor,System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine StringCollection, die die XML-schemaauflistungen aufgelistet, die übertragen werden, wenn <see cref="P:Microsoft.SqlServer.Dts.Tasks.TransferSqlServerObjectsTask.TransferSqlServerObjectsTask.CopyAllXmlSchemaCollections" /> lautet "false".
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

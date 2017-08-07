@@ -1,0 +1,606 @@
+<Type Name="ErrorSupport" FullName="Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport">
+  <TypeSignature Language="C#" Value="public class ErrorSupport" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorSupport extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.DtsMsg</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Unterstützt das Auslösen von Fehlern, Warnungen und andere Ereignisse, die beschreibenden Text für bekannte COM HRESULTs einschließen, die vom Integration Services-Komponenten, die in systemeigenem Code geschriebenen zurückgegeben werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ErrorSupport (Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100 pIDTSCMD);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100 pIDTSCMD) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.#ctor(Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pIDTSCMD" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100" />
+      </Parameters>
+      <Docs>
+        <param name="pIDTSCMD">Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetadata100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</param>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ErrorSupport (Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100 pIDTSEvents);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100 pIDTSEvents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.#ctor(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pIDTSEvents" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100" />
+      </Parameters>
+      <Docs>
+        <param name="pIDTSEvents">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</param>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ErrorSupport (Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 pIDTSEvents);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 pIDTSEvents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.#ctor(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pIDTSEvents" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" />
+      </Parameters>
+      <Docs>
+        <param name="pIDTSEvents">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</param>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ErrorSupport (Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100 pIDTSCMD, string strSubComponent, string strHelpFile, int HelpContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100 pIDTSCMD, string strSubComponent, string strHelpFile, int32 HelpContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.#ctor(Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100,System.String,System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pIDTSCMD" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100" />
+        <Parameter Name="strSubComponent" Type="System.String" />
+        <Parameter Name="strHelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pIDTSCMD">Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetadata100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</param>
+        <param name="strSubComponent">Der Anzeigename der Komponente.</param>
+        <param name="strHelpFile">Die Hilfedatei, die zusätzliche Informationen zu den von der <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" />-Klasse ausgelösten Meldungen bereitstellt.</param>
+        <param name="HelpContext">Die Position in der Hilfedatei, die zusätzliche Informationen über die Nachrichten enthält die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse löst.</param>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ErrorSupport (Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100 pIDTSEvents, string strSubComponent, string strHelpFile, int HelpContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100 pIDTSEvents, string strSubComponent, string strHelpFile, int32 HelpContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.#ctor(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100,System.String,System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pIDTSEvents" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100" />
+        <Parameter Name="strSubComponent" Type="System.String" />
+        <Parameter Name="strHelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pIDTSEvents">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</param>
+        <param name="strSubComponent">Der Anzeigename der Komponente.</param>
+        <param name="strHelpFile">Die Hilfedatei, die zusätzliche Informationen zu den von der <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" />-Klasse ausgelösten Meldungen bereitstellt.</param>
+        <param name="HelpContext">Die Position in der Hilfedatei, die zusätzliche Informationen über die Nachrichten enthält die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse löst.</param>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ErrorSupport (Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 pIDTSEvents, string strSubComponent, string strHelpFile, int HelpContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 pIDTSEvents, string strSubComponent, string strHelpFile, int32 HelpContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.#ctor(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100,System.String,System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pIDTSEvents" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" />
+        <Parameter Name="strSubComponent" Type="System.String" />
+        <Parameter Name="strHelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pIDTSEvents">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</param>
+        <param name="strSubComponent">Der Anzeigename der Komponente.</param>
+        <param name="strHelpFile">Die Hilfedatei, die zusätzliche Informationen zu den von der <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" />-Klasse ausgelösten Meldungen bereitstellt.</param>
+        <param name="HelpContext">Die Position in der Hilfedatei, die zusätzliche Informationen über die Nachrichten enthält die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> Klasse werden ausgelöst.</param>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireError">
+      <MemberSignature Language="C#" Value="public void FireError (int hResult, out bool bCancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireError(int32 hResult, bool bCancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireError(System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="bCancel" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT des zugrunde liegenden COM-Fehlers.</param>
+        <param name="bCancel">"true", um die Ausführung Abbrechen; andernfalls "false".</param>
+        <summary>Löst einen vom angegebenen HRESULT identifizierten Fehler aus und ermöglicht das Abbrechen der Ausführung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireError">
+      <MemberSignature Language="C#" Value="public void FireError (int hResult, string strSubComponent, string strHelpFile, int HelpContext, out bool bCancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireError(int32 hResult, string strSubComponent, string strHelpFile, int32 HelpContext, bool bCancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireError(System.Int32,System.String,System.String,System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="strSubComponent" Type="System.String" />
+        <Parameter Name="strHelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+        <Parameter Name="bCancel" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT des zugrunde liegenden COM-Fehlers.</param>
+        <param name="strSubComponent">Der Anzeigename der Komponente.</param>
+        <param name="strHelpFile">Die Hilfedatei, die zusätzliche Informationen zu den ausgelösten Meldungen bereitstellt.</param>
+        <param name="HelpContext">Die Stelle in der Hilfedatei, an der zusätzliche Informationen zu den ausgelösten Meldungen zu finden sind.</param>
+        <param name="bCancel">"true", um die Ausführung Abbrechen; andernfalls "false".</param>
+        <summary>Löst einen vom angegebenen HRESULT identifizierten Fehler aus, ordnet ihn der angegebenen Komponente, Hilfedatei oder dem angegebenen Hilfekontext zu und ermöglicht das Abbrechen der Ausführung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireErrorWithArgs">
+      <MemberSignature Language="C#" Value="public void FireErrorWithArgs (int hResult, out bool bCancel, object[] paramList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireErrorWithArgs(int32 hResult, bool bCancel, object[] paramList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireErrorWithArgs(System.Int32,System.Boolean@,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="bCancel" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="paramList" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT des zugrunde liegenden COM-Fehlers.</param>
+        <param name="bCancel">"true", um die Ausführung Abbrechen; andernfalls "false".</param>
+        <param name="paramList">Ein optionales Array benutzerdefinierter Objekte oder Informationen.</param>
+        <summary>Löst einen vom angegebenen HRESULT identifizierten Fehler aus, ermöglicht das Abbrechen der Ausführung und schließt ein optionales Array benutzerdefinierter Objekte oder Informationen ein.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireErrorWithArgs">
+      <MemberSignature Language="C#" Value="public void FireErrorWithArgs (int hResult, string strSubComponent, string strHelpFile, int HelpContext, out bool bCancel, object[] paramList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireErrorWithArgs(int32 hResult, string strSubComponent, string strHelpFile, int32 HelpContext, bool bCancel, object[] paramList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireErrorWithArgs(System.Int32,System.String,System.String,System.Int32,System.Boolean@,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="strSubComponent" Type="System.String" />
+        <Parameter Name="strHelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+        <Parameter Name="bCancel" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="paramList" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT des zugrunde liegenden COM-Fehlers.</param>
+        <param name="strSubComponent">Der Anzeigename der Komponente.</param>
+        <param name="strHelpFile">Die Hilfedatei, die zusätzliche Informationen zu den ausgelösten Meldungen bereitstellt.</param>
+        <param name="HelpContext">Die Stelle in der Hilfedatei, an der zusätzliche Informationen zu den ausgelösten Meldungen zu finden sind.</param>
+        <param name="bCancel">"true", um die Ausführung Abbrechen; andernfalls "false".</param>
+        <param name="paramList">Ein optionales Array benutzerdefinierter Objekte oder Informationen.</param>
+        <summary>Löst einen vom angegebenen HRESULT identifizierten Fehler aus, ordnet ihn der angegebenen Komponente, Hilfedatei oder dem angegebenen Hilfekontext zu, ermöglicht das Abbrechen der Ausführung und schließt ein optionales Array benutzerdefinierter Objekte oder Informationen ein.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireInformation">
+      <MemberSignature Language="C#" Value="public void FireInformation (int hResult, ref bool bFireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireInformation(int32 hResult, bool bFireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireInformation(System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="bFireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT der zugrunde liegenden COM-Funktion.</param>
+        <param name="bFireAgain">True, wenn die Komponente, die die gleiche auslösen soll auftritt informative Meldung, die das nächste Mal das gleiche Ereignis. andernfalls "false".</param>
+        <summary>Löst eine Informationsmeldung zum angegebenen HRESULT aus und ermöglicht das Abbrechen der Ausführung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireInformation">
+      <MemberSignature Language="C#" Value="public void FireInformation (int hResult, string strSubComponent, string strHelpFile, int HelpContext, ref bool bFireAgain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireInformation(int32 hResult, string strSubComponent, string strHelpFile, int32 HelpContext, bool bFireAgain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireInformation(System.Int32,System.String,System.String,System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="strSubComponent" Type="System.String" />
+        <Parameter Name="strHelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+        <Parameter Name="bFireAgain" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT der zugrunde liegenden COM-Funktion.</param>
+        <param name="strSubComponent">Der Anzeigename der Komponente.</param>
+        <param name="strHelpFile">Die Hilfedatei, die zusätzliche Informationen zu den ausgelösten Meldungen bereitstellt.</param>
+        <param name="HelpContext">Die Stelle in der Hilfedatei, an der zusätzliche Informationen zu den ausgelösten Meldungen zu finden sind.</param>
+        <param name="bFireAgain">True, wenn die Komponente, die die gleiche auslösen soll auftritt informative Meldung, die das nächste Mal das gleiche Ereignis. andernfalls "false".</param>
+        <summary>Löst eine Informationsmeldung zum angegebenen HRESULT aus, ordnet sie der angegebenen Komponente, Hilfedatei oder dem angegebenen Hilfekontext zu und ermöglicht das Abbrechen der Ausführung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireInformationWithArgs">
+      <MemberSignature Language="C#" Value="public void FireInformationWithArgs (int hResult, ref bool bFireAgain, object[] paramList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireInformationWithArgs(int32 hResult, bool bFireAgain, object[] paramList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireInformationWithArgs(System.Int32,System.Boolean@,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="bFireAgain" Type="System.Boolean&amp;" RefType="ref" />
+        <Parameter Name="paramList" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT der zugrunde liegenden COM-Funktion.</param>
+        <param name="bFireAgain">True, wenn die Komponente, die die gleiche auslösen soll auftritt informative Meldung, die das nächste Mal das gleiche Ereignis. andernfalls "false".</param>
+        <param name="paramList">Ein optionales Array benutzerdefinierter Objekte oder Informationen.</param>
+        <summary>Löst eine Informationsmeldung zum angegebenen HRESULT aus, ermöglicht das Abbrechen der Ausführung und schließt ein optionales Array benutzerdefinierter Objekte oder Informationen ein.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireInformationWithArgs">
+      <MemberSignature Language="C#" Value="public void FireInformationWithArgs (int hResult, string strSubComponent, string strHelpFile, int HelpContext, ref bool bFireAgain, object[] paramList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireInformationWithArgs(int32 hResult, string strSubComponent, string strHelpFile, int32 HelpContext, bool bFireAgain, object[] paramList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireInformationWithArgs(System.Int32,System.String,System.String,System.Int32,System.Boolean@,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="strSubComponent" Type="System.String" />
+        <Parameter Name="strHelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+        <Parameter Name="bFireAgain" Type="System.Boolean&amp;" RefType="ref" />
+        <Parameter Name="paramList" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT der zugrunde liegenden COM-Funktion.</param>
+        <param name="strSubComponent">Der Anzeigename der Komponente.</param>
+        <param name="strHelpFile">Die Hilfedatei, die zusätzliche Informationen zu den ausgelösten Meldungen bereitstellt.</param>
+        <param name="HelpContext">Die Stelle in der Hilfedatei, an der zusätzliche Informationen zu den ausgelösten Meldungen zu finden sind.</param>
+        <param name="bFireAgain">True, wenn die Komponente, die die gleiche auslösen soll auftritt informative Meldung, die das nächste Mal das gleiche Ereignis. andernfalls "false".</param>
+        <param name="paramList">Ein optionales Array benutzerdefinierter Objekte oder Informationen.</param>
+        <summary>Löst eine Informationsmeldung zum angegebenen HRESULT aus, ordnet sie der angegebenen Komponente, Hilfedatei oder dem angegebenen Hilfekontext zu, ermöglicht das Abbrechen der Ausführung und schließt ein optionales Array benutzerdefinierter Objekte oder Informationen ein.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireWarning">
+      <MemberSignature Language="C#" Value="public void FireWarning (int hResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireWarning(int32 hResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireWarning(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT des zugrunde liegenden COM-Fehlers.</param>
+        <summary>Löst eine vom angegebenen HRESULT identifizierte Warnung aus und ermöglicht das Abbrechen der Ausführung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireWarning">
+      <MemberSignature Language="C#" Value="public void FireWarning (int hResult, string strSubComponent, string strHelpFile, int HelpContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireWarning(int32 hResult, string strSubComponent, string strHelpFile, int32 HelpContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireWarning(System.Int32,System.String,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="strSubComponent" Type="System.String" />
+        <Parameter Name="strHelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT des zugrunde liegenden COM-Fehlers.</param>
+        <param name="strSubComponent">Der Anzeigename der Komponente.</param>
+        <param name="strHelpFile">Die Hilfedatei, die zusätzliche Informationen zu den ausgelösten Meldungen bereitstellt.</param>
+        <param name="HelpContext">Die Stelle in der Hilfedatei, an der zusätzliche Informationen zu den ausgelösten Meldungen zu finden sind.</param>
+        <summary>Löst eine vom angegebenen HRESULT identifizierte Warnung aus und ordnet sie der angegebenen Komponente, Hilfedatei und dem angegebenen Hilfekontext zu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireWarningWithArgs">
+      <MemberSignature Language="C#" Value="public void FireWarningWithArgs (int hResult, object[] paramList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireWarningWithArgs(int32 hResult, object[] paramList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireWarningWithArgs(System.Int32,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="paramList" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT des zugrunde liegenden COM-Fehlers.</param>
+        <param name="paramList">Ein optionales Array benutzerdefinierter Objekte oder Informationen.</param>
+        <summary>Löst eine vom angegebenen HRESULT identifizierte Warnung aus und schließt ein optionales Array benutzerdefinierter Objekte oder Informationen ein.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FireWarningWithArgs">
+      <MemberSignature Language="C#" Value="public void FireWarningWithArgs (int hResult, string strSubComponent, string strHelpFile, int HelpContext, object[] paramList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FireWarningWithArgs(int32 hResult, string strSubComponent, string strHelpFile, int32 HelpContext, object[] paramList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.FireWarningWithArgs(System.Int32,System.String,System.String,System.Int32,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="strSubComponent" Type="System.String" />
+        <Parameter Name="strHelpFile" Type="System.String" />
+        <Parameter Name="HelpContext" Type="System.Int32" />
+        <Parameter Name="paramList" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT des zugrunde liegenden COM-Fehlers.</param>
+        <param name="strSubComponent">Der Anzeigename der Komponente.</param>
+        <param name="strHelpFile">Die Hilfedatei, die zusätzliche Informationen zu den ausgelösten Meldungen bereitstellt.</param>
+        <param name="HelpContext">Die Stelle in der Hilfedatei, an der zusätzliche Informationen zu den ausgelösten Meldungen zu finden sind.</param>
+        <param name="paramList">Ein optionales Array benutzerdefinierter Objekte oder Informationen.</param>
+        <summary>Löst eine vom angegebenen HRESULT identifizierte Warnung aus, ordnet sie der angegebenen Komponente, Hilfedatei und dem angegebenen Hilfekontext zu und schließt eine optionales Array benutzerdefinierter Objekte oder Informationen ein.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFormattedMessage">
+      <MemberSignature Language="C#" Value="public int GetFormattedMessage (int hResult, out string strFormattedText, object[] paramList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetFormattedMessage(int32 hResult, string strFormattedText, object[] paramList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.GetFormattedMessage(System.Int32,System.String@,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="strFormattedText" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="paramList" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT, für das die formatierte Fehlermeldung zurückgegeben werden soll.</param>
+        <param name="strFormattedText">Die formatierte Fehlermeldung.</param>
+        <param name="paramList">Ein Array der Parameterwerte, die für die formatierte Fehlermeldung erforderlich sind.</param>
+        <summary>Ruft die Fehlermeldung für ein HRESULT ab und formatiert die Meldung, indem Parameter mit den angegebenen Werten aufgefüllt werden.</summary>
+        <returns>Ein Wert, der angibt, ob die <see cref="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.GetFormattedMessage(System.Int32,System.String@,System.Object[])" /> -Methode erfolgreich oder fehlerhaft. Der Wert 0 (null) gibt die erfolgreiche Ausführung an.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFormattedMessageEx">
+      <MemberSignature Language="C#" Value="public static int GetFormattedMessageEx (int hResult, out string strFormattedText, object[] paramList);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetFormattedMessageEx(int32 hResult, string strFormattedText, object[] paramList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.GetFormattedMessageEx(System.Int32,System.String@,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hResult" Type="System.Int32" />
+        <Parameter Name="strFormattedText" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="paramList" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hResult">Das HRESULT, für das die formatierte Fehlermeldung zurückgegeben werden soll.</param>
+        <param name="strFormattedText">Die formatierte Fehlermeldung.</param>
+        <param name="paramList">Ein Array der Parameterwerte, die für die formatierte Fehlermeldung erforderlich sind.</param>
+        <summary>Ruft die Fehlermeldung für ein HRESULT ab und formatiert die Meldung, indem Parameter mit den angegebenen Werten aufgefüllt werden.</summary>
+        <returns>Ein Wert, der angibt, ob die Methode erfolgreich oder fehlerhaft war.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetErrorInterface">
+      <MemberSignature Language="C#" Value="protected void SetErrorInterface (Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100 pIDTSCMD);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetErrorInterface(class Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100 pIDTSCMD) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.SetErrorInterface(Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDTSCMD" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetaData100" />
+      </Parameters>
+      <Docs>
+        <param name="pIDTSCMD">Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetadata100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</param>
+        <summary>Gibt an, die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSComponentMetadata100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetErrorInterface">
+      <MemberSignature Language="C#" Value="protected void SetErrorInterface (Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100 pIDTSEvents);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetErrorInterface(class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100 pIDTSEvents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.SetErrorInterface(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDTSEvents" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100" />
+      </Parameters>
+      <Docs>
+        <param name="pIDTSEvents">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</param>
+        <summary>Gibt an, die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentEvents100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetErrorInterface">
+      <MemberSignature Language="C#" Value="protected void SetErrorInterface (Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 pIDTSInfoEvents);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetErrorInterface(class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 pIDTSInfoEvents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport.SetErrorInterface(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDTSInfoEvents" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" />
+      </Parameters>
+      <Docs>
+        <param name="pIDTSInfoEvents">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</param>
+        <summary>Gibt an, die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" /> Instanz, die <see cref="T:Microsoft.SqlServer.Dts.ManagedMsg.ErrorSupport" /> -Klasse zum Auslösen von Meldungen verwendet wird.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

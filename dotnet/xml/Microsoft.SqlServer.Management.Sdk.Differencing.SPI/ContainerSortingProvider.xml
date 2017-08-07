@@ -1,0 +1,131 @@
+<Type Name="ContainerSortingProvider" FullName="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider">
+  <TypeSignature Language="C#" Value="public abstract class ContainerSortingProvider : Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContainerSortingProvider extends System.Object implements class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Der Anbieter bietet sortieren 
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ContainerSortingProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AreGraphsSupported">
+      <MemberSignature Language="C#" Value="public abstract bool AreGraphsSupported (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode source, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AreGraphsSupported(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode source, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider.AreGraphsSupported(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode,Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode" />
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode" />
+      </Parameters>
+      <Docs>
+        <param name="source">Muss hinzugefügt werden.</param>
+        <param name="target">Muss hinzugefügt werden.</param>
+        <summary>
+            Gibt an, ob dieser Anbieter die angegebenen Diagramme unterstützt. Wenn dies der Fall, gibt "true", "false" andernfalls.
+            
+            If true is returned, the following calls to GetSortedList() and
+            GetComparer() method must return a valid non-null object.
+            
+            The method is called only one on the top most node of each graph.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComparer">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IComparer&lt;Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode&gt; GetComparer (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList list, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList list2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IComparer`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode&gt; GetComparer(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList list, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList list2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider.GetComparer(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList,Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IComparer&lt;Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="list" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList" />
+        <Parameter Name="list2" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList" />
+      </Parameters>
+      <Docs>
+        <param name="list">Muss hinzugefügt werden.</param>
+        <param name="list2">Muss hinzugefügt werden.</param>
+        <summary>
+            Einen Vergleich für die angegebene Liste zu erhalten. Die Methode wird nur aufgerufen, wenn AreListsComparable (ISfcSimpleList, ISfcSimpleList) gibt "true" zurück.
+            
+            If AreListsComparable() returns true, this method must return a valid
+            comparer.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortLists">
+      <MemberSignature Language="C#" Value="public void SortLists (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList source, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList target, out System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode&gt; sortedSource, out System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode&gt; sortedTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SortLists(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList source, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList target, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode&gt; sortedSource, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode&gt; sortedTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.ContainerSortingProvider.SortLists(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList,Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList,System.Collections.Generic.IEnumerable{Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode}@,System.Collections.Generic.IEnumerable{Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList" />
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleList" />
+        <Parameter Name="sortedSource" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode&gt;&amp;" RefType="out" />
+        <Parameter Name="sortedTarget" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="source">Muss hinzugefügt werden.</param>
+        <param name="target">Muss hinzugefügt werden.</param>
+        <param name="sortedSource">Muss hinzugefügt werden.</param>
+        <param name="sortedTarget">Muss hinzugefügt werden.</param>
+        <summary>
+            Ruft eine sortierte Liste. Diese Implementierung sortiert die Liste mit Standardliste&gt;Objekt&lt; . Sort(IComparer)-Methode. IComparer wird von GetComparer (ISfcSimpleNode, ISfcSimpleNode)-Methode abgerufen.
+            
+            The method is called only if AreListsComparable(ISfcSimpleList, ISfcSimpleList) 
+            returns true.
+            
+            A provider overrides this method if it can provide a faster sorting. If the list
+            is already sorted, the orignal list can be returned.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

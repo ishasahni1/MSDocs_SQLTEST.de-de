@@ -1,0 +1,63 @@
+<Type Name="DTSLogEntryFrequency" FullName="Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency">
+  <TypeSignature Language="C#" Value="public enum DTSLogEntryFrequency" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DTSLogEntryFrequency extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Stellt Informationen zur Unterstützung der Protokollplanung bereit. Sie wählen den Hinweis aus, der am besten wiedergibt, wie häufig ein bestimmter Protokolleintrag in Ihrem Task erwartungsgemäß generiert wird. Diese Enumerationseigenschaft unterstützt Benutzer des Pakets beim Einrichten von Filterfunktionen für Protokolleinträge. Der Benutzer kann die Eigenschaft anzeigen und weiß im Voraus, ob eine Flut von Einträgen eines bestimmten Typs zu erwarten ist. In diesem Fall kann er entsprechend planen.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Consistent">
+      <MemberSignature Language="C#" Value="Consistent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency Consistent = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency.Consistent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Der Eintrag wird so oft wie angegeben und nicht proportional zur Arbeitsauslastung protokolliert. Beispielsweise wird ein Protokoll am Anfang und am Ende eines Tasks erstellt.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Occasional">
+      <MemberSignature Language="C#" Value="Occasional" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency Occasional = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency.Occasional" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Der Eintrag wird von Zeit zu Zeit protokolliert, normalerweise in Ausnahmefällen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Proportional">
+      <MemberSignature Language="C#" Value="Proportional" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency Proportional = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency.Proportional" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.DTSLogEntryFrequency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Der Eintrag wird proportional zur Arbeitsauslastung mehrere Male protokolliert.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

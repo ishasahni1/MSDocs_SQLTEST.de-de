@@ -1,0 +1,89 @@
+<Type Name="IDatabaseObject" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject">
+  <TypeSignature Language="C#" Value="public interface IDatabaseObject : Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDatabaseObject implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Definiert Methoden und Eigenschaften, die von allen Datenbankobjekten gemeinsam verwendet werden.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accept&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Accept&lt;T&gt; (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor&lt;T&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Accept&lt;T&gt;(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor`1&lt;!!T&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject.Accept``1(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Der Typ des vom zurückgegebene Wert den <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor`1" /> Objekt.</typeparam>
+        <param name="visitor">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor`1" />-Objekt, das den Besuch ausführt.</param>
+        <summary>
+            Lässt einen Besuch des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor`1" />-Objekts zu.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Der vom <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObjectVisitor`1" />-Objekt zurückgegebene Wert.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSystemObject">
+      <MemberSignature Language="C#" Value="public bool IsSystemObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSystemObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject.IsSystemObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob ein Systemobjekt vorliegt.
+            </summary>
+        <value>
+          <c>true</c> if this is a system object; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject" />-Objekt ab, das diesem Objekt übergeordnet ist.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabaseObject" />-Objekt, das diesem Objekt übergeordnet ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

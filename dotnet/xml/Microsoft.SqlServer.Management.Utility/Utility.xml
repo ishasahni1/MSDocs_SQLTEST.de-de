@@ -1,0 +1,1640 @@
+<Type Name="Utility" FullName="Microsoft.SqlServer.Management.Utility.Utility">
+  <TypeSignature Language="C#" Value="public sealed class Utility : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, Microsoft.SqlServer.Management.Common.IAlterable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain2" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Utility extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance implements class Microsoft.SqlServer.Management.Common.IAlterable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain2, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Utility.Utility" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Utility</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain2</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Facets.EvaluationMode(Microsoft.SqlServer.Management.Dmf.AutomatedPolicyEvaluationMode.CheckOnSchedule)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.LocalizedPropertyResources("Microsoft.SqlServer.Management.Utility.FacetSR", true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.PhysicalFacet</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.SqlServer.Management.Sdk.Sfc.LocalizableTypeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Das Hilfsprogrammobjekt ist das Stammobjekt für die Hierarchie.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Utility ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Der leere Konstruktor sollte nur aufgerufen werden, wenn die SqlStoreConnection separat aus dem Konstruktor festgelegt ist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Utility (Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">Die Verbindung mit dem Server, die das hilfsprogramminformationen gespeichert sind</param>
+        <summary>
+            Erstellt ein Objekt des Dienstprogramms mit einer Verbindung mit dem Server.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alter">
+      <MemberSignature Language="C#" Value="public void Alter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Alter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Alter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Speichert alle Änderungen, die auf dieses Objekt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Computers">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Utility.ComputerCollection Computers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Utility.ComputerCollection Computers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.Computers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Utility.Computer))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Utility.ComputerCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Eigenschaft, um die untergeordneten Elemente Sammlung von Computern abzurufen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Utility.Utility Connect (Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Utility.Utility Connect(class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Connect(Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Utility.Utility</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">Die Verbindung mit dem Server, die das hilfsprogramminformationen gespeichert sind</param>
+        <summary>
+            Diese Methode gibt ein Dienstprogramm-Objekt, das basierend auf dem die übergebene Verbindung zurück.  Diese Methode prüft außerdem, dass die Verbindung einen gültigen Ucp ist.
+            </summary>
+        <returns>Hilfsprogrammobjekt</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedBy">
+      <MemberSignature Language="C#" Value="public string CreatedBy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.CreatedBy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Data)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Dadurch wird die 'CreatedBy' Informationen.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityKey">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.CreateIdentityKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Geben Sie den Identitätsschlüssel, der entspricht diese Klasse zurück.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUtility">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Utility.Utility CreateUtility (string utilityName, Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection sqlStoreConnection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Utility.Utility CreateUtility(string utilityName, class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection sqlStoreConnection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.CreateUtility(System.String,Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Utility.Utility</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utilityName" Type="System.String" />
+        <Parameter Name="sqlStoreConnection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+      </Parameters>
+      <Docs>
+        <param name="utilityName">Der Name des Hilfsprogramms</param>
+        <param name="sqlStoreConnection">Die Sql-Verbindung mit dem Hilfsprogramm</param>
+        <summary>
+            Erstellt ein neues Dienstprogramm auf Grundlage des Serverkontexts des angegebenen
+            </summary>
+        <returns>Hilfsprogrammobjekt</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUtility">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Utility.Utility CreateUtility (string utilityName, Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection sqlStoreConnection, string agentProxyAccount, Microsoft.SqlServer.Common.SqlSecureString agentProxyPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Utility.Utility CreateUtility(string utilityName, class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection sqlStoreConnection, string agentProxyAccount, class Microsoft.SqlServer.Common.SqlSecureString agentProxyPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.CreateUtility(System.String,Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection,System.String,Microsoft.SqlServer.Common.SqlSecureString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Utility.Utility</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="utilityName" Type="System.String" />
+        <Parameter Name="sqlStoreConnection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+        <Parameter Name="agentProxyAccount" Type="System.String" />
+        <Parameter Name="agentProxyPassword" Type="Microsoft.SqlServer.Common.SqlSecureString" />
+      </Parameters>
+      <Docs>
+        <param name="utilityName">Der Name des Hilfsprogramms</param>
+        <param name="sqlStoreConnection">Die Sql-Verbindung mit dem Hilfsprogramm</param>
+        <param name="agentProxyAccount">Das Agent-Proxykonto</param>
+        <param name="agentProxyPassword">Das Agent-Proxy-Kontokennwort</param>
+        <summary>
+            Erstellt ein neues Dienstprogramm basierend auf den angegebenen Kontext und Proxy Serverkontoinformationen
+            </summary>
+        <returns>Hilfsprogrammobjekt</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateCreated">
+      <MemberSignature Language="C#" Value="public DateTimeOffset DateCreated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset DateCreated" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DateCreated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.DmfIgnoreProperty</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Data)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Diese Eigenschaft gibt den Zeitpunkt der Erstellung des Hilfsprogramms.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacHealthyCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacHealthyCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacHealthyCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacHealthyCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacHealthyCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacManagementPendingCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacManagementPendingCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacManagementPendingCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacManagementPendingCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacManagementPendingCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacOnOverutilizedComputerCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacOnOverutilizedComputerCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacOnOverutilizedComputerCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacOnOverutilizedComputerCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacOnOverutilizedComputerCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacOnUnderutilizedComputerCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacOnUnderutilizedComputerCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacOnUnderutilizedComputerCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacOnUnderutilizedComputerCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacOnUnderutilizedComputerCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacOverutilizedCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacOverutilizedCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacOverutilizedCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacOverutilizedCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacOverutilizedCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacs">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Utility.DeployedDacCollection DeployedDacs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Utility.DeployedDacCollection DeployedDacs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Utility.DeployedDac))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Utility.DeployedDacCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die SFC-Auflistung der DeployedDac-Objekte
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacUnderutilizedCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacUnderutilizedCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacUnderutilizedCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacUnderutilizedCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacUnderutilizedCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacUnhealthyCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacUnhealthyCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacUnhealthyCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacUnhealthyCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacUnhealthyCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacWithFilesOnOverutilizedVolumeCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacWithFilesOnOverutilizedVolumeCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacWithFilesOnOverutilizedVolumeCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacWithFilesOnOverutilizedVolumeCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacWithFilesOnOverutilizedVolumeCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacWithFilesOnUnderutilizedVolumeCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacWithFilesOnUnderutilizedVolumeCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacWithFilesOnUnderutilizedVolumeCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacWithFilesOnUnderutilizedVolumeCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacWithFilesOnUnderutilizedVolumeCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacWithOverutilizedFileCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacWithOverutilizedFileCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacWithOverutilizedFileCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacWithOverutilizedFileCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacWithOverutilizedFileCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacWithOverutilizedProcessorCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacWithOverutilizedProcessorCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacWithOverutilizedProcessorCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacWithOverutilizedProcessorCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacWithOverutilizedProcessorCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacWithUnderutilizedFileCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacWithUnderutilizedFileCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacWithUnderutilizedFileCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacWithUnderutilizedFileCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacWithUnderutilizedFileCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeployedDacWithUnderutilizedProcessorCount">
+      <MemberSignature Language="C#" Value="public int DeployedDacWithUnderutilizedProcessorCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeployedDacWithUnderutilizedProcessorCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.DeployedDacWithUnderutilizedProcessorCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            DeployedDacWithUnderutilizedProcessorCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Diese Eigenschaft beschreibt das Hilfsprogramm. Dies ist eine optionale Eigenschaft.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnrollInstance">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Utility.ManagedInstance EnrollInstance (Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection sqlStoreConnection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Utility.ManagedInstance EnrollInstance(class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection sqlStoreConnection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.EnrollInstance(Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Utility.ManagedInstance</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlStoreConnection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+      </Parameters>
+      <Docs>
+        <param name="sqlStoreConnection">Die Sql-Verbindung für die Instanz</param>
+        <summary>
+            Registrieren einer Sql Server-Instanz das Hilfsprogramm
+            </summary>
+        <returns>Verwalteten Instanzobjekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnrollInstance">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Utility.ManagedInstance EnrollInstance (Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection sqlStoreConnection, string agentProxyAccount, Microsoft.SqlServer.Common.SqlSecureString agentProxyPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Utility.ManagedInstance EnrollInstance(class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection sqlStoreConnection, string agentProxyAccount, class Microsoft.SqlServer.Common.SqlSecureString agentProxyPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.EnrollInstance(Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection,System.String,Microsoft.SqlServer.Common.SqlSecureString)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Utility.ManagedInstance</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sqlStoreConnection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+        <Parameter Name="agentProxyAccount" Type="System.String" />
+        <Parameter Name="agentProxyPassword" Type="Microsoft.SqlServer.Common.SqlSecureString" />
+      </Parameters>
+      <Docs>
+        <param name="sqlStoreConnection">Die Sql-Verbindung für die Instanz</param>
+        <param name="agentProxyAccount">Das Agent-Proxykonto</param>
+        <param name="agentProxyPassword">Das Agent-Proxy-Kontokennwort</param>
+        <summary>
+            Registrieren einer Sql Server-Instanz in das Hilfsprogramm mit bereitgestellten Proxykontoinformationen
+            </summary>
+        <returns>Verwalteten Instanzobjekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCollection">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection (string elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection(string elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.GetChildCollection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">
+        </param>
+        <summary>
+            Gibt die Auflistung, die mit dem Elementtyp anfallen.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLoginUtilityReader">
+      <MemberSignature Language="C#" Value="public static bool IsLoginUtilityReader (Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection storeConnection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLoginUtilityReader(class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection storeConnection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.IsLoginUtilityReader(Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="storeConnection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+      </Parameters>
+      <Docs>
+        <param name="storeConnection">Verbindung mit dem Steuerungspunkt</param>
+        <summary>
+            Überprüft, ob die Verbindung verwendete Anmeldename Utility Reader-Rolle
+            </summary>
+        <returns>Gibt "true" zurück, wenn die Anmeldung Leserolle andernfalls "false" hat</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUtilityControlPoint">
+      <MemberSignature Language="C#" Value="public static bool IsUtilityControlPoint (Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection storeConnection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsUtilityControlPoint(class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection storeConnection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.IsUtilityControlPoint(Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="storeConnection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection" />
+      </Parameters>
+      <Docs>
+        <param name="storeConnection">
+        </param>
+        <summary>
+            Diese Methode wird verwendet, um sicherzustellen, dass ein Server mit einem Steuerungspunkt ist
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceHealthyCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceHealthyCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceHealthyCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceHealthyCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceHealthyCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceManagementPendingCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceManagementPendingCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceManagementPendingCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceManagementPendingCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceManagementPendingCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceOnOverutilizedComputerCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceOnOverutilizedComputerCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceOnOverutilizedComputerCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceOnOverutilizedComputerCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceOnOverutilizedComputerCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceOnUnderutilizedComputerCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceOnUnderutilizedComputerCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceOnUnderutilizedComputerCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceOnUnderutilizedComputerCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceOnUnderutilizedComputerCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceOverutilizedCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceOverutilizedCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceOverutilizedCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceOverutilizedCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceOverutilizedCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstances">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Utility.ManagedInstanceCollection ManagedInstances { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Utility.ManagedInstanceCollection ManagedInstances" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstances" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Utility.ManagedInstance))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Utility.ManagedInstanceCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Auflistung von unter hilfsprogrammdomäne ManagedInstance-Objekte
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceUnderutilizedCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceUnderutilizedCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceUnderutilizedCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceUnderutilizedCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceUnderutilizedCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceUnhealthyCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceUnhealthyCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceUnhealthyCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceUnhealthyCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceUnhealthyCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceWithFilesOnOverutilizedVolumeCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceWithFilesOnOverutilizedVolumeCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceWithFilesOnOverutilizedVolumeCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceWithFilesOnOverutilizedVolumeCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceWithFilesOnOverutilizedVolumeCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceWithFilesOnUnderutilizedVolumeCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceWithFilesOnUnderutilizedVolumeCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceWithFilesOnUnderutilizedVolumeCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceWithFilesOnUnderutilizedVolumeCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceWithFilesOnUnderutilizedVolumeCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceWithOverutilizedFileCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceWithOverutilizedFileCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceWithOverutilizedFileCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceWithOverutilizedFileCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceWithOverutilizedFileCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceWithOverutilizedProcessorCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceWithOverutilizedProcessorCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceWithOverutilizedProcessorCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceWithOverutilizedProcessorCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceWithOverutilizedProcessorCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceWithUnderutilizedFileCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceWithUnderutilizedFileCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceWithUnderutilizedFileCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceWithUnderutilizedFileCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceWithUnderutilizedFileCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedInstanceWithUnderutilizedProcessorCount">
+      <MemberSignature Language="C#" Value="public int ManagedInstanceWithUnderutilizedProcessorCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ManagedInstanceWithUnderutilizedProcessorCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.ManagedInstanceWithUnderutilizedProcessorCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            ManagedInstanceWithUnderutilizedProcessorCount-Eigenschaft
+            </summary>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MdwDatabaseName">
+      <MemberSignature Language="C#" Value="public string MdwDatabaseName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MdwDatabaseName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.MdwDatabaseName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Data)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der MDW-Datenbankname.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MdwRetentionLengthInDaysForDaysHistory">
+      <MemberSignature Language="C#" Value="public int MdwRetentionLengthInDaysForDaysHistory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MdwRetentionLengthInDaysForDaysHistory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.MdwRetentionLengthInDaysForDaysHistory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            MDW Beibehaltungsdauer in Tagen für die Verlaufstabelle, die pro Tag Dateneinträge enthält.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MdwRetentionLengthInDaysForHoursHistory">
+      <MemberSignature Language="C#" Value="public int MdwRetentionLengthInDaysForHoursHistory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MdwRetentionLengthInDaysForHoursHistory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.MdwRetentionLengthInDaysForHoursHistory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            MDW Beibehaltungsdauer in Tagen für die Verlaufstabelle, die pro Stunde Dateneinträge enthält.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MdwRetentionLengthInDaysForMinutesHistory">
+      <MemberSignature Language="C#" Value="public int MdwRetentionLengthInDaysForMinutesHistory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MdwRetentionLengthInDaysForMinutesHistory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.MdwRetentionLengthInDaysForMinutesHistory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            MDW Beibehaltungsdauer in Tagen für die Verlaufstabelle, die pro-15-Minuten-Dateneinträge enthält.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetExecutionEngine">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine ISfcDomain.GetExecutionEngine ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetExecutionEngine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetExecutionEngine" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetKey">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey ISfcDomain.GetKey (Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment urnFragment);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetKey(class Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment urnFragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetKey(Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urnFragment" Type="Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment" />
+      </Parameters>
+      <Docs>
+        <param name="urnFragment">
+        </param>
+        <summary>
+            Gibt das Urn-Fragment angegebene Schlüsselobjekt
+            </summary>
+        <returns>Sfckey-Element</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetType">
+      <MemberSignature Language="C#" Value="Type ISfcDomain.GetType (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetType(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetTypeMetadata">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata ISfcDomain.GetTypeMetadata (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetTypeMetadata(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetTypeMetadata(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.UseSfcStateManagement">
+      <MemberSignature Language="C#" Value="bool ISfcDomain.UseSfcStateManagement ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.UseSfcStateManagement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#UseSfcStateManagement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain2.GetUrnSkeletonsFromType">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.List&lt;string&gt; ISfcDomain2.GetUrnSkeletonsFromType (Type inputType);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;string&gt; Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain2.GetUrnSkeletonsFromType(class System.Type inputType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain2#GetUrnSkeletonsFromType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="inputType">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName">
+      <MemberSignature Language="C#" Value="string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#DomainInstanceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName">
+      <MemberSignature Language="C#" Value="string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#DomainName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.GetLogicalVersion">
+      <MemberSignature Language="C#" Value="int ISfcDomainLite.GetLogicalVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.GetLogicalVersion() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#GetLogicalVersion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt die logische Version der Domäne zurück.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#ConnectionContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Common.ISfcConnection ISfcHasConnection.GetConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#GetConnection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die aktuelle Verbindung für die Abfrage auf.
+Zurückgeben einer Verbindungs eine einzelne serielle Abfrage unterstützt und somit die Abfrage beenden muss, bevor eine andere beginnen kann.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Common.ISfcConnection ISfcHasConnection.GetConnection (Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#GetConnection(Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode" />
+      </Parameters>
+      <Docs>
+        <param name="mode">
+        </param>
+        <summary>
+            Ruft die aktuelle Verbindung für die Abfrage auf.
+Gibt eine Verbindung zurück, die je nach Anforderung entweder eine einzelne serielle Abfrage oder mehrere gleichzeitig geöffnete Abfragen unterstützt
+            </summary>
+        <returns>Die zu verwendende Verbindung, oder NULL, um den Cachemodus zu verwenden Im Cachemodus werden Verbindungsprobleme und Probleme mit dem Öffnen des Datenlesers vermieden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.SetConnection">
+      <MemberSignature Language="C#" Value="void ISfcHasConnection.SetConnection (Microsoft.SqlServer.Management.Common.ISfcConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.SetConnection(class Microsoft.SqlServer.Management.Common.ISfcConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#SetConnection(Microsoft.SqlServer.Management.Common.ISfcConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Common.ISfcConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">Muss hinzugefügt werden.</param>
+        <summary>
+            Legt die aktive Verbindung fest.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Name des Servers verbunden mit
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverUtilizationOccurenceFrequency">
+      <MemberSignature Language="C#" Value="public int OverUtilizationOccurenceFrequency { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 OverUtilizationOccurenceFrequency" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.OverUtilizationOccurenceFrequency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft / legt die Häufigkeit (in %) verwendet, um die Auslastung des Integritätsstatus für veränderliche Ressourcen (Prozessor-e/a usw.) über den angegebenen folgefensters berechnet
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverUtilizationTrailingWindow">
+      <MemberSignature Language="C#" Value="public int OverUtilizationTrailingWindow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 OverUtilizationTrailingWindow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.OverUtilizationTrailingWindow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft / legt folgefensters (in Stunden) verwendet, um die Auslastung des Integritätsstatus für veränderliche Ressourcen (Prozessor-e/a usw.) zu berechnen
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyStore">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.PolicyStore PolicyStore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.PolicyStore PolicyStore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.PolicyStore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.PolicyStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Den Richtlinienspeicher.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public override void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+             aktualisiert die Eigenschaften des Objekts, indem sie vom Server gelesen werden
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptAlter">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptAlter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptAlter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Utility.Utility.ScriptAlter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erzeugt ISfcScript bereit zur Ausführung 
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlStoreConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection SqlStoreConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection SqlStoreConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.SqlStoreConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Verbindung verwendet hilfsprogramminformationen-auffüllregel abgerufen werden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalStorageCapacity">
+      <MemberSignature Language="C#" Value="public double TotalStorageCapacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TotalStorageCapacity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.TotalStorageCapacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Gesamtspeicherkapazität des Hilfsprogramms
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalStorageUtilization">
+      <MemberSignature Language="C#" Value="public double TotalStorageUtilization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TotalStorageUtilization" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.TotalStorageUtilization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Menge an Speicherplatz, die derzeit vom Hilfsprogramm verwendet
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnderUtilizationOccurenceFrequency">
+      <MemberSignature Language="C#" Value="public int UnderUtilizationOccurenceFrequency { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 UnderUtilizationOccurenceFrequency" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.UnderUtilizationOccurenceFrequency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft / legt die Häufigkeit (in %) verwendet, um unter Nutzung des Integritätsstatus für veränderliche Ressourcen (Prozessor-e/a usw.) des angegebenen folgefensters berechnet
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnderUtilizationTrailingWindow">
+      <MemberSignature Language="C#" Value="public int UnderUtilizationTrailingWindow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 UnderUtilizationTrailingWindow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.UnderUtilizationTrailingWindow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft / legt folgefensters (in Stunden) verwendet, um unter Nutzung des Integritätsstatus für veränderliche Ressourcen (Prozessor-e/a usw.) zu berechnen
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UtilityName">
+      <MemberSignature Language="C#" Value="public string UtilityName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UtilityName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Utility.Utility.UtilityName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Data)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der angezeigte Name des Hilfsprogramms.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

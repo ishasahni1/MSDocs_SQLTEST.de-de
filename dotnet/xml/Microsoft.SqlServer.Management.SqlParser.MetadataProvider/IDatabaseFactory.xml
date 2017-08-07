@@ -1,0 +1,101 @@
+<Type Name="IDatabaseFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDatabaseFactory">
+  <TypeSignature Language="C#" Value="public interface IDatabaseFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDatabaseFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDatabaseFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden, die zum Erstellen von Datenbankobjekten verwendet werden.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabase Create (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase otherDatabase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabase Create(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase otherDatabase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDatabaseFactory.Create(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherDatabase" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />
+      </Parameters>
+      <Docs>
+        <param name="otherDatabase">Das zu klonende <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabase" /> Objekt, das einen Klon des angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" /> Objekt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabase" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabase Create (Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabase Create(class Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDatabaseFactory.Create(Microsoft.SqlServer.Management.SqlParser.Metadata.IServer,System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+      </Parameters>
+      <Docs>
+        <param name="server">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekt, das dem Datenbankobjekt übergeordnet ist.</param>
+        <param name="name">Der Name des Datenbankobjekts.</param>
+        <param name="collationInfo">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt, das vom Datenbankobjekt verwendet wird.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabase" />-Objekt, das zum angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekt gehört und über den angegebenen Namen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDatabase" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEmptyDatabase">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase CreateEmptyDatabase (Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name, Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo, bool isSystemObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase CreateEmptyDatabase(class Microsoft.SqlServer.Management.SqlParser.Metadata.IServer server, string name, class Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo collationInfo, bool isSystemObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IDatabaseFactory.CreateEmptyDatabase(Microsoft.SqlServer.Management.SqlParser.Metadata.IServer,System.String,Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="collationInfo" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />
+        <Parameter Name="isSystemObject" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="server">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekt, das dem Datenbankobjekt übergeordnet ist.</param>
+        <param name="name">Der Name des Datenbankobjekts.</param>
+        <param name="collationInfo">Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.CollationInfo" />-Objekt, das vom Datenbankobjekt verwendet wird.</param>
+        <param name="isSystemObject">
+          <c>true</c> to indicate that the empty database is a system object; otherwise, <c>false</c>.</param>
+        <summary>
+            Erstellt ein leeres <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" />-Objekt (alle Auflistungen sind leer).
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabase" /> Objekt.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

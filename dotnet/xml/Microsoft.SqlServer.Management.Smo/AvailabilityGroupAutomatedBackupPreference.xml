@@ -1,0 +1,115 @@
+<Type Name="AvailabilityGroupAutomatedBackupPreference" FullName="Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference">
+  <TypeSignature Language="C#" Value="public enum AvailabilityGroupAutomatedBackupPreference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AvailabilityGroupAutomatedBackupPreference extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SqlEnum</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreferenceConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Diese Enumeration gibt an, wie Replikate in der primären Rolle bei der Auswertung auf das gewünschte Replikat zur Ausführung einer Sicherung ausgewählt behandelt werden.  
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference None = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Replikate werden nicht aufgrund ihrer aktuellen Rolle bei der Sicherung bevorzugt. Bei der Auswahl der Replikate wird nur die Sicherungspriorität sowie der Online- und Verbindungszustand berücksichtigt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Primary">
+      <MemberSignature Language="C#" Value="Primary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference Primary = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference.Primary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sicherungen werden unabhängig von dessen Standort ausschließlich auf dem primären Replikat ausgeführt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Secondary">
+      <MemberSignature Language="C#" Value="Secondary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference Secondary = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference.Secondary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sicherungen werden auf den sekundären Replikaten ausgeführt, außer das primäre Replikat ist das einzige Replikat, das online geschaltet ist.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondaryOnly">
+      <MemberSignature Language="C#" Value="SecondaryOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference SecondaryOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference.SecondaryOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sicherungen werden ausschließlich auf den sekundären Replikaten ausgeführt. Wenn keine sekundären Replikate online sind, findet keine Sicherung statt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference Unknown = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AvailabilityGroupAutomatedBackupPreference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Voreinstellung für automatisierte Sicherungen ist unbekannt. Das Replikat kann nicht in der Lage, für die Kommunikation mit dem Cluster oder Quorum möglicherweise nicht über die Windows Server Failover Cluster festgelegt werden.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,381 @@
+<Type Name="ManagedForEachEnumeratorWrapper" FullName="Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper">
+  <TypeSignature Language="C#" Value="public sealed class ManagedForEachEnumeratorWrapper : Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentPersist130, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSForEachEnumerator100, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSManagedForEachEnumeratorWrapper100, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectVersionUpdate100" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManagedForEachEnumeratorWrapper extends System.Object implements class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentPersist100, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentPersist130, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSForEachEnumerator100, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSManagedForEachEnumeratorWrapper100, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectVersionUpdate100" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSComponentPersist130</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSForEachEnumerator100</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSManagedForEachEnumeratorWrapper100</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectVersionUpdate100</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("52628E57-9DDB-4783-A937-4B415CE91167")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ProgId("")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt den Wrapper für den verwalteten For Each-Enumerator dar. Diese Klasse kann nicht vererbt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagedForEachEnumeratorWrapper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUpdate">
+      <MemberSignature Language="C#" Value="public bool CanUpdate (string CreationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanUpdate(string CreationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.CanUpdate(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="CreationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="CreationName">Der Erstellungsname.</param>
+        <summary>Gibt an, ob der Enumerator aktualisiert werden kann. </summary>
+        <returns>True, wenn der Enumerator aktualisiert werden kann. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionEnumerator">
+      <MemberSignature Language="C#" Value="public bool CollectionEnumerator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CollectionEnumerator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.CollectionEnumerator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Auflistungsenumerator ab oder legt ihn fest.</summary>
+        <value>Der Auflistungsenumerator.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public object GetEnumerator (Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100 connections, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100 variableDispenser, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 events, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogging100 log);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetEnumerator(class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100 connections, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100 variableDispenser, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 events, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogging100 log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.GetEnumerator(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogging100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogging100" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Der Satz von Verbindungen.</param>
+        <param name="variableDispenser">Der VariableDispenser.</param>
+        <param name="events">Die Ereignisse.</param>
+        <param name="log">Das Protokoll.</param>
+        <summary>Ruft den Enumerator ab.</summary>
+        <returns>Der Enumerator.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSite">
+      <MemberSignature Language="C#" Value="public int GetSite (ref Guid riid, out object ppvSite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetSite(valuetype System.Guid riid, object ppvSite) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.GetSite(System.Guid@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="ppvSite" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="riid">Der Bezeichner.</param>
+        <param name="ppvSite">Die Site.</param>
+        <summary>Ruft die Site für den Enumeratorwrapper ab.</summary>
+        <returns>Die Site.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeForEachEnumerator">
+      <MemberSignature Language="C#" Value="public void InitializeForEachEnumerator (Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100 connections, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 events, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectReferenceTracker100 refTracker);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeForEachEnumerator(class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100 connections, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 events, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectReferenceTracker100 refTracker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.InitializeForEachEnumerator(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectReferenceTracker100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" />
+        <Parameter Name="refTracker" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSObjectReferenceTracker100" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Die Verbindungen.</param>
+        <param name="events">Die Ereignisse.</param>
+        <param name="refTracker">Die Verweisnachverfolgung.</param>
+        <summary>Initialisiert den For Each-Enumerator.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (object elementNode, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(object elementNode, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.LoadFromXML(System.Object,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementNode" Type="System.Object" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" />
+      </Parameters>
+      <Docs>
+        <param name="elementNode">Der zu ladende Knoten.</param>
+        <param name="events">Das Ereignis.</param>
+        <summary>Lädt einen Elementknoten aus einer XML-Datei.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedForEachEnumeratorQualifiedName">
+      <MemberSignature Language="C#" Value="public string ManagedForEachEnumeratorQualifiedName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ManagedForEachEnumeratorQualifiedName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.ManagedForEachEnumeratorQualifiedName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Enumerators ab.</summary>
+        <value>Der Name des Enumerators.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAndUpdateVersionToXML">
+      <MemberSignature Language="C#" Value="public void SaveAndUpdateVersionToXML (object doc, Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSTargetServerVersion newVersion, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveAndUpdateVersionToXML(object doc, valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSTargetServerVersion newVersion, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.SaveAndUpdateVersionToXML(System.Object,Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSTargetServerVersion,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Object" />
+        <Parameter Name="newVersion" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSTargetServerVersion" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" />
+      </Parameters>
+      <Docs>
+        <param name="doc">
+        </param>
+        <param name="newVersion">
+        </param>
+        <param name="events">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (object doc, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(object doc, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.SaveToXML(System.Object,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Object" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das zu speichernde Dokument.</param>
+        <param name="events">Das Ereignis.</param>
+        <summary>Speichert ein Dokumentobjekt in XML.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetManagedForEachEnumerator">
+      <MemberSignature Language="C#" Value="public void SetManagedForEachEnumerator (string fullyQualifiedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetManagedForEachEnumerator(string fullyQualifiedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.SetManagedForEachEnumerator(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fullyQualifiedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fullyQualifiedName">Der vollqualifizierte Name.</param>
+        <summary>Legt den verwalteten For Each-Enumerator fest.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSite">
+      <MemberSignature Language="C#" Value="public void SetSite (object pUnkSite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSite(object pUnkSite) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.SetSite(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pUnkSite" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pUnkSite">Die festzulegende Site.</param>
+        <summary>Legt die pUnk-Site fest.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public void Update (ref string ObjectXml);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Update(string ObjectXml) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.Update(System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ObjectXml" Type="System.String&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ObjectXml">Das zu aktualisierende XML-Objekt.</param>
+        <summary>Aktualisiert das XML-Objekt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSExecResult Validate (Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100 connections, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100 variableDispenser, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 infoEvents, Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogging100 log);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSExecResult Validate(class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100 connections, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100 variableDispenser, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100 infoEvents, class Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogging100 log) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.Validate(Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100,Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogging100)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Wrapper.DTSExecResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connections" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSConnections100" />
+        <Parameter Name="variableDispenser" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSVariableDispenser100" />
+        <Parameter Name="infoEvents" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSInfoEvents100" />
+        <Parameter Name="log" Type="Microsoft.SqlServer.Dts.Runtime.Wrapper.IDTSLogging100" />
+      </Parameters>
+      <Docs>
+        <param name="connections">Die Verbindungen.</param>
+        <param name="variableDispenser">Der VariableDispenser.</param>
+        <param name="infoEvents">Die Ereignisinformationen.</param>
+        <param name="log">Das Protokoll.</param>
+        <summary>Überprüft den Enumeratorwrapper.</summary>
+        <returns>Das überprüfte Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public int Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Version des Enumerators ab.</summary>
+        <value>Die Version des Enumerators.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WrappedForEachEnumerator">
+      <MemberSignature Language="C#" Value="public object WrappedForEachEnumerator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object WrappedForEachEnumerator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.ManagedForEachEnumeratorWrapper.WrappedForEachEnumerator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den umschlossenen For Each-Enumerator ab oder legt ihn fest.</summary>
+        <value>Der Enumerator.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

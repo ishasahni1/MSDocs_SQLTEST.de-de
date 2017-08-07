@@ -1,0 +1,141 @@
+<Type Name="ExpressionNodeGroup" FullName="Microsoft.SqlServer.Management.Dmf.ExpressionNodeGroup">
+  <TypeSignature Language="C#" Value="public sealed class ExpressionNodeGroup : Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionNodeGroup extends Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Dmf.ExpressionNodeGroup" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dmf</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Dmf.ExpressionNodeChildren</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Knoten, die Darstellung einer Gruppe - Knoten in Klammern
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpressionNodeGroup (Microsoft.SqlServer.Management.Dmf.ExpressionNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Dmf.ExpressionNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeGroup.#ctor(Microsoft.SqlServer.Management.Dmf.ExpressionNode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="node" Type="Microsoft.SqlServer.Management.Dmf.ExpressionNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">Knoten "Gruppe"</param>
+        <summary>
+            Gruppenknoten erstellt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepClone">
+      <MemberSignature Language="C#" Value="public override Microsoft.SqlServer.Management.Dmf.ExpressionNode DeepClone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.SqlServer.Management.Dmf.ExpressionNode DeepClone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeGroup.DeepClone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.ExpressionNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Tiefen Klon des aktuellen Knotens.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeProperties">
+      <MemberSignature Language="C#" Value="protected override void DeserializeProperties (System.Xml.XmlReader xr, bool includeResult);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeserializeProperties(class System.Xml.XmlReader xr, bool includeResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeGroup.DeserializeProperties(System.Xml.XmlReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xr" Type="System.Xml.XmlReader" />
+        <Parameter Name="includeResult" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xr">XmlReader - müssen Leerzeichen ignorieren</param>
+        <param name="includeResult">
+        </param>
+        <summary>
+            Deserialisiert Eigenschaften des Knotens
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoConvertToFilterNode">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode DoConvertToFilterNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode DoConvertToFilterNode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeGroup.DoConvertToFilterNode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.FilterNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Konvertiert Gruppe FilterNodeGrop
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.ExpressionNode Group { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.ExpressionNode Group" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.ExpressionNodeGroup.Group" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.ExpressionNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gruppenknoten - Knoten in Paretheses - normalerweise operator
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperties">
+      <MemberSignature Language="C#" Value="protected override void SetProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.ExpressionNodeGroup.SetProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

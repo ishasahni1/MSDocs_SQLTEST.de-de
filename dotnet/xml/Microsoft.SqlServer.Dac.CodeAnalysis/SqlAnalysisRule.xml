@@ -1,0 +1,77 @@
+<Type Name="SqlAnalysisRule" FullName="Microsoft.SqlServer.Dac.CodeAnalysis.SqlAnalysisRule">
+  <TypeSignature Language="C#" Value="public abstract class SqlAnalysisRule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SqlAnalysisRule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.CodeAnalysis.SqlAnalysisRule" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Die Basisklasse für alle Typen von Analyseregeln. Eine Analyseregel analysiert ein Modell bzw. ein Modellelement und gibt eine Liste der bei der Analyse festgestellten Probleme zurück. 
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SqlAnalysisRule ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.SqlAnalysisRule.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Analyze">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem&gt; Analyze (Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext ruleExecutionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem&gt; Analyze(class Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext ruleExecutionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.CodeAnalysis.SqlAnalysisRule.Analyze(Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleProblem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ruleExecutionContext" Type="Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="ruleExecutionContext">Enthält das Schemamodell und das zu analysierende Modellelement</param>
+        <summary>
+            Führt die Analyse und gibt eine Liste der erkannten Probleme zurück
+            </summary>
+        <returns>Die von der Regel im angegebenen Element erkannten Probleme</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedElementTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Model.ModelTypeClass&gt; SupportedElementTypes { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.Dac.Model.ModelTypeClass&gt; SupportedElementTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.CodeAnalysis.SqlAnalysisRule.SupportedElementTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.Dac.Model.ModelTypeClass&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Von dieser Regel überprüften Elementtypen. Erforderlich, wenn der Regelbereich ist <see cref="F:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleScope.Element" />, für <see cref="F:Microsoft.SqlServer.Dac.CodeAnalysis.SqlRuleScope.Model" /> im Bereich einer Regeln ist dies nicht relevant
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

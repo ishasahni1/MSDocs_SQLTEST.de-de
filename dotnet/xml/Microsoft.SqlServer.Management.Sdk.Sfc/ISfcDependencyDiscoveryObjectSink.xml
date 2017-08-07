@@ -1,0 +1,132 @@
+<Type Name="ISfcDependencyDiscoveryObjectSink" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink">
+  <TypeSignature Language="C#" Value="public interface ISfcDependencyDiscoveryObjectSink" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISfcDependencyDiscoveryObjectSink" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Die ISfcDependencyDiscoveryObjectSink-Schnittstelle wird von der SfcDependencyEngine-Klasse implementiert. Es wird als Senke Beziehungen in dem Diagramm hinzuzufügende SfcInstance-Objekte übergeben. Beachten Sie, dass die Zielobjekte, die die Schnittstelle empfangen immer eine Seite der Beziehung-Tupel, beschränken daher zusätzlich zum direkten-bezogenen Beziehungen.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyAction Action" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Aktion für die Ermittlung dieser abhängigkeitssitzung verarbeitet wird. Diese kann Einfluss darauf haben, welche Beziehungen hinzugefügt werden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance targetObject, Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance targetObject, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink.Add(Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection,Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance,Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="direction" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection" />
+        <Parameter Name="targetObject" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+        <Parameter Name="relation" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation" />
+        <Parameter Name="discovered" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="direction">Muss hinzugefügt werden.</param>
+        <param name="targetObject">Muss hinzugefügt werden.</param>
+        <param name="relation">Muss hinzugefügt werden.</param>
+        <param name="discovered">Muss hinzugefügt werden.</param>
+        <summary>
+            Fügen Sie einen richtungsverweis aus diesem Objekt, auf das Zielobjekt.
+Der Beziehungstyp und ermittelten Status wird auf das Zielobjekt angewendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, System.Collections.IEnumerator targetObjects, Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, class System.Collections.IEnumerator targetObjects, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink.Add(Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection,System.Collections.IEnumerator,Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="direction" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection" />
+        <Parameter Name="targetObjects" Type="System.Collections.IEnumerator" />
+        <Parameter Name="relation" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation" />
+        <Parameter Name="discovered" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="direction">Muss hinzugefügt werden.</param>
+        <param name="targetObjects">Muss hinzugefügt werden.</param>
+        <param name="relation">Muss hinzugefügt werden.</param>
+        <param name="discovered">Muss hinzugefügt werden.</param>
+        <summary>
+            Fügen Sie einen richtungsverweis aus diesem Objekt zu jedem der Zielobjekte oder Schlüsselbunde.
+Der Beziehungstyp und ermittelten Status wird angewendet, um jedes Zielobjekt oder keychain-Wert hinzugefügt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Add&lt;T&gt; (Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, System.Collections.Generic.IEnumerable&lt;T&gt; targetObjects, Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered) where T : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add&lt;(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance) T&gt;(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection direction, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; targetObjects, valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation relation, bool discovered) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink.Add``1(Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection,System.Collections.Generic.IEnumerable{``0},Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="direction" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDirection" />
+        <Parameter Name="targetObjects" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="relation" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeRelation" />
+        <Parameter Name="discovered" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Muss hinzugefügt werden.</typeparam>
+        <param name="direction">Muss hinzugefügt werden.</param>
+        <param name="targetObjects">Muss hinzugefügt werden.</param>
+        <param name="relation">Muss hinzugefügt werden.</param>
+        <param name="discovered">Muss hinzugefügt werden.</param>
+        <summary>
+            Fügen Sie einen richtungsverweis aus diesem Objekt zu jedem der Zielobjekte oder Schlüsselbunde.
+Der Beziehungstyp und ermittelten Status wird angewendet, um jedes Zielobjekt oder keychain-Wert hinzugefügt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,156 @@
+<Type Name="SqlScriptGenerator" FullName="Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGenerator">
+  <TypeSignature Language="C#" Value="public abstract class SqlScriptGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SqlScriptGenerator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.TransactSql.ScriptDom</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            SQL-Skript-Generator.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SqlScriptGenerator (Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGeneratorOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGeneratorOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGenerator.#ctor(Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGeneratorOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGeneratorOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">Die Optionen.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGenerator" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateScript">
+      <MemberSignature Language="C#" Value="public void GenerateScript (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment scriptFragment, System.IO.TextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GenerateScript(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment scriptFragment, class System.IO.TextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGenerator.GenerateScript(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment,System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scriptFragment" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" />
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="scriptFragment">Das Fragment des Skripts zum Generieren von Token für</param>
+        <param name="writer">Ein TextWriter, um den Text zu schreiben</param>
+        <summary>
+            Generiert Text, die das angegebene Skriptfragment darstellt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateScript">
+      <MemberSignature Language="C#" Value="public void GenerateScript (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment scriptFragment, out string script);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GenerateScript(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment scriptFragment, string script) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGenerator.GenerateScript(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scriptFragment" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" />
+        <Parameter Name="script" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="scriptFragment">Das Skript für generieren Skriptfragment.</param>
+        <param name="script">Das generierte Skript</param>
+        <summary>
+            Füllt den Writer mit einem Skript mit dem scriptFragment auf.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateScript">
+      <MemberSignature Language="C#" Value="public void GenerateScript (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment scriptFragment, out string script, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; versioningErrors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GenerateScript(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment scriptFragment, string script, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; versioningErrors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGenerator.GenerateScript(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment,System.String@,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scriptFragment" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" />
+        <Parameter Name="script" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="versioningErrors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="scriptFragment">Das Skript für generieren Skriptfragment.</param>
+        <param name="script">Das generierte Skript</param>
+        <param name="versioningErrors">Das Modul typspezifische Fehlerliste.</param>
+        <summary>
+            Füllt den Writer mit einem Skript mit dem scriptFragment auf.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateTokens">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt; GenerateTokens (Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment scriptFragment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt; GenerateTokens(class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment scriptFragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGenerator.GenerateTokens(Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scriptFragment" Type="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment" />
+      </Parameters>
+      <Docs>
+        <param name="scriptFragment">Das Fragment des Skripts zum Generieren von Token für</param>
+        <summary>
+            Generiert eine Liste mit Token auf, das vom angegebenen Skriptfragment generierte Skript darstellen
+            </summary>
+        <returns>Ein Objekt, kann eine Liste mit Token auflisten</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGeneratorOptions Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGeneratorOptions Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGenerator.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.SqlScriptGeneratorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Optionen ab.
+            </summary>
+        <value>Die Optionen.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1440 @@
+<Type Name="PolicyStore" FullName="Microsoft.SqlServer.Management.Dmf.PolicyStore">
+  <TypeSignature Language="C#" Value="public sealed class PolicyStore : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, Microsoft.SqlServer.Management.Common.IAlterable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSerializableUpgrade, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcValidate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PolicyStore extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance implements class Microsoft.SqlServer.Management.Common.IAlterable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSerializableUpgrade, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcValidate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Dmf.PolicyStore" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dmf</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSerializableUpgrade</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcValidate</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.SqlServer.Management.Sdk.Sfc.LocalizableTypeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            PolicyStore-Objekts ist das Stammobjekt für die DMF-Hierarchie.
+            </summary>
+    <summary>
+            Dies ist die Klasse PolicyStore Teil nicht generiert.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyStore ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Nicht einmal aufgerufen, oder wenn Sie vergessen haben, festzulegende sqlstoreconnection-Objekt
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyStore (Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.#ctor(Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alter">
+      <MemberSignature Language="C#" Value="public void Alter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Alter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Alter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conditions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.ConditionCollection Conditions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.ConditionCollection Conditions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.Conditions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Dmf.Condition))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.ConditionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityKey">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.CreateIdentityKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePolicyFromFacet">
+      <MemberSignature Language="C#" Value="public void CreatePolicyFromFacet (Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target, string facetName, string policyName, string conditionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreatePolicyFromFacet(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target, string facetName, string policyName, string conditionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.CreatePolicyFromFacet(Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression" />
+        <Parameter Name="facetName" Type="System.String" />
+        <Parameter Name="policyName" Type="System.String" />
+        <Parameter Name="conditionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="target">
+        </param>
+        <param name="facetName">
+        </param>
+        <param name="policyName">
+        </param>
+        <param name="conditionName">
+        </param>
+        <summary>
+            Diese Methode wird ein Richtlinienobjekt gilt für das angegebene Ziel, und klicken Sie dann die Richtlinie hinzufügen, in einen permanenten Speicher instanziiert. Die Richtlinie bezieht sich auf eine Bedingung, deren Objekte ConditionExpression entsprechen den Eigenschaften des Ziels, wie durch das angegebene Facet zu dem Zeitpunkt zu sehen, wenn diese Methode aufgerufen wird. Sie können die neu erstellte Richtlinie über diese PolicyStore-Richtlinien [PolicyName] Auflistung zugreifen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePolicyFromFacet">
+      <MemberSignature Language="C#" Value="public void CreatePolicyFromFacet (Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target, string facetName, string policyName, string conditionName, System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreatePolicyFromFacet(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target, string facetName, string policyName, string conditionName, class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.CreatePolicyFromFacet(Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression,System.String,System.String,System.String,System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression" />
+        <Parameter Name="facetName" Type="System.String" />
+        <Parameter Name="policyName" Type="System.String" />
+        <Parameter Name="conditionName" Type="System.String" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="target">
+        </param>
+        <param name="facetName">
+        </param>
+        <param name="policyName">
+        </param>
+        <param name="conditionName">
+        </param>
+        <param name="writer">
+        </param>
+        <summary>
+            Diese Methode ein temporäres Richtlinienobjekt instanziiert und serialisiert diese dann über die angegebene "XmlWriter". Die Richtlinie bezieht sich auf eine Bedingung, deren Objekte ConditionExpression entsprechen den Eigenschaften des Ziels, wie durch das angegebene Facet zu dem Zeitpunkt zu sehen, wenn diese Methode aufgerufen wird.
+Dieses PolicyStore-Objekt wird durch diesen Aufruf nicht geändert werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePolicyFromFacet">
+      <MemberSignature Language="C#" Value="public void CreatePolicyFromFacet (object target, string facetName, string policyName, string conditionName, System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreatePolicyFromFacet(object target, string facetName, string policyName, string conditionName, class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.CreatePolicyFromFacet(System.Object,System.String,System.String,System.String,System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="facetName" Type="System.String" />
+        <Parameter Name="policyName" Type="System.String" />
+        <Parameter Name="conditionName" Type="System.String" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="target">
+        </param>
+        <param name="facetName">
+        </param>
+        <param name="policyName">
+        </param>
+        <param name="conditionName">
+        </param>
+        <param name="writer">
+        </param>
+        <summary>
+            Diese Methode wird ein Richtlinienobjekt gilt für das angegebene Ziel, und klicken Sie dann die Richtlinie hinzufügen, in einen permanenten Speicher instanziiert. Die Richtlinie bezieht sich auf eine Bedingung, deren Objekte ConditionExpression entsprechen den Eigenschaften des Ziels, wie durch das angegebene Facet zu dem Zeitpunkt zu sehen, wenn diese Methode aufgerufen wird. Sie können die neu erstellte Richtlinie über diese PolicyStore-Richtlinien [PolicyName] Auflistung zugreifen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializePolicy">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.Policy DeserializePolicy (System.Xml.XmlReader xmlReader, bool overwriteExistingPolicy, bool overwriteExistingCondition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Dmf.Policy DeserializePolicy(class System.Xml.XmlReader xmlReader, bool overwriteExistingPolicy, bool overwriteExistingCondition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.DeserializePolicy(System.Xml.XmlReader,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.Policy</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="overwriteExistingPolicy" Type="System.Boolean" />
+        <Parameter Name="overwriteExistingCondition" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xmlReader">Der XML-Reader zum Importieren aus.</param>
+        <param name="overwriteExistingPolicy">Bei "true", werden klicken Sie dann, wenn eine Richtlinie mit dem gleichen Namen bereits im Speicher vorhanden ist dann diese überschrieben.</param>
+        <param name="overwriteExistingCondition">Wenn "true", wenn jede Bedingung, die mit der Richtlinie zugeordnete entweder direkt oder über eine ' targetset ' bereits im Speicher vorhanden ist wird sie überschrieben.</param>
+        <summary>
+            Deserialisiert eine einzelne Richtlinie aus dem angegebenen XML-Reader. Der Reader muss zuvor von einer unterstützten Exportmethode erstellt werden.
+Die deserialisierte Richtlinie im Arbeitsspeicher nur vorhanden und muss in der PolicyStore auf dem Server beibehalten werden, es erstellt werden.
+            </summary>
+        <returns>Das Richtlinienobjekt nicht importiert. Wenn der XML-Reader nicht validiert werden, kann er eine Ausnahme ausgelöst.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Discover">
+      <MemberSignature Language="C#" Value="public override void Discover (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink sink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Discover(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink sink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Discover(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sink" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink" />
+      </Parameters>
+      <Docs>
+        <param name="sink">
+        </param>
+        <summary />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumApplicablePolicies">
+      <MemberSignature Language="C#" Value="public System.Data.DataTable EnumApplicablePolicies (Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable EnumApplicablePolicies(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumApplicablePolicies(Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression" />
+      </Parameters>
+      <Docs>
+        <param name="target">
+        </param>
+        <summary>
+            Gibt eine DataTable mit den Richtlinien, die für den gleichen Zieltyp wie des angegebenen Ziels gelten. Das heißt, eine Zieldatenbank dann Richtlinien angegeben ist, die für die Datenbank gelten, werden Tabelle sowie alle anderen Typen in der Datenbank angesehen.
+            </summary>
+        <returns>Ein DataTable-Objekt, das die Richtlinien enthält.
+Das Schema für diesen lautet wie folgt: Spaltentyp                
+            Namenszeichenfolge              
+            PolicyCategory Zeichenfolge effektive Bool AutomatedPolicyEvaluationMode Enum PolicyEffectiveState Enum PolicyHealthState Enum LastExecutionTime DateTime
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumApplicablePolicyCategories">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Dmf.PolicyCategoryInformation&gt; EnumApplicablePolicyCategories (Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Management.Dmf.PolicyCategoryInformation&gt; EnumApplicablePolicyCategories(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumApplicablePolicyCategories(Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Dmf.PolicyCategoryInformation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression" />
+      </Parameters>
+      <Docs>
+        <param name="target">
+        </param>
+        <summary>
+            Gibt eine schreibgeschützte Auflistung, die, enthält jede Richtlinienkategorie, die für jede der Richtlinien in dieser Kategorie und ein Flag wiederholt wird, wenn das Ziel aller Datenbank und Datenbank descendant-Richtlinien in der Kategorie und den Ausführungsmodus der Richtlinie die Kategorie abonniert. Hinweis: Diese Methode gilt derzeit nur für datenbankziele.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumConditionsOnFacet">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection EnumConditionsOnFacet (string facet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection EnumConditionsOnFacet(string facet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumConditionsOnFacet(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="facet" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="facet">
+        </param>
+        <summary>
+            Auflisten von Bedingungen, die dem angegebenen Facet zugeordnet
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumConditionsOnFacet">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection EnumConditionsOnFacet (string facet, Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumerationMode enumerationMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection EnumConditionsOnFacet(string facet, valuetype Microsoft.SqlServer.Management.Dmf.PolicyStore/EnumerationMode enumerationMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumConditionsOnFacet(System.String,Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumerationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="facet" Type="System.String" />
+        <Parameter Name="enumerationMode" Type="Microsoft.SqlServer.Management.Dmf.PolicyStore+EnumerationMode" />
+      </Parameters>
+      <Docs>
+        <param name="facet">
+        </param>
+        <param name="enumerationMode">
+        </param>
+        <summary>
+            Auflisten von Bedingungen, die IsSystemObject Flag berücksichtigt das angegebene Facet zugeordnet
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumDomainFacets">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Dmf.FacetInfoCollection EnumDomainFacets (string[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Dmf.FacetInfoCollection EnumDomainFacets(string[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumDomainFacets(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.FacetInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="args">
+        </param>
+        <summary>
+            Gibt eine Auflistung von FacetInfo für aufgelisteten Domänen zurück.
+Übergeben Sie String.Empty für Facets, die nicht zugeordnete SFC-Domäne
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumPoliciesOnFacet">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection EnumPoliciesOnFacet (string facet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection EnumPoliciesOnFacet(string facet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumPoliciesOnFacet(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="facet" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="facet">
+        </param>
+        <summary>
+            Auflisten von Richtlinien, die dem angegebenen Facet zugeordnet
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumPoliciesOnFacet">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection EnumPoliciesOnFacet (string facet, Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumerationMode enumerationMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection EnumPoliciesOnFacet(string facet, valuetype Microsoft.SqlServer.Management.Dmf.PolicyStore/EnumerationMode enumerationMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumPoliciesOnFacet(System.String,Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumerationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="facet" Type="System.String" />
+        <Parameter Name="enumerationMode" Type="Microsoft.SqlServer.Management.Dmf.PolicyStore+EnumerationMode" />
+      </Parameters>
+      <Docs>
+        <param name="facet">
+        </param>
+        <param name="enumerationMode">
+        </param>
+        <summary>
+            Auflisten von Richtlinien, die IsSystemObject Flag berücksichtigt das angegebene Facet zugeordnet
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumPolicyCategories">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Dmf.PolicyCategoryInformation&gt; EnumPolicyCategories ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.SqlServer.Management.Dmf.PolicyCategoryInformation&gt; EnumPolicyCategories() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumPolicyCategories" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.SqlServer.Management.Dmf.PolicyCategoryInformation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt eine schreibgeschützte Auflistung, die mit allen von der Richtlinienkategorien zurück.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumRootConditions">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection EnumRootConditions (Type rootType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection EnumRootConditions(class System.Type rootType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumRootConditions(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="rootType">
+        </param>
+        <summary>
+            Enmerate stammbedingungen für einen bestimmten Typ
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumRootFacets">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Dmf.FacetInfoCollection EnumRootFacets (Type rootType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Dmf.FacetInfoCollection EnumRootFacets(class System.Type rootType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumRootFacets(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.FacetInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="rootType">Muss hinzugefügt werden.</param>
+        <summary>
+            Gibt eine Auflistung von Stamm facets
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumTargetSetConditions">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection EnumTargetSetConditions (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection EnumTargetSetConditions(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumTargetSetConditions(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+        </param>
+        <summary>
+            Auflisten von Bedingungen für einen bestimmten Typ, der in ' targetset ' Filter verwendet werden können
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumTargetSetConditions">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection EnumTargetSetConditions (Type type, Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumerationMode enumerationMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection EnumTargetSetConditions(class System.Type type, valuetype Microsoft.SqlServer.Management.Dmf.PolicyStore/EnumerationMode enumerationMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumTargetSetConditions(System.Type,Microsoft.SqlServer.Management.Dmf.PolicyStore.EnumerationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="enumerationMode" Type="Microsoft.SqlServer.Management.Dmf.PolicyStore+EnumerationMode" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+        </param>
+        <param name="enumerationMode">
+        </param>
+        <summary>
+            Auflisten von Bedingungen für einen bestimmten Typ, der in ' targetset '-Filter verwendet werden können berücksichtigt IsSystemObject-flag
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EraseSystemHealthPhantomRecords">
+      <MemberSignature Language="C#" Value="public void EraseSystemHealthPhantomRecords ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EraseSystemHealthPhantomRecords() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.EraseSystemHealthPhantomRecords" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Diese Funktion löscht die Phantomdatensätze aus der Systemtabelle für die Integrität von alle Verstöße durchlaufen, und überprüfen, dass sie ein vorhandenes Objekt entsprechen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Facets">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Dmf.FacetInfoCollection Facets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.SqlServer.Management.Dmf.FacetInfoCollection Facets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.Facets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.FacetInfoCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Eine Auflistung von FacetInfo zurückzugeben.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAggregatedHealthState">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.PolicyHealthState GetAggregatedHealthState (Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.SqlServer.Management.Dmf.PolicyHealthState GetAggregatedHealthState(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.GetAggregatedHealthState(Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.PolicyHealthState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression" />
+      </Parameters>
+      <Docs>
+        <param name="target">
+        </param>
+        <summary>
+            Gibt die aggregierte Integritätsinformationen von der Zielabfrage, die ein einzelnes Objekt oder eine Auflistung von Objekten beschreiben kann.
+            </summary>
+        <returns>Es ist ein Verstoß für dieses Objekt oder eine der untergeordneten gibt wir kritisch ist, andernfalls Unknown zurück.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCollection">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection (string elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection(string elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.GetChildCollection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HistoryRetentionInDays">
+      <MemberSignature Language="C#" Value="public int HistoryRetentionInDays { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HistoryRetentionInDays" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.HistoryRetentionInDays" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityKey">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.PolicyStore.Key IdentityKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.PolicyStore/Key IdentityKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.IdentityKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.PolicyStore+Key</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportPolicy">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.Policy ImportPolicy (System.Xml.XmlReader xmlReader, Microsoft.SqlServer.Management.Dmf.ImportPolicyEnabledState importEnabledState, bool overwriteExistingPolicy, bool overwriteExistingCondition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Dmf.Policy ImportPolicy(class System.Xml.XmlReader xmlReader, valuetype Microsoft.SqlServer.Management.Dmf.ImportPolicyEnabledState importEnabledState, bool overwriteExistingPolicy, bool overwriteExistingCondition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.ImportPolicy(System.Xml.XmlReader,Microsoft.SqlServer.Management.Dmf.ImportPolicyEnabledState,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.Policy</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="importEnabledState" Type="Microsoft.SqlServer.Management.Dmf.ImportPolicyEnabledState" />
+        <Parameter Name="overwriteExistingPolicy" Type="System.Boolean" />
+        <Parameter Name="overwriteExistingCondition" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xmlReader">Der XML-Reader zum Importieren aus.</param>
+        <param name="importEnabledState">Die Policy.Enabled Flags werden festgelegt, auf der Grundlage dieses Enum-Wert. Die Ausnahme bildet Ausführungsmodus der Richtlinie auf den Zeitplan zu überprüfen, doch es gibt keine Informationen zum Zeitplan für die Richtlinie auf "None" in diesem Fall die Richtlinie automatisch deaktiviert ist und dessen Ausführungsmodus zurückgesetzt zugeordnet.</param>
+        <param name="overwriteExistingPolicy">Bei "true", werden klicken Sie dann, wenn eine Richtlinie mit dem gleichen Namen bereits im Speicher vorhanden ist dann diese überschrieben.</param>
+        <param name="overwriteExistingCondition">Wenn "true", wenn jede Bedingung, die mit der Richtlinie verknüpft, entweder direkt oder über eine ' targetset sind ' bereits im Speicher vorhanden ist wird sie überschrieben. Andernfalls die vorhandene Bedingung bleibt jedoch unverändert, und die importierte Richtlinie verwendet die bereits vorhandene Bedingung statt der Version in der XmlReader.</param>
+        <summary>
+            Importieren Sie eine einzelne Richtlinie aus dem angegebenen XML-Reader. Der Reader muss zuvor von einer unterstützten Exportmethode erstellt werden.
+Die importierte Richtlinie wird auch in der PolicyStore auf dem Server erstellt.
+            </summary>
+        <returns>Das Richtlinienobjekt nicht importiert. Es wird eine Ausnahme auszulösen, wenn der XML-Reader nicht ordnungsgemäß überprüft werden kann, oder nicht vorhanden ist.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogOnSuccess">
+      <MemberSignature Language="C#" Value="public bool LogOnSuccess { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LogOnSuccess" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.LogOnSuccess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkSystemObject">
+      <MemberSignature Language="C#" Value="public void MarkSystemObject (object obj, bool marker);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MarkSystemObject(object obj, bool marker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.MarkSystemObject(System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="marker" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">
+        </param>
+        <param name="marker">
+        </param>
+        <summary>
+            Legt System-Flag auf Objekte im Speicher
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetExecutionEngine">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine ISfcDomain.GetExecutionEngine ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetExecutionEngine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetExecutionEngine" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcExecutionEngine</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetKey">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey ISfcDomain.GetKey (Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment urnFragment);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetKey(class Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment urnFragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetKey(Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urnFragment" Type="Microsoft.SqlServer.Management.Sdk.Sfc.IUrnFragment" />
+      </Parameters>
+      <Docs>
+        <param name="urnFragment">
+        </param>
+        <summary>
+            Gibt das Urn-Fragment angegebene Schlüsselobjekt
+            </summary>
+        <returns>Sfckey-Element</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetType">
+      <MemberSignature Language="C#" Value="Type ISfcDomain.GetType (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetType(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">
+        </param>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetTypeMetadata">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata ISfcDomain.GetTypeMetadata (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.GetTypeMetadata(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#GetTypeMetadata(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcTypeMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.UseSfcStateManagement">
+      <MemberSignature Language="C#" Value="bool ISfcDomain.UseSfcStateManagement ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomain.UseSfcStateManagement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomain#UseSfcStateManagement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName">
+      <MemberSignature Language="C#" Value="string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainInstanceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#DomainInstanceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName">
+      <MemberSignature Language="C#" Value="string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.DomainName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#DomainName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.GetLogicalVersion">
+      <MemberSignature Language="C#" Value="int ISfcDomainLite.GetLogicalVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDomainLite.GetLogicalVersion() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDomainLite#GetLogicalVersion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt die logische Version der Domäne
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.ConnectionContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#ConnectionContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcConnectionContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Common.ISfcConnection ISfcHasConnection.GetConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#GetConnection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die aktuelle Verbindung für die Abfrage auf.
+Zurückgeben einer Verbindungs eine einzelne serielle Abfrage unterstützt und somit die Abfrage beenden muss, bevor eine andere beginnen kann.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Common.ISfcConnection ISfcHasConnection.GetConnection (Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Common.ISfcConnection Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.GetConnection(valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#GetConnection(Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ISfcConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectQueryMode" />
+      </Parameters>
+      <Docs>
+        <param name="mode">
+        </param>
+        <summary>
+            Ruft die aktuelle Verbindung für die Abfrage auf.
+Gibt eine Verbindung zurück, die je nach Anforderung entweder eine einzelne serielle Abfrage oder mehrere gleichzeitig geöffnete Abfragen unterstützt
+            </summary>
+        <returns>Die zu verwendende Verbindung, oder NULL, um den Cachemodus zu verwenden Im Cachemodus werden Verbindungsprobleme und Probleme mit dem Öffnen des Datenlesers vermieden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.SetConnection">
+      <MemberSignature Language="C#" Value="void ISfcHasConnection.SetConnection (Microsoft.SqlServer.Management.Common.ISfcConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcHasConnection.SetConnection(class Microsoft.SqlServer.Management.Common.ISfcConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcHasConnection#SetConnection(Microsoft.SqlServer.Management.Common.ISfcConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Diagnostics.STrace.STraceConfiguration(SkipAutoTrace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="Microsoft.SqlServer.Management.Common.ISfcConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">Muss hinzugefügt werden.</param>
+        <summary>
+            Legt die aktive Verbindung fest.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcValidate.Validate">
+      <MemberSignature Language="C#" Value="Microsoft.SqlServer.Management.Sdk.Sfc.ValidationState ISfcValidate.Validate (string validationMethod, object[] arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ValidationState Microsoft.SqlServer.Management.Sdk.Sfc.ISfcValidate.Validate(string validationMethod, object[] arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcValidate#Validate(System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ValidationState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validationMethod" Type="System.String" />
+        <Parameter Name="arguments" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="validationMethod">
+        </param>
+        <param name="arguments">
+        </param>
+        <summary>
+            ISfcValidate-Implementierung für Gruppenrichtlinien
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Name des Servers verbunden mit
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectSets">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.ObjectSetCollection ObjectSets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.ObjectSetCollection ObjectSets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.ObjectSets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Dmf.ObjectSet))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.ObjectSetCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Policies">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.PolicyCollection Policies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.PolicyCollection Policies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.Policies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Dmf.Policy))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.PolicyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyCategories">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.PolicyCategoryCollection PolicyCategories { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.PolicyCategoryCollection PolicyCategories" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.PolicyCategories" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Dmf.PolicyCategory))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.PolicyCategoryCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyCategorySubscriptions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.PolicyCategorySubscriptionCollection PolicyCategorySubscriptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Dmf.PolicyCategorySubscriptionCollection PolicyCategorySubscriptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.PolicyCategorySubscriptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.Dmf.PolicyCategorySubscription))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.PolicyCategorySubscriptionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PurgeHealthState">
+      <MemberSignature Language="C#" Value="public void PurgeHealthState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PurgeHealthState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.PurgeHealthState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Löschen Sie alle Datensätze aus der Richtlinie für Integritätsstatus-Statustabelle.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PurgeHealthState">
+      <MemberSignature Language="C#" Value="public void PurgeHealthState (Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression targetTreeRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PurgeHealthState(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression targetTreeRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.PurgeHealthState(Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetTreeRoot" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression" />
+      </Parameters>
+      <Docs>
+        <param name="targetTreeRoot">
+        </param>
+        <summary>
+            Löschen von Datensätzen aus der Statustabelle Richtlinie Integrität, die mit der Knoten in der Struktur, beginnend mit dem Wert, der an TargetTreeRoot übergeben wird.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RepairPolicyAutomation">
+      <MemberSignature Language="C#" Value="public void RepairPolicyAutomation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RepairPolicyAutomation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.RepairPolicyAutomation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Stellt alle Elemente, die von der Richtlinie der richtlinienbasierten Verwaltung zur Unterstützung der richtlinienautomatisierung erstellt wurden. 
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptAlter">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptAlter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptAlter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.ScriptAlter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlStoreConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection SqlStoreConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection SqlStoreConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Dmf.PolicyStore.SqlStoreConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SqlStoreConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartSerializationUpgrade">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.UpgradeSession StartSerializationUpgrade ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.UpgradeSession StartSerializationUpgrade() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.StartSerializationUpgrade" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.UpgradeSession</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary />
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToPolicyCategory">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Dmf.PolicyCategorySubscription SubscribeToPolicyCategory (Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target, string policyCategory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Dmf.PolicyCategorySubscription SubscribeToPolicyCategory(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target, string policyCategory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.SubscribeToPolicyCategory(Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Dmf.PolicyCategorySubscription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression" />
+        <Parameter Name="policyCategory" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="target">Ein Ausdruck, den einer bestimmten Instanz SfcObjectQuery ausgewertet wird.</param>
+        <param name="policyCategory">Der Kategoriename abonnieren.</param>
+        <summary>
+            Erstellt ein Abonnement für das angegebene Ziel der angegebenen Richtlinienkategorie. Wird ausgelöst, wenn das Abonnement bereits vorhanden ist.
+            </summary>
+        <returns>PolicyCategorySubscription</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Die Zeichenfolgenidentität eines Richtlinienspeichers ist der zugeordnete Servername.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsubscribeFromPolicyCategory">
+      <MemberSignature Language="C#" Value="public void UnsubscribeFromPolicyCategory (Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target, string policyCategory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnsubscribeFromPolicyCategory(class Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression target, string policyCategory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Dmf.PolicyStore.UnsubscribeFromPolicyCategory(Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.SfcQueryExpression" />
+        <Parameter Name="policyCategory" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="target">Ein Ausdruck, den einer bestimmten Instanz SfcObjectQuery ausgewertet wird.</param>
+        <param name="policyCategory">Der Name der Kategorie zu kündigen.</param>
+        <summary>
+            Kündigen Sie das angegebene Ziel aus der angegebenen Richtlinienkategorie aus. Wird ausgelöst, wenn das Ziel nicht die Kategorie abonniert wird.
+            </summary>
+        <returns>"void"</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

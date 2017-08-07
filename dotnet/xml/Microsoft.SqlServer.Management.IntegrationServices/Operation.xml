@@ -1,0 +1,733 @@
+<Type Name="Operation" FullName="Microsoft.SqlServer.Management.IntegrationServices.Operation">
+  <TypeSignature Language="C#" Value="public class Operation : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Operation extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.IntegrationServices.Operation" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.IntegrationServices</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stellt die Klasse für einen Vorgang dar.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CallerName">
+      <MemberSignature Language="C#" Value="public string CallerName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CallerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.CallerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Caller Name")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Aufrufers ab.</summary>
+        <value>Der Name des Aufrufers.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="public bool Completed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Completed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.Completed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der angibt, ob der Vorgang abgeschlossen wurde, oder legt ihn fest.</summary>
+        <value>"true", wenn der Vorgang abgeschlossen wurde; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; CreatedTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; CreatedTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.CreatedTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Created Time")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Erstellungszeit des Vorgangs ab.</summary>
+        <value>Die Erstellungszeit des Vorgangs.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityKey">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.CreateIdentityKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Erstellt den Identitätsschlüssel.</summary>
+        <returns>Der erstellte Identitätsschlüssel.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="public void Deny (Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Deny(valuetype Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.Deny(Microsoft.SqlServer.Management.IntegrationServices.PermissionType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.IntegrationServices.PermissionType" />
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Die Berechtigung.</param>
+        <param name="granteeName">Der Name des Empfängers.</param>
+        <summary>Lehnt den Vorgang für den Integration Service ab.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; EndTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; EndTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.EndTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("End Time")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Endzeit des Vorgangs ab.</summary>
+        <value>Die Endzeit des Vorgangs.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCollection">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection (string elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection(string elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.GetChildCollection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">Der Typ des Elements.</param>
+        <summary>Ruft die untergeordnete Auflistung basierend auf dem Elementtyp ab.</summary>
+        <returns>Die untergeordnete Auflistung basierend auf dem Elementtyp.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEffectivePermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.IntegrationServices.EffectivePermissionInfo[] GetEffectivePermissions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.IntegrationServices.EffectivePermissionInfo[] GetEffectivePermissions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.GetEffectivePermissions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.IntegrationServices.EffectivePermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die effektiven Berechtigungen für diesen Vorgang ab.</summary>
+        <returns>Die effektiven Berechtigungen für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExplicitPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.IntegrationServices.ExplicitPermissionInfo[] GetExplicitPermissions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.IntegrationServices.ExplicitPermissionInfo[] GetExplicitPermissions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.GetExplicitPermissions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.IntegrationServices.ExplicitPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die explizite Berechtigung für den Vorgang ab.</summary>
+        <returns>Die explizite Berechtigung für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExplicitPermissions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.IntegrationServices.ExplicitPermissionInfo[] GetExplicitPermissions (string userName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.IntegrationServices.ExplicitPermissionInfo[] GetExplicitPermissions(string userName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.GetExplicitPermissions(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.IntegrationServices.ExplicitPermissionInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userName">Der Benutzername.</param>
+        <summary>Ruft die explizite Berechtigung für den Vorgang mit dem angegebenen Benutzernamen ab.</summary>
+        <returns>Die explizite Berechtigung für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLatestMessages">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.IntegrationServices.OperationMessage&gt; GetLatestMessages (DateTime timestamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Management.IntegrationServices.OperationMessage&gt; GetLatestMessages(valuetype System.DateTime timestamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.GetLatestMessages(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.IntegrationServices.OperationMessage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timestamp" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="timestamp">Der Timestamp.</param>
+        <summary>Ruft die neueste Meldung für den Vorgang ab.</summary>
+        <returns>Die neueste Meldung für den Vorgang.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectFactory">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetObjectFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetObjectFactory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.GetObjectFactory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ruft die Factory zum Erstellen einer neuen Instanz ab.</summary>
+        <returns>Die Factory zum Erstellen einer neuen Instanz.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grant">
+      <MemberSignature Language="C#" Value="public void Grant (Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Grant(valuetype Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.Grant(Microsoft.SqlServer.Management.IntegrationServices.PermissionType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.IntegrationServices.PermissionType" />
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Die zu gewährende Berechtigung.</param>
+        <param name="granteeName">Der Name des Empfängers.</param>
+        <summary>Gewährt die Berechtigung für einen Vorgang.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public long Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcKey(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Required | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Identifier")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Bezeichner des Vorgangs ab.</summary>
+        <value>Der Bezeichner des Vorgangs.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityKey">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.IntegrationServices.Operation.Key IdentityKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.IntegrationServices.Operation/Key IdentityKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.IdentityKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.IntegrationServices.Operation+Key</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Identitätsschlüssel ab.</summary>
+        <value>Der Identitätsschlüssel.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Messages">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.IntegrationServices.OperationMessageCollection Messages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.IntegrationServices.OperationMessageCollection Messages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.Messages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.IntegrationServices.OperationMessage))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.IntegrationServices.OperationMessageCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Meldungen für den aktuellen Vorgang ab.</summary>
+        <value>Die Meldungen für den aktuellen Vorgang.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectId">
+      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; ObjectId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; ObjectId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.ObjectId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Object Identifier")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Bezeichner des Objekts ab.</summary>
+        <value>Der Bezeichner des Objekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectName">
+      <MemberSignature Language="C#" Value="public string ObjectName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ObjectName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.ObjectName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Object Name")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Objekts ab.</summary>
+        <value>Der Name des Objekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectType">
+      <MemberSignature Language="C#" Value="public Nullable&lt;short&gt; ObjectType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int16&gt; ObjectType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.ObjectType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Object Type")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Typ des Objekts ab.</summary>
+        <value>Der Typ des Objekts.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationType">
+      <MemberSignature Language="C#" Value="public short OperationType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 OperationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.OperationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Operation Type")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Typ des Vorgangs ab.</summary>
+        <value>Der Typ des Vorgangs.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.IntegrationServices.Catalog Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.IntegrationServices.Catalog Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectRelationship.ParentObject, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectCardinality.One)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.IntegrationServices.Catalog</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft das übergeordnete Element ab oder legt es fest.</summary>
+        <value>Das übergeordnete Element.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, string granteeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Revoke(valuetype Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, string granteeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.Revoke(Microsoft.SqlServer.Management.IntegrationServices.PermissionType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.IntegrationServices.PermissionType" />
+        <Parameter Name="granteeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Die Berechtigung.</param>
+        <param name="granteeName">Der Name des Empfängers.</param>
+        <summary>Widerruft den Vorgang.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptDeny">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptDeny (Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, int principalId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptDeny(valuetype Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, int32 principalId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.ScriptDeny(Microsoft.SqlServer.Management.IntegrationServices.PermissionType,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.IntegrationServices.PermissionType" />
+        <Parameter Name="principalId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Die Berechtigung.</param>
+        <param name="principalId">Der Prinzipalbezeichner.</param>
+        <summary>Lehnt das Vorgangsskript ab.</summary>
+        <returns>Das abgelehnte Vorgangsskript.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptGrant">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptGrant (Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, int principalId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptGrant(valuetype Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, int32 principalId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.ScriptGrant(Microsoft.SqlServer.Management.IntegrationServices.PermissionType,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.IntegrationServices.PermissionType" />
+        <Parameter Name="principalId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Die Berechtigung.</param>
+        <param name="principalId">Der Prinzipalbezeichner.</param>
+        <summary>Gewährt das Skript für den Vorgang.</summary>
+        <returns>Das gewährte Vorgangsskript.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptRevoke">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptRevoke (Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, int principalId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptRevoke(valuetype Microsoft.SqlServer.Management.IntegrationServices.PermissionType permission, int32 principalId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.ScriptRevoke(Microsoft.SqlServer.Management.IntegrationServices.PermissionType,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permission" Type="Microsoft.SqlServer.Management.IntegrationServices.PermissionType" />
+        <Parameter Name="principalId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="permission">Die Berechtigung.</param>
+        <param name="principalId">Der Prinzipalbezeichner.</param>
+        <summary>Ruft das Vorgangsskript zurück.</summary>
+        <returns>Das zurückgerufene Vorgangsskript.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; StartTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; StartTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.StartTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Start Time")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Startzeit des Vorgangs ab.</summary>
+        <value>Die Startzeit des Vorgangs.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.IntegrationServices.Operation.ServerOperationStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.IntegrationServices.Operation/ServerOperationStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Status")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.IntegrationServices.Operation+ServerOperationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Status des Vorgangs ab.</summary>
+        <value>Der Status des Vorgangs.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.IntegrationServices.Operation.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Beendet den Vorgang.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoppedByName">
+      <MemberSignature Language="C#" Value="public string StoppedByName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StoppedByName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.IntegrationServices.Operation.StoppedByName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("General")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Stopped By")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Benutzer (falls vorhanden) ab, der den Vorgang beendet hat.</summary>
+        <value>Der Benutzer (falls vorhanden), der den Vorgang beendet hat.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

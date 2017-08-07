@@ -1,0 +1,222 @@
+<Type Name="EscapeSequence" FullName="Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence">
+  <TypeSignature Language="C#" Value="public class EscapeSequence" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EscapeSequence extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt Methoden bereit, um Zeichenfolgen auf Grundlage der Programmiersprache Transact-SQL mit Escapezeichen umzuwandeln oder eine solche Umwandlung aufzuheben.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BracketedEscapeSequence">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence BracketedEscapeSequence;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence BracketedEscapeSequence" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence.BracketedEscapeSequence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Stellt eine Escapesequenz dar, die eckige Klammern als Trennzeichen verwendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleQuotedEscapeSequence">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence DoubleQuotedEscapeSequence;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence DoubleQuotedEscapeSequence" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence.DoubleQuotedEscapeSequence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Stellt eine Escapesequenz dar, die doppelte Anführungszeichen als Trennzeichen verwendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Escape">
+      <MemberSignature Language="C#" Value="public string Escape (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Escape(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence.Escape(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">Die Zeichenfolge, die mit Escapezeichen verwendet werden soll.</param>
+        <summary>
+            Gibt die angegebene Zeichenfolge mit allen erforderlichen Escapezeichen zurück.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die angegebene Zeichenfolge mit Escapezeichen hinzugefügt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentifyEscapeSequence">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence IdentifyEscapeSequence (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence IdentifyEscapeSequence(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence.IdentifyEscapeSequence(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">Die zu testende Zeichenfolge.</param>
+        <summary>
+            Identifiziert die in der angegebenen Zeichenfolge verwendete Escapesequenz.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Escape-Zeichenfolge, die verwendet wird, oder ein null-Verweis, wenn die Zeichenfolge nicht durch Escapezeichen geschützt ist.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiresEscaping">
+      <MemberSignature Language="C#" Value="public static bool RequiresEscaping (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RequiresEscaping(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence.RequiresEscaping(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">Die zu testende Zeichenfolge.</param>
+        <summary>
+            Testet eine Zeichenfolge, um festzustellen, ob es erfordert, um ein gültiges SQL-Token werden mit Escapezeichen zu versehen.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>"true", wenn die Zeichenfolge erfordert Escapezeichen; andernfalls "false".</return>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleQuotedEscapeSequence">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence SingleQuotedEscapeSequence;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence SingleQuotedEscapeSequence" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence.SingleQuotedEscapeSequence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Stellt eine Escapesequenz dar, die einfache Anführungszeichen als Trennzeichen verwendet.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unescape">
+      <MemberSignature Language="C#" Value="public string Unescape (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Unescape(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence.Unescape(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">Unescape-Zeichenfolge.</param>
+        <summary>
+            Entfernt alle Escapezeichen aus der angegebenen Zeichenfolge.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die angegebene Zeichenfolge, aus der alle Escapezeichen entfernt wurden.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="UnescapeIdentifier">
+      <MemberSignature Language="C#" Value="public static string UnescapeIdentifier (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UnescapeIdentifier(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence.UnescapeIdentifier(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">Die zu testende Zeichenfolge.</param>
+        <summary>
+            Überprüft die angegebene Zeichenfolge anhand der einzelnen Escapesequenzen und gibt die Zeichenfolge ohne Escapezeichen zurück.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die angegebene Zeichenfolge, aus der die Escapezeichen entfernt wurden.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="UnescapeLiteral">
+      <MemberSignature Language="C#" Value="public static string UnescapeLiteral (string value, out bool isUnicode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UnescapeLiteral(string value, bool isUnicode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.EscapeSequence.UnescapeLiteral(System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="isUnicode" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="value">Das zu testende Zeichenfolgenliteral.</param>
+        <param name="isUnicode">"true", wenn das Zeichenfolgenliteral eine Unicode-Zeichenfolge ist; andernfalls "false".</param>
+        <summary>
+            Überprüft das angegebene Zeichenfolgenliteral anhand der einzelnen Escapesequenzen und gibt das Zeichenfolgenliteral ohne Escapezeichen zurück.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die angegebene Zeichenfolge, aus der die Escapezeichen entfernt wurden.</return>
+        <exception cref="T:System.ArgumentNullException">Die angegebene Zeichenfolge ist ein null-Verweis.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,417 @@
+<Type Name="SqlCodeObject" FullName="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject">
+  <TypeSignature Language="C#" Value="public abstract class SqlCodeObject : Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.IVisitableSqlCodeObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SqlCodeObject extends System.Object implements class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.IVisitableSqlCodeObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.IVisitableSqlCodeObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+             Basismethoden Accept für visitable SqlCodeObjects überschreiben.
+            
+             Leaf classes in the hierarchy that are public and not abstract
+             will accept their input visitor by invoking it.
+            
+             Leaf classes in the hierarchy that are private or internal
+             will not implement this method. Most such classes will have
+             a public ancestor in which case the ancestor's Accept method
+             satisfies the interface. Therefore these classes are visitable as well.
+            
+             </summary>
+    <summary>
+            Stellt eine allgemeine Basisklasse für die meisten Sql-Code-DOMs (SqlCodeDOM)-Objekte
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accept">
+      <MemberSignature Language="C#" Value="public abstract void Accept (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectVisitor visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Accept(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectVisitor visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.Accept(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectVisitor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visitor" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectVisitor" />
+      </Parameters>
+      <Docs>
+        <param name="visitor">Muss hinzugefügt werden.</param>
+        <summary>
+            Akzeptiert einen Besucher
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;C&gt;">
+      <MemberSignature Language="C#" Value="public abstract void Accept&lt;C&gt; (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectContextVisitor&lt;C&gt; visitor, C context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Accept&lt;C&gt;(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectContextVisitor`1&lt;!!C&gt; visitor, !!C context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.Accept``1(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectContextVisitor{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="C" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectContextVisitor&lt;C&gt;" />
+        <Parameter Name="context" Type="C" />
+      </Parameters>
+      <Docs>
+        <typeparam name="C">Muss hinzugefügt werden.</typeparam>
+        <param name="visitor">Muss hinzugefügt werden.</param>
+        <param name="context">Muss hinzugefügt werden.</param>
+        <summary>
+            Akzeptiert einen Besucher
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public abstract T Accept&lt;T&gt; (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectVisitor&lt;T&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Accept&lt;T&gt;(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectVisitor`1&lt;!!T&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.Accept``1(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectVisitor{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectVisitor&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Muss hinzugefügt werden.</typeparam>
+        <param name="visitor">Muss hinzugefügt werden.</param>
+        <summary>
+            Akzeptiert einen Besucher
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;T,C&gt;">
+      <MemberSignature Language="C#" Value="public abstract T Accept&lt;T,C&gt; (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectContextVisitor&lt;T,C&gt; visitor, C context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Accept&lt;T, C&gt;(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectContextVisitor`2&lt;!!T, !!C&gt; visitor, !!C context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.Accept``2(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectContextVisitor{``0,``1},``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="C" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeObjectContextVisitor&lt;T,C&gt;" />
+        <Parameter Name="context" Type="C" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Muss hinzugefügt werden.</typeparam>
+        <typeparam name="C">Muss hinzugefügt werden.</typeparam>
+        <param name="visitor">Muss hinzugefügt werden.</param>
+        <param name="context">Muss hinzugefügt werden.</param>
+        <summary>
+            Akzeptiert einen Besucher
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoundObject">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject BoundObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject BoundObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.BoundObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" /> , die von diesem <see cref="T:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject" /> an gebunden ist, nach dem Aufruf <c>binden</c> im Stamm <see cref="T:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlScript" />.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Wenn die <see cref="T:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject" /> ist gebunden ist, ist der Wert immer <c>null</c>.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject&gt; Children { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject&gt; Children" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.Children" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die untergeordneten Objekte des aktuellen Objekts ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndLocation">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Parser.Location EndLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Parser.Location EndLocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.EndLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.Location</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            die Endposition des Objekts in der Quell-sql
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlSource">
+      <MemberSignature Language="C#" Value="public static string GetSqlSource (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject[] codeObjects);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetSqlSource(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject[] codeObjects) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.GetSqlSource(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codeObjects" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="codeObjects">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlSource">
+      <MemberSignature Language="C#" Value="public static string GetSqlSource (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject first, Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject last);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetSqlSource(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject first, class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.GetSqlSource(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject,Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="first" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject" />
+        <Parameter Name="last" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject" />
+      </Parameters>
+      <Docs>
+        <param name="first">Muss hinzugefügt werden.</param>
+        <param name="last">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlSource&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static string GetSqlSource&lt;T&gt; (Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeCollection&lt;T&gt; collection) where T : Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetSqlSource&lt;(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject) T&gt;(class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeCollection`1&lt;!!T&gt; collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.GetSqlSource``1(Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeCollection{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="collection" Type="Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeCollection&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Der Typ der Elemente in der Auflistung.</typeparam>
+        <param name="collection">Die Auflistung der <see cref="T:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject" /> Quellcode für die abzurufenden Elemente an.</param>
+        <summary>
+            Ruft ab und gibt die T-SQL Soucr Code Corrosponding auf den angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.ISqlCodeCollection`1" /> Objekt.
+            </summary>
+        <returns>Ein <see cref="T:System.String" /> , das T-SQL-Datenquelle darstellt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSqlCodeSnippet">
+      <MemberSignature Language="C#" Value="public bool IsSqlCodeSnippet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSqlCodeSnippet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.IsSqlCodeSnippet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert, der angibt, ob eine SqlCodeObject ein Codeobjekt-Ausschnitt ist.
+Das ist ein Objekt, das einen Code ohne eine analysierte Unterstruktur darstellen, und nur von Sql-Text dargestellt.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Länge der T-Sql-Darstellung des Knotens
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sql">
+      <MemberSignature Language="C#" Value="public string Sql { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Sql" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.Sql" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ursprüngliche T-Sql-Darstellung von diesem Knoten und dessen untergeordnete Elemente
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartLocation">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Parser.Location StartLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Parser.Location StartLocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.StartLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Parser.Location</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Starten der Speicherort des Objekts in der Quell-sql
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Statement">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlStatement Statement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlStatement Statement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.Statement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlStatement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Anweisung, die das aktuelle umschließt <see cref="T:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject" />.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tokens">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Parser.Token&gt; Tokens { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.SqlParser.Parser.Token&gt; Tokens" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.Tokens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Parser.Token&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Auflistung von Token (einschließlich Leerzeichen und Kommentare), aus denen dieses Objekt besteht
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Xml">
+      <MemberSignature Language="C#" Value="public string Xml { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Xml" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.SqlCodeDom.SqlCodeObject.Xml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Zurückgeben einer XML-Zeichenfolgendarstellung dieses Knotens und dessen untergeordnete Elemente
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

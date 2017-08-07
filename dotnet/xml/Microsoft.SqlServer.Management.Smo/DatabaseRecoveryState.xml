@@ -1,0 +1,71 @@
+<Type Name="DatabaseRecoveryState" FullName="Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState">
+  <TypeSignature Language="C#" Value="public enum DatabaseRecoveryState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DatabaseRecoveryState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SmoExtended</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Wiederherstellungsstatus der Datenbank.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="WithNoRecovery">
+      <MemberSignature Language="C#" Value="WithNoRecovery" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState WithNoRecovery = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState.WithNoRecovery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            NORECOVERY weist der Wiederherstellungsvorgang keine Transaktionen ohne Commit für eine andere Transaktion ein Rollback protokollsicherung zu einem späteren Zeitpunkt wiederhergestellt werden. Die Datenbank verbleibt nach dem Wiederherstellungsvorgang im Wiederherstellungsstatus.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WithRecovery">
+      <MemberSignature Language="C#" Value="WithRecovery" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState WithRecovery = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState.WithRecovery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Wiederherstellung Datenbank betriebsbereit belassen, indem für Transaktionen ohne Commit ein Rollback. Zusätzliche Transaktionsprotokolle können nicht wiederhergestellt werden.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WithStandBy">
+      <MemberSignature Language="C#" Value="WithStandBy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState WithStandBy = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState.WithStandBy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.DatabaseRecoveryState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            STANDBY Rückgängigmachen von Transaktionen ohne Commit, aber die Rückgängigaktionen werden in einer standbydatei gespeichert, die Auswirkungen der Wiederherstellung rückgängig gemacht werden kann.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

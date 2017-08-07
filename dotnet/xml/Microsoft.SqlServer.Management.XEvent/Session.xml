@@ -1,0 +1,1167 @@
+<Type Name="Session" FullName="Microsoft.SqlServer.Management.XEvent.Session">
+  <TypeSignature Language="C#" Value="public sealed class Session : Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance, Microsoft.SqlServer.Management.Common.IAlterable, Microsoft.SqlServer.Management.Common.ICreatable, Microsoft.SqlServer.Management.Common.IDroppable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCreatable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDroppable, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcValidate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Session extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance implements class Microsoft.SqlServer.Management.Common.IAlterable, class Microsoft.SqlServer.Management.Common.ICreatable, class Microsoft.SqlServer.Management.Common.IDroppable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCreatable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDiscoverObject, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDroppable, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcValidate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.XEvent.Session" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.XEvent</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcInstance</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.ICreatable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Common.IDroppable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcAlterable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCreatable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDroppable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcValidate</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Die Sitzung ist, dass der Benutzercode des Hauptobjekts interagiert.
+Ein Sitzungsobjekt stellt eine Zeile in Sys. server_event_sessions dar und enthält auch einige Daten aus dm_xe_sessions aus, wenn sie gestartet ist.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Session ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Standardkonstruktor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Session (Microsoft.SqlServer.Management.XEvent.BaseXEStore parent, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.XEvent.BaseXEStore parent, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.#ctor(Microsoft.SqlServer.Management.XEvent.BaseXEStore,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.XEvent.BaseXEStore" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Muss hinzugefügt werden.</param>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>
+            Meistens verwendet, Konstruktor
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEvent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Event AddEvent (Microsoft.SqlServer.Management.XEvent.EventInfo eventInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.XEvent.Event AddEvent(class Microsoft.SqlServer.Management.XEvent.EventInfo eventInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.AddEvent(Microsoft.SqlServer.Management.XEvent.EventInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Event</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventInfo" Type="Microsoft.SqlServer.Management.XEvent.EventInfo" />
+      </Parameters>
+      <Docs>
+        <param name="eventInfo">Die Ereignisinformationen.</param>
+        <summary>
+            Neue eines Ereignisses, und fügen Sie es an diese Sitzung.
+            </summary>
+        <returns>Das neu erstellte Ereignisobjekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEvent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Event AddEvent (string eventName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.XEvent.Event AddEvent(string eventName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.AddEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Event</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventName">Der Name des Ereignisses.</param>
+        <summary>
+            Ein Ereignis aus wird neu vollständig qualifizierten Namen des Ereignisses, und der Sitzung hinzufügen.
+            </summary>
+        <returns>Das neu erstellte Ereignisobjekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.XEvent.XEventException">Der Ereignisname weist ein falsches Format auf oder ist ungültig.</exception>
+        <exception cref="T:System.ArgumentNullException">Ereignisname Parameter ist null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTarget">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Target AddTarget (Microsoft.SqlServer.Management.XEvent.TargetInfo targetInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.XEvent.Target AddTarget(class Microsoft.SqlServer.Management.XEvent.TargetInfo targetInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.AddTarget(Microsoft.SqlServer.Management.XEvent.TargetInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Target</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetInfo" Type="Microsoft.SqlServer.Management.XEvent.TargetInfo" />
+      </Parameters>
+      <Docs>
+        <param name="targetInfo">Die Ziel-Informationen.</param>
+        <summary>
+            Neue ein Ziel, und fügen Sie es an diese Sitzung.
+            </summary>
+        <returns>Das neu erstellte Zielobjekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTarget">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Target AddTarget (string targetName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.XEvent.Target AddTarget(string targetName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.AddTarget(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Target</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetName">Der Name des Ziels.</param>
+        <summary>
+            Neue ein Ziels mit vollständig qualifiziert Zielname und hinzugefügt werden an diese Sitzung.
+            </summary>
+        <returns>Das neu erstellte Zielobjekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.XEvent.XEventException">Der Zielname weist ein falsches Format auf oder ist ungültig.</exception>
+        <exception cref="T:System.ArgumentNullException">TargetName Parameter ist null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Alter">
+      <MemberSignature Language="C#" Value="public void Alter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Alter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.Alter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ändern Sie die Sitzung auf dem Back-End-Server.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoStart">
+      <MemberSignature Language="C#" Value="public bool AutoStart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoStart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.AutoStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Required)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob [Automatisches Starten].
+            </summary>
+        <value>
+          <c>true</c> if [auto start]; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoStartProperty">
+      <MemberSignature Language="C#" Value="public const string AutoStartProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string AutoStartProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.AutoStartProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Automatisches Starten
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public void Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellen Sie die Sitzung auf dem Back-End-Server.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityKey">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey CreateIdentityKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.CreateIdentityKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcKey</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt den Identitätsschlüssel.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultDispatchLatency">
+      <MemberSignature Language="C#" Value="public const int DefaultDispatchLatency = 30;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultDispatchLatency = (30)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.DefaultDispatchLatency" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>30</MemberValue>
+      <Docs>
+        <summary>
+            Die standardmäßige Verteilungslatenzzeit beträgt 30 Sekunden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultMaxMemory">
+      <MemberSignature Language="C#" Value="public const int DefaultMaxMemory = 4096;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultMaxMemory = (4096)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.DefaultMaxMemory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4096</MemberValue>
+      <Docs>
+        <summary>
+            Die maximale Menge an Standardeinstellung Systemspeicher beträgt 4 MB.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Drop">
+      <MemberSignature Language="C#" Value="public void Drop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Drop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.Drop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Löschen Sie die Sitzung auf dem Back-End-Server.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventRetentionMode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Session.EventRetentionModeEnum EventRetentionMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.XEvent.Session/EventRetentionModeEnum EventRetentionMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.EventRetentionMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Session+EventRetentionModeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt den ereignisbeibehaltungsmodus.
+            </summary>
+        <value>Den ereignisbeibehaltungsmodus.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.XEvent.XEventException">EventRetentionMode auf einen unbekannten Wert festgelegt.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EventRetentionModeProperty">
+      <MemberSignature Language="C#" Value="public const string EventRetentionModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string EventRetentionModeProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.EventRetentionModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            EventRetentionMode
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Events">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.EventCollection Events { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.XEvent.EventCollection Events" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.Events" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.XEvent.Event))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.EventCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die ereignisauflistung.
+            </summary>
+        <value>Die ereignisauflistung.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCollection">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection (string elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection GetChildCollection(string elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.GetChildCollection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">Der Typ des Elements.</param>
+        <summary>
+            Ruft die untergeordnete Auflistung ab.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectFactory">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetObjectFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetObjectFactory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.GetObjectFactory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die Objektfactory ab.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public int ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Data)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die ID ab.
+            </summary>
+        <value>Die ID.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityKey">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Session.Key IdentityKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.XEvent.Session/Key IdentityKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.IdentityKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Session+Key</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Identitätsschlüssel ab.
+            </summary>
+        <value>Der Identitätsschlüssel.</value>
+        <value />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InfiniteDispatchLatency">
+      <MemberSignature Language="C#" Value="public const int InfiniteDispatchLatency = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 InfiniteDispatchLatency = (0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.InfiniteDispatchLatency" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            0 gibt an, dass die Verteilungslatenzzeit unendlich ist.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeUIPropertyState">
+      <MemberSignature Language="C#" Value="protected override void InitializeUIPropertyState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeUIPropertyState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.InitializeUIPropertyState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert den Zustand der Benutzeroberflächen-Eigenschaft.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRunning">
+      <MemberSignature Language="C#" Value="public bool IsRunning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRunning" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.IsRunning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob diese Sitzung ausgeführt wird.
+            </summary>
+        <value>
+          <c>true</c> if this session is running; otherwise, <c>false</c>.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxDispatchLatency">
+      <MemberSignature Language="C#" Value="public int MaxDispatchLatency { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDispatchLatency" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.MaxDispatchLatency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt die maximale Verteilungslatenzzeit (in Sekunden) fest.
+            </summary>
+        <value>Die maximale Verteilungslatenzzeit.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxDispatchLatencyProperty">
+      <MemberSignature Language="C#" Value="public const string MaxDispatchLatencyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MaxDispatchLatencyProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.MaxDispatchLatencyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            "Maxdispatchlatency"
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxEventSize">
+      <MemberSignature Language="C#" Value="public int MaxEventSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxEventSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.MaxEventSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt die Größe (in KB) des maximalen Ereignisses fest.
+            </summary>
+        <value>Die Größe des maximalen Ereignisses.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxEventSizeProperty">
+      <MemberSignature Language="C#" Value="public const string MaxEventSizeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MaxEventSizeProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.MaxEventSizeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            "Maxeventsize"
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxMemory">
+      <MemberSignature Language="C#" Value="public int MaxMemory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxMemory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.MaxMemory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt den maximalen Arbeitsspeicher (in KB).
+            </summary>
+        <value>Der maximale Arbeitsspeicher.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxMemoryProperty">
+      <MemberSignature Language="C#" Value="public const string MaxMemoryProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MaxMemoryProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.MaxMemoryProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            MaxMemory
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemoryPartitionMode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Session.MemoryPartitionModeEnum MemoryPartitionMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.XEvent.Session/MemoryPartitionModeEnum MemoryPartitionMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.MemoryPartitionMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Session+MemoryPartitionModeEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt den speicherpartitionsmodus.
+            </summary>
+        <value>Der Speicherpartitionsmodus.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.XEvent.XEventException">Festlegen von MemoryPartitionMode auf einen unbekannten Wert.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MemoryPartitionModeProperty">
+      <MemberSignature Language="C#" Value="public const string MemoryPartitionModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MemoryPartitionModeProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.MemoryPartitionModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Von MemoryPartitionMode
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDiscoverObject.Discover">
+      <MemberSignature Language="C#" Value="void ISfcDiscoverObject.Discover (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink sink);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDiscoverObject.Discover(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink sink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.Microsoft#SqlServer#Management#Sdk#Sfc#ISfcDiscoverObject#Discover(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sink" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcDependencyDiscoveryObjectSink" />
+      </Parameters>
+      <Docs>
+        <param name="sink">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcKey(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Required | Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.ReadOnlyAfterCreation)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Name der Sitzung
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.XEvent.XEventException">Legt den Namen für die aktuelle Sitzung fest, oder legen Sie für den Namen eine NULL-/leere Zeichenfolge fest.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NotStarted">
+      <MemberSignature Language="C#" Value="public static readonly DateTime NotStarted;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.DateTime NotStarted" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.NotStarted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Sitzung wird gerade nicht ausgeführt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.BaseXEStore Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.XEvent.BaseXEStore Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectRelationship.ParentObject, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObjectCardinality.One)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.BaseXEStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das übergeordnete Element ab oder legt es fest.
+            </summary>
+        <value>Das übergeordnete Element.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveEvent">
+      <MemberSignature Language="C#" Value="public bool RemoveEvent (Microsoft.SqlServer.Management.XEvent.Event evt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveEvent(class Microsoft.SqlServer.Management.XEvent.Event evt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.RemoveEvent(Microsoft.SqlServer.Management.XEvent.Event)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evt" Type="Microsoft.SqlServer.Management.XEvent.Event" />
+      </Parameters>
+      <Docs>
+        <param name="evt">Das Ereignisobjekt.</param>
+        <summary>
+            Entfernt das Ereignisobjekt aus der Sitzung.
+            </summary>
+        <returns>Gibt zurück, ob das Ereignis erfolgreich entfernt wird.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Parameter Evt ist null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveTarget">
+      <MemberSignature Language="C#" Value="public bool RemoveTarget (Microsoft.SqlServer.Management.XEvent.Target target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveTarget(class Microsoft.SqlServer.Management.XEvent.Target target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.RemoveTarget(Microsoft.SqlServer.Management.XEvent.Target)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.XEvent.Target" />
+      </Parameters>
+      <Docs>
+        <param name="target">Das Zielobjekt.</param>
+        <summary>
+            Entfernt das Zielobjekt in dieser Sitzung.
+            </summary>
+        <returns>Gibt zurück, ob das Ziel erfolgreich entfernt wird.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Ziel der Parameter ist null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptAlter">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptAlter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptAlter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.ScriptAlter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Das ALTER-Skript für diese Sitzung
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptCreate">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptCreate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptCreate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.ScriptCreate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Das CREATE-Skript für diese Sitzung
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptDrop">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptDrop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript ScriptDrop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.ScriptDrop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ISfcScript</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            "Drop"-Skripts für diese Sitzung
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Startet diese Sitzung
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTime">
+      <MemberSignature Language="C#" Value="public DateTime StartTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StartTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.StartTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Data=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Startzeit ab.
+            </summary>
+        <value>Die Startzeit.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Status des Objekts in Sitzung in Alter Function verwendet.
+            </summary>
+        <value>Der Zustand.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Beendet diese Sitzung
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Targets">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.TargetCollection Targets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.XEvent.TargetCollection Targets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.Targets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcObject(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerRelationship.ChildContainer, Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcContainerCardinality.ZeroToAny, typeof(Microsoft.SqlServer.Management.XEvent.Target))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.TargetCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackCausality">
+      <MemberSignature Language="C#" Value="public bool TrackCausality { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TrackCausality" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.Session.TrackCausality" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcProperty(Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcPropertyFlags.Required)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob [Verfolgen der Kausalität].
+            </summary>
+        <value>
+          <c>true</c> if [track causality]; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackCausalityProperty">
+      <MemberSignature Language="C#" Value="public const string TrackCausalityProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TrackCausalityProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.TrackCausalityProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            "Trackcausality"
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeTypeName">
+      <MemberSignature Language="C#" Value="public const string TypeTypeName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TypeTypeName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.XEvent.Session.TypeTypeName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Name des Typs
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateUIPropertyState">
+      <MemberSignature Language="C#" Value="protected override void UpdateUIPropertyState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateUIPropertyState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.UpdateUIPropertyState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Aktualisiert den Zustand der Benutzeroberflächen-Eigenschaft.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate (string methodName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate(string methodName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.Validate(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="methodName">Der Name der Methode, ValidationMethod.Create oder ValidationMethod.Alter</param>
+        <summary>
+            Überprüft den angegebenen Methodennamen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Management.XEvent.XEventException">Fehler bei der Überprüfung.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.ValidationState Validate (string methodName, object[] arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.ValidationState Validate(string methodName, object[] arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.Session.Validate(System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.ValidationState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodName" Type="System.String" />
+        <Parameter Name="arguments" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="methodName">Der Name der Methode.</param>
+        <param name="arguments">Die Argumente.</param>
+        <summary>
+            Überprüft den angegebenen Methodennamen.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

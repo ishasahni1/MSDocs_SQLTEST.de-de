@@ -1,0 +1,94 @@
+<Type Name="IDTSLogging" FullName="Microsoft.SqlServer.Dts.Runtime.IDTSLogging">
+  <TypeSignature Language="C#" Value="public interface IDTSLogging" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDTSLogging" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.IDTSLogging" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Definiert die Protokollierungsoptionen für einen Container.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.IDTSLogging.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen booleschen Wert ab, der angibt, ob die Protokollierung aktiviert ist. Dieses Feld ist schreibgeschützt. </summary>
+        <value>"true", wenn die Protokollierung aktiviert ist; "false", wenn die Protokollierung deaktiviert ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFilterStatus">
+      <MemberSignature Language="C#" Value="public bool[] GetFilterStatus (ref string[] eventNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool[] GetFilterStatus(string[] eventNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.IDTSLogging.GetFilterStatus(System.String[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventNames" Type="System.String[]&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="eventNames">Die Ereignisse, deren Filterstatus für Sie von Interesse ist. </param>
+        <summary>Ruft den Filterstatus der angegebenen Ereignisse ab.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log">
+      <MemberSignature Language="C#" Value="public void Log (string eventName, string computerName, string operatorName, string sourceName, string sourceGuid, string executionGuid, string messageText, DateTime startTime, DateTime endTime, int dataCode, ref byte[] dataBytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Log(string eventName, string computerName, string operatorName, string sourceName, string sourceGuid, string executionGuid, string messageText, valuetype System.DateTime startTime, valuetype System.DateTime endTime, int32 dataCode, unsigned int8[] dataBytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.IDTSLogging.Log(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.DateTime,System.Int32,System.Byte[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="computerName" Type="System.String" />
+        <Parameter Name="operatorName" Type="System.String" />
+        <Parameter Name="sourceName" Type="System.String" />
+        <Parameter Name="sourceGuid" Type="System.String" />
+        <Parameter Name="executionGuid" Type="System.String" />
+        <Parameter Name="messageText" Type="System.String" />
+        <Parameter Name="startTime" Type="System.DateTime" />
+        <Parameter Name="endTime" Type="System.DateTime" />
+        <Parameter Name="dataCode" Type="System.Int32" />
+        <Parameter Name="dataBytes" Type="System.Byte[]&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="eventName">Das Ereignis, durch das der Protokolleintrag aufgerufen wird.</param>
+        <param name="computerName">Der Name des lokalen Computers.</param>
+        <param name="operatorName">Das Benutzerkonto.</param>
+        <param name="sourceName">Das Objekt, das die Ereignisquelle darstellt.</param>
+        <param name="sourceGuid">Die GUID des Tasks.</param>
+        <param name="executionGuid">Die GUID der jeweiligen Paketausführung, die verwendet wird, um zwischen mehreren Ausführungen des gleichen Pakets zu unterscheiden.</param>
+        <param name="messageText">Der in das Protokoll zu schreibende Text.</param>
+        <param name="startTime">Die Startzeit des Ereignisses.</param>
+        <param name="endTime">Die Beendigungszeit des Ereignisses.</param>
+        <param name="dataCode">Numerisches Datenfeld.</param>
+        <param name="dataBytes">Ein Bytearrayfeld für BLOBs (Binary Large Objects).</param>
+        <summary>Schreibt den Protokolleintrag.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

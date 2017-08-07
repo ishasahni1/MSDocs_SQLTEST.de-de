@@ -1,0 +1,229 @@
+<Type Name="IMutableMetadataCollection&lt;T&gt;" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IMutableMetadataCollection&lt;T&gt; : Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt; where T : IMetadataObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMutableMetadataCollection`1&lt;(class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject) T&gt; implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">Der Typ der Elemente in der Auflistung, beschränkt auf <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />.</typeparam>
+    <summary>
+            Definiert Methoden zum Bearbeiten von Objektauflistungen, durch die die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />-Schnittstelle implementiert wird.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1.Add(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">
+            Das Element, das am Ende der Auflistung hinzugefügt werden soll. Der Wert kann kein NULL-Verweis sein.
+            </param>
+        <summary>
+            Fügt am Ende der Auflistung ein Element hinzu.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.Collections.Generic.IEnumerable&lt;T&gt; collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRange(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="collection">
+            Die Auflistung von Elementen, die am Ende dieser Auflistung hinzugefügt werden sollen. Die Auflistung selbst kann nicht null sein, und sie kann Elemente, die null enthalten.
+            </param>
+        <summary>
+            Fügt am Ende dieser Auflistung die Elemente in der angegebenen Auflistung hinzu.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Entfernt alle Elemente aus der Auflistung.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection&lt;T&gt; Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1&lt;!T&gt; Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt eine <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1" />-Instanz, die mit Ausnahme der Elemente eine Kopie dieses Objekts ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine Instanz von <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1" />.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection&lt;T&gt; Clone (bool copyData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1&lt;!T&gt; Clone(bool copyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1.Clone(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="copyData" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="copyData">
+          <c>true</c> to copy the elements to the newly created collection; otherwise, <c>false</c>.
+            </param>
+        <summary>
+            Erstellt eine <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1" />-Instanz, die eine Kopie dieses Objekts und, falls angegeben, auch eine Kopie der Elemente ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Eine Instanz von <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1" />.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public T this[string name] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des Elements.</param>
+        <summary>
+            Ruft das Element in der Auflistung nach Namen ab oder legt es fest.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Die <typeparamref name="T" /> -Objekt, das dem angegebenen Namen ab.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">
+            Der Name des zu entfernenden Elements. Dieser Wert kann kein NULL-Verweis sein.
+            </param>
+        <summary>
+            Entfernt das erste Element mit dem angegebenen Namen aus der Auflistung.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>
+          <c>true</c> if the element is successfully removed; <c>false</c> if the element was not found or if it was not 
+            successfully removed from the collection.
+            </return>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableMetadataCollection`1.Remove(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">
+            Das zu entfernende Objekt. Dieser Wert kann kein NULL-Verweis sein.
+            </param>
+        <summary>
+            Entfernt das erste Vorkommen eines bestimmten Objekts aus der Auflistung.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>
+          <c>true</c> if the element is successfully removed; <c>false</c> if the element was not found or if it was not 
+            successfully removed from the collection.
+            </return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

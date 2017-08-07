@@ -1,0 +1,266 @@
+<Type Name="ParseOptions" FullName="Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions">
+  <TypeSignature Language="C#" Value="public class ParseOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParseOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt die Optionen, die Auswirkung auf die Ausführung der SQL-Parser dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParseOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der Klasse ParseOptions mit Standardeinstellungen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParseOptions (bool isQuotedIdentifierSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isQuotedIdentifierSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isQuotedIdentifierSet" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isQuotedIdentifierSet">"true", Zeichenfolgen in Anführungszeichen als Bezeichner behandelt werden sollen; andernfalls "false".</param>
+        <summary>
+            Initialisiert eine neue Instanz der ParseOptions-Klasse mit dem angegebenen quoted Identifier-Einstellung.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParseOptions (string batchSeparator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string batchSeparator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="batchSeparator" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="batchSeparator">Die Zeichenfolge, die zum Aufteilen eines einzelnen Skripts in mehrere Batches verwendet wird.</param>
+        <summary>
+            Initialisiert eine neue Instanz der ParseOptions-Klasse mit der angegebenen Einstellung für Batchtrennzeichen an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Die Einstellung für Batchtrennzeichen ist ein null-Verweis oder eine leere Zeichenfolge.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParseOptions (string batchSeparator, bool isQuotedIdentifierSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string batchSeparator, bool isQuotedIdentifierSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.#ctor(System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="batchSeparator" Type="System.String" />
+        <Parameter Name="isQuotedIdentifierSet" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="batchSeparator">Die Zeichenfolge, die zum Aufteilen eines einzelnen Skripts in mehrere Batches verwendet wird.</param>
+        <param name="isQuotedIdentifierSet">"true", Zeichenfolgen in Anführungszeichen als Bezeichner behandelt werden sollen; andernfalls "false".</param>
+        <summary>
+            Initialisiert eine neue Instanz der ParseOptions-Klasse mit dem angegebenen Batchtrennzeichen und Bezeichner in Anführungszeichen Einstellungen an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Die Einstellung für Batchtrennzeichen ist ein null-Verweis oder eine leere Zeichenfolge.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParseOptions (string batchSeparator, bool isQuotedIdentifierSet, Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel compatibilityLevel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string batchSeparator, bool isQuotedIdentifierSet, valuetype Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel compatibilityLevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.#ctor(System.String,System.Boolean,Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="batchSeparator" Type="System.String" />
+        <Parameter Name="isQuotedIdentifierSet" Type="System.Boolean" />
+        <Parameter Name="compatibilityLevel" Type="Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel" />
+      </Parameters>
+      <Docs>
+        <param name="batchSeparator">Die Zeichenfolge, die zum Aufteilen eines einzelnen Skripts in mehrere Batches verwendet wird.</param>
+        <param name="isQuotedIdentifierSet">"true", Zeichenfolgen in Anführungszeichen als Bezeichner behandelt werden sollen; andernfalls "false".</param>
+        <param name="compatibilityLevel">Gibt den Datenbank-Kompatibilitätsgrad an.</param>
+        <summary>
+            Initialisiert eine neue Instanz der ParseOptions-Klasse mit dem angegebenen Batchtrennzeichen, quoted Identifier-Einstellung und Datenbankkompatibilitätsgrad.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:System.ArgumentNullException">Die Einstellung für Batchtrennzeichen ist ein null-Verweis oder eine leere Zeichenfolge.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParseOptions (string batchSeparator, bool isQuotedIdentifierSet, Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel compatibilityLevel, Microsoft.SqlServer.Management.SqlParser.Common.TransactSqlVersion transactSqlVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string batchSeparator, bool isQuotedIdentifierSet, valuetype Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel compatibilityLevel, valuetype Microsoft.SqlServer.Management.SqlParser.Common.TransactSqlVersion transactSqlVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.#ctor(System.String,System.Boolean,Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel,Microsoft.SqlServer.Management.SqlParser.Common.TransactSqlVersion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="batchSeparator" Type="System.String" />
+        <Parameter Name="isQuotedIdentifierSet" Type="System.Boolean" />
+        <Parameter Name="compatibilityLevel" Type="Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel" />
+        <Parameter Name="transactSqlVersion" Type="Microsoft.SqlServer.Management.SqlParser.Common.TransactSqlVersion" />
+      </Parameters>
+      <Docs>
+        <param name="batchSeparator">Die Zeichenfolge, die zum Aufteilen eines einzelnen Skripts in mehrere Batches verwendet wird.</param>
+        <param name="isQuotedIdentifierSet">"true", Zeichenfolgen in Anführungszeichen als Bezeichner behandelt werden sollen; andernfalls "false".</param>
+        <param name="compatibilityLevel">Gibt den Datenbank-Kompatibilitätsgrad an.</param>
+        <param name="transactSqlVersion">Gibt die Version des Transact-SQL verwenden, bei der Analyse.</param>
+        <summary>
+            Initialisiert eine neue Instanz der ParseOptions-Klasse mit dem angegebenen Batchtrennzeichen, quoted Identifier-Einstellung und Datenbankkompatibilitätsgrad.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchSeparator">
+      <MemberSignature Language="C#" Value="public string BatchSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BatchSeparator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.BatchSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt die Zeichenfolge, die zum Aufteilen eines einzelnen Skripts in mehrere Batches verwendet.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompatibilityLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel CompatibilityLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel CompatibilityLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.CompatibilityLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Common.DatabaseCompatibilityLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der Kompatibilitätsgrad der Datenbank des SQL-Parsers angibt.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(class Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.Equals(Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions" />
+      </Parameters>
+      <Docs>
+        <param name="other">Die ParseOptions-Objekt, mit der verglichen werden soll.</param>
+        <summary>
+            Gibt einen Wert, der angibt, ob diese Instanz gleich dem angegebenen ParseOptions-Objekt ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>"true", wenn diese Instanz gleich dem angegebenen ParseOptions-Objekt (die Einstellungen für beide Objekte Übereinstimmung); andernfalls "false".</return>
+      </Docs>
+    </Member>
+    <Member MemberName="IsErrorRecoveryEnabled">
+      <MemberSignature Language="C#" Value="public bool IsErrorRecoveryEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsErrorRecoveryEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.IsErrorRecoveryEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob Fehler Recovery aktiviert ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsQuotedIdentifierSet">
+      <MemberSignature Language="C#" Value="public bool IsQuotedIdentifierSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsQuotedIdentifierSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.IsQuotedIdentifierSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob Zeichenfolgen in Anführungszeichen als Bezeichner oder Zeichenfolgen behandelt werden.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactSqlVersion">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Common.TransactSqlVersion TransactSqlVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Common.TransactSqlVersion TransactSqlVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Parser.ParseOptions.TransactSqlVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Common.TransactSqlVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Abzurufen, oder legt die Version von Transact-SQL, der beim Analysieren der Sql verwendet werden soll.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

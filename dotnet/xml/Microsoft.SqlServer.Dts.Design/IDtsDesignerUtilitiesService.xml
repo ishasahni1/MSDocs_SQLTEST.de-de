@@ -1,0 +1,76 @@
+<Type Name="IDtsDesignerUtilitiesService" FullName="Microsoft.SqlServer.Dts.Design.IDtsDesignerUtilitiesService">
+  <TypeSignature Language="C#" Value="public interface IDtsDesignerUtilitiesService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDtsDesignerUtilitiesService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Design.IDtsDesignerUtilitiesService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dts.Design</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Enthält Methoden, mit die Integration Services-Entwickler, die im Dialogfeld "Ausdrucks-Generator" programmgesteuert aufrufen können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EditExpression">
+      <MemberSignature Language="C#" Value="public bool EditExpression (System.Windows.Forms.IWin32Window parentWindow, Microsoft.SqlServer.Dts.Runtime.DtsContainer dtsContainer, Type expressionType, ref string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EditExpression(class System.Windows.Forms.IWin32Window parentWindow, class Microsoft.SqlServer.Dts.Runtime.DtsContainer dtsContainer, class System.Type expressionType, string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Design.IDtsDesignerUtilitiesService.EditExpression(System.Windows.Forms.IWin32Window,Microsoft.SqlServer.Dts.Runtime.DtsContainer,System.Type,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentWindow" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="dtsContainer" Type="Microsoft.SqlServer.Dts.Runtime.DtsContainer" />
+        <Parameter Name="expressionType" Type="System.Type" />
+        <Parameter Name="expression" Type="System.String&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="parentWindow">Die IWin32Window-Handle für das Windows Form, von dem das Dialogfeld "Ausdrucks-Generator" aufgerufen wird.</param>
+        <param name="dtsContainer">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsContainer" /> , definiert den Bereich für Paketvariablen, die verwendet werden kann, im Ausdruck.</param>
+        <param name="expressionType">Der Typ des Rückgabedatentyps des Ausdrucks.</param>
+        <param name="expression">Eine als Verweis übergebene Zeichenfolge, die den Ausdruck darstellt.</param>
+        <summary>
+            Zeigt das Dialogfeld Ausdrucks-Generator, in dem der Endbenutzer, die die Integration Services-Ausdruckssprache zum Erstellen und Testen eines Ausdrucks verwenden kann.
+            </summary>
+        <returns>"true", wenn der Ausdruck geändert hat; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditPropertyExpression">
+      <MemberSignature Language="C#" Value="public bool EditPropertyExpression (System.Windows.Forms.IWin32Window parentWindow, Microsoft.SqlServer.Dts.Runtime.DtsContainer dtsContainer, Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider property, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EditPropertyExpression(class System.Windows.Forms.IWin32Window parentWindow, class Microsoft.SqlServer.Dts.Runtime.DtsContainer dtsContainer, class Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider property, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Design.IDtsDesignerUtilitiesService.EditPropertyExpression(System.Windows.Forms.IWin32Window,Microsoft.SqlServer.Dts.Runtime.DtsContainer,Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentWindow" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="dtsContainer" Type="Microsoft.SqlServer.Dts.Runtime.DtsContainer" />
+        <Parameter Name="property" Type="Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parentWindow">Die IWin32Window-Handle für das Windows Form, von dem das Dialogfeld "Ausdrucks-Generator" aufgerufen wird.</param>
+        <param name="dtsContainer">Die <see cref="T:Microsoft.SqlServer.Dts.Runtime.DtsContainer" /> , definiert den Bereich für Paketvariablen, die verwendet werden kann, im Ausdruck.</param>
+        <param name="property">Der <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSPropertiesProvider" />, der die Eigenschaft darstellt, der der Ausdruck zugewiesen wird.</param>
+        <param name="propertyName">Der Name der Eigenschaft, der der Ausdruck zugewiesen wird.</param>
+        <summary>
+            Zeigt das Dialogfeld Ausdrucks-Generator, in dem der Endbenutzer, die die Integration Services-Ausdruckssprache zum Erstellen und Testen eines Eigenschaftsausdrucks verwenden kann.
+            </summary>
+        <returns>"true", wenn der Ausdruck geändert hat; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

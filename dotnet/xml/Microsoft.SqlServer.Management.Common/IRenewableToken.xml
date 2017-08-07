@@ -1,0 +1,115 @@
+<Type Name="IRenewableToken" FullName="Microsoft.SqlServer.Management.Common.IRenewableToken">
+  <TypeSignature Language="C#" Value="public interface IRenewableToken" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRenewableToken" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Common.IRenewableToken" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ConnectionInfo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Einfache Schnittstelle für die Details der Access-token-Erneuerung auszublenden.
+Consumer, der diese Schnittstelle müssen Abruf der Tokenzeichenfolge bis zu dem Punkt der SqlConnectionUsage verzögern.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAccessToken">
+      <MemberSignature Language="C#" Value="public string GetAccessToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetAccessToken() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.IRenewableToken.GetAccessToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt ein Zugriffstoken, das zum Abfragen von zugeordneten Ressourcen erst bei der TokenExpiry verwendet werden können
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resource">
+      <MemberSignature Language="C#" Value="public string Resource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Resource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.IRenewableToken.Resource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die URL der Ressource, die dem Token zugeordnet
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tenant">
+      <MemberSignature Language="C#" Value="public string Tenant { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Tenant" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.IRenewableToken.Tenant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Mandanten-Id, die dem Token zugeordnet
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenExpiry">
+      <MemberSignature Language="C#" Value="public DateTimeOffset TokenExpiry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset TokenExpiry" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.IRenewableToken.TokenExpiry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt die Ablaufzeit von der zuletzt abgerufenen token, wenn kein Token abgerufen wurde der Wert ist nicht definiert.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserId">
+      <MemberSignature Language="C#" Value="public string UserId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Common.IRenewableToken.UserId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Benutzer-Id, die dem Token zugeordnet
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

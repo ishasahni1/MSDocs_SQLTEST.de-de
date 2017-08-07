@@ -1,0 +1,1531 @@
+<Type Name="PipelineBuffer" FullName="Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer">
+  <TypeSignature Language="C#" Value="public class PipelineBuffer : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PipelineBuffer extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.PipelineHost</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Stellt einen Datenspeicher im Arbeitsspeicher bereit, der Datenzeilen und -spalten enthält.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PipelineBuffer (IntPtr bufferWirePacket, Microsoft.SqlServer.Dts.Pipeline.PipelineBufferMode bufferMode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int bufferWirePacket, valuetype Microsoft.SqlServer.Dts.Pipeline.PipelineBufferMode bufferMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.#ctor(System.IntPtr,Microsoft.SqlServer.Dts.Pipeline.PipelineBufferMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="bufferWirePacket" Type="System.IntPtr" />
+        <Parameter Name="bufferMode" Type="Microsoft.SqlServer.Dts.Pipeline.PipelineBufferMode" />
+      </Parameters>
+      <Docs>
+        <param name="bufferWirePacket">Das bufferWirePacket.</param>
+        <param name="bufferMode">Gibt den Modus des neu erstellten <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />.</param>
+        <summary>Instanziiert eine neue Instanz der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PipelineBuffer (uint rowCount, uint colCount, ulong rowSize, IntPtr* pRowStarts, Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL* colInfo, bool endOfRowset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int32 rowCount, unsigned int32 colCount, unsigned int64 rowSize, native int* pRowStarts, valuetype Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL* colInfo, bool endOfRowset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.#ctor(System.UInt32,System.UInt32,System.UInt64,System.IntPtr*,Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL*,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="rowCount" Type="System.UInt32" />
+        <Parameter Name="colCount" Type="System.UInt32" />
+        <Parameter Name="rowSize" Type="System.UInt64" />
+        <Parameter Name="pRowStarts" Type="System.IntPtr*" />
+        <Parameter Name="colInfo" Type="Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL*" />
+        <Parameter Name="endOfRowset" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="rowCount">Die Anzahl der Zeilen.</param>
+        <param name="colCount">Die Anzahl der Spalten.</param>
+        <param name="rowSize">Die Größe der Zeile</param>
+        <param name="pRowStarts">Der Ausgangspunkt der Zeile</param>
+        <param name="colInfo">Die Spalteninformationen.</param>
+        <param name="endOfRowset">True, wenn die aktuelle <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> der endgültige Puffer ist, andernfalls "false".</param>
+        <summary>Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Klasse.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBlobData">
+      <MemberSignature Language="C#" Value="public void AddBlobData (int columnIndex, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBlobData(int32 columnIndex, unsigned int8[] data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.AddBlobData(System.Int32,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Den Index der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />-Spalte, an die das Bytearray angefügt wird.</param>
+        <param name="data">Das Array von Bytes, die angefügt wird die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Objekt.</param>
+        <summary>
+            Fügt ein Array von Bytes, die eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBlobData">
+      <MemberSignature Language="C#" Value="public void AddBlobData (int columnIndex, byte[] data, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBlobData(int32 columnIndex, unsigned int8[] data, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.AddBlobData(System.Int32,System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="data" Type="System.Byte[]" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Den Index der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />-Spalte, an die das Bytearray angefügt wird.</param>
+        <param name="data">Das Array von Bytes, die angefügt wird die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Objekt.</param>
+        <param name="count">Die Anzahl der anzufügenden Datenbytes.</param>
+        <summary>Fügt ein Array einer angegebenen Anzahl von Bytes, die eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRow">
+      <MemberSignature Language="C#" Value="public void AddRow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRow() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.AddRow" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Fügt eine Zeile an die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Objekt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnCount">
+      <MemberSignature Language="C#" Value="public int ColumnCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.ColumnCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Anzahl der Spalten in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />.</summary>
+        <value>Die Anzahl der Spalten in <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnInfo">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL* ColumnInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL* ColumnInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.ColumnInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTP_BUFFCOL*</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft schreibgeschützte Metadaten zur Spalte ab.</summary>
+        <value>Eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.BufferColumn" />, die schreibgeschützte Metadaten zur Spalte enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentRow">
+      <MemberSignature Language="C#" Value="public int CurrentRow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentRow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.CurrentRow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Index der aktuellen Zeile in <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> ab.</summary>
+        <value>Der Index der aktuellen Zeile in <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectErrorRow">
+      <MemberSignature Language="C#" Value="public void DirectErrorRow (int outputID, int errorCode, int errorColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DirectErrorRow(int32 outputID, int32 errorCode, int32 errorColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.DirectErrorRow(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputID" Type="System.Int32" />
+        <Parameter Name="errorCode" Type="System.Int32" />
+        <Parameter Name="errorColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="outputID">Die ID des Fehlers <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> zum Senden der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <param name="errorCode">Die Fehlernummer, die beim Verarbeiten der Zeile aufgetreten ist.</param>
+        <param name="errorColumn">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte, die den Fehler verursacht hat.</param>
+        <summary>Sendet eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> -Zeile an eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , deren <see cref="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100.IsErrorOut" /> Eigenschaft ist "true".</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectErrorRow">
+      <MemberSignature Language="C#" Value="public void DirectErrorRow (int row, int outputID, int errorCode, int errorColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DirectErrorRow(int32 row, int32 outputID, int32 errorCode, int32 errorColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.DirectErrorRow(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="outputID" Type="System.Int32" />
+        <Parameter Name="errorCode" Type="System.Int32" />
+        <Parameter Name="errorColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="row">Der Index der Zeile, die an die Fehlerausgabe gesendet werden soll.</param>
+        <param name="outputID">Die ID des Fehlers <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> zum Senden der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <param name="errorCode">Die Fehlernummer, die beim Verarbeiten der Zeile aufgetreten ist.</param>
+        <param name="errorColumn">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte, die den Fehler verursacht hat.</param>
+        <summary>Sendet eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> -Zeile an eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , deren <see cref="P:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100.IsErrorOut" /> Eigenschaft ist "true".</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectRow">
+      <MemberSignature Language="C#" Value="public void DirectRow (int outputID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DirectRow(int32 outputID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.DirectRow(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="outputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> , in dem die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile gesendet wird.</param>
+        <summary>Sendet eine Zeile aus einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> in den angegebenen <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt alle von verwendete Ressourcen frei der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">Ein boolescher Wert, der angibt, ob sowohl verwaltete als auch nicht verwaltete Ressourcen freigegeben werden. "true", um sowohl verwaltete als auch nicht verwaltete Ressourcen freizugeben; "false", um ausschließlich nicht verwaltete Ressourcen freizugeben.</param>
+        <summary>Gibt den nicht verwalteten Ressourcen, mit denen, die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />, und optional die verwalteten Ressourcen frei.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOfRowset">
+      <MemberSignature Language="C#" Value="public bool EndOfRowset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EndOfRowset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.EndOfRowset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert, der angibt, ob die aktuelle <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> der endgültige Puffer ist.</summary>
+        <value>True, wenn die aktuelle <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> der endgültige Puffer aus der upstreamkomponente ist, andernfalls false. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~PipelineBuffer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt alle von verwendete Ressourcen frei der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBlobData">
+      <MemberSignature Language="C#" Value="public byte[] GetBlobData (int columnIndex, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetBlobData(int32 columnIndex, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetBlobData(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte, in der das BLOB enthalten ist.</param>
+        <param name="offset">Die Stelle im BLOB, an der mit dem Abrufen von Bytes begonnen wird.</param>
+        <param name="count">Die Anzahl der Bytes, die aus dem BLOB abgerufen werden sollen.</param>
+        <summary>Ruft ein Array von Bytes aus ein binary large Object (BLOB) gespeichert, die einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Das Array von Bytes in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBlobLength">
+      <MemberSignature Language="C#" Value="public uint GetBlobLength (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int32 GetBlobLength(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetBlobLength(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte, in der das BLOB enthalten ist.</param>
+        <summary>Ruft die Anzahl der in BLOB-Daten (Binary Large Object) einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />-Spalte enthaltenen Bytes ab.</summary>
+        <returns>Die Anzahl der Bytes im BLOB (Binary Large Object).</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoolean">
+      <MemberSignature Language="C#" Value="public bool GetBoolean (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetBoolean(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetBoolean(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft den booleschen Wert gespeichert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>In gespeicherten Bool-Werts der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByte">
+      <MemberSignature Language="C#" Value="public byte GetByte (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8 GetByte(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetByte(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft den Bytewert, der in gespeicherten der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Der Bytewert, der in gespeicherten der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public byte[] GetBytes (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetBytes(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetBytes(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte.</param>
+        <summary>Ruft das in einer Pufferspalte gespeicherte Bytearray ab.</summary>
+        <returns>Das in der Pufferspalte gespeicherte Bytearray.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnInfo">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.BufferColumn GetColumnInfo (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.SqlServer.Dts.Pipeline.BufferColumn GetColumnInfo(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetColumnInfo(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.BufferColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte, deren <see cref="T:Microsoft.SqlServer.Dts.Pipeline.BufferColumn" /> -Struktur abgerufen wird.</param>
+        <summary>Ruft die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.BufferColumn" />-Struktur für eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />-Spalte ab.</summary>
+        <returns>Die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.BufferColumn" />-Struktur der angegebenen <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />-Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDate">
+      <MemberSignature Language="C#" Value="public DateTime GetDate (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime GetDate(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetDate(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft den DateTime-Wert, der in gespeicherten der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Der DateTime-Wert, der gespeichert wird, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateTime">
+      <MemberSignature Language="C#" Value="public DateTime GetDateTime (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime GetDateTime(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetDateTime(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft den DateTime-Wert, der in gespeicherten der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Der DateTime-Wert, der gespeichert wird, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateTimeOffset">
+      <MemberSignature Language="C#" Value="public DateTimeOffset GetDateTimeOffset (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTimeOffset GetDateTimeOffset(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetDateTimeOffset(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft den DateTimeOffset-Wert, der in gespeicherten der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>In gespeicherten DateTimeOffset-Wert der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDecimal">
+      <MemberSignature Language="C#" Value="public decimal GetDecimal (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Decimal GetDecimal(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetDecimal(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft den Dezimalwert gespeichert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Der Dezimalwert gespeichert, die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDouble">
+      <MemberSignature Language="C#" Value="public double GetDouble (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetDouble(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetDouble(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft den double-Typ gespeichert werden, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Der Double-Wert gespeichert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuid">
+      <MemberSignature Language="C#" Value="public Guid GetGuid (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Guid GetGuid(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetGuid(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft den Guid-Wert, der in gespeicherten der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Der Guid-Wert, der gespeichert wird, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt16">
+      <MemberSignature Language="C#" Value="public short GetInt16 (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int16 GetInt16(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetInt16(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft die Kurzform gespeichert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Der kurze gespeichert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt32">
+      <MemberSignature Language="C#" Value="public int GetInt32 (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetInt32(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetInt32(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft die Int in gespeicherten eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Int gespeichert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt64">
+      <MemberSignature Language="C#" Value="public long GetInt64 (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 GetInt64(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetInt64(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <summary>Ruft den langen gespeichert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Die lange gespeichert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSByte">
+      <MemberSignature Language="C#" Value="public sbyte GetSByte (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int8 GetSByte(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetSByte(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <summary>Ruft den SByte-Wert, der in gespeicherten eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Die "SByte" gespeichert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSingle">
+      <MemberSignature Language="C#" Value="public float GetSingle (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetSingle(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetSingle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <summary>Ruft ab, die gespeicherten Gleitkommawert eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Die "float" enthalten sind, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetString">
+      <MemberSignature Language="C#" Value="public string GetString (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetString(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetString(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <summary>Ruft ab, die in der pufferspalte gespeicherte Zeichenfolge.</summary>
+        <returns>Die in der Pufferspalte gespeicherte Zeichenfolge.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTime">
+      <MemberSignature Language="C#" Value="public TimeSpan GetTime (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan GetTime(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetTime(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <summary>Ruft den TimeSpan-Wert, der in gespeicherten der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <returns>Die TimeSpan-Wert, der in gespeicherten der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUInt16">
+      <MemberSignature Language="C#" Value="public ushort GetUInt16 (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int16 GetUInt16(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetUInt16(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <summary>Ruft den in der pufferspalte gespeicherte "ushort"-Wert.</summary>
+        <returns>Die "ushort" in der pufferspalte gespeichert.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUInt32">
+      <MemberSignature Language="C#" Value="public uint GetUInt32 (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int32 GetUInt32(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetUInt32(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <summary>Ruft den UInt32-Wert, der in der pufferspalte gespeicherten ab.</summary>
+        <returns>Den UInt32-Wert, der in der pufferspalte gespeichert wird.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUInt64">
+      <MemberSignature Language="C#" Value="public ulong GetUInt64 (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int64 GetUInt64(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.GetUInt64(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <summary>Ruft den in der pufferspalte gespeicherten Ulong-Wert.</summary>
+        <returns>In der pufferspalte gespeicherte Ulong-Wert.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNull">
+      <MemberSignature Language="C#" Value="public bool IsNull (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNull(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.IsNull(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <summary>Überprüft, ob die Daten in einer Pufferspalte NULL sind.</summary>
+        <returns>"true", wenn die Spalte Null enthält; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[int columnIndex] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Muss hinzugefügt werden.</param>
+        <summary>Wert der angegebenen Spalte in der aktuellen Zeile</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Pipeline.PipelineBufferMode Mode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Pipeline.PipelineBufferMode Mode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Pipeline.PipelineBufferMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert, der angibt, ob ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> ist ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSInput100" /> Puffer oder ein <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> Puffer.</summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBufferMode" /> Enumeration, der angibt, ob die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> befindet sich im <see cref="F:Microsoft.SqlServer.Dts.Pipeline.PipelineBufferMode.Output" /> Modus oder <see cref="F:Microsoft.SqlServer.Dts.Pipeline.PipelineBufferMode.Input" /> Modus.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextRow">
+      <MemberSignature Language="C#" Value="public bool NextRow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool NextRow() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.NextRow" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Setzt die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> auf die nächste Zeile.</summary>
+        <returns>"true", wenn der Puffer auf die nächste Zeile gesetzt wurde; andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveRow">
+      <MemberSignature Language="C#" Value="public void RemoveRow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveRow() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.RemoveRow" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Entfernt die aktuelle Zeile aus <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetBlobData">
+      <MemberSignature Language="C#" Value="public void ResetBlobData (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetBlobData(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.ResetBlobData(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte, aus der vorhandene BLOB-Daten gelöscht werden sollen.</param>
+        <summary>Löscht den Inhalt der angegebenen BLOB-Spalte.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowCount">
+      <MemberSignature Language="C#" Value="public int RowCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.RowCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Anzahl der Zeilen im <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />-Objekt ab.</summary>
+        <value>Die Anzahl der Zeilen in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowSize">
+      <MemberSignature Language="C#" Value="public ulong RowSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 RowSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.RowSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Größe der Zeile in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Objekt.</summary>
+        <value>Die Größe der Zeile in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowStarts">
+      <MemberSignature Language="C#" Value="public IntPtr* RowStarts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int* RowStarts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.RowStarts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr*</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Ausgangspunkt der Zeile ab</summary>
+        <value>Der Ausgangspunkt der Zeile</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBoolean">
+      <MemberSignature Language="C#" Value="public void SetBoolean (int columnIndex, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBoolean(int32 columnIndex, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetBoolean(System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einen Bool-Wert, um eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetByte">
+      <MemberSignature Language="C#" Value="public void SetByte (int columnIndex, byte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetByte(int32 columnIndex, unsigned int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetByte(System.Int32,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einen Byte in einer <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBytes">
+      <MemberSignature Language="C#" Value="public void SetBytes (int columnIndex, byte[] bytesValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBytes(int32 columnIndex, unsigned int8[] bytesValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetBytes(System.Int32,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="bytesValue" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Pufferspalte.</param>
+        <param name="bytesValue">Das der Spalte zuzuweisende Bytearray.</param>
+        <summary>Weist einer Pufferspalte ein Bytearray zu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDate">
+      <MemberSignature Language="C#" Value="public void SetDate (int columnIndex, DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDate(int32 columnIndex, valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetDate(System.Int32,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einen DateTime-Wert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDateTime">
+      <MemberSignature Language="C#" Value="public void SetDateTime (int columnIndex, DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDateTime(int32 columnIndex, valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetDateTime(System.Int32,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einen DateTime-Wert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDateTimeOffset">
+      <MemberSignature Language="C#" Value="public void SetDateTimeOffset (int columnIndex, DateTimeOffset value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDateTimeOffset(int32 columnIndex, valuetype System.DateTimeOffset value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetDateTimeOffset(System.Int32,System.DateTimeOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einen DateTimeOffset-Wert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDecimal">
+      <MemberSignature Language="C#" Value="public void SetDecimal (int columnIndex, decimal value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDecimal(int32 columnIndex, valuetype System.Decimal value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetDecimal(System.Int32,System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einen Dezimalwert auf eine pufferspalte an.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDouble">
+      <MemberSignature Language="C#" Value="public void SetDouble (int columnIndex, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDouble(int32 columnIndex, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetDouble(System.Int32,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einen Double-Wert für eine <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEndOfRowset">
+      <MemberSignature Language="C#" Value="public void SetEndOfRowset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetEndOfRowset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetEndOfRowset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Benachrichtigt <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> darüber, dass dem Puffer von einer Komponente keine Zeilen mehr hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetErrorInfo">
+      <MemberSignature Language="C#" Value="public void SetErrorInfo (int OutputID, int ErrorCode, int ErrorColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetErrorInfo(int32 OutputID, int32 ErrorCode, int32 ErrorColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetErrorInfo(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="OutputID" Type="System.Int32" />
+        <Parameter Name="ErrorCode" Type="System.Int32" />
+        <Parameter Name="ErrorColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="OutputID">Die ID des dem <see cref="T:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutput100" /> Objekt, in dem die <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Fehler aufgetreten ist.</param>
+        <param name="ErrorCode">Die Nummer des aufgetretenen Fehlers.</param>
+        <param name="ErrorColumn">Die ID der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />-Spalte, in der der Fehler aufgetreten ist.</param>
+        <summary>Legt die Fehlerinformationen für die aktuelle <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" />-Zeile fest.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetGuid">
+      <MemberSignature Language="C#" Value="public void SetGuid (int columnIndex, Guid value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetGuid(int32 columnIndex, valuetype System.Guid value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetGuid(System.Int32,System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Pufferspalte.</param>
+        <param name="value">Die Guid der Spalte zugewiesen werden soll.</param>
+        <summary>Einer pufferspalte eine Guid zugewiesen.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInt16">
+      <MemberSignature Language="C#" Value="public void SetInt16 (int columnIndex, short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInt16(int32 columnIndex, int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetInt16(System.Int32,System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einer Pufferspalte eine 16-Bit-Ganzzahl mit Vorzeichen zu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInt32">
+      <MemberSignature Language="C#" Value="public void SetInt32 (int columnIndex, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInt32(int32 columnIndex, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetInt32(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einer Pufferspalte eine 32-Bit-Integer mit Vorzeichen zu</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInt64">
+      <MemberSignature Language="C#" Value="public void SetInt64 (int columnIndex, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInt64(int32 columnIndex, int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetInt64(System.Int32,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einer Pufferspalte einen 64-Bit-Integer mit Vorzeichen zu</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNull">
+      <MemberSignature Language="C#" Value="public void SetNull (int columnIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNull(int32 columnIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetNull(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <summary>Weist einer pufferspalte null.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSByte">
+      <MemberSignature Language="C#" Value="public void SetSByte (int columnIndex, sbyte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSByte(int32 columnIndex, int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetSByte(System.Int32,System.SByte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einer Pufferspalte eine 8-Bit-Ganzzahl mit Vorzeichen zu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSingle">
+      <MemberSignature Language="C#" Value="public void SetSingle (int columnIndex, float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSingle(int32 columnIndex, float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetSingle(System.Int32,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einer Pufferspalte einen Gleitkommawert zu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetString">
+      <MemberSignature Language="C#" Value="public void SetString (int columnIndex, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetString(int32 columnIndex, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetString(System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einer Pufferspalte eine Zeichenfolge zu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTime">
+      <MemberSignature Language="C#" Value="public void SetTime (int columnIndex, TimeSpan value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetTime(int32 columnIndex, valuetype System.TimeSpan value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetTime(System.Int32,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Zeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einen TimeSpan-Wert, der <see cref="T:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer" /> Spalte.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUInt16">
+      <MemberSignature Language="C#" Value="public void SetUInt16 (int columnIndex, ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetUInt16(int32 columnIndex, unsigned int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetUInt16(System.Int32,System.UInt16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einer Pufferspalte eine 16-Bit-Ganzzahl ohne Vorzeichen zu.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUInt32">
+      <MemberSignature Language="C#" Value="public void SetUInt32 (int columnIndex, uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetUInt32(int32 columnIndex, unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetUInt32(System.Int32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einer Pufferspalte eine 32-Bit-Ganzzahl ohne Vorzeichen zu</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUInt64">
+      <MemberSignature Language="C#" Value="public void SetUInt64 (int columnIndex, ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetUInt64(int32 columnIndex, unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Pipeline.PipelineBuffer.SetUInt64(System.Int32,System.UInt64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">Der Index der Spalte in der Pufferzeile.</param>
+        <param name="value">Der der Pufferspalte zugewiesene Wert.</param>
+        <summary>Weist einer Pufferspalte einen 64-Bit-Integer ohne Vorzeichen zu</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

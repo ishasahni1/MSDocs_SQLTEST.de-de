@@ -1,0 +1,146 @@
+<Type Name="BuildContributorContext" FullName="Microsoft.SqlServer.Dac.Deployment.BuildContributorContext">
+  <TypeSignature Language="C#" Value="public sealed class BuildContributorContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BuildContributorContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Deployment.BuildContributorContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt den Kontext für den Buildprozess, mit dem <see cref="T:Microsoft.SqlServer.Dac.Deployment.BuildContributor" /> Objekte während der projekterstellung. Finden Sie in der Dokumentation für die <see cref="P:Microsoft.SqlServer.Dac.Deployment.BuildContributorContext.Arguments" /> und <see cref="P:Microsoft.SqlServer.Dac.Deployment.BuildContributorContext.ExtensionFiles" /> Eigenschaften für Informationen dazu, wie diese in einer Projektdatei angegeben.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildContributorContext (System.Collections.Generic.Dictionary&lt;string,object&gt; buildProperties, System.Collections.Generic.Dictionary&lt;string,string&gt; arguments, Microsoft.SqlServer.Dac.Model.TSqlModel buildModel, Microsoft.Build.Framework.ITaskItem[] extensionFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.Dictionary`2&lt;string, object&gt; buildProperties, class System.Collections.Generic.Dictionary`2&lt;string, string&gt; arguments, class Microsoft.SqlServer.Dac.Model.TSqlModel buildModel, class Microsoft.Build.Framework.ITaskItem[] extensionFiles) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Deployment.BuildContributorContext.#ctor(System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.String},Microsoft.SqlServer.Dac.Model.TSqlModel,Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="buildProperties" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="arguments" Type="System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="buildModel" Type="Microsoft.SqlServer.Dac.Model.TSqlModel" />
+        <Parameter Name="extensionFiles" Type="Microsoft.Build.Framework.ITaskItem[]" />
+      </Parameters>
+      <Docs>
+        <param name="buildProperties">Ein <see cref="T:System.Collections.Generic.Dictionary`2" /> mit benannten Eigenschaftswerten. Überwachungsverlaufsprotokolle sein null.</param>
+        <param name="arguments">Ein <see cref="T:System.Collections.Generic.Dictionary`2" /> mit Befehlszeilenargumenten und Werte. Lässt keine NULL-Werte zu.</param>
+        <param name="buildModel">Ein Verweis auf die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> des Projekts. Darf nicht null sein.</param>
+        <param name="extensionFiles">Ein Array von <see cref="T:Microsoft.Build.Framework.ITaskItem" /> Objekte.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Dac.Deployment.BuildContributorContext" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Arguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Arguments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.BuildContributorContext.Arguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein Wörterbuch mit Befehlszeilenargumenten und deren Werten ab.
+Für die Buildgenerierung in SSDT sind Argumente aus einer .sqlproj-Datei oder einer referenzierten .targets-Datei verfügbar, sofern diese Dateien gefunden werden. Z. B. um das Argument "RunMyContributor" mit dem Wert "True" hinzuzufügen, würde die folgenden hinzugefügt:
+            
+            &lt;PropertyGroup&gt;
+                &lt;ContributorArguments Condition="'$(Configuration)' == 'Debug''"&gt;
+                    $(ContributorArguments);RunMyContributor=True;
+                &lt;/ContributorArguments&gt;
+            &lt;/PropertyGroup&gt;
+            
+            
+            In this case the argument is only added for Debug configuration.
+            Using the above configuration it is possible to collect information from the MSBuild environment
+            and pass it to the contributor. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; BuildProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; BuildProperties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.BuildContributorContext.BuildProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein Wörterbuch mit benannten Eigenschaften und deren Werten ab oder legt es fest.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtensionFiles">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Build.Framework.ITaskItem&gt; ExtensionFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Build.Framework.ITaskItem&gt; ExtensionFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.BuildContributorContext.ExtensionFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Build.Framework.ITaskItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ein Array von <see cref="T:Microsoft.Build.Framework.ITaskItem" /> zurück, die Dateien aus dem Projektsystem denen die Buildcontributors auswirken.
+            
+            Input configuration files can be defined in a .sqlproj file as part of the MSBuild process. 
+            Inside a .sqproj file, Build Configuration files are specified as follows:
+            
+            &lt;ItemGroup&gt;
+              &lt;BuildExtensionConfiguration Include="MyContributorName.MyFileName1.sql" /&gt;
+              &lt;BuildExtensionConfiguration Include="MyContributorName.MyFileName2.sql" /&gt;
+            &lt;/ItemGroup&gt;
+            
+            
+            Note that configuration files are accessible to all contributors. Contributors may employ a
+            file naming pattern to identify which input files related to that contributor.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Model">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlModel Model { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.TSqlModel Model" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Deployment.BuildContributorContext.Model" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlModel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" /> des Projekts
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

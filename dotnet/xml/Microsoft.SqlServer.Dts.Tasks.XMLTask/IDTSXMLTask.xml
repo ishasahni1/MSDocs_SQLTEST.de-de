@@ -1,0 +1,477 @@
+<Type Name="IDTSXMLTask" FullName="Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask">
+  <TypeSignature Language="C#" Value="public interface IDTSXMLTask" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDTSXMLTask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.XMLTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt den XML-Task von DTS dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Destination">
+      <MemberSignature Language="C#" Value="public string Destination { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Destination" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.Destination" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das Ziel des Tasks ab oder legt es fest.
+            </summary>
+        <value>Das Taskziel.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSaveResultTo DestinationType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSaveResultTo DestinationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.DestinationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSaveResultTo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Zieltyp ab oder legt ihn fest.
+            </summary>
+        <value>Der Zieltyp.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffAlgorithm">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm DiffAlgorithm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm DiffAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.DiffAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Vergleichsalgorithmus ab oder legt ihn fest.
+            </summary>
+        <value>Der Vergleichsalgorithmus.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffGramDestination">
+      <MemberSignature Language="C#" Value="public string DiffGramDestination { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DiffGramDestination" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.DiffGramDestination" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen der Verbindung oder Variablen ab, in der das DiffGram-Dokument vom XML-Task gespeichert wird, oder legt ihn fest.
+            </summary>
+        <value>Der Name der Verbindung oder Variablen, in der das DiffGram-Dokument vom XML-Task gespeichert wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffGramDestinationType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSaveResultTo DiffGramDestinationType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSaveResultTo DiffGramDestinationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.DiffGramDestinationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSaveResultTo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der den Typ des Ziels angibt, in dem das DiffGram-Dokument vom XML-Task gespeichert wird, oder legt ihn fest.
+            </summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSaveResultTo" /> Enumeration, der den Typ des Ziels angibt, in dem die XML-Task das DiffGram-Dokument gespeichert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffOptions">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffOptions DiffOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffOptions DiffOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.DiffOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der die Optionen angibt, die vom Vorgang beim Dokumentvergleich verwendet werden, oder legt ihn fest.
+            </summary>
+        <value>Ein Wert aus der <see cref="T:Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLDiffOptions" />-Enumeration, der die Optionen angibt, die vom Vorgang beim Dokumentvergleich verwendet werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FailOnDifference">
+      <MemberSignature Language="C#" Value="public bool FailOnDifference { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FailOnDifference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.FailOnDifference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob ein Taskfehler auftritt, wenn das XML-Dokument nicht gemäß dem Überprüfungsschema überprüft werden kann, oder legt ihn fest.
+            </summary>
+        <value>"true", wenn der Task fehlschlägt, wenn das XML-Dokument nicht gemäß dem Überprüfungsschema überprüft; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FailOnValidationFail">
+      <MemberSignature Language="C#" Value="public bool FailOnValidationFail { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FailOnValidationFail" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.FailOnValidationFail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob der Vorgang bei einem Überprüfungsfehler fehlschlägt, oder legt ihn fest.
+            </summary>
+        <value>"true", wenn bei einem Überprüfungsfehler fehlschlägt, schlägt der Vorgang fehl; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespaces">
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList Namespaces { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList Namespaces" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.Namespaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(Microsoft.SqlServer.Dts.Tasks.XMLTask.NSCollectionEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft eine Auflistung von Namespaces ab oder legt sie fest.
+            </summary>
+        <value>Eine Auflistung von Namespaces.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeList">
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList NodeList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList NodeList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.NodeList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft eine Auflistung der durch den XPath-Vorgang erzeugten Knoten ab oder legt sie fest.
+            </summary>
+        <value>Eine <see cref="T:System.Collections.ArrayList" /> Klasse enthält eine Auflistung von Knoten der XPath-Vorgang erzeugten.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLOperation OperationType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLOperation OperationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.OperationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Typ des vom Task ausgeführten Vorgangs ab oder legt ihn fest.
+            </summary>
+        <value>Der Typ des vom Task ausgeführten Vorgangs.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverwriteDestination">
+      <MemberSignature Language="C#" Value="public bool OverwriteDestination { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OverwriteDestination" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.OverwriteDestination" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob vorhandene Zieldateien durch den Vorgang überschrieben werden, oder legt ihn fest.
+            </summary>
+        <value>"true", wenn vorhandene Zieldateien durch den Vorgang überschrieben; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PutResultInOneNode">
+      <MemberSignature Language="C#" Value="public bool PutResultInOneNode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PutResultInOneNode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.PutResultInOneNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob das Ergebnis durch den Vorgang in einen einzigen Knoten eingefügt wird, oder legt ihn fest.
+            </summary>
+        <value>"true", wenn das Ergebnis durch den Vorgang in einen einzigen Knoten eingefügt; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveDiffGram">
+      <MemberSignature Language="C#" Value="public bool SaveDiffGram { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveDiffGram" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.SaveDiffGram" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob das Vergleichsergebnis (ein DiffGram-Dokument) gespeichert wird, oder legt ihn fest.
+            </summary>
+        <value>"true", wenn das Ergebnis des Vergleichs, ein DiffGram-Dokument gespeichert wird; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveOperationResult">
+      <MemberSignature Language="C#" Value="public bool SaveOperationResult { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveOperationResult" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.SaveOperationResult" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die Ausgabe des Vergleichsvorgangs vom XML-Task gespeichert wird, oder legt ihn fest.
+            </summary>
+        <value>"true", wenn bei Ausgabe des Vergleichsvorgangs vom XML-Task gespeichert wird; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondOperand">
+      <MemberSignature Language="C#" Value="public string SecondOperand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SecondOperand" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.SecondOperand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen der Verbindung, der Variablen oder den vom Benutzer bereitgestellten Text ab, die bzw. der den zweiten Operanden darstellt, oder legt ihn fest.
+            </summary>
+        <value>Der Name der Verbindung, der Variablen oder der vom Benutzer bereitgestellte Text, die bzw. der den zweiten Operanden darstellt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondOperandType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSourceType SecondOperandType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSourceType SecondOperandType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.SecondOperandType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Typ der Quelle ab, die die Daten im zweiten Operanden enthält, oder legt sie fest.
+            </summary>
+        <value>Der Typ der Quelle, die die Daten im zweiten Operanden enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public string Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Source" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen der Verbindung, der Variablen oder den vom Benutzer bereitgestellten Text ab, die bzw. der die vom Vorgang verwendete Quelle darstellt, oder legt ihn fest.
+            </summary>
+        <value>Der Name der Verbindung, der Variablen oder der vom Benutzer bereitgestellte Text, die bzw. der die vom Vorgang verwendete Quelle darstellt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSourceType SourceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSourceType SourceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.SourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Typ der Quelle ab, die das vom Vorgang verwendete XML-Dokument enthält, oder legt ihn fest.
+            </summary>
+        <value>Der Typ der Quelle, die das vom Vorgang verwendete XML-Dokument enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationDetails">
+      <MemberSignature Language="C#" Value="public bool ValidationDetails { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidationDetails" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.ValidationDetails" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary />
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLValidationType ValidationType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLValidationType ValidationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.ValidationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLValidationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Typ der Überprüfung ab, die vom Vorgang verwendet wird, oder legt ihn fest.
+            </summary>
+        <value>Der Typ der Überprüfung, die vom Vorgang verwendet wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathOperation">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLXPathOperation XPathOperation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLXPathOperation XPathOperation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.XPathOperation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLXPathOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den auszuführenden XPath-Vorgang ab oder legt ihn fest.
+            </summary>
+        <value>Der auszuführende XPath-Vorgang.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathStringSource">
+      <MemberSignature Language="C#" Value="public string XPathStringSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XPathStringSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.XPathStringSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Quelle des XPath-Ausdrucks ab oder legt sie fest.
+            </summary>
+        <value>Die Quelle des XPath-Ausdrucks.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathStringSourceType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSourceType XPathStringSourceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSourceType XPathStringSourceType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.XMLTask.IDTSXMLTask.XPathStringSourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Tasks.XMLTask.DTSXMLSourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Typ der Quelle ab, in der der XPath-Ausdruck enthalten ist, oder legt ihn fest.
+            </summary>
+        <value>Der Typ der Quelle, in der der XPath-Ausdruck enthalten ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

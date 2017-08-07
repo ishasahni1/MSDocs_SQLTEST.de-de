@@ -1,0 +1,118 @@
+<Type Name="IStatistics" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics">
+  <TypeSignature Language="C#" Value="public interface IStatistics : Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStatistics implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt eine Sql Server-Statistik-Objekt dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn&gt; Columns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn&gt; Columns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics.Columns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Auflistung von Spalten ab, die Teil der Statistik sind.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> von <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IStatisticsColumn" /> -Elemente mit den Spalten, die in der Statistik berücksichtigt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterDefinition">
+      <MemberSignature Language="C#" Value="public string FilterDefinition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FilterDefinition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics.FilterDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Text der Indexfilterdefinition ab.
+            </summary>
+        <value>Der Text der Indexfilterdefinition.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoAutomaticRecomputation">
+      <MemberSignature Language="C#" Value="public bool NoAutomaticRecomputation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NoAutomaticRecomputation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics.NoAutomaticRecomputation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert, der angibt, ob Statistiken neu generiert werden, wenn der Index erstellt wird.
+            </summary>
+        <value>
+          <c>true</c> if statistics are not regenerated when the index is created; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />-Objekt ab, das diesem Objekt übergeordnet ist.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />-Objekt, das diesem Objekt übergeordnet ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.StatisticsType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Metadata.StatisticsType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IStatistics.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.StatisticsType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.StatisticsTYpe" />-Wert ab, der den Typ des Statistikobjekts angibt.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

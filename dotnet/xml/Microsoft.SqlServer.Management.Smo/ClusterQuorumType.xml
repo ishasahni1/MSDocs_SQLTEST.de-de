@@ -1,0 +1,110 @@
+<Type Name="ClusterQuorumType" FullName="Microsoft.SqlServer.Management.Smo.ClusterQuorumType">
+  <TypeSignature Language="C#" Value="public enum ClusterQuorumType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClusterQuorumType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.ClusterQuorumType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SqlEnum</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.SqlServer.Management.Smo.ClusterQuorumTypeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Die verschiedenen Arten von Methoden kann ein Cluster ein Quorum bestimmen
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DiskOnly">
+      <MemberSignature Language="C#" Value="DiskOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.ClusterQuorumType DiskOnly = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.ClusterQuorumType.DiskOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ClusterQuorumType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Quorum wird anhand der Datenträger nur Stimme bestimmt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeAndDiskMajority">
+      <MemberSignature Language="C#" Value="NodeAndDiskMajority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.ClusterQuorumType NodeAndDiskMajority = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.ClusterQuorumType.NodeAndDiskMajority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ClusterQuorumType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Quorum wird anhand der Knoten- und Datenträgermehrheit bestimmt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeAndFileshareMajority">
+      <MemberSignature Language="C#" Value="NodeAndFileshareMajority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.ClusterQuorumType NodeAndFileshareMajority = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.ClusterQuorumType.NodeAndFileshareMajority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ClusterQuorumType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Quorum wird anhand der Knoten- und Dateifreigabemehrheit bestimmt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeMajority">
+      <MemberSignature Language="C#" Value="NodeMajority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.ClusterQuorumType NodeMajority = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.ClusterQuorumType.NodeMajority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ClusterQuorumType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Quorum wird anhand der Knotenmehrheit bestimmt.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotApplicable">
+      <MemberSignature Language="C#" Value="NotApplicable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Smo.ClusterQuorumType NotApplicable = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Smo.ClusterQuorumType.NotApplicable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.ClusterQuorumType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Server ist nicht in einem Windows-Cluster
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

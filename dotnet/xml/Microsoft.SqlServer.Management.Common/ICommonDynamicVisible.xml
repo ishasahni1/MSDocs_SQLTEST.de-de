@@ -1,0 +1,67 @@
+<Type Name="ICommonDynamicVisible" FullName="Microsoft.SqlServer.Management.Common.ICommonDynamicVisible">
+  <TypeSignature Language="C#" Value="public interface ICommonDynamicVisible" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICommonDynamicVisible" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Common.ICommonDynamicVisible" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ConnectionInfo</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Durch alle Klassen, die die Sichtbarkeit der bestimmte Enumerationswerte auf Grundlage der Zustand der Klasse zu diesem Zeitpunkt einschränken möchte, sollte die ICommonDynamicVisible-Schnittstelle implementiert werden.
+            
+             If a class contains a property which exposes an Enum and that class implements the
+             ICommonDynamicVisible interface then it will be called for each property that is of an Enum type.
+            
+             The context param can be used to determine for which Enum this method is being called. If a class
+             only has one Enum it is not necessary to make this check.
+            
+             The way to limit the visibility of certain items is to simply remove the unwanted Enum values
+             from the values ArrayList. This method is called on every drop down of the enum so it is possible
+             to change the list on each and every drop down. If the list will not change once it has been
+             initially determined caching the ArrayList and returning it would be helpful.
+            
+             Care should be taken to ensure that you are not removing values that the Enum property is already
+             set to. This will not cause any errors as all Enum values are still valid but when the user clicks
+             on the dropdown they will not see the current choice as an option.
+            
+             Also no new values should be added to the list since these values will not be convertable to valid
+             Enum values and an error will be thrown at runtime. If more dynamic control is needed then
+             consider using the DynamicValues design.
+             </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConfigureVisibleEnumFields">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection ConfigureVisibleEnumFields (System.ComponentModel.ITypeDescriptorContext context, System.Collections.ArrayList values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection ConfigureVisibleEnumFields(class System.ComponentModel.ITypeDescriptorContext context, class System.Collections.ArrayList values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Common.ICommonDynamicVisible.ConfigureVisibleEnumFields(System.ComponentModel.ITypeDescriptorContext,System.Collections.ArrayList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="values" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="context">
+        </param>
+        <param name="values">
+        </param>
+        <summary>
+             Entfernen von Elementen aus der Werteliste und zurückgeben, neue Liste werden die Werte in der Enumeration in Kontext angegeben, steuern.
+            
+             The enum can be determined with code similar to the following
+                 if (context.PropertyDescriptor.PropertyType == typeof(myEnum))
+             </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

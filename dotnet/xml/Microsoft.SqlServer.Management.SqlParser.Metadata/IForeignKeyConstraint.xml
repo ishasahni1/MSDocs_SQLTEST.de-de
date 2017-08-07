@@ -1,0 +1,159 @@
+<Type Name="IForeignKeyConstraint" FullName="Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint">
+  <TypeSignature Language="C#" Value="public interface IForeignKeyConstraint : Microsoft.SqlServer.Management.SqlParser.Metadata.IConstraint" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IForeignKeyConstraint implements class Microsoft.SqlServer.Management.SqlParser.Metadata.IConstraint, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.SqlParser.Metadata.IConstraint</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Stellt eine SQL Server-FOREIGN KEY-Einschränkung dar.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn&gt; Columns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection`1&lt;class Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn&gt; Columns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint.Columns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataOrderedCollection&lt;Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Spalten ab, die im Fremdschlüssel enthalten sind.
+            </summary>
+        <value>Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataCollection`1" /> der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn" />-Elemente mit den Spalten, die im Fremdschlüssel enthalten sind.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteAction">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ForeignKeyAction DeleteAction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Metadata.ForeignKeyAction DeleteAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint.DeleteAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ForeignKeyAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ForeignKeyAction" />-Wert ab, der die durchzuführende Aktion angibt, wenn eine Zeile, auf die vom Fremdschlüssel verwiesen wird, gelöscht wird. 
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ForeignKeyAction" />-Wert, der die durchzuführende Aktion angibt, wenn eine Zeile, auf die vom Fremdschlüssel verwiesen wird, gelöscht wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsChecked">
+      <MemberSignature Language="C#" Value="public bool IsChecked { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsChecked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint.IsChecked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die FOREIGN KEY-Einschränkung nur für neue oder auch für vorhandene Daten gilt. 
+            </summary>
+        <value>
+          <c>true</c> if the FOREIGN KEY constraint applies to both existing data and newly added data; <c>false</c>
+            if it applies only to newly added data.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die FOREIGN KEY-Einschränkung aktiviert wird.
+            </summary>
+        <value>
+          <c>true</c> if the FOREIGN KEY constraint is enabled; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotForReplication">
+      <MemberSignature Language="C#" Value="public bool NotForReplication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NotForReplication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint.NotForReplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen Wert ab, der angibt, ob die FOREIGN KEY-Einschränkung zur Replikation verfügbar ist.
+            </summary>
+        <value>
+          <c>true</c> if the FOREIGN KEY constraint is available for replication; otherwise, <c>false</c>.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferencedTable">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ITable ReferencedTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.SqlParser.Metadata.ITable ReferencedTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint.ReferencedTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ITable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITable" />-Objekt mit dem Primärschlüssel ab, auf den vom Fremdschlüssel verwiesen wird.
+            </summary>
+        <value>Das <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITable" />-Objekt mit dem Primärschlüssel, auf den vom Fremdschlüssel verwiesen wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAction">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.ForeignKeyAction UpdateAction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.SqlParser.Metadata.ForeignKeyAction UpdateAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyConstraint.UpdateAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.ForeignKeyAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft einen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ForeignKeyAction" />-Wert ab, der die durchzuführende Aktion angibt, wenn eine Zeile, auf die vom Fremdschlüssel verwiesen wird, aktualisiert wird. 
+            </summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ForeignKeyAction" />-Wert, der die durchzuführende Aktion angibt, wenn eine Zeile, auf die vom Fremdschlüssel verwiesen wird, gelöscht wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

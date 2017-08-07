@@ -1,0 +1,136 @@
+<Type Name="PageRestorePlanner" FullName="Microsoft.SqlServer.Management.Smo.PageRestorePlanner">
+  <TypeSignature Language="C#" Value="public sealed class PageRestorePlanner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PageRestorePlanner extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.PageRestorePlanner" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SmoExtended</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Planer zur Seitenwiederherstellung
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PageRestorePlanner (Microsoft.SqlServer.Management.Smo.Database database);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Database database) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PageRestorePlanner.#ctor(Microsoft.SqlServer.Management.Smo.Database)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.Smo.Database" />
+      </Parameters>
+      <Docs>
+        <param name="database">Die Datenbank.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.Smo.PageRestorePlanner" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PageRestorePlanner (Microsoft.SqlServer.Management.Smo.Database database, string tailLogBackupFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Database database, string tailLogBackupFileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PageRestorePlanner.#ctor(Microsoft.SqlServer.Management.Smo.Database,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.Smo.Database" />
+        <Parameter Name="tailLogBackupFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="database">Die Datenbank.</param>
+        <param name="tailLogBackupFileName">Der Name der Sicherungsdatei des Protokollfragments.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.Smo.PageRestorePlanner" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRestorePlan">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.RestorePlan CreateRestorePlan ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Smo.RestorePlan CreateRestorePlan() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.PageRestorePlanner.CreateRestorePlan" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RestorePlan</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt den Wiederherstellungsplan.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Database">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.Database Database { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.Database Database" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.PageRestorePlanner.Database" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.Database</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspectPages">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Smo.SuspectPage&gt; SuspectPages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.SqlServer.Management.Smo.SuspectPage&gt; SuspectPages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.PageRestorePlanner.SuspectPages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Management.Smo.SuspectPage&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die fehlerverdächtigen Seiten ab oder legt sie fest.
+            </summary>
+        <value>Die fehlerverdächtigen Seiten.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailLogBackupFile">
+      <MemberSignature Language="C#" Value="public string TailLogBackupFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TailLogBackupFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.PageRestorePlanner.TailLogBackupFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Sicherungsdatei des Protokollfragments ab oder legt sie fest..
+            </summary>
+        <value>Die Sicherungsdatei des Protokollfragments.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

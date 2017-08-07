@@ -1,0 +1,451 @@
+<Type Name="RestorePlan" FullName="Microsoft.SqlServer.Management.Smo.RestorePlan">
+  <TypeSignature Language="C#" Value="public class RestorePlan" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RestorePlan extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Smo.RestorePlan" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.SmoExtended</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Wiederherstellungsplan Datenbank ist eine Sequenz von datenbankwiederherstellungsvorgängen wird eine Datenbank in einem bestimmten Zustand in einen Punkt Zeitpunkt wiederhergestellt.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RestorePlan (Microsoft.SqlServer.Management.Smo.Database database);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Database database) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestorePlan.#ctor(Microsoft.SqlServer.Management.Smo.Database)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="database" Type="Microsoft.SqlServer.Management.Smo.Database" />
+      </Parameters>
+      <Docs>
+        <param name="database">Die Datenbank.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.Smo.RestorePlan" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RestorePlan (Microsoft.SqlServer.Management.Smo.Server server);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Server server) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestorePlan.#ctor(Microsoft.SqlServer.Management.Smo.Server)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.Smo.Server" />
+      </Parameters>
+      <Docs>
+        <param name="server">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RestorePlan (Microsoft.SqlServer.Management.Smo.Server server, string databaseName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.SqlServer.Management.Smo.Server server, string databaseName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestorePlan.#ctor(Microsoft.SqlServer.Management.Smo.Server,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="server" Type="Microsoft.SqlServer.Management.Smo.Server" />
+        <Parameter Name="databaseName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="server">Der Server.</param>
+        <param name="databaseName">Der Name der Datenbank.</param>
+        <summary>
+            Initialisiert eine neue Instanz der dem <see cref="T:Microsoft.SqlServer.Management.Smo.RestorePlan" /> Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRestoreOperation">
+      <MemberSignature Language="C#" Value="public void AddRestoreOperation (Microsoft.SqlServer.Management.Smo.BackupSet backupSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRestoreOperation(class Microsoft.SqlServer.Management.Smo.BackupSet backupSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestorePlan.AddRestoreOperation(Microsoft.SqlServer.Management.Smo.BackupSet)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backupSet" Type="Microsoft.SqlServer.Management.Smo.BackupSet" />
+      </Parameters>
+      <Docs>
+        <param name="backupSet">Der Sicherungssatz wiederhergestellt werden.</param>
+        <summary>
+            Fügt den Wiederherstellungsvorgang hinzu.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRestoreOperation">
+      <MemberSignature Language="C#" Value="public void AddRestoreOperation (System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Smo.BackupSet&gt; backupSets);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRestoreOperation(class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Management.Smo.BackupSet&gt; backupSets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestorePlan.AddRestoreOperation(System.Collections.Generic.List{Microsoft.SqlServer.Management.Smo.BackupSet})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backupSets" Type="System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Smo.BackupSet&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="backupSets">Die Sicherungssätze.</param>
+        <summary>
+            Fügt die Wiederherstellungsvorgänge.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.AsyncStatus AsyncStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.AsyncStatus AsyncStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestorePlan.AsyncStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.AsyncStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Status des letzten asynchronen Vorgangs einschließlich möglicher Fehler ab.
+            </summary>
+        <value>Der asynchrone Status.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseExistingConnections">
+      <MemberSignature Language="C#" Value="public bool CloseExistingConnections { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CloseExistingConnections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestorePlan.CloseExistingConnections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen Wert, der angibt, ob [bestehende Verbindungen schließen].
+            </summary>
+        <value>
+          <c>true</c> if [close existing connections]; otherwise, <c>false</c>.
+            </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Complete">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Common.ServerMessageEventHandler Complete;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Common.ServerMessageEventHandler Complete" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.RestorePlan.Complete" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Tritt auf, wenn [Restore-Vorgang ruft abgeschlossen].
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DatabaseName">
+      <MemberSignature Language="C#" Value="public string DatabaseName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DatabaseName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestorePlan.DatabaseName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Namen der Datenbank ab oder legt ihn fest.
+            </summary>
+        <value>Der Name der Datenbank.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestorePlan.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Überprüft den Wiederherstellungsplan und führt ihn aus.
+            <exeception>InvalidRestorePlanException wird ausgelöst, wenn die Überprüfung ein Fehler auftritt.</exeception></summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteAsync">
+      <MemberSignature Language="C#" Value="public void ExecuteAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestorePlan.ExecuteAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Überprüft den Wiederherstellungsplan und führt ihn asynchron aus.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Information">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Common.ServerMessageEventHandler Information;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Common.ServerMessageEventHandler Information" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.RestorePlan.Information" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Tritt auf, wenn [Server sendet Informationen an].
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextMedia">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Common.ServerMessageEventHandler NextMedia;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Common.ServerMessageEventHandler NextMedia" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.RestorePlan.NextMedia" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Common.ServerMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Tritt auf, wenn [nächsten Mediums muss geladen sein].
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextRestore">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Smo.NextRestoreEventHandler NextRestore;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Smo.NextRestoreEventHandler NextRestore" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.RestorePlan.NextRestore" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.NextRestoreEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Tritt auf, wenn [neben wiederherstellen].
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentComplete">
+      <MemberSignature Language="C#" Value="public event Microsoft.SqlServer.Management.Smo.PercentCompleteEventHandler PercentComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.SqlServer.Management.Smo.PercentCompleteEventHandler PercentComplete" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.SqlServer.Management.Smo.RestorePlan.PercentComplete" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.PercentCompleteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Tritt auf, wenn [Server sendet Prozent vollständige Informationen].
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestoreAction">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.RestoreActionType RestoreAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Management.Smo.RestoreActionType RestoreAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestorePlan.RestoreAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.RestoreActionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ermittelt und definiert den Typ der Wiederherstellungsaktion: Datenbank, Datei, Protokoll, Seite
+            </summary>
+        <value>Die Wiederherstellungsaktion.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestoreOperations">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Smo.Restore&gt; RestoreOperations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.SqlServer.Management.Smo.Restore&gt; RestoreOperations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestorePlan.RestoreOperations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.SqlServer.Management.Smo.Restore&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Wiederherstellungsvorgänge ab oder legt sie fest.
+            </summary>
+        <value>Die Wiederherstellungsvorgänge.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Script ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.StringCollection Script() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestorePlan.Script" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Überprüft den Wiederherstellungsplan und erstellt ein Skript für den Vorgang.
+            </summary>
+        <returns>StringColection des T-SQL-Skripts für den Vorgang. </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Server">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.Server Server { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.Server Server" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestorePlan.Server" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.Server</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Server, auf dem der Wiederherstellungsplan ausgeführt wird.
+            </summary>
+        <value>Der Server.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRestoreOptions">
+      <MemberSignature Language="C#" Value="public void SetRestoreOptions (Microsoft.SqlServer.Management.Smo.RestoreOptions restoreOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRestoreOptions(class Microsoft.SqlServer.Management.Smo.RestoreOptions restoreOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestorePlan.SetRestoreOptions(Microsoft.SqlServer.Management.Smo.RestoreOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="restoreOptions" Type="Microsoft.SqlServer.Management.Smo.RestoreOptions" />
+      </Parameters>
+      <Docs>
+        <param name="restoreOptions">Die Restore-Optionen.</param>
+        <summary>
+            Legt die Wiederherstellungsoptionen fest.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailLogBackupOperation">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Smo.Backup TailLogBackupOperation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Smo.Backup TailLogBackupOperation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Smo.RestorePlan.TailLogBackupOperation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Smo.Backup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Sicherungsvorgang für das Protokollfragment ab oder legt ihn fest..
+            </summary>
+        <value>Der Sicherungsvorgang für das Protokollfragment.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verify">
+      <MemberSignature Language="C#" Value="public void Verify (bool checkBackupMediaIntegrity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Verify(bool checkBackupMediaIntegrity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Smo.RestorePlan.Verify(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="checkBackupMediaIntegrity" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="checkBackupMediaIntegrity">Wenn auf festgelegt <c>"true"</c> [Überprüfen der Integrität der Sicherungsmedien].</param>
+        <summary>
+            Überprüft den Wiederherstellungsplan.
+InvalidRestorePlanException wird ausgelöst, wenn die Überprüfung ein Fehler auftritt.
+Nur für SQL Server 2005 oder höher unterstützt.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

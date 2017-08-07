@@ -1,0 +1,272 @@
+<Type Name="IDTSExecuteProcess" FullName="Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess">
+  <TypeSignature Language="C#" Value="public interface IDTSExecuteProcess" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDTSExecuteProcess" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ExecProcTask</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Represents an interface for the <see cref="T:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.ExecuteProcess" />.
+             </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="public string Arguments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Arguments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.Arguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets command prompt arguments. The string can contain multiple arguments separated by a space
+             </summary>
+        <value>Eine Zeichenfolge, die das Befehlszeilenargument bzw. zusätzliche Argumente enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Executable">
+      <MemberSignature Language="C#" Value="public string Executable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Executable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.Executable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets the name of the Microsoft Win32 executable file or batch files to run when the package runs.
+             </summary>
+        <value>Eine Zeichenfolge, die den Namen der ausführbaren Microsoft Win32-Datei oder Batchdateien enthält ausführen, wenn das Paket ausgeführt wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FailTaskIfReturnCodeIsNotSuccessValue">
+      <MemberSignature Language="C#" Value="public bool FailTaskIfReturnCodeIsNotSuccessValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FailTaskIfReturnCodeIsNotSuccessValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.FailTaskIfReturnCodeIsNotSuccessValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets a value that indicates whether the task fails if the process exit code is different from the value specified in <see cref="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.SuccessValue" />.
+             </summary>
+        <value>"true", wenn der Task fehlschlägt, wenn der Prozessexitcode von dem Wert im angegebenen unterscheidet <see cref="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.SuccessValue" />; false, wenn der Vorgang fortgesetzt, unabhängig von der ein Konflikt zwischen dem Prozess-Fehlercode wird und die <see cref="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.SuccessValue" /> Eigenschaft.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireFullFileName">
+      <MemberSignature Language="C#" Value="public bool RequireFullFileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequireFullFileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.RequireFullFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets a value that indicates whether the full name and extension of the task is required.
+             </summary>
+        <value>"true", wenn der vollständige Name und Erweiterung des Tasks erforderlich sind; andernfalls "false". Wenn auf True festgelegt, der Task fehlschlagen soll, wenn der vollständige Dateiname für die ausführbare Datei nicht gefunden werden kann. Der Standardwert ist true.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardErrorVariable">
+      <MemberSignature Language="C#" Value="public string StandardErrorVariable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StandardErrorVariable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.StandardErrorVariable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets the name of the variable used to capture the error output of the process to be run.
+             </summary>
+        <value>Eine Zeichenfolge mit dem Namen der Variablen verwendet, um die Fehlerausgabe des auszuführenden Prozesses erfasst wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardInputVariable">
+      <MemberSignature Language="C#" Value="public string StandardInputVariable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StandardInputVariable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.StandardInputVariable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets the name of the variable to be used as an input to the process to be run.
+             </summary>
+        <value>Eine Zeichenfolge, die mit dem Namen der Variablen, die als Eingabe an den Prozess verwendet werden, ausgeführt werden soll.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardOutputVariable">
+      <MemberSignature Language="C#" Value="public string StandardOutputVariable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StandardOutputVariable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.StandardOutputVariable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets the name of the variable used to capture the output of the process to be run.
+             </summary>
+        <value>Eine Zeichenfolge mit dem Namen der Variablen verwendet, um die Ausgabe des auszuführenden Prozesses erfasst wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuccessValue">
+      <MemberSignature Language="C#" Value="public int SuccessValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SuccessValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.SuccessValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets the value returned by the executable or batch file that indicates success.
+             </summary>
+        <value>Eine ganze Zahl, die von der ausführbaren Datei oder Batchdatei, die erfolgreiche Ausführung steht zurückgegebenen Wert enthält. Standardmäßig ist dieser Wert auf 0 festgelegt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminateProcessAfterTimeOut">
+      <MemberSignature Language="C#" Value="public bool TerminateProcessAfterTimeOut { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TerminateProcessAfterTimeOut" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.TerminateProcessAfterTimeOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets a value that indicates whether the process is forced to end after the time-out period specified by the <see cref="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.TimeOut" /> property.
+             </summary>
+        <value>"true", wenn der Prozess erzwungen wird, nach dem Timeoutzeitraum gemäß der <see cref="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.TimeOut" /> -Eigenschaft, False, wenn der Prozess zum Ausführen unabhängig vom Timeoutzeitraum fortgesetzt werden kann.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeOut">
+      <MemberSignature Language="C#" Value="public int TimeOut { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TimeOut" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.TimeOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets the number of seconds that the task allows the process to run.
+             </summary>
+        <value>Eine ganze Zahl, die die Anzahl der Sekunden angibt, die der Task für die prozessausführung vorsieht. Der Wert 0 (null) bedeutet, dass kein Timeoutwert verwendet und der Prozess so lange ausgeführt wird, bis er abgeschlossen ist oder bis ein Fehler auftritt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowStyle">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.ProcessWindowStyle WindowStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.ProcessWindowStyle WindowStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.WindowStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ProcessWindowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets the style of the window to run the process in.
+             </summary>
+        <value>Ein ProcessWindowStyle-Enumerationswert, der angibt, wie das Fenster wird angezeigt, wenn der Prozess ausgeführt wird.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkingDirectory">
+      <MemberSignature Language="C#" Value="public string WorkingDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WorkingDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.WorkingDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Diese API unterstützt die Produktinfrastruktur und ist nicht für eine direkte Verwendung im Code vorgesehen.
+            
+             Gets or sets the directory in which the files specified in the <see cref="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.Arguments" /> property can be found
+             </summary>
+        <value>Eine Zeichenfolge, die das Verzeichnis enthält, in dem die Dateien, in angegeben, der <see cref="P:Microsoft.SqlServer.Dts.Tasks.ExecuteProcess.IDTSExecuteProcess.Arguments" /> Eigenschaft gefunden werden kann.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

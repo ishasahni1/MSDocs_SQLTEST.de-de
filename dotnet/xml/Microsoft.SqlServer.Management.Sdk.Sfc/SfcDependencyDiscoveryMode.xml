@@ -1,0 +1,112 @@
+<Type Name="SfcDependencyDiscoveryMode" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode">
+  <TypeSignature Language="C#" Value="public enum SfcDependencyDiscoveryMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SfcDependencyDiscoveryMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Die DiscoveryMode-Enumeration gibt an, die Arten von Beziehungen, die in das Abhängigkeitsdiagramm verarbeitet werden sollen.
+Hierbei handelt es sich um vordefinierte Permutationen auf niedrigerer Ebene die Relation-Flags, die wir derzeit nicht verfügbar machen, direkte Kontrolle über die Entnahme.
+Es ist Aufgabe der Domänen und Objekte, für die hinzuzufügende Beziehungen, um diesen Modus berücksichtigt aufgerufen wird.
+1. Untergeordnete Elemente - führen Sie alle untergeordneten Elemente des Stamm Objekte rekursiv. Es werden keine Verweise befolgt.
+2. Vollständige - führen Sie alle untergeordneten Elemente und alle Verweise von Stamm Objekte rekursiv.
+3. Weitergeben: Führen Sie alle untergeordneten Elemente zum Emulieren der Wirkungsweise PropagateInfo in SMO in SQL Server.
+3. UsedBy - direkten übergeordneten Element folgt und eingehende Verweise von Stammobjekten. Keine Rekursion.
+4. Verwendungen - folgen direkt untergeordneten Standorten und ausgehende Verweise von Stammobjekten. Keine Rekursion.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="Children" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode Children = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode.Children" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Schließt nur die untergeordneten Elemente ein, die für die Vollständigkeit der übergeordneten Objekte mindestens erforderlich sind.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Full">
+      <MemberSignature Language="C#" Value="Full" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode Full = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode.Full" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Schließt alle untergeordneten Elemente ein, und zwar auch die Elemente, die für die Vollständigkeit der übergeordneten Objekte nicht mindestens erforderlich sind.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Propagate">
+      <MemberSignature Language="C#" Value="Propagate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode Propagate = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode.Propagate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Schließt alle untergeordneten Elemente ein, die für die PropagateInfo-Emulation erforderlich sind.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UsedBy">
+      <MemberSignature Language="C#" Value="UsedBy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode UsedBy = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode.UsedBy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Schließen Sie nur Immmediate übergeordneten Elementen von erforderlichen untergeordneten Elementen und unmittelbar eingehende Verweise ein.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Uses">
+      <MemberSignature Language="C#" Value="Uses" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode Uses = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode.Uses" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcDependencyDiscoveryMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Schließt nur unmittelbar erforderliche untergeordnete Elemente und unmittelbar ausgehende Verweise ein.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

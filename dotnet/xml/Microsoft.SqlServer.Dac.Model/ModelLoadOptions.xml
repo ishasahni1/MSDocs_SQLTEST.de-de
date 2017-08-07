@@ -1,0 +1,171 @@
+<Type Name="ModelLoadOptions" FullName="Microsoft.SqlServer.Dac.Model.ModelLoadOptions">
+  <TypeSignature Language="C#" Value="public sealed class ModelLoadOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ModelLoadOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Model.ModelLoadOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Optionen zum Laden eines Modells aus einer Datenquelle, z. B. eine Dacpac-Datei.
+            
+            These options can be very important depending on the scenario. For instance
+            when running static code analysis using the <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> it is strongly recommended that 
+            the <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> option be set to true, as many rules expect a fully scripted source and
+            may not operate as expected on a non script-backed model. 
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelLoadOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Erstellt eine Instanz des <see cref="T:Microsoft.SqlServer.Dac.Model.ModelLoadOptions" /> mit den Standardoptionen, die verwendet werden <see cref="F:Microsoft.SqlServer.Dac.DacSchemaModelStorageType.Memory" /> Speicher und festzulegende <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> auf "falsch" sein.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelLoadOptions (Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, bool loadAsScriptBackedModel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, bool loadAsScriptBackedModel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.#ctor(Microsoft.SqlServer.Dac.DacSchemaModelStorageType,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+        <Parameter Name="loadAsScriptBackedModel" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="modelStorageType">Wert für die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.ModelStorageType" /> Eigenschaft</param>
+        <param name="loadAsScriptBackedModel">Wert für die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> Eigenschaft</param>
+        <summary>
+            Erstellt eine Instanz des <see cref="T:Microsoft.SqlServer.Dac.Model.ModelLoadOptions" /> mit den angegebenen Optionen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelLoadOptions (Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, bool loadAsScriptBackedModel, bool throwOnModelErrors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType modelStorageType, bool loadAsScriptBackedModel, bool throwOnModelErrors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.#ctor(Microsoft.SqlServer.Dac.DacSchemaModelStorageType,System.Boolean,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="modelStorageType" Type="Microsoft.SqlServer.Dac.DacSchemaModelStorageType" />
+        <Parameter Name="loadAsScriptBackedModel" Type="System.Boolean" />
+        <Parameter Name="throwOnModelErrors" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="modelStorageType">Wert für die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.ModelStorageType" /> Eigenschaft</param>
+        <param name="loadAsScriptBackedModel">Wert für die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" /> Eigenschaft</param>
+        <param name="throwOnModelErrors">Wert für die <see cref="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.ThrowOnModelErrors" /> Eigenschaft</param>
+        <summary>
+            Erstellt eine Instanz des <see cref="T:Microsoft.SqlServer.Dac.Model.ModelLoadOptions" /> mit den angegebenen Optionen.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAsScriptBackedModel">
+      <MemberSignature Language="C#" Value="public bool LoadAsScriptBackedModel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LoadAsScriptBackedModel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.LoadAsScriptBackedModel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Das Modell geladen werden sollen, sodass Objekte durch Ihre skriptgesteuerten Darstellungen gesichert werden? In diesem Fall Objekte in der <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.UserDefined" /> Bereich weist einen Datenquellennamen und quellpositionsinformationen. 
+            
+            When loading from a Dacpac or any other non-scripted source the model will not have source information. This
+            means that when running static code analysis using the <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> some rules may not work 
+            correctly, and that existing objects in the model could not be replaced using the 
+            <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddOrUpdateObjects(System.String,System.String,Microsoft.SqlServer.Dac.Model.TSqlObjectOptions)" /> method since there
+            is no script with their original definition. For scenarios that use the <see cref="T:Microsoft.SqlServer.Dac.CodeAnalysis.CodeAnalysisService" /> setting this
+            to true is strongly recommended. Similarly if you wish to update existing objects in the model setting this to true may
+            be useful.
+            
+            Note that there is a potentially significant performance cost involved in creating a scripted model. All 
+            top level objects in the <see cref="F:Microsoft.SqlServer.Dac.Model.DacQueryScopes.UserDefined" /> scope will be scripted out as strings 
+            and then replaced with their scripted representations, after which the model will then have to fully resolve all 
+            relationships. This will cause a one-time performance hit at the time the model is loaded. 
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Standardwert ist "false", da Leistung Erstellung ein Skript gestütztes Modell aus einer nicht skriptgesteuerten Quelle</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelStorageType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.DacSchemaModelStorageType ModelStorageType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dac.DacSchemaModelStorageType ModelStorageType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.ModelStorageType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.DacSchemaModelStorageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sollte das Modell im Arbeitsspeicher gespeichert oder werden ein dateibasierten Speicher verwendet sollte?
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowOnModelErrors">
+      <MemberSignature Language="C#" Value="public bool ThrowOnModelErrors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnModelErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelLoadOptions.ThrowOnModelErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Definiert, ob das Modell bearbeiten APIs lösen eine <see cref="T:Microsoft.SqlServer.Dac.Model.DacModelException" /> Wenn blockierende Fehler im Modell vorhanden sind.
+            
+            When adding a new object or deleting/modifying existing objects in the model using API calls such as 
+            <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddObjects(System.String)" />, <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.AddOrUpdateObjects(System.String,System.String,Microsoft.SqlServer.Dac.Model.TSqlObjectOptions)" />, <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.DeleteObjects(System.String)" /> 
+            and <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.ConvertToScriptedObject(Microsoft.SqlServer.Dac.Model.TSqlObject,System.String)" />, the model throws <see cref="T:Microsoft.SqlServer.Dac.Model.DacModelException" /> signaling 
+            the presence of model blocking errors. Model blocking errors indicates the presence of serious errors such as parser, interpreter and other errors in the objects.
+            Setting this option to false allows building the model even if it has such serious errors. Subsequently those objects with model errors can be retrieved using the
+            <see cref="M:Microsoft.SqlServer.Dac.Model.TSqlModel.GetModelErrors" /> method.
+            
+            When objects with model blocking errors are added to the model, the object is edited such that errant parts are removed or commented out in a 
+            best effort manner to preserve the parts of the object that do not have errors. For instance a stored procedure that has a parser error in the procedure body 
+            will have its body commented out before adding to the model. As a worst case the object is completely dropped while preserving the model errors.
+            
+            Note that current implementation handles objects with model errors as follows
+            1) Sql procedures and views are added to the model with commented body.
+            2) Other object types are completely dropped while preserving the model errors.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

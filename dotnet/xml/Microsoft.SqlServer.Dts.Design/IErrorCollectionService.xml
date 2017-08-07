@@ -1,0 +1,123 @@
+<Type Name="IErrorCollectionService" FullName="Microsoft.SqlServer.Dts.Design.IErrorCollectionService">
+  <TypeSignature Language="C#" Value="public interface IErrorCollectionService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IErrorCollectionService" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Design.IErrorCollectionService" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dts.Design</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Zeichnet Ereignisse von Datenflusskomponenten auf, wenn Sie alle Fehler und Warnungen erfassen müssen, die von der Komponente ausgelöst wurden, und nicht nur den letzten Fehler oder die letzte Warnung.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClearErrors">
+      <MemberSignature Language="C#" Value="public void ClearErrors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearErrors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Design.IErrorCollectionService.ClearErrors" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Löscht den Fehlercache.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetErrorMessage">
+      <MemberSignature Language="C#" Value="public string GetErrorMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetErrorMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Design.IErrorCollectionService.GetErrorMessage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gibt eine Zeichenfolge mit einer kombinierten Fehlermeldung, die die Fehlermeldung, Komponente und Unterkomponente für jeden Fehler enthält.
+            </summary>
+        <returns>Die Fehlermeldung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetErrorMessage">
+      <MemberSignature Language="C#" Value="public string GetErrorMessage (bool descriptionOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetErrorMessage(bool descriptionOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Design.IErrorCollectionService.GetErrorMessage(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="descriptionOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="descriptionOnly">Ein boolescher Wert, der angibt, ob nur die Fehlermeldung zurückgegeben wird, oder die Fehlerinformationen der Komponente und Unterkomponente.</param>
+        <summary>
+            Gibt eine Zeichenfolge, die die Fehlermeldung enthält.
+            </summary>
+        <returns>Wenn "true", eine Zeichenfolge, die die Fehlermeldung enthält. Bei "false", eine Zeichenfolge, die Fehlerinformationen der Komponente und Unterkomponente enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetErrors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Dts.Design.IComponentErrorInfo&gt; GetErrors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.SqlServer.Dts.Design.IComponentErrorInfo&gt; GetErrors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Design.IErrorCollectionService.GetErrors" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.SqlServer.Dts.Design.IComponentErrorInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft die Liste der Fehler ab und speichert sie in einer ICollection.
+            </summary>
+        <returns>Ein ICollection, das den Fehler enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasErrors">
+      <MemberSignature Language="C#" Value="public bool HasErrors (System.Diagnostics.TraceLevel level);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasErrors(valuetype System.Diagnostics.TraceLevel level) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Design.IErrorCollectionService.HasErrors(System.Diagnostics.TraceLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="level" Type="System.Diagnostics.TraceLevel" />
+      </Parameters>
+      <Docs>
+        <param name="level">Die Ablaufverfolgungsebene.</param>
+        <summary>
+            Gibt an, ob der Auflistungsdienst Fehler aufweist.
+            </summary>
+        <returns>True, wenn der auflistungsdienst Fehler aufweist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

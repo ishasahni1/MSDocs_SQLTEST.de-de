@@ -1,0 +1,163 @@
+<Type Name="IReadOnlySet" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlySet">
+  <TypeSignature Language="C#" Value="public interface IReadOnlySet : Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReadOnlySet implements class Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlySet" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlyCollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Eine Schnittstelle zu einem unveränderlichen Satz.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsProperSubsetOf">
+      <MemberSignature Language="C#" Value="public bool IsProperSubsetOf (System.Collections.IEnumerable other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsProperSubsetOf(class System.Collections.IEnumerable other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlySet.IsProperSubsetOf(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="other">Die Sequenz, auf die geprüft werden soll.</param>
+        <summary>
+            Überprüfen Sie, ob dieser Satz eine Teilmenge der anderen, jedoch nicht dasselbe wie es ist.
+            </summary>
+        <returns>True, wenn dieser Satz eine echte Teilmenge von anderen ist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsProperSupersetOf">
+      <MemberSignature Language="C#" Value="public bool IsProperSupersetOf (System.Collections.IEnumerable other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsProperSupersetOf(class System.Collections.IEnumerable other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlySet.IsProperSupersetOf(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="other">Die Sequenz, auf die geprüft werden soll.</param>
+        <summary>
+            Überprüfen Sie, ob dieser Satz eine Obermenge eines anderen, jedoch nicht dasselbe wie es ist.
+            </summary>
+        <returns>True, wenn dieser Satz eine richtige Subperset anderer ist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubsetOf">
+      <MemberSignature Language="C#" Value="public bool IsSubsetOf (System.Collections.IEnumerable other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSubsetOf(class System.Collections.IEnumerable other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlySet.IsSubsetOf(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="other">Die Sequenz, auf die geprüft werden soll.</param>
+        <summary>
+            Überprüfen Sie, ob dieser Satz eine Teilmenge der anderen ist.
+            </summary>
+        <returns>True, wenn dieser Satz eine Teilmenge der anderen ist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupersetOf">
+      <MemberSignature Language="C#" Value="public bool IsSupersetOf (System.Collections.IEnumerable other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupersetOf(class System.Collections.IEnumerable other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlySet.IsSupersetOf(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="other">Die Sequenz, auf die geprüft werden soll.</param>
+        <summary>
+            Überprüfen Sie, ob dieser Satz eine Obermenge eines anderen ist.
+            </summary>
+        <returns>True, wenn dieser Satz eine Obermenge eines anderen ist. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overlaps">
+      <MemberSignature Language="C#" Value="public bool Overlaps (System.Collections.IEnumerable other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Overlaps(class System.Collections.IEnumerable other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlySet.Overlaps(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="other">Die Sequenz, auf die geprüft werden soll.</param>
+        <summary>
+            Überprüfen Sie, ob dieser Satz Elemente auch in zahlreichen anderen vorhanden sind.
+            </summary>
+        <returns>True, wenn dieser Satz Elemente auch in zahlreichen anderen vorhanden sind. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEquals">
+      <MemberSignature Language="C#" Value="public bool SetEquals (System.Collections.IEnumerable other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetEquals(class System.Collections.IEnumerable other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.IReadOnlySet.SetEquals(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="other">Die Sequenz, auf die geprüft werden soll.</param>
+        <summary>
+            Überprüfen Sie, ob dieser Satz die gleichen und nur die gleichen Elemente wie andere enthält.
+            </summary>
+        <returns>True, wenn dieser Satz die gleichen und nur die gleichen Elemente wie andere enthält. andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

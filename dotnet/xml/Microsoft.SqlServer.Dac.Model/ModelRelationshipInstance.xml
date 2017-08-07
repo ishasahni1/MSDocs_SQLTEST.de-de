@@ -1,0 +1,192 @@
+<Type Name="ModelRelationshipInstance" FullName="Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance">
+  <TypeSignature Language="C#" Value="public sealed class ModelRelationshipInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ModelRelationshipInstance extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Dac.Extensions</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt einen Verweis von einem <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> zu einem anderen, der möglicherweise nicht aufgelöst.
+            </summary>
+    <remarks>
+      <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModelSchema" />Metadatenklassen bieten Zugriff auf die Struktur und Instanzdaten innerhalb einer <c>TSqlModelSchema</c> Instanz.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FromObject">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlObject FromObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.TSqlObject FromObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.FromObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> Instanz stammt. Dies ist das verweisende Objekt
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>
+            Diese Eigenschaft gibt null zurück, wenn die Beziehung nicht aufgelöst ist oder bezieht sich auf Elemente außerhalb des aktuellen <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="public object GetProperty (Microsoft.SqlServer.Dac.Model.ModelPropertyClass property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetProperty(class Microsoft.SqlServer.Dac.Model.ModelPropertyClass property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.GetProperty(Microsoft.SqlServer.Dac.Model.ModelPropertyClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="Microsoft.SqlServer.Dac.Model.ModelPropertyClass" />
+      </Parameters>
+      <Docs>
+        <param name="property">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelPropertyClass" />abzurufende Eigenschaft.</param>
+        <summary>
+            Ruft Eigenschaften für diese Beziehungsinstanz ab.
+            </summary>
+        <returns>Eigenschaftswert.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn das angegebene <paramref name="property" /> wird in dieser Instanz nicht unterstützt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetProperty&lt;T&gt; (Microsoft.SqlServer.Dac.Model.ModelPropertyClass property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetProperty&lt;T&gt;(class Microsoft.SqlServer.Dac.Model.ModelPropertyClass property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.GetProperty``1(Microsoft.SqlServer.Dac.Model.ModelPropertyClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="property" Type="Microsoft.SqlServer.Dac.Model.ModelPropertyClass" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">
+          <see cref="T:System.Type" />der Wert der Eigenschaft.</typeparam>
+        <param name="property">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelPropertyClass" />abzurufende Eigenschaft.</param>
+        <summary>
+            Ruft Eigenschaften für diese Beziehungsinstanz ab.
+            </summary>
+        <returns>Eigenschaftswert.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn das angegebene <paramref name="property" /> wird in dieser Instanz nicht unterstützt.
+            </exception>
+        <exception cref="T:System.InvalidCastException">
+            Wenn der Eigenschaftstyp nicht in T umgewandelt werden kann.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[Microsoft.SqlServer.Dac.Model.ModelPropertyClass property] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(class Microsoft.SqlServer.Dac.Model.ModelPropertyClass)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.Item(Microsoft.SqlServer.Dac.Model.ModelPropertyClass)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="Microsoft.SqlServer.Dac.Model.ModelPropertyClass" />
+      </Parameters>
+      <Docs>
+        <param name="property">
+          <see cref="T:Microsoft.SqlServer.Dac.Model.ModelPropertyClass" />abzurufende Eigenschaft.</param>
+        <summary>
+            Ruft Eigenschaften für diese Beziehungsinstanz ab.
+            </summary>
+        <value>Eigenschaftswert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <exception cref="T:Microsoft.SqlServer.Dac.Model.DacModelException">
+            Wenn das angegebene <paramref name="property" /> wird in dieser Instanz nicht unterstützt.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Object">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.TSqlObject Object { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.TSqlObject Object" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.Object" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.TSqlObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlObject" /> diese Instanz verweist. Dies ist das referenzierte Objekt.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>
+            Diese Eigenschaft gibt null zurück, wenn die Beziehung nicht aufgelöst ist oder bezieht sich auf Elemente außerhalb des aktuellen <see cref="T:Microsoft.SqlServer.Dac.Model.TSqlModel" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectName">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.ObjectIdentifier ObjectName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.ObjectIdentifier ObjectName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.ObjectName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.ObjectIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.ObjectIdentifier" /> , die den Namen des referenzierten Objekts darstellt.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Relationship">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dac.Model.ModelRelationshipClass Relationship { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dac.Model.ModelRelationshipClass Relationship" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dac.Model.ModelRelationshipInstance.Relationship" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dac.Model.ModelRelationshipClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die <see cref="T:Microsoft.SqlServer.Dac.Model.ModelRelationshipClass" /> diese Instanz darstellt.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

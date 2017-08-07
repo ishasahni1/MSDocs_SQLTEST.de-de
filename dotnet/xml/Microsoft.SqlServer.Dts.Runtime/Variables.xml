@@ -1,0 +1,240 @@
+<Type Name="Variables" FullName="Microsoft.SqlServer.Dts.Runtime.Variables">
+  <TypeSignature Language="C#" Value="public sealed class Variables : Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Variables extends Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.Variables" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.DTSReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enthält eine Auflistung von <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" />-Objekten, auf die über mehrere Objekte zugegriffen wird. Diese Klasse kann nicht vererbt werden. </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Variable Add (string name, bool readOnly, string nameSpace, object val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dts.Runtime.Variable Add(string name, bool readOnly, string nameSpace, object val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Variables.Add(System.String,System.Boolean,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Variable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="readOnly" Type="System.Boolean" />
+        <Parameter Name="nameSpace" Type="System.String" />
+        <Parameter Name="val" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des Pakets, des Tasks oder der Containervariablen, die der Auflistung hinzugefügt werden sollen.</param>
+        <param name="readOnly">Ein boolescher Wert, der angibt, ob die Variable schreibgeschützt ist oder ob die Variable geändert werden kann.</param>
+        <param name="nameSpace">Der Namespace der Variablen. Standardwert ist der Benutzer-Variablennamespace. Sie können auch einen Namespace erstellen, um von Ihnen festgelegte Variablen zu identifizieren, die in einem bestimmten Teil des Pakets verwendet werden. Sie können keine Variable System-Namespace Variablen hinzufügen.</param>
+        <param name="val">Der Entwurfszeitwert der Variablen.</param>
+        <summary>Fügt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variable" /> -Objekt an die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> Auflistung.</summary>
+        <returns>Die neu erstellte Variable, die hinzugefügt wurde der <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> Auflistung.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (object index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(object index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Variables.Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">Der Name oder Index bzw. die ID oder Beschreibung der in der Auflistung zu suchenden Variablen.</param>
+        <summary>Gibt einen booleschen Wert ab, der angibt, ob die Elemente in der Auflistung zugegriffen werden kann, mithilfe der Indizierung ohne eine Ausnahme auszulösen.</summary>
+        <returns>Ein boolescher Wert, der angibt, ob die Auflistung unter Verwendung der Indizierung zugegriffen werden kann. Der Wert "true" gibt an, dass die Auflistung zugegriffen werden kann, mit der Syntax Variablen [Index]. Wenn die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Variables.Contains(System.Object)" /> Methode "false" zurückgegeben wird, wird diese Eigenschaft eine Ausnahme ausgelöst. In c# ist diese Eigenschaft der Indexer für die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> Klasse.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateManagedObject">
+      <MemberSignature Language="C#" Value="protected override object CreateManagedObject (object unmanagedObj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateManagedObject(object unmanagedObj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Variables.CreateManagedObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unmanagedObj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="unmanagedObj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCount">
+      <MemberSignature Language="C#" Value="protected override int GetCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 GetCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Variables.GetCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.VariableEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Dts.Runtime.VariableEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Variables.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.VariableEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableEnumerator" /> Enumerator zum Durchlaufen der <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> Auflistung.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.VariableEnumerator" />-Enumerator.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagedEnumerator">
+      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator GetManagedEnumerator (object unmanagedEnum);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.IEnumerator GetManagedEnumerator(object unmanagedEnum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Variables.GetManagedEnumerator(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unmanagedEnum" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="unmanagedEnum">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.Variable this[object index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Dts.Runtime.Variable Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Variables.Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.Variable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">Der Name oder Index bzw. die ID oder Beschreibung des <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variable" />-Objekts, das zurückgegeben werden soll.</param>
+        <summary>Gibt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variable" /> -Objekt aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> Auflistung.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variable" /> Objekt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public void Join (Microsoft.SqlServer.Dts.Runtime.Variable variable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Join(class Microsoft.SqlServer.Dts.Runtime.Variable variable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Variables.Join(Microsoft.SqlServer.Dts.Runtime.Variable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="Microsoft.SqlServer.Dts.Runtime.Variable" />
+      </Parameters>
+      <Docs>
+        <param name="variable">Die angegebene Variable.</param>
+        <summary>Verknüpft die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variable" /> auf die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> Auflistung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public bool Locked { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.Variables.Locked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Eines booleschen, der angibt, ob die Variablen in der <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> -Auflistung gesperrt sind.</summary>
+        <value>"true" gibt an, dass die Auflistung gesperrt ist. Der Wert "false" gibt an, dass die Auflistung entsperrt ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (object index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(object index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Variables.Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">Der Name, ID, Beschreibung oder Index, der die <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variable" /> aus der Auflistung zu entfernende Objekt.</param>
+        <summary>Entfernt eine <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variable" /> -Objekt aus der <see cref="T:Microsoft.SqlServer.Dts.Runtime.Variables" /> Auflistung.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unlock">
+      <MemberSignature Language="C#" Value="public void Unlock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unlock() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.Variables.Unlock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Hebt die Sperren der Variablenauflistung auf und kennzeichnet den Status der Variablenauflistung als ungültig oder unbekannt.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,308 @@
+<Type Name="SMOServerConn" FullName="Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn">
+  <TypeSignature Language="C#" Value="public class SMOServerConn : Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase, Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SMOServerConn extends Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase implements class Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedConnections</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Dts.Runtime.ConnectionManagerBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Dts.Runtime.IDTSComponentPersist</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.SqlServer.Dts.Runtime.DtsConnection(ConnectionContact="Microsoft Corporation", ConnectionType="SMOServer", LocalizationType=typeof(Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn), UITypeName="Microsoft.DataTransformationServices.Design.SMOServerConnectionManagerUI, Microsoft.DataTransformationServices.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Enthält die von SMO-Verbindungen verwendeten Methoden und Eigenschaften.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SMOServerConn ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialisiert eine neue Instanz der SMOServerConn-Klasse.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SMOServerConn (bool bUseWindowsAuthentication, string UserName, string Password);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool bUseWindowsAuthentication, string UserName, string Password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.#ctor(System.Boolean,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bUseWindowsAuthentication" Type="System.Boolean" />
+        <Parameter Name="UserName" Type="System.String" />
+        <Parameter Name="Password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bUseWindowsAuthentication">Ein boolescher Wert, der angibt, ob der Verbindungs-Manager Windows-Authentifizierung verwendet. "true", wenn Windows-Authentifizierung verwendet wird.</param>
+        <param name="UserName">Der vom Verbindungs-Manager verwendete Benutzername.</param>
+        <param name="Password">Das vom Verbindungs-Manager verwendete Kennwort.</param>
+        <summary>
+            Initialisiert eine neue Instanz der Klasse SMOServerConn, initialisieren den Authentifizierungsmodus, Benutzername und Kennwort an.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SMOServerConn (bool bUseWindowsAuthentication, string UserName, string Password, string SqlServerName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool bUseWindowsAuthentication, string UserName, string Password, string SqlServerName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.#ctor(System.Boolean,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bUseWindowsAuthentication" Type="System.Boolean" />
+        <Parameter Name="UserName" Type="System.String" />
+        <Parameter Name="Password" Type="System.String" />
+        <Parameter Name="SqlServerName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bUseWindowsAuthentication">Ein boolescher Wert, der angibt, ob der Verbindungs-Manager Windows-Authentifizierung verwendet. "true", wenn Windows-Authentifizierung verwendet wird.</param>
+        <param name="UserName">Der vom Verbindungs-Manager verwendete Benutzername.</param>
+        <param name="Password">Das vom Verbindungs-Manager verwendete Kennwort.</param>
+        <param name="SqlServerName">Der Name des Servers, mit dem die SMO-Verbindung hergestellt werden soll.</param>
+        <summary>
+            Initialisiert eine neue Instanz der Klasse SMOServerConn, initialisieren den Authentifizierungsmodus, Benutzername, Kennwort und Server.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcquireConnection">
+      <MemberSignature Language="C#" Value="public override object AcquireConnection (object txn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object AcquireConnection(object txn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.AcquireConnection(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="txn" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="txn">Das Handle für einen Transaktionstyp.</param>
+        <summary>
+            Stellt die SMO-Verbindung her und gibt ein Verbindungsobjekt zurück.
+            </summary>
+        <returns>Das Verbindungsobjekt, das die SMO-Verbindung enthält.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionDescription">
+      <MemberSignature Language="C#" Value="public static string ConnectionDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ConnectionDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.ConnectionDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Beschreibung des Verbindungs-Managers für die SMO-Verbindung ab.
+            </summary>
+        <value>Eine Zeichenfolge, die den Verbindungs-Manager für die SMO-Verbindung beschreibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionDisplayName">
+      <MemberSignature Language="C#" Value="public static string ConnectionDisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ConnectionDisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.ConnectionDisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt den lokalisierten Anzeigenamen der Verbindung zurück.
+            </summary>
+        <value>Eine Zeichenfolge, die den lokalisierten Anzeigenamen der Verbindung enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public override string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft die Verbindungszeichenfolge für die SMO-Verbindung ab oder legt sie fest.
+            </summary>
+        <value>Eine Zeichenfolge, die Verbindungszeichenfolge für die SMO-Verbindung enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromXML">
+      <MemberSignature Language="C#" Value="public void LoadFromXML (System.Xml.XmlElement rootNode, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromXML(class System.Xml.XmlElement rootNode, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.LoadFromXML(System.Xml.XmlElement,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootNode" Type="System.Xml.XmlElement" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="rootNode">Der Knoten, der die zu ladenden Informationen enthält.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>
+            Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein im XML-Format gespeichertes Paket zu laden, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.LoadPackage(System.String,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Password">
+      <MemberSignature Language="C#" Value="public string Password { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Password" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.Password" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Legt das Kennwort für die Verbindung fest, wenn Sie keine Windows-Authentifizierung verwenden.
+            </summary>
+        <value>Eine Zeichenfolge, die ein Kennwort für die Verbindung angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveToXML">
+      <MemberSignature Language="C#" Value="public void SaveToXML (System.Xml.XmlDocument doc, Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToXML(class System.Xml.XmlDocument doc, class Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.SaveToXML(System.Xml.XmlDocument,Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+        <Parameter Name="events" Type="Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" />
+      </Parameters>
+      <Docs>
+        <param name="doc">Das XML-Dokument, in dem die Informationen gespeichert werden sollen.</param>
+        <param name="events">Ein Objekt, implementiert die <see cref="T:Microsoft.SqlServer.Dts.Runtime.IDTSInfoEvents" /> Schnittstelle zum Auslösen von Ereignissen (Fehlern, Warnungen usw.) während der Persistenz.</param>
+        <summary>
+            Diese Methode kann durch den Anwendungscode nicht aufgerufen werden. Um ein Paket als XML-Datei zu speichern, verwenden die <see cref="M:Microsoft.SqlServer.Dts.Runtime.Application.SaveToXml(System.String,Microsoft.SqlServer.Dts.Runtime.Package,Microsoft.SqlServer.Dts.Runtime.IDTSEvents)" /> Methode.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlServerName">
+      <MemberSignature Language="C#" Value="public string SqlServerName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SqlServerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.SqlServerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt eine Zeichenfolge, die den Namen des SQL Servers enthält die SMO-Verbindung hergestellt werden soll.
+            </summary>
+        <value>Eine Zeichenfolge, die den Namen des SQL-Servers für die Verbindung als ein SMO-Verbindung enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserName">
+      <MemberSignature Language="C#" Value="public string UserName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.UserName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft den Benutzernamen für die Verbindung ab, wenn Sie keine Windows-Authentifizierung verwenden, oder legt ihn fest.
+            </summary>
+        <value>Eine Zeichenfolge, die den Namen des Benutzers für die Verbindung enthält.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseWindowsAuthentication">
+      <MemberSignature Language="C#" Value="public bool UseWindowsAuthentication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseWindowsAuthentication" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.ManagedConnections.SMOServerConn.UseWindowsAuthentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Ruft ab oder legt einen booleschen Wert ab, der angibt, ob Windows-Authentifizierung für die Verbindung verwendet wird.
+            </summary>
+        <value>"true", wenn Windows-Authentifizierung in der Verbindung verwendet wird; andernfalls "false".</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

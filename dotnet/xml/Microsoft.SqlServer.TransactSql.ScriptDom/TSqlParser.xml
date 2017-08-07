@@ -1,0 +1,781 @@
+<Type Name="TSqlParser" FullName="Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser">
+  <TypeSignature Language="C#" Value="public abstract class TSqlParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit TSqlParser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.TransactSql.ScriptDom</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Die abstrakte Basisklasse für t-SQL-Parser.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser Create (Microsoft.SqlServer.TransactSql.ScriptDom.SqlVersion tsqlParserVersion, bool initialQuotedIdentifiers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser Create(valuetype Microsoft.SqlServer.TransactSql.ScriptDom.SqlVersion tsqlParserVersion, bool initialQuotedIdentifiers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.Create(Microsoft.SqlServer.TransactSql.ScriptDom.SqlVersion,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tsqlParserVersion" Type="Microsoft.SqlServer.TransactSql.ScriptDom.SqlVersion" />
+        <Parameter Name="initialQuotedIdentifiers" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="tsqlParserVersion">Die zu verwendende Parserversion.</param>
+        <param name="initialQuotedIdentifiers">Wenn auf festgelegt <c>"true"</c> Bezeichner in Anführungszeichen werden.</param>
+        <summary>
+            Erstellt einen TSqlParser für die angegebene Version.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenStream">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt; GetTokenStream (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt; GetTokenStream(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.GetTokenStream(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Die Eingabe.</param>
+        <param name="errors">Die Auflistung der Fehler.</param>
+        <summary>
+            Analysiert die Eingabe in einen Stream Token an.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenStream">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt; GetTokenStream (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt; GetTokenStream(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.GetTokenStream(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Die Eingabe.</param>
+        <param name="errors">Die Auflistung der Fehler.</param>
+        <param name="startOffset">Der Anfangsoffset.</param>
+        <param name="startLine">Die Startzeile.</param>
+        <param name="startColumn">Die Startspalte.</param>
+        <summary>
+            Analysiert die Eingabe in einen Stream Token an.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment Parse (System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt; tokens, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment Parse(class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt; tokens, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.Parse(System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken},System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokens" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParserToken&gt;" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="tokens">Die Eingaben-Token.</param>
+        <param name="errors">Die IList, der die Analysefehler hinzugefügt werden.</param>
+        <summary>
+            Analysiert die angegebene Token in einem TSqlFragment an.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment Parse (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment Parse(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.Parse(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Das Skript, das analysiert wird.</param>
+        <param name="errors">Die Analysefehler.</param>
+        <summary>
+            Die blockierende Parse-Methode.
+            </summary>
+        <returns>Das erstellte Fragment.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment Parse (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment Parse(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.Parse(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Das Skript, das analysiert wird.</param>
+        <param name="errors">Die Analysefehler.</param>
+        <param name="startOffset">Der Startoffset der Eingabe.</param>
+        <param name="startLine">Die Nummer der Anfangszeile für die Eingabe.</param>
+        <param name="startColumn">Die Spalte Anfangsposition für die Eingabe.</param>
+        <summary>
+            Die blockierende Parse-Methode.
+            </summary>
+        <returns>Das erstellte Fragment.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseBooleanExpression">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.BooleanExpression ParseBooleanExpression (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.BooleanExpression ParseBooleanExpression(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseBooleanExpression(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.BooleanExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Die Eingabe.</param>
+        <param name="errors">Die Auflistung der Fehler.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um einen booleschen Ausdruck abzurufen. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseBooleanExpression">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.TransactSql.ScriptDom.BooleanExpression ParseBooleanExpression (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.TransactSql.ScriptDom.BooleanExpression ParseBooleanExpression(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseBooleanExpression(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.BooleanExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Muss hinzugefügt werden.</param>
+        <param name="errors">Muss hinzugefügt werden.</param>
+        <param name="startOffset">Muss hinzugefügt werden.</param>
+        <param name="startLine">Muss hinzugefügt werden.</param>
+        <param name="startColumn">Muss hinzugefügt werden.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um einen booleschen Ausdruck abzurufen. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseChildObjectName">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.ChildObjectName ParseChildObjectName (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.ChildObjectName ParseChildObjectName(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseChildObjectName(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.ChildObjectName</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Die Eingabe.</param>
+        <param name="errors">Die Auflistung der Fehler.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um einen ChildObjectName abzurufen.  Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseChildObjectName">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.TransactSql.ScriptDom.ChildObjectName ParseChildObjectName (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.TransactSql.ScriptDom.ChildObjectName ParseChildObjectName(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseChildObjectName(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.ChildObjectName</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Muss hinzugefügt werden.</param>
+        <param name="errors">Muss hinzugefügt werden.</param>
+        <param name="startOffset">Muss hinzugefügt werden.</param>
+        <param name="startLine">Muss hinzugefügt werden.</param>
+        <param name="startColumn">Muss hinzugefügt werden.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um einen ChildObjectName abzurufen.  Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseConstantOrIdentifier">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment ParseConstantOrIdentifier (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment ParseConstantOrIdentifier(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseConstantOrIdentifier(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Die Eingabe.</param>
+        <param name="errors">Die Auflistung der Fehler.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um eine Konstante oder einen Bezeichner abzurufen. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseConstantOrIdentifier">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment ParseConstantOrIdentifier (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment ParseConstantOrIdentifier(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseConstantOrIdentifier(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Muss hinzugefügt werden.</param>
+        <param name="errors">Muss hinzugefügt werden.</param>
+        <param name="startOffset">Muss hinzugefügt werden.</param>
+        <param name="startLine">Muss hinzugefügt werden.</param>
+        <param name="startColumn">Muss hinzugefügt werden.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um eine Konstante oder einen Bezeichner abzurufen. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseConstantOrIdentifierWithDefault">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment ParseConstantOrIdentifierWithDefault (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment ParseConstantOrIdentifierWithDefault(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseConstantOrIdentifierWithDefault(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Die Eingabe.</param>
+        <param name="errors">Die Auflistung der Fehler.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um eine Konstante oder Bezeichner oder standardliteral (Literal mit dem Wert "DEFAULT") zu erhalten. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseConstantOrIdentifierWithDefault">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment ParseConstantOrIdentifierWithDefault (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment ParseConstantOrIdentifierWithDefault(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseConstantOrIdentifierWithDefault(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.TSqlFragment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Muss hinzugefügt werden.</param>
+        <param name="errors">Muss hinzugefügt werden.</param>
+        <param name="startOffset">Muss hinzugefügt werden.</param>
+        <param name="startLine">Muss hinzugefügt werden.</param>
+        <param name="startColumn">Muss hinzugefügt werden.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um eine Konstante oder Bezeichner oder standardliteral (Literal mit dem Wert "DEFAULT") zu erhalten. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseExpression">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.ScalarExpression ParseExpression (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.ScalarExpression ParseExpression(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseExpression(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.ScalarExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Die Eingabe.</param>
+        <param name="errors">Die Auflistung der Fehler.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um ein skalarer Ausdruck abzurufen. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseExpression">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.TransactSql.ScriptDom.ScalarExpression ParseExpression (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.TransactSql.ScriptDom.ScalarExpression ParseExpression(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseExpression(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.ScalarExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Muss hinzugefügt werden.</param>
+        <param name="errors">Muss hinzugefügt werden.</param>
+        <param name="startOffset">Muss hinzugefügt werden.</param>
+        <param name="startLine">Muss hinzugefügt werden.</param>
+        <param name="startColumn">Muss hinzugefügt werden.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um ein skalarer Ausdruck abzurufen. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseScalarDataType">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.DataTypeReference ParseScalarDataType (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.DataTypeReference ParseScalarDataType(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseScalarDataType(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.DataTypeReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Die Eingabe.</param>
+        <param name="errors">Die Auflistung der Fehler.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um einen Datentyp abzurufen. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseScalarDataType">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.TransactSql.ScriptDom.DataTypeReference ParseScalarDataType (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.TransactSql.ScriptDom.DataTypeReference ParseScalarDataType(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseScalarDataType(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.DataTypeReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Muss hinzugefügt werden.</param>
+        <param name="errors">Muss hinzugefügt werden.</param>
+        <param name="startOffset">Muss hinzugefügt werden.</param>
+        <param name="startLine">Muss hinzugefügt werden.</param>
+        <param name="startColumn">Muss hinzugefügt werden.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um einen Datentyp abzurufen. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseSchemaObjectName">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName ParseSchemaObjectName (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName ParseSchemaObjectName(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseSchemaObjectName(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Die Eingabe.</param>
+        <param name="errors">Die Auflistung der Fehler.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um einen SchemaObjectName abzurufen.  Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseSchemaObjectName">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName ParseSchemaObjectName (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName ParseSchemaObjectName(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseSchemaObjectName(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Muss hinzugefügt werden.</param>
+        <param name="errors">Muss hinzugefügt werden.</param>
+        <param name="startOffset">Muss hinzugefügt werden.</param>
+        <param name="startLine">Muss hinzugefügt werden.</param>
+        <param name="startColumn">Muss hinzugefügt werden.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um einen SchemaObjectName abzurufen.  Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseStatementList">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.StatementList ParseStatementList (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.StatementList ParseStatementList(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseStatementList(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.StatementList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Die Eingabe.</param>
+        <param name="errors">Die Auflistung der Fehler.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um eine Anweisungsliste abzurufen. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseStatementList">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.TransactSql.ScriptDom.StatementList ParseStatementList (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.TransactSql.ScriptDom.StatementList ParseStatementList(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseStatementList(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.StatementList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Muss hinzugefügt werden.</param>
+        <param name="errors">Muss hinzugefügt werden.</param>
+        <param name="startOffset">Muss hinzugefügt werden.</param>
+        <param name="startLine">Muss hinzugefügt werden.</param>
+        <param name="startColumn">Muss hinzugefügt werden.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um eine Anweisungsliste abzurufen. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseSubQueryExpressionWithOptionalCTE">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.TransactSql.ScriptDom.SelectStatement ParseSubQueryExpressionWithOptionalCTE (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.TransactSql.ScriptDom.SelectStatement ParseSubQueryExpressionWithOptionalCTE(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseSubQueryExpressionWithOptionalCTE(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.SelectStatement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Das Eingabeskript.</param>
+        <param name="errors">Die ggf. aufgetretenen Fehler.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um einen Unterabfrageausdruck mit optionalen allgemeiner Tabellenausdruck und XML-Namespaces zu erhalten. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns>Die SELECT-Anweisung, oder NULL, wenn Fehler aufgetreten sind.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseSubQueryExpressionWithOptionalCTE">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.SqlServer.TransactSql.ScriptDom.SelectStatement ParseSubQueryExpressionWithOptionalCTE (System.IO.TextReader input, out System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int startOffset, int startLine, int startColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.TransactSql.ScriptDom.SelectStatement ParseSubQueryExpressionWithOptionalCTE(class System.IO.TextReader input, class System.Collections.Generic.IList`1&lt;class Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt; errors, int32 startOffset, int32 startLine, int32 startColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ParseSubQueryExpressionWithOptionalCTE(System.IO.TextReader,System.Collections.Generic.IList{Microsoft.SqlServer.TransactSql.ScriptDom.ParseError}@,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.TransactSql.ScriptDom.SelectStatement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;Microsoft.SqlServer.TransactSql.ScriptDom.ParseError&gt;&amp;" RefType="out" />
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">Muss hinzugefügt werden.</param>
+        <param name="errors">Muss hinzugefügt werden.</param>
+        <param name="startOffset">Muss hinzugefügt werden.</param>
+        <param name="startLine">Muss hinzugefügt werden.</param>
+        <param name="startColumn">Muss hinzugefügt werden.</param>
+        <summary>
+            Analysiert eine Eingabezeichenfolge, um einen Unterabfrageausdruck mit optionalen allgemeiner Tabellenausdruck und XML-Namespaces zu erhalten. Bei auftretenden Fehlern wird NULL zurückgegeben.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotedIdentifier">
+      <MemberSignature Language="C#" Value="public bool QuotedIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool QuotedIdentifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.QuotedIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gibt an, ob Bezeichner in Anführungszeichen für den Parser aktiviert ist.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParseSqlModuleObjectName">
+      <MemberSignature Language="C#" Value="public bool TryParseSqlModuleObjectName (System.IO.TextReader input, out Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryParseSqlModuleObjectName(class System.IO.TextReader input, class Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.TryParseSqlModuleObjectName(System.IO.TextReader,Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="result" Type="Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Das eingabeskript</param>
+        <param name="result">Der Name des ausgegebenen Schemaobjekts.  NULL, wenn es nicht gefunden.</param>
+        <summary>
+            Analysiert gefunden, das eingabeskript für die Rückgabe des SchemaObjectName für die erste create/alter Sql_module-Anweisung, wenn zurück.
+            </summary>
+        <returns>"True", wenn ein Ergebnis zurückgegeben wird, andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParseTriggerModule">
+      <MemberSignature Language="C#" Value="public bool TryParseTriggerModule (System.IO.TextReader input, out Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName triggerName, out Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName targetName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryParseTriggerModule(class System.IO.TextReader input, class Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName triggerName, class Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName targetName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.TryParseTriggerModule(System.IO.TextReader,Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName@,Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.TextReader" />
+        <Parameter Name="triggerName" Type="Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName&amp;" RefType="out" />
+        <Parameter Name="targetName" Type="Microsoft.SqlServer.TransactSql.ScriptDom.SchemaObjectName&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">Das eingabeskript</param>
+        <param name="triggerName">Der Name des ausgegebenen Triggerobjekts.  NULL, wenn es nicht gefunden.</param>
+        <param name="targetName">Der Name des ausgegebenen Triggerzielobjekts.  NULL, wenn es nicht gefunden.</param>
+        <summary>
+            Analysiert das eingabeskript, um den Trigger-Name und Ziel Triggername der ersten Erstellen/alter Trigger-Anweisung zurückzugeben.  
+            </summary>
+        <returns>"True", wenn ein Triggerziel gefunden wird, andernfalls "false".</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateIdentifier">
+      <MemberSignature Language="C#" Value="public bool ValidateIdentifier (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidateIdentifier(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.TransactSql.ScriptDom.TSqlParser.ValidateIdentifier(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Die Zeichenfolge, die überprüft werden soll.</param>
+        <summary>
+            Überprüfen Sie, ob ein Name ein gültiger Sql-Bezeichner ist.
+            </summary>
+        <returns>"True", wenn es sich um ein gültiger Bezeichner ist.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

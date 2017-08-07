@@ -1,0 +1,186 @@
+<Type Name="StorageInfo" FullName="Microsoft.SqlServer.Dts.Runtime.StorageInfo">
+  <TypeSignature Language="C#" Value="public class StorageInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Dts.Runtime.StorageInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.ManagedDTS</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enthält Informationen über den Speicherort der ursprünglichen oder aktualisierten Integrationsdienstpakete.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnumeratePackagePaths">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; EnumeratePackagePaths ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;string&gt; EnumeratePackagePaths() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.StorageInfo.EnumeratePackagePaths" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gibt eine Liste von Pfaden für die aktualisierten Pakete in einem bestimmten Ordner zurück.</summary>
+        <returns>Eine Liste von Pfaden für die Upgradepakete in einem bestimmten Ordner.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Host">
+      <MemberSignature Language="C#" Value="public string Host { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Host" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.StorageInfo.Host" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Servers, auf dem die ursprünglichen oder aktualisierten integrationsdienstpakete gespeichert werden.</summary>
+        <value>Der Name des Servers, auf dem die Pakete gespeichert sind. Der Name ist ein Microsoft SQL Server-Speicherort oder ein SSIS-Paketspeicherort.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewFileStorage">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.StorageInfo NewFileStorage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.StorageInfo NewFileStorage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.StorageInfo.NewFileStorage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.StorageInfo</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Erstellt einen neuen Speicherort im Dateisystem, an dem die ursprünglichen oder aktualisierten Integrationsdienstpakete gespeichert werden.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.StorageInfo" /> Objekt, das den Speicherort im Dateisystem angibt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewServerStorage">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.StorageInfo NewServerStorage (string host);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.StorageInfo NewServerStorage(string host) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.StorageInfo.NewServerStorage(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.StorageInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="host" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="host">Der Name des Servers, auf dem der neue Paketspeicher erstellt wird.</param>
+        <summary>Erstellt ein neues Integration Services-Paketspeicher, in dem die ursprünglichen oder aktualisierten integrationsdienstpakete.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.StorageInfo" /> Objekt, das den neu erstellten Paketspeicher angibt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSqlStorage">
+      <MemberSignature Language="C#" Value="public static Microsoft.SqlServer.Dts.Runtime.StorageInfo NewSqlStorage (string host, string username, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.SqlServer.Dts.Runtime.StorageInfo NewSqlStorage(string host, string username, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Dts.Runtime.StorageInfo.NewSqlStorage(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.StorageInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="host" Type="System.String" />
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="host">Der Name des Servers, auf dem die Pakete gespeichert werden.</param>
+        <param name="username">Der Benutzername, der SQL Server-Authentifizierung für die Verbindung mit der Datenbank benötigt.</param>
+        <param name="password">Die Zeichenfolge Passwordthat SQL Server-Authentifizierung benötigt für die Verbindung mit der Datenbank.</param>
+        <summary>Erstellt eine neue Microsoft SQL Server-Datenbank, in der die ursprünglichen oder aktualisierten Pakete gespeichert werden soll.</summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.StorageInfo" /> -Objekt, das die SQL Server-Datenbank an.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootFolder">
+      <MemberSignature Language="C#" Value="public string RootFolder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.StorageInfo.RootFolder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ab oder legt den Pfad für den Ordner, der Unterordner enthält, auf dem Integration Services die ursprünglichen Pakete gesichert werden vor dem Upgrade, fest.</summary>
+        <value>Der Pfad für den Ordner, in dem die ursprünglichen Pakete gesichert werden. </value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerPassword">
+      <MemberSignature Language="C#" Value="public string ServerPassword { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerPassword" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.StorageInfo.ServerPassword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft das Kennwort ab, dem SQL Server-Authentifizierung erfordert, zur Verbindung mit SQL Server-Datenbank, in dem die ursprünglichen oder aktualisierten Pakete gespeichert.</summary>
+        <value>Das Kennwort, das für SQL Server-Authentifizierung erforderlich ist.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Dts.Runtime.StorageType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.SqlServer.Dts.Runtime.StorageType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.StorageInfo.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Dts.Runtime.StorageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Speichertyp ab, der für die ursprünglichen Integrationsdienstpakete oder die aktualisierten Pakete verwendet wird.</summary>
+        <value>Ein <see cref="T:Microsoft.SqlServer.Dts.Runtime.StorageType" /> Wert, der den Typ des Speichers für die Pakete angibt.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Username">
+      <MemberSignature Language="C#" Value="public string Username { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Username" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Dts.Runtime.StorageInfo.Username" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Benutzernamen ab, dem SQL Server-Authentifizierung erfordert, zur Verbindung mit SQL Server-Datenbank, in dem die ursprünglichen oder aktualisierten integrationsdienstpakete gespeichert.</summary>
+        <value>Der Benutzername, der SQL Server-Authentifizierung erfordert.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

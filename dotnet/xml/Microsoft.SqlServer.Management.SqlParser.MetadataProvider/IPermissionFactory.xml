@@ -1,0 +1,47 @@
+<Type Name="IPermissionFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IPermissionFactory">
+  <TypeSignature Language="C#" Value="public interface IPermissionFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPermissionFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IPermissionFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Stellt Methoden bereit, die zum Erstellen von Berechtigungsobjekten verwendet werden können.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateDatabasePermission">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePermission CreateDatabasePermission (Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePrincipal databasePrincipal, Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject targetObject, Microsoft.SqlServer.Management.SqlParser.Metadata.DatabasePermissionType permissionType, Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePrincipal grantor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePermission CreateDatabasePermission(class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePrincipal databasePrincipal, class Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject targetObject, valuetype Microsoft.SqlServer.Management.SqlParser.Metadata.DatabasePermissionType permissionType, class Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePrincipal grantor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IPermissionFactory.CreateDatabasePermission(Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePrincipal,Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject,Microsoft.SqlServer.Management.SqlParser.Metadata.DatabasePermissionType,Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePrincipal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="databasePrincipal" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePrincipal" />
+        <Parameter Name="targetObject" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" />
+        <Parameter Name="permissionType" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.DatabasePermissionType" />
+        <Parameter Name="grantor" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePrincipal" />
+      </Parameters>
+      <Docs>
+        <param name="databasePrincipal">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePrincipal" /> -Objekt, das Garnted die Berechtigung ist.</param>
+        <param name="targetObject">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMetadataObject" /> -Objekt, das das Ziel der Berechtigung ist.</param>
+        <param name="permissionType">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.DatabasePermissionType" /> Wert Specyfing den Typ der Berechtigung.</param>
+        <param name="grantor">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePrincipal" /> -Objekt, das die Berechtigung gewährt.</param>
+        <summary>
+            Erstellt ein Berechtigungsobjekt, das dem angegebenen Datenbankprinzipal gegeben wird.
+            </summary>
+        <returns>n <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IDatabasePermission" />-Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

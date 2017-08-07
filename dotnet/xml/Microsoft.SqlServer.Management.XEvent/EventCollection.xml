@@ -1,0 +1,121 @@
+<Type Name="EventCollection" FullName="Microsoft.SqlServer.Management.XEvent.EventCollection">
+  <TypeSignature Language="C#" Value="public sealed class EventCollection : Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;Microsoft.SqlServer.Management.XEvent.Event,Microsoft.SqlServer.Management.XEvent.Event.Key,Microsoft.SqlServer.Management.XEvent.Session&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventCollection extends Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection`3&lt;class Microsoft.SqlServer.Management.XEvent.Event, class Microsoft.SqlServer.Management.XEvent.Event/Key, class Microsoft.SqlServer.Management.XEvent.Session&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.XEvent.EventCollection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.XEvent</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.SqlServer.Management.Sdk.Sfc.SfcCollatedDictionaryCollection&lt;Microsoft.SqlServer.Management.XEvent.Event,Microsoft.SqlServer.Management.XEvent.Event+Key,Microsoft.SqlServer.Management.XEvent.Session&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.SqlServer.Management.XEvent.Event</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">Microsoft.SqlServer.Management.XEvent.Event+Key</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!2">Microsoft.SqlServer.Management.XEvent.Session</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            SFC-Auflistungsklasse für Ereignis.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppendAlterScripts">
+      <MemberSignature Language="C#" Value="public void AppendAlterScripts (System.Text.StringBuilder addScript, System.Text.StringBuilder dropScript);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendAlterScripts(class System.Text.StringBuilder addScript, class System.Text.StringBuilder dropScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.EventCollection.AppendAlterScripts(System.Text.StringBuilder,System.Text.StringBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="addScript" Type="System.Text.StringBuilder" />
+        <Parameter Name="dropScript" Type="System.Text.StringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="addScript">Muss hinzugefügt werden.</param>
+        <param name="dropScript">Muss hinzugefügt werden.</param>
+        <summary>
+            Überprüfen Sie den aktuellen Status der Ereignisse, und das Skript basierend auf diesen zurück.
+Dies sollte nur in der Alter-Skript für Sitzung generiert verwendet werden.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.EventCollection.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Der Name des Ereignisses.</param>
+        <summary>
+            Bestimmt, ob die Auflistung das Ereignis enthält.
+            </summary>
+        <returns>
+          <c>true</c> if the collection contains Event; otherwise, <c>false</c>.
+            </returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementFactoryImpl">
+      <MemberSignature Language="C#" Value="protected override Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory GetElementFactoryImpl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.XEvent.EventCollection.GetElementFactoryImpl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Ruft das Element Factory "Impl" ab.
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.XEvent.Event this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.XEvent.Event Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.XEvent.EventCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.XEvent.Event</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Muss hinzugefügt werden.</param>
+        <summary>
+            Ruft die <see cref="T:Microsoft.SqlServer.Management.XEvent.Event" /> mit dem angegebenen Namen.
+            </summary>
+        <value>Name des Ereignisses</value>
+        <value>Ereignis mit dem Namen angeben</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

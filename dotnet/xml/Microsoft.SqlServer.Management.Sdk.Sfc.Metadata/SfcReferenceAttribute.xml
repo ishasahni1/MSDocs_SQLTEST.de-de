@@ -1,0 +1,395 @@
+<Type Name="SfcReferenceAttribute" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute">
+  <TypeSignature Language="C#" Value="public class SfcReferenceAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SfcReferenceAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=true, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Attribut (soft) Verweise auf ein einzelnes Ziel.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcReferenceAttribute (Type resolverType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type resolverType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resolverType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="resolverType">Der Typ, der eine Auflistung Resolver instanziiert werden soll.</param>
+        <summary>
+            Verweis wird durch Erstellen einer Instanz des Typs angegebenen Konfliktlösers gelöst werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcReferenceAttribute (Type resolverType, string[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type resolverType, string[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.#ctor(System.Type,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resolverType" Type="System.Type" />
+        <Parameter Name="parameters" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="resolverType">Der Typ, von dem ein Resolver instanziiert werden soll.</param>
+        <param name="parameters">Für die Resolvermethode benötigte Parameter.</param>
+        <summary>
+            Verweis wird durch das Erstellen einer Instanz des Typs angegebenen Konfliktlöser mit optionalen Schlüsseln und den Parametern aufgelöst werden.
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcReferenceAttribute (Type referenceType, string urnTemplate, string[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type referenceType, string urnTemplate, string[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.#ctor(System.Type,System.String,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="referenceType" Type="System.Type" />
+        <Parameter Name="urnTemplate" Type="System.String" />
+        <Parameter Name="parameters" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="referenceType">
+        </param>
+        <param name="urnTemplate">
+        </param>
+        <param name="parameters">Parameter für den Verweistyp</param>
+        <summary>
+            Verweis wird mit Werten von aufgelöst werden in den Eigenschaftennamen übergeben
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcReferenceAttribute (Type referenceType, string[] keys, string urnTemplate, string[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type referenceType, string[] keys, string urnTemplate, string[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.#ctor(System.Type,System.String[],System.String,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="referenceType" Type="System.Type" />
+        <Parameter Name="keys" Type="System.String[]" />
+        <Parameter Name="urnTemplate" Type="System.String" />
+        <Parameter Name="parameters" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="referenceType">
+        </param>
+        <param name="keys">Alle Schlüssel ist dies ein Verweis mit mehreren Schlüsseln</param>
+        <param name="urnTemplate">
+        </param>
+        <param name="parameters">Parameter für den Pfadausdruck</param>
+        <summary>
+            Verweis wird mit Werten von aufgelöst werden in den Eigenschaftennamen übergeben
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcReferenceAttribute (Type referenceType, Type resolverType, string methodName, string[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type referenceType, class System.Type resolverType, string methodName, string[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.#ctor(System.Type,System.Type,System.String,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="referenceType" Type="System.Type" />
+        <Parameter Name="resolverType" Type="System.Type" />
+        <Parameter Name="methodName" Type="System.String" />
+        <Parameter Name="parameters" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="referenceType">
+        </param>
+        <param name="resolverType">
+        </param>
+        <param name="methodName">Eine statische Resolver-Methode.</param>
+        <param name="parameters">Argumente, die an die Methode übergeben werden.</param>
+        <summary>
+            Verweis wird durch Aufrufen von Delegaten behoben werden
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SfcReferenceAttribute (Type referenceType, string[] keys, Type resolverType, string methodName, string[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type referenceType, string[] keys, class System.Type resolverType, string methodName, string[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.#ctor(System.Type,System.String[],System.Type,System.String,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="referenceType" Type="System.Type" />
+        <Parameter Name="keys" Type="System.String[]" />
+        <Parameter Name="resolverType" Type="System.Type" />
+        <Parameter Name="methodName" Type="System.String" />
+        <Parameter Name="parameters" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="referenceType">
+        </param>
+        <param name="keys">Alle Schlüssel ist dies ein Verweis mit mehreren Schlüsseln</param>
+        <param name="resolverType">Auf welche Konfliktlöser Typ vorhanden ist.</param>
+        <param name="methodName">Eine statische Resolver-Methode.</param>
+        <param name="parameters">Argumente, die an die Methode übergeben werden.</param>
+        <summary>
+            Verweis wird durch Aufrufen von Delegaten behoben werden
+            </summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="public string[] Arguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Arguments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.Arguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Argumente für urntemplate ab.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrn">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.Urn GetUrn (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.SqlServer.Management.Sdk.Sfc.Urn GetUrn(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.GetUrn(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Urn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">Muss hinzugefügt werden.</param>
+        <summary>
+            Gibt das Urn-Verweis zurück. Gibt null zurück, wenn das Attribut keine Pathexpression definiert.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceResolver">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.ISfcReferenceResolver InstanceResolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.ISfcReferenceResolver InstanceResolver" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.InstanceResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.ISfcReferenceResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Benutzerdefinierte konfliktlöserschnittstelle.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public string[] Keys { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Keys" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Die Schlüssel, die in der Referenz beteiligt sind.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public object Resolve (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Resolve(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.Resolve(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">Die Quellinstanz, von der aufgelöst werden soll.</param>
+        <summary>
+            Ein einzelnes Ziel-Objekt aus dem angegebenen Quellobjekt zu beheben.
+Wenn eine benutzerdefinierter Resolver-Schnittstelle definiert ist, wird verwendet, die.
+Andernfalls, wenn eine benutzerdefinierter Konfliktlöser Delegaten Hilfsprogramm definiert, ist verwendet es.
+In benutzerdefinierten Konfliktlösern vorhanden ist wertet ihn der angegebene Urn-Ausdruck pfadvorlage mit Argumenten aus.
+            </summary>
+        <returns>Die aufgelöste Zielinstanz gemäß den Regeln erwähnt oder Null, wenn kein benutzerdefinierter Resolver oder gültiger Urn-Pfad angegeben.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolve&lt;T,S&gt;">
+      <MemberSignature Language="C#" Value="public T Resolve&lt;T,S&gt; (S instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Resolve&lt;T, S&gt;(!!S instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.Resolve``2(``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="S" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="instance" Type="S" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Der Typ der Zielinstanz</typeparam>
+        <typeparam name="S">Der Typ der Quellinstanz, von der aufgelöst werden soll</typeparam>
+        <param name="instance">Die Quellinstanz, von der aufgelöst werden soll.</param>
+        <summary>
+            Ein stark typisierte, einzelne Zielobjekt aus dem angegebenen Quellobjekt zu beheben.
+Wenn eine benutzerdefinierter Resolver-Schnittstelle definiert ist, wird verwendet, die.
+Andernfalls, wenn eine benutzerdefinierter Konfliktlöser Delegaten Hilfsprogramm definiert, ist verwendet es.
+In benutzerdefinierten Konfliktlösern vorhanden ist wertet ihn der angegebene Urn-Ausdruck pfadvorlage mit Argumenten aus.
+            </summary>
+        <returns>Die aufgelöste Zielinstanz gemäß den Regeln erwähnt oder Null, wenn kein benutzerdefinierter Resolver oder gültiger Urn-Pfad angegeben.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolver">
+      <MemberSignature Language="C#" Value="public Delegate Resolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Delegate Resolver" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.Resolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Delegate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Benutzerdefinierte konfliktlösermethode.
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Der Typ des Verweises
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrnTemplate">
+      <MemberSignature Language="C#" Value="public string UrnTemplate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UrnTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.SqlServer.Management.Sdk.Sfc.Metadata.SfcReferenceAttribute.UrnTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Urn-Vorlage, die die Form einer Zeichenfolge String.Format verwendet. Beispiel "Server-Anmeldung [@Name = '{0}']".
+            </summary>
+        <value>Muss hinzugefügt werden.</value>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

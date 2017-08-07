@@ -1,0 +1,120 @@
+<Type Name="SfcObjectState" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState">
+  <TypeSignature Language="C#" Value="public enum SfcObjectState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SfcObjectState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Muss hinzugefügt werden.</summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dropped">
+      <MemberSignature Language="C#" Value="Dropped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState Dropped = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState.Dropped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              das Objekt wird in der Back-End gelöscht und/oder ist nicht mehr in einem ungültigen Zustand.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Existing">
+      <MemberSignature Language="C#" Value="Existing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState Existing = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState.Existing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             das Objekt entspricht ein vorhandenes Objekt in der Back-End.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              das Objekt noch nicht festgelegt oder unbekannt. Es ist nur als eine Vollständigkeit Enum-Wert. Kein Code hat jemals scheinbar (SFC oder extern) verwendet haben
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pending">
+      <MemberSignature Language="C#" Value="Pending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState Pending = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState.Pending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              das Objekt wird nur instanziiert, an die Back-End noch nicht gespeichert.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Recreate">
+      <MemberSignature Language="C#" Value="Recreate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState Recreate = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState.Recreate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             das Objekt wird gelöscht und dann wieder erstellt werden. Erforderlich, um das Löschen/nochmal dasselbe Objekt für Sammlungen zu aktivieren.
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToBeDropped">
+      <MemberSignature Language="C#" Value="ToBeDropped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState ToBeDropped = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState.ToBeDropped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.Sdk.Sfc.SfcObjectState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+              das Objekt ist zum Löschen markiert. Tatsächliche Löschen wird verzögert, bis ein Commitvorgang wie Create()-usw. aufgerufen wird.  Für DC-Unterstützung hinzugefügt.
+            </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

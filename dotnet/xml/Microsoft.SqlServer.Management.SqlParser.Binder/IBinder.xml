@@ -1,0 +1,47 @@
+<Type Name="IBinder" FullName="Microsoft.SqlServer.Management.SqlParser.Binder.IBinder">
+  <TypeSignature Language="C#" Value="public interface IBinder" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBinder" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.Binder.IBinder" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Bindet <see cref="T:Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />-Objekte.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bind">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IServer Bind (System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult&gt; parseResults, string contextDatabaseName, Microsoft.SqlServer.Management.SqlParser.Binder.BindMode bindMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IServer Bind(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult&gt; parseResults, string contextDatabaseName, valuetype Microsoft.SqlServer.Management.SqlParser.Binder.BindMode bindMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.Binder.IBinder.Bind(System.Collections.Generic.IEnumerable{Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult},System.String,Microsoft.SqlServer.Management.SqlParser.Binder.BindMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IServer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parseResults" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult&gt;" />
+        <Parameter Name="contextDatabaseName" Type="System.String" />
+        <Parameter Name="bindMode" Type="Microsoft.SqlServer.Management.SqlParser.Binder.BindMode" />
+      </Parameters>
+      <Docs>
+        <param name="parseResults">Eine Liste zu bindender <see cref="T:Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />-Objekte.</param>
+        <param name="contextDatabaseName">Der Name der Standardkontextdatenbank.</param>
+        <param name="bindMode">Ein BindMode-Wert, der angibt, ob die batchmodusbindung oder die buildmodusbindung ausgeführt.</param>
+        <summary>
+            Bindet die Liste der <see cref="T:Microsoft.SqlServer.Management.SqlParser.Parser.ParseResult" />-Objekte und gibt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" />-Objekt zurück.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IServer" /> Objekt.
+Wenn die Bindung nicht erfolgreich ist, wird ein null-Verweis zurückgegeben.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

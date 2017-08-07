@@ -1,0 +1,136 @@
+<Type Name="SfcUtility" FullName="Microsoft.SqlServer.Management.Sdk.Sfc.SfcUtility">
+  <TypeSignature Language="C#" Value="public static class SfcUtility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SfcUtility extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Sfc.SfcUtility" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Hilfsklasse zum sonstige Funktionen
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSmlUri">
+      <MemberSignature Language="C#" Value="public static string GetSmlUri (Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn, Type instanceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetSmlUri(class Microsoft.SqlServer.Management.Sdk.Sfc.Urn urn, class System.Type instanceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcUtility.GetSmlUri(Microsoft.SqlServer.Management.Sdk.Sfc.Urn,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urn" Type="Microsoft.SqlServer.Management.Sdk.Sfc.Urn" />
+        <Parameter Name="instanceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="urn">
+        </param>
+        <param name="instanceType">
+        </param>
+        <summary>
+            Gibt die entsprechende SML-URI für einen bestimmten Uri zurück
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlCeToolsPath">
+      <MemberSignature Language="C#" Value="public static string GetSqlCeToolsPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetSqlCeToolsPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcUtility.GetSqlCeToolsPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Wir verwalteten RegistryKey-Typs verwenden, um die höchste Version der installierten SQLCE-Tools erhalten – SSMS wird immer die höchste (keine aktuelle) Version bindet. 
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrn">
+      <MemberSignature Language="C#" Value="public static string GetUrn (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetUrn(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcUtility.GetUrn(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Muss hinzugefügt werden.</param>
+        <summary>Muss hinzugefügt werden.</summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadSqlCeAssembly">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Assembly LoadSqlCeAssembly (string assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly LoadSqlCeAssembly(string assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcUtility.LoadSqlCeAssembly(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName"> Der Name des zu ladenden - Assembly kann mit/ohne Erweiterung</param>
+        <summary>
+            Diese Funktion lädt die neueste Version der SQLCE-Clientassemblys SSMS benötigten.
+            
+            So as to load using a path (fetched from registry key) and still with strong name, AssemblyName is used.
+            Note that the public key of SFC.dll (Executing assembly) is same as sqlce assemblies. So, it's used for strong
+            name verification
+            </summary>
+        <returns>SQLCE-Assembly.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetSqlCeToolsPath">
+      <MemberSignature Language="C#" Value="public static string TryGetSqlCeToolsPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TryGetSqlCeToolsPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Sfc.SfcUtility.TryGetSqlCeToolsPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Wir verwalteten RegistryKey-Typs verwenden, um die höchste Version der installierten SQLCE-Tools erhalten – SSMS wird immer die höchste (keine aktuelle) Version bindet. 
+            </summary>
+        <returns />
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

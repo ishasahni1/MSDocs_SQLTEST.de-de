@@ -1,0 +1,96 @@
+<Type Name="PropertyComparerProvider" FullName="Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider">
+  <TypeSignature Language="C#" Value="public abstract class PropertyComparerProvider : Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PropertyComparerProvider extends System.Object implements class Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.Sdk.Sfc</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.SqlServer.Management.Sdk.Differencing.SPI.Provider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Der Anbieter bietet sortieren 
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PropertyComparerProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Muss hinzugefügt werden.</summary>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AreGraphsSupported">
+      <MemberSignature Language="C#" Value="public abstract bool AreGraphsSupported (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode source, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AreGraphsSupported(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode source, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider.AreGraphsSupported(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode,Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode" />
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode" />
+      </Parameters>
+      <Docs>
+        <param name="source">Muss hinzugefügt werden.</param>
+        <param name="target">Muss hinzugefügt werden.</param>
+        <summary>
+            Gibt an, ob dieser Anbieter die angegebenen Diagramme unterstützt. Wenn dies der Fall, gibt "true", "false" andernfalls.
+            
+            If true is returned, the following calls to GetSortedList() and
+            GetComparer() method must return a valid non-null object.
+            
+            The method is called only one on the top most node of each graph.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public abstract bool Compare (Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode source, Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode target, string propName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Compare(class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode source, class Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode target, string propName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.Sdk.Differencing.SPI.PropertyComparerProvider.Compare(Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode,Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode" />
+        <Parameter Name="target" Type="Microsoft.SqlServer.Management.Sdk.Sfc.ISfcSimpleNode" />
+        <Parameter Name="propName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">Muss hinzugefügt werden.</param>
+        <param name="target">Muss hinzugefügt werden.</param>
+        <param name="propName">Muss hinzugefügt werden.</param>
+        <summary>
+            Vergleichen Sie die angegebenen Eigenschaften
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

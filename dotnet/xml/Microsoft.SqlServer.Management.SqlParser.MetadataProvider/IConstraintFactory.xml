@@ -1,0 +1,173 @@
+<Type Name="IConstraintFactory" FullName="Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IConstraintFactory">
+  <TypeSignature Language="C#" Value="public interface IConstraintFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConstraintFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IConstraintFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.SqlServer.Management.SqlParser</AssemblyName>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Definiert Methoden, die zum Erstellen von Einschränkungsobjekten verwendet werden.
+            </summary>
+    <remarks>Muss hinzugefügt werden.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateCheckConstraint">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint CreateCheckConstraint (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint CreateCheckConstraint(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IConstraintFactory.CreateCheckConstraint(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" /> -Objekt, das das übergeordnete Element der Einschränkung ist.</param>
+        <param name="name">Der Name der zu erstellenden CHECK-Einschränkung.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint" />-Objekt, das über den angegebenen Namen verfügt.
+            </summary>
+        <returns>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableCheckConstraint" /> Objekt.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDefaultConstraint">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDefaultConstraint CreateDefaultConstraint (Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn parent, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDefaultConstraint CreateDefaultConstraint(class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn parent, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IConstraintFactory.CreateDefaultConstraint(Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDefaultConstraint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" /> -Objekt, das das übergeordnete Element der Einschränkung ist.</param>
+        <param name="name">Der Name der zu erstellenden Standardeinschränkung.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDefaultConstraint" />-Objekt, das über den angegebenen Namen verfügt.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableDefaultConstraint" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateForeignKeyColumn">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn CreateForeignKeyColumn (Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn referencingColumn, Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn referencedColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn CreateForeignKeyColumn(class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn referencingColumn, class Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn referencedColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IConstraintFactory.CreateForeignKeyColumn(Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn,Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="referencingColumn" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />
+        <Parameter Name="referencedColumn" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" />
+      </Parameters>
+      <Docs>
+        <param name="referencingColumn">Das Spaltenobjekt, das die verweisende Spalte im Fremdschlüssel darstellt.</param>
+        <param name="referencedColumn">Das Spaltenobjekt, das die Spalte, auf die verwiesen wird, im Fremdschlüssel darstellt.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn" /> Objekt, das der angegebenen verweisenden verfügt und auf die verwiesen wird <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" /> Objekte
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IForeignKeyColumn" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateForeignKeyConstraint">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableForeignKeyConstraint CreateForeignKeyConstraint (Microsoft.SqlServer.Management.SqlParser.Metadata.ITable parent, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableForeignKeyConstraint CreateForeignKeyConstraint(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITable parent, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IConstraintFactory.CreateForeignKeyConstraint(Microsoft.SqlServer.Management.SqlParser.Metadata.ITable,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableForeignKeyConstraint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITable" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITable" /> -Objekt, das das übergeordnete Element der Einschränkung ist.</param>
+        <param name="name">Der Name des zu erstellenden Primärschlüssels.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableForeignKeyConstraint" /> -Objekt, das in den angegebenen gehört <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.ITable" /> und den angegebenen Namen aufweist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IMutableForeignKeyConstraint" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePrimaryKeyConstraint">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint CreatePrimaryKeyConstraint (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint CreatePrimaryKeyConstraint(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, class Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IConstraintFactory.CreatePrimaryKeyConstraint(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular,Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+        <Parameter Name="index" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" /> -Objekt, das das übergeordnete Element der Einschränkung ist.</param>
+        <param name="index">Das Indexobjekt, das dem zu erstellenden Primärschlüssel zugeordnet ist.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint" />-Objekt, das dem angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex" />-Objekt zugeordnet ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IPrimaryKeyConstraint" /> Objekt.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUniqueConstraint">
+      <MemberSignature Language="C#" Value="public Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint CreateUniqueConstraint (Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint CreateUniqueConstraint(class Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular parent, class Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Management.SqlParser.MetadataProvider.IConstraintFactory.CreateUniqueConstraint(Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular,Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.ITabular" />
+        <Parameter Name="index" Type="Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Die <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IColumn" /> -Objekt, das das übergeordnete Element der Einschränkung ist.</param>
+        <param name="index">Das Indexobjekt, das der UNIQUE-Einschränkung zugeordnet ist.</param>
+        <summary>
+            Erstellt ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint" />-Objekt, das dem angegebenen <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IRelationalIndex" />-Objekt zugeordnet ist.
+            </summary>
+        <returns>Muss hinzugefügt werden.</returns>
+        <remarks>Muss hinzugefügt werden.</remarks>
+        <return>Ein <see cref="T:Microsoft.SqlServer.Management.SqlParser.Metadata.IUniqueConstraint" /> Objekt.</return>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
