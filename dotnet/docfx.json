@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+		  "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -11,7 +12,9 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "ThirdPartyNotices",
+          "api/overwrites/**",
+          "_themes/**"
         ]
       }
     ],
@@ -27,11 +30,28 @@
         ]
       }
     ],
-    "overwrite": [],
+    "overwrite": [
+      {
+        "files": [
+          "api/overwrites/**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
     "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
+    "globalMetadata": {
+      "apiPlatform": "dotnet"
+    },
+    "fileMetadata": {
+      "author": {
+        "api/**/*.yml": "dotnet-bot"
+      }
+    },
     "template": [],
-    "dest": "SQLTEST"
+    "lruSize": 0,
+    "dest": "sql-dotnet-api"
   }
 }
